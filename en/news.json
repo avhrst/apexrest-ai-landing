@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-03-08",
+    "title": "Oracle APEX 24.2: Built-in AI Assistant for App Development",
+    "summary": "The 24.2 release strengthens AI capabilities in APEX: SQL/PLSQL code suggestions, rapid UI component creation, and native LLM integration for business assistants.",
+    "tag": "Oracle APEX"
+  },
+  {
+    "date": "2026-03-08",
+    "title": "OCI Expands AI Services for Enterprise Integrations",
+    "summary": "Oracle Cloud Infrastructure added new managed AI services for document processing and customer support automation, simplifying AI integration in APEX applications via API.",
+    "tag": "OCI"
+  },
+  {
+    "date": "2026-03-07",
+    "title": "Growing Demand for Legacy ERP Replacement Solutions",
+    "summary": "Market reports show increasing demand for secure, web-native ERP and accounting solutions. Companies are focusing on cloud architectures and phased migration strategies.",
+    "tag": "Market"
+  },
+  {
+    "date": "2026-03-06",
+    "title": "APEX + AI Accelerates Business Application Time-to-Market",
+    "summary": "Implementation experience shows that Oracle APEX low-code approach combined with AI automation speeds up MVP launches and reduces development team workload.",
+    "tag": "AI"
+  }
+]
