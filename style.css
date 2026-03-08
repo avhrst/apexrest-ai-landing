@@ -9,12 +9,12 @@
   --color-bg: #0a0e1a;
   --color-surface: #111827;
   --color-surface-2: #1a2236;
-  --color-primary: #3b82f6;
-  --color-primary-light: #60a5fa;
-  --color-accent: #f59e0b;
+  --color-primary: #c74634;
+  --color-primary-light: #ef6b5a;
+  --color-accent: #8f98a8;
   --color-text: #e2e8f0;
   --color-text-muted: #94a3b8;
-  --color-border: #1e293b;
+  --color-border: #2a2f3a;
   --font: 'Inter', system-ui, -apple-system, sans-serif;
   --max-width: 860px;
   --radius: 12px;
@@ -116,7 +116,7 @@ img {
 .ai-site-banner {
   margin-top: 72px;
   padding: 22px 0;
-  background: linear-gradient(90deg, #1d4ed8, #2563eb, #f59e0b);
+  background: linear-gradient(90deg, #7f1d1d, #c74634, #ef6b5a);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
@@ -141,8 +141,8 @@ img {
   align-items: center;
   padding: 80px 0 60px;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+    radial-gradient(ellipse at 20% 50%, rgba(199, 70, 52, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(143, 152, 168, 0.05) 0%, transparent 50%);
 }
 
 .hero-content {
@@ -151,14 +151,14 @@ img {
 
 .hero-badge {
   display: inline-block;
-  background: rgba(59, 130, 246, 0.12);
+  background: rgba(199, 70, 52, 0.12);
   color: var(--color-primary-light);
   padding: 6px 16px;
   border-radius: 100px;
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 24px;
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(199, 70, 52, 0.2);
 }
 
 .hero h1 {
@@ -212,13 +212,13 @@ img {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary), #2563eb);
+  background: linear-gradient(135deg, var(--color-primary), #a63627);
   color: #fff;
-  box-shadow: 0 4px 24px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 24px rgba(199, 70, 52, 0.3);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 6px 32px rgba(59, 130, 246, 0.45);
+  box-shadow: 0 6px 32px rgba(199, 70, 52, 0.45);
 }
 
 .btn-outline {
@@ -278,7 +278,7 @@ img {
 }
 
 .qa-card:hover {
-  border-color: rgba(59, 130, 246, 0.4);
+  border-color: rgba(199, 70, 52, 0.4);
 }
 
 .qa-question {
@@ -339,12 +339,12 @@ img {
 }
 
 .monitor-card:hover {
-  border-color: rgba(59, 130, 246, 0.4);
+  border-color: rgba(199, 70, 52, 0.4);
 }
 
 .monitor-tag {
   display: inline-block;
-  background: rgba(59, 130, 246, 0.12);
+  background: rgba(199, 70, 52, 0.12);
   color: var(--color-primary-light);
   padding: 4px 12px;
   border-radius: 6px;
@@ -384,7 +384,7 @@ img {
   line-height: 1.8;
   margin-bottom: 16px;
   padding: 16px 20px;
-  background: rgba(59, 130, 246, 0.06);
+  background: rgba(199, 70, 52, 0.06);
   border-radius: 8px;
   border-left: 3px solid var(--color-primary);
 }
@@ -411,7 +411,7 @@ img {
 .cta {
   text-align: center;
   background:
-    linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(245, 158, 11, 0.05));
+    linear-gradient(135deg, rgba(199, 70, 52, 0.08), rgba(143, 152, 168, 0.05));
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
@@ -444,8 +444,8 @@ img {
 }
 
 .cta-phone {
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.35);
+  background: rgba(199, 70, 52, 0.1);
+  border: 1px solid rgba(199, 70, 52, 0.35);
   border-radius: 12px;
   padding: 16px 22px;
   color: #e2e8f0;
