@@ -115,15 +115,43 @@
     </div>
   </section>
 
-  <!-- News -->
+  <!-- News / Intelligence -->
   <section class="section" id="news">
     <div class="container">
       <div class="section-header">
-        <h2>Новини</h2>
-        <p>Актуальне зі світу Oracle APEX та штучного інтелекту</p>
+        <h2>Щоденний огляд: AI, Oracle APEX та Україна</h2>
+        <p>Коротко і по суті: що змінюється на ринку та як це впливає на автоматизацію бізнесу</p>
       </div>
-      <div class="news-grid" id="news-grid">
-        <!-- Loaded from news.json -->
+      <div class="intel-grid">
+        <article class="intel-card">
+          <h3>🌍 Що відбувається у світі AI</h3>
+          <ul>
+            <li><strong>Google запустив Gemini 3.1 Pro</strong> (лютий 2026) з фокусом на складні задачі, покращене reasoning та агентні сценарії для розробників і бізнесу.</li>
+            <li><strong>OpenAI оновлює API-лінійку</strong>: триває перехід на нові моделі та планові deprecations старих snapshot-моделей — командам важливо регулярно оновлювати інтеграції.</li>
+            <li><strong>Ринок зсувається від "демо AI" до операційного AI</strong>: ключовий тренд — інтеграція агентів у реальні процеси (продажі, підтримка, документообіг, аналітика).</li>
+          </ul>
+          <p class="intel-source">Джерела: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/" target="_blank" rel="noopener">Google Blog</a>, <a href="https://developers.openai.com/api/docs/deprecations/" target="_blank" rel="noopener">OpenAI API Deprecations</a></p>
+        </article>
+
+        <article class="intel-card">
+          <h3>🧱 Що відбувається в Oracle APEX</h3>
+          <ul>
+            <li><strong>Oracle APEX 24.2</strong> (січень 2025) посилив AI-можливості: RAG-дані для AI-викликів, генерація тексту через Dynamic Action, покращення AI-конфігурації.</li>
+            <li>Додано <strong>підтримку векторного пошуку</strong> (Oracle Database 23ai), що важливо для enterprise RAG-сценаріїв.</li>
+            <li>APEX рухається в бік <strong>AI-native low-code</strong>: швидка розробка + надійна Oracle-архітектура для продакшену.</li>
+          </ul>
+          <p class="intel-source">Джерело: <a href="https://apex.oracle.com/en/learn/documentation/release-notes/" target="_blank" rel="noopener">Oracle APEX Release Notes</a></p>
+        </article>
+
+        <article class="intel-card">
+          <h3>🇺🇦 Що відбувається в Україні щодо заміни 1C</h3>
+          <ul>
+            <li>В Україні оприлюднено перелік ПЗ, забороненого для визначених категорій організацій, де згадуються <strong>1C та BAS</strong> (з 6 січня 2026).</li>
+            <li>Для бізнесу це прискорює попит на <strong>безпечні альтернативи</strong> та міграційні проєкти з російського ПЗ.</li>
+            <li>Зростає інтерес до <strong>нових платформ автоматизації</strong> з прозорою архітектурою, аудитом та інтеграцією AI в бізнес-процеси.</li>
+          </ul>
+          <p class="intel-source">Джерела: <a href="https://proit.ua/v-ukrayini-ofitsiino-zaboronili-proghramnie-zabiezpiechiennia-1s-i-bas/" target="_blank" rel="noopener">ProIT</a>, <a href="https://speka.ua/news/1sbas-zaboronili-do-cogo-gotuvatisya-byudzetnim-organizaciyam-pyqz6k" target="_blank" rel="noopener">Speka</a></p>
+        </article>
       </div>
     </div>
   </section>
