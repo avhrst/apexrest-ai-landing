@@ -161,7 +161,16 @@
     <div class="container">
       <h2>Готові розпочати?</h2>
       <p>Зв'яжіться з нами, щоб обговорити ваш проєкт або отримати безкоштовну консультацію.</p>
-      <a href="mailto:info@apex.rest" class="btn btn-primary">Написати нам</a>
+      <form class="contact-form" action="mailto:info@apex.rest" method="post" enctype="text/plain">
+        <div class="form-grid">
+          <input type="text" name="name" placeholder="Ваше ім'я" required>
+          <input type="email" name="email" placeholder="Ваш email" required>
+        </div>
+        <input type="text" name="subject" placeholder="Тема звернення" required>
+        <textarea name="message" rows="5" placeholder="Коротко опишіть ваш запит" required></textarea>
+        <button type="submit" class="btn btn-primary">Надіслати запит</button>
+      </form>
+
       <div class="cta-contacts">
         <div class="cta-contact">
           <strong>Email</strong>
