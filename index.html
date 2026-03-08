@@ -50,19 +50,84 @@
           "@type": "Answer",
           "text": "Рекомендований поетапний підхід: аудит поточного контуру, міграція критичних модулів, паралельна робота систем, контрольні звірки даних і поступове відключення 1С."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Як мігрувати дані з 1С в Oracle APEX?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Дані з 1С вивантажуються у CSV/XML/JSON або через прямий доступ до бази. Далі — маппінг структур 1С у таблиці Oracle Database за допомогою SQL*Loader або ETL, валідація та поетапний перехід із паралельною роботою систем."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Наскільки Oracle APEX гнучкий у кастомізації порівняно з 1С?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oracle APEX пропонує low-code розробку, повну свободу UI, SQL/PL/SQL для бізнес-логіки та REST API з коробки. На відміну від 1С, кастомізація не створює проблем з оновленнями."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Наскільки безпечний Oracle APEX порівняно з 1С?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oracle APEX має вбудований захист від SQL-ін'єкцій, XSS, CSRF, шифрування TDE, гранулярний контроль доступу та аудит дій. Oracle проходить аудити SOC 2, ISO 27001, FedRAMP."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Яка вартість володіння Oracle APEX порівняно з 1С?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ліцензія Oracle APEX безкоштовна. Є Oracle Cloud Free Tier для МСБ. Low-code підхід скорочує час розробки у 3-5 разів. TCO 1С часто недооцінюється через приховані витрати на ліцензії, сервер та спеціалістів."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Як швидко можна запустити Oracle APEX замість 1С?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MVP за 2-4 тижні, повноцінна система за 2-4 місяці для середнього бізнесу. Хмарний старт за хвилини через Oracle Cloud без закупівлі серверів."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Які ризики переходу з 1С на Oracle APEX?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Основні ризики: потреба в розробці під конкретні потреби, навчання команди, менший ринок APEX-спеціалістів в Україні. Мітигація: поетапна міграція, прототипування та паралельна робота систем."
+        }
       }
     ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "APEXREST",
+    "url": "https://apex.rest/",
+    "description": "Oracle APEX та AI-автоматизація для бізнесу в Україні. Міграція з 1С/BAS на сучасну безпечну архітектуру.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "avhrst@gmail.com",
+      "contactType": "customer service",
+      "availableLanguage": "Ukrainian"
+    }
   }
   </script>
 </head>
 <body>
 
   <!-- Header -->
+  <a class="skip-link" href="#seo-intent">Перейти до основного контенту</a>
   <header class="header">
     <div class="container">
       <div class="logo">APEX<span>REST</span></div>
       <button class="nav-toggle" aria-label="Меню">&#9776;</button>
-      <nav class="nav">
+      <nav class="nav" aria-label="Основна навігація">
+        <a href="#seo-intent">Про заміну 1С</a>
         <a href="#qa">Q&A</a>
         <a href="#monitoring">Моніторинг ринку</a>
         <a href="#contact">Контакти</a>
@@ -77,13 +142,15 @@
     </div>
   </section>
 
+  <main>
+
   <!-- Hero -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">Oracle APEX vs 1C</div>
         <h1>Чому <span class="highlight">Oracle APEX</span> може замінити <span class="highlight">1С</span></h1>
-        <p>Повний розбір для українського бізнесу: міграція, облік, безпека, вартість та реальні кейси переходу з 1С на сучасну платформу.</p>
+        <p>Повний розбір для українського бізнесу: альтернативи 1С, заміна BAS, міграція, облік, безпека, вартість та реальні кейси переходу на сучасну платформу.</p>
         <div class="hero-buttons">
           <a href="#qa" class="btn btn-primary">Читати Q&A</a>
           <a href="#monitoring" class="btn btn-outline">Моніторинг ринку</a>
@@ -106,8 +173,8 @@
   <section class="section" id="qa">
     <div class="container">
       <div class="section-header">
-        <h2>Q&A: Oracle APEX як заміна 1С</h2>
-        <p>Відповіді на ключові питання про перехід з 1С на Oracle APEX для українських компаній</p>
+        <h2>Q&A: Oracle APEX як альтернатива 1С та заміна BAS</h2>
+        <p>Відповіді на ключові питання про перехід з 1С/BAS на Oracle APEX для українських компаній</p>
       </div>
 
       <div class="qa-list">
@@ -250,8 +317,8 @@
   <section class="section section-alt" id="monitoring">
     <div class="container">
       <div class="section-header">
-        <h2>Моніторинг ринку: хто шукає заміну 1С</h2>
-        <p>Огляд публікацій та кейсів: чому український бізнес масово переходить з 1С і де Oracle APEX може стати рішенням</p>
+        <h2>Моніторинг ринку: хто шукає альтернативи 1С та заміну BAS</h2>
+        <p>Огляд публікацій та кейсів: чому український бізнес масово переходить з 1С/BAS і де Oracle APEX може стати рішенням</p>
       </div>
 
       <div class="monitor-grid">
@@ -344,6 +411,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Contacts -->
   <section class="section cta" id="contact">
