@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEXREST — Oracle APEX & AI рішення</title>
+  <meta name="description" content="APEXREST — експерти з Oracle APEX та AI технологій. Розробка, інтеграція та консалтинг для вашого бізнесу.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">APEX<span>REST</span></div>
+      <button class="nav-toggle" aria-label="Меню">&#9776;</button>
+      <nav class="nav">
+        <a href="#services">Послуги</a>
+        <a href="#why">Чому ми</a>
+        <a href="#news">Новини</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Oracle APEX + AI</div>
+        <h1>Будуємо <span class="highlight">розумні рішення</span> для вашого бізнесу</h1>
+        <p>Поєднуємо потужність Oracle APEX з можливостями штучного інтелекту, щоб автоматизувати процеси та прискорити розвиток вашої компанії.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Обговорити проєкт</a>
+          <a href="#services" class="btn btn-outline">Наші послуги</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Наші послуги</h2>
+        <p>Комплексні рішення на базі Oracle APEX та штучного інтелекту</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon apex">&#9670;</div>
+          <h3>Oracle APEX розробка</h3>
+          <p>Проєктування та розробка корпоративних веб-додатків на платформі Oracle APEX. Міграція існуючих систем, оптимізація продуктивності, інтеграція з Oracle Database.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon ai">&#9881;</div>
+          <h3>AI інтеграції</h3>
+          <p>Впровадження AI-рішень у бізнес-процеси: чат-боти, аналіз даних, генерація контенту, предиктивна аналітика. Інтеграція великих мовних моделей у ваші додатки.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon consult">&#9733;</div>
+          <h3>Консалтинг та автоматизація</h3>
+          <p>Аудит IT-інфраструктури, стратегія цифрової трансформації, автоматизація рутинних процесів. Навчання команд роботі з Oracle APEX та AI-інструментами.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section" id="why" style="background: var(--color-surface);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Чому обирають нас</h2>
+        <p>Досвід, технології та результат — усе, що потрібно вашому бізнесу</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">1</div>
+          <div>
+            <h3>Глибока експертиза Oracle APEX</h3>
+            <p>Багаторічний досвід роботи з Oracle APEX дозволяє нам створювати надійні та масштабовані рішення для будь-якої галузі.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-num">2</div>
+          <div>
+            <h3>AI на передовій</h3>
+            <p>Використовуємо найсучасніші AI-технології та моделі, щоб ваш бізнес отримав реальну конкурентну перевагу.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-num">3</div>
+          <div>
+            <h3>Результат, а не процес</h3>
+            <p>Фокусуємось на вимірюваних бізнес-результатах: зменшення витрат, пришвидшення процесів, зростання ефективності.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-num">4</div>
+          <div>
+            <h3>Українська команда</h3>
+            <p>Працюємо з розумінням локального ринку та бізнес-контексту. Комунікація рідною мовою без бар'єрів.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="section" id="news">
+    <div class="container">
+      <div class="section-header">
+        <h2>Новини</h2>
+        <p>Актуальне зі світу Oracle APEX та штучного інтелекту</p>
+      </div>
+      <div class="news-grid" id="news-grid">
+        <!-- Loaded from news.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contacts -->
+  <section class="section cta" id="contact">
+    <div class="container">
+      <h2>Готові розпочати?</h2>
+      <p>Зв'яжіться з нами, щоб обговорити ваш проєкт або отримати безкоштовну консультацію.</p>
+      <a href="mailto:info@apexrest.ai" class="btn btn-primary">Написати нам</a>
+      <div class="cta-contacts">
+        <div class="cta-contact">
+          <strong>Email</strong>
+          info@apexrest.ai
+        </div>
+        <div class="cta-contact">
+          <strong>Телефон</strong>
+          +380 (XX) XXX-XX-XX
+        </div>
+        <div class="cta-contact">
+          <strong>Локація</strong>
+          Україна
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      &copy; 2026 APEXREST. Усі права захищені.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
