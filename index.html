@@ -127,7 +127,10 @@
   <a class="skip-link" href="#seo-intent">Перейти до основного контенту</a>
   <header class="header">
     <div class="container">
-      <div class="logo">APEX<span>REST</span></div>
+      <div class="logo">
+        <div class="logo-icon">AR</div>
+        <span class="logo-name">APEX<span>REST</span></span>
+      </div>
       <button class="nav-toggle" aria-label="Меню">&#9776;</button>
       <nav class="nav" aria-label="Основна навігація">
         <a href="#seo-intent">Про заміну 1С</a>
@@ -170,9 +173,11 @@
   <!-- SEO Intent Block -->
   <section class="section" id="seo-intent">
     <div class="container">
-      <div class="section-header">
-        <h2>1С альтернатива: чим замінити 1С та BAS в Україні</h2>
-        <p>Ключові пошукові наміри бізнесу: <strong>«1с альтернатива»</strong>, <strong>«чим замінити 1с»</strong>, <strong>«альтернативи 1с»</strong>. На цій сторінці ми даємо практичні відповіді, кейси та план міграції на Oracle APEX.</p>
+      <div class="region">
+        <div class="region-header">
+          <span class="region-title">1С альтернатива: чим замінити 1С та BAS в Україні</span>
+          <span class="region-desc">Ключові пошукові наміри бізнесу: <strong>«1с альтернатива»</strong>, <strong>«чим замінити 1с»</strong>, <strong>«альтернативи 1с»</strong>. На цій сторінці ми даємо практичні відповіді, кейси та план міграції на Oracle APEX.</span>
+        </div>
       </div>
     </div>
   </section>
@@ -180,12 +185,13 @@
   <!-- Q&A Section -->
   <section class="section" id="qa">
     <div class="container">
-      <div class="section-header">
-        <h2>Q&A: Oracle APEX як альтернатива 1С та заміна BAS</h2>
-        <p>Відповіді на ключові питання про перехід з 1С/BAS на Oracle APEX для українських компаній</p>
-      </div>
-
-      <div class="qa-list">
+      <div class="region">
+        <div class="region-header">
+          <span class="region-title">Q&amp;A: Oracle APEX як альтернатива 1С та заміна BAS</span>
+          <span class="region-desc">Відповіді на ключові питання про перехід з 1С/BAS на Oracle APEX для українських компаній</span>
+        </div>
+        <div class="region-body">
+        <div class="qa-list">
 
         <article class="qa-card">
           <h3 class="qa-question">Як мігрувати дані з 1С в Oracle APEX?</h3>
@@ -317,19 +323,22 @@
           </div>
         </article>
 
-      </div>
+        </div>
+        </div><!-- /region-body -->
+      </div><!-- /region -->
     </div>
   </section>
 
   <!-- Monitoring Section -->
-  <section class="section section-alt" id="monitoring">
+  <section class="section" id="monitoring">
     <div class="container">
-      <div class="section-header">
-        <h2>Моніторинг ринку: хто шукає альтернативи 1С та заміну BAS</h2>
-        <p>Огляд публікацій та кейсів: чому український бізнес масово переходить з 1С/BAS і де Oracle APEX може стати рішенням</p>
-      </div>
-
-      <div class="monitor-grid">
+      <div class="region">
+        <div class="region-header">
+          <span class="region-title">Моніторинг ринку: хто шукає альтернативи 1С та заміну BAS</span>
+          <span class="region-desc">Огляд публікацій та кейсів: чому український бізнес масово переходить з 1С/BAS і де Oracle APEX може стати рішенням</span>
+        </div>
+        <div class="region-body">
+        <div class="monitor-grid">
 
         <article class="monitor-card">
           <div class="monitor-tag">Законодавство</div>
@@ -416,21 +425,27 @@
           <p class="monitor-note">Примітка: доступ до повного тексту публікації може вимагати авторизації в LinkedIn.</p>
         </article>
 
-      </div>
+        </div><!-- /monitor-grid -->
+        </div><!-- /region-body -->
+      </div><!-- /region -->
     </div>
   </section>
 
   <!-- News Section -->
   <section class="section" id="news">
     <div class="container">
-      <div class="section-header">
-        <h2>Останні новини Oracle APEX та AI</h2>
-        <p>Короткі апдейти ринку та платформи. Блок оновлюється з <code>news.json</code>.</p>
-      </div>
-      <div class="news-grid" id="news-list" aria-live="polite"></div>
-      <noscript>
-        <p class="news-fallback">Увімкніть JavaScript, щоб бачити актуальні новини.</p>
-      </noscript>
+      <div class="region">
+        <div class="region-header">
+          <span class="region-title">Останні новини Oracle APEX та AI</span>
+          <span class="region-desc">Короткі апдейти ринку та платформи. Блок оновлюється з <code>news.json</code>.</span>
+        </div>
+        <div class="region-body">
+          <div class="news-grid" id="news-list" aria-live="polite"></div>
+          <noscript>
+            <p class="news-fallback">Увімкніть JavaScript, щоб бачити актуальні новини.</p>
+          </noscript>
+        </div><!-- /region-body -->
+      </div><!-- /region -->
     </div>
   </section>
 
