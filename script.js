@@ -14,27 +14,94 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Save language preference on switcher click
-  document.querySelectorAll('.lang-switch a[data-lang]').forEach(link => {
+  document.querySelectorAll('.toolbar-lang a[data-lang]').forEach(link => {
     link.addEventListener('click', () => {
       localStorage.setItem('lang', link.dataset.lang);
     });
   });
 
-  // --- Mobile nav toggle ---
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+  // --- Mobile sidebar toggle ---
+  const toggle = document.querySelector('.toolbar-toggle');
+  const sidebar = document.getElementById('builder-sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
 
-  if (toggle && nav) {
+  function closeSidebar() {
+    if (sidebar) sidebar.classList.remove('open');
+    if (overlay) overlay.classList.remove('active');
+    if (toggle) toggle.textContent = '\u2630';
+  }
+
+  if (toggle && sidebar) {
     toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.textContent = nav.classList.contains('open') ? '\u2715' : '\u2630';
+      const isOpen = sidebar.classList.toggle('open');
+      if (overlay) overlay.classList.toggle('active', isOpen);
+      toggle.textContent = isOpen ? '\u2715' : '\u2630';
+    });
+  }
+
+  if (overlay) {
+    overlay.addEventListener('click', closeSidebar);
+  }
+
+  // --- Tree navigation: highlight active item on click ---
+  const contentScroll = document.querySelector('.content-scroll');
+  const treeItems = document.querySelectorAll('.tree-item[href]');
+
+  treeItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      // Remove active from all
+      document.querySelectorAll('.tree-item').forEach(t => t.classList.remove('active'));
+      // Set active on clicked
+      item.classList.add('active');
+
+      // Smooth scroll to target in content pane
+      const targetId = item.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        const target = document.querySelector(targetId);
+        if (target && contentScroll) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close sidebar on mobile
+          if (window.innerWidth <= 768) {
+            closeSidebar();
+          }
+        }
+      }
+    });
+  });
+
+  // --- Highlight tree item on scroll (intersection observer) ---
+  if (contentScroll && treeItems.length > 0) {
+    const sectionIds = [];
+    treeItems.forEach(item => {
+      const href = item.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        sectionIds.push(href.slice(1));
+      }
     });
 
-    nav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        toggle.textContent = '\u2630';
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          document.querySelectorAll('.tree-item').forEach(t => t.classList.remove('active'));
+          const matchingItem = document.querySelector(`.tree-item[href="#${id}"]`);
+          if (matchingItem) {
+            matchingItem.classList.add('active');
+            // Scroll tree item into view if needed
+            matchingItem.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          }
+        }
       });
+    }, {
+      root: contentScroll,
+      rootMargin: '-10% 0px -80% 0px',
+      threshold: 0
+    });
+
+    sectionIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
     });
   }
 

@@ -1,39 +1,67 @@
 /* ============================================================
-   APEXREST — Oracle APEX Universal Theme (Dark Mode)
-   Design language based on Oracle APEX 24.x / 25.x Universal Theme
+   APEXREST — Oracle APEX Page Designer (Builder) Style
+   Layout imitates the APEX IDE: toolbar, tree sidebar, layout pane
    ============================================================ */
 
 /* === Reset === */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* === Design Tokens (APEX Dark palette) === */
+/* === Design Tokens (APEX Builder Dark palette) === */
 :root {
-  --bg:              #0c0e14;       /* Page canvas */
-  --nav-bg:          #12141c;       /* Navigation bar */
-  --surface:         #181b25;       /* Region background */
-  --surface-2:       #1e2130;       /* Region header / elevated surface */
-  --surface-3:       #141720;       /* Deeper inset surface */
+  /* Builder chrome */
+  --b-toolbar:       #1a1c2e;       /* Toolbar background */
+  --b-toolbar-brdr:  #0d0e1a;       /* Toolbar bottom border */
+  --b-sidebar:       #1e2133;       /* Left pane / tree background */
+  --b-pane-header:   #252840;       /* Pane tab headers */
+  --b-canvas:        #13151e;       /* Main layout canvas */
+  --b-splitter:      #2a2d42;       /* Pane splitter borders */
+  --b-statusbar:     #181a2c;       /* Status bar */
+
+  /* Surfaces & regions */
+  --surface:         #1c1f30;       /* Region background */
+  --surface-2:       #222540;       /* Region header / elevated */
+  --surface-3:       #171a28;       /* Deeper inset */
+
+  /* Accent colors */
   --primary:         #c74634;       /* Oracle red */
-  --primary-h:       #e05a43;       /* Oracle red hover/lighter */
-  --primary-dim:     rgba(199,70,52,.14);
+  --primary-h:       #e05a43;       /* Oracle red hover */
+  --primary-dim:     rgba(199,70,52,.12);
+  --accent-blue:     #0572CE;       /* APEX interactive blue */
+  --accent-blue-dim: rgba(5,114,206,.15);
+
+  /* Text */
   --text:            #c8ccd8;
   --text-muted:      #6c7389;
-  --border:          #252837;
-  --border-2:        #303450;
+  --text-bright:     #e4e7f0;
+
+  /* Borders */
+  --border:          #252840;
+  --border-2:        #303455;
+
+  /* Typography */
   --font:            'Inter', system-ui, -apple-system, sans-serif;
-  --max-w:           1040px;
-  --r:               3px;           /* APEX tight border-radius */
-  --nav-h:           52px;
+  --font-mono:       'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  --r:               3px;
+
+  /* Layout */
+  --toolbar-h:       44px;
+  --tabbar-h:        34px;
+  --sidebar-w:       280px;
+  --statusbar-h:     28px;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font);
-  background: var(--bg);
+  background: var(--b-canvas);
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a { color: var(--primary-h); text-decoration: none; }
@@ -48,141 +76,364 @@ img { max-width: 100%; display: block; }
 }
 .skip-link:focus { top: 0; }
 
-/* === Container === */
-.container { max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
-
 /* ============================================================
-   APEX Navigation Bar
+   TOOLBAR — Mimics APEX Page Designer top toolbar
    ============================================================ */
-.header {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  height: var(--nav-h);
-  background: var(--nav-bg);
-  border-bottom: 2px solid #000;
-  box-shadow: 0 2px 12px rgba(0,0,0,.6);
-}
-
-.header .container {
-  max-width: 100%; padding: 0 16px;
-  display: flex; align-items: center; height: var(--nav-h); gap: 0;
-}
-
-/* App Icon — colored square (APEX app icon pattern) */
-.logo {
-  display: flex; align-items: center; gap: 10px;
-  text-decoration: none; white-space: nowrap;
-  padding-right: 20px;
-  border-right: 1px solid var(--border);
+.builder-toolbar {
+  display: flex;
+  align-items: center;
+  height: var(--toolbar-h);
+  background: var(--b-toolbar);
+  border-bottom: 2px solid var(--b-toolbar-brdr);
+  padding: 0 12px;
+  gap: 0;
   flex-shrink: 0;
+  z-index: 100;
 }
-.logo:hover { text-decoration: none; }
 
-.logo-icon {
-  width: 30px; height: 30px;
+/* App icon (colored square — APEX app icon pattern) */
+.toolbar-app-icon {
+  width: 28px; height: 28px;
   background: var(--primary);
   border-radius: 4px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 0.65rem; font-weight: 800; color: #fff;
+  font-size: 0.6rem; font-weight: 800; color: #fff;
   letter-spacing: 0.03em; flex-shrink: 0;
+  margin-right: 10px;
 }
 
-.logo-name {
-  font-size: 0.92rem; font-weight: 700; color: #fff; letter-spacing: 0.01em;
+.toolbar-app-name {
+  font-size: 0.85rem; font-weight: 700; color: #fff;
+  white-space: nowrap; margin-right: 6px;
 }
-.logo-name span { color: var(--primary-h); }
+.toolbar-app-name span { color: var(--primary-h); }
 
-/* Nav links (APEX Navigation Bar items) */
-.nav {
+/* Breadcrumb separator */
+.toolbar-sep {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin: 0 8px;
+  opacity: 0.5;
+}
+
+.toolbar-page-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Toolbar spacer pushes right items */
+.toolbar-spacer { flex: 1; }
+
+/* Toolbar action buttons (Save, Run, etc.) */
+.toolbar-actions {
+  display: flex; align-items: center; gap: 4px;
+}
+
+.toolbar-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 5px 12px; height: 28px;
+  background: transparent; border: 1px solid var(--border);
+  border-radius: var(--r); color: var(--text-muted);
+  font-size: 0.72rem; font-weight: 600; cursor: pointer;
+  transition: all .15s; white-space: nowrap;
+  font-family: var(--font);
+}
+.toolbar-btn:hover { color: var(--text-bright); border-color: var(--border-2); background: rgba(255,255,255,.05); }
+.toolbar-btn.btn-run {
+  background: #1a7a1a; border-color: #1a7a1a; color: #fff;
+}
+.toolbar-btn.btn-run:hover { background: #21921e; }
+.toolbar-btn.btn-save {
+  background: var(--accent-blue); border-color: var(--accent-blue); color: #fff;
+}
+.toolbar-btn.btn-save:hover { background: #0882e0; }
+
+/* Lang switch in toolbar */
+.toolbar-lang {
   display: flex; align-items: center; gap: 2px;
-  margin-left: 12px; flex: 1;
-}
-
-.nav a {
-  color: #7d8499; font-size: 0.82rem; font-weight: 500;
-  text-decoration: none; padding: 5px 12px; border-radius: var(--r);
-  transition: color .15s, background .15s; white-space: nowrap;
-}
-.nav a:hover { color: #d4d8e8; background: rgba(255,255,255,.07); text-decoration: none; }
-
-/* Mobile toggle */
-.nav-toggle {
-  display: none; background: none; border: none; color: #7d8499;
-  font-size: 1.35rem; cursor: pointer; padding: 8px; margin-left: auto;
-}
-
-/* Language switcher */
-.lang-switch {
-  display: flex; align-items: center; gap: 2px;
-  margin-left: auto; padding-left: 14px;
+  margin-left: 8px; padding-left: 8px;
   border-left: 1px solid var(--border);
 }
-.lang-switch a {
-  color: #7d8499; font-size: 0.78rem; font-weight: 600;
-  text-decoration: none; padding: 4px 8px; border-radius: var(--r);
-  transition: color .15s, background .15s;
+.toolbar-lang a {
+  color: var(--text-muted); font-size: 0.72rem; font-weight: 600;
+  text-decoration: none; padding: 3px 7px; border-radius: var(--r);
+  transition: all .15s;
 }
-.lang-switch a:hover { color: #fff; text-decoration: none; }
-.lang-switch a.active { color: #fff; background: rgba(255,255,255,.1); }
+.toolbar-lang a:hover { color: #fff; text-decoration: none; }
+.toolbar-lang a.active { color: #fff; background: rgba(255,255,255,.1); }
+
+/* Mobile nav toggle */
+.toolbar-toggle {
+  display: none; background: none; border: none; color: var(--text-muted);
+  font-size: 1.2rem; cursor: pointer; padding: 6px; margin-left: auto;
+}
 
 /* ============================================================
-   AI Banner
+   AI BANNER — sits between toolbar and main area
    ============================================================ */
 .ai-site-banner {
-  margin-top: var(--nav-h);
-  padding: 12px 0;
+  padding: 8px 16px;
   background: linear-gradient(90deg, #6b1a12 0%, #c74634 55%, #ef6b5a 100%);
-  border-bottom: 1px solid rgba(0,0,0,.4);
   text-align: center;
+  flex-shrink: 0;
 }
-.ai-site-banner .container { max-width: 100%; }
 .ai-site-banner p {
-  color: #fff; font-size: clamp(0.78rem, 2.2vw, 1.1rem);
+  color: #fff; font-size: clamp(0.7rem, 1.8vw, 0.85rem);
   font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+  margin: 0;
 }
 
 /* ============================================================
-   Hero — APEX Page Hero
+   MAIN LAYOUT — Three-pane IDE layout
    ============================================================ */
-.hero {
-  padding: 52px 0 44px;
-  background:
-    radial-gradient(ellipse 55% 60% at 5% 50%, rgba(199,70,52,.07) 0%, transparent 65%),
-    linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
-  border-bottom: 1px solid var(--border);
+.builder-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
 }
 
-.hero-content { max-width: 660px; }
+/* === Left Sidebar — Rendering Tree Pane === */
+.builder-sidebar {
+  width: var(--sidebar-w);
+  min-width: var(--sidebar-w);
+  background: var(--b-sidebar);
+  border-right: 3px solid var(--b-splitter);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Pane tab header (Rendering / Dynamic Actions / Processing) */
+.pane-tabs {
+  display: flex;
+  background: var(--b-pane-header);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+.pane-tab {
+  padding: 7px 14px;
+  font-size: 0.7rem; font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all .15s;
+  background: none; border-top: none; border-left: none; border-right: none;
+  font-family: var(--font);
+}
+.pane-tab:hover { color: var(--text-bright); }
+.pane-tab.active {
+  color: #fff;
+  border-bottom-color: var(--accent-blue);
+  background: rgba(5,114,206,.08);
+}
+
+/* Tree container */
+.tree-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 6px 0;
+}
+
+/* Scrollbar styling for tree */
+.tree-container::-webkit-scrollbar { width: 6px; }
+.tree-container::-webkit-scrollbar-track { background: transparent; }
+.tree-container::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 3px; }
+
+/* Tree items */
+.tree-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 10px 4px 0;
+  cursor: pointer;
+  transition: background .1s;
+  border-left: 2px solid transparent;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.78rem;
+  white-space: nowrap;
+  user-select: none;
+}
+.tree-item:hover {
+  background: rgba(255,255,255,.04);
+  text-decoration: none;
+}
+.tree-item.active {
+  background: var(--accent-blue-dim);
+  border-left-color: var(--accent-blue);
+  color: var(--text-bright);
+}
+
+/* Tree indentation levels */
+.tree-item[data-level="0"] { padding-left: 10px; }
+.tree-item[data-level="1"] { padding-left: 26px; }
+.tree-item[data-level="2"] { padding-left: 42px; }
+
+/* Tree toggle arrow */
+.tree-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px; height: 16px;
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-right: 4px;
+  transition: transform .15s;
+}
+.tree-toggle.expanded { transform: rotate(90deg); }
+.tree-toggle.leaf { visibility: hidden; }
+
+/* Tree icon */
+.tree-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px; height: 16px;
+  margin-right: 6px;
+  font-size: 0.65rem;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+.tree-icon.region  { background: #2d5aa0; color: #7fb3ff; }
+.tree-icon.item    { background: #6b3fa0; color: #c4a0ff; }
+.tree-icon.page    { background: #2a7a3a; color: #7fdf7f; }
+.tree-icon.button  { background: #a05a2d; color: #ffb87f; }
+
+.tree-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Tree section dividers */
+.tree-section {
+  padding: 8px 10px 4px;
+  font-size: 0.65rem; font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* === Splitter indicator (decorative) === */
+.builder-splitter {
+  width: 3px;
+  background: var(--b-splitter);
+  cursor: col-resize;
+  flex-shrink: 0;
+  position: relative;
+}
+.builder-splitter::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3px;
+  height: 30px;
+  transform: translateY(-50%);
+  background: var(--border-2);
+  border-radius: 2px;
+}
+
+/* === Main Content Pane === */
+.builder-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+/* Content pane tab bar */
+.content-tabs {
+  display: flex;
+  background: var(--b-pane-header);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.content-tab {
+  padding: 7px 16px;
+  font-size: 0.7rem; font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+  cursor: default;
+  border-bottom: 2px solid transparent;
+}
+.content-tab.active {
+  color: #fff;
+  border-bottom-color: var(--accent-blue);
+  background: rgba(5,114,206,.08);
+}
+
+/* Scrollable content area */
+.content-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.content-scroll::-webkit-scrollbar { width: 8px; }
+.content-scroll::-webkit-scrollbar-track { background: var(--b-canvas); }
+.content-scroll::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 4px; }
+
+/* Container — max width within the layout pane */
+.container { max-width: 920px; margin: 0 auto; padding: 0; }
+
+/* ============================================================
+   Hero — styled as an APEX Hero Region
+   ============================================================ */
+.hero {
+  padding: 40px 24px 36px;
+  background:
+    radial-gradient(ellipse 55% 60% at 5% 50%, rgba(199,70,52,.06) 0%, transparent 65%),
+    linear-gradient(180deg, var(--surface) 0%, var(--b-canvas) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  margin-bottom: 20px;
+}
+
+.hero-content { max-width: 620px; }
 
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--primary-dim); color: var(--primary-h);
-  padding: 4px 12px; border-radius: var(--r);
-  font-size: 0.72rem; font-weight: 700;
+  padding: 3px 10px; border-radius: var(--r);
+  font-size: 0.68rem; font-weight: 700;
   border: 1px solid rgba(199,70,52,.25);
   text-transform: uppercase; letter-spacing: 0.07em;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .hero h1 {
-  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  font-size: clamp(1.7rem, 3.8vw, 2.6rem);
   font-weight: 800; line-height: 1.15;
-  letter-spacing: -.03em; color: #fff; margin-bottom: 16px;
+  letter-spacing: -.03em; color: #fff; margin-bottom: 14px;
 }
 .hero h1 .highlight {
   background: linear-gradient(135deg, var(--primary), #ef6b5a);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.hero p { font-size: 1rem; color: var(--text-muted); margin-bottom: 28px; max-width: 540px; line-height: 1.8; }
-.hero-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+.hero p {
+  font-size: 0.92rem; color: var(--text-muted);
+  margin-bottom: 24px; max-width: 520px; line-height: 1.8;
+}
+.hero-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
 
 /* ============================================================
    APEX-Style Buttons
    ============================================================ */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 8px 20px; border-radius: var(--r);
-  font-size: 0.83rem; font-weight: 600;
+  padding: 7px 18px; border-radius: var(--r);
+  font-size: 0.8rem; font-weight: 600;
   cursor: pointer; border: none;
   transition: filter .15s, transform .1s;
   text-decoration: none; letter-spacing: .01em;
@@ -196,14 +447,12 @@ img { max-width: 100%; display: block; }
 .btn-outline:hover { border-color: var(--primary); color: var(--primary-h); }
 
 /* ============================================================
-   Page Layout — Section spacing
+   Page Sections — spacing within the layout pane
    ============================================================ */
-.section { padding: 28px 0; }
-.section-alt { background: transparent; } /* regions handle their own bg */
+.section { margin-bottom: 20px; }
 
 /* ============================================================
    APEX Region Chrome
-   Region = the fundamental UI container in Oracle APEX
    ============================================================ */
 .region {
   background: var(--surface);
@@ -212,37 +461,38 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
 }
 
-/* Region Header — characteristic APEX accent bar */
+/* Region Header — APEX accent bar */
 .region-header {
-  display: flex; align-items: baseline; gap: 16px;
-  padding: 11px 20px;
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 10px 18px;
   background: var(--surface-2);
   border-bottom: 1px solid var(--border);
   border-left: 4px solid var(--primary);
 }
 
 .region-title {
-  font-size: 0.75rem; font-weight: 800; color: #fff;
+  font-size: 0.72rem; font-weight: 800; color: #fff;
   text-transform: uppercase; letter-spacing: 0.09em;
   white-space: nowrap;
 }
 
 .region-desc {
-  font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;
+  font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;
 }
 .region-desc strong { color: var(--text); }
 .region-desc code {
   background: var(--surface-3); color: var(--primary-h);
-  padding: 1px 5px; border-radius: 2px; font-size: 0.78rem;
+  padding: 1px 5px; border-radius: 2px; font-size: 0.75rem;
+  font-family: var(--font-mono);
 }
 
 /* Region Body */
-.region-body { padding: 22px 20px; }
+.region-body { padding: 18px; }
 
 /* ============================================================
-   Q&A — APEX Accordion / Collapsible Region style
+   Q&A — APEX collapsible sub-regions
    ============================================================ */
-.qa-list { display: flex; flex-direction: column; gap: 10px; }
+.qa-list { display: flex; flex-direction: column; gap: 8px; }
 
 .qa-card {
   background: var(--surface-2);
@@ -254,25 +504,25 @@ img { max-width: 100%; display: block; }
 .qa-card:hover { border-color: var(--border-2); }
 
 .qa-question {
-  font-size: 0.9rem; font-weight: 700; color: #d0d4e0;
-  padding: 13px 18px 13px 16px;
+  font-size: 0.85rem; font-weight: 700; color: #d0d4e0;
+  padding: 11px 16px 11px 14px;
   background: var(--surface-3);
   border-bottom: 1px solid var(--border);
   border-left: 3px solid var(--primary);
   line-height: 1.45; cursor: default;
 }
 
-.qa-answer { padding: 16px 18px; }
-.qa-answer p { color: var(--text); font-size: 0.875rem; line-height: 1.8; margin-bottom: 12px; }
+.qa-answer { padding: 14px 16px; }
+.qa-answer p { color: var(--text); font-size: 0.84rem; line-height: 1.8; margin-bottom: 10px; }
 .qa-answer p:last-child { margin-bottom: 0; }
-.qa-answer ul { padding-left: 18px; margin-bottom: 12px; }
-.qa-answer li { color: var(--text-muted); font-size: 0.875rem; line-height: 1.8; margin-bottom: 5px; }
+.qa-answer ul { padding-left: 18px; margin-bottom: 10px; }
+.qa-answer li { color: var(--text-muted); font-size: 0.84rem; line-height: 1.8; margin-bottom: 4px; }
 .qa-answer li strong { color: var(--text); }
 
 /* ============================================================
-   Monitor Section — APEX Classic Report / IR style
+   Monitor — APEX Interactive Report style
    ============================================================ */
-.monitor-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.monitor-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
 
 .monitor-card {
   background: var(--surface-2);
@@ -284,38 +534,35 @@ img { max-width: 100%; display: block; }
 }
 .monitor-card:hover { border-left-color: var(--primary); }
 
-/* Tag sits in its own header row (surface-3 bg via padding trick) */
 .monitor-tag {
   display: block;
   background: var(--surface-3);
-  padding: 7px 16px 0;
-  margin-bottom: 0;
-  font-size: 0.68rem; font-weight: 700;
+  padding: 6px 14px 0;
+  font-size: 0.65rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.06em;
   color: var(--primary-h);
 }
 
 .monitor-card h3 {
-  font-size: 0.9rem; font-weight: 700; color: #cdd1de; line-height: 1.45;
+  font-size: 0.85rem; font-weight: 700; color: #cdd1de; line-height: 1.45;
   background: var(--surface-3);
-  padding: 5px 16px 11px;
+  padding: 4px 14px 10px;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 0;
 }
 
 .monitor-problem {
-  color: var(--text-muted); font-size: 0.855rem; line-height: 1.75;
-  padding: 14px 16px 0;
+  color: var(--text-muted); font-size: 0.82rem; line-height: 1.75;
+  padding: 12px 14px 0;
   border-left: 2px solid var(--border-2);
-  margin: 14px 16px 0;
+  margin: 12px 14px 0;
   border-radius: 0 var(--r) var(--r) 0;
 }
 .monitor-problem strong { color: var(--text); }
 
 .monitor-comment {
-  color: var(--text); font-size: 0.855rem; line-height: 1.75;
-  margin: 12px 16px 0;
-  padding: 12px 14px;
+  color: var(--text); font-size: 0.82rem; line-height: 1.75;
+  margin: 10px 14px 0;
+  padding: 10px 12px;
   background: var(--primary-dim);
   border-radius: var(--r);
   border-left: 2px solid var(--primary);
@@ -324,108 +571,172 @@ img { max-width: 100%; display: block; }
 
 .monitor-source {
   display: inline-flex; align-items: center; gap: 5px;
-  font-size: 0.78rem; color: var(--primary-h); font-weight: 500;
-  margin: 10px 16px 14px;
+  font-size: 0.75rem; color: var(--primary-h); font-weight: 500;
+  margin: 8px 14px 12px;
 }
-.monitor-source::before { content: '↗'; font-size: 0.72rem; opacity: .8; }
+.monitor-source::before { content: '↗'; font-size: 0.7rem; opacity: .8; }
 
 .monitor-note {
-  font-size: 0.76rem; color: var(--text-muted); font-style: italic;
-  margin: 2px 16px 14px;
+  font-size: 0.73rem; color: var(--text-muted); font-style: italic;
+  margin: 2px 14px 12px;
 }
 
 /* ============================================================
-   News — APEX Card Collection style
+   News — APEX Card Region
    ============================================================ */
-.news-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.news-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
 
 .news-card {
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: var(--r);
   border-top: 2px solid var(--primary);
-  padding: 16px 18px;
+  padding: 14px 16px;
   transition: transform .15s, border-color .2s;
 }
 .news-card:hover { transform: translateY(-1px); }
 
-.news-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 9px; }
+.news-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 8px; }
 .news-tag {
   background: var(--primary-dim); color: var(--primary-h);
-  padding: 2px 8px; border-radius: var(--r);
-  font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+  padding: 2px 7px; border-radius: var(--r);
+  font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
 }
-.news-meta time { font-size: 0.75rem; color: var(--text-muted); }
-.news-card h3 { color: #cdd1de; font-size: 0.9rem; margin-bottom: 7px; line-height: 1.5; }
-.news-card p, .news-fallback { color: var(--text-muted); font-size: 0.855rem; line-height: 1.7; }
+.news-meta time { font-size: 0.72rem; color: var(--text-muted); font-family: var(--font-mono); }
+.news-card h3 { color: #cdd1de; font-size: 0.85rem; margin-bottom: 6px; line-height: 1.5; }
+.news-card p, .news-fallback { color: var(--text-muted); font-size: 0.82rem; line-height: 1.7; }
 
 /* ============================================================
-   CTA / Contact
+   Contact — APEX Static Content Region
    ============================================================ */
 .cta {
   text-align: center;
   background: var(--surface);
-  border-top: 1px solid var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 28px 18px;
+  margin-bottom: 20px;
 }
-.cta h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; color: #fff; margin-bottom: 10px; }
-.cta p { color: var(--text-muted); font-size: 0.9rem; max-width: 460px; margin: 0 auto 24px; }
-.cta-contacts { display: flex; justify-content: center; gap: 28px; margin-top: 24px; flex-wrap: wrap; }
-.cta-contact { color: var(--text-muted); font-size: 0.875rem; }
+.cta h2 { font-size: clamp(1.3rem, 2.8vw, 1.7rem); font-weight: 800; color: #fff; margin-bottom: 8px; }
+.cta p { color: var(--text-muted); font-size: 0.85rem; max-width: 420px; margin: 0 auto 20px; }
+.cta-contacts { display: flex; justify-content: center; gap: 24px; margin-top: 20px; flex-wrap: wrap; }
+.cta-contact { color: var(--text-muted); font-size: 0.84rem; }
 .cta-phone {
   background: var(--primary-dim); border: 1px solid rgba(199,70,52,.3);
-  border-radius: var(--r); padding: 12px 20px;
-  color: #d0d4de; font-size: 1rem; font-weight: 700;
+  border-radius: var(--r); padding: 10px 18px;
+  color: #d0d4de; font-size: 0.95rem; font-weight: 700;
 }
-.cta-phone strong { color: #fff; font-size: 0.8rem; }
+.cta-phone strong { color: #fff; font-size: 0.78rem; }
 .cta-contact strong { color: #fff; display: block; margin-bottom: 3px; }
 
 /* ============================================================
-   Footer — APEX footer bar
+   Status Bar — bottom bar (APEX Page Designer footer)
    ============================================================ */
-.footer {
-  padding: 14px 0; text-align: center;
-  color: var(--text-muted); font-size: 0.78rem;
-  background: var(--nav-bg);
+.builder-statusbar {
+  display: flex;
+  align-items: center;
+  height: var(--statusbar-h);
+  background: var(--b-statusbar);
   border-top: 1px solid var(--border);
+  padding: 0 14px;
+  gap: 16px;
+  flex-shrink: 0;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+.statusbar-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.statusbar-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #2ecc40;
+  flex-shrink: 0;
+}
+
+.statusbar-sep {
+  width: 1px; height: 14px;
+  background: var(--border);
+}
+
+/* Footer text inside status bar */
+.builder-statusbar .copyright {
+  margin-left: auto;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  opacity: 0.7;
 }
 
 /* ============================================================
-   Responsive
+   Responsive — Mobile layout
    ============================================================ */
+@media (max-width: 900px) {
+  :root { --sidebar-w: 240px; }
+}
+
 @media (max-width: 768px) {
-  .nav {
-    display: none; position: absolute;
-    top: var(--nav-h); left: 0; right: 0;
-    background: var(--nav-bg); flex-direction: column;
-    padding: 12px; gap: 2px;
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0 8px 24px rgba(0,0,0,.6);
+  body { overflow: auto; height: auto; }
+
+  /* Toolbar adjustments */
+  .builder-toolbar { flex-wrap: nowrap; padding: 0 8px; }
+  .toolbar-page-label { display: none; }
+  .toolbar-sep { display: none; }
+  .toolbar-actions { display: none; }
+  .toolbar-toggle { display: block; }
+
+  /* Hide sidebar on mobile */
+  .builder-sidebar {
+    position: fixed;
+    top: calc(var(--toolbar-h) + 2px);
+    left: -100%;
+    width: 280px;
+    height: calc(100vh - var(--toolbar-h) - 2px);
+    z-index: 200;
+    transition: left .25s ease;
+    box-shadow: 4px 0 24px rgba(0,0,0,.6);
   }
-  .nav.open { display: flex; }
-  .nav a { padding: 9px 14px; }
-  .nav-toggle { display: block; }
+  .builder-sidebar.open { left: 0; }
 
-  .lang-switch { border-left: none; margin-left: 4px; padding-left: 10px; }
+  .builder-splitter { display: none; }
 
-  .ai-site-banner p { font-size: 0.75rem; letter-spacing: 0.06em; }
+  /* Main content fills full width */
+  .builder-main { width: 100%; }
+  .content-scroll { padding: 14px; }
 
-  .hero { padding: 36px 0 28px; }
-  .hero h1 { font-size: 1.65rem; }
+  .ai-site-banner p { font-size: 0.68rem; letter-spacing: 0.06em; }
+
+  .hero { padding: 28px 16px 24px; }
+  .hero h1 { font-size: 1.5rem; }
   .hero-buttons { flex-direction: column; }
   .btn { justify-content: center; }
 
-  .section { padding: 20px 0; }
+  .region-header { flex-direction: column; align-items: flex-start; gap: 4px; padding: 8px 14px; }
+  .region-body { padding: 14px; }
 
-  .region-header { flex-direction: column; align-items: flex-start; gap: 4px; }
-  .region-body { padding: 16px; }
+  .qa-question { font-size: 0.82rem; padding: 10px 12px; }
+  .qa-answer { padding: 12px 14px; }
 
-  .qa-question { font-size: 0.85rem; padding: 12px 14px 12px 14px; }
-  .qa-answer { padding: 14px 16px; }
+  .monitor-problem { margin: 10px 12px 0; }
+  .monitor-comment { margin: 8px 12px 0; }
+  .monitor-source { margin: 6px 12px 10px; }
+  .monitor-note { margin: 2px 12px 10px; }
 
-  .monitor-problem { margin: 12px 14px 0; }
-  .monitor-comment { margin: 10px 14px 0; }
-  .monitor-source { margin: 8px 14px 12px; }
-  .monitor-note { margin: 2px 14px 12px; }
+  .cta { padding: 24px 14px; }
+  .cta-contacts { flex-direction: column; align-items: center; gap: 12px; }
 
-  .cta-contacts { flex-direction: column; align-items: center; gap: 14px; }
+  .builder-statusbar { padding: 0 10px; gap: 10px; overflow-x: auto; }
 }
+
+/* Mobile sidebar overlay */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 199;
+}
+.sidebar-overlay.active { display: block; }
