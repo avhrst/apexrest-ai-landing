@@ -127,7 +127,10 @@
   <a class="skip-link" href="#seo-intent">Перейти до основного контенту</a>
   <header class="header">
     <div class="container">
-      <div class="logo">APEX<span>REST</span></div>
+      <div class="logo">
+        <div class="logo-icon">AR</div>
+        <span class="logo-name">APEX<span>REST</span></span>
+      </div>
       <button class="nav-toggle" aria-label="Меню">&#9776;</button>
       <nav class="nav" aria-label="Основна навігація">
         <a href="#seo-intent">Про заміну 1С</a>
@@ -170,9 +173,11 @@
   <!-- SEO Intent Block -->
   <section class="section" id="seo-intent">
     <div class="container">
-      <div class="section-header">
-        <h2>1С альтернатива: чим замінити 1С та BAS в Україні</h2>
-        <p>Ключові пошукові наміри бізнесу: <strong>«1с альтернатива»</strong>, <strong>«чим замінити 1с»</strong>, <strong>«альтернативи 1с»</strong>. На цій сторінці ми даємо практичні відповіді, кейси та план міграції на Oracle APEX.</p>
+      <div class="region">
+        <div class="region-header">
+          <span class="region-title">1С альтернатива: чим замінити 1С та BAS в Україні</span>
+          <span class="region-desc">Ключові пошукові наміри бізнесу: <strong>«1с альтернатива»</strong>, <strong>«чим замінити 1с»</strong>, <strong>«альтернативи 1с»</strong>. На цій сторінці ми даємо практичні відповіді, кейси та план міграції на Oracle APEX.</span>
+        </div>
       </div>
     </div>
   </section>
@@ -180,12 +185,13 @@
   <!-- Q&A Section -->
   <section class="section" id="qa">
     <div class="container">
-      <div class="section-header">
-        <h2>Q&A: Oracle APEX як альтернатива 1С та заміна BAS</h2>
-        <p>Відповіді на ключові питання про перехід з 1С/BAS на Oracle APEX для українських компаній</p>
-      </div>
-
-      <div class="qa-list">
+      <div class="region">
+        <div class="region-header">
+          <span class="region-title">Q&amp;A: Oracle APEX як альтернатива 1С та заміна BAS</span>
+          <span class="region-desc">Відповіді на ключові питання про перехід з 1С/BAS на Oracle APEX для українських компаній</span>
+        </div>
+        <div class="region-body">
+        <div class="qa-list">
 
         <article class="qa-card">
           <h3 class="qa-question">Як мігрувати дані з 1С в Oracle APEX?</h3>
@@ -317,19 +323,22 @@
           </div>
         </article>
 
-      </div>
+        </div>
+        </div><!-- /region-body -->
+      </div><!-- /region -->
     </div>
   </section>
 
   <!-- Monitoring Section -->
-  <section class="section section-alt" id="monitoring">
+  <section class="section" id="monitoring">
     <div class="container">
-      <div class="section-header">
-        <h2>Моніторинг ринку: хто шукає альтернативи 1С та заміну BAS</h2>
-        <p>Огляд публікацій та кейсів: чому український бізнес масово переходить з 1С/BAS і де Oracle APEX може стати рішенням</p>
-      </div>
-
-      <div class="monitor-grid">
+      <div class="region">
+        <div class="region-header">
+          <span class="region-title">Моніторинг ринку: хто шукає альтернативи 1С та заміну BAS</span>
+          <span class="region-desc">Огляд публікацій та кейсів: чому український бізнес масово переходить з 1С/BAS і де Oracle APEX може стати рішенням</span>
+        </div>
+        <div class="region-body">
+        <div class="monitor-grid">
 
         <article class="monitor-card">
           <div class="monitor-tag">Законодавство</div>
@@ -416,57 +425,27 @@
           <p class="monitor-note">Примітка: доступ до повного тексту публікації може вимагати авторизації в LinkedIn.</p>
         </article>
 
-        <article class="monitor-card">
-          <div class="monitor-tag">Oracle APEX в Україні</div>
-          <h3>Megasport: управління мережею з 45 магазинів на Oracle APEX</h3>
-          <div class="monitor-problem">
-            <strong>Масштаб завдання:</strong> Megasport — найбільша в Україні мультибрендова мережа спортивних магазинів (45 торгових точок у 27 містах). Для управління такою мережею потрібна система, здатна консолідувати дані з десятків баз одночасно: залишки, продажі, поставки, взаєморозрахунки з постачальниками, аналітика.
-          </div>
-          <div class="monitor-comment">
-            <strong>Рішення на Oracle APEX:</strong> Система побудована на 20 окремих базах даних для магазинів і центральній Oracle XE. APEX забезпечує єдиний web-інтерфейс без встановлення клієнтського ПЗ — управляти мережею можна з будь-якого пристрою через браузер. Вбудована аналітика охоплює прогнозування, контроль залишків, інвойси та роботу з клієнтами.
-          </div>
-          <a class="monitor-source" href="https://apex.rest/" target="_blank" rel="noopener">Джерело: APEXREST — хмарні веб-застосунки на Oracle APEX</a>
-        </article>
-
-        <article class="monitor-card">
-          <div class="monitor-tag">Oracle APEX в Україні</div>
-          <h3>Kernel: Oracle-платформа для агропромислового холдингу світового масштабу</h3>
-          <div class="monitor-problem">
-            <strong>Масштаб завдання:</strong> Kernel — один з найбільших агропромислових холдингів України та світовий лідер у виробництві соняшникової олії. Компанія оперує елеваторами, портовою інфраструктурою, логістикою та виробничими активами по всій Україні. Задачі такого масштабу вимагають надійної корпоративної платформи з єдиним джерелом даних.
-          </div>
-          <div class="monitor-comment">
-            <strong>Коментар APEXREST:</strong> Kernel використовує Oracle як основу корпоративної IT-інфраструктури. Oracle APEX дозволяє будувати операційні портали, дашборди та управлінські системи безпосередньо поверх Oracle Database — без дублювання даних і зайвого middleware. Для холдингів із розподіленою структурою це оптимальна модель: єдина БД, web-доступ, мінімальна підтримка.
-          </div>
-          <a class="monitor-source" href="https://www.kernel.ua/ua/" target="_blank" rel="noopener">Джерело: Kernel Holding — офіційний сайт</a>
-        </article>
-
-        <article class="monitor-card">
-          <div class="monitor-tag">Oracle APEX в Україні</div>
-          <h3>Kyivstar: Oracle у технологічному стеку найбільшого мобільного оператора</h3>
-          <div class="monitor-problem">
-            <strong>Масштаб завдання:</strong> Kyivstar — найбільший мобільний оператор України (понад 26 млн абонентів). IT-команда Kyivstar.Tech (600+ фахівців) обслуговує складну телекомунікаційну інфраструктуру: BSS/OSS-системи, білінг, CRM, внутрішні операційні інструменти. Оператор успішно завершив масштабну міграцію BSS на сучасну цифрову платформу.
-          </div>
-          <div class="monitor-comment">
-            <strong>Коментар APEXREST:</strong> Oracle є підтвердженою частиною технологічного стеку Kyivstar поряд із AWS, Azure та Kubernetes. Oracle APEX органічно доповнює такий стек: швидка розробка внутрішніх порталів, операційних дашбордів та інструментів автоматизації без навантаження на основні продуктові команди. Для телеком-компаній з великими Oracle DB — це природний вибір low-code інструментарію.
-          </div>
-          <a class="monitor-source" href="https://kyivstar.tech/en/services" target="_blank" rel="noopener">Джерело: Kyivstar.Tech — технологічні послуги</a>
-        </article>
-
-      </div>
+        </div><!-- /monitor-grid -->
+        </div><!-- /region-body -->
+      </div><!-- /region -->
     </div>
   </section>
 
   <!-- News Section -->
   <section class="section" id="news">
     <div class="container">
-      <div class="section-header">
-        <h2>Останні новини Oracle APEX та AI</h2>
-        <p>Короткі апдейти ринку та платформи. Блок оновлюється з <code>news.json</code>.</p>
-      </div>
-      <div class="news-grid" id="news-list" aria-live="polite"></div>
-      <noscript>
-        <p class="news-fallback">Увімкніть JavaScript, щоб бачити актуальні новини.</p>
-      </noscript>
+      <div class="region">
+        <div class="region-header">
+          <span class="region-title">Останні новини Oracle APEX та AI</span>
+          <span class="region-desc">Короткі апдейти ринку та платформи. Блок оновлюється з <code>news.json</code>.</span>
+        </div>
+        <div class="region-body">
+          <div class="news-grid" id="news-list" aria-live="polite"></div>
+          <noscript>
+            <p class="news-fallback">Увімкніть JavaScript, щоб бачити актуальні новини.</p>
+          </noscript>
+        </div><!-- /region-body -->
+      </div><!-- /region -->
     </div>
   </section>
 
