@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-03-13",
+    "title": "APEX Connect 2026: конференція з фокусом на AI та APEXlang",
+    "summary": "Щорічна конференція APEX Connect відбудеться 18–20 травня в Heide Park Soltau (Німеччина). Ключовий доповідь — «Low-code with APEX 2026 — The State of Play» — охоплює поєднання APEX з AI, нову мову APEXlang, функції для Interactive Reports, Map Regions, Dynamic Actions, REST-інтеграції та PL/SQL API.",
+    "tag": "Подія"
+  },
+  {
+    "date": "2026-03-13",
+    "title": "Oracle APEX AI Day: серія подій у 10 країнах з прев'ю APEX 26.1",
+    "summary": "Oracle проводить серію APEX AI Day у 10 країнах світу — наступна подія 26 березня у Коломбо (Шрі-Ланка). Учасники отримають ранній доступ до можливостей APEX 26.1: AI-інструменти, Interactive Reports з природною мовою, нова тема Universal Theme та практичні лабораторії від команди розробників Oracle APEX.",
+    "tag": "Oracle APEX"
+  },
+  {
     "date": "2026-03-12",
     "title": "APEXlang: текстовий формат для побудови APEX-застосунків",
     "summary": "Oracle представила APEXlang — відкриту специфікацію у форматі YAML/JSON (.apx-файли). Весь застосунок описується текстом: сторінки, регіони, кнопки, SQL. Синхронізація з базою — через компілятор; підтримка SQLcl і SQL Developer. Це відкриває file-based workflow та AI-генерацію інтерфейсу через природну мову.",
@@ -10,17 +22,5 @@
     "title": "Oracle APEX 26.1: AI-центричний реліз і новий Universal Theme",
     "summary": "Наступна версія Oracle APEX отримає назву 26.1 і стане поворотним релізом. Ключові зміни: APEXlang для code-based розробки, AI у Interactive Reports (фільтри та чарти через природну мову), вбудований QA-асистент з live-перевірками та оновлений Universal Theme з мобільними вдосконаленнями.",
     "tag": "Oracle APEX"
-  },
-  {
-    "date": "2026-03-08",
-    "title": "Oracle APEX 24.2: AI Assistant у build-in workflow",
-    "summary": "У релізі 24.2 Oracle посилила AI-можливості в APEX: генерація SQL/PLSQL підказок, швидке створення UI-компонентів та інтеграція з LLM для бізнес-асистентів.",
-    "tag": "Oracle APEX"
-  },
-  {
-    "date": "2026-03-08",
-    "title": "OCI розширює AI-сервіси для корпоративних інтеграцій",
-    "summary": "Oracle Cloud Infrastructure додала нові керовані AI-сервіси для автоматизації документообігу та підтримки клієнтів. Це спрощує інтеграцію AI у APEX-застосунки через API.",
-    "tag": "OCI"
   }
 ]
