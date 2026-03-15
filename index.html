@@ -125,186 +125,35 @@
 
   <a class="skip-link" href="#seo-intent">Перейти до основного контенту</a>
 
-  <!-- ===== TOOLBAR (APEX Page Designer toolbar) ===== -->
-  <header class="builder-toolbar">
-    <div class="toolbar-app-icon">AR</div>
-    <span class="toolbar-app-name">APEX<span>REST</span></span>
-    <span class="toolbar-sep">›</span>
-    <span class="toolbar-page-label">Page Designer — Сторінка 1: Головна</span>
-    <span class="toolbar-spacer"></span>
-    <div class="toolbar-actions">
-      <button class="toolbar-btn btn-save" title="Зберегти">Save</button>
-      <button class="toolbar-btn btn-run" title="Запустити додаток">▶ Run</button>
-      <button class="toolbar-btn" title="Утиліти">⚙</button>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">AR</div>
+        <span class="logo-text">APEX<span>REST</span></span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="#qa">Q&A</a>
+        <a href="#monitoring">Моніторинг</a>
+        <a href="#news">Новини</a>
+        <a href="#contact">Контакт</a>
+        <div class="lang-switch">
+          <a href="/" class="active" data-lang="uk">UA</a>
+          <a href="/en/" data-lang="en">EN</a>
+        </div>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Меню">&#9776;</button>
     </div>
-    <div class="toolbar-lang">
-      <a href="/" class="active" data-lang="uk">UA</a>
-      <a href="/en/" data-lang="en">EN</a>
-    </div>
-    <button class="toolbar-toggle" aria-label="Меню">☰</button>
   </header>
 
   <!-- ===== AI BANNER ===== -->
-  <section class="ai-site-banner">
-    <p>⚡ ЦЕЙ САЙТ СТВОРЮЄТЬСЯ ТА АДМІНІСТРУЄТЬСЯ ШІ АГЕНТОМ</p>
-  </section>
+  <div class="ai-banner">
+    <p>&#9889; ЦЕЙ САЙТ СТВОРЮЄТЬСЯ ТА АДМІНІСТРУЄТЬСЯ ШІ АГЕНТОМ</p>
+  </div>
 
-  <!-- ===== THREE-PANE LAYOUT ===== -->
-  <div class="builder-layout">
-
-    <!-- Left Sidebar — Rendering Tree -->
-    <aside class="builder-sidebar" id="builder-sidebar">
-      <div class="pane-tabs">
-        <button class="pane-tab active">Rendering</button>
-        <button class="pane-tab">Dynamic Actions</button>
-        <button class="pane-tab">Processing</button>
-      </div>
-      <div class="tree-container">
-        <div class="tree-section">Page Body</div>
-
-        <a href="#hero-section" class="tree-item active" data-level="0">
-          <span class="tree-toggle expanded">▸</span>
-          <span class="tree-icon page">H</span>
-          <span class="tree-label">Hero Region</span>
-        </a>
-
-        <a href="#seo-intent" class="tree-item" data-level="0">
-          <span class="tree-toggle expanded">▸</span>
-          <span class="tree-icon region">R</span>
-          <span class="tree-label">SEO Intent Block</span>
-        </a>
-
-        <a href="#qa" class="tree-item" data-level="0">
-          <span class="tree-toggle expanded">▸</span>
-          <span class="tree-icon region">R</span>
-          <span class="tree-label">Q&amp;A Region</span>
-        </a>
-        <a href="#qa-1" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Міграція даних</span>
-        </a>
-        <a href="#qa-2" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Бухгалтерський облік</span>
-        </a>
-        <a href="#qa-3" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Операційний облік</span>
-        </a>
-        <a href="#qa-4" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Кастомізація</span>
-        </a>
-        <a href="#qa-5" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Інтеграції</span>
-        </a>
-        <a href="#qa-6" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Безпека</span>
-        </a>
-        <a href="#qa-7" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Вартість TCO</span>
-        </a>
-        <a href="#qa-8" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Строки запуску</span>
-        </a>
-        <a href="#qa-9" class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">Q</span>
-          <span class="tree-label">Ризики міграції</span>
-        </a>
-
-        <a href="#monitoring" class="tree-item" data-level="0">
-          <span class="tree-toggle expanded">▸</span>
-          <span class="tree-icon region">R</span>
-          <span class="tree-label">Моніторинг ринку</span>
-        </a>
-        <a class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">M</span>
-          <span class="tree-label">Заборона 1С</span>
-        </a>
-        <a class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">M</span>
-          <span class="tree-label">Огляд альтернатив</span>
-        </a>
-        <a class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">M</span>
-          <span class="tree-label">Безпека ПЗ</span>
-        </a>
-        <a class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">M</span>
-          <span class="tree-label">ERP-міграція</span>
-        </a>
-        <a class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">M</span>
-          <span class="tree-label">Малий бізнес</span>
-        </a>
-        <a class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">M</span>
-          <span class="tree-label">Міграція без зупинки</span>
-        </a>
-        <a class="tree-item" data-level="1">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon item">M</span>
-          <span class="tree-label">Кібератака 1C-Rarus</span>
-        </a>
-
-        <a href="#news" class="tree-item" data-level="0">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon region">R</span>
-          <span class="tree-label">Новини</span>
-        </a>
-
-        <a href="#contact" class="tree-item" data-level="0">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon button">C</span>
-          <span class="tree-label">Контакти</span>
-        </a>
-
-        <div class="tree-section">Page Footer</div>
-        <a class="tree-item" data-level="0">
-          <span class="tree-toggle leaf">▸</span>
-          <span class="tree-icon page">F</span>
-          <span class="tree-label">Footer Bar</span>
-        </a>
-      </div>
-    </aside>
-
-    <!-- Mobile sidebar overlay -->
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-    <!-- Main Content Pane -->
-    <main class="builder-main">
-      <div class="content-tabs">
-        <span class="content-tab active">Layout</span>
-        <span class="content-tab">Component View</span>
-        <span class="content-tab">Messages</span>
-        <span class="content-tab">Page Search</span>
-      </div>
-
-      <div class="content-scroll">
-        <div class="container">
-
-  <!-- Hero -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="hero-section">
-    <div class="hero-content">
+    <div class="hero-inner">
       <div class="hero-badge">Oracle APEX vs 1C</div>
       <h1>Чому <span class="highlight">Oracle APEX</span> може замінити <span class="highlight">1С</span></h1>
       <p>Повний розбір для українського бізнесу: альтернативи 1С, заміна BAS, міграція, облік, безпека, вартість та реальні кейси переходу на сучасну платформу.</p>
@@ -315,303 +164,307 @@
     </div>
   </section>
 
-  <!-- SEO Intent Block -->
+  <main>
+
+  <!-- ===== SEO INTENT ===== -->
   <section class="section" id="seo-intent">
-    <div class="region">
-      <div class="region-header">
-        <span class="region-title">1С альтернатива: чим замінити 1С та BAS в Україні</span>
-        <span class="region-desc">Ключові пошукові наміри бізнесу: <strong>«1с альтернатива»</strong>, <strong>«чим замінити 1с»</strong>, <strong>«альтернативи 1с»</strong>. На цій сторінці ми даємо практичні відповіді, кейси та план міграції на Oracle APEX.</span>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Альтернатива 1С</div>
+        <h2 class="section-title">1С альтернатива: чим замінити 1С та BAS в Україні</h2>
+        <p class="section-desc">Ключові пошукові наміри бізнесу: <strong>«1с альтернатива»</strong>, <strong>«чим замінити 1с»</strong>, <strong>«альтернативи 1с»</strong>. На цій сторінці ми даємо практичні відповіді, кейси та план міграції на Oracle APEX.</p>
       </div>
     </div>
   </section>
 
-  <!-- Q&A Section -->
+  <!-- ===== Q&A ===== -->
   <section class="section" id="qa">
-    <div class="region">
-      <div class="region-header">
-        <span class="region-title">Q&amp;A: Oracle APEX як альтернатива 1С та заміна BAS</span>
-        <span class="region-desc">Відповіді на ключові питання про перехід з 1С/BAS на Oracle APEX для українських компаній</span>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Питання та відповіді</div>
+        <h2 class="section-title">Q&A: Oracle APEX як альтернатива 1С та заміна BAS</h2>
+        <p class="section-desc">Відповіді на ключові питання про перехід з 1С/BAS на Oracle APEX для українських компаній</p>
       </div>
-      <div class="region-body">
+
       <div class="qa-list">
 
-      <article class="qa-card" id="qa-1">
-        <h3 class="qa-question">Як мігрувати дані з 1С в Oracle APEX?</h3>
-        <div class="qa-answer">
-          <p>Oracle APEX працює на базі Oracle Database, яка має потужні інструменти для імпорту даних з будь-яких джерел. Типовий процес міграції з 1С:</p>
-          <ul>
-            <li><strong>Вивантаження даних</strong> з 1С у стандартних форматах (CSV, XML, JSON) або через прямий доступ до бази MS SQL / PostgreSQL, яку використовує 1С.</li>
-            <li><strong>Маппінг і трансформація</strong> — перетворення структур 1С (довідники, регістри, документи) у реляційні таблиці Oracle Database за допомогою SQL*Loader, Oracle Data Pump або ETL-інструментів.</li>
-            <li><strong>Валідація та звірка</strong> — перевірка цілісності перенесених даних, контрольні суми по залишках, оборотах, довідниках.</li>
-            <li><strong>Поступовий перехід</strong> — можливість паралельної роботи обох систем протягом перехідного періоду.</li>
-          </ul>
-          <p>Oracle Database підтримує роботу з великими обсягами даних (десятки терабайт), що знімає обмеження масштабу, типові для 1С.</p>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-1">
+          <h3 class="qa-question">Як мігрувати дані з 1С в Oracle APEX?</h3>
+          <div class="qa-answer">
+            <p>Oracle APEX працює на базі Oracle Database, яка має потужні інструменти для імпорту даних з будь-яких джерел. Типовий процес міграції з 1С:</p>
+            <ul>
+              <li><strong>Вивантаження даних</strong> з 1С у стандартних форматах (CSV, XML, JSON) або через прямий доступ до бази MS SQL / PostgreSQL, яку використовує 1С.</li>
+              <li><strong>Маппінг і трансформація</strong> — перетворення структур 1С (довідники, регістри, документи) у реляційні таблиці Oracle Database за допомогою SQL*Loader, Oracle Data Pump або ETL-інструментів.</li>
+              <li><strong>Валідація та звірка</strong> — перевірка цілісності перенесених даних, контрольні суми по залишках, оборотах, довідниках.</li>
+              <li><strong>Поступовий перехід</strong> — можливість паралельної роботи обох систем протягом перехідного періоду.</li>
+            </ul>
+            <p>Oracle Database підтримує роботу з великими обсягами даних (десятки терабайт), що знімає обмеження масштабу, типові для 1С.</p>
+          </div>
+        </article>
 
-      <article class="qa-card" id="qa-2">
-        <h3 class="qa-question">Чи може Oracle APEX замінити 1С для бухгалтерського обліку?</h3>
-        <div class="qa-answer">
-          <p>Oracle APEX — це low-code платформа для швидкої розробки бізнес-додатків, а не готова бухгалтерська програма. Проте на Oracle APEX можна побудувати повноцінну облікову систему, адаптовану під конкретний бізнес:</p>
-          <ul>
-            <li><strong>План рахунків і проводки</strong> — реалізуються на рівні Oracle Database з повним контролем структури.</li>
-            <li><strong>Первинні документи</strong> — форми вводу (накладні, акти, рахунки) створюються через APEX за години, а не тижні.</li>
-            <li><strong>Звітність</strong> — Oracle Database + APEX дозволяють будувати будь-які звіти (оборотно-сальдові відомості, баланс, P&L) з продуктивністю, недоступною для 1С.</li>
-            <li><strong>Податковий облік</strong> — інтеграція з державними сервісами (податкові накладні, ПРРО) через REST API.</li>
-          </ul>
-          <p>Ключова перевага: система проєктується під ваші процеси, а не навпаки.</p>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-2">
+          <h3 class="qa-question">Чи може Oracle APEX замінити 1С для бухгалтерського обліку?</h3>
+          <div class="qa-answer">
+            <p>Oracle APEX — це low-code платформа для швидкої розробки бізнес-додатків, а не готова бухгалтерська програма. Проте на Oracle APEX можна побудувати повноцінну облікову систему, адаптовану під конкретний бізнес:</p>
+            <ul>
+              <li><strong>План рахунків і проводки</strong> — реалізуються на рівні Oracle Database з повним контролем структури.</li>
+              <li><strong>Первинні документи</strong> — форми вводу (накладні, акти, рахунки) створюються через APEX за години, а не тижні.</li>
+              <li><strong>Звітність</strong> — Oracle Database + APEX дозволяють будувати будь-які звіти (оборотно-сальдові відомості, баланс, P&L) з продуктивністю, недоступною для 1С.</li>
+              <li><strong>Податковий облік</strong> — інтеграція з державними сервісами (податкові накладні, ПРРО) через REST API.</li>
+            </ul>
+            <p>Ключова перевага: система проєктується під ваші процеси, а не навпаки.</p>
+          </div>
+        </article>
 
-      <article class="qa-card" id="qa-3">
-        <h3 class="qa-question">А що з операційним обліком — склад, виробництво, логістика?</h3>
-        <div class="qa-answer">
-          <p>Oracle APEX ідеально підходить для операційних систем, де 1С часто стає вузьким місцем:</p>
-          <ul>
-            <li><strong>Складський облік</strong> — управління залишками, партіями, серійними номерами з реальним часом оновлення та підтримкою штрих-кодів/QR через мобільний APEX.</li>
-            <li><strong>Виробництво</strong> — специфікації, маршрутні карти, облік сировини та готової продукції на рівні Oracle Database з промисловою надійністю.</li>
-            <li><strong>Логістика</strong> — маршрутизація, трекінг, інтеграція з поштовими операторами (Нова Пошта API тощо).</li>
-            <li><strong>CRM-функціонал</strong> — управління клієнтами, воронка продажів, автоматизація комунікацій.</li>
-          </ul>
-          <p>Oracle Database обробляє тисячі транзакцій на секунду — це рівень, якого 1С не досягає навіть у серверному варіанті.</p>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-3">
+          <h3 class="qa-question">А що з операційним обліком — склад, виробництво, логістика?</h3>
+          <div class="qa-answer">
+            <p>Oracle APEX ідеально підходить для операційних систем, де 1С часто стає вузьким місцем:</p>
+            <ul>
+              <li><strong>Складський облік</strong> — управління залишками, партіями, серійними номерами з реальним часом оновлення та підтримкою штрих-кодів/QR через мобільний APEX.</li>
+              <li><strong>Виробництво</strong> — специфікації, маршрутні карти, облік сировини та готової продукції на рівні Oracle Database з промисловою надійністю.</li>
+              <li><strong>Логістика</strong> — маршрутизація, трекінг, інтеграція з поштовими операторами (Нова Пошта API тощо).</li>
+              <li><strong>CRM-функціонал</strong> — управління клієнтами, воронка продажів, автоматизація комунікацій.</li>
+            </ul>
+            <p>Oracle Database обробляє тисячі транзакцій на секунду — це рівень, якого 1С не досягає навіть у серверному варіанті.</p>
+          </div>
+        </article>
 
-      <article class="qa-card" id="qa-4">
-        <h3 class="qa-question">Наскільки Oracle APEX гнучкий у кастомізації порівняно з 1С?</h3>
-        <div class="qa-answer">
-          <p>Це одна з найсильніших переваг Oracle APEX перед 1С:</p>
-          <ul>
-            <li><strong>Low-code підхід</strong> — створення форм, звітів, дашбордів без глибокого програмування. Зміни впроваджуються за години замість днів.</li>
-            <li><strong>Повна свобода UI</strong> — інтерфейс не обмежений шаблонами 1С. Можна створювати сучасні веб-додатки з адаптивним дизайном.</li>
-            <li><strong>SQL і PL/SQL</strong> — для складної бізнес-логіки доступна повна потужність Oracle Database, включно з аналітичними функціями, матеріалізованими представленнями, тригерами.</li>
-            <li><strong>REST API з коробки</strong> — кожна таблиця або процедура може стати API-ендпоінтом за кілька кліків.</li>
-            <li><strong>Розширення через JavaScript/CSS</strong> — повний контроль над фронтендом при потребі.</li>
-          </ul>
-          <p>На відміну від 1С, де кастомізація часто призводить до «зоопарку конфігурацій» і проблем з оновленнями, APEX-додатки залишаються чистими і підтримуваними.</p>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-4">
+          <h3 class="qa-question">Наскільки Oracle APEX гнучкий у кастомізації порівняно з 1С?</h3>
+          <div class="qa-answer">
+            <p>Це одна з найсильніших переваг Oracle APEX перед 1С:</p>
+            <ul>
+              <li><strong>Low-code підхід</strong> — створення форм, звітів, дашбордів без глибокого програмування. Зміни впроваджуються за години замість днів.</li>
+              <li><strong>Повна свобода UI</strong> — інтерфейс не обмежений шаблонами 1С. Можна створювати сучасні веб-додатки з адаптивним дизайном.</li>
+              <li><strong>SQL і PL/SQL</strong> — для складної бізнес-логіки доступна повна потужність Oracle Database, включно з аналітичними функціями, матеріалізованими представленнями, тригерами.</li>
+              <li><strong>REST API з коробки</strong> — кожна таблиця або процедура може стати API-ендпоінтом за кілька кліків.</li>
+              <li><strong>Розширення через JavaScript/CSS</strong> — повний контроль над фронтендом при потребі.</li>
+            </ul>
+            <p>На відміну від 1С, де кастомізація часто призводить до «зоопарку конфігурацій» і проблем з оновленнями, APEX-додатки залишаються чистими і підтримуваними.</p>
+          </div>
+        </article>
 
-      <article class="qa-card" id="qa-5">
-        <h3 class="qa-question">Як Oracle APEX інтегрується з іншими системами?</h3>
-        <div class="qa-answer">
-          <p>Інтеграція — це сфера, де Oracle APEX значно випереджає 1С:</p>
-          <ul>
-            <li><strong>REST API</strong> — вбудована підтримка як споживання, так і публікації REST-сервісів. Підключення до будь-якого зовнішнього API (банки, CRM, пошта, держсервіси) без додаткових модулів.</li>
-            <li><strong>Oracle Integration Cloud</strong> — для складних сценаріїв інтеграції з SAP, Salesforce, іншими ERP через готові конектори.</li>
-            <li><strong>Database Links</strong> — прямий доступ до інших баз даних (PostgreSQL, MySQL, MS SQL) на рівні SQL-запитів.</li>
-            <li><strong>Webhook та Events</strong> — реакція на зовнішні події в реальному часі.</li>
-            <li><strong>AI-інтеграція</strong> — з Oracle APEX 24.2 підтримується вбудована інтеграція з LLM (RAG, генерація тексту, AI-асистенти) прямо в бізнес-додатках.</li>
-          </ul>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-5">
+          <h3 class="qa-question">Як Oracle APEX інтегрується з іншими системами?</h3>
+          <div class="qa-answer">
+            <p>Інтеграція — це сфера, де Oracle APEX значно випереджає 1С:</p>
+            <ul>
+              <li><strong>REST API</strong> — вбудована підтримка як споживання, так і публікації REST-сервісів. Підключення до будь-якого зовнішнього API (банки, CRM, пошта, держсервіси) без додаткових модулів.</li>
+              <li><strong>Oracle Integration Cloud</strong> — для складних сценаріїв інтеграції з SAP, Salesforce, іншими ERP через готові конектори.</li>
+              <li><strong>Database Links</strong> — прямий доступ до інших баз даних (PostgreSQL, MySQL, MS SQL) на рівні SQL-запитів.</li>
+              <li><strong>Webhook та Events</strong> — реакція на зовнішні події в реальному часі.</li>
+              <li><strong>AI-інтеграція</strong> — з Oracle APEX 24.2 підтримується вбудована інтеграція з LLM (RAG, генерація тексту, AI-асистенти) прямо в бізнес-додатках.</li>
+            </ul>
+          </div>
+        </article>
 
-      <article class="qa-card" id="qa-6">
-        <h3 class="qa-question">Наскільки безпечний Oracle APEX порівняно з 1С?</h3>
-        <div class="qa-answer">
-          <p>Безпека — критичний фактор, особливо в контексті заборони російського ПЗ в Україні:</p>
-          <ul>
-            <li><strong>Відсутність ризику бекдорів</strong> — Oracle APEX та Oracle Database є продуктами американської корпорації Oracle з прозорою політикою безпеки та регулярними аудитами (SOC 2, ISO 27001).</li>
-            <li><strong>Гранулярний контроль доступу</strong> — ролі, привілеї, Row-Level Security на рівні бази даних. Кожна дія може бути обмежена і залогована.</li>
-            <li><strong>Шифрування</strong> — Transparent Data Encryption (TDE) для даних at rest, SSL/TLS для даних у транзиті.</li>
-            <li><strong>Аудит</strong> — вбудований Oracle Audit Trail фіксує кожну дію користувача для повної відповідності комплаєнс-вимогам.</li>
-            <li><strong>Захист від SQL-ін'єкцій та XSS</strong> — APEX має вбудовані механізми захисту від типових веб-вразливостей.</li>
-          </ul>
-          <p>1С, навіть у адаптованих версіях (BAS), технічно базується на платформі російського виробника, що створює ризики для конфіденційності даних.</p>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-6">
+          <h3 class="qa-question">Наскільки безпечний Oracle APEX порівняно з 1С?</h3>
+          <div class="qa-answer">
+            <p>Безпека — критичний фактор, особливо в контексті заборони російського ПЗ в Україні:</p>
+            <ul>
+              <li><strong>Відсутність ризику бекдорів</strong> — Oracle APEX та Oracle Database є продуктами американської корпорації Oracle з прозорою політикою безпеки та регулярними аудитами (SOC 2, ISO 27001).</li>
+              <li><strong>Гранулярний контроль доступу</strong> — ролі, привілеї, Row-Level Security на рівні бази даних. Кожна дія може бути обмежена і залогована.</li>
+              <li><strong>Шифрування</strong> — Transparent Data Encryption (TDE) для даних at rest, SSL/TLS для даних у транзиті.</li>
+              <li><strong>Аудит</strong> — вбудований Oracle Audit Trail фіксує кожну дію користувача для повної відповідності комплаєнс-вимогам.</li>
+              <li><strong>Захист від SQL-ін'єкцій та XSS</strong> — APEX має вбудовані механізми захисту від типових веб-вразливостей.</li>
+            </ul>
+            <p>1С, навіть у адаптованих версіях (BAS), технічно базується на платформі російського виробника, що створює ризики для конфіденційності даних.</p>
+          </div>
+        </article>
 
-      <article class="qa-card" id="qa-7">
-        <h3 class="qa-question">Яка вартість володіння Oracle APEX у порівнянні з 1С?</h3>
-        <div class="qa-answer">
-          <p>Вартість — частий аргумент на користь 1С, але при детальному аналізі картина інша:</p>
-          <ul>
-            <li><strong>Ліцензія APEX: безкоштовно</strong> — Oracle APEX входить до складу будь-якої ліцензії Oracle Database, включно з безкоштовною Oracle Database XE (до 20 ГБ даних).</li>
-            <li><strong>Oracle Cloud Free Tier</strong> — безкоштовний Oracle Autonomous Database у хмарі (Always Free), достатній для малого та середнього бізнесу.</li>
-            <li><strong>Хмарний варіант</strong> — Oracle Cloud Infrastructure пропонує APEX-хостинг від ~$300/міс для Production-навантажень.</li>
-            <li><strong>Розробка</strong> — low-code підхід APEX скорочує час розробки у 3-5 разів порівняно з традиційним програмуванням, що означає менші витрати на впровадження.</li>
-            <li><strong>Підтримка</strong> — відсутність «1С-програмістів» і їхнього специфічного ринку. APEX-розробники працюють зі стандартними технологіями (SQL, PL/SQL, REST).</li>
-          </ul>
-          <p>Загальна вартість володіння (TCO) для 1С часто недооцінюється: ліцензії, сервер, адміністратор, оновлення конфігурацій, інтеграції — все це створює приховані витрати.</p>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-7">
+          <h3 class="qa-question">Яка вартість володіння Oracle APEX у порівнянні з 1С?</h3>
+          <div class="qa-answer">
+            <p>Вартість — частий аргумент на користь 1С, але при детальному аналізі картина інша:</p>
+            <ul>
+              <li><strong>Ліцензія APEX: безкоштовно</strong> — Oracle APEX входить до складу будь-якої ліцензії Oracle Database, включно з безкоштовною Oracle Database XE (до 20 ГБ даних).</li>
+              <li><strong>Oracle Cloud Free Tier</strong> — безкоштовний Oracle Autonomous Database у хмарі (Always Free), достатній для малого та середнього бізнесу.</li>
+              <li><strong>Хмарний варіант</strong> — Oracle Cloud Infrastructure пропонує APEX-хостинг від ~$300/міс для Production-навантажень.</li>
+              <li><strong>Розробка</strong> — low-code підхід APEX скорочує час розробки у 3-5 разів порівняно з традиційним програмуванням, що означає менші витрати на впровадження.</li>
+              <li><strong>Підтримка</strong> — відсутність «1С-програмістів» і їхнього специфічного ринку. APEX-розробники працюють зі стандартними технологіями (SQL, PL/SQL, REST).</li>
+            </ul>
+            <p>Загальна вартість володіння (TCO) для 1С часто недооцінюється: ліцензії, сервер, адміністратор, оновлення конфігурацій, інтеграції — все це створює приховані витрати.</p>
+          </div>
+        </article>
 
-      <article class="qa-card" id="qa-8">
-        <h3 class="qa-question">Як швидко можна запустити Oracle APEX замість 1С?</h3>
-        <div class="qa-answer">
-          <p>Швидкість запуску залежить від масштабу, але Oracle APEX дозволяє значно скоротити строки:</p>
-          <ul>
-            <li><strong>MVP за 2-4 тижні</strong> — мінімально робочий продукт (основні форми, звіти, бізнес-логіка) завдяки low-code підходу APEX.</li>
-            <li><strong>Повноцінна система за 2-4 місяці</strong> — для середнього бізнесу з типовими процесами (облік, склад, CRM).</li>
-            <li><strong>Поетапна міграція</strong> — не обовʼязково переносити все одразу. Можна починати з критичних модулів, поступово розширюючи функціонал.</li>
-            <li><strong>Хмарний старт за хвилини</strong> — Oracle Cloud дозволяє розгорнути середовище APEX за кілька хвилин без закупівлі серверів.</li>
-          </ul>
-          <p>Для порівняння: впровадження типової конфігурації 1С зазвичай займає 3-6 місяців з урахуванням кастомізації та навчання.</p>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-8">
+          <h3 class="qa-question">Як швидко можна запустити Oracle APEX замість 1С?</h3>
+          <div class="qa-answer">
+            <p>Швидкість запуску залежить від масштабу, але Oracle APEX дозволяє значно скоротити строки:</p>
+            <ul>
+              <li><strong>MVP за 2-4 тижні</strong> — мінімально робочий продукт (основні форми, звіти, бізнес-логіка) завдяки low-code підходу APEX.</li>
+              <li><strong>Повноцінна система за 2-4 місяці</strong> — для середнього бізнесу з типовими процесами (облік, склад, CRM).</li>
+              <li><strong>Поетапна міграція</strong> — не обовʼязково переносити все одразу. Можна починати з критичних модулів, поступово розширюючи функціонал.</li>
+              <li><strong>Хмарний старт за хвилини</strong> — Oracle Cloud дозволяє розгорнути середовище APEX за кілька хвилин без закупівлі серверів.</li>
+            </ul>
+            <p>Для порівняння: впровадження типової конфігурації 1С зазвичай займає 3-6 місяців з урахуванням кастомізації та навчання.</p>
+          </div>
+        </article>
 
-      <article class="qa-card" id="qa-9">
-        <h3 class="qa-question">Які ризики переходу з 1С на Oracle APEX?</h3>
-        <div class="qa-answer">
-          <p>Будь-яка міграція має ризики, і важливо їх враховувати:</p>
-          <ul>
-            <li><strong>Відсутність готового «коробкового» рішення</strong> — Oracle APEX це платформа, а не готовий продукт. Потрібна розробка під конкретні потреби. Це водночас і ризик (потрібен час), і перевага (немає обмежень).</li>
-            <li><strong>Навчання команди</strong> — користувачі звикли до інтерфейсу 1С. Потрібен перехідний період та навчання, хоча веб-інтерфейс APEX зазвичай інтуїтивніший.</li>
-            <li><strong>Менший ринок спеціалістів в Україні</strong> — APEX-розробників менше, ніж 1С-програмістів. Проте SQL/PL/SQL спеціалісти є, і навчання APEX займає тижні, а не місяці.</li>
-            <li><strong>Залежність від Oracle</strong> — vendor lock-in існує, але Oracle — публічна американська компанія з 47+ роками на ринку та довгостроковою підтримкою продуктів.</li>
-            <li><strong>Інтеграція з українськими сервісами</strong> — деякі інтеграції (податкова звітність, ПРРО) потрібно реалізувати самостійно через API, на відміну від готових модулів 1С.</li>
-          </ul>
-          <p><strong>Мітигація:</strong> поетапний підхід до міграції, прототипування критичних процесів, паралельна робота систем на перехідному етапі.</p>
-        </div>
-      </article>
+        <article class="qa-card" id="qa-9">
+          <h3 class="qa-question">Які ризики переходу з 1С на Oracle APEX?</h3>
+          <div class="qa-answer">
+            <p>Будь-яка міграція має ризики, і важливо їх враховувати:</p>
+            <ul>
+              <li><strong>Відсутність готового «коробкового» рішення</strong> — Oracle APEX це платформа, а не готовий продукт. Потрібна розробка під конкретні потреби. Це водночас і ризик (потрібен час), і перевага (немає обмежень).</li>
+              <li><strong>Навчання команди</strong> — користувачі звикли до інтерфейсу 1С. Потрібен перехідний період та навчання, хоча веб-інтерфейс APEX зазвичай інтуїтивніший.</li>
+              <li><strong>Менший ринок спеціалістів в Україні</strong> — APEX-розробників менше, ніж 1С-програмістів. Проте SQL/PL/SQL спеціалісти є, і навчання APEX займає тижні, а не місяці.</li>
+              <li><strong>Залежність від Oracle</strong> — vendor lock-in існує, але Oracle — публічна американська компанія з 47+ роками на ринку та довгостроковою підтримкою продуктів.</li>
+              <li><strong>Інтеграція з українськими сервісами</strong> — деякі інтеграції (податкова звітність, ПРРО) потрібно реалізувати самостійно через API, на відміну від готових модулів 1С.</li>
+            </ul>
+            <p><strong>Мітигація:</strong> поетапний підхід до міграції, прототипування критичних процесів, паралельна робота систем на перехідному етапі.</p>
+          </div>
+        </article>
 
       </div>
-      </div><!-- /region-body -->
-    </div><!-- /region -->
+    </div>
   </section>
 
-  <!-- Monitoring Section -->
+  <!-- ===== MONITORING ===== -->
   <section class="section" id="monitoring">
-    <div class="region">
-      <div class="region-header">
-        <span class="region-title">Моніторинг ринку: хто шукає альтернативи 1С та заміну BAS</span>
-        <span class="region-desc">Огляд публікацій та кейсів: чому український бізнес масово переходить з 1С/BAS і де Oracle APEX може стати рішенням</span>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Моніторинг ринку</div>
+        <h2 class="section-title">Хто шукає альтернативи 1С та заміну BAS</h2>
+        <p class="section-desc">Огляд публікацій та кейсів: чому український бізнес масово переходить з 1С/BAS і де Oracle APEX може стати рішенням</p>
       </div>
-      <div class="region-body">
+
       <div class="monitor-grid">
 
-      <article class="monitor-card">
-        <div class="monitor-tag">Законодавство</div>
-        <h3>В Україні офіційно заборонили 1С і BAS</h3>
-        <div class="monitor-problem">
-          <strong>Ситуація:</strong> З 6 січня 2026 року понад 25 позицій російського ПЗ (включно з 1С:Бухгалтерія 8, 1С:Підприємство 8 та лінійкою BAS) внесено до реєстру забороненого ПЗ. BAS потрапив під заборону, оскільки технічно базується на платформі 1С. Заборона обовʼязкова для держорганів, військових формувань, держпідприємств та операторів критичної інфраструктури. Для приватного бізнесу це створює комплаєнс-ризики.
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Oracle APEX — продукт американської корпорації Oracle, який не має жодних санкційних чи безпекових ризиків. Для організацій, що підпадають під заборону, перехід на Oracle APEX означає повну відповідність законодавству та надійну enterprise-платформу з довгостроковою підтримкою.
-        </div>
-        <a class="monitor-source" href="https://proit.ua/v-ukrayini-ofitsiino-zaboronili-proghramnie-zabiezpiechiennia-1s-i-bas/" target="_blank" rel="noopener">Джерело: ProIT.ua</a>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">Законодавство</div>
+          <h3>В Україні офіційно заборонили 1С і BAS</h3>
+          <div class="monitor-problem">
+            <strong>Ситуація:</strong> З 6 січня 2026 року понад 25 позицій російського ПЗ (включно з 1С:Бухгалтерія 8, 1С:Підприємство 8 та лінійкою BAS) внесено до реєстру забороненого ПЗ. BAS потрапив під заборону, оскільки технічно базується на платформі 1С. Заборона обовʼязкова для держорганів, військових формувань, держпідприємств та операторів критичної інфраструктури. Для приватного бізнесу це створює комплаєнс-ризики.
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Oracle APEX — продукт американської корпорації Oracle, який не має жодних санкційних чи безпекових ризиків. Для організацій, що підпадають під заборону, перехід на Oracle APEX означає повну відповідність законодавству та надійну enterprise-платформу з довгостроковою підтримкою.
+          </div>
+          <a class="monitor-source" href="https://proit.ua/v-ukrayini-ofitsiino-zaboronili-proghramnie-zabiezpiechiennia-1s-i-bas/" target="_blank" rel="noopener">Джерело: ProIT.ua</a>
+        </article>
 
-      <article class="monitor-card">
-        <div class="monitor-tag">Тренд ринку</div>
-        <h3>Попит на альтернативне ПЗ після заборони 1С стрімко зростає</h3>
-        <div class="monitor-problem">
-          <strong>Ситуація:</strong> За даними «Інтерфакс-Україна», попит українських компаній на альтернативне бухгалтерське ПЗ різко зріс після внесення 1С до переліку забороненого софту. Понад 60 000 користувачів вже замінили 1С/BAS на лінійку Master (понад 1 000 компаній). Засновник IT-Enterprise Олег Щербатенко зазначив: «Ця тенденція тільки буде набирати обертів». Близько 40% компаній, що впроваджували 1С/BAS, пішли з ринку з початку повномасштабної війни.
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Зростання попиту підтверджує: ринок готовий до змін, але потребує гнучких рішень, а не просто «ще одну коробку». Oracle APEX дозволяє побудувати індивідуальну ERP-систему з AI-автоматизацією, яка адаптується під конкретний бізнес — без прив'язки до конфігурацій та обмежень «коробкових» продуктів.
-        </div>
-        <a class="monitor-source" href="https://interfax.com.ua/news/telecom/1148945.html" target="_blank" rel="noopener">Джерело: Інтерфакс-Україна</a>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">Тренд ринку</div>
+          <h3>Попит на альтернативне ПЗ після заборони 1С стрімко зростає</h3>
+          <div class="monitor-problem">
+            <strong>Ситуація:</strong> За даними «Інтерфакс-Україна», попит українських компаній на альтернативне бухгалтерське ПЗ різко зріс після внесення 1С до переліку забороненого софту. Понад 60 000 користувачів вже замінили 1С/BAS на лінійку Master (понад 1 000 компаній). Засновник IT-Enterprise Олег Щербатенко зазначив: «Ця тенденція тільки буде набирати обертів». Близько 40% компаній, що впроваджували 1С/BAS, пішли з ринку з початку повномасштабної війни.
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Зростання попиту підтверджує: ринок готовий до змін, але потребує гнучких рішень, а не просто «ще одну коробку». Oracle APEX дозволяє побудувати індивідуальну ERP-систему з AI-автоматизацією, яка адаптується під конкретний бізнес — без прив'язки до конфігурацій та обмежень «коробкових» продуктів.
+          </div>
+          <a class="monitor-source" href="https://interfax.com.ua/news/telecom/1148945.html" target="_blank" rel="noopener">Джерело: Інтерфакс-Україна</a>
+        </article>
 
-      <article class="monitor-card">
-        <div class="monitor-tag">Огляд альтернатив</div>
-        <h3>Чим замінити 1С: повний огляд та порівняння альтернатив</h3>
-        <div class="monitor-problem">
-          <strong>Що шукають:</strong> Українські компанії порівнюють альтернативи 1С/BAS — від українських рішень (MASTER:Бухгалтерія, Dilovod, Дебет Плюс) до західних ERP (SAP, Odoo, Microsoft Dynamics). Ключові вимоги: адаптація до українського законодавства, безпека даних, масштабованість. Відзначається, що штрафи за використання забороненого ПЗ можуть становити до 2% річного обороту.
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Більшість альтернатив з огляду — це «коробкові» продукти з обмеженою гнучкістю. Oracle APEX відрізняється принципово: це платформа, на якій можна побудувати саме ту систему, яка потрібна бізнесу, без обмежень готових конфігурацій. При цьому Oracle Database забезпечує продуктивність та надійність enterprise-рівня.
-        </div>
-        <a class="monitor-source" href="https://cityhost.ua/uk/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html" target="_blank" rel="noopener">Джерело: Cityhost.ua</a>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">Огляд альтернатив</div>
+          <h3>Чим замінити 1С: повний огляд та порівняння альтернатив</h3>
+          <div class="monitor-problem">
+            <strong>Що шукають:</strong> Українські компанії порівнюють альтернативи 1С/BAS — від українських рішень (MASTER:Бухгалтерія, Dilovod, Дебет Плюс) до західних ERP (SAP, Odoo, Microsoft Dynamics). Ключові вимоги: адаптація до українського законодавства, безпека даних, масштабованість. Відзначається, що штрафи за використання забороненого ПЗ можуть становити до 2% річного обороту.
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Більшість альтернатив з огляду — це «коробкові» продукти з обмеженою гнучкістю. Oracle APEX відрізняється принципово: це платформа, на якій можна побудувати саме ту систему, яка потрібна бізнесу, без обмежень готових конфігурацій. При цьому Oracle Database забезпечує продуктивність та надійність enterprise-рівня.
+          </div>
+          <a class="monitor-source" href="https://cityhost.ua/uk/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html" target="_blank" rel="noopener">Джерело: Cityhost.ua</a>
+        </article>
 
-      <article class="monitor-card">
-        <div class="monitor-tag">Безпека</div>
-        <h3>Загрози безпеки: чому бізнес відмовляється від російського ПЗ</h3>
-        <div class="monitor-problem">
-          <strong>Що шукають:</strong> Компанії усвідомлюють ризики конфіденційності даних при використанні російського ПЗ: можливі бекдори, неконтрольований доступ розробника до даних, відсутність гарантій безпеки. Хмарний хостинг допомагає мінімізувати ризики, але не усуває фундаментальну проблему довіри до коду.
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Oracle проходить регулярні аудити безпеки (SOC 2, ISO 27001, FedRAMP). Oracle APEX має вбудовані механізми захисту від SQL-ін'єкцій, XSS, CSRF. Дані зберігаються в Oracle Database з шифруванням TDE, гранулярним контролем доступу та повним аудитом дій — рівень безпеки, недоступний для 1С.
-        </div>
-        <a class="monitor-source" href="https://tucha.ua/uk/solutions/chym-zaminyty-1s" target="_blank" rel="noopener">Джерело: Tucha.ua</a>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">Безпека</div>
+          <h3>Загрози безпеки: чому бізнес відмовляється від російського ПЗ</h3>
+          <div class="monitor-problem">
+            <strong>Що шукають:</strong> Компанії усвідомлюють ризики конфіденційності даних при використанні російського ПЗ: можливі бекдори, неконтрольований доступ розробника до даних, відсутність гарантій безпеки. Хмарний хостинг допомагає мінімізувати ризики, але не усуває фундаментальну проблему довіри до коду.
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Oracle проходить регулярні аудити безпеки (SOC 2, ISO 27001, FedRAMP). Oracle APEX має вбудовані механізми захисту від SQL-ін'єкцій, XSS, CSRF. Дані зберігаються в Oracle Database з шифруванням TDE, гранулярним контролем доступу та повним аудитом дій — рівень безпеки, недоступний для 1С.
+          </div>
+          <a class="monitor-source" href="https://tucha.ua/uk/solutions/chym-zaminyty-1s" target="_blank" rel="noopener">Джерело: Tucha.ua</a>
+        </article>
 
-      <article class="monitor-card">
-        <div class="monitor-tag">ERP-міграція</div>
-        <h3>Альтернатива 1С в Україні: огляд українських та іноземних аналогів</h3>
-        <div class="monitor-problem">
-          <strong>Що шукають:</strong> Бізнес різного масштабу — від МСБ до великих підприємств — потребує сучасних ERP-рішень із хмарними технологіями, мобільними додатками та AI-автоматизацією. Зростає інтерес до low-code платформ, які дозволяють швидко адаптувати систему під мінливі потреби.
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Oracle APEX — саме та low-code платформа, яку шукає ринок. Вона поєднує швидкість розробки (прототип за тижні), enterprise-надійність Oracle Database та нативну AI-інтеграцію (з версії 24.2). Для великого бізнесу APEX масштабується до рівня Oracle Cloud Infrastructure.
-        </div>
-        <a class="monitor-source" href="https://www.oneservice-consulting.com/alternatyva-1c-v-ukraini-ogljad-ukrainskyh-ta-inozemnyh-analogiv" target="_blank" rel="noopener">Джерело: OneService Consulting</a>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">ERP-міграція</div>
+          <h3>Альтернатива 1С в Україні: огляд українських та іноземних аналогів</h3>
+          <div class="monitor-problem">
+            <strong>Що шукають:</strong> Бізнес різного масштабу — від МСБ до великих підприємств — потребує сучасних ERP-рішень із хмарними технологіями, мобільними додатками та AI-автоматизацією. Зростає інтерес до low-code платформ, які дозволяють швидко адаптувати систему під мінливі потреби.
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Oracle APEX — саме та low-code платформа, яку шукає ринок. Вона поєднує швидкість розробки (прототип за тижні), enterprise-надійність Oracle Database та нативну AI-інтеграцію (з версії 24.2). Для великого бізнесу APEX масштабується до рівня Oracle Cloud Infrastructure.
+          </div>
+          <a class="monitor-source" href="https://www.oneservice-consulting.com/alternatyva-1c-v-ukraini-ogljad-ukrainskyh-ta-inozemnyh-analogiv" target="_blank" rel="noopener">Джерело: OneService Consulting</a>
+        </article>
 
-      <article class="monitor-card">
-        <div class="monitor-tag">Малий бізнес</div>
-        <h3>Заміна 1С для малого та середнього бізнесу</h3>
-        <div class="monitor-problem">
-          <strong>Що шукають:</strong> МСБ потребує доступних рішень для обліку, каси та складу без складного впровадження. Важливі: простий інтерфейс, мобільний доступ, інтеграція з банками (ПриватБанк, Монобанк) та касовими сервісами, відповідність українському законодавству. Бюджет обмежений — від 400 до 1500 грн/місяць.
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Oracle APEX має безкоштовну ліцензію та Always Free Tier в Oracle Cloud — це знімає бар'єр входу для МСБ. REST API дозволяє інтегруватися з будь-яким банком чи касовим сервісом. Мобільний доступ через Progressive Web App — без окремих додатків в App Store.
-        </div>
-        <a class="monitor-source" href="https://b-fin.tech/blog/alternatives-to-1c-ukraine" target="_blank" rel="noopener">Джерело: B-Fin.tech</a>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">Малий бізнес</div>
+          <h3>Заміна 1С для малого та середнього бізнесу</h3>
+          <div class="monitor-problem">
+            <strong>Що шукають:</strong> МСБ потребує доступних рішень для обліку, каси та складу без складного впровадження. Важливі: простий інтерфейс, мобільний доступ, інтеграція з банками (ПриватБанк, Монобанк) та касовими сервісами, відповідність українському законодавству. Бюджет обмежений — від 400 до 1500 грн/місяць.
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Oracle APEX має безкоштовну ліцензію та Always Free Tier в Oracle Cloud — це знімає бар'єр входу для МСБ. REST API дозволяє інтегруватися з будь-яким банком чи касовим сервісом. Мобільний доступ через Progressive Web App — без окремих додатків в App Store.
+          </div>
+          <a class="monitor-source" href="https://b-fin.tech/blog/alternatives-to-1c-ukraine" target="_blank" rel="noopener">Джерело: B-Fin.tech</a>
+        </article>
 
-      <article class="monitor-card">
-        <div class="monitor-tag">Каса та продажі</div>
-        <h3>Як перейти з 1С/BAS без зупинки продажів</h3>
-        <div class="monitor-problem">
-          <strong>Що шукають:</strong> Бізнес боїться зупинки операцій під час переходу. Потрібно, щоб каса, облік залишків та продажі працювали безперервно. Компанії шукають рішення, що дозволяють поступовий перехід: спочатку замінити касу, потім облікову систему, без «великого вибуху».
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Oracle APEX ідеально підходить для поетапної міграції. Можна почати з одного модуля (наприклад, складський облік або CRM), інтегрувати його з існуючою касою через REST API, а потім поступово переносити інші функції. Паралельна робота двох систем підтримується на рівні Database Links.
-        </div>
-        <a class="monitor-source" href="https://vchasno.ua/chym-zaminyty-1s-bas-v-ukraini/" target="_blank" rel="noopener">Джерело: Vchasno.ua</a>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">Каса та продажі</div>
+          <h3>Як перейти з 1С/BAS без зупинки продажів</h3>
+          <div class="monitor-problem">
+            <strong>Що шукають:</strong> Бізнес боїться зупинки операцій під час переходу. Потрібно, щоб каса, облік залишків та продажі працювали безперервно. Компанії шукають рішення, що дозволяють поступовий перехід: спочатку замінити касу, потім облікову систему, без «великого вибуху».
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Oracle APEX ідеально підходить для поетапної міграції. Можна почати з одного модуля (наприклад, складський облік або CRM), інтегрувати його з існуючою касою через REST API, а потім поступово переносити інші функції. Паралельна робота двох систем підтримується на рівні Database Links.
+          </div>
+          <a class="monitor-source" href="https://vchasno.ua/chym-zaminyty-1s-bas-v-ukraini/" target="_blank" rel="noopener">Джерело: Vchasno.ua</a>
+        </article>
 
-      <article class="monitor-card">
-        <div class="monitor-tag">Кібербезпека</div>
-        <h3>Кібератака на 1C-Rarus: уроки для українського бізнесу</h3>
-        <div class="monitor-problem">
-          <strong>Що сталось:</strong> Група Cyber.Anarchy.Squad (частина Українських кіберсил) здійснила атаку на 1C-Rarus — найбільшу російську ERP-платформу, що спричинило збої платіжних систем для 150 000 клієнтів, включно з російськими банками та оборонними компаніями. Інцидент демонструє вразливість інфраструктури, побудованої на російських технологіях.
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Цей кейс ілюструє стратегічний ризик залежності від російського технологічного стеку. Oracle має глобальну інфраструктуру з дата-центрами в ЄС, багаторівневий захист та резервування. Перехід на Oracle APEX — це не лише заміна ПЗ, а стратегічне рішення щодо технологічної незалежності.
-        </div>
-        <a class="monitor-source" href="https://www.linkedin.com/posts/innovatethedod_cyberanarchysquad-part-of-the-ukrainian-activity-7145835014667051009-yZwW" target="_blank" rel="noopener">Джерело: LinkedIn (InnovateTheDOD)</a>
-        <p class="monitor-note">Примітка: доступ до повного тексту публікації може вимагати авторизації в LinkedIn.</p>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">Кібербезпека</div>
+          <h3>Кібератака на 1C-Rarus: уроки для українського бізнесу</h3>
+          <div class="monitor-problem">
+            <strong>Що сталось:</strong> Група Cyber.Anarchy.Squad (частина Українських кіберсил) здійснила атаку на 1C-Rarus — найбільшу російську ERP-платформу, що спричинило збої платіжних систем для 150 000 клієнтів, включно з російськими банками та оборонними компаніями. Інцидент демонструє вразливість інфраструктури, побудованої на російських технологіях.
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Цей кейс ілюструє стратегічний ризик залежності від російського технологічного стеку. Oracle має глобальну інфраструктуру з дата-центрами в ЄС, багаторівневий захист та резервування. Перехід на Oracle APEX — це не лише заміна ПЗ, а стратегічне рішення щодо технологічної незалежності.
+          </div>
+          <a class="monitor-source" href="https://www.linkedin.com/posts/innovatethedod_cyberanarchysquad-part-of-the-ukrainian-activity-7145835014667051009-yZwW" target="_blank" rel="noopener">Джерело: LinkedIn (InnovateTheDOD)</a>
+          <p class="monitor-note">Примітка: доступ до повного тексту публікації може вимагати авторизації в LinkedIn.</p>
+        </article>
 
-      <article class="monitor-card">
-        <div class="monitor-tag">Фінанси Oracle</div>
-        <h3>Oracle Q3 FY2026: рекордне зростання підтверджує надійність платформи</h3>
-        <div class="monitor-problem">
-          <strong>Ситуація:</strong> Oracle опублікувала результати Q3 FY2026 (березень 2026): загальний дохід $17,2 млрд (+22%), хмарний дохід $8,9 млрд (+44%), AI-інфраструктурний дохід зріс на 243%. Портфель замовлень досяг рекордних $553 млрд. Понад 1 000 AI-агентів вже працюють у складі Oracle Fusion для фінансів, HR, ланцюгів поставок. Oracle планує інвестувати $50 млрд у розширення AI-інфраструктури у FY2026.
-        </div>
-        <div class="monitor-comment">
-          <strong>Коментар APEXREST:</strong> Рекордні фінансові показники Oracle — це гарантія довгострокової підтримки та розвитку платформи APEX. На відміну від локальних ERP-вендорів, Oracle інвестує десятки мільярдів у AI та хмарну інфраструктуру. Для українського бізнесу це означає: обираючи Oracle APEX, ви отримуєте платформу, за якою стоїть один з найпотужніших технологічних гігантів світу.
-        </div>
-        <a class="monitor-source" href="https://futurumgroup.com/insights/oracle-q3-fy-2026-earnings-driven-by-oci-ai-infrastructure-demand/" target="_blank" rel="noopener">Джерело: Futurum Group</a>
-      </article>
+        <article class="monitor-card">
+          <div class="monitor-tag">Фінанси Oracle</div>
+          <h3>Oracle Q3 FY2026: рекордне зростання підтверджує надійність платформи</h3>
+          <div class="monitor-problem">
+            <strong>Ситуація:</strong> Oracle опублікувала результати Q3 FY2026 (березень 2026): загальний дохід $17,2 млрд (+22%), хмарний дохід $8,9 млрд (+44%), AI-інфраструктурний дохід зріс на 243%. Портфель замовлень досяг рекордних $553 млрд. Понад 1 000 AI-агентів вже працюють у складі Oracle Fusion для фінансів, HR, ланцюгів поставок. Oracle планує інвестувати $50 млрд у розширення AI-інфраструктури у FY2026.
+          </div>
+          <div class="monitor-comment">
+            <strong>Коментар APEXREST:</strong> Рекордні фінансові показники Oracle — це гарантія довгострокової підтримки та розвитку платформи APEX. На відміну від локальних ERP-вендорів, Oracle інвестує десятки мільярдів у AI та хмарну інфраструктуру. Для українського бізнесу це означає: обираючи Oracle APEX, ви отримуєте платформу, за якою стоїть один з найпотужніших технологічних гігантів світу.
+          </div>
+          <a class="monitor-source" href="https://futurumgroup.com/insights/oracle-q3-fy-2026-earnings-driven-by-oci-ai-infrastructure-demand/" target="_blank" rel="noopener">Джерело: Futurum Group</a>
+        </article>
 
-      </div><!-- /monitor-grid -->
-      </div><!-- /region-body -->
-    </div><!-- /region -->
-  </section>
-
-  <!-- News Section -->
-  <section class="section" id="news">
-    <div class="region">
-      <div class="region-header">
-        <span class="region-title">Останні новини Oracle APEX та AI</span>
-        <span class="region-desc">Короткі апдейти ринку та платформи. Блок оновлюється з <code>news.json</code>.</span>
       </div>
-      <div class="region-body">
-        <div class="news-grid" id="news-list" aria-live="polite"></div>
-        <noscript>
-          <p class="news-fallback">Увімкніть JavaScript, щоб бачити актуальні новини.</p>
-        </noscript>
-      </div><!-- /region-body -->
-    </div><!-- /region -->
+    </div>
   </section>
 
-  <!-- Contacts -->
-  <section class="section cta" id="contact">
+  <!-- ===== NEWS ===== -->
+  <section class="section" id="news">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Новини</div>
+        <h2 class="section-title">Останні новини Oracle APEX та AI</h2>
+        <p class="section-desc">Короткі апдейти ринку та платформи. Блок оновлюється з <code>news.json</code>.</p>
+      </div>
+      <div class="news-grid" id="news-list" aria-live="polite"></div>
+      <noscript>
+        <p class="news-fallback">Увімкніть JavaScript, щоб бачити актуальні новини.</p>
+      </noscript>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="cta" id="contact">
     <h2>Контакт</h2>
     <p>Email для зв'язку:</p>
     <div class="cta-contacts">
@@ -622,22 +475,14 @@
     </div>
   </section>
 
-        </div><!-- /container -->
-      </div><!-- /content-scroll -->
-    </main>
-
-  </div><!-- /builder-layout -->
-
-  <!-- ===== STATUS BAR (APEX Page Designer footer) ===== -->
-  <footer class="builder-statusbar">
-    <span class="statusbar-item"><span class="statusbar-dot"></span> Ready</span>
-    <span class="statusbar-sep"></span>
-    <span class="statusbar-item">Page 1 · Application 100</span>
-    <span class="statusbar-sep"></span>
-    <span class="statusbar-item">Workspace: APEXREST</span>
-    <span class="copyright">&copy; 2026 APEXREST</span>
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 APEXREST</p>
+    </div>
   </footer>
 
+  <div class="nav-overlay" id="nav-overlay"></div>
   <script src="script.js"></script>
 </body>
 </html>
