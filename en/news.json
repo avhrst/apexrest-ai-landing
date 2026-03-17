@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-03-17",
+    "title": "APEX World 2026 Kicks Off March 26–27 in the Netherlands",
+    "summary": "The 16th edition of APEX World takes place March 26–27 at ReeHorst, Ede, Netherlands. Four parallel tracks with keynotes from Marc Sewtz, Monica Godoy, Menno Hoogendijk, and Connor McDonald. Early previews of APEX 26.1 features expected.",
+    "tag": "Event"
+  },
+  {
+    "date": "2026-03-15",
+    "title": "Oracle Analytics Cloud March Update Introduces AI Data Agents",
+    "summary": "The March 2026 update to Oracle Analytics Cloud introduces AI Data Agents, allowing organizations to customize the AI Assistant with specific datasets and policy documents. The update also adds built-in AI functions for classification, tagging, and semantic filtering in custom calculations.",
+    "tag": "AI"
+  },
+  {
     "date": "2026-03-14",
     "title": "Oracle Q3 FY2026: Cloud Revenue Up 44%, AI Infrastructure Up 243%",
     "summary": "Oracle reported Q3 FY2026 results: total revenue $17.2B (+22% YoY), cloud revenue $8.9B (+44%). AI infrastructure revenue surged 243%. Remaining performance obligations reached a record $553B (+325%), confirming Oracle's strategic commitment to AI and cloud infrastructure. Over 1,000 AI agents are now running inside Oracle Fusion suite.",
@@ -10,17 +22,5 @@
     "title": "APEX World 2026: Premier Developer Conference in the Netherlands",
     "summary": "APEX World 2026 takes place March 24–25 in the Netherlands — the largest European conference for APEX and PL/SQL developers. Topics include APEXlang, AI integration in APEX 26.1, and hands-on workshops for building enterprise apps. Also announced: KScope 26 (June 14–18, Aurora, Colorado) — the largest US-based APEX conference.",
     "tag": "Event"
-  },
-  {
-    "date": "2026-03-13",
-    "title": "APEX Connect 2026: Conference Focused on AI and APEXlang",
-    "summary": "The annual APEX Connect conference takes place May 18–20 at Heide Park Soltau, Germany. The keynote — \"Low-code with APEX 2026 — The State of Play\" — covers APEX combined with AI, the new APEXlang language, enhancements for Interactive Reports, Map Regions, Dynamic Actions, REST integration, and PL/SQL APIs.",
-    "tag": "Event"
-  },
-  {
-    "date": "2026-03-13",
-    "title": "Oracle APEX AI Day: Events Across 10 Countries with APEX 26.1 Preview",
-    "summary": "Oracle is running a series of APEX AI Day events across 10 countries — the next one on March 26 in Colombo, Sri Lanka. Attendees get early access to APEX 26.1 capabilities: AI tools, natural-language Interactive Reports, the new Universal Theme, and hands-on labs led by the Oracle APEX development team.",
-    "tag": "Oracle APEX"
   }
 ]
