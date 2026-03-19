@@ -1,26 +1,26 @@
 [
   {
-    "date": "2026-03-17",
-    "title": "APEX World 2026 Kicks Off March 26–27 in the Netherlands",
-    "summary": "The 16th edition of APEX World takes place March 26–27 at ReeHorst, Ede, Netherlands. Four parallel tracks with keynotes from Marc Sewtz, Monica Godoy, Menno Hoogendijk, and Connor McDonald. Early previews of APEX 26.1 features expected.",
+    "date": "2026-03-19",
+    "title": "APEX 26.1: APEXlang, AI App Generator, and a New Era of Low-Code",
+    "summary": "Oracle reveals APEX 26.1 details: the new APEXlang specification lets developers describe APEX apps in natural language, while the AI Application Generator builds enterprise solutions from text prompts. Also announced: AI-powered Interactive Reports, a Global Repository for team collaboration, and an updated Universal Theme with enhanced mobile capabilities.",
+    "tag": "APEX"
+  },
+  {
+    "date": "2026-03-19",
+    "title": "Ukraine's 1C Ban: 70–85% of Companies Still Run Prohibited Software",
+    "summary": "Since January 6, 2026, Ukraine's State Service of Special Communications has officially listed 20 products by 1C and BAS as prohibited software. The ban is mandatory for government agencies, critical infrastructure, and entities handling classified data. Bill #13505, currently before Parliament, would extend the ban to all private businesses. An estimated 70–85% of Ukrainian companies still depend on these systems.",
+    "tag": "Migration"
+  },
+  {
+    "date": "2026-03-18",
+    "title": "Oracle AI World 2026: Oracle's Premier AI Conference in Las Vegas",
+    "summary": "Oracle announced AI World 2026 — the successor to CloudWorld — taking place October 25–28 at The Venetian, Las Vegas. Over 20,000 attendees expected. Focus: AI innovations in cloud infrastructure, enterprise applications, and data management. Oracle also launched the AI World Tour, a series of free one-day events in cities worldwide.",
     "tag": "Event"
   },
   {
-    "date": "2026-03-15",
-    "title": "Oracle Analytics Cloud March Update Introduces AI Data Agents",
-    "summary": "The March 2026 update to Oracle Analytics Cloud introduces AI Data Agents, allowing organizations to customize the AI Assistant with specific datasets and policy documents. The update also adds built-in AI functions for classification, tagging, and semantic filtering in custom calculations.",
-    "tag": "AI"
-  },
-  {
-    "date": "2026-03-14",
-    "title": "Oracle Q3 FY2026: Cloud Revenue Up 44%, AI Infrastructure Up 243%",
-    "summary": "Oracle reported Q3 FY2026 results: total revenue $17.2B (+22% YoY), cloud revenue $8.9B (+44%). AI infrastructure revenue surged 243%. Remaining performance obligations reached a record $553B (+325%), confirming Oracle's strategic commitment to AI and cloud infrastructure. Over 1,000 AI agents are now running inside Oracle Fusion suite.",
-    "tag": "Oracle"
-  },
-  {
-    "date": "2026-03-14",
-    "title": "APEX World 2026: Premier Developer Conference in the Netherlands",
-    "summary": "APEX World 2026 takes place March 24–25 in the Netherlands — the largest European conference for APEX and PL/SQL developers. Topics include APEXlang, AI integration in APEX 26.1, and hands-on workshops for building enterprise apps. Also announced: KScope 26 (June 14–18, Aurora, Colorado) — the largest US-based APEX conference.",
+    "date": "2026-03-17",
+    "title": "APEX World 2026 Kicks Off March 26–27 in the Netherlands",
+    "summary": "The 16th edition of APEX World takes place March 26–27 at ReeHorst, Ede, Netherlands. Four parallel tracks with keynotes from Marc Sewtz, Monica Godoy, Menno Hoogendijk, and Connor McDonald. Early previews of APEX 26.1 features expected.",
     "tag": "Event"
   }
 ]
