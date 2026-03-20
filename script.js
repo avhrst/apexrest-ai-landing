@@ -68,6 +68,91 @@ document.addEventListener('DOMContentLoaded', () => {
   const firstQA = document.querySelector('.qa-card');
   if (firstQA) firstQA.classList.add('open');
 
+  // --- Scroll Animation (Intersection Observer) ---
+  const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        scrollObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  /**
+   * Adds animate-on-scroll class and staggered delay to a list of elements,
+   * then starts observing them.
+   */
+  function observeWithStagger(selector) {
+    document.querySelectorAll(selector).forEach((el, i) => {
+      el.classList.add('animate-on-scroll', 'animate-delay-' + (i % 3 + 1));
+      scrollObserver.observe(el);
+    });
+  }
+
+  // Observe static elements
+  document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('animate-on-scroll');
+    scrollObserver.observe(el);
+  });
+
+  observeWithStagger('.qa-card');
+  observeWithStagger('.monitor-card');
+
+  // Observe the CTA / contact section
+  document.querySelectorAll('.cta').forEach(el => {
+    el.classList.add('animate-on-scroll');
+    scrollObserver.observe(el);
+  });
+
+  // --- Active Nav Highlighting (scroll spy) ---
+  const spySections = ['qa', 'monitoring', 'news', 'contact']
+    .map(id => document.getElementById(id))
+    .filter(Boolean);
+
+  const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+
+  function updateActiveNav() {
+    // Find which section is currently in view
+    let currentId = '';
+    for (const section of spySections) {
+      const rect = section.getBoundingClientRect();
+      // Section is "active" when its top is above the midpoint of the viewport
+      if (rect.top <= window.innerHeight / 2) {
+        currentId = section.id;
+      }
+    }
+
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === '#' + currentId) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  // --- Header Scroll Effect ---
+  const siteHeader = document.querySelector('.site-header');
+
+  function updateHeaderScroll() {
+    if (!siteHeader) return;
+    if (window.scrollY > 50) {
+      siteHeader.classList.add('scrolled');
+    } else {
+      siteHeader.classList.remove('scrolled');
+    }
+  }
+
+  // Unified scroll handler for nav highlighting and header effect
+  window.addEventListener('scroll', () => {
+    updateActiveNav();
+    updateHeaderScroll();
+  }, { passive: true });
+
+  // Run once on load in case the page is already scrolled
+  updateActiveNav();
+  updateHeaderScroll();
+
   // --- News loading ---
   const newsList = document.getElementById('news-list');
   if (!newsList) return;
@@ -102,6 +187,9 @@ document.addEventListener('DOMContentLoaded', () => {
           '</article>'
         )
         .join('');
+
+      // Observe dynamically created news cards for scroll animation
+      observeWithStagger('.news-card');
     })
     .catch(() => {
       newsList.innerHTML = '<p class="news-fallback">' + fallbackError + '</p>';
