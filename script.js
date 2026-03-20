@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             '</div>' +
             '<h3>' + (item.title || '') + '</h3>' +
             '<p>' + (item.summary || '') + '</p>' +
+            (item.sourceUrl ? '<p class="news-source"><a href="' + item.sourceUrl + '" target="_blank" rel="noopener noreferrer">' + (item.sourceName || 'Source') + '</a></p>' : '') +
           '</article>'
         )
         .join('');

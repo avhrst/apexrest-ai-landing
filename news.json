@@ -1,26 +1,34 @@
 [
   {
-    "date": "2026-03-19",
-    "title": "APEX 26.1: APEXlang, AI-генератор додатків та нова ера low-code розробки",
-    "summary": "Oracle розкриває деталі APEX 26.1: нова специфікація APEXlang дозволяє описувати APEX-додатки людською мовою, а AI Application Generator створює enterprise-рішення за текстовим описом. Також анонсовано AI-інтеграцію в Interactive Reports, глобальний репозиторій для команд та оновлену Universal Theme з мобільними можливостями.",
-    "tag": "APEX"
-  },
-  {
-    "date": "2026-03-19",
-    "title": "Заборона 1С в Україні: 70–85% компаній досі використовують заборонене ПЗ",
-    "summary": "З 6 січня 2026 року ДССЗІ офіційно включила 20 продуктів 1С та BAS до переліку забороненого ПЗ. Заборона обов'язкова для держсектора, критичної інфраструктури та об'єктів, що обробляють службові дані. У Верховній Раді розглядається законопроєкт №13505, який поширить заборону на весь приватний бізнес. За оцінками, 70–85% українських компаній досі залежать від цих систем.",
-    "tag": "Міграція"
+    "date": "2026-03-20",
+    "title": "Oracle звітує про сильний Q3 FY2026 на тлі AI- та cloud-зростання",
+    "summary": "Oracle повідомила про зростання виручки в третьому кварталі FY2026 та рекордний обсяг Remaining Performance Obligations. Для ринку Oracle APEX це важливий сигнал: Oracle продовжує агресивно інвестувати в AI-інфраструктуру, хмару та довгостроковий розвиток enterprise-платформи.",
+    "tag": "Oracle",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-announces-fiscal-year-2026-third-quarter-financial-results-302709961.html"
   },
   {
     "date": "2026-03-18",
-    "title": "Oracle AI World 2026: головна AI-конференція Oracle у Лас-Вегасі",
-    "summary": "Oracle анонсував AI World 2026 — наступник CloudWorld — який відбудеться 25–28 жовтня у The Venetian, Лас-Вегас. Очікується понад 20 000 учасників. Фокус: AI-інновації в хмарній інфраструктурі, enterprise-додатках та управлінні даними. Також запущено Oracle AI World Tour — серію безкоштовних одноденних заходів у містах по всьому світу.",
-    "tag": "Подія"
+    "title": "Oracle AI World Tour 2026 робить ставку на AI-ready Oracle workloads",
+    "summary": "Microsoft у партнерському анонсі Oracle AI World Tour 2026 робить акцент на Oracle Database@Azure, безпеці, міграції та AI-оптимізованій інфраструктурі. Для клієнтів APEX це підтверджує головний тренд року: modernize first, then layer AI on top of enterprise data and processes.",
+    "tag": "Подія",
+    "sourceName": "Microsoft Tech Community",
+    "sourceUrl": "https://techcommunity.microsoft.com/blog/oracleonazureblog/microsoft-hits-the-road-with-oracle-ai-world-tour-2026-/4477598"
   },
   {
-    "date": "2026-03-17",
-    "title": "APEX World 2026 стартує 26–27 березня в Нідерландах",
-    "summary": "16-та конференція APEX World відбудеться 26–27 березня у ReeHorst, Ede (Нідерланди). Чотири паралельні потоки, кейноут-спікери Marc Sewtz, Monica Godoy, Menno Hoogendijk та Connor McDonald. Очікується демо нових можливостей APEX 26.1.",
-    "tag": "Подія"
+    "date": "2026-03-16",
+    "title": "OpenAI шукає новий шлях у enterprise через партнерства з private equity",
+    "summary": "За даними Reuters, OpenAI веде переговори з великими private equity-фірмами щодо спільного enterprise-напряму для поширення своїх продуктів у портфельних компаніях. Це ще один індикатор того, що корпоративний AI переходить від пілотів до масштабованих каналів продажу та впровадження.",
+    "tag": "AI",
+    "sourceName": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/openai-courts-private-equity-join-enterprise-ai-venture-sources-say-2026-03-16/"
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Microsoft запускає Copilot Cowork — ще один крок до керованих AI-агентів у роботі",
+    "summary": "У Microsoft 365 з’явився Copilot Cowork: сервіс планує багатокрокову роботу у фоні, узгоджує контрольні точки та просить підтвердження перед змінами. Для enterprise-команд це показує, куди рухається ринок: від чат-асистентів до агентів, які виконують реальні бізнес-процеси з людським контролем.",
+    "tag": "AI Agents",
+    "sourceName": "Microsoft 365 Blog",
+    "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/"
   }
 ]

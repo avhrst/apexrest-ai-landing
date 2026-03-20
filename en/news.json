@@ -1,26 +1,34 @@
 [
   {
-    "date": "2026-03-19",
-    "title": "APEX 26.1: APEXlang, AI App Generator, and a New Era of Low-Code",
-    "summary": "Oracle reveals APEX 26.1 details: the new APEXlang specification lets developers describe APEX apps in natural language, while the AI Application Generator builds enterprise solutions from text prompts. Also announced: AI-powered Interactive Reports, a Global Repository for team collaboration, and an updated Universal Theme with enhanced mobile capabilities.",
-    "tag": "APEX"
-  },
-  {
-    "date": "2026-03-19",
-    "title": "Ukraine's 1C Ban: 70–85% of Companies Still Run Prohibited Software",
-    "summary": "Since January 6, 2026, Ukraine's State Service of Special Communications has officially listed 20 products by 1C and BAS as prohibited software. The ban is mandatory for government agencies, critical infrastructure, and entities handling classified data. Bill #13505, currently before Parliament, would extend the ban to all private businesses. An estimated 70–85% of Ukrainian companies still depend on these systems.",
-    "tag": "Migration"
+    "date": "2026-03-20",
+    "title": "Oracle posts strong Q3 FY2026 results as AI and cloud demand accelerates",
+    "summary": "Oracle reported third-quarter FY2026 revenue growth and record remaining performance obligations. For the Oracle APEX market, that matters because Oracle continues to invest aggressively in AI infrastructure, cloud capacity, and long-term enterprise platform development.",
+    "tag": "Oracle",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-announces-fiscal-year-2026-third-quarter-financial-results-302709961.html"
   },
   {
     "date": "2026-03-18",
-    "title": "Oracle AI World 2026: Oracle's Premier AI Conference in Las Vegas",
-    "summary": "Oracle announced AI World 2026 — the successor to CloudWorld — taking place October 25–28 at The Venetian, Las Vegas. Over 20,000 attendees expected. Focus: AI innovations in cloud infrastructure, enterprise applications, and data management. Oracle also launched the AI World Tour, a series of free one-day events in cities worldwide.",
-    "tag": "Event"
+    "title": "Oracle AI World Tour 2026 puts AI-ready Oracle workloads in focus",
+    "summary": "In its partner announcement around Oracle AI World Tour 2026, Microsoft highlighted Oracle Database@Azure, security, migration, and AI-optimized infrastructure. For APEX customers, it reinforces the year’s core pattern: modernize the data and workflow stack first, then layer AI on top.",
+    "tag": "Event",
+    "sourceName": "Microsoft Tech Community",
+    "sourceUrl": "https://techcommunity.microsoft.com/blog/oracleonazureblog/microsoft-hits-the-road-with-oracle-ai-world-tour-2026-/4477598"
   },
   {
-    "date": "2026-03-17",
-    "title": "APEX World 2026 Kicks Off March 26–27 in the Netherlands",
-    "summary": "The 16th edition of APEX World takes place March 26–27 at ReeHorst, Ede, Netherlands. Four parallel tracks with keynotes from Marc Sewtz, Monica Godoy, Menno Hoogendijk, and Connor McDonald. Early previews of APEX 26.1 features expected.",
-    "tag": "Event"
+    "date": "2026-03-16",
+    "title": "OpenAI explores a new enterprise channel through private equity partnerships",
+    "summary": "Reuters reported that OpenAI is in talks with major private equity firms about a joint enterprise distribution effort across portfolio companies. It is another sign that enterprise AI is moving beyond experiments toward scaled distribution, procurement, and operational rollout.",
+    "tag": "AI",
+    "sourceName": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/openai-courts-private-equity-join-enterprise-ai-venture-sources-say-2026-03-16/"
+  },
+  {
+    "date": "2026-03-09",
+    "title": "Microsoft launches Copilot Cowork, pushing managed AI agents into daily work",
+    "summary": "Microsoft introduced Copilot Cowork for Microsoft 365, a service designed to plan multi-step work in the background, surface checkpoints, and request approval before changes are applied. The release shows where the market is headed: from chat assistants toward governed AI agents embedded in real business workflows.",
+    "tag": "AI Agents",
+    "sourceName": "Microsoft 365 Blog",
+    "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/"
   }
 ]
