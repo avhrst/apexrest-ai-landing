@@ -1,34 +1,34 @@
 [
   {
-    "date": "2026-03-20",
-    "title": "Oracle звітує про сильний Q3 FY2026 на тлі AI- та cloud-зростання",
-    "summary": "Oracle повідомила про зростання виручки в третьому кварталі FY2026 та рекордний обсяг Remaining Performance Obligations. Для ринку Oracle APEX це важливий сигнал: Oracle продовжує агресивно інвестувати в AI-інфраструктуру, хмару та довгостроковий розвиток enterprise-платформи.",
-    "tag": "Oracle",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-announces-fiscal-year-2026-third-quarter-financial-results-302709961.html"
+    "date": "2026-03-22",
+    "title": "Oracle використовує MCP + AI для модернізації Oracle Forms у APEX",
+    "summary": "Oracle офіційно представила інструмент на базі MCP (Model Context Protocol) та AI для автоматизованої модернізації Oracle Forms у Oracle APEX. Підхід дозволяє значно скоротити час аналізу форм, міграції бізнес-логіки в базу даних і побудови нових APEX-додатків. Для компаній, які досі працюють на Forms 12c (Premier Support до грудня 2026), це чіткий сигнал: час модернізуватися.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/mcp-ai-helping-you-modernize-your-oracle-forms-apps-to-oracle-apex"
   },
   {
-    "date": "2026-03-18",
-    "title": "Oracle AI World Tour 2026 робить ставку на AI-ready Oracle workloads",
-    "summary": "Microsoft у партнерському анонсі Oracle AI World Tour 2026 робить акцент на Oracle Database@Azure, безпеці, міграції та AI-оптимізованій інфраструктурі. Для клієнтів APEX це підтверджує головний тренд року: modernize first, then layer AI on top of enterprise data and processes.",
-    "tag": "Подія",
-    "sourceName": "Microsoft Tech Community",
-    "sourceUrl": "https://techcommunity.microsoft.com/blog/oracleonazureblog/microsoft-hits-the-road-with-oracle-ai-world-tour-2026-/4477598"
+    "date": "2026-03-22",
+    "title": "IBM завершує придбання Confluent за $11 млрд — ставка на real-time дані для AI-агентів",
+    "summary": "IBM закрила угоду з Confluent за $11 млрд, об'єднавши лідера data streaming з платформами watsonx та hybrid cloud. Мета — забезпечити AI-моделі й агентів потоком даних у реальному часі. Разом з HashiCorp та DataStax це формує повний стек enterprise-інфраструктури: автоматизація хмари, векторні бази, стрімінг даних.",
+    "tag": "Enterprise AI",
+    "sourceName": "IBM Newsroom",
+    "sourceUrl": "https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents"
   },
   {
-    "date": "2026-03-16",
-    "title": "OpenAI шукає новий шлях у enterprise через партнерства з private equity",
-    "summary": "За даними Reuters, OpenAI веде переговори з великими private equity-фірмами щодо спільного enterprise-напряму для поширення своїх продуктів у портфельних компаніях. Це ще один індикатор того, що корпоративний AI переходить від пілотів до масштабованих каналів продажу та впровадження.",
-    "tag": "AI",
-    "sourceName": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/openai-courts-private-equity-join-enterprise-ai-venture-sources-say-2026-03-16/"
-  },
-  {
-    "date": "2026-03-09",
-    "title": "Microsoft запускає Copilot Cowork — ще один крок до керованих AI-агентів у роботі",
-    "summary": "У Microsoft 365 з’явився Copilot Cowork: сервіс планує багатокрокову роботу у фоні, узгоджує контрольні точки та просить підтвердження перед змінами. Для enterprise-команд це показує, куди рухається ринок: від чат-асистентів до агентів, які виконують реальні бізнес-процеси з людським контролем.",
+    "date": "2026-03-22",
+    "title": "Microsoft Power Platform переходить на агентні додатки",
+    "summary": "Березневий реліз Microsoft Power Platform робить ставку на agentic business applications — системи, які приймають рішення, навчаються з взаємодій і виконують складні бізнес-процеси без постійного людського контролю. Це підтверджує загальний тренд: ринок enterprise-автоматизації рухається від workflow до AI-агентів.",
     "tag": "AI Agents",
-    "sourceName": "Microsoft 365 Blog",
-    "sourceUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/"
+    "sourceName": "Windows News",
+    "sourceUrl": "https://windowsnews.ai/article/power-platform-march-2026-update-agentic-apps-enhanced-governance-and-ai-development-acceleration.405823"
+  },
+  {
+    "date": "2026-03-21",
+    "title": "Oracle RPO зростає на 325% до $553 млрд на тлі AI-контрактів",
+    "summary": "За результатами Q3 FY2026 Oracle зафіксувала рекордний обсяг Remaining Performance Obligations — $553 млрд, переважно за рахунок великих AI-контрактів. Cloud infrastructure revenue зріс на 84% рік до року. Аналітики відзначають перехід Oracle від моделі «cloud vendor» до повноцінного AI infrastructure titan.",
+    "tag": "Oracle",
+    "sourceName": "FinancialContent",
+    "sourceUrl": "https://markets.financialcontent.com/stocks/article/finterra-2026-3-19-oracle-orcl-in-2026-the-ai-infrastructure-titans-high-stakes-metamorphosis"
   }
 ]
