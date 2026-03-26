@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Active Nav Highlighting (scroll spy) ---
-  const spySections = ['qa', 'monitoring', 'news', 'contact']
+  const spySections = ['campaign-intro', 'qa', 'monitoring', 'news', 'contact']
     .map(id => document.getElementById(id))
     .filter(Boolean);
 
