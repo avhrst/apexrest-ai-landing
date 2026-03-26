@@ -1,14 +1,6 @@
 [
   {
-    "date": "2026-03-25",
-    "title": "Oracle AI World: 22 Fusion Agentic Applications та AI Agent Studio без коду",
-    "summary": "На Oracle AI World у Лондоні (24 березня) Oracle представив 22 нові Fusion Agentic Applications — AI-агенти, вбудовані у Fusion Cloud для фінансів, HR, продажів та ланцюгів поставок. Також анонсовано Agentic Applications Builder — середовище для створення AI-агентів без програмування, з оркестрацією робочих процесів та вимірюванням ROI.",
-    "tag": "AI",
-    "sourceName": "Oracle News",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-introduces-fusion-agentic-applications-2026-03-24/"
-  },
-  {
-    "date": "2026-03-25",
+    "date": "2026-03-26",
     "title": "APEX World 2026: конференція стартує 26–27 березня в Нідерландах",
     "summary": "16-та конференція APEX World відбудеться 26–27 березня у ReeHorst, Ede (Нідерланди). Чотири паралельні потоки, кейноут-спікери Marc Sewtz, Monica Godoy, Menno Hoogendijk та Connor McDonald. Очікується демо нових можливостей APEX 26.1 та APEXlang — нового текстового формату для опису APEX-додатків, оптимізованого для AI та version control.",
     "tag": "Подія",
@@ -16,19 +8,27 @@
     "sourceUrl": "https://nloug.nl/en/events/apex-world-2026/"
   },
   {
-    "date": "2026-03-22",
-    "title": "Oracle використовує MCP + AI для модернізації Oracle Forms у APEX",
-    "summary": "Oracle офіційно представила інструмент на базі MCP (Model Context Protocol) та AI для автоматизованої модернізації Oracle Forms у Oracle APEX. Підхід дозволяє значно скоротити час аналізу форм, міграції бізнес-логіки в базу даних і побудови нових APEX-додатків. Для компаній, які досі працюють на Forms 12c (Premier Support до грудня 2026), це чіткий сигнал: час модернізуватися.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/mcp-ai-helping-you-modernize-your-oracle-forms-apps-to-oracle-apex"
+    "date": "2026-03-26",
+    "title": "Oracle запускає 22 Fusion Agentic Applications — AI-агенти у фінансах, HR та ланцюгах постачання",
+    "summary": "На Oracle AI World у Лондоні 24 березня 2026 Oracle представила 22 нові Fusion Agentic Applications — enterprise-додатки, керовані командами спеціалізованих AI-агентів. Також анонсовано Agentic Applications Builder — середовище для створення AI-агентів без програмування, з оркестрацією робочих процесів та вимірюванням ROI.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle News",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-introduces-fusion-agentic-applications-2026-03-24/"
   },
   {
-    "date": "2026-03-22",
-    "title": "IBM завершує придбання Confluent за $11 млрд — ставка на real-time дані для AI-агентів",
-    "summary": "IBM закрила угоду з Confluent за $11 млрд, об'єднавши лідера data streaming з платформами watsonx та hybrid cloud. Мета — забезпечити AI-моделі й агентів потоком даних у реальному часі. Разом з HashiCorp та DataStax це формує повний стек enterprise-інфраструктури: автоматизація хмари, векторні бази, стрімінг даних.",
+    "date": "2026-03-26",
+    "title": "Заборона 1С в Україні: 27 продуктів у переліку забороненого ПЗ",
+    "summary": "Держспецзв'язку оприлюднила оновлений перелік забороненого програмного забезпечення, до якого увійшли 27 найменувань продуктів «1С» та BAS. Заборона стосується держорганів, установ та об'єктів критичної інфраструктури. Для бізнесу це чіткий сигнал: час мігрувати на безпечні альтернативи — Oracle APEX, Microsoft Dynamics або українські рішення.",
+    "tag": "1С міграція",
+    "sourceName": "LB.ua",
+    "sourceUrl": "https://lb.ua/economics/2026/01/09/716053_derzhspetszvyazku_oprilyudnila.html"
+  },
+  {
+    "date": "2026-03-26",
+    "title": "NTT DATA та NVIDIA будують enterprise AI factories для корпоративного AI",
+    "summary": "NTT DATA анонсувала ініціативу зі створення AI factories на базі NVIDIA для корпоративних клієнтів по всьому світу. Платформа забезпечує безпечне впровадження AI та вимірюваний ROI. Тренд підтверджує: великі enterprise-гравці переходять від експериментів з AI до промислового масштабу.",
     "tag": "Enterprise AI",
-    "sourceName": "IBM Newsroom",
-    "sourceUrl": "https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents"
+    "sourceName": "NTT DATA",
+    "sourceUrl": "https://www.nttdata.com/global/en/news/press-release/2026/march/031200"
   }
 ]
