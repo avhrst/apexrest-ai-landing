@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.12 });
 
   /**
    * Adds animate-on-scroll class and staggered delay to a list of elements,
@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   observeWithStagger('.qa-card');
   observeWithStagger('.monitor-card');
+  observeWithStagger('.overview-card');
+  observeWithStagger('.solution-card');
 
   // Observe the CTA / contact section
   document.querySelectorAll('.cta').forEach(el => {
@@ -105,18 +107,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Active Nav Highlighting (scroll spy) ---
-  const spySections = ['campaign-intro', 'qa', 'monitoring', 'news', 'contact']
+  const spySections = ['seo-intent', 'qa', 'monitoring', 'solutions', 'news', 'contact']
     .map(id => document.getElementById(id))
     .filter(Boolean);
 
   const navLinks = document.querySelectorAll('.nav a[href^="#"]');
 
   function updateActiveNav() {
-    // Find which section is currently in view
     let currentId = '';
     for (const section of spySections) {
       const rect = section.getBoundingClientRect();
-      // Section is "active" when its top is above the midpoint of the viewport
       if (rect.top <= window.innerHeight / 2) {
         currentId = section.id;
       }
@@ -143,13 +143,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Unified scroll handler for nav highlighting and header effect
+  // Unified scroll handler
   window.addEventListener('scroll', () => {
     updateActiveNav();
     updateHeaderScroll();
   }, { passive: true });
 
-  // Run once on load in case the page is already scrolled
+  // Run once on load
   updateActiveNav();
   updateHeaderScroll();
 

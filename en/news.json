@@ -1,34 +1,34 @@
 [
   {
     "date": "2026-03-26",
-    "title": "APEX World 2026 Kicks Off March 26–27 in the Netherlands",
-    "summary": "The 16th edition of APEX World takes place March 26–27 at ReeHorst, Ede, Netherlands. Four parallel tracks with keynotes from Marc Sewtz, Monica Godoy, Menno Hoogendijk, and Connor McDonald. Expected demos of APEX 26.1 features and APEXlang — a new text-based format for describing APEX applications, optimized for AI and version control.",
+    "title": "APEX World 2026: 16th Oracle APEX Conference in the Netherlands",
+    "summary": "The 16th APEX World conference took place March 24-25 at ReeHorst, Ede, Netherlands. Four parallel tracks with keynotes from Marc Sewtz, Monica Godoy, Menno Hoogendijk, and Connor McDonald. Featured demos of APEX 26.1 with APEXLang — a new text-based .apx format for describing APEX applications, optimized for AI and version control.",
     "tag": "Event",
     "sourceName": "NLOUG",
     "sourceUrl": "https://nloug.nl/en/events/apex-world-2026/"
   },
   {
-    "date": "2026-03-26",
-    "title": "Oracle launches 22 Fusion Agentic Applications — AI agents for finance, HR, and supply chain",
-    "summary": "At Oracle AI World in London on March 24, 2026, Oracle unveiled 22 new Fusion Agentic Applications — enterprise apps driven by coordinated teams of specialized AI agents. Also announced: Agentic Applications Builder — a no-code environment for building AI agents with workflow orchestration, contextual memory, and ROI measurement.",
+    "date": "2026-03-24",
+    "title": "Oracle Launches 22 Fusion Agentic Applications at AI World London",
+    "summary": "At Oracle AI World in London on March 24, 2026, Oracle unveiled 22 new Fusion Agentic Applications — enterprise apps powered by coordinated teams of specialized AI agents in finance, HR, and supply chain. Also announced: Agentic Applications Builder for no-code AI agent creation. AI Agent Studio is free for Fusion Applications customers.",
     "tag": "Oracle AI",
     "sourceName": "Oracle News",
     "sourceUrl": "https://www.oracle.com/news/announcement/oracle-introduces-fusion-agentic-applications-2026-03-24/"
   },
   {
-    "date": "2026-03-26",
-    "title": "Ukraine bans 27 Russian-linked software products including 1C and BAS",
-    "summary": "Ukraine's State Service for Special Communications published an updated list of banned software, including 27 products from 1C and BAS. The ban applies to government agencies, institutions, and critical infrastructure. For businesses still running 1C, this is a clear signal: it's time to migrate to secure alternatives like Oracle APEX, Microsoft Dynamics, or Ukrainian-built solutions.",
+    "date": "2026-01-09",
+    "title": "Ukraine Bans 27 Russian-Linked Software Products Including 1C and BAS",
+    "summary": "Ukraine's State Service for Special Communications published an updated list of banned software, including 27 products from 1C and BAS. The ban applies to government agencies, institutions, and critical infrastructure. For businesses still running 1C, this is a clear signal to migrate to secure alternatives.",
     "tag": "1C Migration",
     "sourceName": "LB.ua",
     "sourceUrl": "https://lb.ua/economics/2026/01/09/716053_derzhspetszvyazku_oprilyudnila.html"
   },
   {
-    "date": "2026-03-26",
-    "title": "NTT DATA and NVIDIA launch enterprise AI factories for production-scale AI",
-    "summary": "NTT DATA announced an initiative to deliver NVIDIA-powered enterprise AI factories for corporate clients worldwide. The platform enables secure AI adoption with measurable ROI. The trend confirms: major enterprise players are moving from AI experiments to industrial-scale deployment.",
-    "tag": "Enterprise AI",
-    "sourceName": "NTT DATA",
-    "sourceUrl": "https://www.nttdata.com/global/en/news/press-release/2026/march/031200"
+    "date": "2026-01-06",
+    "title": "Oracle AI Database 26ai Available On-Premises: 300+ New Features",
+    "summary": "Oracle AI Database 26ai is an AI-native database with AI Vector Search, Select AI (natural language to SQL), JSON Relational Duality, AI Agent Management, and quantum-resistant encryption. Available for Linux x86-64 on-premises since January 2026. Over 300 new capabilities for enterprise environments.",
+    "tag": "Oracle DB",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/post/oracle-database-26ai"
   }
 ]
