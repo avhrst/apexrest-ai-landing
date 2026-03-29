@@ -1,34 +1,34 @@
 [
   {
-    "date": "2026-03-26",
-    "title": "APEX World 2026: 16th Oracle APEX Conference in the Netherlands",
-    "summary": "The 16th APEX World conference took place March 24-25 at ReeHorst, Ede, Netherlands. Four parallel tracks with keynotes from Marc Sewtz, Monica Godoy, Menno Hoogendijk, and Connor McDonald. Featured demos of APEX 26.1 with APEXLang — a new text-based .apx format for describing APEX applications, optimized for AI and version control.",
-    "tag": "Event",
-    "sourceName": "NLOUG",
-    "sourceUrl": "https://nloug.nl/en/events/apex-world-2026/"
+    "date": "2026-03-27",
+    "title": "Oracle + NVIDIA at GTC 2026: GPU-Accelerated Vector Search in Oracle AI Database 26ai",
+    "summary": "At NVIDIA GTC 2026 (March 18), Oracle unveiled GPU-accelerated vector index generation in Oracle AI Database 26ai using NVIDIA cuVS. Also showcased: NeMo Agent Toolkit integration with Oracle DB for enterprise AI agents that optimize quality, latency, and cost.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/oracle-ai-database-nvidia-collaboration-advances-enterprise-ai-at-nvidia-gtc-2026"
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Oracle Private Agent Factory: No-Code AI Agent Platform for 26ai",
+    "summary": "Oracle announced Private Agent Factory — a no-code AI agent builder for Oracle AI Database 26ai. Business analysts can build and securely deploy data-driven agents without third-party services. Runs as a container in any cloud or on-premises environment.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/introducing-private-agent-factory-unlocking-the-agentic-ai-potential-in-enterprises-with-oracle-ai-database-26ai"
   },
   {
     "date": "2026-03-24",
     "title": "Oracle Launches 22 Fusion Agentic Applications at AI World London",
-    "summary": "At Oracle AI World in London on March 24, 2026, Oracle unveiled 22 new Fusion Agentic Applications — enterprise apps powered by coordinated teams of specialized AI agents in finance, HR, and supply chain. Also announced: Agentic Applications Builder for no-code AI agent creation. AI Agent Studio is free for Fusion Applications customers.",
+    "summary": "At Oracle AI World in London on March 24, 2026, Oracle announced 22 new Fusion Agentic Applications — enterprise apps powered by AI agents for finance, HR, and supply chain. Also introduced: Agentic Applications Builder for creating AI agents without coding.",
     "tag": "Oracle AI",
     "sourceName": "Oracle News",
     "sourceUrl": "https://www.oracle.com/news/announcement/oracle-introduces-fusion-agentic-applications-2026-03-24/"
   },
   {
     "date": "2026-01-09",
-    "title": "Ukraine Bans 27 Russian-Linked Software Products Including 1C and BAS",
-    "summary": "Ukraine's State Service for Special Communications published an updated list of banned software, including 27 products from 1C and BAS. The ban applies to government agencies, institutions, and critical infrastructure. For businesses still running 1C, this is a clear signal to migrate to secure alternatives.",
+    "title": "Ukraine Bans 1C: 27 Products Added to Prohibited Software List",
+    "summary": "Ukraine's State Special Communications Service published an updated list of prohibited software, including 27 products from 1C and BAS. The ban applies to government agencies, institutions, and critical infrastructure facilities.",
     "tag": "1C Migration",
     "sourceName": "LB.ua",
     "sourceUrl": "https://lb.ua/economics/2026/01/09/716053_derzhspetszvyazku_oprilyudnila.html"
-  },
-  {
-    "date": "2026-01-06",
-    "title": "Oracle AI Database 26ai Available On-Premises: 300+ New Features",
-    "summary": "Oracle AI Database 26ai is an AI-native database with AI Vector Search, Select AI (natural language to SQL), JSON Relational Duality, AI Agent Management, and quantum-resistant encryption. Available for Linux x86-64 on-premises since January 2026. Over 300 new capabilities for enterprise environments.",
-    "tag": "Oracle DB",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/post/oracle-database-26ai"
   }
 ]

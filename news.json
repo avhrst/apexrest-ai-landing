@@ -1,16 +1,24 @@
 [
   {
-    "date": "2026-03-26",
-    "title": "APEX World 2026: 16-та конференція Oracle APEX стартувала у Нідерландах",
-    "summary": "24-25 березня у ReeHorst, Ede (Нідерланди) відбулась конференція APEX World 2026. Чотири паралельні потоки, кейноут-спікери Marc Sewtz, Monica Godoy, Menno Hoogendijk та Connor McDonald. Представлено APEX 26.1 з APEXLang — новим текстовим форматом .apx для опису додатків, оптимізованим для AI та version control.",
-    "tag": "Подія",
-    "sourceName": "NLOUG",
-    "sourceUrl": "https://nloug.nl/en/events/apex-world-2026/"
+    "date": "2026-03-27",
+    "title": "Oracle + NVIDIA на GTC 2026: GPU-прискорений vector search у Oracle AI Database 26ai",
+    "summary": "На NVIDIA GTC 2026 (18 березня) Oracle представила GPU-прискорений vector index у Oracle AI Database 26ai з використанням NVIDIA cuVS. Також показано інтеграцію NeMo Agent Toolkit з Oracle DB для enterprise AI-агентів, що оптимізують якість, латентність та вартість.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/oracle-ai-database-nvidia-collaboration-advances-enterprise-ai-at-nvidia-gtc-2026"
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Oracle Private Agent Factory: no-code платформа для AI-агентів у 26ai",
+    "summary": "Oracle анонсувала Private Agent Factory — no-code AI agent builder для Oracle AI Database 26ai. Бізнес-аналітики можуть створювати та безпечно деплоїти data-driven агентів без сторонніх сервісів. Працює як контейнер у будь-якому cloud або on-premises.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/introducing-private-agent-factory-unlocking-the-agentic-ai-potential-in-enterprises-with-oracle-ai-database-26ai"
   },
   {
     "date": "2026-03-24",
     "title": "Oracle представила 22 Fusion Agentic Applications на AI World у Лондоні",
-    "summary": "На Oracle AI World у Лондоні 24 березня 2026 Oracle анонсувала 22 нові Fusion Agentic Applications — enterprise-додатки, керовані AI-агентами у фінансах, HR та supply chain. Також представлено Agentic Applications Builder для створення AI-агентів без програмування. AI Agent Studio безкоштовний для клієнтів Fusion Applications.",
+    "summary": "На Oracle AI World у Лондоні 24 березня 2026 Oracle анонсувала 22 нові Fusion Agentic Applications — enterprise-додатки, керовані AI-агентами у фінансах, HR та supply chain. Також представлено Agentic Applications Builder для створення AI-агентів без програмування.",
     "tag": "Oracle AI",
     "sourceName": "Oracle News",
     "sourceUrl": "https://www.oracle.com/news/announcement/oracle-introduces-fusion-agentic-applications-2026-03-24/"
@@ -18,17 +26,9 @@
   {
     "date": "2026-01-09",
     "title": "Заборона 1С: 27 продуктів включено до переліку забороненого ПЗ",
-    "summary": "Держспецзв'язку оприлюднила оновлений перелік забороненого програмного забезпечення, до якого увійшли 27 найменувань продуктів «1С» та BAS. Заборона стосується держорганів, установ та об'єктів критичної інфраструктури. Указ Президента №601/2024 — підстава для санкцій проти «1С».",
+    "summary": "Держспецзв'язку оприлюднила оновлений перелік забороненого програмного забезпечення, до якого увійшли 27 найменувань продуктів «1С» та BAS. Заборона стосується держорганів, установ та об'єктів критичної інфраструктури.",
     "tag": "1С міграція",
     "sourceName": "LB.ua",
     "sourceUrl": "https://lb.ua/economics/2026/01/09/716053_derzhspetszvyazku_oprilyudnila.html"
-  },
-  {
-    "date": "2026-01-06",
-    "title": "Oracle AI Database 26ai доступна on-premises: 300+ нових фіч",
-    "summary": "Oracle AI Database 26ai — AI-native база даних з AI Vector Search, Select AI (природна мова до SQL), JSON Relational Duality, AI Agent Management та quantum-resistant encryption. Доступна для Linux x86-64 on-premises з січня 2026. 300+ нових можливостей для enterprise-середовищ.",
-    "tag": "Oracle DB",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/post/oracle-database-26ai"
   }
 ]

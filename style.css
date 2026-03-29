@@ -530,6 +530,98 @@ img { max-width: 100%; display: block; }
   color: var(--color-primary-light);
 }
 
+/* === Video Section === */
+.video-section {
+  padding-top: 0;
+}
+
+.video-container {
+  margin-bottom: 24px;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.opensource-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 28px;
+  border-radius: var(--radius);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  max-width: 680px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+.opensource-card:hover {
+  border-color: rgba(199,70,52,0.3);
+}
+
+.opensource-icon {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(199,70,52,0.1);
+  color: var(--color-primary-light);
+}
+
+.opensource-content h3 {
+  font-size: 1.05rem;
+  color: white;
+  margin-bottom: 6px;
+}
+.opensource-content h3 a {
+  color: white;
+}
+.opensource-content h3 a:hover {
+  color: var(--color-primary-light);
+}
+.opensource-content p {
+  color: var(--color-text-soft);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.btn-sm {
+  min-height: 36px;
+  padding: 0 16px;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 520px) {
+  .opensource-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px;
+  }
+}
+
 /* === SEO Intent / Overview === */
 .overview-grid {
   display: grid;

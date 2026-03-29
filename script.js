@@ -100,6 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
   observeWithStagger('.overview-card');
   observeWithStagger('.solution-card');
 
+  // Observe video section elements
+  document.querySelectorAll('.video-container, .opensource-card').forEach(el => {
+    el.classList.add('animate-on-scroll');
+    scrollObserver.observe(el);
+  });
+
   // Observe the CTA / contact section
   document.querySelectorAll('.cta').forEach(el => {
     el.classList.add('animate-on-scroll');
@@ -107,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Active Nav Highlighting (scroll spy) ---
-  const spySections = ['seo-intent', 'qa', 'monitoring', 'solutions', 'news', 'contact']
+  const spySections = ['video', 'seo-intent', 'qa', 'monitoring', 'solutions', 'news', 'contact']
     .map(id => document.getElementById(id))
     .filter(Boolean);
 
