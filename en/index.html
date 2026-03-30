@@ -67,6 +67,7 @@
       </a>
       <nav class="nav" id="main-nav">
         <a href="#seo-intent">Overview</a>
+        <a href="#deterministic-vibe-coding">Article</a>
         <a href="#qa">Q&A</a>
         <a href="#monitoring">Monitor</a>
         <a href="#solutions">Solutions</a>
@@ -173,6 +174,64 @@
               <p>AI CLI Skills for Oracle APEX — an open-source tool by APEXREST for vibecoding with Oracle APEX directly from the terminal.</p>
               <a href="https://github.com/avhrst/apex-component-modifier" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View on GitHub</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section article-section" id="deterministic-vibe-coding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Article</div>
+          <h2 class="section-title">Deterministic Vibe Coding: Combining AI Agents with Low-Code Platforms</h2>
+          <p class="article-subtitle">A new approach that combines AI creative power with Oracle APEX discipline</p>
+        </div>
+
+        <div class="article-video">
+          <iframe src="https://www.youtube.com/embed/Bp22TI8eOcY" title="Deterministic Vibe Coding — Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <img src="../media/unnamed.png" alt="Deterministic Vibe Coding infographic" loading="lazy" class="article-infographic">
+
+        <div class="article-content">
+          <h3>The Problem with Traditional Vibe Coding</h3>
+          <p>While "vibe coding" (where you describe what you want and an AI agent writes the code) is exciting, it has serious flaws when applied to real production systems.</p>
+          <ul>
+            <li><strong>Safety:</strong> AI agents have enormous freedom and can accidentally change authorization schemes, authentication settings, or security policies because they lack full understanding of business requirements.</li>
+            <li><strong>Teamwork:</strong> Different developers using AI will produce code in dramatically different styles, making it extremely difficult to integrate AI-generated code into large existing projects.</li>
+          </ul>
+          <p>The root cause of both problems is that agents and developers are given unlimited access to code with no guardrails.</p>
+
+          <h3>The Low-Code Solution</h3>
+          <p>Low-code platforms, like Oracle APEX, have been built over many years specifically to solve these problems for human developers. They provide a programmatic API as an intermediary layer that strictly controls the rules. A developer cannot bypass global security settings; the platform does not allow them to deviate from the application's boundaries. Oracle has been developing this highly deterministic platform for over 20 years.</p>
+
+          <h3>The Breakthrough: Deterministic Vibe Coding</h3>
+          <p>The breakthrough is <strong>giving the AI agent access to the API provided by the low-code platform, rather than directly to the code</strong>. Regardless of the agent's style or context, it performs targeted tasks that fully integrate into the system and are production-ready immediately.</p>
+
+          <h3>A Real-World Demo: Oracle APEX</h3>
+          <p>To demonstrate this concept, an AI agent (Claude Code) was used to add a completely new inventory module to an existing 127-page Oracle APEX application (Customer Tracker). The goal was to build a system that scrapes top-selling products from Amazon, stores them locally, and tracks inventory levels.</p>
+          <ul>
+            <li><strong>What was built:</strong> The agent successfully built 3 new database tables, a PL/SQL package to sync Amazon data, and 6 new APEX pages (including an inventory dashboard and interactive transaction reports).</li>
+            <li><strong>How it was built:</strong> Everything was done through the CLI (SQLcl) using a strict export-patch-import workflow. The agent perfectly matched the existing application's patterns, including ID generation, audit columns, and authorization schemes.</li>
+            <li><strong>Catching Errors:</strong> When the AI agent made mistakes (such as using the wrong authorization parameter or placing SQLERRM directly in DML statements), the deterministic platform caught and rejected the errors at import time, preventing the AI from silently breaking the application.</li>
+          </ul>
+
+          <h3>Why This Is Significant</h3>
+          <p>Traditional enterprise development is slow, and traditional vibe coding is dangerous. Deterministic Vibe Coding is <strong>both fast and safe</strong>. The resulting module is <strong>indistinguishable from what a skilled APEX developer would create manually</strong>, because the platform's deterministic API enforces all best practices and standards.</p>
+
+          <div class="article-links">
+            <a href="https://www.linkedin.com/posts/avhrst_whats-more-powerful-than-vibe-coding-deterministic-activity-7444022640580878336-YKza" target="_blank" rel="noopener noreferrer" class="article-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              Watch demo on LinkedIn
+            </a>
+            <a href="https://github.com/avhrst/apex-component-modifier" target="_blank" rel="noopener noreferrer" class="article-link">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              APEX & SQLcl CLI Skills — Open Source
+            </a>
+            <a href="../media/Deterministic_Vibe_Coding.pdf" target="_blank" rel="noopener noreferrer" class="article-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+              Download PDF
+            </a>
           </div>
         </div>
       </div>

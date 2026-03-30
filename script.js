@@ -100,6 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
   observeWithStagger('.overview-card');
   observeWithStagger('.solution-card');
 
+  // Observe article section elements
+  document.querySelectorAll('.article-video, .article-infographic, .article-content, .article-links').forEach(el => {
+    el.classList.add('animate-on-scroll');
+    scrollObserver.observe(el);
+  });
+
   // Observe video section elements
   document.querySelectorAll('.video-container, .opensource-card').forEach(el => {
     el.classList.add('animate-on-scroll');
@@ -113,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Active Nav Highlighting (scroll spy) ---
-  const spySections = ['video', 'seo-intent', 'qa', 'monitoring', 'solutions', 'news', 'contact']
+  const spySections = ['video', 'deterministic-vibe-coding', 'seo-intent', 'qa', 'monitoring', 'solutions', 'news', 'contact']
     .map(id => document.getElementById(id))
     .filter(Boolean);
 

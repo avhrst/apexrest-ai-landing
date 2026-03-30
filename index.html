@@ -71,6 +71,7 @@
       </a>
       <nav class="nav" id="main-nav">
         <a href="#seo-intent">Огляд</a>
+        <a href="#deterministic-vibe-coding">Стаття</a>
         <a href="#qa">Q&A</a>
         <a href="#monitoring">Моніторинг</a>
         <a href="#solutions">Рішення</a>
@@ -177,6 +178,64 @@
               <p>AI CLI Skills for Oracle APEX — open-source інструмент від APEXREST для vibecoding з Oracle APEX прямо з терміналу.</p>
               <a href="https://github.com/avhrst/apex-component-modifier" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Переглянути на GitHub</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section article-section" id="deterministic-vibe-coding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Стаття</div>
+          <h2 class="section-title">Deterministic Vibe Coding: поєднання AI-агентів із Low-Code платформами</h2>
+          <p class="article-subtitle">Новий підхід до розробки, який поєднує творчу силу AI з дисципліною Oracle APEX</p>
+        </div>
+
+        <div class="article-video">
+          <iframe src="https://www.youtube.com/embed/Bp22TI8eOcY" title="Deterministic Vibe Coding — Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+
+        <img src="media/unnamed.png" alt="Deterministic Vibe Coding infographic" loading="lazy" class="article-infographic">
+
+        <div class="article-content">
+          <h3>Проблема традиційного Vibe Coding</h3>
+          <p>Хоча "vibe coding" (коли ви описуєте бажане, а ШІ-агент пише код) виглядає перспективно, він має серйозні проблеми при застосуванні в реальних продакшен-системах.</p>
+          <ul>
+            <li><strong>Безпека:</strong> ШІ-агенти отримують занадто багато свободи і можуть випадково змінити схеми авторизації, налаштування автентифікації чи політики безпеки, оскільки не розуміють повних бізнес-вимог системи.</li>
+            <li><strong>Командна робота:</strong> Різні розробники, використовуючи ШІ, генерують код у абсолютно різних стилях, що робить його інтеграцію у великі існуючі проєкти надзвичайно складною.</li>
+          </ul>
+          <p>Коренева причина цих проблем полягає в тому, що агентам надається необмежений доступ до коду без жодних запобіжників.</p>
+
+          <h3>Рішення за допомогою Low-Code</h3>
+          <p>Low-code платформи, такі як Oracle APEX, розроблялися роками саме для вирішення цих проблем для людей. Вони функціонують, надаючи програмний API як посередницький шар, який суворо контролює правила. Розробник не може просто обійти глобальні налаштування безпеки; платформа не дозволяє йому відхилятися від заданих меж. Oracle розробляє цю детерміновану платформу вже понад 20 років.</p>
+
+          <h3>Прорив: Deterministic Vibe Coding</h3>
+          <p>Справжній прорив полягає в тому, щоб <strong>надати ШІ-агенту доступ не безпосередньо до коду, а до API, який надає low-code платформа</strong>. Незалежно від стилю чи контексту агента, він виконує завдання, що повністю й миттєво інтегруються в систему та одразу готові до продакшену.</p>
+
+          <h3>Реальна демонстрація на базі Oracle APEX</h3>
+          <p>Щоб довести цю концепцію, ШІ-агенту (Claude Code) доручили додати абсолютно новий модуль управління запасами до існуючого додатка Oracle APEX на 127 сторінок (Customer Tracker). Модуль мав завантажувати популярні товари з Amazon, шукати зображення та відстежувати інвентаризацію.</p>
+          <ul>
+            <li><strong>Що було створено:</strong> Агент створив 3 нові таблиці в базі даних, PL/SQL пакет для взаємодії з Amazon та 6 нових APEX-сторінок, включаючи дашборд та інтерактивні звіти.</li>
+            <li><strong>Як це було зроблено:</strong> Все виконувалося через термінал (SQLcl) за допомогою детермінованого конвеєра "експорт-патч-імпорт". Агент ідеально відтворив наявні шаблони додатка, такі як генерація ID, колонки аудиту та схеми авторизації.</li>
+            <li><strong>Виявлення помилок:</strong> Коли ШІ припускався помилок (наприклад, неправильний параметр авторизації або використання SQLERRM у DML-запитах), детермінований рушій платформи одразу відхиляв їх, захищаючи додаток від поломок.</li>
+          </ul>
+
+          <h3>Чому це важливо</h3>
+          <p>Традиційна корпоративна розробка — повільна, а vibe coding — небезпечний. Deterministic Vibe Coding є одночасно <strong>швидким і безпечним</strong>. Згенерований ШІ модуль <strong>нічим не відрізняється від того, що міг би створити досвідчений розробник вручну</strong>, завдяки тому, що платформа автоматично забезпечує дотримання всіх стандартів.</p>
+
+          <div class="article-links">
+            <a href="https://www.linkedin.com/posts/avhrst_whats-more-powerful-than-vibe-coding-deterministic-activity-7444022640580878336-YKza" target="_blank" rel="noopener noreferrer" class="article-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              Дивитись демонстрацію на LinkedIn
+            </a>
+            <a href="https://github.com/avhrst/apex-component-modifier" target="_blank" rel="noopener noreferrer" class="article-link">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              APEX & SQLcl CLI Skills — Open Source
+            </a>
+            <a href="media/Deterministic_Vibe_Coding.pdf" target="_blank" rel="noopener noreferrer" class="article-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+              Завантажити PDF
+            </a>
           </div>
         </div>
       </div>
