@@ -1,34 +1,34 @@
 [
   {
-    "date": "2026-03-30",
-    "title": "Oracle Analytics Cloud: AI Data Agents for Enterprise Analytics",
-    "summary": "Oracle Analytics Cloud March 2026 update introduces AI Data Agents — purpose-built AI assistants that work with specific datasets and contextual documents (HR policies, contracts, compliance). Agents answer questions using both data and organizational business context.",
+    "date": "2026-04-01",
+    "title": "Oracle Data Deep Dive NYC: AI-First Database Platform Redesign",
+    "summary": "At the Oracle Data Deep Dive event in New York on April 1, Oracle unveiled a redesigned database architecture built for AI. The platform unifies OCI, Autonomous AI Database, and OCI Enterprise AI for rapid creation and scaling of agentic AI applications with enterprise-grade security.",
     "tag": "Oracle AI",
-    "sourceName": "Oracle Analytics Blog",
-    "sourceUrl": "https://blogs.oracle.com/analytics/oracle-analytics-march-2026-update"
+    "sourceName": "SiliconANGLE",
+    "sourceUrl": "https://siliconangle.com/2026/04/01/oracle-data-deep-dive-event-ai-database-thecube-oracledatadeepdivenyc/"
   },
   {
-    "date": "2026-03-27",
-    "title": "Oracle + NVIDIA at GTC 2026: GPU-Accelerated Vector Search in Oracle AI Database 26ai",
-    "summary": "At NVIDIA GTC 2026 (March 18), Oracle unveiled GPU-accelerated vector index generation in Oracle AI Database 26ai using NVIDIA cuVS. Also showcased: NeMo Agent Toolkit integration for enterprise AI agents.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/oracle-ai-database-nvidia-collaboration-advances-enterprise-ai-at-nvidia-gtc-2026"
-  },
-  {
-    "date": "2026-03-24",
-    "title": "Oracle Launches 22 Fusion Agentic Applications at AI World London",
-    "summary": "At Oracle AI World in London on March 24, 2026, Oracle announced 22 new Fusion Agentic Applications — enterprise apps powered by AI agents for finance, HR, and supply chain. AI Agent Studio is free for Fusion Applications customers.",
+    "date": "2026-03-31",
+    "title": "Oracle AI Data Platform for U.S. Federal Government — FedRAMP High",
+    "summary": "Oracle announced the AI Data Platform for U.S. federal agencies. Running in FedRAMP High Government Cloud with IL4/IL5 support, it includes Autonomous AI Database with AI Vector Search, Select AI for natural language queries, and Oracle Analytics with AI-powered assistants.",
     "tag": "Oracle AI",
     "sourceName": "Oracle News",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-introduces-fusion-agentic-applications-2026-03-24/"
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-unveils-ai-data-platform-for-us-federal-government-2026-03-31/"
   },
   {
-    "date": "2026-03-24",
-    "title": "Oracle Private Agent Factory: No-Code AI Agent Platform for 26ai",
-    "summary": "Oracle announced Private Agent Factory — a no-code AI agent builder for Oracle AI Database 26ai. Business analysts can build and securely deploy data-driven agents without third-party services.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/introducing-private-agent-factory-unlocking-the-agentic-ai-potential-in-enterprises-with-oracle-ai-database-26ai"
+    "date": "2026-04-01",
+    "title": "Oracle APEX 26.1: APEXlang, AI in Interactive Reports, and New Enterprise Features",
+    "summary": "Oracle is preparing APEX 26.1 with game-changing features: APEXlang — a text-based app specification format, AI assistant in Interactive Reports for natural language queries, Pattern Pages for component reuse, and an updated Universal Theme with mobile capabilities.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/join-us-at-apex-events-2025"
+  },
+  {
+    "date": "2026-04-01",
+    "title": "Oracle Secures $16B Financing for Massive AI Data Center",
+    "summary": "Related Digital is finalizing $16 billion in financing for a giant Oracle data center. This adds to other massive projects: $38B for facilities in Texas and Wisconsin, $18B in New Mexico. Oracle is scaling AI infrastructure to meet surging demand for cloud AI services.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Bloomberg",
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-04-01/oracle-data-center-nears-16-billion-financing-after-twisty-path"
   }
 ]
