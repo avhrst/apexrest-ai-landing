@@ -1,34 +1,34 @@
 [
   {
-    "date": "2026-04-01",
-    "title": "Oracle Data Deep Dive NYC: AI-First Database Platform Redesign",
-    "summary": "At the Oracle Data Deep Dive event in New York on April 1, Oracle unveiled a redesigned database architecture built for AI. The platform unifies OCI, Autonomous AI Database, and OCI Enterprise AI for rapid creation and scaling of agentic AI applications with enterprise-grade security.",
+    "date": "2026-04-09",
+    "title": "Oracle AI Database 26ai: New Platinum & Diamond Availability Tiers",
+    "summary": "At Oracle AI World Tour in New York, Oracle introduced Platinum (sub-30-second failover for Exadata + RAC) and Diamond (active-active geo-distributed clusters via GoldenGate 26ai with 0–3 second recovery) availability tiers. Post-quantum cryptography added via NIST-approved algorithms.",
     "tag": "Oracle AI",
-    "sourceName": "SiliconANGLE",
-    "sourceUrl": "https://siliconangle.com/2026/04/01/oracle-data-deep-dive-event-ai-database-thecube-oracledatadeepdivenyc/"
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-database-raises-the-bar-for-availability-and-security-across-mission-critical-workloads-302737348.html"
   },
   {
-    "date": "2026-03-31",
-    "title": "Oracle AI Data Platform for U.S. Federal Government — FedRAMP High",
-    "summary": "Oracle announced the AI Data Platform for U.S. federal agencies. Running in FedRAMP High Government Cloud with IL4/IL5 support, it includes Autonomous AI Database with AI Vector Search, Select AI for natural language queries, and Oracle Analytics with AI-powered assistants.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle News",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-unveils-ai-data-platform-for-us-federal-government-2026-03-31/"
-  },
-  {
-    "date": "2026-04-01",
-    "title": "Oracle APEX 26.1: APEXlang, AI in Interactive Reports, and New Enterprise Features",
-    "summary": "Oracle is preparing APEX 26.1 with game-changing features: APEXlang — a text-based app specification format, AI assistant in Interactive Reports for natural language queries, Pattern Pages for component reuse, and an updated Universal Theme with mobile capabilities.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/join-us-at-apex-events-2025"
-  },
-  {
-    "date": "2026-04-01",
-    "title": "Oracle Secures $16B Financing for Massive AI Data Center",
-    "summary": "Related Digital is finalizing $16 billion in financing for a giant Oracle data center. This adds to other massive projects: $38B for facilities in Texas and Wisconsin, $18B in New Mexico. Oracle is scaling AI infrastructure to meet surging demand for cloud AI services.",
+    "date": "2026-04-09",
+    "title": "Fusion Agentic Applications for CX: AI Agents in Sales, Service & Marketing",
+    "summary": "Oracle announced Fusion Agentic Applications for Customer Experience — AI agent teams embedded directly into Oracle Fusion Cloud Applications. Agents operate autonomously across sales, service, and marketing with access to unified enterprise data, workflows, and transactional context.",
     "tag": "Oracle Cloud",
-    "sourceName": "Bloomberg",
-    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-04-01/oracle-data-center-nears-16-billion-financing-after-twisty-path"
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-customer-experience-302737686.html"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "OCI Database Migration: New Assessment Feature for Automated Migrations",
+    "summary": "Oracle Cloud Infrastructure Database Migration service added an Assessment feature that automatically recommends optimal migration methods, checks database readiness, identifies incompatible objects, and provides automated fixups where available.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Docs",
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/database-migration/april-2026.htm"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Oracle AI World Tour 2026: Global Event Series Launches in New York",
+    "summary": "Oracle AI World Tour is a global event series running through spring 2026. The New York edition on April 9 was the flagship event, with announcements from Oracle AI Database, Fusion Cloud, and OCI teams. Microsoft co-presents at several stops as part of OCI/Azure multicloud partnership.",
+    "tag": "Event",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/ai-world-tour/new-york/"
   }
 ]

@@ -1,34 +1,34 @@
 [
   {
-    "date": "2026-04-01",
-    "title": "Oracle Data Deep Dive NYC: редизайн платформи даних під AI",
-    "summary": "На спеціальному заході Oracle Data Deep Dive у Нью-Йорку 1 квітня Oracle представила оновлену архітектуру Oracle Database, орієнтовану на AI. Платформа об'єднує OCI, Autonomous AI Database та OCI Enterprise AI для швидкого створення та масштабування agentic AI-додатків з корпоративною безпекою.",
+    "date": "2026-04-09",
+    "title": "Oracle AI Database 26ai: нові рівні доступності Platinum та Diamond",
+    "summary": "На Oracle AI World Tour у Нью-Йорку Oracle представила рівні Platinum (failover менше 30 секунд для Exadata + RAC) та Diamond (active-active geo-distributed кластери через GoldenGate 26ai з recovery 0–3 секунди). Додано post-quantum криптографію через NIST-сертифіковані алгоритми.",
     "tag": "Oracle AI",
-    "sourceName": "SiliconANGLE",
-    "sourceUrl": "https://siliconangle.com/2026/04/01/oracle-data-deep-dive-event-ai-database-thecube-oracledatadeepdivenyc/"
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-database-raises-the-bar-for-availability-and-security-across-mission-critical-workloads-302737348.html"
   },
   {
-    "date": "2026-03-31",
-    "title": "Oracle AI Data Platform для федерального уряду США — FedRAMP High",
-    "summary": "Oracle анонсувала AI Data Platform для федеральних агентств США. Платформа працює у FedRAMP High Government Cloud з підтримкою IL4/IL5, включає Autonomous AI Database з AI Vector Search, Select AI для запитів природною мовою та Oracle Analytics з AI-асистентами.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle News",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-unveils-ai-data-platform-for-us-federal-government-2026-03-31/"
-  },
-  {
-    "date": "2026-04-01",
-    "title": "Oracle APEX 26.1: APEXlang, AI в Interactive Reports та нові enterprise-функції",
-    "summary": "Oracle готує APEX 26.1 з революційними змінами: APEXlang — текстова специфікація для опису додатків, AI-асистент в Interactive Reports для запитів природною мовою, Pattern Pages для повторного використання компонентів та оновлена Universal Theme з мобільними фічами.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/join-us-at-apex-events-2025"
-  },
-  {
-    "date": "2026-04-01",
-    "title": "Oracle залучає $16 млрд на будівництво дата-центру для AI-інфраструктури",
-    "summary": "Related Digital фіналізує фінансування $16 млрд для гігантського дата-центру Oracle. Це доповнює інші масштабні проєкти: $38 млрд на об'єкти в Техасі та Вісконсіні, $18 млрд у Нью-Мексико. Oracle масштабує AI-інфраструктуру для підтримки зростаючого попиту на хмарні AI-сервіси.",
+    "date": "2026-04-09",
+    "title": "Fusion Agentic Applications для CX: AI-агенти у продажах, сервісі та маркетингу",
+    "summary": "Oracle анонсувала Fusion Agentic Applications для Customer Experience — AI-агенти, вбудовані у Oracle Fusion Cloud Applications. Агенти працюють автономно у продажах, сервісі та маркетингу з доступом до єдиних enterprise-даних, workflows та контексту транзакцій.",
     "tag": "Oracle Cloud",
-    "sourceName": "Bloomberg",
-    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-04-01/oracle-data-center-nears-16-billion-financing-after-twisty-path"
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-customer-experience-302737686.html"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "OCI Database Migration: нова функція Assessment для автоматизації міграцій",
+    "summary": "Oracle Cloud Infrastructure Database Migration отримав функцію Assessment — автоматичні рекомендації оптимального методу міграції, перевірка готовності бази, ідентифікація несумісних об'єктів та автоматичне виправлення типових проблем.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Docs",
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/database-migration/april-2026.htm"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Oracle AI World Tour 2026: глобальна серія заходів стартувала у Нью-Йорку",
+    "summary": "Oracle AI World Tour — серія глобальних заходів весни 2026. Нью-Йоркський етап 9 квітня став основним, з анонсами Oracle AI Database, Fusion Cloud та OCI. Microsoft виступає співпрезентером на кількох зупинках у рамках мультихмарного партнерства OCI/Azure.",
+    "tag": "Подія",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/ai-world-tour/new-york/"
   }
 ]
