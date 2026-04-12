@@ -1,34 +1,34 @@
 [
   {
     "date": "2026-04-09",
-    "title": "Oracle AI Database 26ai: нові рівні доступності Platinum та Diamond",
-    "summary": "На Oracle AI World Tour у Нью-Йорку Oracle представила рівні Platinum (failover менше 30 секунд для Exadata + RAC) та Diamond (active-active geo-distributed кластери через GoldenGate 26ai з recovery 0–3 секунди). Додано post-quantum криптографію через NIST-сертифіковані алгоритми.",
+    "title": "Fusion Agentic Applications для HR: 8 AI-агентів у Oracle HCM",
+    "summary": "Oracle анонсувала 8 нових AI-агентних застосунків у Oracle Fusion Cloud HCM. Career Advancement Command Center, Contract Compliance Workspace та інші агенти автоматизують HR-процеси: кар'єрний розвиток, контрактну відповідність, кадрові рішення — всередині єдиної enterprise-платформи без сторонніх інтеграцій.",
+    "tag": "Oracle Cloud",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-hr-302737696.html"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Fusion Agentic Applications для Finance & SCM: 12 AI-агентів для ERP та ланцюгів поставок",
+    "summary": "Oracle представила 12 нових AI-агентних застосунків у Oracle Fusion Cloud ERP та SCM. Claims Settlement Workspace прискорює врегулювання претензій та покращує фінансову точність. Агенти автоматизують фінансові операції, управління ланцюгами поставок та виробництво в рамках єдиного agentic ERP-стеку.",
+    "tag": "Oracle Cloud",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-finance-and-supply-chain-302738193.html"
+  },
+  {
+    "date": "2026-04-10",
+    "title": "OCI Generative AI: імпорт NVIDIA Nemotron 3 Super 120B та Qwen 3 Embedding",
+    "summary": "OCI Generative AI додав підтримку імпорту open-weights моделей: NVIDIA Nemotron 3 Super 120B (high-performance reasoning та instruction following) та Qwen 3 Embedding (text embedding та reranking для enterprise RAG-сценаріїв). Моделі доступні для розгортання у власному тенанті OCI.",
     "tag": "Oracle AI",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-database-raises-the-bar-for-availability-and-security-across-mission-critical-workloads-302737348.html"
-  },
-  {
-    "date": "2026-04-09",
-    "title": "Fusion Agentic Applications для CX: AI-агенти у продажах, сервісі та маркетингу",
-    "summary": "Oracle анонсувала Fusion Agentic Applications для Customer Experience — AI-агенти, вбудовані у Oracle Fusion Cloud Applications. Агенти працюють автономно у продажах, сервісі та маркетингу з доступом до єдиних enterprise-даних, workflows та контексту транзакцій.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-customer-experience-302737686.html"
-  },
-  {
-    "date": "2026-04-07",
-    "title": "OCI Database Migration: нова функція Assessment для автоматизації міграцій",
-    "summary": "Oracle Cloud Infrastructure Database Migration отримав функцію Assessment — автоматичні рекомендації оптимального методу міграції, перевірка готовності бази, ідентифікація несумісних об'єктів та автоматичне виправлення типових проблем.",
-    "tag": "Oracle Cloud",
     "sourceName": "Oracle Docs",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/database-migration/april-2026.htm"
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/nvidia-nemotron-3-super.htm"
   },
   {
     "date": "2026-04-09",
-    "title": "Oracle AI World Tour 2026: глобальна серія заходів стартувала у Нью-Йорку",
-    "summary": "Oracle AI World Tour — серія глобальних заходів весни 2026. Нью-Йоркський етап 9 квітня став основним, з анонсами Oracle AI Database, Fusion Cloud та OCI. Microsoft виступає співпрезентером на кількох зупинках у рамках мультихмарного партнерства OCI/Azure.",
-    "tag": "Подія",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/ai-world-tour/new-york/"
+    "title": "OCI Cache: підтримка Valkey 8 з нативним JSON та векторним пошуком",
+    "summary": "Oracle Cloud Infrastructure Cache анонсував підтримку Valkey 8 з покращеним I/O threading (до 3.5x швидше для операцій KEYS та реплікації), нативним JSON-модулем та Valkey-search для high-performance vector similarity search. Нові можливості відкривають сценарії семантичного пошуку в кеші без додаткової інфраструктури.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/valkey-8-json-valkeysearch-in-oci-cache-now-live"
   }
 ]
