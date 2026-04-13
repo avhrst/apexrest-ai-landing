@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-13",
+    "title": "APEX Alpe Adria 2026: конференція Oracle APEX у Любляні 16–17 квітня",
+    "summary": "Конференція Oracle APEX-спільноти Словенії, Хорватії та Австрії відбудеться 16–17 квітня у Four Points by Sheraton Ljubljana. Порядок денний охоплює APEXlang, нові функції APEX 26.1, AI Copilot та DevOps-інтеграцію. Захід — частина зростаючої хвилі APEX-конференцій весни 2026 року.",
+    "tag": "Подія",
+    "sourceName": "aaapeks.info",
+    "sourceUrl": "https://www.aaapeks.info/home"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "OCI Autonomous AI Database: критичне оновлення wallet до 15 квітня",
+    "summary": "Oracle попереджає: DigiCert припиняє довіряти G1 кореневим сертифікатам 15 квітня 2026. Користувачі Oracle Autonomous AI Database Serverless та Essbase на OCI Marketplace мають завантажити новий wallet (випущений після 28 січня 2026) до дедлайну, щоб уникнути втрати з'єднання з базою даних.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/autonomous-ai-database/important-announcement-essbase-on-oci-marketplace-digicert-g1-certificate-distrust-on-april-15-2026"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "Oracle APEX Bootcamps Північна Америка: тур з APEX 26.1 та APEXlang",
+    "summary": "Oracle проводить серію безкоштовних одноденних Bootcamps з 1 квітня по 7 травня у п'яти містах США, Канади та Мексики (Бостон, Рестон, Міннеаполіс, Чикаго, Гвадалахара). Учасники отримують доступ до OCI Gen AI, знайомляться з APEXlang та підходом APEX 26.1 до AI-розробки.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/apex-bootcamp-north-america"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "APEX Connect 2026: 12-та конференція Oracle APEX у Heide Park Soltau",
+    "summary": "12-та щорічна конференція APEX Connect відбудеться 18 травня 2026 у Heide Park Soltau (Нижня Саксонія, Німеччина). Теми: APEXlang, AI в APEX, Interactive Reports нового покоління, Map Regions, Dynamic Actions та PL/SQL APIs. Організатор — DOAG, провідна Oracle-спільнота DACH-регіону.",
+    "tag": "Подія",
+    "sourceName": "DOAG",
+    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
+  },
+  {
     "date": "2026-04-09",
     "title": "Fusion Agentic Applications для HR: 8 AI-агентів у Oracle HCM",
     "summary": "Oracle анонсувала 8 нових AI-агентних застосунків у Oracle Fusion Cloud HCM. Career Advancement Command Center, Contract Compliance Workspace та інші агенти автоматизують HR-процеси: кар'єрний розвиток, контрактну відповідність, кадрові рішення — всередині єдиної enterprise-платформи без сторонніх інтеграцій.",

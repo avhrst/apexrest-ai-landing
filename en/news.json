@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-13",
+    "title": "APEX Alpe Adria 2026: Oracle APEX Conference in Ljubljana, April 16–17",
+    "summary": "The Oracle APEX community conference organized by Slovenia, Croatia, and Austria takes place April 16–17 at Four Points by Sheraton Ljubljana. Agenda covers APEXlang, new APEX 26.1 features, AI Copilot, and DevOps integration. Part of the growing wave of APEX community events in spring 2026.",
+    "tag": "Event",
+    "sourceName": "aaapeks.info",
+    "sourceUrl": "https://www.aaapeks.info/home"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "OCI Autonomous AI Database: Critical Wallet Update Required by April 15",
+    "summary": "Oracle warns: DigiCert is revoking trust in G1 root certificates on April 15, 2026. Users of Oracle Autonomous AI Database Serverless and Essbase on OCI Marketplace must download a new wallet (issued after January 28, 2026) before the deadline to avoid losing database connectivity.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/autonomous-ai-database/important-announcement-essbase-on-oci-marketplace-digicert-g1-certificate-distrust-on-april-15-2026"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "Oracle APEX Bootcamps North America: Free Tour Covering APEX 26.1 & APEXlang",
+    "summary": "Oracle is running a series of free one-day APEX Bootcamps from April 1 to May 7 across five cities in the US, Canada, and Mexico (Boston, Reston, Minneapolis, Chicago, Guadalajara). Attendees get access to OCI Gen AI and explore APEXlang and the APEX 26.1 approach to AI-driven development.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/apex-bootcamp-north-america"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "APEX Connect 2026: 12th Annual Oracle APEX Conference at Heide Park Soltau",
+    "summary": "The 12th edition of APEX Connect takes place May 18, 2026, at Heide Park Soltau, Germany. Organized by DOAG, the leading Oracle community in the DACH region. Topics: APEXlang, AI in APEX, next-generation Interactive Reports, Map Regions, Dynamic Actions, and PL/SQL APIs.",
+    "tag": "Event",
+    "sourceName": "DOAG",
+    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
+  },
+  {
     "date": "2026-04-09",
     "title": "Fusion Agentic Applications for HR: 8 AI Agents in Oracle HCM",
     "summary": "Oracle announced 8 new AI-agent applications within Oracle Fusion Cloud HCM. Career Advancement Command Center, Contract Compliance Workspace and others automate HR processes — career mobility, contract compliance, and workforce decisions — inside a unified enterprise platform without third-party integrations.",
