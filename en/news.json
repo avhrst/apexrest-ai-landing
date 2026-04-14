@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-14",
+    "title": "OCI Enterprise AI Goes GA: Oracle Unifies AI Models, Agents, and Governance in One Platform",
+    "summary": "On March 26, Oracle announced the general availability of OCI Enterprise AI — a platform combining OCI Enterprise AI Models (frontier model access), OCI Enterprise AI Agents (build and deploy agentic workloads using managed tools and open-source frameworks), and OCI Enterprise AI Governance (enterprise-grade security and compliance). OpenAI Responses API compatibility lets teams reuse existing code patterns. On April 15, Oracle hosts an introductory webinar.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/ai-and-datascience/announcing-oci-enterprise-ai-ga"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "OCI Compute: AMD Instinct MI355X GPUs — Oracle First Public Hyperscaler",
+    "summary": "Oracle Cloud Infrastructure became the first public cloud provider to offer AMD Instinct MI355X GPUs. OCI Supercluster scales to 131,072 GPUs. Each MI355X carries 288 GB of HBM3E memory at 8 TB/s bandwidth — nearly 3x more powerful than the previous generation. In Q3 2026, Oracle and AMD plan to deploy an AMD Instinct MI450 Series supercluster with 50,000 GPUs.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-general-availability-of-oci-amd-mi355x"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Ukraine Bill 13505: Up to 2% Revenue Fine for Failing to Migrate from 1C and BAS",
+    "summary": "Ukraine's draft law No. 13505 includes a direct financial penalty: a fine of up to 2% of annual revenue for companies that do not complete migration by the set deadlines. Banks and investors already have grounds to refuse financing to companies whose policies reflect continued use of 'hostile software.' Over 300,000 Ukrainian companies are estimated to still run on 1C or BAS.",
+    "tag": "Regulation",
+    "sourceName": "cityhost.ua",
+    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "APEXlang in APEX 26.1: ACE Community Explains the DevOps Approach to Low-Code",
+    "summary": "The Oracle ACE Program published its April 2026 APEXlang must-read roundup. MaxAPEX's blog breaks down the .apx format in depth: a human-readable YAML/JSON for building complete APEX applications with git version control and CI/CD support. APEXlang AI Copilot enables generating and editing applications in natural language. Community consensus: APEX 26.1 is a qualitative leap in DevOps-native low-code development.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle ACE Blog",
+    "sourceUrl": "https://blogs.oracle.com/ace/april-mustread-apex-blog-posts-from-aces"
+  },
+  {
     "date": "2026-04-13",
     "title": "APEX Alpe Adria 2026: Oracle APEX Conference in Ljubljana, April 16–17",
     "summary": "The Oracle APEX community conference organized by Slovenia, Croatia, and Austria takes place April 16–17 at Four Points by Sheraton Ljubljana. Agenda covers APEXlang, new APEX 26.1 features, AI Copilot, and DevOps integration. Part of the growing wave of APEX community events in spring 2026.",

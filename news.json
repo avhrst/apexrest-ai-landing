@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-14",
+    "title": "OCI Enterprise AI GA: Oracle об'єднала AI-моделі, агентів та governance в єдину платформу",
+    "summary": "26 березня Oracle оголосила загальну доступність OCI Enterprise AI — платформи, що об'єднує OCI Enterprise AI Models (доступ до frontier-моделей), OCI Enterprise AI Agents (побудова та деплой agentic workloads через managed tools і open-source фреймворки) та OCI Enterprise AI Governance (безпека та відповідність enterprise-класу). Підтримка OpenAI Responses API дозволяє командам перевикористовувати наявні патерни. 15 квітня Oracle проводить вебінар-презентацію платформи.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/ai-and-datascience/announcing-oci-enterprise-ai-ga"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "OCI Compute: AMD Instinct MI355X GPU — Oracle перший публічний hyperscaler з цими картами",
+    "summary": "Oracle Cloud Infrastructure став першим публічним хмарним провайдером з доступом до AMD Instinct MI355X GPU. OCI Supercluster масштабується до 131 072 GPU. Кожна карта MI355X оснащена 288 GB пам'яті HBM3E з пропускною здатністю 8 TB/s — майже втричі потужніше за попередника. У Q3 2026 Oracle разом з AMD запустить supercluster на AMD Instinct MI450 Series з 50 000 GPU.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-general-availability-of-oci-amd-mi355x"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Законопроєкт 13505: штраф до 2% обігу за невихід з 1С та BAS",
+    "summary": "Законопроєкт №13505 передбачає пряме фінансове покарання: штраф до 2% річного обігу для компаній, які не завершать міграцію у встановлені строки. Вже зараз банки та інвестори мають підстави відмовити у фінансуванні компаніям, що продовжують використовувати «вороже ПЗ». За оцінками, понад 300 тис. українських компаній досі працюють на 1С або BAS.",
+    "tag": "Регуляторика",
+    "sourceName": "self-erp.com",
+    "sourceUrl": "https://www.self-erp.com/blog/blog-2/zaborona-1s-v-ukraini-2026-ponad-20-rosiiskikh-program-potrapili-pid-obmezhennia-447"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "APEXlang у APEX 26.1: ACE-спільнота розкриває DevOps-підхід до low-code",
+    "summary": "Oracle ACE Program опублікував підбірку must-read матеріалів квітня 2026 про APEXlang. Блог MaxAPEX детально розбирає .apx-формат — людино-читабельний YAML/JSON для побудови повних APEX-застосунків з підтримкою git та CI/CD. APEXlang AI Copilot дозволяє генерувати та редагувати застосунки у природній мові. Спільнота підтверджує: APEX 26.1 — якісний стрибок у DevOps-native low-code розробці.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle ACE Blog",
+    "sourceUrl": "https://blogs.oracle.com/ace/april-mustread-apex-blog-posts-from-aces"
+  },
+  {
     "date": "2026-04-13",
     "title": "APEX Alpe Adria 2026: конференція Oracle APEX у Любляні 16–17 квітня",
     "summary": "Конференція Oracle APEX-спільноти Словенії, Хорватії та Австрії відбудеться 16–17 квітня у Four Points by Sheraton Ljubljana. Порядок денний охоплює APEXlang, нові функції APEX 26.1, AI Copilot та DevOps-інтеграцію. Захід — частина зростаючої хвилі APEX-конференцій весни 2026 року.",
