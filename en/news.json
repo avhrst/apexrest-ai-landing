@@ -1,6 +1,38 @@
 [
   {
     "date": "2026-04-14",
+    "title": "Oracle Financial Services Extends Agentic AI Platform to Corporate Banking: Agents for Loans, Guarantees & SCF",
+    "summary": "At the Oracle Financial Services Summit on April 14, Oracle expanded its agentic AI platform to corporate banking. New pre-built AI agents cover the full cycle: Loan Data Extraction Agent processes lengthy credit agreements, Financial Data Validation Agent verifies financial inputs, Application Validator Agent handles bank guarantee applications, and SCF Program Creation Agent launches supply chain finance programs. Built with human-in-the-loop governance. Oracle plans 100+ corporate and retail banking agents within 12 months.",
+    "tag": "Oracle AI",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-financial-services-extends-agentic-ai-platform-to-corporate-banking-302738817.html"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Oracle Primavera Unifier Gets AI Agents for Capital Project Management — Oracle Stock +6.5%",
+    "summary": "On April 14, Oracle announced an AI overhaul for Primavera Unifier, its flagship capital project management platform. New capabilities: AI workflow summaries, no-code/low-code process automation via Oracle Integration, real-time adapters and triggers, improved reporting dashboards, and audit-ready compliance. Oracle Integration gives AI agents secure, fully auditable access to enterprise data. Markets responded with Oracle stock surging 6.5% on April 14, 2026.",
+    "tag": "Oracle Cloud",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-enables-more-connected-compliant-capital-projects-302741064.html"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Oracle AI World Tour Singapore: SMRT Deploys OCI Enterprise AI for Rail Maintenance Intelligence",
+    "summary": "At Oracle AI World Tour Singapore on April 14, SMRT — Singapore's leading public transportation provider — announced a pilot using OCI Enterprise AI and Oracle Autonomous AI Database. The JARVIS platform (built by STRIDES Technologies) unifies operational data from multiple systems and applies AI for rail infrastructure condition analysis via a generative AI chatbot interface. The case demonstrates Oracle AI applicability in mission-critical industrial infrastructure.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Singapore",
+    "sourceUrl": "https://www.oracle.com/sg/news/announcement/smrt-advances-ai-enabled-rail-maintenance-with-oracle-2026-04-13/"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Oracle Financial Crime & Compliance: New AI Agents for Suspicious Transaction Detection and Compliance",
+    "summary": "On April 9, Oracle announced enhancements to the Oracle FCCM (Financial Crime and Compliance Management) platform with Lucinity technology and new AI agents. Agents automate detection of suspicious financial transactions, compliance verification, and transaction monitoring. For banks and financial institutions migrating from legacy systems, Oracle now offers a fully AI-native financial compliance infrastructure.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-brings-new-ai-capabilities-and-agents-to-its-financial-crime-and-compliance-portfolio-2026-04-09/"
+  },
+  {
+    "date": "2026-04-14",
     "title": "OCI Enterprise AI Goes GA: Oracle Unifies AI Models, Agents, and Governance in One Platform",
     "summary": "On March 26, Oracle announced the general availability of OCI Enterprise AI — a platform combining OCI Enterprise AI Models (frontier model access), OCI Enterprise AI Agents (build and deploy agentic workloads using managed tools and open-source frameworks), and OCI Enterprise AI Governance (enterprise-grade security and compliance). OpenAI Responses API compatibility lets teams reuse existing code patterns. On April 15, Oracle hosts an introductory webinar.",
     "tag": "Oracle AI",

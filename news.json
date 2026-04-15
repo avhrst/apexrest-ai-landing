@@ -1,6 +1,38 @@
 [
   {
     "date": "2026-04-14",
+    "title": "Oracle Financial Services: agentic AI-платформа для корпоративного банкінгу — агенти для кредитів, гарантій та SCF",
+    "summary": "На Oracle Financial Services Summit 14 квітня Oracle оголосила про розширення agentic AI платформи на корпоративний банкінг. Нові pre-built AI-агенти автоматизують повний цикл: Loan Data Extraction Agent обробляє кредитні договори, Financial Data Validation Agent перевіряє фінансові дані, Application Validator Agent оформляє банківські гарантії, SCF Program Creation Agent запускає програми supply chain finance. Побудовано з human-in-the-loop governance. Oracle планує 100+ агентів для корпоративного та роздрібного банкінгу протягом 12 місяців.",
+    "tag": "Oracle AI",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-financial-services-extends-agentic-ai-platform-to-corporate-banking-302738817.html"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Oracle Primavera Unifier: AI-агенти для управління капітальними проектами — акції Oracle +6.5%",
+    "summary": "14 квітня Oracle анонсувала AI-трансформацію Primavera Unifier — флагманського рішення для управління капітальними проектами. Нові можливості: AI workflow summaries, no-code/low-code автоматизація через Oracle Integration, real-time адаптери та тригери, покращені dashboards та audit-ready compliance. Oracle Integration забезпечує AI-агентам безпечний доступ до даних із чітким аудитним слідом. Ринок відреагував зростанням акцій Oracle на 6.5% 14 квітня 2026.",
+    "tag": "Oracle Cloud",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-enables-more-connected-compliant-capital-projects-302741064.html"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Oracle AI World Tour Сингапур: SMRT впроваджує OCI Enterprise AI та Autonomous Database для залізниці",
+    "summary": "На Oracle AI World Tour у Сингапурі 14 квітня SMRT — провідний оператор громадського транспорту — оголосив про пілотний проєкт з OCI Enterprise AI та Oracle Autonomous AI Database. Платформа JARVIS (розроблена STRIDES Technologies) об'єднує операційні дані з різних систем та застосовує AI через generative AI chatbot-інтерфейс для аналізу стану залізничної інфраструктури. Кейс підтверджує застосовність Oracle AI у mission-critical виробничій інфраструктурі.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Singapore",
+    "sourceUrl": "https://www.oracle.com/sg/news/announcement/smrt-advances-ai-enabled-rail-maintenance-with-oracle-2026-04-13/"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Oracle Financial Crime & Compliance: нові AI-агенти для моніторингу фінансових злочинів",
+    "summary": "9 квітня Oracle оголосила про посилення платформи Oracle FCCM (Financial Crime and Compliance Management) технологіями Lucinity та новими AI-агентами. Агенти автоматизують виявлення підозрілих операцій, перевірку compliance та моніторинг транзакцій. Для банків і фінустанов, що мігрують з legacy-систем, Oracle пропонує повну AI-native інфраструктуру фінансового комплаєнсу.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-brings-new-ai-capabilities-and-agents-to-its-financial-crime-and-compliance-portfolio-2026-04-09/"
+  },
+  {
+    "date": "2026-04-14",
     "title": "OCI Enterprise AI GA: Oracle об'єднала AI-моделі, агентів та governance в єдину платформу",
     "summary": "26 березня Oracle оголосила загальну доступність OCI Enterprise AI — платформи, що об'єднує OCI Enterprise AI Models (доступ до frontier-моделей), OCI Enterprise AI Agents (побудова та деплой agentic workloads через managed tools і open-source фреймворки) та OCI Enterprise AI Governance (безпека та відповідність enterprise-класу). Підтримка OpenAI Responses API дозволяє командам перевикористовувати наявні патерни. 15 квітня Oracle проводить вебінар-презентацію платформи.",
     "tag": "Oracle AI",
