@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-15",
+    "title": "Oracle Data Deep Dive NYC: AI Database як фундамент для agentic AI — нова архітектурна парадигма",
+    "summary": "15 квітня Oracle провела Oracle Data Deep Dive NYC у Нью-Йорку — подію, присвячену стратегії конвергенції AI Database для enterprise agentic AI. Oracle ставить на підхід «все в одному движку»: векторний пошук, граф, JSON, реляційна модель та пам'ять агентів — без окремих AI-сілосів. Exadata Exascale використовує Raft replication для sub-3-секундного failover без втрати даних для agentic workloads. Oracle кидає виклик парадигмі «orchestration above data»: агентська логіка має виконуватись якомога ближче до даних, а не над розрізненими сховищами.",
+    "tag": "Oracle AI",
+    "sourceName": "SiliconAngle",
+    "sourceUrl": "https://siliconangle.com/2026/04/15/oracle-bets-ai-database-convergence-agentic-ai-oracledatadeepdivenyc/"
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Oracle EPM 26.04: Fusion AI Agent для планування — від квартальних циклів до event-driven FP&A",
+    "summary": "Квітневе оновлення Oracle Fusion Cloud EPM (26.04) інтегрує Fusion AI Agents у процеси фінансового планування. Planning Agent переводить FP&A від квартальних циклів до event-driven: real-time аналіз відхилень та тенденцій через натуральну мову, what-if симуляції на основі Fusion ERP/EPM даних, автоматичне наративне звітування. Нові REST APIs забезпечують програмну взаємодію AI-агентів з EPM Cloud. Predictive Cash Forecasting — раніше доступний лише у beta — тепер відкрито для всіх клієнтів.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Docs",
+    "sourceUrl": "https://docs.oracle.com/en/cloud/saas/readiness/epm/2026/epm-apr26/26apr-epm-wn-f44078.htm"
+  },
+  {
+    "date": "2026-04-15",
+    "title": "Qualys VMDR та TotalCloud на Oracle Cloud Marketplace: безпека OCI через один клік",
+    "summary": "15 квітня Qualys оголосила про доступність VMDR (Vulnerability Management, Detection and Response) та TotalCloud CNAPP на Oracle Cloud Marketplace. Рішення забезпечують єдину видимість cloud, containers, workloads та applications на OCI з ризик-орієнтованою пріоритизацією вразливостей. One-click provisioning через нативну OCI-інтеграцію. Клієнти можуть використовувати існуючий OCI committed spend — без окремих закупівельних процесів.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Qualys Blog",
+    "sourceUrl": "https://blog.qualys.com/product-tech/2026/04/15/qualys-vmdr-totalcloud-now-available-oracle-cloud-marketplace"
+  },
+  {
+    "date": "2026-04-15",
+    "title": "OCI Java Management Service: підтримка JDK 26 — Oracle перший хмарний провайдер",
+    "summary": "Oracle Cloud Infrastructure Java Management Service отримав підтримку JDK 26, випущеного 17 березня 2026. OCI стала першим публічним хмарним провайдером з підтримкою Oracle JDK 26 — нового випуску з інтеграцією AI, новими засобами безпеки та покращеннями продуктивності. Oracle також анонсувала Java Verified Portfolio (JVP) — куратований набір Oracle-підтримуваних інструментів, фреймворків та бібліотек, безкоштовний для Java SE підписників та OCI-клієнтів.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/java/the-arrival-of-java-26"
+  },
+  {
     "date": "2026-04-14",
     "title": "Oracle Financial Services: agentic AI-платформа для корпоративного банкінгу — агенти для кредитів, гарантій та SCF",
     "summary": "На Oracle Financial Services Summit 14 квітня Oracle оголосила про розширення agentic AI платформи на корпоративний банкінг. Нові pre-built AI-агенти автоматизують повний цикл: Loan Data Extraction Agent обробляє кредитні договори, Financial Data Validation Agent перевіряє фінансові дані, Application Validator Agent оформляє банківські гарантії, SCF Program Creation Agent запускає програми supply chain finance. Побудовано з human-in-the-loop governance. Oracle планує 100+ агентів для корпоративного та роздрібного банкінгу протягом 12 місяців.",
