@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-17",
+    "title": "APEX Alpe Adria 2026: конференція Oracle APEX відбулася у Любляні",
+    "summary": "17 квітня у Four Points by Sheraton Ljubljana відбулася APEX Alpe Adria 2026 — щорічна конференція Oracle APEX-спільноти Словенії, Хорватії та Австрії. Центральні теми заходу: APEXlang та .apx-формат для DevOps-native розробки, AI Copilot у APEX 26.1, Interactive Reports нового покоління та Map Regions. Конференція підтверджує зростаючий інтерес до Oracle APEX у Центральній Європі та зміцнення екосистеми навколо APEX 26.1 як платформи для enterprise low-code розробки.",
+    "tag": "Подія",
+    "sourceName": "aaapeks.info",
+    "sourceUrl": "https://www.aaapeks.info/home"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "Oracle і AWS розширюють мультихмарну мережу: приватний managed-канал між OCI та AWS",
+    "summary": "16 квітня Oracle і Amazon Web Services оголосили про розширення мультихмарної мережевої співпраці. Клієнти отримають enterprise-grade приватний managed-канал між OCI та AWS — без необхідності фізичної інфраструктури або окремих мережевих провайдерів. Технічно — через Oracle Interconnect і AWS Interconnect. Підтримуються full stack та split-stack мультихмарні деплойменти. Перший регіон запуску — AWS US East (N. Virginia). Oracle OCI вже зв'язана з 26 партнерськими хмарними регіонами.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-and-aws-collaborate-to-expand-multicloud-networking-2026-04-16/"
+  },
+  {
+    "date": "2026-04-13",
+    "title": "Oracle APEX 26.1: AI в Interactive Reports, Pattern Pages та новий Universal Theme — огляд спільноти",
+    "summary": "Блог Into The Oracle Verse опублікував детальний огляд інновацій APEX 26.1. AI в Interactive Reports дозволяє задавати питання до таблиць природною мовою — система автоматично застосовує фільтри, будує графіки та відповідає у чаті. Pattern Pages спрощують повторне використання UI-патернів у великих командах. Новий Universal Theme додасть розширені mobile-функції. APEXlang AI Copilot дозволяє генерувати цілі застосунки з текстового опису.",
+    "tag": "Oracle APEX",
+    "sourceName": "Into The Oracle Verse",
+    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "Oracle AI Database 26ai: Platinum та Diamond рівні доступності для місії-критичних систем",
+    "summary": "9 квітня Oracle оголосила нові рівні доступності для Oracle AI Database 26ai на Exadata. Platinum-рівень забезпечує failover менш ніж за 30 секунд для Active Data Guard та RAC без змін у застосунках. Diamond-рівень об'єднує Exadata, RAC, Active Data Guard та Zero Data Loss Recovery — для надійності рівня фондової біржі, без ручного втручання. До 4x швидший failover для великих і складних деплойментів, що відкриває enterprise-клієнтам mission-critical доступність без спеціалізованої in-house експертизи.",
+    "tag": "Oracle AI",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-database-raises-the-bar-for-availability-and-security-across-mission-critical-workloads-302737348.html"
+  },
+  {
     "date": "2026-04-15",
     "title": "Oracle Data Deep Dive NYC: AI Database як фундамент для agentic AI — нова архітектурна парадигма",
     "summary": "15 квітня Oracle провела Oracle Data Deep Dive NYC у Нью-Йорку — подію, присвячену стратегії конвергенції AI Database для enterprise agentic AI. Oracle ставить на підхід «все в одному движку»: векторний пошук, граф, JSON, реляційна модель та пам'ять агентів — без окремих AI-сілосів. Exadata Exascale використовує Raft replication для sub-3-секундного failover без втрати даних для agentic workloads. Oracle кидає виклик парадигмі «orchestration above data»: агентська логіка має виконуватись якомога ближче до даних, а не над розрізненими сховищами.",
