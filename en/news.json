@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-18",
+    "title": "OCI: Oracle Container Engine Supports Kubernetes 1.35 'Timbernetes' — In-Place Pod Resource Updates",
+    "summary": "Oracle Container Engine for Kubernetes (OKE) added support for Kubernetes 1.35, codenamed 'Timbernetes.' Key highlights: in-place CPU/memory resource updates for Pods without restarting — significant for stateful and restart-sensitive workloads; improved scheduling and security foundations. Clusters on Oracle Linux 7 must migrate to OL8+ since Kubernetes 1.35 requires cgroup v2. For enterprise teams building Oracle APEX applications with Kubernetes orchestration, this version enables finer-grained resource tuning without service interruptions.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oke-welcomes-kubernetes-1-35"
+  },
+  {
+    "date": "2026-04-18",
+    "title": "Oracle Database@AWS Now Available in 12 Global Regions: Frankfurt, Tokyo, Ohio and More",
+    "summary": "Oracle Database@AWS expanded to 12 AWS regions worldwide. New regions include Frankfurt (EU-Central-1), Tokyo (AP-Northeast-1), Ohio (US-East-2), London (EU-West-2), Mumbai (AP-South-1), Hyderabad (AP-South-2), and Seoul (AP-Northeast-2). The service lets customers run Oracle Exadata and Oracle RAC natively inside AWS — without moving data to OCI. European and Asia-Pacific organizations with in-region data residency requirements now have full support. For businesses migrating from legacy ERP to Oracle, this eliminates the 'we're already on AWS' objection.",
+    "tag": "Oracle Cloud",
+    "sourceName": "AWS",
+    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/04/oracle-database-aws-available-twelve-regions/"
+  },
+  {
+    "date": "2026-04-18",
+    "title": "OCI Cache Valkey 8.1: New Release with JSON Module and Vector Similarity Search",
+    "summary": "Oracle Cloud Infrastructure Cache updated to Valkey 8.1. The new release includes a native JSON module, valkey-search for high-performance vector similarity search, improved I/O threading (up to 3.5x faster for KEYS operations and replication), an optimized hash table with reduced per-key memory usage, and iterator prefetching. For Oracle APEX applications using semantic search and RAG scenarios, Valkey 8.1 enables vector search directly in the cache layer — no additional AI infrastructure required.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Docs",
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/oci-cache/apr2026-valkey-8-1.htm"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Oracle + Bloom Energy: 2.8 GW Fuel Cell Deal for OCI AI Data Centers — Grid-Independent Cloud Power",
+    "summary": "On April 14, Bloom Energy and Oracle announced an expanded strategic partnership: Oracle will procure up to 2.8 gigawatts of solid oxide fuel cell (SOFC) systems to power its AI data centers in the US. An initial 1.2 GW is already contracted and being deployed. Bloom delivered the first system in 55 days — 35 days ahead of the expected 90-day schedule. The fuel cells operate independently of the electrical grid and support high-density AI workloads. Market reaction: Bloom Energy stock surged 22%.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Bloom Energy",
+    "sourceUrl": "https://www.bloomenergy.com/news/bloom-energy-and-oracle-expand-strategic-partnership-to-deploy-up-to-2-8-gw-to-accelerate-ai-infrastructure-build-out/"
+  },
+  {
     "date": "2026-04-17",
     "title": "APEX Alpe Adria 2026: Oracle APEX Community Conference Held in Ljubljana",
     "summary": "On April 17, APEX Alpe Adria 2026 took place at Four Points by Sheraton Ljubljana — the annual Oracle APEX community conference organized by Slovenia, Croatia, and Austria. Key topics: APEXlang and the .apx format for DevOps-native development, APEX 26.1 AI Copilot, next-generation Interactive Reports, and Map Regions. The event reinforces growing Central European interest in Oracle APEX and the strengthening ecosystem around APEX 26.1 as an enterprise low-code platform.",

@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-18",
+    "title": "OCI: Oracle Container Engine підтримує Kubernetes 1.35 «Timbernetes» — in-place оновлення ресурсів Pod",
+    "summary": "Oracle Container Engine for Kubernetes (OKE) отримав підтримку Kubernetes 1.35, відомого як «Timbernetes». Серед ключових нововведень: in-place оновлення CPU/RAM ресурсів Pod без перезапуску — суттєво для stateful і чутливих до рестарту workloads; покращений шедулінг та безпека. Кластери на Oracle Linux 7 потребують міграції на OL8+ (1.35 вимагає cgroup v2). Для команд, що будують enterprise-застосунки на Oracle APEX з Kubernetes-оркестрацією, це відкриває нові можливості тонкого налаштування ресурсів без переривань.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oke-welcomes-kubernetes-1-35"
+  },
+  {
+    "date": "2026-04-18",
+    "title": "Oracle Database@AWS тепер доступна у 12 глобальних регіонах: Frankfurt, Tokyo, Ohio та інші",
+    "summary": "Oracle Database@AWS розширила покриття до 12 регіонів AWS у всьому світі. Нові регіони: Frankfurt (EU-Central-1), Tokyo (AP-Northeast-1), Ohio (US-East-2), London (EU-West-2), Mumbai (AP-South-1), Hyderabad (AP-South-2), Seoul (AP-Northeast-2). Сервіс дозволяє запускати Oracle Exadata та Oracle RAC безпосередньо в AWS — без переміщення даних до OCI. Клієнти в Європі та Азії з вимогами in-region data residency отримали повну підтримку. Для бізнесу, що мігрує з 1С на Oracle, це усуває бар'єр «ми вже в AWS».",
+    "tag": "Oracle Cloud",
+    "sourceName": "AWS",
+    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/04/oracle-database-aws-available-twelve-regions/"
+  },
+  {
+    "date": "2026-04-18",
+    "title": "OCI Cache Valkey 8.1: новий реліз з JSON-модулем та векторним пошуком",
+    "summary": "Oracle Cloud Infrastructure Cache оновився до Valkey 8.1. Нова версія включає JSON-модуль, valkey-search для high-performance vector similarity search, покращений I/O threading (3.5x швидше для операцій KEYS та реплікації), оптимізовану hash-таблицю зі зниженим споживанням пам'яті на ключ та iterator prefetching. Для Oracle APEX застосунків з семантичним пошуком та RAG-сценаріями Valkey 8.1 відкриває можливість реалізувати vector search прямо в шарі кешу без окремої AI-інфраструктури.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Docs",
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/oci-cache/apr2026-valkey-8-1.htm"
+  },
+  {
+    "date": "2026-04-14",
+    "title": "Oracle + Bloom Energy: 2.8 ГВт паливних елементів для AI-дата-центрів OCI — незалежність від електросітки",
+    "summary": "14 квітня Bloom Energy та Oracle оголосили про розширення стратегічного партнерства: Oracle замовить до 2.8 ГВт систем на твердооксидних паливних елементах (SOFC) для живлення своїх AI-дата-центрів у США. Початкові 1.2 ГВт вже в розгортанні. Перша система доставлена за 55 днів — на 35 днів раніше запланованих 90. Паливні елементи Bloom не залежать від електросітки та підтримують надщільні AI-навантаження. Реакція ринку: акції Bloom Energy +22%.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Bloom Energy",
+    "sourceUrl": "https://www.bloomenergy.com/news/bloom-energy-and-oracle-expand-strategic-partnership-to-deploy-up-to-2-8-gw-to-accelerate-ai-infrastructure-build-out/"
+  },
+  {
     "date": "2026-04-17",
     "title": "APEX Alpe Adria 2026: конференція Oracle APEX відбулася у Любляні",
     "summary": "17 квітня у Four Points by Sheraton Ljubljana відбулася APEX Alpe Adria 2026 — щорічна конференція Oracle APEX-спільноти Словенії, Хорватії та Австрії. Центральні теми заходу: APEXlang та .apx-формат для DevOps-native розробки, AI Copilot у APEX 26.1, Interactive Reports нового покоління та Map Regions. Конференція підтверджує зростаючий інтерес до Oracle APEX у Центральній Європі та зміцнення екосистеми навколо APEX 26.1 як платформи для enterprise low-code розробки.",
