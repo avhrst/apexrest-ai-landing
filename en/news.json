@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-01",
+    "title": "APEX AI Interactive Reports: Query Your Report in Natural Language — Millions of Existing IRs Become AI-Ready in APEX 26.1",
+    "summary": "Oracle published 'Talk to Your Data, Trust the Result. Introducing APEX AI Interactive Reports.' The key APEX 26.1 advantage: any existing Interactive Report becomes AI-enabled after a platform upgrade — no application code changes required. An LLM converts natural language questions into SQL filters and aggregates that users can see and edit directly for full transparency. A built-in chat mode is also available within the IR component. For enterprise analytics teams on Oracle APEX, this means instant AI enrichment of all existing reports without rebuilding them.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/introducing-apex-ai-interactive-reports"
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Oracle AI Database Private Agent Factory: No-Code Platform for Enterprise AI Agents on Corporate Data",
+    "summary": "On March 24, Oracle introduced Private Agent Factory — a no-code component of Oracle AI Database 26ai for building and deploying trusted AI agents. Agents are built on private corporate data with full audit trail and security controls, without extracting data externally. The platform supports dynamic agentic workflows, external REST API integration, and MCP server connections. Finished agents deploy as portable containers and integrate with Oracle AI Agent Memory — a persistent agent memory layer built into the database.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/introducing-private-agent-factory-unlocking-the-agentic-ai-potential-in-enterprises-with-oracle-ai-database-26ai"
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Oracle AI Agent Memory: Unified Persistent Agent Memory Built Directly Into the Database",
+    "summary": "Oracle introduced the Unified Memory Core — a built-in persistent memory engine for AI agents in Oracle AI Database 26ai. Rather than maintaining separate graph, document, and vector stores, a single unified layer handles all types of agent memory: short-term (session context), long-term (facts and preferences), and semantic (vector associations). AI Agent Memory integrates with Private Agent Factory and enables agents to 'remember' across sessions without external RAG infrastructure. Expected availability: 2026.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/introducing-oracle-ai-agent-memory-a-unified-memory-core-for-enterprise-ai-systems"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Oracle EBS 12.2 Certified for Oracle AI Database 26ai on On-Premises Linux x86-64",
+    "summary": "On April 7, Oracle confirmed certification of Oracle E-Business Suite Release 12.2 for use with Oracle AI Database 26ai (RU 23.26.1) on on-premises Linux x86-64. EBS 12.2 customers on database 19c get a direct upgrade path to 26ai via the AutoUpgrade utility — no application-layer changes required. Alongside certification, Oracle introduced the EDBPC (EBS Database Parameter Checker) utility to validate database parameters before migration. For enterprises planning a move to Oracle AI Database, this removes a key technical barrier.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle EBS Tech Blog",
+    "sourceUrl": "https://blogs.oracle.com/ebstech/ebs-12-2-now-certified-with-oracle-ai-database-26ai-on-premises-linux-x86-64"
+  },
+  {
     "date": "2026-04-18",
     "title": "OCI: Oracle Container Engine Supports Kubernetes 1.35 'Timbernetes' — In-Place Pod Resource Updates",
     "summary": "Oracle Container Engine for Kubernetes (OKE) added support for Kubernetes 1.35, codenamed 'Timbernetes.' Key highlights: in-place CPU/memory resource updates for Pods without restarting — significant for stateful and restart-sensitive workloads; improved scheduling and security foundations. Clusters on Oracle Linux 7 must migrate to OL8+ since Kubernetes 1.35 requires cgroup v2. For enterprise teams building Oracle APEX applications with Kubernetes orchestration, this version enables finer-grained resource tuning without service interruptions.",

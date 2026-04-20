@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-01",
+    "title": "APEX AI Interactive Reports: запитайте звіт природною мовою — мільйони наявних IR стають AI-ready в APEX 26.1",
+    "summary": "Oracle опублікував «Talk to Your Data, Trust the Result. Introducing APEX AI Interactive Reports». Ключова перевага APEX 26.1: будь-який наявний Interactive Report стає AI-enabled після оновлення платформи — без жодних змін у коді застосунку. LLM перетворює природномовне питання на SQL-фільтри та агрегати, які користувач бачить і може редагувати для повної прозорості. Вбудований чат-режим доступний прямо у IR-компоненті. Для команд, що будують enterprise-аналітику на Oracle APEX, це означає миттєве AI-збагачення всіх наявних звітів без переробки.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/introducing-apex-ai-interactive-reports"
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Oracle AI Database Private Agent Factory: no-code платформа для enterprise AI-агентів на корпоративних даних",
+    "summary": "24 березня Oracle представила Private Agent Factory — no-code компонент Oracle AI Database 26ai для побудови та деплою довірених AI-агентів. Агенти будуються на приватних корпоративних даних з повним audit trail та контролем безпеки, без витягування даних назовні. Платформа підтримує динамічні agentic workflow, інтеграцію з зовнішніми REST API та MCP-серверами. Готові агенти розгортаються як портативні контейнери та інтегруються з Oracle AI Agent Memory — персистентним шаром пам'яті агентів у базі даних.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/introducing-private-agent-factory-unlocking-the-agentic-ai-potential-in-enterprises-with-oracle-ai-database-26ai"
+  },
+  {
+    "date": "2026-03-24",
+    "title": "Oracle AI Agent Memory: єдина персистентна пам'ять AI-агентів вбудована безпосередньо в базу даних",
+    "summary": "Oracle представила Unified Memory Core — вбудований рушій персистентної пам'яті для AI-агентів у Oracle AI Database 26ai. Замість окремих графових, документних і векторних сховищ — один уніфікований шар забезпечує всі типи агентської пам'яті: короткострокову (сесійний контекст), довгострокову (факти та преференції) та семантичну (векторні асоціації). AI Agent Memory інтегрується з Private Agent Factory та дозволяє агентам «пам'ятати» між сесіями без зовнішніх RAG-систем. Очікувана доступність — 2026 рік.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/introducing-oracle-ai-agent-memory-a-unified-memory-core-for-enterprise-ai-systems"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Oracle EBS 12.2 сертифікована для Oracle AI Database 26ai на on-premises Linux x86-64",
+    "summary": "7 квітня Oracle підтвердила сертифікацію Oracle E-Business Suite Release 12.2 для роботи з Oracle AI Database 26ai (RU 23.26.1) на on-premises Linux x86-64. Клієнти EBS 12.2 з базою даних 19c отримують пряме оновлення до 26ai через утиліту AutoUpgrade без зміни рівня застосунків. Разом із сертифікацією Oracle представила нову утиліту EDBPC (EBS Database Parameter Checker) для перевірки параметрів бази перед міграцією. Для підприємств, що планують перехід на Oracle AI Database, це знімає ключовий технічний бар'єр.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle EBS Tech Blog",
+    "sourceUrl": "https://blogs.oracle.com/ebstech/ebs-12-2-now-certified-with-oracle-ai-database-26ai-on-premises-linux-x86-64"
+  },
+  {
     "date": "2026-04-18",
     "title": "OCI: Oracle Container Engine підтримує Kubernetes 1.35 «Timbernetes» — in-place оновлення ресурсів Pod",
     "summary": "Oracle Container Engine for Kubernetes (OKE) отримав підтримку Kubernetes 1.35, відомого як «Timbernetes». Серед ключових нововведень: in-place оновлення CPU/RAM ресурсів Pod без перезапуску — суттєво для stateful і чутливих до рестарту workloads; покращений шедулінг та безпека. Кластери на Oracle Linux 7 потребують міграції на OL8+ (1.35 вимагає cgroup v2). Для команд, що будують enterprise-застосунки на Oracle APEX з Kubernetes-оркестрацією, це відкриває нові можливості тонкого налаштування ресурсів без переривань.",
