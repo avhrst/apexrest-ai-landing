@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-21",
+    "title": "Oracle Critical Patch Update April 2026: 483 New Security Patches for Database, ORDS, and GoldenGate",
+    "summary": "On April 21, Oracle released its quarterly Critical Patch Update (CPU) for April 2026 — 483 new security patches. Oracle Database received 8 patches, 4 of which are remotely exploitable without authentication; affected versions include 19c (19.3–19.30), 21c (21.3–21.21), and AI Database 26ai (23.4–23.26.1). Oracle REST Data Services: 2 patches (both remote, CVSS 7.5). GoldenGate: 10 patches, 7 remote. Oracle strongly recommends applying patches as soon as possible. Quarterly CPUs represent a fundamental difference from legacy systems like 1C/BAS, which receive no centralized security patches after being banned.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Security Alerts",
+    "sourceUrl": "https://www.oracle.com/security-alerts/cpuapr2026.html"
+  },
+  {
+    "date": "2026-04-21",
+    "title": "Oracle APEX April 2026 Newsletter: Agentic AI with Oracle AI Database and the Acordia Enterprise Case",
+    "summary": "The April 2026 Oracle APEX Newsletter features a deep dive on Agentic AI with Oracle AI Database — how 26ai and APEX enable agentic automation for business applications without external AI infrastructure. The exclusive Acordia case study (founder Vincent Lockyer) shows an enterprise data lifecycle management solution built on Oracle APEX and OCI. Also included: new ACE community blog picks and upcoming spring events — APEX Connect 2026 at Heide Park (May 18) and the final North America Bootcamp stops.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Newsletter",
+    "sourceUrl": "https://oracleapex.com/ords/r/apex_pm/newsletter-app/newsletter?edition=april-2026"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "OCI Database Migration Service Gets Assessment Feature — Automated Readiness Check Before Migration",
+    "summary": "OCI Database Migration Service introduced the Assessment feature: automated analysis of an existing database, recommendation of the optimal migration method, and schema and user readiness validation. The feature reduces the risk of unexpected incompatibilities during migration and enables a technical audit before the project begins. For organizations planning a move from legacy ERP to Oracle, the automated assessment provides a practical first step without engaging consultants at the initial stage.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle OCI Release Notes",
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/database-migration/april-2026.htm"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Oracle Database Cloud BYOL: Move Existing Oracle Licenses to OCI Without Repurchasing",
+    "summary": "Oracle published an updated guide on BYOL (Bring Your Own License) strategy for Oracle Database Cloud on OCI. Customers with existing Oracle Database EE or SE2 licenses can bring them to OCI at no additional licensing cost using Authorized Cloud Environments. This significantly reduces migration costs for enterprises that already have on-premises Oracle Database licenses. For organizations that have already invested in Oracle Database while migrating away from legacy ERP, BYOL removes a key financial barrier to moving workloads to OCI.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Cloud Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/reimagine-oracle-licensing-with-oracledb-byol"
+  },
+  {
     "date": "2026-04-01",
     "title": "APEX AI Interactive Reports: Query Your Report in Natural Language — Millions of Existing IRs Become AI-Ready in APEX 26.1",
     "summary": "Oracle published 'Talk to Your Data, Trust the Result. Introducing APEX AI Interactive Reports.' The key APEX 26.1 advantage: any existing Interactive Report becomes AI-enabled after a platform upgrade — no application code changes required. An LLM converts natural language questions into SQL filters and aggregates that users can see and edit directly for full transparency. A built-in chat mode is also available within the IR component. For enterprise analytics teams on Oracle APEX, this means instant AI enrichment of all existing reports without rebuilding them.",

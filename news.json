@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-21",
+    "title": "Oracle Critical Patch Update квітень 2026: 483 нові патчі безпеки для Database, ORDS та GoldenGate",
+    "summary": "21 квітня Oracle випустила квартальний Critical Patch Update (CPU) квітень 2026 — 483 нові патчі безпеки. Oracle Database отримала 8 патчів, з яких 4 дистанційно експлуатовні без автентифікації; охоплюють версії 19c (19.3–19.30), 21c (21.3–21.21) та AI Database 26ai (23.4–23.26.1). Oracle REST Data Services — 2 патчі (обидва дистанційні, CVSS 7.5). GoldenGate — 10 патчів, 7 дистанційних. Oracle наполегливо рекомендує застосувати оновлення якнайшвидше. Квартальні CPU — принципова відмінність Oracle від legacy-систем на кшталт 1С/BAS, що після заборони не отримують жодних централізованих патчів безпеки.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Security Alerts",
+    "sourceUrl": "https://www.oracle.com/security-alerts/cpuapr2026.html"
+  },
+  {
+    "date": "2026-04-21",
+    "title": "Oracle APEX Newsletter квітень 2026: Agentic AI з Oracle AI Database та enterprise-кейс Acordia",
+    "summary": "Квітневий Oracle APEX Newsletter включає огляд Agentic AI з Oracle AI Database: як нові можливості 26ai та APEX відкривають агентну автоматизацію для бізнес-застосунків без зовнішньої AI-інфраструктури. Ексклюзивний кейс Acordia (Vincent Lockyer) демонструє enterprise-рішення управління даними на Oracle APEX та OCI — data lifecycle management засобами платформи. Добірка нових APEX-блогів від Oracle ACE-спільноти та анонс фінальних заходів весни: APEX Connect 2026 у Heide Park (18 травня) та North America Bootcamps.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Newsletter",
+    "sourceUrl": "https://oracleapex.com/ords/r/apex_pm/newsletter-app/newsletter?edition=april-2026"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "OCI Database Migration Service: Assessment — автоматична оцінка готовності бази до міграції на Oracle",
+    "summary": "OCI Database Migration Service отримав функцію Assessment: автоматичний аналіз наявної бази даних, рекомендація оптимального методу міграції та перевірка готовності схеми і користувачів. Сервіс знижує ризики несподіваних несумісностей при переході та дозволяє провести технічний аудит ще до початку проекту. Для компаній, що планують вихід з 1С/BAS та legacy ERP на Oracle, автоматизована оцінка — практичний перший крок без повноцінного залучення консультантів на початковому етапі.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle OCI Release Notes",
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/database-migration/april-2026.htm"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Oracle Database Cloud BYOL: перенесіть існуючі Oracle-ліцензії в OCI — без перекупки",
+    "summary": "Oracle опублікував оновлений огляд стратегії BYOL (Bring Your Own License) для Oracle Database Cloud на OCI. Клієнти з наявними Oracle Database EE або SE2 ліцензіями можуть перенести їх до OCI без доплати за ліцензування, використовуючи Authorized Cloud Environments. Це суттєво знижує вартість переходу для підприємств, що вже мають Oracle-ліцензії on-premises та розглядають хмарну міграцію. Для компаній після міграції з 1С, що вже придбали Oracle DB, BYOL усуває ключовий фінансовий бар'єр переходу до OCI.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Cloud Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/reimagine-oracle-licensing-with-oracledb-byol"
+  },
+  {
     "date": "2026-04-01",
     "title": "APEX AI Interactive Reports: запитайте звіт природною мовою — мільйони наявних IR стають AI-ready в APEX 26.1",
     "summary": "Oracle опублікував «Talk to Your Data, Trust the Result. Introducing APEX AI Interactive Reports». Ключова перевага APEX 26.1: будь-який наявний Interactive Report стає AI-enabled після оновлення платформи — без жодних змін у коді застосунку. LLM перетворює природномовне питання на SQL-фільтри та агрегати, які користувач бачить і може редагувати для повної прозорості. Вбудований чат-режим доступний прямо у IR-компоненті. Для команд, що будують enterprise-аналітику на Oracle APEX, це означає миттєве AI-збагачення всіх наявних звітів без переробки.",
