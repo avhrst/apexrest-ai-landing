@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-22",
+    "title": "Oracle AI Database@Google Cloud at Google Cloud Next 2026: 15 Regions, New Restore Capabilities, and Gemini Session",
+    "summary": "At Google Cloud Next 2026 (April 22–24, Las Vegas), Oracle announced Oracle AI Database@Google Cloud now spans 15 regions (20 sites) globally — adding 7 new regions across Asia Pacific, Europe, North America, and Latin America. New restore capabilities for Autonomous AI Database give users greater control to recover from data loss or corruption with reduced operational risk. The session 'Talk to your data with Gemini Enterprise' previews an upcoming integration connecting Google Gemini with Oracle AI Database for enterprise data querying.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-databasegcp-expanding-services-and-regions"
+  },
+  {
+    "date": "2026-04-20",
+    "title": "Stargate Michigan: OpenAI and Oracle Sign Union Labor Agreement — 2,500 AI Infrastructure Construction Jobs",
+    "summary": "On April 20, at NABTU's Legislative Conference in Washington D.C., OpenAI, Oracle, and Related Digital signed a union labor agreement to build the Stargate Michigan data center — the first Stargate site committed to union-built construction under an agreement with NABTU, expected to create 2,500 skilled trades jobs. The flagship Abilene, Texas campus is already live with 1.2 GW of Oracle Cloud Infrastructure, with construction underway across additional US states. Total program investment exceeds $400 billion with planned capacity approaching 7 GW.",
+    "tag": "Oracle Cloud",
+    "sourceName": "OpenAI",
+    "sourceUrl": "https://openai.com/index/expanding-stargate-to-michigan/"
+  },
+  {
+    "date": "2026-04-20",
+    "title": "Oracle Health Achieves CMS Aligned Network Status and Launches 'Kill the Clipboard' Digital Check-In",
+    "summary": "On April 20, Oracle Health announced it achieved CMS Aligned Network status and launched a solution supporting CMS's 'Kill the Clipboard' initiative. Leveraging CLEAR, the solution enables patients to digitally verify their identity and share health records at check-in — eliminating redundant paperwork and manual data entry. The announcement reinforces Oracle Health's leadership in healthcare interoperability and its commitment to reducing administrative burden in clinical settings.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-health-demonstrates-interoperability-leadership-2026-04-20/"
+  },
+  {
+    "date": "2026-04-22",
+    "title": "Oracle at Google Cloud Next 2026: Gemini and Oracle AI Database — New AI Integration for Enterprise Data",
+    "summary": "At Google Cloud Next 2026, Oracle and Google are presenting a joint AI strategy: Oracle AI Database@Google Cloud enables querying enterprise Oracle data through Google Gemini in the 'Talk to your data with Gemini Enterprise' session. Oracle APEX developers will be able to integrate Gemini with Oracle AI Database without moving data outside a secured perimeter. The Oracle-Google Cloud partnership now spans 15 regions, with Oracle Database deployed natively in Google Cloud data centers as a jointly managed service.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle at Google Cloud Next 2026",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-multicloud-whats-new-blog"
+  },
+  {
     "date": "2026-04-21",
     "title": "Oracle Critical Patch Update April 2026: 483 New Security Patches for Database, ORDS, and GoldenGate",
     "summary": "On April 21, Oracle released its quarterly Critical Patch Update (CPU) for April 2026 — 483 new security patches. Oracle Database received 8 patches, 4 of which are remotely exploitable without authentication; affected versions include 19c (19.3–19.30), 21c (21.3–21.21), and AI Database 26ai (23.4–23.26.1). Oracle REST Data Services: 2 patches (both remote, CVSS 7.5). GoldenGate: 10 patches, 7 remote. Oracle strongly recommends applying patches as soon as possible. Quarterly CPUs represent a fundamental difference from legacy systems like 1C/BAS, which receive no centralized security patches after being banned.",

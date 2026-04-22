@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-22",
+    "title": "Oracle AI Database@Google Cloud: Google Cloud Next 2026 — 15 регіонів, нові можливості відновлення та Gemini-сесія",
+    "summary": "На Google Cloud Next 2026 (22–24 квітня, Лас-Вегас) Oracle оголосила розширення Oracle AI Database@Google Cloud до 15 регіонів (20 майданчиків) по всьому світу — додано 7 нових регіонів в Азійсько-Тихоокеанському регіоні, Європі, Північній та Латинській Америці. Також представлено нові можливості відновлення для Autonomous AI Database: покращений контроль над відновленням після втрати або пошкодження даних із меншим операційним ризиком. Сесія «Talk to your data with Gemini Enterprise» анонсує майбутню інтеграцію між Google Gemini та Oracle AI Database для enterprise-запитів до корпоративних даних.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-databasegcp-expanding-services-and-regions"
+  },
+  {
+    "date": "2026-04-20",
+    "title": "Stargate Michigan: OpenAI та Oracle підписали профспілкову угоду — 2 500 будівельних робочих місць AI-інфраструктури",
+    "summary": "20 квітня, на конференції NABTU у Вашингтоні, OpenAI, Oracle та Related Digital підписали профспілкову угоду з NABTU про будівництво ЦОД Stargate у Мічигані — першого майданчика Stargate за угодою з профспілками, що створить 2 500 кваліфікованих будівельних робочих місць. Флагманський кампус Stargate в Абілін, Техас, вже введений в дію з потужністю 1,2 ГВт OCI; будівництво ведеться ще в кількох штатах США. Загальний обсяг інвестицій у проєкт перевищує $400 млрд із планованою потужністю до 7 ГВт.",
+    "tag": "Oracle Cloud",
+    "sourceName": "OpenAI",
+    "sourceUrl": "https://openai.com/index/expanding-stargate-to-michigan/"
+  },
+  {
+    "date": "2026-04-20",
+    "title": "Oracle Health: статус CMS Aligned Network та цифрова верифікація — ініціатива «Kill the Clipboard»",
+    "summary": "20 квітня Oracle Health оголосила про отримання статусу CMS Aligned Network та запуск рішення для ініціативи CMS «Kill the Clipboard». Рішення на базі CLEAR дозволяє пацієнтам цифрово підтверджувати особу та надавати доступ до медичних записів при реєстрації, усуваючи паперові форми та ручне введення даних. Анонс підтверджує лідерство Oracle Health у медичній інтероперабельності та курс на скорочення адміністративного навантаження.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-health-demonstrates-interoperability-leadership-2026-04-20/"
+  },
+  {
+    "date": "2026-04-22",
+    "title": "Oracle на Google Cloud Next 2026: Gemini та Oracle AI Database — нова AI-інтеграція для enterprise-даних",
+    "summary": "На Google Cloud Next 2026 Oracle та Google представляють спільну AI-стратегію: Oracle AI Database@Google Cloud дозволяє запитувати enterprise-дані Oracle через Google Gemini у рамках сесії «Talk to your data with Gemini Enterprise». Oracle APEX-розробники зможуть інтегрувати Gemini з Oracle AI Database, не виносячи дані за межі захищеного периметру. Партнерство Oracle та Google Cloud охоплює 15 регіонів: Oracle Database розгортається нативно в ЦОД Google Cloud у форматі jointly managed service.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle at Google Cloud Next 2026",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-multicloud-whats-new-blog"
+  },
+  {
     "date": "2026-04-21",
     "title": "Oracle Critical Patch Update квітень 2026: 483 нові патчі безпеки для Database, ORDS та GoldenGate",
     "summary": "21 квітня Oracle випустила квартальний Critical Patch Update (CPU) квітень 2026 — 483 нові патчі безпеки. Oracle Database отримала 8 патчів, з яких 4 дистанційно експлуатовні без автентифікації; охоплюють версії 19c (19.3–19.30), 21c (21.3–21.21) та AI Database 26ai (23.4–23.26.1). Oracle REST Data Services — 2 патчі (обидва дистанційні, CVSS 7.5). GoldenGate — 10 патчів, 7 дистанційних. Oracle наполегливо рекомендує застосувати оновлення якнайшвидше. Квартальні CPU — принципова відмінність Oracle від legacy-систем на кшталт 1С/BAS, що після заборони не отримують жодних централізованих патчів безпеки.",
