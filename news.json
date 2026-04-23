@@ -1,6 +1,38 @@
 [
   {
     "date": "2026-04-23",
+    "title": "Oracle Database RU 19.31 та 23.26.2 відкладені: нова дата виходу — 28 квітня (Linux)",
+    "summary": "23 квітня Oracle DBA Майк Дітріх підтвердив у своєму блозі: квітневі Release Updates Oracle Database 19.31 та 23.26.2 для Linux відкладено — нова дата виходу 28 квітня 2026. OJVM Release Update 19.31 очікується 30 квітня. Для Microsoft Windows дата перенесена на 12 травня 2026. Офіційна причина затримки Oracle не оголошена. Адміністраторам Oracle Database рекомендується врахувати оновлені дати під час планування патч-циклу. Деталі підтверджено в Oracle Support Knowledge Base (KB106822 — Primary Note for Database Quarterly Release Updates).",
+    "tag": "Oracle AI",
+    "sourceName": "Upgrade your Database — NOW!",
+    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
+  },
+  {
+    "date": "2026-04-22",
+    "title": "Oracle AI Database Agent для Gemini Enterprise (preview): Oracle-дані через природну мову — Google Cloud Next 2026",
+    "summary": "22 квітня на Google Cloud Next 2026 Oracle оголосила Oracle AI Database Agent для Gemini Enterprise — preview-версія вже доступна на Google Cloud Marketplace. Корпоративні користувачі можуть задавати питання до Oracle AI Database через Gemini Enterprise природною мовою без написання SQL: агент застосовує семантичне розуміння та governance guardrails і повертає відповідь на основі реальних Oracle-даних без витягування їх назовні. Підтримується повна A2A (Agent-to-Agent) сумісність для автоматизованих багатокрокових workflow. Додатково Oracle оголосила: Oracle AI Database@Google Cloud додає OCI GoldenGate Service (preview) для near real-time реплікації Oracle-даних до Google BigQuery та інтеграцію з Knowledge Catalog і Database Center; сервіс розширюється до 20 регіонів.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle News",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-expands-powerful-ai-capabilities-in-oracle-ai-database-at-google-cloud-to-supercharge-enterprise-data-innovation-2026-04-22/"
+  },
+  {
+    "date": "2026-04-22",
+    "title": "Oracle Select AI Pre-built Agents: готові AI-агенти для аналізу корпоративних даних в Autonomous AI Database",
+    "summary": "Oracle представила набір pre-built AI-агентів на базі нового Select AI Agent Framework для Oracle Autonomous AI Database. Database Knowledge Agent перекладає природномовні запити у SQL та повертає структуровані факти й сутності без написання коду; Structured Data Analysis Agent аналізує табличні дані (SQL/CSV) засобами Python pandas — графіки, тренди, аномалії; Deep Data Research Agent розв'язує складні дослідницькі задачі через ітеративну роботу з документами та веб-джерелами; Data Science Agent забезпечує conversational ML-досвід для повного циклу машинного навчання прямо у базі даних. Select AI Translate тепер підтримує Google, AWS та Azure як провайдерів перекладу.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Autonomous AI Database",
+    "sourceUrl": "https://www.oracle.com/autonomous-database/prebuilt-ai-agents/"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "OCI X12 Standard Acceleron Compute: нові інстанси Oracle з Intel Xeon 6 — до 2.5x швидше за X9 Standard",
+    "summary": "Oracle Cloud Infrastructure запустила OCI X12 Standard Acceleron Compute — нові хмарні інстанси на базі Intel Xeon 6900 P-core (замінюють X9 Standard на Intel Xeon 3). Продуктивність: 1.5x вища за X9 Standard для загальних compute workloads, до 2.5x для compute-intensive задач на bare metal, 42% вища пропускна здатність пам'яті. Bare metal: 120 ядер Intel Xeon 6, 1.15 ТБ RAM, до 100 Gbps. VM-інстанси: від 1 до 78 OCPU, до 720 GB RAM, до 100 Gbps. Ціна: $0.0119/OCPU-год та $0.0114/GB-год. Для Oracle APEX-застосунків та підприємств, що переходять з on-premises серверів (у тому числі 1С-серверів) на OCI, X12 пропонує суттєве підвищення продуктивності без змін у коді застосунків.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-x12-standard-acceleron-compute"
+  },
+  {
+    "date": "2026-04-23",
     "title": "Oracle ACE Monthly Product Pulse квітень 2026: live-тренінг з AI Database та SQL FILTER у 26ai",
     "summary": "Oracle ACE Program опублікував Monthly Product Pulse за квітень 2026 з практичними оновленнями для Oracle-розробників. Головне: Oracle AI Database Live Training 21–23 квітня (Americas/EMEA) та 28–30 квітня (JAPAC) — три дні live Q&A з командами Oracle PM та розробниками. Нові OML4Py/OML4SQL API v2 з покращеним відстеженням ML-завдань та підтримкою більших ONNX-моделей для embedded machine learning. У Oracle AI Database з'явився оператор FILTER для агрегатних та віконних функцій — більш виразні SQL-запити без складних підзапитів.",
     "tag": "Oracle AI",

@@ -1,6 +1,38 @@
 [
   {
     "date": "2026-04-23",
+    "title": "Oracle Database April 2026 Release Updates 19.31 and 23.26.2 Delayed to April 28",
+    "summary": "On April 23, Oracle DBA Mike Dietrich confirmed on his blog that the April 2026 Oracle Database Release Updates 19.31 and 23.26.2 for Linux have been delayed — the new release date is April 28, 2026. The OJVM Release Update 19.31 is expected on April 30. The Windows release has been pushed to May 12. Oracle has not publicly stated the reason for the delay. Database administrators are advised to update their patch cycle schedules accordingly. Details are confirmed in Oracle Support Knowledge Base KB106822 — Primary Note for Database Quarterly Release Updates.",
+    "tag": "Oracle AI",
+    "sourceName": "Upgrade your Database — NOW!",
+    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
+  },
+  {
+    "date": "2026-04-22",
+    "title": "Oracle AI Database Agent for Gemini Enterprise (Preview): Query Oracle Data in Natural Language — Google Cloud Next 2026",
+    "summary": "At Google Cloud Next 2026 on April 22, Oracle announced the Oracle AI Database Agent for Gemini Enterprise — now available in preview on Google Cloud Marketplace. Enterprise users can ask natural language questions against Oracle AI Database through Gemini Enterprise without writing SQL: the agent applies semantic understanding and governance guardrails, returning answers grounded in live Oracle data without extracting it externally. Full Agent-to-Agent (A2A) compatibility enables automated multi-step workflows. Oracle also announced that Oracle AI Database@Google Cloud is adding OCI GoldenGate Service (preview) for near real-time Oracle data replication to Google BigQuery, plus integration with Knowledge Catalog and Database Center; the service is expanding to 20 regions.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle News",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-expands-powerful-ai-capabilities-in-oracle-ai-database-at-google-cloud-to-supercharge-enterprise-data-innovation-2026-04-22/"
+  },
+  {
+    "date": "2026-04-22",
+    "title": "Oracle Select AI Pre-Built Agents: Ready-to-Use AI Agents for Enterprise Data Analysis in Autonomous AI Database",
+    "summary": "Oracle introduced a suite of pre-built AI agents based on the new Select AI Agent Framework for Oracle Autonomous AI Database. The Database Knowledge Agent translates natural language prompts into SQL to retrieve structured facts and entities without writing code. The Structured Data Analysis Agent analyzes tabular data (SQL tables, CSV files) using Python pandas to build charts, spot trends, and flag anomalies. The Deep Data Research Agent handles complex research tasks by iterating across documents and web sources. The Data Science Agent delivers a conversational ML experience covering the full machine learning lifecycle directly inside the database. Select AI Translate has been expanded to support Google, AWS, and Azure as additional translation providers.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Autonomous AI Database",
+    "sourceUrl": "https://www.oracle.com/autonomous-database/prebuilt-ai-agents/"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "OCI X12 Standard Acceleron Compute: New Oracle Cloud Instances Powered by Intel Xeon 6 — Up to 2.5x Faster Than X9 Standard",
+    "summary": "Oracle Cloud Infrastructure launched OCI X12 Standard Acceleron Compute — a new generation of cloud instances based on Intel Xeon 6900 P-cores, replacing X9 Standard (Intel Xeon 3). Performance: 1.5x average improvement over X9 Standard for general compute workloads, up to 2.5x for compute-intensive bare metal workloads, 42% higher memory bandwidth. Bare metal: 120 Intel Xeon 6 cores, 1.15 TB RAM, up to 100 Gbps networking. VM shapes: 1 to 78 OCPUs, up to 720 GB RAM, up to 100 Gbps. Pricing: $0.0119/OCPU-hour and $0.0114/GB-hour. For Oracle APEX applications and enterprises moving on-premises workloads to OCI, X12 delivers significant performance gains with no application code changes required.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-x12-standard-acceleron-compute"
+  },
+  {
+    "date": "2026-04-23",
     "title": "Oracle ACE Monthly Product Pulse April 2026: AI Database Live Training & SQL FILTER in 26ai",
     "summary": "The Oracle ACE Program published its April 2026 Monthly Product Pulse with practical developer updates across the Oracle ecosystem. Highlights: Oracle AI Database Live Training April 21–23 (Americas/EMEA) and April 28–30 (JAPAC) — three days of live Q&A with Oracle PM and development teams. New OML4Py/OML4SQL API v2 with improved ML job tracking and support for larger ONNX models for embedded machine learning. A new FILTER clause for aggregate and window functions makes SQL queries more expressive without complex subqueries.",
     "tag": "Oracle AI",
