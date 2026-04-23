@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-04-23",
+    "title": "Oracle ACE Monthly Product Pulse April 2026: AI Database Live Training & SQL FILTER in 26ai",
+    "summary": "The Oracle ACE Program published its April 2026 Monthly Product Pulse with practical developer updates across the Oracle ecosystem. Highlights: Oracle AI Database Live Training April 21–23 (Americas/EMEA) and April 28–30 (JAPAC) — three days of live Q&A with Oracle PM and development teams. New OML4Py/OML4SQL API v2 with improved ML job tracking and support for larger ONNX models for embedded machine learning. A new FILTER clause for aggregate and window functions makes SQL queries more expressive without complex subqueries.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle ACE Blog",
+    "sourceUrl": "https://blogs.oracle.com/ace/monthly-product-pulse-april-2026-oracle-technical-resources"
+  },
+  {
+    "date": "2026-04-23",
+    "title": "KScope 26: Largest Oracle APEX Conference in the US — June 14–18, 2026, Denver, Colorado",
+    "summary": "ODTUG KScope 26 takes place June 14–18, 2026 at Gaylord Rockies Resort & Convention Center in Aurora (Denver), Colorado. The largest Oracle APEX conference in the United States: 250+ technical sessions covering Oracle APEX, OCI, EPM, Analytics, and Database tracks. Sunday Symposiums, hands-on training, and networking with Oracle Product Managers and ACE speakers. A pre-conference Oracle APEX Bootcamp takes place April 30 in Minneapolis (free to attend). Registration is open.",
+    "tag": "Event",
+    "sourceName": "ODTUG",
+    "sourceUrl": "https://www.odtug.com/kscope26"
+  },
+  {
     "date": "2026-04-22",
     "title": "Oracle AI Database@Google Cloud at Google Cloud Next 2026: 15 Regions, New Restore Capabilities, and Gemini Session",
     "summary": "At Google Cloud Next 2026 (April 22–24, Las Vegas), Oracle announced Oracle AI Database@Google Cloud now spans 15 regions (20 sites) globally — adding 7 new regions across Asia Pacific, Europe, North America, and Latin America. New restore capabilities for Autonomous AI Database give users greater control to recover from data loss or corruption with reduced operational risk. The session 'Talk to your data with Gemini Enterprise' previews an upcoming integration connecting Google Gemini with Oracle AI Database for enterprise data querying.",
