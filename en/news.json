@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-24",
+    "title": "Oracle Autonomous AI Database: Online Upgrade from 19c to 26ai in ~15 Minutes — No Full Downtime",
+    "summary": "Oracle published the full process for online upgrade of Autonomous AI Database from Oracle Database 19c to Oracle AI Database 26ai. For read-only workloads — analytics and reporting — the upgrade runs with minimal disruption: approximately 15 minutes in read-only mode instead of a lengthy maintenance window. The underlying architecture makes it possible: compute and storage are decoupled in Autonomous Database, so Oracle switches to a pre-provisioned compute stack already running the 26ai engine instead of traditional in-place binary patching. For read-write workloads, a GoldenGate replication-based upgrade path is available with near-zero downtime. The entire process is a single click in the OCI Console. A refreshable clone-based upgrade is also available for parallel testing of applications on 26ai with continuous data sync from the 19c primary. For enterprises planning to move legacy ERP data to Oracle AI Database 26ai, this removes a key technical obstacle — the extended maintenance window typically required for database upgrades.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Autonomous AI Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/autonomous-ai-database/online-upgrade-your-autonomous-ai-database-from-19c-to-26ai"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "OCI HeatWave MySQL 9.6.0 Now Supported: Auto-Materialized View Substitution and Grouping Sets for Analytics",
+    "summary": "Oracle Cloud Infrastructure HeatWave MySQL added support for MySQL 9.6.0 (Innovation), 8.4.8 (LTS), and 8.0.45 (Bugfix) — all three production-grade versions with security and bug fixes included. New DB systems now default to version 8.4.8. Among the new analytical capabilities: auto-materialized view substitution, which automatically selects the optimal materialized view for a query without any application code changes; and Grouping Sets, a SQL operator for aggregating data across multiple dimensions in a single query instead of separate UNION statements. MySQL 9.6.0 belongs to the Innovation series — carrying the latest MySQL features between LTS releases. For analytics platforms and enterprise solutions built on Oracle Cloud, MySQL 9.6 enables more efficient execution of complex OLAP queries without rebuilding existing SQL logic.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle OCI Release Notes",
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/mysql-database/TC-41323-heatwave-960.htm"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Oracle APEX: Foundations Learning Path — Free 3+ Hour Official Course from the Oracle APEX Product Team",
+    "summary": "Oracle University published the Oracle APEX: Foundations Learning Path — a free official training course of 3+ hours delivered by the Oracle APEX Product Management Team. Designed for beginners and those new to Oracle APEX, the path covers App Builder, SQL Workshop, building cloud applications on APEX with OCI, workspace provisioning, and managing reports and forms. Upon completion, participants receive an official Oracle badge. The course is available at no cost on mylearn.oracle.com. For organizations evaluating Oracle APEX as a replacement for legacy ERP systems and looking to upskill their developers, the free official learning path provides a practical first step with no external training costs.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle University Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/oracle-apex-foundations-learning-path-is-now-available"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "OCI Karpenter Provider (KPO) Goes GA: Smart Kubernetes Autoscaling with Just-in-Time Node Provisioning",
+    "summary": "Oracle announced general availability of the Karpenter Provider for OCI (KPO) — an open-source Kubernetes node autoscaler that provisions the right OCI compute shape in real time based on workload demand, replacing static predefined node pools. Key benefits: just-in-time provisioning driven by actual pod scheduling needs, fewer manual node pool configurations, a wider mix of OCI compute shapes in a single policy, automatic consolidation of empty or underused nodes to reduce costs, and simplified scaling across different shapes and architectures. Kubernetes 1.31 or later is required. For teams deploying Oracle APEX and enterprise applications with Kubernetes orchestration on OCI, KPO significantly simplifies resource management under variable load without manual configuration.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/smarter-kubernetes-autoscaling-with-karpenter"
+  },
+  {
     "date": "2026-04-23",
     "title": "Oracle Database April 2026 Release Updates 19.31 and 23.26.2 Delayed to April 28",
     "summary": "On April 23, Oracle DBA Mike Dietrich confirmed on his blog that the April 2026 Oracle Database Release Updates 19.31 and 23.26.2 for Linux have been delayed — the new release date is April 28, 2026. The OJVM Release Update 19.31 is expected on April 30. The Windows release has been pushed to May 12. Oracle has not publicly stated the reason for the delay. Database administrators are advised to update their patch cycle schedules accordingly. Details are confirmed in Oracle Support Knowledge Base KB106822 — Primary Note for Database Quarterly Release Updates.",

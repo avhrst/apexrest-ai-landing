@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-24",
+    "title": "Oracle Autonomous AI Database: online upgrade від 19c до 26ai за ~15 хвилин без повного простою",
+    "summary": "Oracle опублікував деталі нового online upgrade Autonomous AI Database від Oracle Database 19c до Oracle AI Database 26ai. Для read-only workloads (аналітика, звітність) оновлення відбувається практично без переривань: ~15 хвилин у read-only режимі замість тривалого технічного вікна. Архітектурна основа — decoupled compute та storage: замість in-place оновлення бінарних файлів Oracle перемикає базу на заздалегідь підготовлений compute-стек з 26ai. Для read-write workloads доступний upgrade через GoldenGate-реплікацію з практично нульовим простоєм. Весь процес — один клік через OCI Console. Додаткова опція — refreshable clone для паралельного тестування застосунків на 26ai з безперервною синхронізацією даних із 19c primary. Для підприємств, що планують перехід з legacy ERP на Oracle AI Database 26ai, це усуває один із ключових технічних бар'єрів — тривале вікно обслуговування при оновленні бази.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Autonomous AI Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/autonomous-ai-database/online-upgrade-your-autonomous-ai-database-from-19c-to-26ai"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "OCI HeatWave MySQL 9.6.0: нові версії бази даних та auto-materialized view substitution для OLAP-аналітики",
+    "summary": "Oracle Cloud Infrastructure HeatWave MySQL отримав підтримку MySQL 9.6.0 (Innovation), 8.4.8 (LTS) та 8.0.45 (Bugfix) — всі три версії production-grade з виправленнями безпеки та помилок. Нові DB-системи за замовчуванням базуються на 8.4.8. Серед нових аналітичних можливостей: auto-materialized view substitution — автоматичний підбір оптимального materialized view для виконання запиту без змін у коді застосунку; Grouping Sets — SQL-оператор для агрегування даних за кількома вимірами в одному запиті замість кількох UNION. Версія MySQL 9.6.0 належить до Innovation-серії — з найновішими функціями між LTS-релізами. Для аналітичних платформ та enterprise-рішень на Oracle Cloud ці зміни спрощують виконання складних OLAP-запитів без переписування SQL-логіки.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle OCI Release Notes",
+    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/mysql-database/TC-41323-heatwave-960.htm"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Oracle APEX Foundations Learning Path: безкоштовний 3+ годинний офіційний курс від команди Oracle APEX PM",
+    "summary": "Oracle University опублікував Oracle APEX: Foundations Learning Path — безкоштовний офіційний навчальний курс тривалістю 3+ години від команди Oracle APEX Product Management. Курс орієнтований на початківців та тих, хто вивчає Oracle APEX: охоплює App Builder, SQL Workshop, створення cloud-застосунків на APEX з OCI, провізіонування workspace, управління звітами та формами. Після завершення курсу учасники отримують офіційний Oracle badge. Курс доступний безкоштовно на mylearn.oracle.com. Для підприємств, що планують перехід з legacy ERP на Oracle APEX і прагнуть підготувати власних розробників, безкоштовна офіційна програма навчання — практичний перший крок без витрат на зовнішні тренінги.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle University Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/oracle-apex-foundations-learning-path-is-now-available"
+  },
+  {
+    "date": "2026-04-09",
+    "title": "OCI Karpenter Provider (KPO) GA: розумне автомасштабування Kubernetes — just-in-time provisioning без статичних пулів",
+    "summary": "Oracle оголосила загальну доступність Karpenter Provider для OCI (KPO) — відкритого інструменту автоматичного масштабування вузлів Kubernetes. KPO відстежує непрографовані поди та в реальному часі провізіонує оптимальну OCI compute shape на вимогу — замість статично визначених node pool. Ключові переваги: just-in-time provisioning за реальним навантаженням, менша кількість ручних конфігурацій node pool, ширший mix OCI compute shapes в одній policy, автоматична консолідація порожніх або недовантажених вузлів для скорочення витрат, масштабування через різні shapes та архітектури. Вимога: Kubernetes 1.31+. Для команд, що розгортають Oracle APEX та enterprise-застосунки з Kubernetes-оркестрацією на OCI, KPO суттєво спрощує управління ресурсами при змінному навантаженні без ручної конфігурації.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/smarter-kubernetes-autoscaling-with-karpenter"
+  },
+  {
     "date": "2026-04-23",
     "title": "Oracle Database RU 19.31 та 23.26.2 відкладені: нова дата виходу — 28 квітня (Linux)",
     "summary": "23 квітня Oracle DBA Майк Дітріх підтвердив у своєму блозі: квітневі Release Updates Oracle Database 19.31 та 23.26.2 для Linux відкладено — нова дата виходу 28 квітня 2026. OJVM Release Update 19.31 очікується 30 квітня. Для Microsoft Windows дата перенесена на 12 травня 2026. Офіційна причина затримки Oracle не оголошена. Адміністраторам Oracle Database рекомендується врахувати оновлені дати під час планування патч-циклу. Деталі підтверджено в Oracle Support Knowledge Base (KB106822 — Primary Note for Database Quarterly Release Updates).",

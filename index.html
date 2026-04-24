@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-04-23T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-04-24T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -397,6 +397,14 @@
         <div class="monitor-grid">
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle AI</div>
+            <h3>Oracle Autonomous AI Database: online upgrade від 19c до 26ai — технічний бар'єр міграції усунуто</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle опублікував деталі online upgrade Autonomous AI Database від Oracle Database 19c до Oracle AI Database 26ai. Для read-only workloads (аналітика, звітність) оновлення відбувається практично без переривань: ~15 хвилин у read-only режимі замість тривалого технічного вікна. Архітектурна основа — decoupled compute та storage: замість in-place оновлення бінарних файлів Oracle перемикає базу на заздалегідь підготовлений compute-стек з 26ai. Для read-write workloads доступний upgrade через GoldenGate-реплікацію з практично нульовим простоєм. Весь процес — один клік через OCI Console. Альтернативна опція — refreshable clone-based upgrade для паралельного тестування застосунків на 26ai з безперервною синхронізацією даних із 19c primary без зупинки продуктивної системи.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> один з найпоширеніших аргументів проти оновлення бази даних — «тривале вікно обслуговування та операційні ризики». Oracle системно знімає цей бар'єр: online upgrade до AI Database 26ai тепер є реальним варіантом навіть для бізнес-критичних аналітичних систем без тривалих переривань. Для підприємств, що мігрують з legacy ERP та 1С/BAS і планують отримати доступ до AI-можливостей 26ai — векторного пошуку, Select AI, Private Agent Factory та AI Agent Memory — оновлена процедура upgrade суттєво знижує операційні ризики та скорочує час переходу від планування до production.</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/autonomous-ai-database/online-upgrade-your-autonomous-ai-database-from-19c-to-26ai" target="_blank" rel="noopener noreferrer">Джерело: Oracle Autonomous AI Database Blog (Online Upgrade your Autonomous AI Database from 19c to 26ai, квітень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
             <h3>Oracle AI Database Agent для Gemini Enterprise (preview): Oracle-дані через природну мову — Google Cloud Next 2026</h3>
             <div class="monitor-problem"><strong>Що нового:</strong> 22 квітня на Google Cloud Next 2026 Oracle оголосила Oracle AI Database Agent для Gemini Enterprise — preview вже доступний на Google Cloud Marketplace. Корпоративні користувачі можуть запитувати Oracle AI Database через Gemini Enterprise природною мовою без написання SQL: агент інтерпретує запит, застосовує семантичне розуміння та governance guardrails і повертає відповідь на основі реальних Oracle-даних без витягування їх назовні. Підтримується повна A2A (Agent-to-Agent) сумісність для автоматизованих багатокрокових workflow — розробники можуть через Google Agent Development Kit (ADK) будувати безпечні автоматизовані бізнес-процеси на Oracle-даних. Oracle AI Database@Google Cloud також додає OCI GoldenGate Service (preview) для near real-time реплікації Oracle-даних до Google BigQuery та розширюється до 20 регіонів.</div>
             <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Oracle AI Database Agent для Gemini Enterprise — практичне підтвердження стратегії Oracle: корпоративні дані залишаються в Oracle, а AI-запити надходять через будь-який провідний інтерфейс — Gemini, GPT або спеціалізовані агенти — без витягування даних. Для бізнесу, що мігрує з 1С та BAS на Oracle APEX і AI Database 26ai, це означає: вся корпоративна аналітика стає доступна через природну мову без навчання SQL та без побудови окремої AI-інфраструктури. Додаткова реплікація до BigQuery через GoldenGate відкриває Google Analytics для Oracle-даних без зміни основної архітектури. Oracle послідовно закриває головний функціональний gap legacy ERP: «ми не можемо легко отримати потрібні дані».</div>
@@ -736,7 +744,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 23.04.2026</p>
+      <p class="footer-updated">Оновлено: 24.04.2026</p>
     </div>
   </footer>
 
