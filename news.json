@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-25",
+    "title": "Related Digital закрило $16 млрд фінансування дата-центру Oracle в Мічигані",
+    "summary": "25 квітня 2026 Related Digital оголосила про успішне закриття $16 млрд фінансування для будівництва масштабного кампусу дата-центру в Сейлін-Тауншип, Мічиган — призначеного для потреб Oracle та проєкту Stargate. Фінансування структуроване з участю фондів Blackstone (equity), боргових інструментів під управлінням PIMCO та банків Bank of America, Goldman Sachs і Wells Fargo. Кампус «The Barn» складатиметься з трьох об'єктів потужністю понад 1 ГВт із замкнутою системою охолодження та сертифікацією LEED — будівництво вже ведеться. Проєкт створить 2 500+ профспілкових будівельних робочих місць та 450+ постійних місць на майданчику. Угода підтверджує масштаб інвестицій Oracle в AI-інфраструктуру в рамках партнерства з OpenAI (контракт $300 млрд) та загального плану Oracle залучити від $45 до $50 млрд капіталу, з яких $30 млрд вже залучено.",
+    "tag": "Oracle Cloud",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "http://www.prnewswire.com/news-releases/related-digital-announces-financing-for-16-billion-oracle-data-m6mbh8d9by2o.html"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Wedbush: Oracle «Outperform», ціль $225 — ORCL -24% у 2026, аналітики рекомендують купувати",
+    "summary": "24 квітня Wedbush Securities ініціювала покриття акцій Oracle (ORCL) рейтингом «Outperform» з 12-місячною ціллю $225 — потенціал зростання ~30% від поточних рівнів. Старший аналітик Ден Айвс наголошує: ринок «фундаментально хибно інтерпретує» масштабні капітальні витрати Oracle як ризик замість стратегічної необхідності. Oracle трансформується з legacy-постачальника ПЗ у ключового AI-інфраструктурного провайдера, підкріпленого довгостроковими контрактами — у тому числі угодою $300 млрд з OpenAI (початок 2027). Акції ORCL знизились на ~24% у 2026 на тлі побоювань щодо CapEx. Oracle вже залучила $30 млрд із запланованих $45–50 млрд через інвестиційні облігації та конвертовані привілейовані акції.",
+    "tag": "Oracle Cloud",
+    "sourceName": "CNBC",
+    "sourceUrl": "https://www.cnbc.com/2026/04/24/oracle-is-down-big-in-2026-dan-ives-says-buy-the-dip.html"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "OCI A4 Standard Acceleron: ARM-інстанси нового покоління Oracle для AI inference та cloud-native",
+    "summary": "Oracle анонсувала OCI A4 Standard Acceleron — наступне покоління ARM-хмарних інстансів у сімействі Oracle Acceleron, побудованих на процесорах AmpereOne M та власній архітектурі Oracle Acceleron. Інстанси призначені для AI inference, cloud-native застосунків та enterprise workloads з покращеною ефективністю та масштабованістю. Ціна OCPU-год у новому сімействі Acceleron до 70% нижча за попереднє покоління. A4 Standard Acceleron доповнює вже анонсовані X12 Standard Acceleron (Intel Xeon 6) та E6 Acceleron (storage-optimized). Для Oracle APEX застосунків та enterprise-платформ, що переміщуються з on-premises legacy ERP на OCI, нові Acceleron-інстанси пропонують вищу продуктивність при нижчій вартості без змін у коді застосунку.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-compute-a4-acceleron-instances"
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Oracle AI Database Live Training JAPAC: безкоштовні live-сесії 28–30 квітня — Q&A з Oracle PM",
+    "summary": "Для розробників та архітекторів у JAPAC Oracle проводить Oracle AI Database Live Training 28–30 квітня 2026 — безкоштовний трьохденний live-тренінг з Oracle AI Database 26ai у форматі прямого Q&A з командами Oracle Product Management та розробниками. Тематика: нові можливості 26ai, AI Agent Framework, OML4Py/OML4SQL API v2 з покращеним відстеженням ML-завдань та підтримкою більших ONNX-моделей, оператор FILTER для агрегатних та віконних функцій SQL. Аналогічне навчання для Americas/EMEA відбулось 21–23 квітня. Для розробників, що будують Oracle APEX-рішення на AI Database 26ai, це можливість отримати прямі відповіді від команди Oracle на конкретні технічні питання.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle ACE Blog",
+    "sourceUrl": "https://blogs.oracle.com/ace/monthly-product-pulse-april-2026-oracle-technical-resources"
+  },
+  {
     "date": "2026-04-24",
     "title": "Oracle Autonomous AI Database: online upgrade від 19c до 26ai за ~15 хвилин без повного простою",
     "summary": "Oracle опублікував деталі нового online upgrade Autonomous AI Database від Oracle Database 19c до Oracle AI Database 26ai. Для read-only workloads (аналітика, звітність) оновлення відбувається практично без переривань: ~15 хвилин у read-only режимі замість тривалого технічного вікна. Архітектурна основа — decoupled compute та storage: замість in-place оновлення бінарних файлів Oracle перемикає базу на заздалегідь підготовлений compute-стек з 26ai. Для read-write workloads доступний upgrade через GoldenGate-реплікацію з практично нульовим простоєм. Весь процес — один клік через OCI Console. Додаткова опція — refreshable clone для паралельного тестування застосунків на 26ai з безперервною синхронізацією даних із 19c primary. Для підприємств, що планують перехід з legacy ERP на Oracle AI Database 26ai, це усуває один із ключових технічних бар'єрів — тривале вікно обслуговування при оновленні бази.",

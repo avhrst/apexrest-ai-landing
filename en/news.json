@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-25",
+    "title": "Related Digital Closes $16 Billion Financing for Oracle Data Center Campus in Michigan",
+    "summary": "On April 25, 2026, Related Digital announced the successful closing of $16 billion in financing for a large-scale data center campus in Saline Township, Michigan — purpose-built for Oracle as part of the Stargate project. The financing includes equity from Related Digital and Blackstone-affiliated funds, plus fixed-rate long-term debt anchored by PIMCO-managed funds. Bank of America served as structuring agent; Goldman Sachs and Wells Fargo also advised. The 'Barn' campus will feature three facilities with over 1 gigawatt of capacity, closed-loop cooling, and LEED certification — construction is already underway. The project will create 2,500+ union construction jobs and 450+ permanent on-site positions. The deal confirms the scale of Oracle's AI infrastructure investment as part of its OpenAI partnership ($300B contract starting 2027) and its broader plan to raise $45–50 billion in capital, of which $30 billion has already been secured.",
+    "tag": "Oracle Cloud",
+    "sourceName": "PR Newswire",
+    "sourceUrl": "http://www.prnewswire.com/news-releases/related-digital-announces-financing-for-16-billion-oracle-data-m6mbh8d9by2o.html"
+  },
+  {
+    "date": "2026-04-24",
+    "title": "Wedbush Initiates Oracle with 'Outperform' and $225 Target — ORCL Down 24% in 2026, Analysts Say Buy",
+    "summary": "On April 24, Wedbush Securities initiated coverage of Oracle (ORCL) with an 'Outperform' rating and a 12-month price target of $225 — implying roughly 30% upside from current levels. Senior analyst Dan Ives argues the market is 'fundamentally misinterpreting' Oracle's massive capital expenditures as a gamble rather than a strategic necessity. Oracle is transforming from a legacy software vendor into a foundational AI infrastructure provider backed by long-term contracts, including a $300 billion deal with OpenAI set to begin in 2027. ORCL shares are down roughly 24% in 2026 amid concerns about CapEx scale. Oracle has already raised $30 billion of its planned $45–50 billion capital raise through investment-grade bonds and mandatory convertible preferred stock.",
+    "tag": "Oracle Cloud",
+    "sourceName": "CNBC",
+    "sourceUrl": "https://www.cnbc.com/2026/04/24/oracle-is-down-big-in-2026-dan-ives-says-buy-the-dip.html"
+  },
+  {
+    "date": "2026-04-16",
+    "title": "OCI A4 Standard Acceleron: New-Generation ARM Instances for AI Inference and Cloud-Native Workloads",
+    "summary": "Oracle announced OCI A4 Standard Acceleron — the next evolution of ARM-based cloud instances in the Oracle Acceleron family, combining AmpereOne M processors with Oracle's purpose-built Acceleron architecture. Designed for AI inference, cloud-native applications, and enterprise workloads, the new shapes deliver improved efficiency and scalability. Across the entire Acceleron family, OCPU-hour pricing is up to 70% lower than the previous generation. A4 Standard Acceleron joins the already-announced X12 Standard Acceleron (Intel Xeon 6) and E6 Acceleron (storage-optimized shapes). For Oracle APEX applications and enterprise platforms moving from on-premises legacy ERP to OCI, the new Acceleron instances offer higher performance at lower cost — no application code changes required.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-compute-a4-acceleron-instances"
+  },
+  {
+    "date": "2026-04-23",
+    "title": "Oracle AI Database Live Training JAPAC: Free 3-Day Live Sessions April 28–30 — Direct Q&A with Oracle Product Team",
+    "summary": "Oracle is running the Oracle AI Database Live Training for JAPAC (Japan, Australia, India, and surrounding regions) on April 28–30, 2026 — a free three-day live format with direct Q&A access to Oracle Product Management and engineering teams. Topics cover new Oracle AI Database 26ai capabilities, AI Agent Framework, OML4Py/OML4SQL API v2 with improved ML job tracking and ONNX model support, and the new FILTER clause for aggregate and window functions. A parallel Americas/EMEA session took place April 21–23. For developers building Oracle APEX solutions on AI Database 26ai, this is a direct channel to Oracle engineering — live interaction, not recordings.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle ACE Blog",
+    "sourceUrl": "https://blogs.oracle.com/ace/monthly-product-pulse-april-2026-oracle-technical-resources"
+  },
+  {
     "date": "2026-04-24",
     "title": "Oracle Autonomous AI Database: Online Upgrade from 19c to 26ai in ~15 Minutes — No Full Downtime",
     "summary": "Oracle published the full process for online upgrade of Autonomous AI Database from Oracle Database 19c to Oracle AI Database 26ai. For read-only workloads — analytics and reporting — the upgrade runs with minimal disruption: approximately 15 minutes in read-only mode instead of a lengthy maintenance window. The underlying architecture makes it possible: compute and storage are decoupled in Autonomous Database, so Oracle switches to a pre-provisioned compute stack already running the 26ai engine instead of traditional in-place binary patching. For read-write workloads, a GoldenGate replication-based upgrade path is available with near-zero downtime. The entire process is a single click in the OCI Console. A refreshable clone-based upgrade is also available for parallel testing of applications on 26ai with continuous data sync from the 19c primary. For enterprises planning to move legacy ERP data to Oracle AI Database 26ai, this removes a key technical obstacle — the extended maintenance window typically required for database upgrades.",
