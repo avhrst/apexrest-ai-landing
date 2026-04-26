@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-26",
+    "title": "Oracle APEX 26.1 та Vibe Coding: APEXlang AI Copilot як підхід Oracle до генеративної low-code розробки",
+    "summary": "Oracle підтвердив: команда Oracle APEX адаптує підходи «vibe coding» для наступного релізу APEX 26.1 через APEXlang та AI Copilot. APEXlang — відкрита специфікація APEX-застосунків у форматі YAML/JSON з підтримкою git-версіонування та CI/CD. AI Copilot дозволяє описати застосунок природною мовою та отримати робочий APEX-проєкт у форматі .apx без ручного кодування — з прозорим проміжним кроком перегляду AI-генерованого результату. Oracle позиціонує APEXlang як основу generative low-code розробки наступного покоління: ключова відмінність від класичного vibe coding — людино-читабельний формат, що підлягає аудиту та контролю. Дорожню карту підтверджено Oracle на apex.oracle.com/roadmap. Для команд, що мігрують з 1С на Oracle APEX і планують впровадження 26.1, це визначає стратегічний напрям розробки на найближчі роки.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Roadmap",
+    "sourceUrl": "https://apex.oracle.com/roadmap/"
+  },
+  {
+    "date": "2026-04-26",
+    "title": "Oracle AI Database 26ai on-premises: GA для Linux x86-64, Windows та AIX — у планах на 2026 рік",
+    "summary": "Oracle підтвердив дорожню карту розгортання Oracle AI Database 26ai для on-premises платформ поза Autonomous Cloud. GA для Linux x86-64 відбулася у січні 2026 (RU 23.26.1) — Enterprise Edition з повним набором AI-можливостей: AI Vector Search, SQL FILTER, OML4Py/OML4SQL API v2, Private Agent Factory та True Cache. Реліз для Windows та AIX заплановано на пізніший термін 2026 року. Oracle охоплює всі три основні on-premises платформи, де ще можуть працювати legacy ERP-системи. Для підприємств, що замінюють 1С/BAS і хочуть перейти на Oracle AI Database 26ai без переходу в хмару, Oracle формує чіткий план: Linux вже доступний, Windows та AIX на черзі. Деталі розкладу підтверджено в MOS Note 742060.1 — Release Schedule of Current Database Releases.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms"
+  },
+  {
+    "date": "2026-04-26",
+    "title": "Oracle APEX Bootcamp та Executive Roundtable у Міннеаполісі — фінальний захід серії North America, 30 квітня",
+    "summary": "30 квітня 2026 у McNamara Alumni Center (Університет Міннесоти, Міннеаполіс) Traust, Oracle та Twin Cities Oracle User Group (TCOUG) проводять фінальний North America APEX Bootcamp весни 2026. Захід включає два блоки: Executive Roundtable (7:30–9:00) — виступ від Oracle APEX Product Management про стратегічний напрям платформи та APEX 26.1; Oracle APEX Bootcamp (10:30–18:00) — практичне введення у розробку застосунків. Обидва заходи безкоштовні, але кількість місць обмежена. Це останній захід серії North America Bootcamp 2026 (квітень–травень). Наступна ключова подія: KScope26 у Денвері, 14–18 червня — триденний APEX Bootcamp + 250+ технічних сесій від Oracle Product Management.",
+    "tag": "Подія",
+    "sourceName": "Traust",
+    "sourceUrl": "https://traust.com/blog/oracle-apex-bootcamp-and-executive-roundtable/"
+  },
+  {
+    "date": "2026-04-25",
+    "title": "Oracle Database Monthly News квітень 2026: дайджест ключових оновлень від CoreTec Oracle Blog",
+    "summary": "Oracle CoreTec Blog оприлюднив щомісячний дайджест Oracle Database Monthly News за квітень 2026 — систематизовану добірку посилань на всі ключові оновлення Oracle Database з місяця. Огляд охоплює нові матеріали квітня: онлайн-апгрейд Autonomous AI Database з 19c до 26ai за ~15 хвилин без тривалого вікна; нові рівні доступності Platinum та Diamond для 26ai на Exadata; EBS 12.2 сертифікований для Oracle AI Database 26ai; зсунуті дати Release Updates 19.31 та 23.26.2 (Linux: 28 квітня, OJVM RU: 30 квітня, Windows: 12 травня); Critical Patch Update квітень 2026 — 483 патчі. CoreTec Oracle Blog публікує щомісячний дайджест наприкінці кожного місяця — зручний навігатор для DBA та архітекторів.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle CoreTec Blog",
+    "sourceUrl": "https://blogs.oracle.com/coretec/oracle-database-monthly-news-april-2026-quick-links"
+  },
+  {
     "date": "2026-04-25",
     "title": "Related Digital закрило $16 млрд фінансування дата-центру Oracle в Мічигані",
     "summary": "25 квітня 2026 Related Digital оголосила про успішне закриття $16 млрд фінансування для будівництва масштабного кампусу дата-центру в Сейлін-Тауншип, Мічиган — призначеного для потреб Oracle та проєкту Stargate. Фінансування структуроване з участю фондів Blackstone (equity), боргових інструментів під управлінням PIMCO та банків Bank of America, Goldman Sachs і Wells Fargo. Кампус «The Barn» складатиметься з трьох об'єктів потужністю понад 1 ГВт із замкнутою системою охолодження та сертифікацією LEED — будівництво вже ведеться. Проєкт створить 2 500+ профспілкових будівельних робочих місць та 450+ постійних місць на майданчику. Угода підтверджує масштаб інвестицій Oracle в AI-інфраструктуру в рамках партнерства з OpenAI (контракт $300 млрд) та загального плану Oracle залучити від $45 до $50 млрд капіталу, з яких $30 млрд вже залучено.",

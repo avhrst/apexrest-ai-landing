@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-26",
+    "title": "Oracle APEX 26.1 and Vibe Coding: APEXlang AI Copilot as Oracle's Answer to Generative Low-Code",
+    "summary": "Oracle confirmed that the Oracle APEX team is adapting 'vibe coding' approaches for APEX 26.1 through APEXlang and AI Copilot. APEXlang is an open application specification in YAML/JSON format with native git version control and CI/CD support. AI Copilot lets developers describe an application in natural language and receive a working APEX project in .apx format — with a transparent intermediate review step for the AI-generated result. Oracle positions APEXlang as the foundation of next-generation generative low-code development: the key differentiator from classic vibe coding is human-readable, auditable output that maintains enterprise control. The roadmap is officially confirmed at apex.oracle.com/roadmap. For teams migrating from legacy ERP to Oracle APEX and planning APEX 26.1 adoption, this defines the strategic development direction for the years ahead.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Roadmap",
+    "sourceUrl": "https://apex.oracle.com/roadmap/"
+  },
+  {
+    "date": "2026-04-26",
+    "title": "Oracle AI Database 26ai On-Premises: GA Confirmed for Linux x86-64, Windows and AIX Planned for 2026",
+    "summary": "Oracle confirmed the on-premises deployment roadmap for Oracle AI Database 26ai outside the Autonomous Cloud. GA for Linux x86-64 was released in January 2026 (RU 23.26.1) as Enterprise Edition with the full AI feature set: AI Vector Search, SQL FILTER, OML4Py/OML4SQL API v2, Private Agent Factory, and True Cache. Releases for Windows and AIX are scheduled for later in calendar year 2026. Oracle is covering all three major server platforms where legacy ERP environments commonly still run. For enterprises migrating from legacy systems who want to adopt AI Database 26ai without moving to the cloud, Oracle is providing a clear on-premises path: Linux is already available, Windows and AIX are next. Details are confirmed in MOS Note 742060.1 — Release Schedule of Current Database Releases.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms"
+  },
+  {
+    "date": "2026-04-26",
+    "title": "Oracle APEX Bootcamp & Executive Roundtable in Minneapolis — Final North America Stop, April 30",
+    "summary": "On April 30, 2026, Traust, Oracle, and the Twin Cities Oracle User Group (TCOUG) host the final Oracle APEX Bootcamp of the North America 2026 series at McNamara Alumni Center, University of Minnesota, Minneapolis. The day includes two blocks: Executive Roundtable (7:30–9:00 AM) featuring a presentation from Oracle APEX Product Management on the platform's strategic direction and APEX 26.1; and Oracle APEX Bootcamp (10:30 AM–6:00 PM), a hands-on introduction to building APEX applications. Both sessions are free but seating is limited. Next major event: KScope26 in Denver, June 14–18, with a three-day APEX Bootcamp and 250+ technical sessions from Oracle Product Management.",
+    "tag": "Event",
+    "sourceName": "Traust",
+    "sourceUrl": "https://traust.com/blog/oracle-apex-bootcamp-and-executive-roundtable/"
+  },
+  {
+    "date": "2026-04-25",
+    "title": "Oracle Database Monthly News April 2026: Monthly Digest of Key Updates from CoreTec Oracle Blog",
+    "summary": "The Oracle CoreTec Blog published the Oracle Database Monthly News for April 2026 — a monthly digest of quick links covering all key Oracle Database updates from the month. Highlights include: online upgrade of Autonomous AI Database from 19c to 26ai in approximately 15 minutes with no extended maintenance window; new Platinum and Diamond availability tiers for 26ai on Exadata; EBS 12.2 certified for Oracle AI Database 26ai; revised Release Update release dates for 19.31 and 23.26.2 (Linux: April 28, OJVM RU: April 30, Windows: May 12); Critical Patch Update April 2026 with 483 patches. The CoreTec Oracle Blog publishes this monthly digest at the end of each month — a practical navigation guide for DBAs, architects, and teams planning migration to Oracle AI Database 26ai.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle CoreTec Blog",
+    "sourceUrl": "https://blogs.oracle.com/coretec/oracle-database-monthly-news-april-2026-quick-links"
+  },
+  {
     "date": "2026-04-25",
     "title": "Related Digital Closes $16 Billion Financing for Oracle Data Center Campus in Michigan",
     "summary": "On April 25, 2026, Related Digital announced the successful closing of $16 billion in financing for a large-scale data center campus in Saline Township, Michigan — purpose-built for Oracle as part of the Stargate project. The financing includes equity from Related Digital and Blackstone-affiliated funds, plus fixed-rate long-term debt anchored by PIMCO-managed funds. Bank of America served as structuring agent; Goldman Sachs and Wells Fargo also advised. The 'Barn' campus will feature three facilities with over 1 gigawatt of capacity, closed-loop cooling, and LEED certification — construction is already underway. The project will create 2,500+ union construction jobs and 450+ permanent on-site positions. The deal confirms the scale of Oracle's AI infrastructure investment as part of its OpenAI partnership ($300B contract starting 2027) and its broader plan to raise $45–50 billion in capital, of which $30 billion has already been secured.",
