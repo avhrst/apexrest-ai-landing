@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-27",
+    "title": "Oracle RAC + AI Database 26ai: Linear AI Workload Scaling to 100,000+ Queries/Second Without Code Changes",
+    "summary": "Oracle published a technical overview of Oracle AI Database 26ai scalability with RAC for enterprise-grade AI workloads. With RAC's share-everything architecture, vector similarity search scales linearly: over 100,000 vector distance queries per second under GloVe workload across four nodes — without any application code changes required. AI inference, similarity search, and AI-native workloads scale transparently as RAC nodes are added. Active-active replication via OCI GoldenGate 26ai delivers sub-3-second failover with zero data loss for agentic workloads. For enterprises migrating from legacy ERP to Oracle APEX with AI analytics, this means growing query volumes are handled by adding RAC nodes — not rearchitecting the application. A fundamental contrast to monolithic legacy ERP, where vertical scaling has hard ceilings and AI integration requires separate external infrastructure.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle MAA Blog",
+    "sourceUrl": "https://blogs.oracle.com/maa/scaling-enterprise-ai-workloads-with-oracle-rac-26ai"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Oracle MySQL HeatWave: MySQL 8.0 Support Extended to April 2027 — Automatic Upgrade to 8.0.46 in June",
+    "summary": "Oracle announced an extension of MySQL 8.0 support in the OCI HeatWave service until April 2027 — one year beyond the original April 2026 end-of-life date. Existing HeatWave instances running MySQL 8.0 will be automatically updated to version 8.0.46 during the June 2026 maintenance cycle, with critical security patches continuing through the extension. Creating new 8.0 instances is no longer permitted; changing shapes for 8.0 instances is also restricted. After April 2027, any remaining 8.0 instances will be automatically migrated to MySQL 8.4 LTS during their next maintenance window. For enterprises using MySQL HeatWave on OCI that have not yet completed migration to 8.4 LTS, Oracle provides an additional year to plan and execute the upgrade without forced downtime.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle MySQL Blog",
+    "sourceUrl": "https://blogs.oracle.com/mysql/extending-mysql-8-0-support-in-mysql-heatwave"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Industry Analysts Confirm: Oracle AI Database 26ai Leads Mission-Critical Availability in the AI Era",
+    "summary": "Oracle published a roundup of leading industry analyst perspectives on Oracle AI Database 26ai. Key assessments: 'Oracle is democratizing extreme availability, forcing competitors to rethink their high-availability claims'; Diamond-tier MAA with failover under 3 seconds and zero data loss meets the demands of financial exchanges and mission-critical applications; 'Only Oracle AI Database delivers transactional processing and analytics in a single engine with AES-256 encryption and post-quantum cryptography.' Analysts emphasize that Oracle AI Database 26ai delivers enterprise-grade reliability and security that legacy ERP systems are structurally incapable of matching. For organizations migrating from legacy software, moving to Oracle represents a qualitative leap in platform reliability at a level the previous environment could not approach.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/analyst-perspectives-on-oracle-ai-database-mission-critical-capabilities"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Spring AI + Oracle AI Database: Practical Guide to Adding Persistent Memory to AI Agents",
+    "summary": "The Oracle Developer Blog published a technical walkthrough: 'How I Added Memory to an AI Agent Using Spring AI and Oracle AI Database.' The post demonstrates implementing persistent memory for Spring AI-based agents using Oracle AI Database 26ai as the unified store for all three memory types: episodic (relational table for chat history), semantic (hybrid vector index for domain knowledge retrieval), and procedural (application tables accessed via @Tool methods). Oracle AI Database 26ai stores all three memory types in a single engine — no separate graph database, vector store, or document store required. Agents retain context across sessions without external RAG infrastructure. For Oracle APEX developers building AI-agent applications on Java and Spring, this is a production-ready reference architecture with working code.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Developer Blog",
+    "sourceUrl": "https://blogs.oracle.com/developers/how-i-added-memory-to-an-ai-agent-using-spring-ai-and-oracle-database"
+  },
+  {
     "date": "2026-04-26",
     "title": "Oracle APEX 26.1 and Vibe Coding: APEXlang AI Copilot as Oracle's Answer to Generative Low-Code",
     "summary": "Oracle confirmed that the Oracle APEX team is adapting 'vibe coding' approaches for APEX 26.1 through APEXlang and AI Copilot. APEXlang is an open application specification in YAML/JSON format with native git version control and CI/CD support. AI Copilot lets developers describe an application in natural language and receive a working APEX project in .apx format — with a transparent intermediate review step for the AI-generated result. Oracle positions APEXlang as the foundation of next-generation generative low-code development: the key differentiator from classic vibe coding is human-readable, auditable output that maintains enterprise control. The roadmap is officially confirmed at apex.oracle.com/roadmap. For teams migrating from legacy ERP to Oracle APEX and planning APEX 26.1 adoption, this defines the strategic development direction for the years ahead.",

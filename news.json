@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-27",
+    "title": "Oracle RAC + AI Database 26ai: лінійне масштабування векторного пошуку до 100 000+ запитів/сек без змін у коді",
+    "summary": "Oracle опублікував технічний огляд масштабованості Oracle AI Database 26ai з RAC для AI-навантажень enterprise-класу. Завдяки share-everything архітектурі RAC забезпечує лінійне масштабування векторного пошуку: понад 100 000 vector distance запитів на секунду за GloVe-навантаженням на чотирьох вузлах — без будь-яких змін у коді застосунку. AI inference, similarity search та AI-native навантаження масштабуються прозоро при додаванні вузлів RAC. Active-active реплікація через OCI GoldenGate 26ai забезпечує sub-3-секундний failover без втрати даних для agentic workloads. Для підприємств, що переходять з 1С/BAS на Oracle APEX з AI-аналітикою, це означає: зростання навантаження вирішується додаванням вузлів RAC без переписування застосунку та без ризику деградації продуктивності AI-функцій. Принципова відмінність від monolithic legacy ERP, де вертикальне масштабування має жорсткі межі.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle MAA Blog",
+    "sourceUrl": "https://blogs.oracle.com/maa/scaling-enterprise-ai-workloads-with-oracle-rac-26ai"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Oracle MySQL HeatWave: підтримку MySQL 8.0 продовжено до квітня 2027 — автоматичне оновлення до 8.0.46 у червні",
+    "summary": "Oracle оголосила про продовження підтримки MySQL 8.0 в сервісі OCI HeatWave до квітня 2027 — на рік після оригінального дедлайну EOL у квітні 2026. Для існуючих HeatWave-інстансів на MySQL 8.0 у червні 2026 буде автоматично застосовано оновлення до версії 8.0.46 зі збереженням критичних патчів безпеки. Нові інстанси на MySQL 8.0 більше не можна буде створити; зміна shape для 8.0-інстансів також недоступна. Після квітня 2027 залишкові 8.0-інстанси буде автоматично мігровано до MySQL 8.4 LTS під час наступного вікна обслуговування. Для підприємств, що використовують MySQL HeatWave в OCI та ще не завершили міграцію на 8.4 LTS, Oracle надає додатковий рік для планування оновлення без примусового простою.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle MySQL Blog",
+    "sourceUrl": "https://blogs.oracle.com/mysql/extending-mysql-8-0-support-in-mysql-heatwave"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Галузеві аналітики підтверджують: Oracle AI Database 26ai — лідер місії-критичної доступності AI-епохи",
+    "summary": "Oracle опублікував огляд позицій провідних галузевих аналітиків щодо Oracle AI Database 26ai. Ключові оцінки: «Oracle демократизує екстремальну доступність, змушуючи конкурентів переосмислити заяви щодо HA»; Diamond-tier MAA із failover до 3 секунд без втрати даних відповідає вимогам фондових бірж та місії-критичних фінансових систем; «тільки Oracle AI Database забезпечує транзакційну обробку та аналітику в єдиному движку з AES-256 шифруванням та post-quantum криптографією». Аналітики підкреслюють: Oracle AI Database 26ai надає enterprise-рівень надійності та безпеки, недосяжний для legacy ERP-систем. Для компаній, що мігрують з 1С/BAS, перехід на Oracle означає якісний стрибок у надійності на рівні, якого legacy-платформи апріорі не можуть забезпечити.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/analyst-perspectives-on-oracle-ai-database-mission-critical-capabilities"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Spring AI + Oracle AI Database: практичний гайд із додавання персистентної пам'яті до AI-агентів",
+    "summary": "Oracle Developer Blog опублікував технічний гайд «How I Added Memory to an AI Agent Using Spring AI and Oracle AI Database». Стаття демонструє реалізацію персистентної пам'яті для AI-агентів на Spring AI з використанням Oracle AI Database 26ai як єдиного сховища всіх типів пам'яті: episodic (реляційна таблиця chat history), semantic (hybrid vector index для domain knowledge) та procedural (таблиці застосунку через @Tool). Oracle AI Database 26ai зберігає всі три типи пам'яті в єдиному движку без необхідності підтримувати окрему граф-базу, векторний стор або document store — агенти «пам'ятають» між сесіями без зовнішніх RAG-систем. Для Oracle APEX-розробників, що будують AI-агентні застосунки на Java/Spring, це готовий reference-архітектурний зразок із реальним кодом.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Developer Blog",
+    "sourceUrl": "https://blogs.oracle.com/developers/how-i-added-memory-to-an-ai-agent-using-spring-ai-and-oracle-database"
+  },
+  {
     "date": "2026-04-26",
     "title": "Oracle APEX 26.1 та Vibe Coding: APEXlang AI Copilot як підхід Oracle до генеративної low-code розробки",
     "summary": "Oracle підтвердив: команда Oracle APEX адаптує підходи «vibe coding» для наступного релізу APEX 26.1 через APEXlang та AI Copilot. APEXlang — відкрита специфікація APEX-застосунків у форматі YAML/JSON з підтримкою git-версіонування та CI/CD. AI Copilot дозволяє описати застосунок природною мовою та отримати робочий APEX-проєкт у форматі .apx без ручного кодування — з прозорим проміжним кроком перегляду AI-генерованого результату. Oracle позиціонує APEXlang як основу generative low-code розробки наступного покоління: ключова відмінність від класичного vibe coding — людино-читабельний формат, що підлягає аудиту та контролю. Дорожню карту підтверджено Oracle на apex.oracle.com/roadmap. Для команд, що мігрують з 1С на Oracle APEX і планують впровадження 26.1, це визначає стратегічний напрям розробки на найближчі роки.",

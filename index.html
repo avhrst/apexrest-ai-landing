@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-04-26T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-04-27T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -397,6 +397,14 @@
         <div class="monitor-grid">
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle AI</div>
+            <h3>Oracle RAC + AI Database 26ai: горизонтальне масштабування AI-навантажень до 100 000+ векторних запитів/сек без змін у коді</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle опублікував технічний огляд масштабованості Oracle AI Database 26ai з RAC для AI-навантажень enterprise-класу. Завдяки share-everything архітектурі RAC забезпечує лінійне масштабування векторного пошуку: понад 100 000 vector distance запитів на секунду за GloVe-навантаженням на чотирьох вузлах — без будь-яких змін у коді застосунку. AI inference, similarity search та AI-native навантаження масштабуються прозоро при додаванні вузлів. Active-active реплікація через OCI GoldenGate 26ai забезпечує sub-3-секундний failover без втрати даних для agentic workloads. Oracle RAC підтримує incremental capacity growth: бізнес додає вузли по мірі зростання навантаження без переробки архітектури.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> одне з ключових питань при міграції з 1С/BAS — «як ваше рішення масштабується при зростанні AI-навантажень?». Oracle RAC + AI Database 26ai дає чітку відповідь: лінійно, без переписування коду, без деградації продуктивності AI-функцій. Для enterprise-клієнтів, що будують Oracle APEX-рішення з AI-аналітикою, це означає: зростання бізнесу = додавання вузлів RAC, а не переробка архітектури. Принципова відмінність від monolithic legacy ERP, де вертикальне масштабування має жорсткі межі, а AI-інтеграція вимагає окремої зовнішньої інфраструктури.</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/maa/scaling-enterprise-ai-workloads-with-oracle-rac-26ai" target="_blank" rel="noopener noreferrer">Джерело: Oracle MAA Blog (Scaling Enterprise AI Workloads with Oracle AI Database 26ai and RAC, 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
             <h3>Oracle AI Database 26ai on-premises: GA для Linux x86-64 вже доступна, Windows та AIX — заплановано на 2026</h3>
             <div class="monitor-problem"><strong>Що нового:</strong> Oracle підтвердив дорожню карту on-premises розгортання Oracle AI Database 26ai поза Autonomous Cloud. GA для Linux x86-64 вийшла у січні 2026 (RU 23.26.1) — Enterprise Edition з повним набором AI-можливостей: AI Vector Search, SQL FILTER operator, OML4Py/OML4SQL API v2, Private Agent Factory та True Cache. Реліз для Windows та AIX заплановано на пізніший термін 2026 року відповідно до MOS Note 742060.1 (Release Schedule of Current Database Releases). Oracle послідовно охоплює всі три основні серверні платформи, де можуть працювати legacy ERP-системи в корпоративному середовищі.</div>
             <div class="monitor-comment"><strong>Позиція APEXREST:</strong> один з найчастіших аргументів проти Oracle AI Database у переговорах про міграцію з 1С/BAS — «нам потрібна on-premises версія для Windows-серверів». Oracle системно закриває цей gap: Linux GA вже доступна з усіма AI-можливостями, Windows та AIX — на черзі у 2026. Для підприємств, що замінюють 1С/BAS і мають корпоративну IT-інфраструктуру на Windows-серверах, Oracle AI Database 26ai стане доступним без обов'язкового переходу в хмару. Це усуває ключовий аргумент «ми не готові до хмари» і відкриває повний AI-стек — векторний пошук, Select AI, Private Agent Factory та AI Agent Memory — на наявній серверній інфраструктурі.</div>
@@ -768,7 +776,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 26.04.2026</p>
+      <p class="footer-updated">Оновлено: 27.04.2026</p>
     </div>
   </footer>
 
