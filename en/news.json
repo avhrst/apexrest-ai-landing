@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-28",
+    "title": "Oracle AI World 2026: Oracle's Annual AI Flagship Conference — October 25–28, Las Vegas",
+    "summary": "Oracle AI World 2026 takes place October 25–28 at The Venetian Convention and Expo Center in Las Vegas — Oracle's premier annual conference with 20,000+ attendees. Program includes keynotes from Oracle leadership, product demonstrations, customer case studies, and full-day hands-on bootcamps on Sunday October 25 led by Oracle instructors. Oracle AI World 2026 is expected to be the main stage for announcing next-generation Oracle AI Database capabilities, APEX 26.1 GA, and OCI strategic direction for 2027. KScope26 in Denver (June 14–18) and Oracle AI World (October, Las Vegas) are the two key Oracle events of 2026 for enterprises planning or executing migration from legacy ERP to Oracle APEX and AI Database.",
+    "tag": "Event",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/ai-world/"
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Oracle APEX Bootcamp Chicago: Final North America Stop — May 7, 2026 at Willis Tower",
+    "summary": "On May 7, 2026, the final Oracle APEX Bootcamp of the North America Spring 2026 series takes place at Willis Tower, Chicago (233 S Wacker Dr) — a full day of hands-on Oracle APEX and Generative AI. Free to attend, organized by Oracle, COUG (Chicago Oracle User Group), MOUG, and Viscosity. Program: Oracle APEX Bootcamp (9:30 AM–5:45 PM) covering AI Copilot, APEXlang, and the APEX 26.1 development approach. Chicago is the final stop of a five-city North America tour (Boston, Reston, Minneapolis, Chicago, Guadalajara) before KScope26 in Denver, June 14–18. For development teams migrating from legacy ERP to Oracle APEX, the free Bootcamp offers direct access to Oracle APEX Product Management and hands-on experience with APEX 26.1 capabilities.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX",
+    "sourceUrl": "https://oracleapex.com/go/bootcamp@chicago"
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Oracle Database Release Updates 19.31 and 23.26.2 Ship on Linux — April 2026 Patch Cycle Complete",
+    "summary": "On April 28, Oracle released the April 2026 Release Updates for Oracle AI Database 26ai (RU 23.26.2) and Oracle Database 19c (RU 19.31) on Linux x86-64 — delivered on the revised schedule after the delay announced April 23. RU 23.26.2 for AI Database 26ai incorporates patches from the April 2026 Critical Patch Update plus bug fixes. Remaining schedule: OJVM Release Update on April 30, Windows platform on May 12. Oracle maintains a transparent public patch calendar even when target dates shift. For enterprises comparing Oracle against banned legacy ERP systems like 1C/BAS, the quarterly patching cycle is a practical vendor maturity criterion: banned legacy software receives no centralized security updates, while Oracle AI Database 26ai receives quarterly CPUs plus out-of-band Security Alerts.",
+    "tag": "Oracle AI",
+    "sourceName": "Upgrade your Database — NOW!",
+    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
+  },
+  {
+    "date": "2026-03-10",
+    "title": "Oracle FY2026 Q3: Cloud Revenue +44%, Total Revenue +22%, RPO $553 Billion — AI Infrastructure Transformation Confirmed",
+    "summary": "On March 10, Oracle announced Q3 FY2026 results: total revenue $17.2 billion (+22% year-over-year), cloud revenue $8.9 billion (+44%). First quarter in 15+ years where both organic total revenue and Non-GAAP EPS grew 20%+ simultaneously. Remaining Performance Obligations (RPO) reached $553 billion (+325% YoY), driven largely by large-scale AI contracts including the $300 billion OpenAI deal starting 2027. FY2027 guidance raised to $90 billion revenue, $50 billion CapEx. For enterprise customers choosing Oracle APEX and AI Database as the platform for ERP modernization, these results provide financial confirmation of Oracle's strategic reliability: the company is transitioning from legacy software vendor to foundational AI infrastructure provider with long-term contractual commitments.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Investor Relations",
+    "sourceUrl": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/default.aspx"
+  },
+  {
     "date": "2026-04-27",
     "title": "Oracle RAC + AI Database 26ai: Linear AI Workload Scaling to 100,000+ Queries/Second Without Code Changes",
     "summary": "Oracle published a technical overview of Oracle AI Database 26ai scalability with RAC for enterprise-grade AI workloads. With RAC's share-everything architecture, vector similarity search scales linearly: over 100,000 vector distance queries per second under GloVe workload across four nodes — without any application code changes required. AI inference, similarity search, and AI-native workloads scale transparently as RAC nodes are added. Active-active replication via OCI GoldenGate 26ai delivers sub-3-second failover with zero data loss for agentic workloads. For enterprises migrating from legacy ERP to Oracle APEX with AI analytics, this means growing query volumes are handled by adding RAC nodes — not rearchitecting the application. A fundamental contrast to monolithic legacy ERP, where vertical scaling has hard ceilings and AI integration requires separate external infrastructure.",

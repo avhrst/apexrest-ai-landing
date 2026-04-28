@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-28",
+    "title": "Oracle AI World 2026: флагманська щорічна конференція Oracle з AI — 25–28 жовтня, Лас-Вегас",
+    "summary": "Oracle AI World 2026 відбудеться 25–28 жовтня у The Venetian Convention and Expo Center, Лас-Вегас — щорічна флагманська конференція Oracle з 20 000+ учасників. Програма: keynotes від Oracle-лідерства, product demonstrations, customer case studies, hands-on bootcamps (неділя, 25 жовтня — повний день практики від інструкторів Oracle) та технічні сесії з Oracle AI Database, APEX, OCI та Fusion Applications. Oracle AI World 2026 стане головною платформою для анонсу нових можливостей Oracle AI Database наступного покоління, APEX 26.1 GA та стратегічних напрямів OCI на 2027 рік. KScope26 у Денвері (14–18 червня) та Oracle AI World (жовтень, Лас-Вегас) — два ключових Oracle-заходи 2026 року для підприємств, що планують або вже реалізують міграцію з 1С/BAS на Oracle APEX та AI Database.",
+    "tag": "Подія",
+    "sourceName": "Oracle",
+    "sourceUrl": "https://www.oracle.com/ai-world/"
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Oracle APEX Bootcamp Чикаго: фінальний захід серії North America — 7 травня 2026, Willis Tower",
+    "summary": "7 травня 2026 у Willis Tower, Чикаго (233 S Wacker Dr) відбудеться фінальний Oracle APEX Bootcamp серії North America Spring 2026 — повний день практики на Oracle APEX та Generative AI. Безкоштовний захід організовано Oracle, COUG (Chicago Oracle User Group), MOUG та Viscosity. Програма: Oracle APEX Bootcamp (9:30–17:45) — hands-on introduction з AI Copilot та APEXlang. Це останній захід серії North America Bootcamp 2026 (Бостон, Рестон, Міннеаполіс, Чикаго, Гвадалахара) перед KScope26 у Денвері (14–18 червня). Для команд, що переходять з 1С/BAS на Oracle APEX, безкоштовний Bootcamp — найшвидший шлях до практичного знайомства з AI-можливостями APEX 26.1 безпосередньо від Oracle APEX PM.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX",
+    "sourceUrl": "https://oracleapex.com/go/bootcamp@chicago"
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Oracle Database RU 23.26.2 та 19.31 вийшли на Linux — квітневий патч-цикл 2026 завершено",
+    "summary": "28 квітня Oracle випустила квітневі Release Updates для Oracle AI Database 26ai (RU 23.26.2) та Oracle Database 19c (RU 19.31) на Linux x86-64 — у строк після затримки, оголошеної 23 квітня. RU 23.26.2 для AI Database 26ai включає патчі з квартального Critical Patch Update квітня 2026 та виправлення помилок. Наступні дедлайни: OJVM Release Update — 30 квітня, Windows — 12 травня 2026. Oracle підтримує прозорий публічний графік патчування навіть у разі коригувань дат. Для підприємств, що порівнюють Oracle та legacy-рішення типу 1С/BAS, квартальний патч-цикл — практичний критерій: після заборони 1С/BAS не отримують жодних централізованих оновлень безпеки, Oracle AI Database 26ai — щоквартально плюс позапланові Security Alerts.",
+    "tag": "Oracle AI",
+    "sourceName": "Upgrade your Database — NOW!",
+    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
+  },
+  {
+    "date": "2026-03-10",
+    "title": "Oracle FY2026 Q3: хмарний бізнес +44%, загальний дохід +22%, RPO $553 млрд — трансформація в AI-інфраструктуру підтверджена",
+    "summary": "10 березня Oracle оголосила фінансові результати за Q3 FY2026: загальний дохід $17,2 млрд (+22% рік до року), хмарний дохід $8,9 млрд (+44%). Перший квартал за 15+ років з одночасним органічним зростанням доходу та Non-GAAP EPS на 20%+. Залишкові зобов'язання (RPO) — $553 млрд (+325% рік до року), переважно за AI-контрактами, включно з угодою $300 млрд з OpenAI (старт 2027). Прогноз на FY2027: виручка $90 млрд, CapEx $50 млрд. Для корпоративних клієнтів, що обирають Oracle APEX та AI Database як основу міграції з 1С/BAS, ці результати — фінансове підтвердження стратегічної надійності платформи: Oracle трансформується з legacy software-вендора в ключового AI-інфраструктурного гравця з довгостроковими зобов'язаннями.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Investor Relations",
+    "sourceUrl": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/default.aspx"
+  },
+  {
     "date": "2026-04-27",
     "title": "Oracle RAC + AI Database 26ai: лінійне масштабування векторного пошуку до 100 000+ запитів/сек без змін у коді",
     "summary": "Oracle опублікував технічний огляд масштабованості Oracle AI Database 26ai з RAC для AI-навантажень enterprise-класу. Завдяки share-everything архітектурі RAC забезпечує лінійне масштабування векторного пошуку: понад 100 000 vector distance запитів на секунду за GloVe-навантаженням на чотирьох вузлах — без будь-яких змін у коді застосунку. AI inference, similarity search та AI-native навантаження масштабуються прозоро при додаванні вузлів RAC. Active-active реплікація через OCI GoldenGate 26ai забезпечує sub-3-секундний failover без втрати даних для agentic workloads. Для підприємств, що переходять з 1С/BAS на Oracle APEX з AI-аналітикою, це означає: зростання навантаження вирішується додаванням вузлів RAC без переписування застосунку та без ризику деградації продуктивності AI-функцій. Принципова відмінність від monolithic legacy ERP, де вертикальне масштабування має жорсткі межі.",
