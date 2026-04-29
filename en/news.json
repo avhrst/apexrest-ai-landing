@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-29",
+    "title": "Oracle Developer Coaching Event April 29: 'Next-Level OCI' — CI Compose, OCDK, and VS Code for AI Database",
+    "summary": "On April 29, Oracle hosted the Developer Coaching event 'Next-Level OCI: Enhancing Developer Productivity with CI Compose, OCDK, and VS Code' — a live session featuring Kris Rice (SVP, Software Development, Oracle AI Database) and Jeff Smith (Distinguished Product Manager, Oracle AI Database). CI Compose provides declarative multi-service pipeline definitions inside OCI; OCDK (Oracle Cloud Development Kit) enables Infrastructure as Code for OCI services; and the VS Code Extension delivers direct Oracle AI Database 26ai interaction inside the IDE without leaving the development environment. For teams building Oracle APEX solutions on AI Database 26ai that need a modern CI/CD pipeline, these tools substantially reduce the DevOps cycle from planning to production.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Developer Events",
+    "sourceUrl": "https://www.oracle.com/developer/events/"
+  },
+  {
+    "date": "2026-04-29",
+    "title": "Oracle London Advanced Training April 29: Upgrade, Migration and Patching to Oracle AI Database 26ai",
+    "summary": "On April 29 in London, Oracle delivered a live Advanced Edition training session on 'Upgrade, Migration and Patching to Oracle AI Database 26ai and 19c' for Oracle database administrators and architects. The session covered the AutoUpgrade path from 19c to AI Database 26ai, managing Release Updates mid-lifecycle, OJVM patching, and the Windows platform timeline (ETA May 12, 2026). The London session followed the April 28 release of RU 23.26.2 and RU 19.31, giving DBAs current hands-on guidance immediately after the new patch cycle. For enterprises moving databases from legacy ERP to Oracle AI Database 26ai, Advanced Edition training from Oracle instructors is the safest preparatory step before a production upgrade.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Developer Events",
+    "sourceUrl": "https://www.oracle.com/developer/events/"
+  },
+  {
+    "date": "2026-04-29",
+    "title": "Traust Confirms Two Sessions at KScope26 in Denver — Oracle APEX and AI in June 2026",
+    "summary": "Traust — Oracle consulting partner and North America APEX event organizer — confirmed two technical sessions at ODTUG KScope26 (June 14–18, 2026, Gaylord Rockies Resort, Denver). Traust also organized the April 30 Minneapolis APEX Bootcamp and Executive Roundtable jointly with Oracle and TCOUG. KScope26 is the largest Oracle APEX conference in the US: 250+ technical sessions covering Oracle APEX, OCI, EPM, Analytics, and Database from Oracle Product Management and ACE speakers. For international teams evaluating Oracle APEX as a replacement for legacy ERP, post-conference KScope26 materials represent the most detailed publicly available technical content from the primary Oracle APEX development team.",
+    "tag": "Event",
+    "sourceName": "Traust Blog",
+    "sourceUrl": "https://traust.com/blog/traust-presenting-at-kscope26-in-denver/"
+  },
+  {
+    "date": "2026-04-29",
+    "title": "Oracle EBS Tech Blog Confirms: April 2026 Critical Patch Update Now Available for E-Business Suite",
+    "summary": "The Oracle EBS Tech Blog published confirmation that the April 2026 Critical Patch Update (CPU) is now available for Oracle E-Business Suite — including all security fixes from Oracle's quarterly Security Alert and selected bug-fix patches for EBS components. EBS 12.2 is certified for Oracle AI Database 26ai (confirmed earlier in April), giving EBS customers a secured platform with a clear path to 26ai AI capabilities. Regular quarterly CPUs for Oracle EBS are a concrete indicator of vendor support maturity — enterprises that have moved off banned legacy software now operate on a platform with predictable, auditable security maintenance that legacy systems structurally cannot provide.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle EBS Tech Blog",
+    "sourceUrl": "https://blogs.oracle.com/ebstech/critical-patch-update-for-april-2026-now-available"
+  },
+  {
     "date": "2026-04-28",
     "title": "Oracle AI World 2026: Oracle's Annual AI Flagship Conference — October 25–28, Las Vegas",
     "summary": "Oracle AI World 2026 takes place October 25–28 at The Venetian Convention and Expo Center in Las Vegas — Oracle's premier annual conference with 20,000+ attendees. Program includes keynotes from Oracle leadership, product demonstrations, customer case studies, and full-day hands-on bootcamps on Sunday October 25 led by Oracle instructors. Oracle AI World 2026 is expected to be the main stage for announcing next-generation Oracle AI Database capabilities, APEX 26.1 GA, and OCI strategic direction for 2027. KScope26 in Denver (June 14–18) and Oracle AI World (October, Las Vegas) are the two key Oracle events of 2026 for enterprises planning or executing migration from legacy ERP to Oracle APEX and AI Database.",
