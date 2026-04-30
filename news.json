@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-04-30",
+    "title": "Oracle APEX вперше у Румунії: APEX Day + Gen AI Bootcamp у Бухаресті, 6–7 травня 2026 — спільно з RoOUG",
+    "summary": "Oracle анонсував перший в історії Oracle APEX Day та Gen AI Bootcamp у Румунії — 6–7 травня 2026 у Бухаресті, організований разом з Romanian Oracle User Group (RoOUG). Oracle APEX Day (6 травня) — спеціалізована конференція для Oracle APEX-спеціалістів та фахівців; Gen AI Bootcamp (7 травня) — практичний день з Generative AI в Oracle APEX 26.1, призначений для IT-студентів та досвідчених розробників, нових для платформи. Обидва заходи безкоштовні, кількість місць обмежена. Анонс підтверджує стратегічне розширення Oracle APEX PM-команди в країни Центральної та Східної Європи: у квітні–травні 2026 заплановані in-person APEX-заходи у Словенії, Хорватії, Австрії, Канаді, США та Румунії. Для команд у ЦСЄ, що планують міграцію з 1С/BAS на Oracle APEX, це підтверджує зростаючу регіональну доступність технічної підтримки та навчання від Oracle безпосередньо.",
+    "tag": "Подія",
+    "sourceName": "Oracle APEX Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/romania"
+  },
+  {
+    "date": "2026-04-30",
+    "title": "Oracle OJVM Release Update 19.31 та 23.26.2: вихід 30 квітня завершує основний квітневий патч-цикл",
+    "summary": "30 квітня Oracle випустила OJVM (Oracle JVM) Release Update для Oracle Database 19c (19.31) та Oracle AI Database 26ai (23.26.2) — відповідно до оголошеного графіку. OJVM RU є обов'язковим для організацій, що використовують Java-компоненти в базі даних Oracle, включно з Oracle APEX: APEX-сервер використовує Oracle JVM для ряду внутрішніх операцій та Java-залежних PL/SQL-бібліотек. Квітневий патч-цикл Oracle тепер включає: CPU квітень 2026 (483 патчі безпеки, 21 квітня), Database RU Linux (28 квітня) та OJVM RU (30 квітня) — весь ключовий цикл завершено за 9 днів. Єдина частина, що залишається: Windows ETA 12 травня 2026. Для Oracle APEX-адміністраторів застосування повного патч-циклу (Database RU + OJVM RU + CPU) є рекомендованою практикою Oracle та вимогою для підтримки enterprise security posture.",
+    "tag": "Oracle AI",
+    "sourceName": "Upgrade your Database — NOW!",
+    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
+  },
+  {
+    "date": "2026-04-30",
+    "title": "KScope26 Denver: Community Keynote для всіх п'яти ODTUG-спільнот — APEX, Analytics, Database, EPM та OCI",
+    "summary": "ODTUG підтвердив деталі структури KScope26 (14–18 червня 2026, Gaylord Rockies Resort, Денвер): кожна з п'яти ODTUG-спільнот — Oracle APEX, Analytics, Database, EPM та OCI — матиме власний Community Keynote з обраними спікерами. Підтверджено особливий вечірній захід середи, який організатори характеризують як «незабутній за всю історію KScope». Серед підтверджених доповідачів: Brock Ray (Traust, Director of UX) з двома сесіями Oracle APEX track на тему UX-дизайну. Реєстрація на KScope26 відкрита. KScope26 — найбільша незалежна конференція Oracle APEX у США: 250+ технічних сесій, hands-on тренінги, прямий контакт з Oracle APEX PM. Для команд в Україні та регіоні, що планують Oracle APEX-проєкти, матеріали KScope26 після конференції — найповніший публічно доступний технічний ресурс від першоджерел.",
+    "tag": "Подія",
+    "sourceName": "ODTUG",
+    "sourceUrl": "https://www.odtug.com/kscope26"
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Oracle APEX Gen AI Bootcamp Торонто: перший Bootcamp Oracle APEX у Канаді — спільно з Toronto Oracle User Group",
+    "summary": "28 квітня 2026 у Торонто відбувся Oracle APEX Gen AI Bootcamp, організований Oracle спільно з Toronto Oracle User Group (TOUG) — перший Bootcamp Oracle APEX у Канаді весни 2026. Захід тривав з 10:00 до 17:45 і охоплював практичне знайомство з підходом Oracle APEX до AI-розробки: APEXlang, AI Copilot та Generative AI в Oracle APEX 26.1. Безкоштовний захід зібрав до 80 учасників з безпосереднім доступом до Oracle APEX PM та DEV-команди. Bootcamp у Торонто є частиною активного регіонального туру Oracle APEX весни 2026: Alpe Adria Любляна (17 квітня), Торонто (28 квітня), Міннеаполіс (30 квітня), Бухарест (6–7 травня), Чикаго (7 травня), APEX Connect Heide Park (18–20 травня), KScope26 Денвер (14–18 червня). Для підприємств, що розглядають Oracle APEX як платформу для виходу з 1С/BAS, географічне розширення Oracle APEX-заходів підтверджує зростання активної глобальної спільноти.",
+    "tag": "Oracle APEX",
+    "sourceName": "ODTUG",
+    "sourceUrl": "https://www.odtug.com/oracle-apex-bootcamp-toronto"
+  },
+  {
     "date": "2026-04-29",
     "title": "Oracle Developer Event 29 квітня: «Next-Level OCI» — CI Compose, OCDK та VS Code для розробників AI Database",
     "summary": "29 квітня Oracle провів Developer Coaching event «Next-Level OCI: Enhancing Developer Productivity with CI Compose, OCDK, and VS Code» — live-сесія з Kris Rice (SVP, Software Development, Oracle AI Database) та Jeff Smith (Distinguished Product Manager, Oracle AI Database). CI Compose — декларативний інструмент для multi-service DevOps-пайплайнів прямо в OCI; OCDK (Oracle Cloud Development Kit) — Infrastructure as Code для OCI-сервісів; VS Code Extension забезпечує пряму взаємодію з Oracle AI Database 26ai в IDE без виходу з розробницького середовища. Захід підтвердив безперервну активність Oracle у DevOps-напрямку для AI Database, що безпосередньо стосується команд, які будують Oracle APEX-рішення та потребують сучасного CI/CD-ланцюга від планування до production без складних ручних кроків.",
