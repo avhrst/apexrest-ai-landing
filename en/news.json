@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-01",
+    "title": "APEX Connect 2026 at Heide Park Soltau: Three DOAG Conferences in One Week — Oracle APEX, Database, and CloudLand, May 18–22",
+    "summary": "May 18–22, 2026 at Heide Park Soltau (Lower Saxony, Germany), three major DOAG conferences run in parallel: APEX Connect 2026 (May 18–20) — the flagship annual Oracle APEX, PL/SQL, and Low-Code conference from DOAG; DOAG Database with Cloud Infrastructure (May 18–19) — Oracle Database and OCI; and CloudLand 2026 (May 19–22) — the Cloud Native Festival covering DevOps, Architecture, AI, and Security. The APEX Connect 2026 keynote is by Carsten Czarski: 'Low-Code mit APEX 2026' — covering AI, APEXlang, and new platform features. APEX Connect is the largest dedicated Oracle APEX conference in the DACH region, organized by DOAG (Deutsche Oracle Anwender Gruppe). Post-conference session recordings are published publicly via DOAG on-demand. Three conferences at one location in one week is a record format for the Oracle ecosystem in Central Europe: APEX Connect for Oracle APEX content, DOAG Database for Database and OCI, CloudLand for Cloud-native and DevOps. For teams in CEE evaluating Oracle APEX as a migration path from legacy ERP, APEX Connect 2026 is the closest access point to practical Oracle APEX content from the DACH Oracle community.",
+    "tag": "Event",
+    "sourceName": "DOAG / APEX Connect",
+    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
+  },
+  {
+    "date": "2026-05-01",
+    "title": "Oracle APEX 23.2 End of Support: May 31, 2026 — 30 Days to the Deadline, Upgrade to 24.2 Recommended",
+    "summary": "Oracle APEX 23.2 reaches end of support on May 31, 2026 — 30 days from today. Oracle officially extended support for APEX versions 23.2 through 24.2 from 18 months to 2 years under the Lifetime Support Policy, acknowledging the delayed availability of versions 24.1 and 24.2. Current support status: APEX 24.2 — current supported release, supported through July 31, 2027; APEX 24.1 — supported through December 31, 2026; APEX 23.2 — support ends May 31, 2026. After May 31, Oracle APEX 23.2 will no longer receive security patches or bug fixes from Oracle. APEX 26.1 is planned for 2026. For organizations running APEX 23.2: an Oracle APEX upgrade is performed without downtime to existing business applications and carries far less risk than running on an unsupported version. For teams migrating from legacy ERP to Oracle APEX: plan for APEX 24.2 immediately, or target APEX 26.1 when it is released. The contrast with legacy ERP is clear: Oracle APEX has a published, vendor-managed support schedule — a concept that ceased to exist for 1C/BAS after the Ukrainian ban.",
+    "tag": "Oracle APEX",
+    "sourceName": "endoflife.date / Oracle APEX",
+    "sourceUrl": "https://endoflife.date/oracle-apex"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Oracle Project Jupiter in New Mexico: Up to 2.45 GW of Bloom Energy Fuel Cells and 4,000 Jobs — Grid-Independent AI Campus",
+    "summary": "On April 27, Oracle, BorderPlex Digital Assets, and Bloom Energy announced Project Jupiter — an AI data center campus in Doña Ana County, New Mexico, to be powered entirely by up to 2.45 GW of Bloom Energy solid oxide fuel cells (SOFC) in a single microgrid configuration. The updated campus design replaces previously planned gas turbines and diesel generators: the new architecture combines cleaner energy, water-efficient cooling, and full independence from the regional electrical grid. Over the life of the project, Oracle expects to create 4,000 construction jobs and 1,500 ongoing positions on-site and in the surrounding community. Project Jupiter is part of Oracle's broader AI infrastructure program — planned CapEx $45–50 billion with $30 billion already raised. Together with Stargate Michigan ($16 billion, Saline Township) and the Abilene, Texas campus (1.2 GW, already live), Project Jupiter is one of three Oracle AI infrastructure flagships in 2026, supporting the $300 billion OpenAI contract starting 2027 and the continued global expansion of OCI.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle News",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
+  },
+  {
+    "date": "2026-05-01",
+    "title": "Oracle Database RU for Windows: Final April 2026 Patch Expected May 12 — ETA Confirmed by Mike Dietrich",
+    "summary": "The April 2026 Oracle Database patch cycle is almost complete: Release Updates 19.31 (Oracle Database 19c) and 23.26.2 (Oracle AI Database 26ai) for Windows are expected on May 12, 2026, per the ETA confirmed by Oracle DBA blogger Mike Dietrich. The Linux RUs were released April 28 and the OJVM RU on April 30. After the Windows release, the April 2026 patch cycle will be fully complete across all supported platforms. For Oracle APEX administrators running Windows-based environments, applying the full patch set (Database RU + OJVM RU + April 2026 CPU) is Oracle's recommended practice to maintain an enterprise security posture on the APEX infrastructure. Windows is one of three key platforms (Linux, Windows, AIX) on which Oracle AI Database 26ai is being made available in 2026 — Linux GA was released in January 2026, Windows follows in May, AIX later in the year.",
+    "tag": "Oracle AI",
+    "sourceName": "Upgrade your Database — NOW!",
+    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
+  },
+  {
     "date": "2026-04-30",
     "title": "Oracle APEX Comes to Romania for the First Time: APEX Day + Gen AI Bootcamp in Bucharest, May 6–7, 2026",
     "summary": "Oracle announced the first-ever Oracle APEX Day and Gen AI Bootcamp in Romania — May 6–7, 2026 in Bucharest, co-organized with the Romanian Oracle User Group (RoOUG). Oracle APEX Day (May 6) is a dedicated conference for Oracle APEX practitioners; Gen AI Bootcamp (May 7) is a hands-on day focused on Generative AI in Oracle APEX 26.1, designed for IT students and experienced developers new to the platform. Both sessions are free with limited seating. The announcement is part of Oracle APEX Product Management's active April–May 2026 CEE and EMEA engagement: events already confirmed in Slovenia, Croatia, Austria, Canada, and the US, with Romania and Germany (DOAG/Heide Park, May 18–20) as the next stops. For teams in Central and Eastern Europe evaluating Oracle APEX as their path away from legacy ERP, the growing regional Oracle APEX presence confirms increasing accessibility to direct technical support and training from the platform builder.",

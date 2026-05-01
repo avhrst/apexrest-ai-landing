@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-01",
+    "title": "APEX Connect 2026 у Heide Park Soltau: три DOAG-конференції під одним дахом — APEX Connect, DOAG DB та CloudLand, 18–22 травня",
+    "summary": "18–22 травня 2026 у Heide Park Soltau (Нижня Саксонія, Німеччина) паралельно проходять три великих DOAG-конференції: APEX Connect 2026 (18–20 травня) — щорічна флагманська конференція Oracle APEX, PL/SQL та Low-Code від DOAG; DOAG Database with Cloud Infrastructure (18–19 травня) — Oracle Database та OCI; CloudLand 2026 (19–22 травня) — Cloud Native Festival з темами DevOps, Architecture, AI та Security. Keynote APEX Connect 2026: Carsten Czarski з темою «Low-Code mit APEX 2026» — про KI (AI), APEXlang та нові функції платформи. APEX Connect — найбільша спеціалізована Oracle APEX-конференція у DACH-регіоні, організована DOAG (Deutsche Oracle Anwender Gruppe). Записи сесій публікуються після конференції через DOAG on-demand. Три конференції в одному місці та в один тиждень — рекордний формат для Oracle-екосистеми в Центральній Європі: APEX Connect забезпечує Oracle APEX-контент, DOAG DB — Database та OCI, CloudLand — Cloud-native та DevOps. Для команд у ЦСЄ та в Україні, що оцінюють Oracle APEX як платформу виходу з 1С/BAS: APEX Connect 2026 є найближчою точкою доступу до практичного APEX-контенту від спільноти та Oracle-спеціалістів DACH-регіону.",
+    "tag": "Подія",
+    "sourceName": "DOAG / APEX Connect",
+    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
+  },
+  {
+    "date": "2026-05-01",
+    "title": "Oracle APEX 23.2: підтримка завершується 31 травня 2026 — 30 днів до дедлайну, рекомендовано оновлення до 24.2",
+    "summary": "Oracle завершує підтримку Oracle APEX 23.2 31 травня 2026 — залишається 30 днів. Oracle офіційно розширив термін підтримки версій 23.2–24.2 з 18 місяців до 2 років відповідно до Lifetime Support Policy, визнаючи затримку виходу версій 24.1 та 24.2. Поточний стан підтримки: APEX 24.2 — актуальний реліз з підтримкою до 31 липня 2027; APEX 24.1 — підтримка до 31 грудня 2026; APEX 23.2 — підтримка до 31 травня 2026. Після 31 травня APEX 23.2 не отримуватиме патчів безпеки та виправлень помилок від Oracle. APEX 26.1 очікується у 2026 році. Для організацій, що використовують APEX 23.2: оновлення Oracle APEX виконується без зупинки бізнес-застосунків і є значно менш ризикованою операцією, ніж продовження роботи на непідтримуваній версії. Для компаній, що переходять з 1С/BAS на Oracle APEX: рекомендується одразу орієнтуватися на APEX 24.2 або чекати APEX 26.1.",
+    "tag": "Oracle APEX",
+    "sourceName": "endoflife.date / Oracle APEX",
+    "sourceUrl": "https://endoflife.date/oracle-apex"
+  },
+  {
+    "date": "2026-04-27",
+    "title": "Oracle Project Jupiter у Нью-Мексико: до 2,45 ГВт паливних елементів Bloom Energy та 4 000 робочих місць — AI-кампус на єдиному мікрогріді",
+    "summary": "27 квітня Oracle, BorderPlex Digital Assets та Bloom Energy анонсували Project Jupiter — AI Data Center Campus в окрузі Doña Ana, Нью-Мексико, що живитиметься виключно паливними елементами SOFC від Bloom Energy ємністю до 2,45 ГВт у форматі єдиного мікрогріду. Оновлений дизайн кампусу замінює раніше заплановані газові турбіни та дизельні генератори: нова архітектура поєднує чистішу енергетику, водозберігаючу технологію охолодження та повну незалежність від регіональних електромереж. За час реалізації Project Jupiter створить 4 000 будівельних робочих місць та 1 500 постійних позицій на кампусі та у регіоні. Проєкт є частиною масштабної AI-інфраструктурної програми Oracle: CapEx $45–50 млрд, $30 млрд вже залучено. Project Jupiter, Stargate Michigan ($16 млрд, Saline Township) та Abilene Texas (1,2 ГВт, вже в строю) — три флагмани Oracle AI-інфраструктури 2026 року для реалізації контракту з OpenAI ($300 млрд, старт 2027) та глобального розширення OCI.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle News",
+    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
+  },
+  {
+    "date": "2026-05-01",
+    "title": "Oracle Database RU для Windows: фінальний патч квітневого циклу 2026 очікується 12 травня — ETA підтверджено",
+    "summary": "Квітневий патч-цикл Oracle Database 2026 завершується: Release Updates 19.31 (Oracle Database 19c) та 23.26.2 (Oracle AI Database 26ai) для Windows виходять 12 травня 2026 — відповідно до ETA, підтвердженого Oracle DBA-блогером Майком Дітріхом. Linux-версії RU вийшли 28 квітня, OJVM RU — 30 квітня. Після виходу Windows-патчів квітневий патч-цикл Oracle Database буде повністю завершений на всіх підтримуваних платформах. Для Oracle APEX-адміністраторів у Windows-середовищах застосування повного патч-пакету (Database RU + OJVM RU + CPU квітня 2026) є рекомендованою практикою Oracle та вимогою для підтримки enterprise security posture на APEX-інфраструктурі. Windows-платформа є однією з трьох ключових (Linux, Windows, AIX), на яких Oracle AI Database 26ai буде доступний у 2026 році.",
+    "tag": "Oracle AI",
+    "sourceName": "Upgrade your Database — NOW!",
+    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
+  },
+  {
     "date": "2026-04-30",
     "title": "Oracle APEX вперше у Румунії: APEX Day + Gen AI Bootcamp у Бухаресті, 6–7 травня 2026 — спільно з RoOUG",
     "summary": "Oracle анонсував перший в історії Oracle APEX Day та Gen AI Bootcamp у Румунії — 6–7 травня 2026 у Бухаресті, організований разом з Romanian Oracle User Group (RoOUG). Oracle APEX Day (6 травня) — спеціалізована конференція для Oracle APEX-спеціалістів та фахівців; Gen AI Bootcamp (7 травня) — практичний день з Generative AI в Oracle APEX 26.1, призначений для IT-студентів та досвідчених розробників, нових для платформи. Обидва заходи безкоштовні, кількість місць обмежена. Анонс підтверджує стратегічне розширення Oracle APEX PM-команди в країни Центральної та Східної Європи: у квітні–травні 2026 заплановані in-person APEX-заходи у Словенії, Хорватії, Австрії, Канаді, США та Румунії. Для команд у ЦСЄ, що планують міграцію з 1С/BAS на Oracle APEX, це підтверджує зростаючу регіональну доступність технічної підтримки та навчання від Oracle безпосередньо.",
