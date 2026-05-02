@@ -1,6 +1,38 @@
 [
   {
     "date": "2026-05-01",
+    "title": "Oracle долучилась до ініціативи Пентагону: DoD підписав угоди з 8 компаніями на розгортання AI в секретних мережах IL6/IL7 — ORCL +7%",
+    "summary": "1 травня Міністерство оборони США (DoD) оголосило про угоди з вісьмома технологічними компаніями — Oracle, Amazon Web Services, Google, Microsoft, OpenAI, SpaceX, NVIDIA та Reflection — на розгортання AI-систем у секретних мережах рівнів Impact Level 6 та Impact Level 7. Ці мережі призначені для обробки секретної та особливо секретної інформації. AI застосовуватиметься для синтезу даних, підтримки ситуаційного розуміння та прийняття рішень у складних оперативних середовищах. Kim Lynch, EVP Oracle Government, Defense & Intelligence, підтвердила угоду: «Ця угода відображає спільне прагнення DoD та Oracle забезпечити США вирішальне лідерство у AI як питання безпеки та стратегічного впливу». Примітно, що Anthropic не отримала аналогічного допуску — Пентагон визначив компанію як ризик для ланцюга постачань. Акції Oracle (ORCL) зросли на 6,5–7% до $171,83 за підсумками торгів 1 травня 2026 року. Рішення DoD підтверджує статус Oracle як одного з восьми авторизованих постачальників AI для найбільш чутливих урядових мереж США та зміцнює позиції компанії у government cloud та AI-інфраструктурі. У поєднанні з контрактом Oracle та OpenAI ($300 млрд від 2027) та Stargate-програмою — Oracle формує основу стратегічної AI-інфраструктури США.",
+    "tag": "Oracle Cloud",
+    "sourceName": "DefenseScoop",
+    "sourceUrl": "https://defensescoop.com/2026/05/01/dod-expands-classified-ai-work-with-8-companies-excluding-anthropic/"
+  },
+  {
+    "date": "2026-05-02",
+    "title": "Oracle запускає щомісячний CSPU — Critical Security Patch Update: прискорені патчі безпеки між квартальними CPU, старт у травні 2026",
+    "summary": "Oracle оголосила про запровадження щомісячного Critical Security Patch Update (CSPU) — нового цільового формату патчів безпеки, що доповнює квартальний Critical Patch Update (CPU). CSPU містить виправлення лише для критичних вразливостей і дозволяє клієнтам усувати найвищопріоритетні проблеми без очікування наступного квартального релізу. Кожен CSPU менший і цілеспрямованіший за повний CPU, що спрощує та прискорює його застосування. Квартальні CPU залишаються та включатимуть усі виправлення попередніх CSPU у кумулятивному форматі. В OCI-середовищах патчі застосовуються автоматично. Запровадження CSPU є відповіддю Oracle на зростаючу частоту публікацій критичних CVE та потребу enterprise-клієнтів у прискореному механізмі реагування на критичні вразливості між квартальними циклами. Для Oracle APEX-адміністраторів та компаній, що переходять на Oracle: CSPU + квартальний CPU формують повний, передбачуваний цикл підтримки безпеки Oracle Database та APEX — що не має аналогів у заборонених legacy-системах 1С/BAS, де будь-яке централізоване оновлення безпеки від вендора після заборони фактично відсутнє.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Security Blog",
+    "sourceUrl": "https://blogs.oracle.com/security/accelerating-vulnerability-detection-and-response-at-oracle"
+  },
+  {
+    "date": "2026-05-02",
+    "title": "OCI Secure Desktops у хмарних регіонах уряду та оборони США: FedRAMP High та DISA IL5 — захищені VDI для держсектору та критичної інфраструктури",
+    "summary": "Oracle оголосила про загальну доступність OCI Secure Desktops у Oracle US Government Cloud та Oracle US Defense Cloud регіонах — сертифікованих відповідно до FedRAMP High та DISA Impact Level 5. Сервіс надає захищені, масштабовані хмарні VDI-середовища: browser-accessible virtual desktops з інтегрованою аутентифікацією, розширеним моніторингом та policy-based controls для організацій з підвищеними вимогами compliance. OCI Secure Desktops вже доступний у 60+ OCI-регіонах по всьому світу, включно з UK Government та EU Sovereign. Розширення в Government та Defense Cloud регіони відбувається на тлі активізації Oracle у держсекторі США: 1 травня DoD підписав угоди з Oracle та 7 іншими компаніями на розгортання AI в секретних мережах IL6/IL7; у лютому Oracle уклала контракт з ВПС США ($88 млн, Cloud One); у березні Oracle презентувала AI Data Platform для US Federal Government. Для enterprise-команд та держорганів, що будують захищені робочі середовища: OCI Secure Desktops у Government/Defense регіонах — практичне рішення для compliance-вимог, недосяжних на застарілій legacy-інфраструктурі.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Cloud Infrastructure Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oci-secure-desktops-government-defense-regions"
+  },
+  {
+    "date": "2026-05-02",
+    "title": "Ринок заміни 1С в Україні: травень 2026 — понад 300 000 компаній на забороненому ПЗ, Oracle APEX у контексті enterprise-міграцій",
+    "summary": "За оцінками ринкових аналітиків у 2026 році, понад 300 000 українських компаній продовжують використовувати 1С або BAS — попри включення 27 програмних продуктів до реєстру забороненого ПЗ (8 січня 2026) та запровадження обов'язкових норм для держорганів і критичної інфраструктури. Основні причини затримки міграції: накопичений обсяг налаштувань у 1С, відсутність готових дорожніх планів переходу та складність вибору відповідної платформи. Ринкові огляди 2026 року виділяють різні категорії рішень: для невеликих бізнесів, орієнтованих на внутрішній ринок — вітчизняні системи; для mid-market та enterprise із потребою у кастомній автоматизації бізнес-процесів, управлінні даними та AI-інтеграції — Oracle APEX як low-code платформа розробки на Oracle AI Database 26ai. Важливо розуміти: Oracle APEX не є box-рішенням-замінником 1С, але є платформою для побудови повноцінної цифрової архітектури підприємства, що якісно перевищує функціональні та безпекові можливості legacy ERP. Проєкт закону 13505 передбачає штраф до 2% річного обороту для компаній, що не завершать міграцію у встановлені строки.",
+    "tag": "Регуляторика",
+    "sourceName": "cityhost.ua",
+    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
+  },
+  {
+    "date": "2026-05-01",
     "title": "APEX Connect 2026 у Heide Park Soltau: три DOAG-конференції під одним дахом — APEX Connect, DOAG DB та CloudLand, 18–22 травня",
     "summary": "18–22 травня 2026 у Heide Park Soltau (Нижня Саксонія, Німеччина) паралельно проходять три великих DOAG-конференції: APEX Connect 2026 (18–20 травня) — щорічна флагманська конференція Oracle APEX, PL/SQL та Low-Code від DOAG; DOAG Database with Cloud Infrastructure (18–19 травня) — Oracle Database та OCI; CloudLand 2026 (19–22 травня) — Cloud Native Festival з темами DevOps, Architecture, AI та Security. Keynote APEX Connect 2026: Carsten Czarski з темою «Low-Code mit APEX 2026» — про KI (AI), APEXlang та нові функції платформи. APEX Connect — найбільша спеціалізована Oracle APEX-конференція у DACH-регіоні, організована DOAG (Deutsche Oracle Anwender Gruppe). Записи сесій публікуються після конференції через DOAG on-demand. Три конференції в одному місці та в один тиждень — рекордний формат для Oracle-екосистеми в Центральній Європі: APEX Connect забезпечує Oracle APEX-контент, DOAG DB — Database та OCI, CloudLand — Cloud-native та DevOps. Для команд у ЦСЄ та в Україні, що оцінюють Oracle APEX як платформу виходу з 1С/BAS: APEX Connect 2026 є найближчою точкою доступу до практичного APEX-контенту від спільноти та Oracle-спеціалістів DACH-регіону.",
     "tag": "Подія",
