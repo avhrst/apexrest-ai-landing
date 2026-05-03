@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-05-02T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-05-03T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,14 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>Oracle Deep Data Security GA у Oracle AI Database 26ai: identity-aware захист корпоративних даних від несанкціонованого доступу AI-агентів</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle підтвердила GA Oracle Deep Data Security у Oracle AI Database 26ai — перший database-native механізм авторизації, що вирішує системну проблему безпеки в еру AI-агентів. Традиційні AI-агенти діють під привілейованими сервісними акаунтами з надмірним доступом до корпоративних даних — незалежно від того, хто є реальним авторизованим користувачем. Oracle Deep Data Security примусово застосовує модель авторизації кінцевого користувача безпосередньо в ядрі бази даних: декларативні SQL-політики визначають доступні дані на рівні рядка (row-level), стовпця (column-level) та клітинки (cell-level — нова функція 26ai). OAuth2-токен передає реальний user identity через Microsoft Entra ID або OCI IAM — AI-агент отримує лише те, що авторизований користувач, а не все, що доступно привілейованому сервісному акаунту. Повний audit trail фіксує дії агентів з контекстом user identity. Доступний без додаткової вартості в Oracle Autonomous Database.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Oracle Deep Data Security — технічна відповідь на одне з ключових заперечень щодо AI-агентів в enterprise: «ми не можемо дозволити AI-агенту мати необмежений доступ до наших бізнес-даних». З Oracle Deep Data Security агент оперує в межах тих самих дозволів, що й реальний авторизований користувач — і будь-яка дія фіксується у повному audit trail з identity-контекстом. Для компаній, що переходять з 1С/BAS на Oracle APEX і планують впровадження AI-автоматизації бізнес-процесів: це базовий механізм для побудови довіреної AI-архітектури на корпоративних даних — без зовнішнього витоку та без дублювання логіки контролю доступу в кожному застосунку. Oracle включає Deep Data Security до Autonomous Database без додаткової вартості, підтверджуючи: enterprise-grade безпека для AI-агентів — це базова функція платформи, а не преміальний додаток.</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/database/oracle-deep-data-security-is-now-available-in-oracle-ai-database-26ai" target="_blank" rel="noopener noreferrer">Джерело: Oracle Database Blog (Oracle Deep Data Security Is Now Available in Oracle AI Database 26ai, 1 травня 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle Cloud</div>
             <h3>Oracle долучилась до ініціативи Пентагону: DoD підписав угоди з 8 компаніями на розгортання AI в секретних мережах IL6/IL7 — ORCL +7%</h3>
@@ -840,7 +848,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 02.05.2026</p>
+      <p class="footer-updated">Оновлено: 03.05.2026</p>
     </div>
   </footer>
 

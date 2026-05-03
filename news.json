@@ -1,6 +1,38 @@
 [
   {
     "date": "2026-05-01",
+    "title": "Oracle Deep Data Security доступний у Oracle AI Database 26ai: захист даних для AI-агентів на рівні рядка, стовпця та клітинки",
+    "summary": "Oracle підтвердила загальну доступність (GA) Oracle Deep Data Security у Oracle AI Database 26ai — database-native системи авторизації, що вирішує ключову проблему безпеки в еру AI-агентів. Традиційно AI-агенти діють під привілейованими сервісними акаунтами з надмірним доступом до корпоративних даних — Oracle Deep Data Security усуває цю вразливість, примусово застосовуючи модель авторизації кінцевого користувача безпосередньо в ядрі бази даних, не залежно від того, хто формує запит: людина, API-клієнт чи автономний AI-агент. Три рівні контролю (декларативні SQL-політики): row-level — агент бачить лише авторизовані рядки; column-level — приховування стовпців на основі identity; cell-level (нова функція 26ai) — маскування окремих клітинок до NULL залежно від рівня доступу, стійке до inference attacks. OAuth2-токен передає ідентифікатор реального кінцевого користувача через Microsoft Entra ID, OCI IAM або інший OIDC-сумісний IAM до бази даних — AI-агент діє з правами авторизованого користувача, а не привілейованого сервісного акаунту. Централізоване оновлення policy у базі даних усуває необхідність дублювати логіку контролю доступу у кожному застосунку та агенті. Повний audit trail фіксує дії всіх акторів: користувачів, адміністраторів та AI-агентів. Oracle Deep Data Security доступний без додаткової вартості в Oracle Autonomous Database та з останнього Release Update Oracle AI Database 26ai.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/oracle-deep-data-security-is-now-available-in-oracle-ai-database-26ai"
+  },
+  {
+    "date": "2026-05-03",
+    "title": "Oracle Extreme Edition Training у Бенілюксі — травень 2026: Upgrade та міграція до Oracle AI Database 26ai в Утрехті (11 травня) та Брюсселі (12 травня)",
+    "summary": "Oracle проводить серію навчальних заходів «Extreme Edition: Upgrade, Migration and Patching to Oracle AI Database 26ai and 19c» для DBA та архітекторів баз даних у регіоні Бенілюкс: Утрехт (Нідерланди), 11 травня, та Брюссель (Бельгія), 12 травня 2026. Формат: advanced live-тренінг від Oracle-інструкторів з прямим Q&A-доступом. Програма охоплює AutoUpgrade-шлях від Oracle Database 19c до Oracle AI Database 26ai, управління Release Updates mid-lifecycle, практичний OJVM-патчинг та актуальний стан квітневого патч-циклу 2026 (Linux RU вийшов 28 квітня, OJVM RU — 30 квітня, Windows RU — очікується 12 травня). Бенілюкс-серія продовжує EMEA-хвилю Oracle live-навчань у травні 2026 після London Advanced Edition (29 квітня). Для підприємств у регіоні, що планують перехід бази даних на Oracle AI Database 26ai — з Oracle 19c або з legacy-інфраструктури після заборони 1С/BAS — Oracle Extreme Edition Training забезпечує підготовку від Oracle-інструкторів безпосередньо після виходу нового патч-циклу, що є оптимальним часом для планування production-апгрейду.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Developer Events",
+    "sourceUrl": "https://www.oracle.com/developer/events/"
+  },
+  {
+    "date": "2026-05-03",
+    "title": "Oracle AI World Tour 2026 завершив глобальний цикл: від Амстердама до Токіо — наступна зупинка Oracle AI World Лас-Вегас, 25–28 жовтня",
+    "summary": "Oracle AI World Tour 2026 — серія безкоштовних однотижневих заходів у містах по всьому світу — завершила глобальний цикл 2026 року. Підтверджені зупинки: Амстердам (29 січня), Лондон (24 березня), Нью-Йорк (10 квітня), Сінгапур (14 квітня), Токіо (16 квітня), Сідней, Мумбай та інші міста. Кожен захід включав keynote від Oracle-керівництва, live-демонстрації Oracle AI Database 26ai, OCI Enterprise AI та Oracle APEX у контексті enterprise AI-впровадження. Після кожного заходу Oracle публікує записи ключових сесій через Oracle TV. Наступна ключова Oracle-подія 2026 року: Oracle AI World — 25–28 жовтня 2026 в The Venetian Convention & Expo Center, Лас-Вегас: 20 000+ учасників, очікуване анонсування APEX 26.1 GA та стратегічного напряму OCI на 2027 рік. До Oracle AI World відбудеться KScope26 у Денвері (14–18 червня, Gaylord Rockies Resort) — найбільша конференція Oracle APEX у США з 250+ технічними сесіями та прямим доступом до Oracle APEX Product Management. Матеріали Oracle AI World Tour та KScope26 є найповнішим публічним джерелом технічного контенту з Oracle AI Database 26ai та APEXlang для enterprise-команд, що оцінюють Oracle APEX як платформу виходу з legacy ERP.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle AI World Tour",
+    "sourceUrl": "https://www.oracle.com/ai-world-tour/"
+  },
+  {
+    "date": "2026-05-03",
+    "title": "Oracle Developer Coaching: Karpenter для OCI Kubernetes Engine — live-вебінар 6–12 травня для DevOps-команд на OCI",
+    "summary": "Oracle проводить серію Developer Coaching «Simplify OCI Kubernetes Engine (OKE) Node Management with Karpenter» у форматі live-вебінарів 6–12 травня 2026 з прямим Q&A-доступом до Oracle-інженерів. Karpenter Provider for OCI (KPO) — open-source автоскейлер нод Kubernetes, що досяг GA у квітні 2026, — замінює статичні node pool на just-in-time provisioning: KPO розгортає оптимальний OCI compute shape у реальному часі виходячи з фактичних потреб Pod'ів. Переваги: менше ручних конфігурацій node pool, можливість мікс-асортименту OCI compute shapes в одній KPO-політиці, автоматична консолідація порожніх нод для зниження витрат, спрощення масштабування між різними shapes та архітектурами. Вимога: Kubernetes 1.31+. Для enterprise-команд, що розгортають Oracle APEX та enterprise-застосунки на OCI з Kubernetes-оркестрацією: вебінар надає практичне керівництво від авторів системи — спрощення управління node pool, оптимізація витрат та автоматичне масштабування без ручного втручання.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Developer Events",
+    "sourceUrl": "https://www.oracle.com/developer/events/"
+  },
+  {
+    "date": "2026-05-01",
     "title": "Oracle долучилась до ініціативи Пентагону: DoD підписав угоди з 8 компаніями на розгортання AI в секретних мережах IL6/IL7 — ORCL +7%",
     "summary": "1 травня Міністерство оборони США (DoD) оголосило про угоди з вісьмома технологічними компаніями — Oracle, Amazon Web Services, Google, Microsoft, OpenAI, SpaceX, NVIDIA та Reflection — на розгортання AI-систем у секретних мережах рівнів Impact Level 6 та Impact Level 7. Ці мережі призначені для обробки секретної та особливо секретної інформації. AI застосовуватиметься для синтезу даних, підтримки ситуаційного розуміння та прийняття рішень у складних оперативних середовищах. Kim Lynch, EVP Oracle Government, Defense & Intelligence, підтвердила угоду: «Ця угода відображає спільне прагнення DoD та Oracle забезпечити США вирішальне лідерство у AI як питання безпеки та стратегічного впливу». Примітно, що Anthropic не отримала аналогічного допуску — Пентагон визначив компанію як ризик для ланцюга постачань. Акції Oracle (ORCL) зросли на 6,5–7% до $171,83 за підсумками торгів 1 травня 2026 року. Рішення DoD підтверджує статус Oracle як одного з восьми авторизованих постачальників AI для найбільш чутливих урядових мереж США та зміцнює позиції компанії у government cloud та AI-інфраструктурі. У поєднанні з контрактом Oracle та OpenAI ($300 млрд від 2027) та Stargate-програмою — Oracle формує основу стратегічної AI-інфраструктури США.",
     "tag": "Oracle Cloud",
