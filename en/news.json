@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-05",
+    "title": "Oracle Launches Monthly Critical Security Patch Updates (CSPU) from May 28, 2026: Critical Vulnerabilities Without Waiting for the Quarter",
+    "summary": "Oracle announced the launch of monthly Critical Security Patch Updates (CSPUs) starting May 28, 2026 — a new layer on top of the existing quarterly CPU cycle. Each CSPU is a compact, targeted patch addressing only critical vulnerabilities, enabling customers to close high-priority security gaps without waiting for the next quarterly release window. Quarterly CPUs continue and will include all prior CSPU fixes. CSPUs will be released monthly on the third Tuesday — the first is scheduled for May 28, 2026. This change is part of Oracle's broader program to accelerate vulnerability detection and response, which includes improvements to internal security scanning and disclosure processes. For teams running Oracle AI Database 26ai, Oracle APEX, or any Oracle product in production: monthly CSPUs mean the ability to apply critical security fixes without waiting for quarterly maintenance windows — reducing the exposure window from a quarter to a month. For enterprises migrating from legacy ERP to the Oracle stack: Oracle's enterprise security posture now includes monthly critical CVE response — in contrast to legacy ERP vendors with irregular or absent patch management.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Security Blog",
+    "sourceUrl": "https://blogs.oracle.com/security/update-monthly-critical-security-patch-updates-cspus-begin-may-28-2026"
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Oracle APEX 23.2 Support Ends May 31, 2026: 26 Days to Upgrade to APEX 24.2",
+    "summary": "Oracle APEX 23.2 reaches end of active support on May 31, 2026 — the extended support window (from 18 to 24 months) for this version is closing. Currently supported versions: Oracle APEX 24.2 (support through July 31, 2027) and Oracle APEX 24.1 (through December 31, 2026). Continuing to run APEX 23.2 after May 31 means no official Security Patches or Bug Fixes from Oracle. Upgrading from APEX 23.2 to 24.2 follows the standard Oracle APEX Patch Set process: download the new APEX distribution, run apexins.sql. In Oracle Cloud (Autonomous Database), upgrades are managed automatically by Oracle. For Oracle APEX teams: the deadline to upgrade to APEX 24.2 is a hard security compliance cutoff — not an optional recommendation. APEX 24.2 includes the AI plug-in and enhanced AI-assisted application generation capabilities, providing a practical foundation for the upcoming APEX 26.1 with APEXlang.",
+    "tag": "Oracle APEX",
+    "sourceName": "endoflife.date / Oracle Support",
+    "sourceUrl": "https://endoflife.date/oracle-apex"
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Oracle APEX 26.1: APEXlang and AI App Generation — What's Coming to the Next Platform Generation Before APEX Connect 2026",
+    "summary": "The Oracle APEX community is actively examining the key capabilities of Oracle APEX 26.1, set to be detailed at APEX Connect 2026 (May 18–20, Heide Park). Key new capabilities: APEXlang — a new declarative specification language for APEX applications. An entire Oracle APEX application can be described in a human-readable text file (region, title, type, SQL, and parameters): Git version-controllable, generatable and editable by LLM agents. AI application generation: APEX 26.1 integrates AI-assisted workflows for building applications from APEXlang specifications — an LLM receives a business problem structure and generates a complete, functional APEX application. New capabilities across Interactive Reports, Map Regions, Dynamic Actions, REST integrations, and PL/SQL APIs. APEX Connect 2026 Keynote: Carsten Czarski (Oracle) — 'Low-Code with APEX 2026: AI, APEXlang, and New Platform Features.' For enterprise teams: APEXlang transforms Oracle APEX from a conventional low-code builder into a platform where AI can autonomously construct enterprise applications from business specifications — without manually designing every component.",
+    "tag": "Oracle APEX",
+    "sourceName": "Into The Oracle Verse",
+    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
+  },
+  {
+    "date": "2026-05-05",
+    "title": "Ukraine 1C/BAS Replacement Market 2026: SMB Solutions Dominate Coverage — Enterprise Segment Remains Largely Unaddressed",
+    "summary": "New analytical overviews of the Ukrainian 1C/BAS replacement market (cityhost.ua, ontargit.com) reveal a structural imbalance: media coverage is dominated by SMB-oriented solutions — MASTER, Dilovod, Odoo ERP, and their derivatives. These products cover accounting, trade, and basic document management for small businesses. The enterprise segment — companies with 200+ users, complex production accounting, industry-specific requirements, custom integrations, and AI automation needs — is virtually absent from public market reviews. The reason is straightforward: enterprise solutions are not positioned through 'what to replace 1C with' overview articles — they require a separate enterprise sales motion and technical assessment. As a result, a significant portion of mid-market and enterprise companies selects an SMB replacement not because of technical fit, but because an enterprise-grade alternative is not visible in the media landscape — and quickly hits scaling and customization limits. For organizations that have hit the limits of SMB solutions after migrating from 1C: a technical architecture assessment and Oracle APEX evaluation is a practical first step toward enterprise-level capability.",
+    "tag": "Market",
+    "sourceName": "cityhost.ua / ontargit.com",
+    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
+  },
+  {
     "date": "2026-05-04",
     "title": "OCI Generative AI Service Now Available in US Government Classified Cloud Regions: GenAI for Defense and Intelligence at IL5/IL6",
     "summary": "Oracle announced general availability of OCI Generative AI Service in Oracle's US Government Cloud and US Defense Cloud classified regions. Following the Department of Defense agreement signed May 1, 2026 — authorizing Oracle to deploy AI on classified networks at Impact Levels 6 and 7 — Oracle confirmed that OCI Generative AI is now operational in classified Oracle Cloud regions: large language models and AI agents from OCI Enterprise AI run directly within the encrypted government perimeter without data leaving the classified network boundary. The service is compatible with OCI Enterprise AI Agents, Oracle AI Database 26ai, and APEXlang for building complete agentic AI application cycles on classified data. Deployment of GenAI services in classified cloud regions confirms Oracle's actual security compliance posture: the US government selects OCI as its trusted AI infrastructure where requirements are most stringent. For enterprise organizations choosing a platform for regulated or sovereign workloads, OCI's classified cloud capability represents a compliance benchmark that no legacy ERP vendor can match — a structural contrast to systems with documented potential backdoors for foreign intelligence services.",
