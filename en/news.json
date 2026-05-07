@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-07",
+    "title": "Oracle AI Database 26ai RU 23.26.2 Released, OKE Gains Kubernetes 1.35.2: April 2026 Platform Updates",
+    "summary": "Oracle released the April 2026 Release Update for Oracle AI Database 26ai (version 23.26.2.0.0) and Oracle Database 19c (19.31.0.0.260421) — following a brief delay announced April 23. RU 23.26.2 is the regular quarterly update for Oracle AI Database 26ai on-premises, delivering cumulative security fixes, bug corrections, and incremental feature additions. For Oracle Autonomous Container Database customers: both 26ai and 19c are now available as software version options at provisioning time. Oracle Cross-Region DataGuard gained support for Exadata Database Service on Dedicated Infrastructure with Azure Key Vault, AWS KMS, and Cloud KMS — simplifying hybrid cloud configurations. At the cloud infrastructure level: Oracle Kubernetes Engine (OKE) added support for Kubernetes 1.35.2; support for Kubernetes 1.32.10 ends May 28, 2026. Java Management Service now offers JDK 26 (released March 2026 at JavaOne). For teams maintaining Oracle AI Database 26ai on-premises: applying RU 23.26.2 is a required step to maintain security compliance ahead of the first monthly CSPU release on May 28, 2026.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Mike Dietrich / Oracle Blog",
+    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Oracle APEX 26.1 and APEXlang: File-Based App Format, AI Copilot, Native DevOps — A Preview of What's Coming to Low-Code",
+    "summary": "The Oracle APEX community has been actively reviewing preview materials for APEX 26.1 and the new APEXlang specification. APEXlang is an open application format for Oracle APEX — combining YAML/JSON to represent an APEX application as human-readable text files that can be edited directly and reimported into APEX. Key implications: full CI/CD integration for low-code — APEX applications become natively version-controllable in git for the first time; AI Copilot and LLM-assisted development — APEXlang as a format that AI assistants can read, generate, and refactor; collaborative review and automated testing in the development pipeline. APEX 26.1 is expected in 2026 and represents the first step toward 'generative low-code' where AI actively participates in building and maintaining applications. Carsten Czarski presents APEX 26.1 as the keynote at APEX Connect 2026 (May 18). For organizations choosing Oracle APEX as a migration platform from legacy ERP: APEXlang directly addresses one of the traditional objections to low-code — difficulty integrating with corporate DevOps workflows. With APEX 26.1, Oracle APEX becomes a fully DevOps-native platform.",
+    "tag": "Oracle APEX",
+    "sourceName": "Into The Oracle Verse Blog",
+    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
+  },
+  {
+    "date": "2026-05-07",
+    "title": "Connor McDonald at APEX Connect 2026: '80+ Oracle AI Database 26ai Features, Zero Slides' — Largest Demo Session on May 19",
+    "summary": "Among the featured sessions at APEX Connect 2026 (Heide Park Soltau, May 18–20) is Connor McDonald's presentation — Distinguished Product Manager for Oracle AI Database: 'The Innovation Continues: More 26ai features, More 100% demo, Zero Slides.' The format: no slides, 80+ new Oracle AI Database 26ai features in a fully interactive live-demo session scheduled for May 19 (10:00–10:45). Topics include SELECT AI enhancements, the Oracle AI Agent Framework, vector search, converged data processing, and new SQL generation patterns introduced in 26ai. McDonald previously delivered a similar demo session in Adelaide (AUSOUG, April 2026) to strong reception. APEX Connect is the largest Oracle APEX conference in the DACH region; all session recordings are published publicly via DOAG after the event. For Oracle APEX and AI Database teams: McDonald's session is the most time-efficient way to evaluate the full scope of the 26ai platform update without individually reviewing the complete release documentation.",
+    "tag": "Oracle APEX",
+    "sourceName": "DOAG APEX Connect 2026",
+    "sourceUrl": "https://my.doag.org/events/apex-connect/2026/agenda/"
+  },
+  {
+    "date": "2026-05-06",
+    "title": "IBM and Oracle Expand Partnership: watsonx AI Agents for Oracle Fusion Cloud ERP, RHEL on OCI — Enterprise Agentic AI Advances",
+    "summary": "Marking the 40th year of their strategic partnership, IBM and Oracle announced a broad expansion focused on agentic AI and hybrid cloud. IBM watsonx Orchestrate launches dedicated AI agents for Learning & Development and Talent Acquisition that integrate directly into Oracle Fusion Cloud ERP — without leaving the OCI ecosystem. IBM Consulting extends a managed service for IBM Maximo (EAM) on OCI, enabling industrial enterprises to run asset management in the same Oracle cloud environment as Fusion ERP. IBM watsonx.ai, including Granite models, is now certified to run on OCI. Red Hat Enterprise Linux (RHEL) is becoming available for purchase directly via Oracle Cloud universal credits on OCI. IBM Envizi ESG Suite is available on OCI for corporate sustainability reporting. IBM and Oracle showcased joint solutions at Oracle AI World 2026 in Las Vegas. For organizations migrating from legacy ERP: the integration of Oracle Fusion with IBM watsonx AI agents confirms that next-generation ERP platforms are multi-vendor AI-native ecosystems — not a replacement of one monolithic box with another.",
+    "tag": "Oracle Cloud",
+    "sourceName": "IBM Newsroom",
+    "sourceUrl": "https://newsroom.ibm.com/blog-ibm-and-oracle-expand-partnership-to-help-organizations-modernize-with-ai-and-cloud"
+  },
+  {
     "date": "2026-05-06",
     "title": "Karen Cannell at APEX Connect 2026: 'Seriously SELECT AI' Keynote — Natural Language Queries on Oracle Data, AI Agents Inside the Database",
     "summary": "Among the two featured keynotes at APEX Connect 2026 (May 18–20, Heide Park Soltau, Germany) is Karen Cannell's session titled 'Seriously SELECT AI.' SELECT AI in Oracle AI Database 26ai enables business users to query corporate data in natural language: instead of writing SQL, users ask plain-language questions and the system generates, executes, and returns results from real Oracle data — with governance guardrails and a full audit trail. SELECT AI automatically identifies the relevant tables and sends only their metadata to the LLM — no business data leaves the database perimeter. The SELECT AI Agent Framework is a new autonomous agent framework built directly inside Oracle AI Database: teams of AI agents reason, act, and collaborate within the database without external AI infrastructure. Oracle APEX integration: a full conversational chatbot on SELECT AI is built inside an APEX application using standard components and PL/SQL APIs. Oracle published a reference architecture: 'Build an agentic, high-fidelity, conversational AI framework with Select AI and Oracle APEX.' For organizations migrating from legacy ERP: SELECT AI transforms Oracle data into answers to business questions — financial, HR, and operational queries answered in natural language, without SQL training and without a separate BI platform.",
