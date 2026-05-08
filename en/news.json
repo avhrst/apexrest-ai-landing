@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-08",
+    "title": "OCI Compute with NVIDIA RTX PRO 6000 Blackwell Now GA: 8 GPUs × 96 GB GDDR7 Per Instance, $4.50/GPU-Hour — Multimodal AI on Oracle Cloud",
+    "summary": "Oracle Cloud Infrastructure announced the general availability of OCI Compute with NVIDIA RTX PRO — a new class of bare metal instances designed for multimodal AI and visual computing workloads. Configuration: 8× NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, each with 96 GB of high-speed GDDR7 memory; Intel® Xeon® 6 processors; 3 TB of system memory (up to 2× more than competing hyperscalers); 61.44 TB of local NVMe storage (up to 4× more). Pricing: $4.50 per GPU-hour — competitive across mixed workloads. OCI RTX PRO is purpose-built for next-generation multimodal AI: applications combining text, image, video, and simulation. The instance has received NVIDIA Exemplar Cloud Validation on the Blackwell architecture, confirming production readiness. For organizations evaluating Oracle APEX as a low-code platform: OCI RTX PRO confirms that AI compute and APEX low-code development co-exist within a single AI-native infrastructure — eliminating the need to route AI workloads through external GPU cloud providers.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Cloud Infrastructure Blog",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-general-availability-of-oci-compute-rtx-pro"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "Oracle (ORCL) -7% on OpenAI Target Miss Reports: Market Reassesses $300B AI Contract Risk — What It Means for Enterprise Clients",
+    "summary": "Oracle shares (NYSE: ORCL) fell approximately 7% in after-hours trading on May 7, 2026, after reports emerged that OpenAI missed revenue and active-user targets and is struggling to secure $18 billion in financing — raising investor doubts about AI infrastructure demand sustainability. CoreWeave fell over 15%. For Oracle: the $300 billion five-year contract to supply AI computing to OpenAI via OCI is the focal point of investor concern. CoinCentral and Yahoo Finance note that the decline reflects a sentiment shift, not a change in contractual obligations. Oracle Q3 FY2026 fundamentals remain intact: Remaining Performance Obligations $553 billion (+325% YoY), Cloud Infrastructure +84%. For organizations in Ukraine and CEE evaluating Oracle APEX and OCI: stock price volatility is not an indicator of platform stability. The $553 billion RPO confirms Oracle is under contract for years ahead regardless of AI stock market sentiment shifts.",
+    "tag": "Market",
+    "sourceName": "CoinCentral / Yahoo Finance",
+    "sourceUrl": "https://coincentral.com/oracle-orcl-stock-falls-7-as-openai-misses-revenue-and-user-targets/"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "Oracle AI Database 26ai: Platinum Failover Under 30 Seconds, Diamond Under 3 Seconds, Plus Post-Quantum NIST ML-KEM Encryption",
+    "summary": "Oracle confirmed new availability tiers for Oracle AI Database 26ai on Exadata and Autonomous Database. Platinum-tier: disaster failover typically under 30 seconds for high-throughput multi-node clusters — up to 4× faster than Oracle Database 19c — without application changes or performance tradeoffs. Diamond-tier (Oracle Distributed AI Database + Oracle GoldenGate): failover typically under 3 seconds, designed for real-time payments, telecommunications, and global trading platforms. Post-Quantum Security: Oracle AI Database 26ai now supports NIST-standard quantum-resistant algorithms (ML-KEM) and hybrid key exchange (ECDHE + ML-KEM) — enabling organizations to begin protecting against future quantum threats today. Independent analysts Futurum, IDC, and Constellation Research confirm Oracle AI Database 26ai is redefining mission-critical availability for AI workloads. For organizations migrating from legacy ERP: Oracle's availability SLAs are fundamentally incompatible with legacy ERP architecture and with any SMB-oriented replacement product.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/raising-the-standard-for-mission-critical-availability-and-security-in-the-age-of-ai"
+  },
+  {
+    "date": "2026-05-08",
+    "title": "Oracle EBS Tech Reminder: Upgrade to Oracle AI DB 26ai or DB 19c — AI Accelerates Vulnerability Discovery, First CSPU on May 28",
+    "summary": "The Oracle E-Business Suite Technology Blog published a reminder for EBS 12.2 customers: all production systems should run on a supported database version — Oracle Database 19c or Oracle AI Database 26ai. The urgency: AI has significantly accelerated the pace at which software vulnerabilities are discovered, prompting Oracle to introduce monthly Critical Security Patch Updates (CSPUs) starting May 28, 2026, in addition to the quarterly CPU cycle. EBS 12.2 is now certified with Oracle AI Database 26ai on-premises for Linux x86-64. Customers running unsupported database versions will not receive CSPU patches or quarterly security updates. For organizations evaluating Oracle APEX and Oracle AI Database 26ai as a migration platform from 1C/BAS: monthly CSPU delivery is direct evidence of Oracle's active security posture in the AI era — a structural advantage over any system that lost vendor-managed security patching after sanctions were imposed.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle EBS Technology Blog",
+    "sourceUrl": "https://blogs.oracle.com/ebstech/reminder-upgrade-to-oracle-ai-db-26ai-or-db-19c"
+  },
+  {
     "date": "2026-05-07",
     "title": "Oracle AI Database 26ai RU 23.26.2 Released, OKE Gains Kubernetes 1.35.2: April 2026 Platform Updates",
     "summary": "Oracle released the April 2026 Release Update for Oracle AI Database 26ai (version 23.26.2.0.0) and Oracle Database 19c (19.31.0.0.260421) — following a brief delay announced April 23. RU 23.26.2 is the regular quarterly update for Oracle AI Database 26ai on-premises, delivering cumulative security fixes, bug corrections, and incremental feature additions. For Oracle Autonomous Container Database customers: both 26ai and 19c are now available as software version options at provisioning time. Oracle Cross-Region DataGuard gained support for Exadata Database Service on Dedicated Infrastructure with Azure Key Vault, AWS KMS, and Cloud KMS — simplifying hybrid cloud configurations. At the cloud infrastructure level: Oracle Kubernetes Engine (OKE) added support for Kubernetes 1.35.2; support for Kubernetes 1.32.10 ends May 28, 2026. Java Management Service now offers JDK 26 (released March 2026 at JavaOne). For teams maintaining Oracle AI Database 26ai on-premises: applying RU 23.26.2 is a required step to maintain security compliance ahead of the first monthly CSPU release on May 28, 2026.",
