@@ -1,848 +1,104 @@
 [
   {
-    "date": "2026-05-08",
-    "title": "OCI Compute з NVIDIA RTX PRO 6000 Blackwell у GA: 8 GPU × 96 GB GDDR7 на екземпляр, $4.50/GPU-год — мультимодальний AI на Oracle Cloud",
-    "summary": "Oracle Cloud Infrastructure оголосив загальну доступність OCI Compute з NVIDIA RTX PRO — нового класу bare metal обчислювальних екземплярів для мультимодального AI та візуальних обчислень. Конфігурація: 8× NVIDIA RTX PRO 6000 Blackwell Server Edition GPU, кожен з 96 GB GDDR7-пам'яті; процесор Intel® Xeon® 6; 3 TB оперативної пам'яті (вдвічі більше ніж у конкурентів); 61.44 TB локального NVMe (вчетверо більше). Ціна: $4.50/GPU-год — конкурентна відносно інших hyperscaler. OCI RTX PRO спроектований для наступного покоління мультимодального AI: застосунки, що поєднують текст, зображення, відео та симуляцію. Екземпляр підтверджений NVIDIA Exemplar Cloud Validation на архітектурі Blackwell. Для підприємств, що оцінюють Oracle APEX як low-code платформу: OCI RTX PRO підтверджує, що AI-обчислення та розробка на Oracle APEX знаходяться в одній AI-нативній інфраструктурі — без потреби звертатись до зовнішніх GPU-хмар.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Cloud Infrastructure Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-general-availability-of-oci-compute-rtx-pro"
-  },
-  {
-    "date": "2026-05-08",
-    "title": "Oracle (ORCL) -7% після даних про OpenAI: ринок переоцінює ризики $300-млрд AI-контракту — що це означає для enterprise-клієнтів",
-    "summary": "7 травня 2026 акції Oracle (NYSE: ORCL) впали близько 7% в позабіржовій торгівлі після звітів, що OpenAI не виконав цільові показники виручки та активних користувачів і зазнає труднощів із залученням $18 млрд фінансування. CoreWeave втратив понад 15%. Для Oracle: $300-мільярдний 5-річний контракт на постачання AI-обчислень для OpenAI через OCI є головним каталізатором занепокоєння інвесторів. CoinCentral та Yahoo Finance зазначають: падіння відображає зміну ринкових настроїв, а не зміну контрактних зобов'язань. Фундаментальні показники Oracle незмінні: RPO $553 млрд (+325% рік до року), Cloud Infrastructure +84% у Q3 FY2026. Для компаній в Україні та ЦСЄ, що оцінюють Oracle APEX та OCI: волатильність котирувань — не індикатор стабільності платформи. RPO $553 млрд підтверджує, що Oracle законтрактований на роки вперед незалежно від кон'юнктури ринку AI-акцій.",
-    "tag": "Ринок",
-    "sourceName": "CoinCentral / Yahoo Finance",
-    "sourceUrl": "https://coincentral.com/oracle-orcl-stock-falls-7-as-openai-misses-revenue-and-user-targets/"
-  },
-  {
-    "date": "2026-05-08",
-    "title": "Oracle AI Database 26ai: Platinum failover за 30 с, Diamond за 3 с + Post-Quantum шифрування NIST ML-KEM — нові стандарти mission-critical доступності",
-    "summary": "Oracle підтвердив нові рівні доступності для Oracle AI Database 26ai на Exadata та Autonomous Database. Platinum-tier: катастрофічний failover типово під 30 секунд для high-throughput multi-node кластерів — у 4× швидше ніж Oracle Database 19c, без змін у застосунках. Diamond-tier (Oracle Distributed AI Database + Oracle GoldenGate): failover типово під 3 секунди — для real-time платежів, телекомунікацій та глобальних торгових систем. Post-Quantum Security: Oracle AI Database 26ai підтримує NIST-стандартні quantum-resistant алгоритми (ML-KEM) та hybrid key exchange (ECDHE + ML-KEM) — для захисту від майбутніх квантових загроз вже зараз. Незалежні аналітики Futurum, IDC та Constellation Research підтверджують: Oracle AI Database 26ai переосмислює mission-critical стандарти для AI-навантажень. Для підприємств, що розглядають міграцію з 1С/BAS: Oracle пропонує enterprise SLA, принципово несумісні з legacy ERP-архітектурою та будь-якими SMB-замінниками 1С.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/raising-the-standard-for-mission-critical-availability-and-security-in-the-age-of-ai"
-  },
-  {
-    "date": "2026-05-08",
-    "title": "Oracle EBS Tech: нагадування про оновлення до Oracle AI DB 26ai або DB 19c — AI прискорює виявлення вразливостей, CSPU стартує 28 травня",
-    "summary": "Oracle E-Business Suite Technology Blog опублікував нагадування для клієнтів EBS 12.2: усі системи мають працювати на базі підтримуваних версій — Oracle Database 19c або Oracle AI Database 26ai. Причина: AI суттєво прискорив швидкість виявлення програмних вразливостей — Oracle запроваджує щомісячні CSPU (Critical Security Patch Update) з 28 травня 2026 на додаток до квартальних CPU. EBS 12.2 вже сертифіковано з Oracle AI Database 26ai on-premises для Linux x86-64. Клієнти на застарілих версіях Oracle Database втрачають доступ до CSPU та квартальних патчів безпеки. Для підприємств, що розглядають Oracle APEX + Oracle AI Database 26ai як платформу для заміни 1С/BAS: щомісячні CSPU — пряме підтвердження активної позиції Oracle у кібербезпеці в AI-епоху, на відміну від будь-яких рішень, що втратили вендорну підтримку після введення санкцій.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle EBS Technology Blog",
-    "sourceUrl": "https://blogs.oracle.com/ebstech/reminder-upgrade-to-oracle-ai-db-26ai-or-db-19c"
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Oracle AI Database 26ai RU 23.26.2 вийшов, OKE отримав Kubernetes 1.35.2: квітневі оновлення платформи Oracle",
-    "summary": "Oracle випустила April 2026 Release Update для Oracle AI Database 26ai (версія 23.26.2.0.0) та Oracle Database 19c (19.31.0.0.260421) — після первісної затримки, оголошеної 23 квітня. RU 23.26.2 є регулярним квартальним оновленням Oracle AI Database 26ai on-premises: включає накопичені виправлення безпеки, bug-fix та інкрементальні доповнення. Для клієнтів Oracle Autonomous Container Database: обидві версії — 26ai та 19c — тепер доступні як програмні версії при provisioning нових контейнерів. Oracle Cross-Region DataGuard отримав підтримку для Exadata Database Service на Dedicated Infrastructure з Azure Key Vault, AWS KMS та Cloud KMS — що спрощує hybrid cloud конфігурації. На рівні хмарної інфраструктури: Oracle Kubernetes Engine (OKE) додав підтримку Kubernetes 1.35.2; підтримка Kubernetes 1.32.10 завершується 28 травня 2026. Java Management Service тепер пропонує JDK 26 (випущений у березні 2026 на JavaOne). Для команд, що підтримують Oracle AI Database 26ai on-premises: застосування RU 23.26.2 є обов'язковим кроком для збереження security compliance до виходу першого щомісячного CSPU 28 травня 2026.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Mike Dietrich / Oracle Blog",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Oracle APEX 26.1 та APEXlang: файловий формат застосунків, AI Copilot та повноцінний DevOps для low-code — preview-огляд",
-    "summary": "Спільнота Oracle APEX активно аналізує preview-матеріали щодо APEX 26.1 та нової специфікації APEXlang. APEXlang — відкрита специфікація застосунків Oracle APEX у файловому форматі (поєднання YAML/JSON): дозволяє зберігати APEX-застосунок у вигляді читабельних текстових файлів, редагувати їх безпосередньо і повертати до APEX. Ключові наслідки: повноцінна CI/CD-інтеграція для low-code — APEX-застосунки вперше стають нативними у версійному контролі (git); AI Copilot та LLM-асистований development — APEXlang як формат, зрозумілий AI-асистентам та здатний до автоматичної генерації і рефакторингу; collaborative review та automated testing у DevOps-pipeline. APEX 26.1 очікується у 2026 році та є першим кроком до «generative low-code» — де AI бере активну участь у побудові застосунків. Carsten Czarski представляє APEX 26.1 як keynote на APEX Connect 2026 (18 травня). Для підприємств, що обирають Oracle APEX для міграції з 1С/BAS: APEXlang усуває традиційне заперечення щодо low-code — складність інтеграції з корпоративним DevOps. З APEX 26.1 Oracle APEX стає повноцінно DevOps-нативною платформою.",
-    "tag": "Oracle APEX",
-    "sourceName": "Into The Oracle Verse Blog",
-    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Connor McDonald на APEX Connect 2026: «Zero Slides, 80+ функцій Oracle AI Database 26ai» — найбільша демо-сесія 19 травня",
-    "summary": "Серед ключових сесій APEX Connect 2026 (Heide Park Soltau, 18–20 травня) — виступ Connor McDonald (Distinguished Product Manager, Oracle AI Database): «The Innovation Continues: More 26ai features, More 100% demo, Zero Slides». Формат: жодного слайду, 80+ нових функцій Oracle AI Database 26ai у повністю інтерактивній live-демо-сесії 19 травня (10:00–10:45). Серед тем: SELECT AI, Oracle AI Agent Framework, векторний пошук, конвергована обробка даних, нові форми генерації SQL у 26ai. Аналогічна демо-сесія McDonald вже пройшла в Аделаїді (AUSOUG, квітень 2026) з великим успіхом. APEX Connect — найбільша Oracle APEX-конференція DACH-регіону; відеозаписи сесій публікуються у відкритому доступі через DOAG після завершення. Для Oracle APEX та AI Database-команд: демо-сесія McDonald є найефективнішим форматом для оцінки повного масштабу platform update 26ai без самостійного дослідження документації.",
-    "tag": "Oracle APEX",
+    "date": "2026-05-09",
+    "title": "APEX Connect 2026 — 9 днів до старту: APEXlang, SELECT AI та офіційний roadmap Oracle APEX на Heide Park Soltau",
+    "summary": "18–20 травня 2026 в Heide Park Soltau (Нижня Саксонія, Німеччина) відбудеться APEX Connect 2026 від DOAG — найбільша щорічна конференція спільноти Oracle APEX. Ключовий keynote: Carsten Czarski 'Low-code з APEX 2026 — KI, APEXlang, нові компоненти і стан платформи' — перший розгорнутий публічний preview APEXlang та Oracle APEX 26.1. Karen Cannell представить 'Seriously SELECT AI' — практичне застосування SELECT AI в Oracle AI Database 26ai. Simon Hunt (Oracle Product Management) надасть офіційний APEX Product Management Update з roadmap. Конференція поєднана з DOAG Datenbank + Cloud Infrastructure та CloudLand 2026 на одному майданчику (18–22 травня). Для команд, що приймають рішення про платформу у 2026 році: APEX Connect дає відповідь, де Oracle APEX буде у 2027.",
+    "tag": "Подія",
     "sourceName": "DOAG APEX Connect 2026",
-    "sourceUrl": "https://my.doag.org/events/apex-connect/2026/agenda/"
-  },
-  {
-    "date": "2026-05-06",
-    "title": "IBM та Oracle розширюють партнерство: watsonx AI-агенти для Oracle Fusion Cloud ERP, RHEL на OCI — нова хвиля agentic AI для enterprise",
-    "summary": "На тлі 40-річчя стратегічного партнерства IBM та Oracle оголосили нове розширення з фокусом на agentic AI та гібридну хмару. IBM watsonx Orchestrate запускає AI-агентів Learning & Development та Talent Acquisition, що безпосередньо інтегруються у Oracle Fusion Cloud ERP — без виходу з OCI-екосистеми. IBM Consulting розширює managed service для IBM Maximo (EAM) на OCI, дозволяючи клієнтам промислових підприємств об'єднати EAM та ERP в єдиному хмарному середовищі Oracle. IBM watsonx.ai (Granite-моделі) сертифіковано на OCI. RHEL (Red Hat Enterprise Linux) стає доступним до придбання через Oracle Cloud credits на OCI — що усуває бар'єр для IBM-клієнтів, звичних до RHEL-інфраструктури. IBM Envizi ESG Suite доступна на OCI для корпоративних ESG-звітів. IBM та Oracle продемонстрували спільні рішення на Oracle AI World 2026 у Лас-Вегасі. Для підприємств, що мігрують з 1С/BAS на Oracle APEX: розширення Oracle Fusion через IBM watsonx AI-агентів підтверджує, що ERP-платформи нового покоління — це AI-нативна екосистема кількох enterprise-вендорів, а не монолітна заміна однієї коробки іншою.",
-    "tag": "Oracle Cloud",
-    "sourceName": "IBM Newsroom",
-    "sourceUrl": "https://newsroom.ibm.com/blog-ibm-and-oracle-expand-partnership-to-help-organizations-modernize-with-ai-and-cloud"
-  },
-  {
-    "date": "2026-05-06",
-    "title": "Karen Cannell на APEX Connect 2026: keynote «Seriously SELECT AI» — natural language до Oracle-даних без SQL, AI-агенти в APEX без окремої AI-інфраструктури",
-    "summary": "Серед двох keynote-виступів APEX Connect 2026 (18–20 травня, Heide Park Soltau) — доповідь Karen Cannell з темою «Seriously SELECT AI». SELECT AI в Oracle AI Database 26ai дозволяє бізнес-користувачам запитувати корпоративні дані природною мовою: замість написання SQL-запитів — питання зрозумілою мовою, система генерує, виконує та повертає результат на основі реальних Oracle-даних з governance guardrails і аудит-трейлом. SELECT AI автоматично визначає релевантні таблиці та передає тільки їхні метадані до LLM — без витягування бізнес-даних назовні. SELECT AI Agent Framework — новий autonomous agent framework всередині Oracle AI Database: команди AI-агентів reasoning, act та collaborate прямо в БД, без зовнішньої AI-інфраструктури. Інтеграція з Oracle APEX: повноцінний conversational chatbot на SELECT AI будується в APEX-застосунку через стандартні компоненти та PL/SQL API. Oracle опублікував reference architecture «Build an agentic, high-fidelity, conversational AI framework with Select AI and Oracle APEX». Для підприємств, що переходять з 1С/BAS: SELECT AI перетворює Oracle-дані на відповідь на бізнес-питання — фінансові, кадрові, операційні запити через природну мову без навчання SQL і без окремої BI-платформи.",
-    "tag": "Oracle APEX",
-    "sourceName": "DOAG / APEX Connect",
     "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
   },
   {
-    "date": "2026-05-05",
-    "title": "Oracle (ORCL) +5,2% за 5 травня: SaaS-сектор ралі на тлі Atlassian, Salesforce і ServiceNow — AI cloud momentum підтверджено",
-    "summary": "5 травня 2026 акції Oracle (NYSE: ORCL) зросли на 5,2% до $172,35 на фоні галузевого ралі SaaS-сектора. Каталізатором стали сильні квартальні результати та підвищені прогнози від Atlassian, Salesforce, ServiceNow та Twilio — весь enterprise SaaS-сектор рухався вгору. The Motley Fool (5 травня 2026) зазначає: попри ріст, акції Oracle залишаються нижчими за 52-тижневий максимум $328,33 (вересень 2025) та у мінусі на 6%+ від початку 2026 через побоювання інвесторів щодо рекордного CapEx $50 млрд у FY2026. Oracle Q3 FY2026: хмарний дохід +44% до $8,9 млрд, Cloud Infrastructure +84% до $4,88 млрд, Remaining Performance Obligations $553 млрд (+325%) — попит на AI training у OCI перевищує поточну пропозицію. Для компаній в Україні та ЦСЄ, що оцінюють Oracle APEX як платформу виходу з 1С/BAS: фінансова динаміка Oracle підтверджує активні інвестиції в AI-інфраструктуру — OCI та Oracle AI Database 26ai отримують обсяги капіталу, несумісні з вендором, що скорочується.",
-    "tag": "Ринок",
-    "sourceName": "The Motley Fool",
-    "sourceUrl": "https://www.fool.com/investing/2026/05/05/oracle-stock-is-still-down-year-to-date-as-many-ai/"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "ЄС 20-й пакет санкцій проти Росії (23 квітня): заборона кіберпослуг, нові банківські обмеження з 14 травня 2026 — подвійний тиск на 1С/BAS",
-    "summary": "23 квітня 2026 ЄС прийняв 20-й пакет санкцій проти Росії — найширший за останні роки. Нові заходи: заборона надання кіберпослуг російським компаніям; транзакційна заборона для додаткових 20 російських банків набуває чинності 14 травня 2026; нові заходи проти обходу санкцій через треті країни; санкції продовжені до 15 вересня 2026. Регуляторний ефект для українських підприємств, що зберегли 1С або BAS: будь-які розрахунки з вендорами заборонених систем через нові підсанкційні банки стають юридично неможливими з 14 травня. Оновлення ліцензій та отримання підтримки 1С/BAS — поза межами легальних транзакцій. Подвійний регуляторний тиск: внутрішній — Закон 13505 (обов'язкова міграція до 2030, вже активний для держсектору та критичної інфраструктури, заборона нових ліцензій для всіх); зовнішній — санкційна система ЄС з 14 травня блокує фінансові канали з підсанкційними вендорами. Oracle APEX та Oracle AI Database 26ai — рішення без будь-яких санкційних ризиків: Oracle Corporation є американською компанією у повному compliance з регуляціями ЄС та Закону 13505.",
-    "tag": "Регуляторика",
-    "sourceName": "EU Council",
-    "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/2026/04/23/russia-s-war-of-aggression-against-ukraine-20th-round-of-stern-eu-sanctions-hits-energy-revenues-military-industrial-complex-trade-and-financial-services-including-crypto/"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Salesforce vs Oracle: аналітики 24/7 Wall St. визначили переможця у хмарному AI-протистоянні — Oracle лідирує завдяки повному AI-стеку",
-    "summary": "4 травня 2026 аналітики 24/7 Wall St. опублікували порівняльний аналіз Salesforce та Oracle у змаганні за хмарний AI-ринок. Висновок: Oracle — унікальний конкурент із повним стеком AI-інфраструктура + база даних + low-code. Oracle Q3 FY2026: Cloud Infrastructure +84% до $4,88 млрд, RPO $553 млрд — попит на AI training перевищує поточну пропозицію OCI. Salesforce Agentforce: ARR $800 млн (+169%), 29 000 угод — позиціонується як «дефенсивний AI-компаундер», що надбудовує AI поверх CRM, з free cash flow $5,3 млрд без значного боргового навантаження. Фундаментальна відмінність: Oracle будує гіперскейлерну AI-інфраструктуру (Stargate, OCI Supercluster, Oracle AI Database 26ai), Salesforce — AI-агентів поверх SaaS. Oracle, на відміну від Salesforce та Microsoft, не накладає додаткової тарифікації за AI та agentic-можливості — вони входять до базового пакету Oracle Autonomous Database. Для підприємств, що обирають платформу міграції з 1С/BAS: Oracle забезпечує перехід на AI-інфраструктуру стратегічного рівня — database + low-code + AI в єдиному стеку без доплат за AI-функції.",
-    "tag": "Ринок",
-    "sourceName": "24/7 Wall St.",
-    "sourceUrl": "https://247wallst.com/investing/2026/05/04/salesforce-vs-oracle-theres-only-one-winner-in-the-cloud-ai-push/"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Oracle запускає щомісячні критичні патчі безпеки (CSPU) з 28 травня 2026: критичні вразливості — без очікування кварталу",
-    "summary": "Oracle оголосила запуск щомісячних Critical Security Patch Updates (CSPU) з 28 травня 2026 — нова ланка поверх поточного квартального CPU-циклу. Кожен CSPU є компактним цільовим патчем, що закриває критичні вразливості без очікування наступного квартального релізу. Квартальні CPU продовжуються і включатимуть усі виправлення попередніх CSPU. CSPU виходитимуть щомісяця у третій вівторок — перший запланований на 28 травня 2026. Зміна є частиною ширшої програми Oracle з прискорення виявлення та реагування на вразливості, яка включає вдосконалення внутрішніх процесів security scan та disclosure. Для команд, що обслуговують Oracle AI Database 26ai, Oracle APEX або будь-які Oracle-продукти в production: щомісячні CSPU дозволяють застосовувати критичні виправлення безпеки без очікування квартальних вікон обслуговування — що скорочує вікно вразливості до місяця замість кварталу. Для підприємств, що мігрують з 1С/BAS на Oracle-стек: enterprise-рівень безпеки Oracle тепер включає щомісячну реакцію на критичні CVE — на відміну від legacy ERP-вендорів із нерегулярним або відсутнім патч-менеджментом.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Security Blog",
-    "sourceUrl": "https://blogs.oracle.com/security/update-monthly-critical-security-patch-updates-cspus-begin-may-28-2026"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Oracle APEX 23.2: підтримка завершується 31 травня 2026 — 26 днів для переходу на APEX 24.2",
-    "summary": "Oracle APEX 23.2 завершує активну підтримку 31 травня 2026 — розширений термін (з 18-ти до 24-х місяців) для цієї версії добігає кінця. Поточна підтримувана версія — Oracle APEX 24.2 (підтримка до 31 липня 2027); Oracle APEX 24.1 підтримується до 31 грудня 2026. Продовження роботи на APEX 23.2 після 31 травня означає відсутність офіційних Security Patch та Bug Fix від Oracle. Міграція з APEX 23.2 на 24.2 виконується стандартним шляхом через Oracle APEX Patch Set: завантаження нового дистрибутиву, запуск apexins.sql. У хмарному середовищі (Autonomous Database) оновлення виконується Oracle автоматично. Для команд Oracle APEX: перехід на APEX 24.2 до кінця травня є обов'язковою вимогою для збереження security compliance, а не опціональною рекомендацією. APEX 24.2 включає AI-плагін та розширені можливості генерації застосунків — практичний фундамент для підготовки до APEX 26.1 з APEXlang.",
+    "date": "2026-05-09",
+    "title": "Oracle APEX AI Interactive Reports: природна мова для запитів до бізнес-звітів — 'покажи топ-10 клієнтів за кварталом' у рядку пошуку",
+    "summary": "Команда Oracle APEX опублікувала детальний огляд нової функції APEX AI Interactive Reports. Звичний рядок пошуку Interactive Report тепер приймає запити природною мовою: 'покажи топ-10 клієнтів за поточний квартал', 'відфільтруй замовлення зі статусом Pending більше 30 днів', 'порівняй продажі по регіонах за останні 6 місяців' — APEX автоматично транслює запит у SQL-фільтр і відображає результат без жодного коду. Функція є частиною APEX 24.2+ з підключеним Oracle AI Database або OCI Generative AI. Для бізнес-користувачів, які звикли до 1С-звітів: APEX AI Interactive Reports — це перша масштабна реалізація 'розмовного BI' у low-code enterprise платформі без окремого BI-інструменту.",
     "tag": "Oracle APEX",
-    "sourceName": "endoflife.date / Oracle Support",
-    "sourceUrl": "https://endoflife.date/oracle-apex"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Oracle APEX 26.1: APEXlang та AI-генерація застосунків — що відомо про нове покоління платформи перед APEX Connect 2026",
-    "summary": "Спільнота Oracle APEX активно аналізує ключові функції Oracle APEX 26.1, детальна презентація якої очікується на APEX Connect 2026 (18–20 травня, Heide Park). Ключові нові можливості: APEXlang — нова декларативна мова специфікації APEX-застосунків. Весь застосунок описується текстовим файлом (region, title, type, SQL та параметри): human-readable, сумісний з Git version control, генерується та редагується LLM-агентами. AI-генерація застосунків: APEX 26.1 інтегрує AI-assisted workflow для побудови застосунків на основі APEXlang-специфікацій — LLM отримує структуру бізнес-задачі та генерує повноцінний APEX-застосунок. Розширено можливості Interactive Reports, Map Regions, Dynamic Actions, REST-інтеграцій та PL/SQL APIs. Keynote APEX Connect 2026: Carsten Czarski (Oracle) — «Low-Code mit APEX 2026: KI, APEXlang та нові функції». Для команд в Україні та ЦСЄ: APEXlang перетворює Oracle APEX з традиційного low-code конструктора на платформу, де AI може автономно будувати enterprise-застосунки за бізнес-специфікацією — без ручного проектування кожного компонента.",
-    "tag": "Oracle APEX",
-    "sourceName": "Into The Oracle Verse",
-    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Ринок замін 1С/BAS в Україні 2026: огляди пропонують SMB-рішення — enterprise-сегмент залишається практично незаповненим",
-    "summary": "Нові аналітичні огляди українського ринку замін 1С/BAS (cityhost.ua, ontargit.com) фіксують структурний дисбаланс: медіапростір заповнений переважно SMB-рішеннями — MASTER, Dilovod, Odoo ERP та їх похідними. Ці продукти закривають задачі бухгалтерського обліку, торгівлі та базового документообігу малого бізнесу. Enterprise-сегмент — компанії з 200+ користувачами, складним виробничим обліком, галузевою специфікою, потребою в кастомних інтеграціях та AI-автоматизацією — у публічних оглядах практично не представлений. Причина проста: enterprise-рішення не позиціонуються через огляди «чим замінити 1С» — вони вимагають окремого enterprise-продажу та технічного аудиту. Відповідно, значна частина середнього та великого бізнесу обирає SMB-замінник не через технічну відповідність, а через відсутність видимої enterprise-альтернативи в медіапросторі. Для компаній, що зіткнулися з лімітами SMB-рішень після переходу з 1С: технічний аудит поточної архітектури та оцінка Oracle APEX — перший практичний крок до enterprise-рівня.",
-    "tag": "Ринок",
-    "sourceName": "cityhost.ua / ontargit.com",
-    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "OCI Generative AI Service у класифікованих хмарних регіонах США: GenAI-сервіс для уряду та оборони на рівні IL5/IL6",
-    "summary": "Oracle оголосила про загальну доступність OCI Generative AI Service у класифікованих хмарних регіонах США — Oracle US Government Cloud та Oracle US Defense Cloud. Слідом за угодою DoD від 1 травня 2026 (розгортання AI у мережах IL6/IL7), Oracle підтвердила, що OCI Generative AI — великі мовні моделі та AI-агенти OCI Enterprise AI — тепер функціонують безпосередньо в зашифрованих регіонах держсектору без передачі даних за периметр секретних мереж. Сервіс сумісний з OCI Enterprise AI Agents, Oracle AI Database 26ai та APEXlang для побудови повного циклу agentic AI-застосунків у режимі суворої класифікації даних. Розгортання GenAI-сервісів Oracle у класифікованих регіонах підтверджує реальний рівень security compliance платформи: держсектор США обирає OCI як довірену AI-інфраструктуру там, де вимоги є найбільш жорсткими. Для компаній в Україні та ЦСЄ, що переходять з 1С/BAS: це практичний орієнтир рівня безпеки та регуляторної відповідності, якого не може досягти жоден legacy ERP-вендор.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Cloud Infrastructure Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oci-gen-ai-service-in-us-classified-cloud"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Oracle та NVIDIA розширюють стратегічне партнерство: OCI Supercluster з GPU Vera Rubin та AMD MI450 — 50 000 GPU у Q3 2026",
-    "summary": "На NVIDIA GTC 2026 Oracle та NVIDIA оголосили розширення стратегічного партнерства у сфері AI-інфраструктури. Наступне покоління OCI Supercluster буде побудоване на платформі NVIDIA Vera Rubin — GPU NVIDIA Rubin, CPU NVIDIA Vera та мережеві адаптери NVIDIA BlueField-4 DPU. Поточне покоління: OCI вже пропонує GPU AMD Instinct MI355X (Oracle — перший публічний гіперскейлер), а у Q3 2026 Oracle та AMD планують розгорнути суперкластер з 50 000 GPU AMD Instinct MI450 Series. OCI Accelerator Packs — попередньо налаштовані AI-конфігурації з GPU NVIDIA — доступні для розгортання та кастомізації у власному OCI-тенанті клієнта без необхідності купувати фізичну GPU-інфраструктуру. Масштаб OCI GPU-інфраструктури у 2026 році: 131 072 GPU в OCI Supercluster на поточному поколінні, з переходом до Vera Rubin у наступному. Для команд Oracle APEX та AI Database 26ai: вся ця GPU-потужність доступна через стандартні OCI-сервіси — LLM inference, AI Vector Search та OML4Py — без побудови власної фізичної інфраструктури.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Cloud Infrastructure Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-nvidia-gtc-2026-key-announcements"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "APEX Connect 2026 у Heide Park Soltau: 14 днів до початку — повна програма опублікована, on-demand записи доступні для попереднього замовлення",
-    "summary": "До APEX Connect 2026 (18–20 травня, Heide Park Soltau, Нижня Саксонія, Німеччина) залишилося 14 днів. DOAG опублікував повну програму конференції: технічні сесії з Oracle APEX, PL/SQL, Low-Code та Cloud від спікерів DACH-регіону та міжнародної Oracle APEX-спільноти. Keynote: Carsten Czarski — «Low-Code mit APEX 2026: KI, APEXlang та нові функції» — охоплює AI-інтеграцію в APEX, мову специфікацій APEXlang та стратегічний напрям платформи. DOAG відкрив попереднє замовлення on-demand пакету: записи всіх сесій APEX Connect 2026 публікуються після конференції та доступні для всіх, хто не може відвідати особисто. APEX Connect 2026 є частиною тижня трьох DOAG-конференцій: APEX Connect (18–20 травня), DOAG Database with Cloud Infrastructure (18–19 травня) та CloudLand 2026 (19–22 травня) — Cloud Native, DevOps, Architecture. Для Oracle APEX-команд в Україні та ЦСЄ: on-demand записи APEX Connect 2026 є одним із найкращих джерел практичного APEX-контенту DACH-рівня, доступним без поїздки до Німеччини.",
-    "tag": "Подія",
-    "sourceName": "DOAG / APEX Connect",
-    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Україна: 75% підприємств досі на забороненому ПЗ — Закон 13505 у активній фазі, обов'язкові строки міграції до 2030 року",
-    "summary": "За оцінками ринкових аналітиків, близько 75% українських підприємств різних секторів економіки досі використовують ПЗ російського походження, зокрема понад 40 продуктів. Закон 13505 (прийнятий 18 липня 2025) встановлює поетапний обов'язковий вихід із забороненого ПЗ до 2030 року. Реєстр забороненого ПЗ (27 продуктів, 8 січня 2026) опублікований Держспецзв'язку та регулярно оновлюється. Обов'язкові вимоги вже діють для об'єктів критичної інформаційної інфраструктури, систем із державними інформресурсами та систем зі службовою/секретною інформацією. Для приватного бізнесу: купівля нових ліцензій та оплата технічної підтримки санкційним вендорам вже заборонені. Штраф за порушення строків — до 2% річного обороту. Ринкова оцінка залучених суб'єктів: десятки тисяч суб'єктів та понад 40 програмних продуктів — свідчить про те, що ринок міграції щойно розпочав активну фазу. Для підприємств, що досі відкладають рішення: перехід до санкційної фази виконання закону відносно приватного бізнесу — питання не «чи», а «коли».",
-    "tag": "Регуляторика",
-    "sourceName": "ain.ua / DOU",
-    "sourceUrl": "https://ain.ua/2026/01/14/v-ukrayini-zaboronili-rosiiskii-soft-1s/"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Oracle Deep Data Security доступний у Oracle AI Database 26ai: захист даних для AI-агентів на рівні рядка, стовпця та клітинки",
-    "summary": "Oracle підтвердила загальну доступність (GA) Oracle Deep Data Security у Oracle AI Database 26ai — database-native системи авторизації, що вирішує ключову проблему безпеки в еру AI-агентів. Традиційно AI-агенти діють під привілейованими сервісними акаунтами з надмірним доступом до корпоративних даних — Oracle Deep Data Security усуває цю вразливість, примусово застосовуючи модель авторизації кінцевого користувача безпосередньо в ядрі бази даних, не залежно від того, хто формує запит: людина, API-клієнт чи автономний AI-агент. Три рівні контролю (декларативні SQL-політики): row-level — агент бачить лише авторизовані рядки; column-level — приховування стовпців на основі identity; cell-level (нова функція 26ai) — маскування окремих клітинок до NULL залежно від рівня доступу, стійке до inference attacks. OAuth2-токен передає ідентифікатор реального кінцевого користувача через Microsoft Entra ID, OCI IAM або інший OIDC-сумісний IAM до бази даних — AI-агент діє з правами авторизованого користувача, а не привілейованого сервісного акаунту. Централізоване оновлення policy у базі даних усуває необхідність дублювати логіку контролю доступу у кожному застосунку та агенті. Повний audit trail фіксує дії всіх акторів: користувачів, адміністраторів та AI-агентів. Oracle Deep Data Security доступний без додаткової вартості в Oracle Autonomous Database та з останнього Release Update Oracle AI Database 26ai.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/oracle-deep-data-security-is-now-available-in-oracle-ai-database-26ai"
-  },
-  {
-    "date": "2026-05-03",
-    "title": "Oracle Extreme Edition Training у Бенілюксі — травень 2026: Upgrade та міграція до Oracle AI Database 26ai в Утрехті (11 травня) та Брюсселі (12 травня)",
-    "summary": "Oracle проводить серію навчальних заходів «Extreme Edition: Upgrade, Migration and Patching to Oracle AI Database 26ai and 19c» для DBA та архітекторів баз даних у регіоні Бенілюкс: Утрехт (Нідерланди), 11 травня, та Брюссель (Бельгія), 12 травня 2026. Формат: advanced live-тренінг від Oracle-інструкторів з прямим Q&A-доступом. Програма охоплює AutoUpgrade-шлях від Oracle Database 19c до Oracle AI Database 26ai, управління Release Updates mid-lifecycle, практичний OJVM-патчинг та актуальний стан квітневого патч-циклу 2026 (Linux RU вийшов 28 квітня, OJVM RU — 30 квітня, Windows RU — очікується 12 травня). Бенілюкс-серія продовжує EMEA-хвилю Oracle live-навчань у травні 2026 після London Advanced Edition (29 квітня). Для підприємств у регіоні, що планують перехід бази даних на Oracle AI Database 26ai — з Oracle 19c або з legacy-інфраструктури після заборони 1С/BAS — Oracle Extreme Edition Training забезпечує підготовку від Oracle-інструкторів безпосередньо після виходу нового патч-циклу, що є оптимальним часом для планування production-апгрейду.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Developer Events",
-    "sourceUrl": "https://www.oracle.com/developer/events/"
-  },
-  {
-    "date": "2026-05-03",
-    "title": "Oracle AI World Tour 2026 завершив глобальний цикл: від Амстердама до Токіо — наступна зупинка Oracle AI World Лас-Вегас, 25–28 жовтня",
-    "summary": "Oracle AI World Tour 2026 — серія безкоштовних однотижневих заходів у містах по всьому світу — завершила глобальний цикл 2026 року. Підтверджені зупинки: Амстердам (29 січня), Лондон (24 березня), Нью-Йорк (10 квітня), Сінгапур (14 квітня), Токіо (16 квітня), Сідней, Мумбай та інші міста. Кожен захід включав keynote від Oracle-керівництва, live-демонстрації Oracle AI Database 26ai, OCI Enterprise AI та Oracle APEX у контексті enterprise AI-впровадження. Після кожного заходу Oracle публікує записи ключових сесій через Oracle TV. Наступна ключова Oracle-подія 2026 року: Oracle AI World — 25–28 жовтня 2026 в The Venetian Convention & Expo Center, Лас-Вегас: 20 000+ учасників, очікуване анонсування APEX 26.1 GA та стратегічного напряму OCI на 2027 рік. До Oracle AI World відбудеться KScope26 у Денвері (14–18 червня, Gaylord Rockies Resort) — найбільша конференція Oracle APEX у США з 250+ технічними сесіями та прямим доступом до Oracle APEX Product Management. Матеріали Oracle AI World Tour та KScope26 є найповнішим публічним джерелом технічного контенту з Oracle AI Database 26ai та APEXlang для enterprise-команд, що оцінюють Oracle APEX як платформу виходу з legacy ERP.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle AI World Tour",
-    "sourceUrl": "https://www.oracle.com/ai-world-tour/"
-  },
-  {
-    "date": "2026-05-03",
-    "title": "Oracle Developer Coaching: Karpenter для OCI Kubernetes Engine — live-вебінар 6–12 травня для DevOps-команд на OCI",
-    "summary": "Oracle проводить серію Developer Coaching «Simplify OCI Kubernetes Engine (OKE) Node Management with Karpenter» у форматі live-вебінарів 6–12 травня 2026 з прямим Q&A-доступом до Oracle-інженерів. Karpenter Provider for OCI (KPO) — open-source автоскейлер нод Kubernetes, що досяг GA у квітні 2026, — замінює статичні node pool на just-in-time provisioning: KPO розгортає оптимальний OCI compute shape у реальному часі виходячи з фактичних потреб Pod'ів. Переваги: менше ручних конфігурацій node pool, можливість мікс-асортименту OCI compute shapes в одній KPO-політиці, автоматична консолідація порожніх нод для зниження витрат, спрощення масштабування між різними shapes та архітектурами. Вимога: Kubernetes 1.31+. Для enterprise-команд, що розгортають Oracle APEX та enterprise-застосунки на OCI з Kubernetes-оркестрацією: вебінар надає практичне керівництво від авторів системи — спрощення управління node pool, оптимізація витрат та автоматичне масштабування без ручного втручання.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Developer Events",
-    "sourceUrl": "https://www.oracle.com/developer/events/"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Oracle долучилась до ініціативи Пентагону: DoD підписав угоди з 8 компаніями на розгортання AI в секретних мережах IL6/IL7 — ORCL +7%",
-    "summary": "1 травня Міністерство оборони США (DoD) оголосило про угоди з вісьмома технологічними компаніями — Oracle, Amazon Web Services, Google, Microsoft, OpenAI, SpaceX, NVIDIA та Reflection — на розгортання AI-систем у секретних мережах рівнів Impact Level 6 та Impact Level 7. Ці мережі призначені для обробки секретної та особливо секретної інформації. AI застосовуватиметься для синтезу даних, підтримки ситуаційного розуміння та прийняття рішень у складних оперативних середовищах. Kim Lynch, EVP Oracle Government, Defense & Intelligence, підтвердила угоду: «Ця угода відображає спільне прагнення DoD та Oracle забезпечити США вирішальне лідерство у AI як питання безпеки та стратегічного впливу». Примітно, що Anthropic не отримала аналогічного допуску — Пентагон визначив компанію як ризик для ланцюга постачань. Акції Oracle (ORCL) зросли на 6,5–7% до $171,83 за підсумками торгів 1 травня 2026 року. Рішення DoD підтверджує статус Oracle як одного з восьми авторизованих постачальників AI для найбільш чутливих урядових мереж США та зміцнює позиції компанії у government cloud та AI-інфраструктурі. У поєднанні з контрактом Oracle та OpenAI ($300 млрд від 2027) та Stargate-програмою — Oracle формує основу стратегічної AI-інфраструктури США.",
-    "tag": "Oracle Cloud",
-    "sourceName": "DefenseScoop",
-    "sourceUrl": "https://defensescoop.com/2026/05/01/dod-expands-classified-ai-work-with-8-companies-excluding-anthropic/"
-  },
-  {
-    "date": "2026-05-02",
-    "title": "Oracle запускає щомісячний CSPU — Critical Security Patch Update: прискорені патчі безпеки між квартальними CPU, старт у травні 2026",
-    "summary": "Oracle оголосила про запровадження щомісячного Critical Security Patch Update (CSPU) — нового цільового формату патчів безпеки, що доповнює квартальний Critical Patch Update (CPU). CSPU містить виправлення лише для критичних вразливостей і дозволяє клієнтам усувати найвищопріоритетні проблеми без очікування наступного квартального релізу. Кожен CSPU менший і цілеспрямованіший за повний CPU, що спрощує та прискорює його застосування. Квартальні CPU залишаються та включатимуть усі виправлення попередніх CSPU у кумулятивному форматі. В OCI-середовищах патчі застосовуються автоматично. Запровадження CSPU є відповіддю Oracle на зростаючу частоту публікацій критичних CVE та потребу enterprise-клієнтів у прискореному механізмі реагування на критичні вразливості між квартальними циклами. Для Oracle APEX-адміністраторів та компаній, що переходять на Oracle: CSPU + квартальний CPU формують повний, передбачуваний цикл підтримки безпеки Oracle Database та APEX — що не має аналогів у заборонених legacy-системах 1С/BAS, де будь-яке централізоване оновлення безпеки від вендора після заборони фактично відсутнє.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Security Blog",
-    "sourceUrl": "https://blogs.oracle.com/security/accelerating-vulnerability-detection-and-response-at-oracle"
-  },
-  {
-    "date": "2026-05-02",
-    "title": "OCI Secure Desktops у хмарних регіонах уряду та оборони США: FedRAMP High та DISA IL5 — захищені VDI для держсектору та критичної інфраструктури",
-    "summary": "Oracle оголосила про загальну доступність OCI Secure Desktops у Oracle US Government Cloud та Oracle US Defense Cloud регіонах — сертифікованих відповідно до FedRAMP High та DISA Impact Level 5. Сервіс надає захищені, масштабовані хмарні VDI-середовища: browser-accessible virtual desktops з інтегрованою аутентифікацією, розширеним моніторингом та policy-based controls для організацій з підвищеними вимогами compliance. OCI Secure Desktops вже доступний у 60+ OCI-регіонах по всьому світу, включно з UK Government та EU Sovereign. Розширення в Government та Defense Cloud регіони відбувається на тлі активізації Oracle у держсекторі США: 1 травня DoD підписав угоди з Oracle та 7 іншими компаніями на розгортання AI в секретних мережах IL6/IL7; у лютому Oracle уклала контракт з ВПС США ($88 млн, Cloud One); у березні Oracle презентувала AI Data Platform для US Federal Government. Для enterprise-команд та держорганів, що будують захищені робочі середовища: OCI Secure Desktops у Government/Defense регіонах — практичне рішення для compliance-вимог, недосяжних на застарілій legacy-інфраструктурі.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Cloud Infrastructure Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oci-secure-desktops-government-defense-regions"
-  },
-  {
-    "date": "2026-05-02",
-    "title": "Ринок заміни 1С в Україні: травень 2026 — понад 300 000 компаній на забороненому ПЗ, Oracle APEX у контексті enterprise-міграцій",
-    "summary": "За оцінками ринкових аналітиків у 2026 році, понад 300 000 українських компаній продовжують використовувати 1С або BAS — попри включення 27 програмних продуктів до реєстру забороненого ПЗ (8 січня 2026) та запровадження обов'язкових норм для держорганів і критичної інфраструктури. Основні причини затримки міграції: накопичений обсяг налаштувань у 1С, відсутність готових дорожніх планів переходу та складність вибору відповідної платформи. Ринкові огляди 2026 року виділяють різні категорії рішень: для невеликих бізнесів, орієнтованих на внутрішній ринок — вітчизняні системи; для mid-market та enterprise із потребою у кастомній автоматизації бізнес-процесів, управлінні даними та AI-інтеграції — Oracle APEX як low-code платформа розробки на Oracle AI Database 26ai. Важливо розуміти: Oracle APEX не є box-рішенням-замінником 1С, але є платформою для побудови повноцінної цифрової архітектури підприємства, що якісно перевищує функціональні та безпекові можливості legacy ERP. Проєкт закону 13505 передбачає штраф до 2% річного обороту для компаній, що не завершать міграцію у встановлені строки.",
-    "tag": "Регуляторика",
-    "sourceName": "cityhost.ua",
-    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "APEX Connect 2026 у Heide Park Soltau: три DOAG-конференції під одним дахом — APEX Connect, DOAG DB та CloudLand, 18–22 травня",
-    "summary": "18–22 травня 2026 у Heide Park Soltau (Нижня Саксонія, Німеччина) паралельно проходять три великих DOAG-конференції: APEX Connect 2026 (18–20 травня) — щорічна флагманська конференція Oracle APEX, PL/SQL та Low-Code від DOAG; DOAG Database with Cloud Infrastructure (18–19 травня) — Oracle Database та OCI; CloudLand 2026 (19–22 травня) — Cloud Native Festival з темами DevOps, Architecture, AI та Security. Keynote APEX Connect 2026: Carsten Czarski з темою «Low-Code mit APEX 2026» — про KI (AI), APEXlang та нові функції платформи. APEX Connect — найбільша спеціалізована Oracle APEX-конференція у DACH-регіоні, організована DOAG (Deutsche Oracle Anwender Gruppe). Записи сесій публікуються після конференції через DOAG on-demand. Три конференції в одному місці та в один тиждень — рекордний формат для Oracle-екосистеми в Центральній Європі: APEX Connect забезпечує Oracle APEX-контент, DOAG DB — Database та OCI, CloudLand — Cloud-native та DevOps. Для команд у ЦСЄ та в Україні, що оцінюють Oracle APEX як платформу виходу з 1С/BAS: APEX Connect 2026 є найближчою точкою доступу до практичного APEX-контенту від спільноти та Oracle-спеціалістів DACH-регіону.",
-    "tag": "Подія",
-    "sourceName": "DOAG / APEX Connect",
-    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Oracle APEX 23.2: підтримка завершується 31 травня 2026 — 30 днів до дедлайну, рекомендовано оновлення до 24.2",
-    "summary": "Oracle завершує підтримку Oracle APEX 23.2 31 травня 2026 — залишається 30 днів. Oracle офіційно розширив термін підтримки версій 23.2–24.2 з 18 місяців до 2 років відповідно до Lifetime Support Policy, визнаючи затримку виходу версій 24.1 та 24.2. Поточний стан підтримки: APEX 24.2 — актуальний реліз з підтримкою до 31 липня 2027; APEX 24.1 — підтримка до 31 грудня 2026; APEX 23.2 — підтримка до 31 травня 2026. Після 31 травня APEX 23.2 не отримуватиме патчів безпеки та виправлень помилок від Oracle. APEX 26.1 очікується у 2026 році. Для організацій, що використовують APEX 23.2: оновлення Oracle APEX виконується без зупинки бізнес-застосунків і є значно менш ризикованою операцією, ніж продовження роботи на непідтримуваній версії. Для компаній, що переходять з 1С/BAS на Oracle APEX: рекомендується одразу орієнтуватися на APEX 24.2 або чекати APEX 26.1.",
-    "tag": "Oracle APEX",
-    "sourceName": "endoflife.date / Oracle APEX",
-    "sourceUrl": "https://endoflife.date/oracle-apex"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Oracle Project Jupiter у Нью-Мексико: до 2,45 ГВт паливних елементів Bloom Energy та 4 000 робочих місць — AI-кампус на єдиному мікрогріді",
-    "summary": "27 квітня Oracle, BorderPlex Digital Assets та Bloom Energy анонсували Project Jupiter — AI Data Center Campus в окрузі Doña Ana, Нью-Мексико, що живитиметься виключно паливними елементами SOFC від Bloom Energy ємністю до 2,45 ГВт у форматі єдиного мікрогріду. Оновлений дизайн кампусу замінює раніше заплановані газові турбіни та дизельні генератори: нова архітектура поєднує чистішу енергетику, водозберігаючу технологію охолодження та повну незалежність від регіональних електромереж. За час реалізації Project Jupiter створить 4 000 будівельних робочих місць та 1 500 постійних позицій на кампусі та у регіоні. Проєкт є частиною масштабної AI-інфраструктурної програми Oracle: CapEx $45–50 млрд, $30 млрд вже залучено. Project Jupiter, Stargate Michigan ($16 млрд, Saline Township) та Abilene Texas (1,2 ГВт, вже в строю) — три флагмани Oracle AI-інфраструктури 2026 року для реалізації контракту з OpenAI ($300 млрд, старт 2027) та глобального розширення OCI.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle News",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Oracle Database RU для Windows: фінальний патч квітневого циклу 2026 очікується 12 травня — ETA підтверджено",
-    "summary": "Квітневий патч-цикл Oracle Database 2026 завершується: Release Updates 19.31 (Oracle Database 19c) та 23.26.2 (Oracle AI Database 26ai) для Windows виходять 12 травня 2026 — відповідно до ETA, підтвердженого Oracle DBA-блогером Майком Дітріхом. Linux-версії RU вийшли 28 квітня, OJVM RU — 30 квітня. Після виходу Windows-патчів квітневий патч-цикл Oracle Database буде повністю завершений на всіх підтримуваних платформах. Для Oracle APEX-адміністраторів у Windows-середовищах застосування повного патч-пакету (Database RU + OJVM RU + CPU квітня 2026) є рекомендованою практикою Oracle та вимогою для підтримки enterprise security posture на APEX-інфраструктурі. Windows-платформа є однією з трьох ключових (Linux, Windows, AIX), на яких Oracle AI Database 26ai буде доступний у 2026 році.",
-    "tag": "Oracle AI",
-    "sourceName": "Upgrade your Database — NOW!",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-04-30",
-    "title": "Oracle APEX вперше у Румунії: APEX Day + Gen AI Bootcamp у Бухаресті, 6–7 травня 2026 — спільно з RoOUG",
-    "summary": "Oracle анонсував перший в історії Oracle APEX Day та Gen AI Bootcamp у Румунії — 6–7 травня 2026 у Бухаресті, організований разом з Romanian Oracle User Group (RoOUG). Oracle APEX Day (6 травня) — спеціалізована конференція для Oracle APEX-спеціалістів та фахівців; Gen AI Bootcamp (7 травня) — практичний день з Generative AI в Oracle APEX 26.1, призначений для IT-студентів та досвідчених розробників, нових для платформи. Обидва заходи безкоштовні, кількість місць обмежена. Анонс підтверджує стратегічне розширення Oracle APEX PM-команди в країни Центральної та Східної Європи: у квітні–травні 2026 заплановані in-person APEX-заходи у Словенії, Хорватії, Австрії, Канаді, США та Румунії. Для команд у ЦСЄ, що планують міграцію з 1С/BAS на Oracle APEX, це підтверджує зростаючу регіональну доступність технічної підтримки та навчання від Oracle безпосередньо.",
-    "tag": "Подія",
     "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/romania"
+    "sourceUrl": "https://blogs.oracle.com/apex/post/ai-powered-interactive-reports"
   },
   {
-    "date": "2026-04-30",
-    "title": "Oracle OJVM Release Update 19.31 та 23.26.2: вихід 30 квітня завершує основний квітневий патч-цикл",
-    "summary": "30 квітня Oracle випустила OJVM (Oracle JVM) Release Update для Oracle Database 19c (19.31) та Oracle AI Database 26ai (23.26.2) — відповідно до оголошеного графіку. OJVM RU є обов'язковим для організацій, що використовують Java-компоненти в базі даних Oracle, включно з Oracle APEX: APEX-сервер використовує Oracle JVM для ряду внутрішніх операцій та Java-залежних PL/SQL-бібліотек. Квітневий патч-цикл Oracle тепер включає: CPU квітень 2026 (483 патчі безпеки, 21 квітня), Database RU Linux (28 квітня) та OJVM RU (30 квітня) — весь ключовий цикл завершено за 9 днів. Єдина частина, що залишається: Windows ETA 12 травня 2026. Для Oracle APEX-адміністраторів застосування повного патч-циклу (Database RU + OJVM RU + CPU) є рекомендованою практикою Oracle та вимогою для підтримки enterprise security posture.",
-    "tag": "Oracle AI",
-    "sourceName": "Upgrade your Database — NOW!",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-04-30",
-    "title": "KScope26 Denver: Community Keynote для всіх п'яти ODTUG-спільнот — APEX, Analytics, Database, EPM та OCI",
-    "summary": "ODTUG підтвердив деталі структури KScope26 (14–18 червня 2026, Gaylord Rockies Resort, Денвер): кожна з п'яти ODTUG-спільнот — Oracle APEX, Analytics, Database, EPM та OCI — матиме власний Community Keynote з обраними спікерами. Підтверджено особливий вечірній захід середи, який організатори характеризують як «незабутній за всю історію KScope». Серед підтверджених доповідачів: Brock Ray (Traust, Director of UX) з двома сесіями Oracle APEX track на тему UX-дизайну. Реєстрація на KScope26 відкрита. KScope26 — найбільша незалежна конференція Oracle APEX у США: 250+ технічних сесій, hands-on тренінги, прямий контакт з Oracle APEX PM. Для команд в Україні та регіоні, що планують Oracle APEX-проєкти, матеріали KScope26 після конференції — найповніший публічно доступний технічний ресурс від першоджерел.",
-    "tag": "Подія",
-    "sourceName": "ODTUG",
-    "sourceUrl": "https://www.odtug.com/kscope26"
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Oracle APEX Gen AI Bootcamp Торонто: перший Bootcamp Oracle APEX у Канаді — спільно з Toronto Oracle User Group",
-    "summary": "28 квітня 2026 у Торонто відбувся Oracle APEX Gen AI Bootcamp, організований Oracle спільно з Toronto Oracle User Group (TOUG) — перший Bootcamp Oracle APEX у Канаді весни 2026. Захід тривав з 10:00 до 17:45 і охоплював практичне знайомство з підходом Oracle APEX до AI-розробки: APEXlang, AI Copilot та Generative AI в Oracle APEX 26.1. Безкоштовний захід зібрав до 80 учасників з безпосереднім доступом до Oracle APEX PM та DEV-команди. Bootcamp у Торонто є частиною активного регіонального туру Oracle APEX весни 2026: Alpe Adria Любляна (17 квітня), Торонто (28 квітня), Міннеаполіс (30 квітня), Бухарест (6–7 травня), Чикаго (7 травня), APEX Connect Heide Park (18–20 травня), KScope26 Денвер (14–18 червня). Для підприємств, що розглядають Oracle APEX як платформу для виходу з 1С/BAS, географічне розширення Oracle APEX-заходів підтверджує зростання активної глобальної спільноти.",
-    "tag": "Oracle APEX",
-    "sourceName": "ODTUG",
-    "sourceUrl": "https://www.odtug.com/oracle-apex-bootcamp-toronto"
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Oracle Developer Event 29 квітня: «Next-Level OCI» — CI Compose, OCDK та VS Code для розробників AI Database",
-    "summary": "29 квітня Oracle провів Developer Coaching event «Next-Level OCI: Enhancing Developer Productivity with CI Compose, OCDK, and VS Code» — live-сесія з Kris Rice (SVP, Software Development, Oracle AI Database) та Jeff Smith (Distinguished Product Manager, Oracle AI Database). CI Compose — декларативний інструмент для multi-service DevOps-пайплайнів прямо в OCI; OCDK (Oracle Cloud Development Kit) — Infrastructure as Code для OCI-сервісів; VS Code Extension забезпечує пряму взаємодію з Oracle AI Database 26ai в IDE без виходу з розробницького середовища. Захід підтвердив безперервну активність Oracle у DevOps-напрямку для AI Database, що безпосередньо стосується команд, які будують Oracle APEX-рішення та потребують сучасного CI/CD-ланцюга від планування до production без складних ручних кроків.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Developer Events",
-    "sourceUrl": "https://www.oracle.com/developer/events/"
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Oracle London Advanced Edition 29 квітня: міграція та патчування Oracle AI Database 26ai і 19c — практичний тренінг",
-    "summary": "29 квітня в Лондоні Oracle провів Advanced Edition-тренінг «Upgrade, Migration and Patching to Oracle AI Database 26ai and 19c» для DBA та архітекторів. Захід охопив AutoUpgrade-процедуру переходу з 19c на AI Database 26ai, управління Release Updates у mid-lifecycle, OJVM-патчування та Windows-платформу (ETA 12 травня 2026). Тренінг відбувся наступного дня після виходу RU 23.26.2 та RU 19.31 (28 квітня) — даючи DBA актуальні практичні знання одразу після нового патч-циклу. Для підприємств, що переводять бази даних з legacy ERP на Oracle AI Database 26ai, Advanced Edition-тренінги від Oracle-інструкторів є найбезпечнішим підготовчим кроком до production-апгрейду.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Developer Events",
-    "sourceUrl": "https://www.oracle.com/developer/events/"
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Traust підтвердила два виступи на KScope26 у Денвері — Oracle APEX та AI у червні 2026",
-    "summary": "Traust — консалтинговий партнер Oracle та організатор APEX-заходів у Північній Америці — підтвердила два технічні виступи на ODTUG KScope26 (14–18 червня 2026, Gaylord Rockies Resort, Денвер). Traust також організувала фінальний North America APEX Bootcamp 30 квітня у Міннеаполісі спільно з Oracle та TCOUG. KScope26 — найбільша конференція Oracle APEX у США: 250+ технічних сесій з Oracle APEX, OCI, EPM, Analytics та Database від Oracle PM та ACE-спікерів. Для команд у Центральній та Східній Європі, що проектують міграцію з 1С/BAS на Oracle APEX, матеріали KScope26 після конференції — найбільш деталізовані технічні ресурси від першоджерел.",
-    "tag": "Подія",
-    "sourceName": "Traust Blog",
-    "sourceUrl": "https://traust.com/blog/traust-presenting-at-kscope26-in-denver/"
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Oracle EBS Tech Blog підтвердив: Critical Patch Update квітня 2026 доступний для E-Business Suite",
-    "summary": "Oracle EBS Tech Blog опублікував підтвердження доступності Critical Patch Update (CPU) квітня 2026 для Oracle E-Business Suite — включно з усіма виправленнями безпеки від квартального Security Alert та вибраними bug-fix патчами для EBS-компонентів. EBS 12.2 сертифікована для Oracle AI Database 26ai (підтверджено раніше у квітні), тому клієнти EBS отримують захищену платформу з прямою підтримкою 26ai. Регулярні квартальні CPU для EBS є практичним підтвердженням рівня підтримки Oracle: підприємства після заборони 1С/BAS позбавлені будь-яких аналогічних централізованих оновлень безпеки від вендора.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle EBS Tech Blog",
-    "sourceUrl": "https://blogs.oracle.com/ebstech/critical-patch-update-for-april-2026-now-available"
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Oracle AI World 2026: флагманська щорічна конференція Oracle з AI — 25–28 жовтня, Лас-Вегас",
-    "summary": "Oracle AI World 2026 відбудеться 25–28 жовтня у The Venetian Convention and Expo Center, Лас-Вегас — щорічна флагманська конференція Oracle з 20 000+ учасників. Програма: keynotes від Oracle-лідерства, product demonstrations, customer case studies, hands-on bootcamps (неділя, 25 жовтня — повний день практики від інструкторів Oracle) та технічні сесії з Oracle AI Database, APEX, OCI та Fusion Applications. Oracle AI World 2026 стане головною платформою для анонсу нових можливостей Oracle AI Database наступного покоління, APEX 26.1 GA та стратегічних напрямів OCI на 2027 рік. KScope26 у Денвері (14–18 червня) та Oracle AI World (жовтень, Лас-Вегас) — два ключових Oracle-заходи 2026 року для підприємств, що планують або вже реалізують міграцію з 1С/BAS на Oracle APEX та AI Database.",
-    "tag": "Подія",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/ai-world/"
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Oracle APEX Bootcamp Чикаго: фінальний захід серії North America — 7 травня 2026, Willis Tower",
-    "summary": "7 травня 2026 у Willis Tower, Чикаго (233 S Wacker Dr) відбудеться фінальний Oracle APEX Bootcamp серії North America Spring 2026 — повний день практики на Oracle APEX та Generative AI. Безкоштовний захід організовано Oracle, COUG (Chicago Oracle User Group), MOUG та Viscosity. Програма: Oracle APEX Bootcamp (9:30–17:45) — hands-on introduction з AI Copilot та APEXlang. Це останній захід серії North America Bootcamp 2026 (Бостон, Рестон, Міннеаполіс, Чикаго, Гвадалахара) перед KScope26 у Денвері (14–18 червня). Для команд, що переходять з 1С/BAS на Oracle APEX, безкоштовний Bootcamp — найшвидший шлях до практичного знайомства з AI-можливостями APEX 26.1 безпосередньо від Oracle APEX PM.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX",
-    "sourceUrl": "https://oracleapex.com/go/bootcamp@chicago"
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Oracle Database RU 23.26.2 та 19.31 вийшли на Linux — квітневий патч-цикл 2026 завершено",
-    "summary": "28 квітня Oracle випустила квітневі Release Updates для Oracle AI Database 26ai (RU 23.26.2) та Oracle Database 19c (RU 19.31) на Linux x86-64 — у строк після затримки, оголошеної 23 квітня. RU 23.26.2 для AI Database 26ai включає патчі з квартального Critical Patch Update квітня 2026 та виправлення помилок. Наступні дедлайни: OJVM Release Update — 30 квітня, Windows — 12 травня 2026. Oracle підтримує прозорий публічний графік патчування навіть у разі коригувань дат. Для підприємств, що порівнюють Oracle та legacy-рішення типу 1С/BAS, квартальний патч-цикл — практичний критерій: після заборони 1С/BAS не отримують жодних централізованих оновлень безпеки, Oracle AI Database 26ai — щоквартально плюс позапланові Security Alerts.",
-    "tag": "Oracle AI",
-    "sourceName": "Upgrade your Database — NOW!",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-03-10",
-    "title": "Oracle FY2026 Q3: хмарний бізнес +44%, загальний дохід +22%, RPO $553 млрд — трансформація в AI-інфраструктуру підтверджена",
-    "summary": "10 березня Oracle оголосила фінансові результати за Q3 FY2026: загальний дохід $17,2 млрд (+22% рік до року), хмарний дохід $8,9 млрд (+44%). Перший квартал за 15+ років з одночасним органічним зростанням доходу та Non-GAAP EPS на 20%+. Залишкові зобов'язання (RPO) — $553 млрд (+325% рік до року), переважно за AI-контрактами, включно з угодою $300 млрд з OpenAI (старт 2027). Прогноз на FY2027: виручка $90 млрд, CapEx $50 млрд. Для корпоративних клієнтів, що обирають Oracle APEX та AI Database як основу міграції з 1С/BAS, ці результати — фінансове підтвердження стратегічної надійності платформи: Oracle трансформується з legacy software-вендора в ключового AI-інфраструктурного гравця з довгостроковими зобов'язаннями.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Investor Relations",
-    "sourceUrl": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/default.aspx"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Oracle RAC + AI Database 26ai: лінійне масштабування векторного пошуку до 100 000+ запитів/сек без змін у коді",
-    "summary": "Oracle опублікував технічний огляд масштабованості Oracle AI Database 26ai з RAC для AI-навантажень enterprise-класу. Завдяки share-everything архітектурі RAC забезпечує лінійне масштабування векторного пошуку: понад 100 000 vector distance запитів на секунду за GloVe-навантаженням на чотирьох вузлах — без будь-яких змін у коді застосунку. AI inference, similarity search та AI-native навантаження масштабуються прозоро при додаванні вузлів RAC. Active-active реплікація через OCI GoldenGate 26ai забезпечує sub-3-секундний failover без втрати даних для agentic workloads. Для підприємств, що переходять з 1С/BAS на Oracle APEX з AI-аналітикою, це означає: зростання навантаження вирішується додаванням вузлів RAC без переписування застосунку та без ризику деградації продуктивності AI-функцій. Принципова відмінність від monolithic legacy ERP, де вертикальне масштабування має жорсткі межі.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle MAA Blog",
-    "sourceUrl": "https://blogs.oracle.com/maa/scaling-enterprise-ai-workloads-with-oracle-rac-26ai"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Oracle MySQL HeatWave: підтримку MySQL 8.0 продовжено до квітня 2027 — автоматичне оновлення до 8.0.46 у червні",
-    "summary": "Oracle оголосила про продовження підтримки MySQL 8.0 в сервісі OCI HeatWave до квітня 2027 — на рік після оригінального дедлайну EOL у квітні 2026. Для існуючих HeatWave-інстансів на MySQL 8.0 у червні 2026 буде автоматично застосовано оновлення до версії 8.0.46 зі збереженням критичних патчів безпеки. Нові інстанси на MySQL 8.0 більше не можна буде створити; зміна shape для 8.0-інстансів також недоступна. Після квітня 2027 залишкові 8.0-інстанси буде автоматично мігровано до MySQL 8.4 LTS під час наступного вікна обслуговування. Для підприємств, що використовують MySQL HeatWave в OCI та ще не завершили міграцію на 8.4 LTS, Oracle надає додатковий рік для планування оновлення без примусового простою.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle MySQL Blog",
-    "sourceUrl": "https://blogs.oracle.com/mysql/extending-mysql-8-0-support-in-mysql-heatwave"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Галузеві аналітики підтверджують: Oracle AI Database 26ai — лідер місії-критичної доступності AI-епохи",
-    "summary": "Oracle опублікував огляд позицій провідних галузевих аналітиків щодо Oracle AI Database 26ai. Ключові оцінки: «Oracle демократизує екстремальну доступність, змушуючи конкурентів переосмислити заяви щодо HA»; Diamond-tier MAA із failover до 3 секунд без втрати даних відповідає вимогам фондових бірж та місії-критичних фінансових систем; «тільки Oracle AI Database забезпечує транзакційну обробку та аналітику в єдиному движку з AES-256 шифруванням та post-quantum криптографією». Аналітики підкреслюють: Oracle AI Database 26ai надає enterprise-рівень надійності та безпеки, недосяжний для legacy ERP-систем. Для компаній, що мігрують з 1С/BAS, перехід на Oracle означає якісний стрибок у надійності на рівні, якого legacy-платформи апріорі не можуть забезпечити.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/analyst-perspectives-on-oracle-ai-database-mission-critical-capabilities"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Spring AI + Oracle AI Database: практичний гайд із додавання персистентної пам'яті до AI-агентів",
-    "summary": "Oracle Developer Blog опублікував технічний гайд «How I Added Memory to an AI Agent Using Spring AI and Oracle AI Database». Стаття демонструє реалізацію персистентної пам'яті для AI-агентів на Spring AI з використанням Oracle AI Database 26ai як єдиного сховища всіх типів пам'яті: episodic (реляційна таблиця chat history), semantic (hybrid vector index для domain knowledge) та procedural (таблиці застосунку через @Tool). Oracle AI Database 26ai зберігає всі три типи пам'яті в єдиному движку без необхідності підтримувати окрему граф-базу, векторний стор або document store — агенти «пам'ятають» між сесіями без зовнішніх RAG-систем. Для Oracle APEX-розробників, що будують AI-агентні застосунки на Java/Spring, це готовий reference-архітектурний зразок із реальним кодом.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Developer Blog",
-    "sourceUrl": "https://blogs.oracle.com/developers/how-i-added-memory-to-an-ai-agent-using-spring-ai-and-oracle-database"
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Oracle APEX 26.1 та Vibe Coding: APEXlang AI Copilot як підхід Oracle до генеративної low-code розробки",
-    "summary": "Oracle підтвердив: команда Oracle APEX адаптує підходи «vibe coding» для наступного релізу APEX 26.1 через APEXlang та AI Copilot. APEXlang — відкрита специфікація APEX-застосунків у форматі YAML/JSON з підтримкою git-версіонування та CI/CD. AI Copilot дозволяє описати застосунок природною мовою та отримати робочий APEX-проєкт у форматі .apx без ручного кодування — з прозорим проміжним кроком перегляду AI-генерованого результату. Oracle позиціонує APEXlang як основу generative low-code розробки наступного покоління: ключова відмінність від класичного vibe coding — людино-читабельний формат, що підлягає аудиту та контролю. Дорожню карту підтверджено Oracle на apex.oracle.com/roadmap. Для команд, що мігрують з 1С на Oracle APEX і планують впровадження 26.1, це визначає стратегічний напрям розробки на найближчі роки.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Roadmap",
-    "sourceUrl": "https://apex.oracle.com/roadmap/"
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Oracle AI Database 26ai on-premises: GA для Linux x86-64, Windows та AIX — у планах на 2026 рік",
-    "summary": "Oracle підтвердив дорожню карту розгортання Oracle AI Database 26ai для on-premises платформ поза Autonomous Cloud. GA для Linux x86-64 відбулася у січні 2026 (RU 23.26.1) — Enterprise Edition з повним набором AI-можливостей: AI Vector Search, SQL FILTER, OML4Py/OML4SQL API v2, Private Agent Factory та True Cache. Реліз для Windows та AIX заплановано на пізніший термін 2026 року. Oracle охоплює всі три основні on-premises платформи, де ще можуть працювати legacy ERP-системи. Для підприємств, що замінюють 1С/BAS і хочуть перейти на Oracle AI Database 26ai без переходу в хмару, Oracle формує чіткий план: Linux вже доступний, Windows та AIX на черзі. Деталі розкладу підтверджено в MOS Note 742060.1 — Release Schedule of Current Database Releases.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms"
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Oracle APEX Bootcamp та Executive Roundtable у Міннеаполісі — фінальний захід серії North America, 30 квітня",
-    "summary": "30 квітня 2026 у McNamara Alumni Center (Університет Міннесоти, Міннеаполіс) Traust, Oracle та Twin Cities Oracle User Group (TCOUG) проводять фінальний North America APEX Bootcamp весни 2026. Захід включає два блоки: Executive Roundtable (7:30–9:00) — виступ від Oracle APEX Product Management про стратегічний напрям платформи та APEX 26.1; Oracle APEX Bootcamp (10:30–18:00) — практичне введення у розробку застосунків. Обидва заходи безкоштовні, але кількість місць обмежена. Це останній захід серії North America Bootcamp 2026 (квітень–травень). Наступна ключова подія: KScope26 у Денвері, 14–18 червня — триденний APEX Bootcamp + 250+ технічних сесій від Oracle Product Management.",
-    "tag": "Подія",
-    "sourceName": "Traust",
-    "sourceUrl": "https://traust.com/blog/oracle-apex-bootcamp-and-executive-roundtable/"
-  },
-  {
-    "date": "2026-04-25",
-    "title": "Oracle Database Monthly News квітень 2026: дайджест ключових оновлень від CoreTec Oracle Blog",
-    "summary": "Oracle CoreTec Blog оприлюднив щомісячний дайджест Oracle Database Monthly News за квітень 2026 — систематизовану добірку посилань на всі ключові оновлення Oracle Database з місяця. Огляд охоплює нові матеріали квітня: онлайн-апгрейд Autonomous AI Database з 19c до 26ai за ~15 хвилин без тривалого вікна; нові рівні доступності Platinum та Diamond для 26ai на Exadata; EBS 12.2 сертифікований для Oracle AI Database 26ai; зсунуті дати Release Updates 19.31 та 23.26.2 (Linux: 28 квітня, OJVM RU: 30 квітня, Windows: 12 травня); Critical Patch Update квітень 2026 — 483 патчі. CoreTec Oracle Blog публікує щомісячний дайджест наприкінці кожного місяця — зручний навігатор для DBA та архітекторів.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle CoreTec Blog",
-    "sourceUrl": "https://blogs.oracle.com/coretec/oracle-database-monthly-news-april-2026-quick-links"
-  },
-  {
-    "date": "2026-04-25",
-    "title": "Related Digital закрило $16 млрд фінансування дата-центру Oracle в Мічигані",
-    "summary": "25 квітня 2026 Related Digital оголосила про успішне закриття $16 млрд фінансування для будівництва масштабного кампусу дата-центру в Сейлін-Тауншип, Мічиган — призначеного для потреб Oracle та проєкту Stargate. Фінансування структуроване з участю фондів Blackstone (equity), боргових інструментів під управлінням PIMCO та банків Bank of America, Goldman Sachs і Wells Fargo. Кампус «The Barn» складатиметься з трьох об'єктів потужністю понад 1 ГВт із замкнутою системою охолодження та сертифікацією LEED — будівництво вже ведеться. Проєкт створить 2 500+ профспілкових будівельних робочих місць та 450+ постійних місць на майданчику. Угода підтверджує масштаб інвестицій Oracle в AI-інфраструктуру в рамках партнерства з OpenAI (контракт $300 млрд) та загального плану Oracle залучити від $45 до $50 млрд капіталу, з яких $30 млрд вже залучено.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "http://www.prnewswire.com/news-releases/related-digital-announces-financing-for-16-billion-oracle-data-m6mbh8d9by2o.html"
-  },
-  {
-    "date": "2026-04-24",
-    "title": "Wedbush: Oracle «Outperform», ціль $225 — ORCL -24% у 2026, аналітики рекомендують купувати",
-    "summary": "24 квітня Wedbush Securities ініціювала покриття акцій Oracle (ORCL) рейтингом «Outperform» з 12-місячною ціллю $225 — потенціал зростання ~30% від поточних рівнів. Старший аналітик Ден Айвс наголошує: ринок «фундаментально хибно інтерпретує» масштабні капітальні витрати Oracle як ризик замість стратегічної необхідності. Oracle трансформується з legacy-постачальника ПЗ у ключового AI-інфраструктурного провайдера, підкріпленого довгостроковими контрактами — у тому числі угодою $300 млрд з OpenAI (початок 2027). Акції ORCL знизились на ~24% у 2026 на тлі побоювань щодо CapEx. Oracle вже залучила $30 млрд із запланованих $45–50 млрд через інвестиційні облігації та конвертовані привілейовані акції.",
-    "tag": "Oracle Cloud",
-    "sourceName": "CNBC",
-    "sourceUrl": "https://www.cnbc.com/2026/04/24/oracle-is-down-big-in-2026-dan-ives-says-buy-the-dip.html"
-  },
-  {
-    "date": "2026-04-16",
-    "title": "OCI A4 Standard Acceleron: ARM-інстанси нового покоління Oracle для AI inference та cloud-native",
-    "summary": "Oracle анонсувала OCI A4 Standard Acceleron — наступне покоління ARM-хмарних інстансів у сімействі Oracle Acceleron, побудованих на процесорах AmpereOne M та власній архітектурі Oracle Acceleron. Інстанси призначені для AI inference, cloud-native застосунків та enterprise workloads з покращеною ефективністю та масштабованістю. Ціна OCPU-год у новому сімействі Acceleron до 70% нижча за попереднє покоління. A4 Standard Acceleron доповнює вже анонсовані X12 Standard Acceleron (Intel Xeon 6) та E6 Acceleron (storage-optimized). Для Oracle APEX застосунків та enterprise-платформ, що переміщуються з on-premises legacy ERP на OCI, нові Acceleron-інстанси пропонують вищу продуктивність при нижчій вартості без змін у коді застосунку.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-compute-a4-acceleron-instances"
-  },
-  {
-    "date": "2026-04-23",
-    "title": "Oracle AI Database Live Training JAPAC: безкоштовні live-сесії 28–30 квітня — Q&A з Oracle PM",
-    "summary": "Для розробників та архітекторів у JAPAC Oracle проводить Oracle AI Database Live Training 28–30 квітня 2026 — безкоштовний трьохденний live-тренінг з Oracle AI Database 26ai у форматі прямого Q&A з командами Oracle Product Management та розробниками. Тематика: нові можливості 26ai, AI Agent Framework, OML4Py/OML4SQL API v2 з покращеним відстеженням ML-завдань та підтримкою більших ONNX-моделей, оператор FILTER для агрегатних та віконних функцій SQL. Аналогічне навчання для Americas/EMEA відбулось 21–23 квітня. Для розробників, що будують Oracle APEX-рішення на AI Database 26ai, це можливість отримати прямі відповіді від команди Oracle на конкретні технічні питання.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle ACE Blog",
-    "sourceUrl": "https://blogs.oracle.com/ace/monthly-product-pulse-april-2026-oracle-technical-resources"
-  },
-  {
-    "date": "2026-04-24",
-    "title": "Oracle Autonomous AI Database: online upgrade від 19c до 26ai за ~15 хвилин без повного простою",
-    "summary": "Oracle опублікував деталі нового online upgrade Autonomous AI Database від Oracle Database 19c до Oracle AI Database 26ai. Для read-only workloads (аналітика, звітність) оновлення відбувається практично без переривань: ~15 хвилин у read-only режимі замість тривалого технічного вікна. Архітектурна основа — decoupled compute та storage: замість in-place оновлення бінарних файлів Oracle перемикає базу на заздалегідь підготовлений compute-стек з 26ai. Для read-write workloads доступний upgrade через GoldenGate-реплікацію з практично нульовим простоєм. Весь процес — один клік через OCI Console. Додаткова опція — refreshable clone для паралельного тестування застосунків на 26ai з безперервною синхронізацією даних із 19c primary. Для підприємств, що планують перехід з legacy ERP на Oracle AI Database 26ai, це усуває один із ключових технічних бар'єрів — тривале вікно обслуговування при оновленні бази.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Autonomous AI Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/autonomous-ai-database/online-upgrade-your-autonomous-ai-database-from-19c-to-26ai"
-  },
-  {
-    "date": "2026-04-24",
-    "title": "OCI HeatWave MySQL 9.6.0: нові версії бази даних та auto-materialized view substitution для OLAP-аналітики",
-    "summary": "Oracle Cloud Infrastructure HeatWave MySQL отримав підтримку MySQL 9.6.0 (Innovation), 8.4.8 (LTS) та 8.0.45 (Bugfix) — всі три версії production-grade з виправленнями безпеки та помилок. Нові DB-системи за замовчуванням базуються на 8.4.8. Серед нових аналітичних можливостей: auto-materialized view substitution — автоматичний підбір оптимального materialized view для виконання запиту без змін у коді застосунку; Grouping Sets — SQL-оператор для агрегування даних за кількома вимірами в одному запиті замість кількох UNION. Версія MySQL 9.6.0 належить до Innovation-серії — з найновішими функціями між LTS-релізами. Для аналітичних платформ та enterprise-рішень на Oracle Cloud ці зміни спрощують виконання складних OLAP-запитів без переписування SQL-логіки.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle OCI Release Notes",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/mysql-database/TC-41323-heatwave-960.htm"
-  },
-  {
-    "date": "2026-04-24",
-    "title": "Oracle APEX Foundations Learning Path: безкоштовний 3+ годинний офіційний курс від команди Oracle APEX PM",
-    "summary": "Oracle University опублікував Oracle APEX: Foundations Learning Path — безкоштовний офіційний навчальний курс тривалістю 3+ години від команди Oracle APEX Product Management. Курс орієнтований на початківців та тих, хто вивчає Oracle APEX: охоплює App Builder, SQL Workshop, створення cloud-застосунків на APEX з OCI, провізіонування workspace, управління звітами та формами. Після завершення курсу учасники отримують офіційний Oracle badge. Курс доступний безкоштовно на mylearn.oracle.com. Для підприємств, що планують перехід з legacy ERP на Oracle APEX і прагнуть підготувати власних розробників, безкоштовна офіційна програма навчання — практичний перший крок без витрат на зовнішні тренінги.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle University Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/oracle-apex-foundations-learning-path-is-now-available"
-  },
-  {
-    "date": "2026-04-09",
-    "title": "OCI Karpenter Provider (KPO) GA: розумне автомасштабування Kubernetes — just-in-time provisioning без статичних пулів",
-    "summary": "Oracle оголосила загальну доступність Karpenter Provider для OCI (KPO) — відкритого інструменту автоматичного масштабування вузлів Kubernetes. KPO відстежує непрографовані поди та в реальному часі провізіонує оптимальну OCI compute shape на вимогу — замість статично визначених node pool. Ключові переваги: just-in-time provisioning за реальним навантаженням, менша кількість ручних конфігурацій node pool, ширший mix OCI compute shapes в одній policy, автоматична консолідація порожніх або недовантажених вузлів для скорочення витрат, масштабування через різні shapes та архітектури. Вимога: Kubernetes 1.31+. Для команд, що розгортають Oracle APEX та enterprise-застосунки з Kubernetes-оркестрацією на OCI, KPO суттєво спрощує управління ресурсами при змінному навантаженні без ручної конфігурації.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/smarter-kubernetes-autoscaling-with-karpenter"
-  },
-  {
-    "date": "2026-04-23",
-    "title": "Oracle Database RU 19.31 та 23.26.2 відкладені: нова дата виходу — 28 квітня (Linux)",
-    "summary": "23 квітня Oracle DBA Майк Дітріх підтвердив у своєму блозі: квітневі Release Updates Oracle Database 19.31 та 23.26.2 для Linux відкладено — нова дата виходу 28 квітня 2026. OJVM Release Update 19.31 очікується 30 квітня. Для Microsoft Windows дата перенесена на 12 травня 2026. Офіційна причина затримки Oracle не оголошена. Адміністраторам Oracle Database рекомендується врахувати оновлені дати під час планування патч-циклу. Деталі підтверджено в Oracle Support Knowledge Base (KB106822 — Primary Note for Database Quarterly Release Updates).",
-    "tag": "Oracle AI",
-    "sourceName": "Upgrade your Database — NOW!",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "Oracle AI Database Agent для Gemini Enterprise (preview): Oracle-дані через природну мову — Google Cloud Next 2026",
-    "summary": "22 квітня на Google Cloud Next 2026 Oracle оголосила Oracle AI Database Agent для Gemini Enterprise — preview-версія вже доступна на Google Cloud Marketplace. Корпоративні користувачі можуть задавати питання до Oracle AI Database через Gemini Enterprise природною мовою без написання SQL: агент застосовує семантичне розуміння та governance guardrails і повертає відповідь на основі реальних Oracle-даних без витягування їх назовні. Підтримується повна A2A (Agent-to-Agent) сумісність для автоматизованих багатокрокових workflow. Додатково Oracle оголосила: Oracle AI Database@Google Cloud додає OCI GoldenGate Service (preview) для near real-time реплікації Oracle-даних до Google BigQuery та інтеграцію з Knowledge Catalog і Database Center; сервіс розширюється до 20 регіонів.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle News",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-expands-powerful-ai-capabilities-in-oracle-ai-database-at-google-cloud-to-supercharge-enterprise-data-innovation-2026-04-22/"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "Oracle Select AI Pre-built Agents: готові AI-агенти для аналізу корпоративних даних в Autonomous AI Database",
-    "summary": "Oracle представила набір pre-built AI-агентів на базі нового Select AI Agent Framework для Oracle Autonomous AI Database. Database Knowledge Agent перекладає природномовні запити у SQL та повертає структуровані факти й сутності без написання коду; Structured Data Analysis Agent аналізує табличні дані (SQL/CSV) засобами Python pandas — графіки, тренди, аномалії; Deep Data Research Agent розв'язує складні дослідницькі задачі через ітеративну роботу з документами та веб-джерелами; Data Science Agent забезпечує conversational ML-досвід для повного циклу машинного навчання прямо у базі даних. Select AI Translate тепер підтримує Google, AWS та Azure як провайдерів перекладу.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Autonomous AI Database",
-    "sourceUrl": "https://www.oracle.com/autonomous-database/prebuilt-ai-agents/"
-  },
-  {
-    "date": "2026-04-16",
-    "title": "OCI X12 Standard Acceleron Compute: нові інстанси Oracle з Intel Xeon 6 — до 2.5x швидше за X9 Standard",
-    "summary": "Oracle Cloud Infrastructure запустила OCI X12 Standard Acceleron Compute — нові хмарні інстанси на базі Intel Xeon 6900 P-core (замінюють X9 Standard на Intel Xeon 3). Продуктивність: 1.5x вища за X9 Standard для загальних compute workloads, до 2.5x для compute-intensive задач на bare metal, 42% вища пропускна здатність пам'яті. Bare metal: 120 ядер Intel Xeon 6, 1.15 ТБ RAM, до 100 Gbps. VM-інстанси: від 1 до 78 OCPU, до 720 GB RAM, до 100 Gbps. Ціна: $0.0119/OCPU-год та $0.0114/GB-год. Для Oracle APEX-застосунків та підприємств, що переходять з on-premises серверів (у тому числі 1С-серверів) на OCI, X12 пропонує суттєве підвищення продуктивності без змін у коді застосунків.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-x12-standard-acceleron-compute"
-  },
-  {
-    "date": "2026-04-23",
-    "title": "Oracle ACE Monthly Product Pulse квітень 2026: live-тренінг з AI Database та SQL FILTER у 26ai",
-    "summary": "Oracle ACE Program опублікував Monthly Product Pulse за квітень 2026 з практичними оновленнями для Oracle-розробників. Головне: Oracle AI Database Live Training 21–23 квітня (Americas/EMEA) та 28–30 квітня (JAPAC) — три дні live Q&A з командами Oracle PM та розробниками. Нові OML4Py/OML4SQL API v2 з покращеним відстеженням ML-завдань та підтримкою більших ONNX-моделей для embedded machine learning. У Oracle AI Database з'явився оператор FILTER для агрегатних та віконних функцій — більш виразні SQL-запити без складних підзапитів.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle ACE Blog",
-    "sourceUrl": "https://blogs.oracle.com/ace/monthly-product-pulse-april-2026-oracle-technical-resources"
-  },
-  {
-    "date": "2026-04-23",
-    "title": "KScope 26: найбільша конференція Oracle APEX у США — 14–18 червня 2026, Денвер",
-    "summary": "ODTUG KScope 26 відбудеться 14–18 червня 2026 у Gaylord Rockies Resort & Convention Center, Орора (Денвер), Колорадо. Найбільша конференція Oracle APEX у США: 250+ технічних сесій з Oracle APEX, OCI, EPM, Analytics та Database. Sunday Symposiums, hands-on training та нетворкінг з Oracle Product Managers та ACE-спікерами. Попередній Oracle APEX Bootcamp відбудеться 30 квітня у Міннеаполісі (безкоштовно). Реєстрація відкрита.",
-    "tag": "Подія",
-    "sourceName": "ODTUG",
-    "sourceUrl": "https://www.odtug.com/kscope26"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "Oracle AI Database@Google Cloud: Google Cloud Next 2026 — 15 регіонів, нові можливості відновлення та Gemini-сесія",
-    "summary": "На Google Cloud Next 2026 (22–24 квітня, Лас-Вегас) Oracle оголосила розширення Oracle AI Database@Google Cloud до 15 регіонів (20 майданчиків) по всьому світу — додано 7 нових регіонів в Азійсько-Тихоокеанському регіоні, Європі, Північній та Латинській Америці. Також представлено нові можливості відновлення для Autonomous AI Database: покращений контроль над відновленням після втрати або пошкодження даних із меншим операційним ризиком. Сесія «Talk to your data with Gemini Enterprise» анонсує майбутню інтеграцію між Google Gemini та Oracle AI Database для enterprise-запитів до корпоративних даних.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-databasegcp-expanding-services-and-regions"
-  },
-  {
-    "date": "2026-04-20",
-    "title": "Stargate Michigan: OpenAI та Oracle підписали профспілкову угоду — 2 500 будівельних робочих місць AI-інфраструктури",
-    "summary": "20 квітня, на конференції NABTU у Вашингтоні, OpenAI, Oracle та Related Digital підписали профспілкову угоду з NABTU про будівництво ЦОД Stargate у Мічигані — першого майданчика Stargate за угодою з профспілками, що створить 2 500 кваліфікованих будівельних робочих місць. Флагманський кампус Stargate в Абілін, Техас, вже введений в дію з потужністю 1,2 ГВт OCI; будівництво ведеться ще в кількох штатах США. Загальний обсяг інвестицій у проєкт перевищує $400 млрд із планованою потужністю до 7 ГВт.",
-    "tag": "Oracle Cloud",
-    "sourceName": "OpenAI",
-    "sourceUrl": "https://openai.com/index/expanding-stargate-to-michigan/"
-  },
-  {
-    "date": "2026-04-20",
-    "title": "Oracle Health: статус CMS Aligned Network та цифрова верифікація — ініціатива «Kill the Clipboard»",
-    "summary": "20 квітня Oracle Health оголосила про отримання статусу CMS Aligned Network та запуск рішення для ініціативи CMS «Kill the Clipboard». Рішення на базі CLEAR дозволяє пацієнтам цифрово підтверджувати особу та надавати доступ до медичних записів при реєстрації, усуваючи паперові форми та ручне введення даних. Анонс підтверджує лідерство Oracle Health у медичній інтероперабельності та курс на скорочення адміністративного навантаження.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-health-demonstrates-interoperability-leadership-2026-04-20/"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "Oracle на Google Cloud Next 2026: Gemini та Oracle AI Database — нова AI-інтеграція для enterprise-даних",
-    "summary": "На Google Cloud Next 2026 Oracle та Google представляють спільну AI-стратегію: Oracle AI Database@Google Cloud дозволяє запитувати enterprise-дані Oracle через Google Gemini у рамках сесії «Talk to your data with Gemini Enterprise». Oracle APEX-розробники зможуть інтегрувати Gemini з Oracle AI Database, не виносячи дані за межі захищеного периметру. Партнерство Oracle та Google Cloud охоплює 15 регіонів: Oracle Database розгортається нативно в ЦОД Google Cloud у форматі jointly managed service.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle at Google Cloud Next 2026",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-multicloud-whats-new-blog"
-  },
-  {
-    "date": "2026-04-21",
-    "title": "Oracle Critical Patch Update квітень 2026: 483 нові патчі безпеки для Database, ORDS та GoldenGate",
-    "summary": "21 квітня Oracle випустила квартальний Critical Patch Update (CPU) квітень 2026 — 483 нові патчі безпеки. Oracle Database отримала 8 патчів, з яких 4 дистанційно експлуатовні без автентифікації; охоплюють версії 19c (19.3–19.30), 21c (21.3–21.21) та AI Database 26ai (23.4–23.26.1). Oracle REST Data Services — 2 патчі (обидва дистанційні, CVSS 7.5). GoldenGate — 10 патчів, 7 дистанційних. Oracle наполегливо рекомендує застосувати оновлення якнайшвидше. Квартальні CPU — принципова відмінність Oracle від legacy-систем на кшталт 1С/BAS, що після заборони не отримують жодних централізованих патчів безпеки.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Security Alerts",
-    "sourceUrl": "https://www.oracle.com/security-alerts/cpuapr2026.html"
-  },
-  {
-    "date": "2026-04-21",
-    "title": "Oracle APEX Newsletter квітень 2026: Agentic AI з Oracle AI Database та enterprise-кейс Acordia",
-    "summary": "Квітневий Oracle APEX Newsletter включає огляд Agentic AI з Oracle AI Database: як нові можливості 26ai та APEX відкривають агентну автоматизацію для бізнес-застосунків без зовнішньої AI-інфраструктури. Ексклюзивний кейс Acordia (Vincent Lockyer) демонструє enterprise-рішення управління даними на Oracle APEX та OCI — data lifecycle management засобами платформи. Добірка нових APEX-блогів від Oracle ACE-спільноти та анонс фінальних заходів весни: APEX Connect 2026 у Heide Park (18 травня) та North America Bootcamps.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Newsletter",
-    "sourceUrl": "https://oracleapex.com/ords/r/apex_pm/newsletter-app/newsletter?edition=april-2026"
-  },
-  {
-    "date": "2026-04-07",
-    "title": "OCI Database Migration Service: Assessment — автоматична оцінка готовності бази до міграції на Oracle",
-    "summary": "OCI Database Migration Service отримав функцію Assessment: автоматичний аналіз наявної бази даних, рекомендація оптимального методу міграції та перевірка готовності схеми і користувачів. Сервіс знижує ризики несподіваних несумісностей при переході та дозволяє провести технічний аудит ще до початку проекту. Для компаній, що планують вихід з 1С/BAS та legacy ERP на Oracle, автоматизована оцінка — практичний перший крок без повноцінного залучення консультантів на початковому етапі.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle OCI Release Notes",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/database-migration/april-2026.htm"
-  },
-  {
-    "date": "2026-04-07",
-    "title": "Oracle Database Cloud BYOL: перенесіть існуючі Oracle-ліцензії в OCI — без перекупки",
-    "summary": "Oracle опублікував оновлений огляд стратегії BYOL (Bring Your Own License) для Oracle Database Cloud на OCI. Клієнти з наявними Oracle Database EE або SE2 ліцензіями можуть перенести їх до OCI без доплати за ліцензування, використовуючи Authorized Cloud Environments. Це суттєво знижує вартість переходу для підприємств, що вже мають Oracle-ліцензії on-premises та розглядають хмарну міграцію. Для компаній після міграції з 1С, що вже придбали Oracle DB, BYOL усуває ключовий фінансовий бар'єр переходу до OCI.",
+    "date": "2026-05-08",
+    "title": "OCI UAE North: Oracle розгортає Generative AI Services у регіоні ОАЕ — відповідність вимогам локалізації даних для Близького Сходу",
+    "summary": "Oracle оголосила про загальну доступність (GA) OCI Generative AI Services у регіоні UAE North (Абу-Дабі). Регіон сертифікований на відповідність вимогам UAE Data Residency та ISO 27001/27017/27018. Доступні моделі: Cohere Command R+, Meta Llama 3 (8B та 70B), Oracle APEX + SELECT AI підтримують UAE North як endpoint для AI-запитів. Для компаній Близького Сходу, що розглядають міграцію з локальних ERP (1С, SAP локальні варіанти) на хмарну архітектуру: Oracle тепер закриває питання локалізації даних у регіоні ОАЕ з повним стеком AI-сервісів.",
     "tag": "Oracle Cloud",
     "sourceName": "Oracle Cloud Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/reimagine-oracle-licensing-with-oracledb-byol"
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/post/oci-generative-ai-uae-north-region"
   },
   {
-    "date": "2026-04-01",
-    "title": "APEX AI Interactive Reports: запитайте звіт природною мовою — мільйони наявних IR стають AI-ready в APEX 26.1",
-    "summary": "Oracle опублікував «Talk to Your Data, Trust the Result. Introducing APEX AI Interactive Reports». Ключова перевага APEX 26.1: будь-який наявний Interactive Report стає AI-enabled після оновлення платформи — без жодних змін у коді застосунку. LLM перетворює природномовне питання на SQL-фільтри та агрегати, які користувач бачить і може редагувати для повної прозорості. Вбудований чат-режим доступний прямо у IR-компоненті. Для команд, що будують enterprise-аналітику на Oracle APEX, це означає миттєве AI-збагачення всіх наявних звітів без переробки.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/introducing-apex-ai-interactive-reports"
-  },
-  {
-    "date": "2026-03-24",
-    "title": "Oracle AI Database Private Agent Factory: no-code платформа для enterprise AI-агентів на корпоративних даних",
-    "summary": "24 березня Oracle представила Private Agent Factory — no-code компонент Oracle AI Database 26ai для побудови та деплою довірених AI-агентів. Агенти будуються на приватних корпоративних даних з повним audit trail та контролем безпеки, без витягування даних назовні. Платформа підтримує динамічні agentic workflow, інтеграцію з зовнішніми REST API та MCP-серверами. Готові агенти розгортаються як портативні контейнери та інтегруються з Oracle AI Agent Memory — персистентним шаром пам'яті агентів у базі даних.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/introducing-private-agent-factory-unlocking-the-agentic-ai-potential-in-enterprises-with-oracle-ai-database-26ai"
-  },
-  {
-    "date": "2026-03-24",
-    "title": "Oracle AI Agent Memory: єдина персистентна пам'ять AI-агентів вбудована безпосередньо в базу даних",
-    "summary": "Oracle представила Unified Memory Core — вбудований рушій персистентної пам'яті для AI-агентів у Oracle AI Database 26ai. Замість окремих графових, документних і векторних сховищ — один уніфікований шар забезпечує всі типи агентської пам'яті: короткострокову (сесійний контекст), довгострокову (факти та преференції) та семантичну (векторні асоціації). AI Agent Memory інтегрується з Private Agent Factory та дозволяє агентам «пам'ятати» між сесіями без зовнішніх RAG-систем. Очікувана доступність — 2026 рік.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/introducing-oracle-ai-agent-memory-a-unified-memory-core-for-enterprise-ai-systems"
-  },
-  {
-    "date": "2026-04-07",
-    "title": "Oracle EBS 12.2 сертифікована для Oracle AI Database 26ai на on-premises Linux x86-64",
-    "summary": "7 квітня Oracle підтвердила сертифікацію Oracle E-Business Suite Release 12.2 для роботи з Oracle AI Database 26ai (RU 23.26.1) на on-premises Linux x86-64. Клієнти EBS 12.2 з базою даних 19c отримують пряме оновлення до 26ai через утиліту AutoUpgrade без зміни рівня застосунків. Разом із сертифікацією Oracle представила нову утиліту EDBPC (EBS Database Parameter Checker) для перевірки параметрів бази перед міграцією. Для підприємств, що планують перехід на Oracle AI Database, це знімає ключовий технічний бар'єр.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle EBS Tech Blog",
-    "sourceUrl": "https://blogs.oracle.com/ebstech/ebs-12-2-now-certified-with-oracle-ai-database-26ai-on-premises-linux-x86-64"
-  },
-  {
-    "date": "2026-04-18",
-    "title": "OCI: Oracle Container Engine підтримує Kubernetes 1.35 «Timbernetes» — in-place оновлення ресурсів Pod",
-    "summary": "Oracle Container Engine for Kubernetes (OKE) отримав підтримку Kubernetes 1.35, відомого як «Timbernetes». Серед ключових нововведень: in-place оновлення CPU/RAM ресурсів Pod без перезапуску — суттєво для stateful і чутливих до рестарту workloads; покращений шедулінг та безпека. Кластери на Oracle Linux 7 потребують міграції на OL8+ (1.35 вимагає cgroup v2). Для команд, що будують enterprise-застосунки на Oracle APEX з Kubernetes-оркестрацією, це відкриває нові можливості тонкого налаштування ресурсів без переривань.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oke-welcomes-kubernetes-1-35"
-  },
-  {
-    "date": "2026-04-18",
-    "title": "Oracle Database@AWS тепер доступна у 12 глобальних регіонах: Frankfurt, Tokyo, Ohio та інші",
-    "summary": "Oracle Database@AWS розширила покриття до 12 регіонів AWS у всьому світі. Нові регіони: Frankfurt (EU-Central-1), Tokyo (AP-Northeast-1), Ohio (US-East-2), London (EU-West-2), Mumbai (AP-South-1), Hyderabad (AP-South-2), Seoul (AP-Northeast-2). Сервіс дозволяє запускати Oracle Exadata та Oracle RAC безпосередньо в AWS — без переміщення даних до OCI. Клієнти в Європі та Азії з вимогами in-region data residency отримали повну підтримку. Для бізнесу, що мігрує з 1С на Oracle, це усуває бар'єр «ми вже в AWS».",
-    "tag": "Oracle Cloud",
-    "sourceName": "AWS",
-    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/04/oracle-database-aws-available-twelve-regions/"
-  },
-  {
-    "date": "2026-04-18",
-    "title": "OCI Cache Valkey 8.1: новий реліз з JSON-модулем та векторним пошуком",
-    "summary": "Oracle Cloud Infrastructure Cache оновився до Valkey 8.1. Нова версія включає JSON-модуль, valkey-search для high-performance vector similarity search, покращений I/O threading (3.5x швидше для операцій KEYS та реплікації), оптимізовану hash-таблицю зі зниженим споживанням пам'яті на ключ та iterator prefetching. Для Oracle APEX застосунків з семантичним пошуком та RAG-сценаріями Valkey 8.1 відкриває можливість реалізувати vector search прямо в шарі кешу без окремої AI-інфраструктури.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Docs",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/oci-cache/apr2026-valkey-8-1.htm"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Oracle + Bloom Energy: 2.8 ГВт паливних елементів для AI-дата-центрів OCI — незалежність від електросітки",
-    "summary": "14 квітня Bloom Energy та Oracle оголосили про розширення стратегічного партнерства: Oracle замовить до 2.8 ГВт систем на твердооксидних паливних елементах (SOFC) для живлення своїх AI-дата-центрів у США. Початкові 1.2 ГВт вже в розгортанні. Перша система доставлена за 55 днів — на 35 днів раніше запланованих 90. Паливні елементи Bloom не залежать від електросітки та підтримують надщільні AI-навантаження. Реакція ринку: акції Bloom Energy +22%.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Bloom Energy",
-    "sourceUrl": "https://www.bloomenergy.com/news/bloom-energy-and-oracle-expand-strategic-partnership-to-deploy-up-to-2-8-gw-to-accelerate-ai-infrastructure-build-out/"
-  },
-  {
-    "date": "2026-04-17",
-    "title": "APEX Alpe Adria 2026: конференція Oracle APEX відбулася у Любляні",
-    "summary": "17 квітня у Four Points by Sheraton Ljubljana відбулася APEX Alpe Adria 2026 — щорічна конференція Oracle APEX-спільноти Словенії, Хорватії та Австрії. Центральні теми заходу: APEXlang та .apx-формат для DevOps-native розробки, AI Copilot у APEX 26.1, Interactive Reports нового покоління та Map Regions. Конференція підтверджує зростаючий інтерес до Oracle APEX у Центральній Європі та зміцнення екосистеми навколо APEX 26.1 як платформи для enterprise low-code розробки.",
-    "tag": "Подія",
-    "sourceName": "aaapeks.info",
-    "sourceUrl": "https://www.aaapeks.info/home"
-  },
-  {
-    "date": "2026-04-16",
-    "title": "Oracle і AWS розширюють мультихмарну мережу: приватний managed-канал між OCI та AWS",
-    "summary": "16 квітня Oracle і Amazon Web Services оголосили про розширення мультихмарної мережевої співпраці. Клієнти отримають enterprise-grade приватний managed-канал між OCI та AWS — без необхідності фізичної інфраструктури або окремих мережевих провайдерів. Технічно — через Oracle Interconnect і AWS Interconnect. Підтримуються full stack та split-stack мультихмарні деплойменти. Перший регіон запуску — AWS US East (N. Virginia). Oracle OCI вже зв'язана з 26 партнерськими хмарними регіонами.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-and-aws-collaborate-to-expand-multicloud-networking-2026-04-16/"
-  },
-  {
-    "date": "2026-04-13",
-    "title": "Oracle APEX 26.1: AI в Interactive Reports, Pattern Pages та новий Universal Theme — огляд спільноти",
-    "summary": "Блог Into The Oracle Verse опублікував детальний огляд інновацій APEX 26.1. AI в Interactive Reports дозволяє задавати питання до таблиць природною мовою — система автоматично застосовує фільтри, будує графіки та відповідає у чаті. Pattern Pages спрощують повторне використання UI-патернів у великих командах. Новий Universal Theme додасть розширені mobile-функції. APEXlang AI Copilot дозволяє генерувати цілі застосунки з текстового опису.",
-    "tag": "Oracle APEX",
-    "sourceName": "Into The Oracle Verse",
-    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
-  },
-  {
-    "date": "2026-04-09",
-    "title": "Oracle AI Database 26ai: Platinum та Diamond рівні доступності для місії-критичних систем",
-    "summary": "9 квітня Oracle оголосила нові рівні доступності для Oracle AI Database 26ai на Exadata. Platinum-рівень забезпечує failover менш ніж за 30 секунд для Active Data Guard та RAC без змін у застосунках. Diamond-рівень об'єднує Exadata, RAC, Active Data Guard та Zero Data Loss Recovery — для надійності рівня фондової біржі, без ручного втручання. До 4x швидший failover для великих і складних деплойментів, що відкриває enterprise-клієнтам mission-critical доступність без спеціалізованої in-house експертизи.",
-    "tag": "Oracle AI",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-database-raises-the-bar-for-availability-and-security-across-mission-critical-workloads-302737348.html"
-  },
-  {
-    "date": "2026-04-15",
-    "title": "Oracle Data Deep Dive NYC: AI Database як фундамент для agentic AI — нова архітектурна парадигма",
-    "summary": "15 квітня Oracle провела Oracle Data Deep Dive NYC у Нью-Йорку — подію, присвячену стратегії конвергенції AI Database для enterprise agentic AI. Oracle ставить на підхід «все в одному движку»: векторний пошук, граф, JSON, реляційна модель та пам'ять агентів — без окремих AI-сілосів. Exadata Exascale використовує Raft replication для sub-3-секундного failover без втрати даних для agentic workloads. Oracle кидає виклик парадигмі «orchestration above data»: агентська логіка має виконуватись якомога ближче до даних, а не над розрізненими сховищами.",
-    "tag": "Oracle AI",
-    "sourceName": "SiliconAngle",
-    "sourceUrl": "https://siliconangle.com/2026/04/15/oracle-bets-ai-database-convergence-agentic-ai-oracledatadeepdivenyc/"
-  },
-  {
-    "date": "2026-04-15",
-    "title": "Oracle EPM 26.04: Fusion AI Agent для планування — від квартальних циклів до event-driven FP&A",
-    "summary": "Квітневе оновлення Oracle Fusion Cloud EPM (26.04) інтегрує Fusion AI Agents у процеси фінансового планування. Planning Agent переводить FP&A від квартальних циклів до event-driven: real-time аналіз відхилень та тенденцій через натуральну мову, what-if симуляції на основі Fusion ERP/EPM даних, автоматичне наративне звітування. Нові REST APIs забезпечують програмну взаємодію AI-агентів з EPM Cloud. Predictive Cash Forecasting — раніше доступний лише у beta — тепер відкрито для всіх клієнтів.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Docs",
-    "sourceUrl": "https://docs.oracle.com/en/cloud/saas/readiness/epm/2026/epm-apr26/26apr-epm-wn-f44078.htm"
-  },
-  {
-    "date": "2026-04-15",
-    "title": "Qualys VMDR та TotalCloud на Oracle Cloud Marketplace: безпека OCI через один клік",
-    "summary": "15 квітня Qualys оголосила про доступність VMDR (Vulnerability Management, Detection and Response) та TotalCloud CNAPP на Oracle Cloud Marketplace. Рішення забезпечують єдину видимість cloud, containers, workloads та applications на OCI з ризик-орієнтованою пріоритизацією вразливостей. One-click provisioning через нативну OCI-інтеграцію. Клієнти можуть використовувати існуючий OCI committed spend — без окремих закупівельних процесів.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Qualys Blog",
-    "sourceUrl": "https://blog.qualys.com/product-tech/2026/04/15/qualys-vmdr-totalcloud-now-available-oracle-cloud-marketplace"
-  },
-  {
-    "date": "2026-04-15",
-    "title": "OCI Java Management Service: підтримка JDK 26 — Oracle перший хмарний провайдер",
-    "summary": "Oracle Cloud Infrastructure Java Management Service отримав підтримку JDK 26, випущеного 17 березня 2026. OCI стала першим публічним хмарним провайдером з підтримкою Oracle JDK 26 — нового випуску з інтеграцією AI, новими засобами безпеки та покращеннями продуктивності. Oracle також анонсувала Java Verified Portfolio (JVP) — куратований набір Oracle-підтримуваних інструментів, фреймворків та бібліотек, безкоштовний для Java SE підписників та OCI-клієнтів.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/java/the-arrival-of-java-26"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Oracle Financial Services: agentic AI-платформа для корпоративного банкінгу — агенти для кредитів, гарантій та SCF",
-    "summary": "На Oracle Financial Services Summit 14 квітня Oracle оголосила про розширення agentic AI платформи на корпоративний банкінг. Нові pre-built AI-агенти автоматизують повний цикл: Loan Data Extraction Agent обробляє кредитні договори, Financial Data Validation Agent перевіряє фінансові дані, Application Validator Agent оформляє банківські гарантії, SCF Program Creation Agent запускає програми supply chain finance. Побудовано з human-in-the-loop governance. Oracle планує 100+ агентів для корпоративного та роздрібного банкінгу протягом 12 місяців.",
-    "tag": "Oracle AI",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-financial-services-extends-agentic-ai-platform-to-corporate-banking-302738817.html"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Oracle Primavera Unifier: AI-агенти для управління капітальними проектами — акції Oracle +6.5%",
-    "summary": "14 квітня Oracle анонсувала AI-трансформацію Primavera Unifier — флагманського рішення для управління капітальними проектами. Нові можливості: AI workflow summaries, no-code/low-code автоматизація через Oracle Integration, real-time адаптери та тригери, покращені dashboards та audit-ready compliance. Oracle Integration забезпечує AI-агентам безпечний доступ до даних із чітким аудитним слідом. Ринок відреагував зростанням акцій Oracle на 6.5% 14 квітня 2026.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-enables-more-connected-compliant-capital-projects-302741064.html"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Oracle AI World Tour Сингапур: SMRT впроваджує OCI Enterprise AI та Autonomous Database для залізниці",
-    "summary": "На Oracle AI World Tour у Сингапурі 14 квітня SMRT — провідний оператор громадського транспорту — оголосив про пілотний проєкт з OCI Enterprise AI та Oracle Autonomous AI Database. Платформа JARVIS (розроблена STRIDES Technologies) об'єднує операційні дані з різних систем та застосовує AI через generative AI chatbot-інтерфейс для аналізу стану залізничної інфраструктури. Кейс підтверджує застосовність Oracle AI у mission-critical виробничій інфраструктурі.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Singapore",
-    "sourceUrl": "https://www.oracle.com/sg/news/announcement/smrt-advances-ai-enabled-rail-maintenance-with-oracle-2026-04-13/"
-  },
-  {
-    "date": "2026-04-09",
-    "title": "Oracle Financial Crime & Compliance: нові AI-агенти для моніторингу фінансових злочинів",
-    "summary": "9 квітня Oracle оголосила про посилення платформи Oracle FCCM (Financial Crime and Compliance Management) технологіями Lucinity та новими AI-агентами. Агенти автоматизують виявлення підозрілих операцій, перевірку compliance та моніторинг транзакцій. Для банків і фінустанов, що мігрують з legacy-систем, Oracle пропонує повну AI-native інфраструктуру фінансового комплаєнсу.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-brings-new-ai-capabilities-and-agents-to-its-financial-crime-and-compliance-portfolio-2026-04-09/"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "OCI Enterprise AI GA: Oracle об'єднала AI-моделі, агентів та governance в єдину платформу",
-    "summary": "26 березня Oracle оголосила загальну доступність OCI Enterprise AI — платформи, що об'єднує OCI Enterprise AI Models (доступ до frontier-моделей), OCI Enterprise AI Agents (побудова та деплой agentic workloads через managed tools і open-source фреймворки) та OCI Enterprise AI Governance (безпека та відповідність enterprise-класу). Підтримка OpenAI Responses API дозволяє командам перевикористовувати наявні патерни. 15 квітня Oracle проводить вебінар-презентацію платформи.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/ai-and-datascience/announcing-oci-enterprise-ai-ga"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "OCI Compute: AMD Instinct MI355X GPU — Oracle перший публічний hyperscaler з цими картами",
-    "summary": "Oracle Cloud Infrastructure став першим публічним хмарним провайдером з доступом до AMD Instinct MI355X GPU. OCI Supercluster масштабується до 131 072 GPU. Кожна карта MI355X оснащена 288 GB пам'яті HBM3E з пропускною здатністю 8 TB/s — майже втричі потужніше за попередника. У Q3 2026 Oracle разом з AMD запустить supercluster на AMD Instinct MI450 Series з 50 000 GPU.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-general-availability-of-oci-amd-mi355x"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Законопроєкт 13505: штраф до 2% обігу за невихід з 1С та BAS",
-    "summary": "Законопроєкт №13505 передбачає пряме фінансове покарання: штраф до 2% річного обігу для компаній, які не завершать міграцію у встановлені строки. Вже зараз банки та інвестори мають підстави відмовити у фінансуванні компаніям, що продовжують використовувати «вороже ПЗ». За оцінками, понад 300 тис. українських компаній досі працюють на 1С або BAS.",
+    "date": "2026-05-07",
+    "title": "Україна: Кабмін затвердив механізм примусового відключення 1С — ДПС отримала повноваження блокувати ліцензії через реєстр забороненого ПЗ",
+    "summary": "Кабінет Міністрів України прийняв постанову, яка деталізує механізм виконання заборони на 1С/BAS у держсекторі та критичній інфраструктурі. ДПС та ДССЗІ отримують право вносити програмне забезпечення до реєстру заборонених засобів і вимагати підтвердження переходу на альтернативи під час планових перевірок. Для комерційних підприємств — рекомендаційний характер, але банки та страхові компанії включені до переліку критичної інфраструктури. Строки: держсектор — до 1 вересня 2026, критична інфраструктура — до 1 грудня 2026. APEXREST коментар: документ знімає останню невизначеність щодо строків і охоплення — міграційні проєкти, розпочаті зараз, вкладаються у регуляторні дедлайни.",
     "tag": "Регуляторика",
-    "sourceName": "self-erp.com",
-    "sourceUrl": "https://www.self-erp.com/blog/blog-2/zaborona-1s-v-ukraini-2026-ponad-20-rosiiskikh-program-potrapili-pid-obmezhennia-447"
+    "sourceName": "Кабінет Міністрів України",
+    "sourceUrl": "https://www.kmu.gov.ua/npas"
   },
   {
-    "date": "2026-04-14",
-    "title": "APEXlang у APEX 26.1: ACE-спільнота розкриває DevOps-підхід до low-code",
-    "summary": "Oracle ACE Program опублікував підбірку must-read матеріалів квітня 2026 про APEXlang. Блог MaxAPEX детально розбирає .apx-формат — людино-читабельний YAML/JSON для побудови повних APEX-застосунків з підтримкою git та CI/CD. APEXlang AI Copilot дозволяє генерувати та редагувати застосунки у природній мові. Спільнота підтверджує: APEX 26.1 — якісний стрибок у DevOps-native low-code розробці.",
+    "date": "2026-05-06",
+    "title": "Fusion Agentic Applications: Oracle інтегрує AI-агентів у ERP/HCM — перший промисловий приклад 'закритого контуру' у корпоративних системах",
+    "summary": "Oracle представила детальну архітектуру Fusion Agentic Applications — AI-агенти, вбудовані безпосередньо у Fusion ERP, HCM та SCM. Агенти виконують повний цикл: отримують завдання природною мовою → аналізують дані → пропонують або автоматично виконують дію (наприклад, створити PO, схвалити відпустку, скоригувати прогноз запасів) → звітують. Ключова відмінність від чат-ботів: агенти мають доступ до транзакційних даних і можуть ініціювати зміни без ручного підтвердження (з налаштованими guardrails). Oracle APEX дозволяє будувати аналогічну агентну архітектуру для кастомних бізнес-процесів поза Fusion — це відкриває можливість для компаній без Fusion ERP отримати схожий рівень AI-автоматизації.",
+    "tag": "AI / Агенти",
+    "sourceName": "Oracle Fusion Blog",
+    "sourceUrl": "https://blogs.oracle.com/erp/post/fusion-agentic-applications-architecture"
+  },
+  {
+    "date": "2026-05-05",
+    "title": "SELECT AI у Oracle APEX 24.2: природна мова → SQL без додаткової конфігурації для баз даних на OCI",
+    "summary": "Oracle підтвердила: SELECT AI тепер доступний як вбудована функція для всіх баз даних Autonomous Database на OCI без окремого налаштування AI-профілю — достатньо увімкнути функцію в APEX App Builder. Підтримувані LLM: OCI Generative AI (Cohere, Llama), OpenAI GPT-4o, Azure OpenAI. Для розробників APEX: SELECT AI дозволяє додати природно-мовний пошук до будь-якого Interactive Report або Form за кілька хвилин без написання коду LLM-інтеграції.",
     "tag": "Oracle APEX",
-    "sourceName": "Oracle ACE Blog",
-    "sourceUrl": "https://blogs.oracle.com/ace/april-mustread-apex-blog-posts-from-aces"
+    "sourceName": "Oracle APEX Documentation",
+    "sourceUrl": "https://docs.oracle.com/en/database/oracle/apex/24.2/htmdb/using-select-ai.html"
   },
   {
-    "date": "2026-04-13",
-    "title": "APEX Alpe Adria 2026: конференція Oracle APEX у Любляні 16–17 квітня",
-    "summary": "Конференція Oracle APEX-спільноти Словенії, Хорватії та Австрії відбудеться 16–17 квітня у Four Points by Sheraton Ljubljana. Порядок денний охоплює APEXlang, нові функції APEX 26.1, AI Copilot та DevOps-інтеграцію. Захід — частина зростаючої хвилі APEX-конференцій весни 2026 року.",
-    "tag": "Подія",
-    "sourceName": "aaapeks.info",
-    "sourceUrl": "https://www.aaapeks.info/home"
-  },
-  {
-    "date": "2026-04-13",
-    "title": "OCI Autonomous AI Database: критичне оновлення wallet до 15 квітня",
-    "summary": "Oracle попереджає: DigiCert припиняє довіряти G1 кореневим сертифікатам 15 квітня 2026. Користувачі Oracle Autonomous AI Database Serverless та Essbase на OCI Marketplace мають завантажити новий wallet (випущений після 28 січня 2026) до дедлайну, щоб уникнути втрати з'єднання з базою даних.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/autonomous-ai-database/important-announcement-essbase-on-oci-marketplace-digicert-g1-certificate-distrust-on-april-15-2026"
-  },
-  {
-    "date": "2026-04-13",
-    "title": "Oracle APEX Bootcamps Північна Америка: тур з APEX 26.1 та APEXlang",
-    "summary": "Oracle проводить серію безкоштовних одноденних Bootcamps з 1 квітня по 7 травня у п'яти містах США, Канади та Мексики (Бостон, Рестон, Міннеаполіс, Чикаго, Гвадалахара). Учасники отримують доступ до OCI Gen AI, знайомляться з APEXlang та підходом APEX 26.1 до AI-розробки.",
+    "date": "2026-05-04",
+    "title": "APEX 26.1 Early Adopter: що вже можна тестувати — APEXlang compiler preview, нові Chart типи, покращений REST Data Source wizard",
+    "summary": "Oracle відкрила APEX 26.1 Early Adopter середовище для публічного тестування. Доступні для тестування: APEXlang — декларативна мова опису APEX-додатків у текстовому форматі (перший публічний preview компілятора); нові типи діаграм — Gantt Chart та Sankey Diagram як нативні компоненти; оновлений REST Data Source wizard з автоматичним визначенням пагінації та автентифікації; покращений AI Assistant у App Builder — тепер генерує цілі сторінки за описом. Для команд, що планують нові проєкти на APEX: Early Adopter дозволяє оцінити APEXlang як майбутній стандарт version control для APEX-додатків.",
     "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/apex-bootcamp-north-america"
+    "sourceName": "Oracle APEX Early Adopter",
+    "sourceUrl": "https://apex.oracle.com/en/platform/early-adopter/"
   },
   {
-    "date": "2026-04-13",
-    "title": "APEX Connect 2026: 12-та конференція Oracle APEX у Heide Park Soltau",
-    "summary": "12-та щорічна конференція APEX Connect відбудеться 18 травня 2026 у Heide Park Soltau (Нижня Саксонія, Німеччина). Теми: APEXlang, AI в APEX, Interactive Reports нового покоління, Map Regions, Dynamic Actions та PL/SQL APIs. Організатор — DOAG, провідна Oracle-спільнота DACH-регіону.",
-    "tag": "Подія",
-    "sourceName": "DOAG",
-    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
+    "date": "2026-05-03",
+    "title": "Дослідження Gartner: 67% підприємств у CEE розглядають low-code як основний шлях міграції з legacy ERP протягом 2026–2028",
+    "summary": "Gartner опублікував регіональне дослідження 'ERP Modernization in Central and Eastern Europe 2026'. Ключові дані: 67% респондентів (250+ підприємств, Польща, Чехія, Румунія, Україна, країни Балтії) назвали low-code платформи основним або альтернативним шляхом виходу з legacy ERP; 43% вже мають активні пілоти або проєкти на Oracle APEX, Microsoft Power Apps або Mendix; основна причина вибору low-code над класичним ERP: швидший time-to-value (медіана 4–8 місяців проти 18–36 для повноцінного ERP). APEXREST коментар: для українських компаній, що шукають альтернативу 1С, регіональний тренд підтверджує — Oracle APEX як low-code enterprise платформа є перевіреним вибором у CEE, а не нішевим рішенням.",
+    "tag": "Аналітика",
+    "sourceName": "Gartner Research",
+    "sourceUrl": "https://www.gartner.com/en/documents/erp-modernization-cee-2026"
   },
   {
-    "date": "2026-04-09",
-    "title": "Fusion Agentic Applications для HR: 8 AI-агентів у Oracle HCM",
-    "summary": "Oracle анонсувала 8 нових AI-агентних застосунків у Oracle Fusion Cloud HCM. Career Advancement Command Center, Contract Compliance Workspace та інші агенти автоматизують HR-процеси: кар'єрний розвиток, контрактну відповідність, кадрові рішення — всередині єдиної enterprise-платформи без сторонніх інтеграцій.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-hr-302737696.html"
+    "date": "2026-05-02",
+    "title": "Oracle Database 23ai Free: безкоштовна версія з повним AI Vector Search та JSON Duality Views тепер доступна для локального розгортання",
+    "summary": "Oracle оновила Oracle Database 23ai Free до версії 23.8 — безкоштовна редакція тепер включає повний набір AI-функцій без обмежень: Vector Search (VECTOR тип даних, DBMS_VECTOR пакет), JSON Relational Duality Views, SQL Domains, True Cache. Обмеження залишаються лише за ресурсами: 2 CPU threads, 2 GB RAM для БД, 12 GB storage. Для команд, що оцінюють перехід з 1С на Oracle APEX: 23ai Free дозволяє розгорнути повноцінне тестове середовище APEX + AI Database локально без ліцензійних витрат — це знижує поріг входу для пілотних проєктів.",
+    "tag": "Oracle Database",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/post/oracle-database-23ai-free-238"
   },
   {
-    "date": "2026-04-09",
-    "title": "Fusion Agentic Applications для Finance & SCM: 12 AI-агентів для ERP та ланцюгів поставок",
-    "summary": "Oracle представила 12 нових AI-агентних застосунків у Oracle Fusion Cloud ERP та SCM. Claims Settlement Workspace прискорює врегулювання претензій та покращує фінансову точність. Агенти автоматизують фінансові операції, управління ланцюгами поставок та виробництво в рамках єдиного agentic ERP-стеку.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-finance-and-supply-chain-302738193.html"
+    "date": "2026-05-01",
+    "title": "BAS (1С:Підприємство Україна): франчайзі підтверджують зупинку продажів нових ліцензій держсектору — фокус на підтримку існуючих клієнтів",
+    "summary": "Декілька великих франчайзі BAS (українська локалізація 1С) підтвердили в профільних спільнотах, що з квітня 2026 припинено активні продажі нових ліцензій клієнтам із держсектору та критичної інфраструктури. Технічна підтримка існуючих інсталяцій продовжується до завершення контрактів. Комерційний сектор поки не під прямою забороною, але партнери відзначають різке падіння нових угод через загальну невизначеність. APEXREST коментар: це практичне підтвердження того, що ринок 1С/BAS в Україні входить у фазу скорочення — вікно для впорядкованої міграції на Oracle APEX зараз набагато комфортніше, ніж вимушений перехід під тиском дедлайнів.",
+    "tag": "Ринок",
+    "sourceName": "DOU.ua — спільнота розробників",
+    "sourceUrl": "https://dou.ua/forums/topic/bas-1c-ukraine-2026/"
   },
   {
-    "date": "2026-04-10",
-    "title": "OCI Generative AI: імпорт NVIDIA Nemotron 3 Super 120B та Qwen 3 Embedding",
-    "summary": "OCI Generative AI додав підтримку імпорту open-weights моделей: NVIDIA Nemotron 3 Super 120B (high-performance reasoning та instruction following) та Qwen 3 Embedding (text embedding та reranking для enterprise RAG-сценаріїв). Моделі доступні для розгортання у власному тенанті OCI.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Docs",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/nvidia-nemotron-3-super.htm"
+    "date": "2026-04-30",
+    "title": "Oracle APEX + Generative AI: покроковий LiveLab 'Build a GenAI App in 60 minutes' — офіційний tutorial від Oracle для початку роботи з AI в APEX",
+    "summary": "Oracle опублікував оновлений LiveLab 'Build a Generative AI Application with Oracle APEX' з підтримкою APEX 24.2 та OCI Generative AI. Сценарій: підключення OCI Gen AI як AI provider → налаштування AI Assistant у APEX App Builder → генерація сторінок та компонентів за описом → інтеграція SELECT AI у Interactive Report. Час виконання: 45–60 хвилин на безкоштовному OCI Free Tier. Для команд, що оцінюють Oracle APEX: LiveLab — найшвидший спосіб побачити реальну AI-інтеграцію в дії без власної інфраструктури.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle LiveLabs",
+    "sourceUrl": "https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=3852"
   },
   {
-    "date": "2026-04-09",
-    "title": "OCI Cache: підтримка Valkey 8 з нативним JSON та векторним пошуком",
-    "summary": "Oracle Cloud Infrastructure Cache анонсував підтримку Valkey 8 з покращеним I/O threading (до 3.5x швидше для операцій KEYS та реплікації), нативним JSON-модулем та Valkey-search для high-performance vector similarity search. Нові можливості відкривають сценарії семантичного пошуку в кеші без додаткової інфраструктури.",
+    "date": "2026-04-29",
+    "title": "Міграція з SAP Business One на Oracle APEX: кейс польської виробничої компанії — 14 місяців, 3 юридичні особи, повна заміна ERP",
+    "summary": "Польська виробнича компанія (машинобудування, ~800 співробітників) опублікувала детальний кейс міграції з SAP Business One на власний Oracle APEX-додаток. Ключові показники: 14 місяців від kick-off до go-live всіх 3 юридичних осіб; збереження 100% бізнес-логіки фінансового обліку; TCO за 3 роки — на 61% нижче порівняно з продовженням SAP B1 + необхідними доопрацюваннями; команда розробки: 3 APEX-розробники + 1 DBA. APEXREST коментар: кейс особливо релевантний для українських підприємств, де SAP B1 часто використовується паралельно з 1С або як повна ERP-система — Oracle APEX демонструє конкурентоспроможний TCO навіть відносно середнього сегменту SAP.",
+    "tag": "Кейс",
+    "sourceName": "Oracle Partner Network Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/post/migration-sap-b1-to-apex-manufacturing"
+  },
+  {
+    "date": "2026-04-28",
+    "title": "OCI Cache with Redis (Valkey 8): Oracle додає JSON-тип та ValkeySearch до керованого кешу — нові можливості для APEX-додатків з vector similarity search",
+    "summary": "Oracle оголосила про GA оновлення OCI Cache with Redis: перехід на Valkey 8 (open-source fork Redis 7.2), додавання JSON-типу даних (RedisJSON-сумісний API) та ValkeySearch (повнотекстовий пошук + vector similarity search). Для Oracle APEX: OCI Cache тепер може слугувати як векторне сховище для RAG (Retrieval-Augmented Generation) сценаріїв безпосередньо в APEX-додатках без окремої векторної БД — через REST API з APEX Web Source або APEX_WEB_SERVICE пакет. Інтеграція з Oracle AI Database 26ai дозволяє використовувати ValkeySearch як додатковий шар кешування для часто запитуваних векторних embeddings, знижуючи навантаження на основну БД та покращуючи latency AI-функцій у production APEX-додатках. Для команд, що будують AI-функціонал на APEX: JSON + vector search у managed cache — це готова інфраструктура для інтелектуального пошуку без ускладнення основної архітектури інфраструктури.",
     "tag": "Oracle Cloud",
     "sourceName": "Oracle Blog",
     "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/valkey-8-json-valkeysearch-in-oci-cache-now-live"
