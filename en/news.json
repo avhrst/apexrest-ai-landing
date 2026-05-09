@@ -1,848 +1,104 @@
 [
   {
-    "date": "2026-05-08",
-    "title": "OCI Compute with NVIDIA RTX PRO 6000 Blackwell Now GA: 8 GPUs × 96 GB GDDR7 Per Instance, $4.50/GPU-Hour — Multimodal AI on Oracle Cloud",
-    "summary": "Oracle Cloud Infrastructure announced the general availability of OCI Compute with NVIDIA RTX PRO — a new class of bare metal instances designed for multimodal AI and visual computing workloads. Configuration: 8× NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, each with 96 GB of high-speed GDDR7 memory; Intel® Xeon® 6 processors; 3 TB of system memory (up to 2× more than competing hyperscalers); 61.44 TB of local NVMe storage (up to 4× more). Pricing: $4.50 per GPU-hour — competitive across mixed workloads. OCI RTX PRO is purpose-built for next-generation multimodal AI: applications combining text, image, video, and simulation. The instance has received NVIDIA Exemplar Cloud Validation on the Blackwell architecture, confirming production readiness. For organizations evaluating Oracle APEX as a low-code platform: OCI RTX PRO confirms that AI compute and APEX low-code development co-exist within a single AI-native infrastructure — eliminating the need to route AI workloads through external GPU cloud providers.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Cloud Infrastructure Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-general-availability-of-oci-compute-rtx-pro"
-  },
-  {
-    "date": "2026-05-08",
-    "title": "Oracle (ORCL) -7% on OpenAI Target Miss Reports: Market Reassesses $300B AI Contract Risk — What It Means for Enterprise Clients",
-    "summary": "Oracle shares (NYSE: ORCL) fell approximately 7% in after-hours trading on May 7, 2026, after reports emerged that OpenAI missed revenue and active-user targets and is struggling to secure $18 billion in financing — raising investor doubts about AI infrastructure demand sustainability. CoreWeave fell over 15%. For Oracle: the $300 billion five-year contract to supply AI computing to OpenAI via OCI is the focal point of investor concern. CoinCentral and Yahoo Finance note that the decline reflects a sentiment shift, not a change in contractual obligations. Oracle Q3 FY2026 fundamentals remain intact: Remaining Performance Obligations $553 billion (+325% YoY), Cloud Infrastructure +84%. For organizations in Ukraine and CEE evaluating Oracle APEX and OCI: stock price volatility is not an indicator of platform stability. The $553 billion RPO confirms Oracle is under contract for years ahead regardless of AI stock market sentiment shifts.",
-    "tag": "Market",
-    "sourceName": "CoinCentral / Yahoo Finance",
-    "sourceUrl": "https://coincentral.com/oracle-orcl-stock-falls-7-as-openai-misses-revenue-and-user-targets/"
-  },
-  {
-    "date": "2026-05-08",
-    "title": "Oracle AI Database 26ai: Platinum Failover Under 30 Seconds, Diamond Under 3 Seconds, Plus Post-Quantum NIST ML-KEM Encryption",
-    "summary": "Oracle confirmed new availability tiers for Oracle AI Database 26ai on Exadata and Autonomous Database. Platinum-tier: disaster failover typically under 30 seconds for high-throughput multi-node clusters — up to 4× faster than Oracle Database 19c — without application changes or performance tradeoffs. Diamond-tier (Oracle Distributed AI Database + Oracle GoldenGate): failover typically under 3 seconds, designed for real-time payments, telecommunications, and global trading platforms. Post-Quantum Security: Oracle AI Database 26ai now supports NIST-standard quantum-resistant algorithms (ML-KEM) and hybrid key exchange (ECDHE + ML-KEM) — enabling organizations to begin protecting against future quantum threats today. Independent analysts Futurum, IDC, and Constellation Research confirm Oracle AI Database 26ai is redefining mission-critical availability for AI workloads. For organizations migrating from legacy ERP: Oracle's availability SLAs are fundamentally incompatible with legacy ERP architecture and with any SMB-oriented replacement product.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/raising-the-standard-for-mission-critical-availability-and-security-in-the-age-of-ai"
-  },
-  {
-    "date": "2026-05-08",
-    "title": "Oracle EBS Tech Reminder: Upgrade to Oracle AI DB 26ai or DB 19c — AI Accelerates Vulnerability Discovery, First CSPU on May 28",
-    "summary": "The Oracle E-Business Suite Technology Blog published a reminder for EBS 12.2 customers: all production systems should run on a supported database version — Oracle Database 19c or Oracle AI Database 26ai. The urgency: AI has significantly accelerated the pace at which software vulnerabilities are discovered, prompting Oracle to introduce monthly Critical Security Patch Updates (CSPUs) starting May 28, 2026, in addition to the quarterly CPU cycle. EBS 12.2 is now certified with Oracle AI Database 26ai on-premises for Linux x86-64. Customers running unsupported database versions will not receive CSPU patches or quarterly security updates. For organizations evaluating Oracle APEX and Oracle AI Database 26ai as a migration platform from 1C/BAS: monthly CSPU delivery is direct evidence of Oracle's active security posture in the AI era — a structural advantage over any system that lost vendor-managed security patching after sanctions were imposed.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle EBS Technology Blog",
-    "sourceUrl": "https://blogs.oracle.com/ebstech/reminder-upgrade-to-oracle-ai-db-26ai-or-db-19c"
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Oracle AI Database 26ai RU 23.26.2 Released, OKE Gains Kubernetes 1.35.2: April 2026 Platform Updates",
-    "summary": "Oracle released the April 2026 Release Update for Oracle AI Database 26ai (version 23.26.2.0.0) and Oracle Database 19c (19.31.0.0.260421) — following a brief delay announced April 23. RU 23.26.2 is the regular quarterly update for Oracle AI Database 26ai on-premises, delivering cumulative security fixes, bug corrections, and incremental feature additions. For Oracle Autonomous Container Database customers: both 26ai and 19c are now available as software version options at provisioning time. Oracle Cross-Region DataGuard gained support for Exadata Database Service on Dedicated Infrastructure with Azure Key Vault, AWS KMS, and Cloud KMS — simplifying hybrid cloud configurations. At the cloud infrastructure level: Oracle Kubernetes Engine (OKE) added support for Kubernetes 1.35.2; support for Kubernetes 1.32.10 ends May 28, 2026. Java Management Service now offers JDK 26 (released March 2026 at JavaOne). For teams maintaining Oracle AI Database 26ai on-premises: applying RU 23.26.2 is a required step to maintain security compliance ahead of the first monthly CSPU release on May 28, 2026.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Mike Dietrich / Oracle Blog",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Oracle APEX 26.1 and APEXlang: File-Based App Format, AI Copilot, Native DevOps — A Preview of What's Coming to Low-Code",
-    "summary": "The Oracle APEX community has been actively reviewing preview materials for APEX 26.1 and the new APEXlang specification. APEXlang is an open application format for Oracle APEX — combining YAML/JSON to represent an APEX application as human-readable text files that can be edited directly and reimported into APEX. Key implications: full CI/CD integration for low-code — APEX applications become natively version-controllable in git for the first time; AI Copilot and LLM-assisted development — APEXlang as a format that AI assistants can read, generate, and refactor; collaborative review and automated testing in the development pipeline. APEX 26.1 is expected in 2026 and represents the first step toward 'generative low-code' where AI actively participates in building and maintaining applications. Carsten Czarski presents APEX 26.1 as the keynote at APEX Connect 2026 (May 18). For organizations choosing Oracle APEX as a migration platform from legacy ERP: APEXlang directly addresses one of the traditional objections to low-code — difficulty integrating with corporate DevOps workflows. With APEX 26.1, Oracle APEX becomes a fully DevOps-native platform.",
-    "tag": "Oracle APEX",
-    "sourceName": "Into The Oracle Verse Blog",
-    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
-  },
-  {
-    "date": "2026-05-07",
-    "title": "Connor McDonald at APEX Connect 2026: '80+ Oracle AI Database 26ai Features, Zero Slides' — Largest Demo Session on May 19",
-    "summary": "Among the featured sessions at APEX Connect 2026 (Heide Park Soltau, May 18–20) is Connor McDonald's presentation — Distinguished Product Manager for Oracle AI Database: 'The Innovation Continues: More 26ai features, More 100% demo, Zero Slides.' The format: no slides, 80+ new Oracle AI Database 26ai features in a fully interactive live-demo session scheduled for May 19 (10:00–10:45). Topics include SELECT AI enhancements, the Oracle AI Agent Framework, vector search, converged data processing, and new SQL generation patterns introduced in 26ai. McDonald previously delivered a similar demo session in Adelaide (AUSOUG, April 2026) to strong reception. APEX Connect is the largest Oracle APEX conference in the DACH region; all session recordings are published publicly via DOAG after the event. For Oracle APEX and AI Database teams: McDonald's session is the most time-efficient way to evaluate the full scope of the 26ai platform update without individually reviewing the complete release documentation.",
-    "tag": "Oracle APEX",
+    "date": "2026-05-09",
+    "title": "APEX Connect 2026 — 9 Days to Go: APEXlang Preview, SELECT AI in Practice, and the Official Oracle APEX Roadmap",
+    "summary": "May 18–20, 2026, Heide Park Soltau (Lower Saxony, Germany) hosts APEX Connect 2026 by DOAG — the largest annual Oracle APEX community conference. Featured keynote: Carsten Czarski 'Low-code with APEX 2026 — AI, APEXlang, new components, and the state of the platform' — the first extended public preview of APEXlang and Oracle APEX 26.1. Karen Cannell will present 'Seriously SELECT AI' — practical SELECT AI applications in Oracle AI Database 26ai. Simon Hunt (Oracle APEX Product Management) delivers the official roadmap update with team priorities. The event co-locates with DOAG Datenbank + Cloud Infrastructure and CloudLand 2026 on the same venue (May 18–22). For teams making platform decisions in 2026: APEX Connect is where Oracle APEX shows where it is heading in 2027.",
+    "tag": "Event",
     "sourceName": "DOAG APEX Connect 2026",
-    "sourceUrl": "https://my.doag.org/events/apex-connect/2026/agenda/"
-  },
-  {
-    "date": "2026-05-06",
-    "title": "IBM and Oracle Expand Partnership: watsonx AI Agents for Oracle Fusion Cloud ERP, RHEL on OCI — Enterprise Agentic AI Advances",
-    "summary": "Marking the 40th year of their strategic partnership, IBM and Oracle announced a broad expansion focused on agentic AI and hybrid cloud. IBM watsonx Orchestrate launches dedicated AI agents for Learning & Development and Talent Acquisition that integrate directly into Oracle Fusion Cloud ERP — without leaving the OCI ecosystem. IBM Consulting extends a managed service for IBM Maximo (EAM) on OCI, enabling industrial enterprises to run asset management in the same Oracle cloud environment as Fusion ERP. IBM watsonx.ai, including Granite models, is now certified to run on OCI. Red Hat Enterprise Linux (RHEL) is becoming available for purchase directly via Oracle Cloud universal credits on OCI. IBM Envizi ESG Suite is available on OCI for corporate sustainability reporting. IBM and Oracle showcased joint solutions at Oracle AI World 2026 in Las Vegas. For organizations migrating from legacy ERP: the integration of Oracle Fusion with IBM watsonx AI agents confirms that next-generation ERP platforms are multi-vendor AI-native ecosystems — not a replacement of one monolithic box with another.",
-    "tag": "Oracle Cloud",
-    "sourceName": "IBM Newsroom",
-    "sourceUrl": "https://newsroom.ibm.com/blog-ibm-and-oracle-expand-partnership-to-help-organizations-modernize-with-ai-and-cloud"
-  },
-  {
-    "date": "2026-05-06",
-    "title": "Karen Cannell at APEX Connect 2026: 'Seriously SELECT AI' Keynote — Natural Language Queries on Oracle Data, AI Agents Inside the Database",
-    "summary": "Among the two featured keynotes at APEX Connect 2026 (May 18–20, Heide Park Soltau, Germany) is Karen Cannell's session titled 'Seriously SELECT AI.' SELECT AI in Oracle AI Database 26ai enables business users to query corporate data in natural language: instead of writing SQL, users ask plain-language questions and the system generates, executes, and returns results from real Oracle data — with governance guardrails and a full audit trail. SELECT AI automatically identifies the relevant tables and sends only their metadata to the LLM — no business data leaves the database perimeter. The SELECT AI Agent Framework is a new autonomous agent framework built directly inside Oracle AI Database: teams of AI agents reason, act, and collaborate within the database without external AI infrastructure. Oracle APEX integration: a full conversational chatbot on SELECT AI is built inside an APEX application using standard components and PL/SQL APIs. Oracle published a reference architecture: 'Build an agentic, high-fidelity, conversational AI framework with Select AI and Oracle APEX.' For organizations migrating from legacy ERP: SELECT AI transforms Oracle data into answers to business questions — financial, HR, and operational queries answered in natural language, without SQL training and without a separate BI platform.",
-    "tag": "Oracle APEX",
-    "sourceName": "DOAG / APEX Connect",
     "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
   },
   {
-    "date": "2026-05-05",
-    "title": "Oracle (ORCL) +5.2% on May 5: SaaS Sector Rally Driven by Atlassian, Salesforce, ServiceNow — AI Cloud Momentum Confirmed",
-    "summary": "Oracle shares (NYSE: ORCL) gained 5.2% to $172.35 on May 5, 2026, as the enterprise SaaS sector rallied broadly. The catalyst was strong quarterly results and raised guidance from Atlassian, Salesforce, ServiceNow, and Twilio. The Motley Fool (May 5, 2026) notes: despite the gain, Oracle shares remain below their 52-week high of $328.33 (September 2025) and are down 6%+ year-to-date as investors weigh the company's record capital expenditure of approximately $50 billion in FY2026. Oracle Q3 FY2026 (March 10): cloud revenue +44% to $8.9 billion, Cloud Infrastructure +84% to $4.88 billion, Remaining Performance Obligations $553 billion (+325%) — management confirmed that AI training demand on OCI is exceeding current supply. For organizations in Ukraine and CEE evaluating Oracle APEX as a migration path from 1C/BAS: Oracle's financial trajectory confirms active investment in AI infrastructure at a scale inconsistent with a vendor in decline — OCI and Oracle AI Database 26ai are receiving capital commitments that confirm long-term platform stability.",
-    "tag": "Market",
-    "sourceName": "The Motley Fool",
-    "sourceUrl": "https://www.fool.com/investing/2026/05/05/oracle-stock-is-still-down-year-to-date-as-many-ai/"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "EU 20th Russia Sanctions Package (April 23): Cybersecurity Services Ban, New Banking Restrictions from May 14, 2026 — Dual Compliance Pressure on 1C/BAS Users",
-    "summary": "On April 23, 2026, the EU adopted its 20th package of sanctions against Russia — the broadest in recent years. New measures include: a ban on providing cybersecurity services to Russian companies; a transaction ban targeting 20 additional Russian banks, effective May 14, 2026; new measures against sanctions circumvention through third-country intermediaries; sanctions extended through September 15, 2026. For Ukrainian enterprises still running 1C or BAS: processing any payments to banned software vendors through the newly targeted banks becomes legally impossible from May 14. License renewals and technical support for prohibited systems fall outside permissible transactions. Dual regulatory pressure is now in force: domestic — Law 13505 (mandatory migration deadlines through 2030, already in force for critical infrastructure and public sector, with new license purchases prohibited across the board); external — EU sanctions expanding financial restrictions from May 14 block payment channels to sanctioned vendors. Oracle APEX and Oracle AI Database 26ai carry no sanctions risk: Oracle Corporation is a US company in full compliance with EU and Law 13505 requirements.",
-    "tag": "Regulation",
-    "sourceName": "EU Council",
-    "sourceUrl": "https://www.consilium.europa.eu/en/press/press-releases/2026/04/23/russia-s-war-of-aggression-against-ukraine-20th-round-of-stern-eu-sanctions-hits-energy-revenues-military-industrial-complex-trade-and-financial-services-including-crypto/"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Salesforce vs Oracle: 24/7 Wall St. Names One Winner in the Cloud AI Race — Oracle Leads with Full AI Stack",
-    "summary": "On May 4, 2026, analysts at 24/7 Wall St. published a comparative analysis of Salesforce and Oracle in their strategic cloud AI competition. The conclusion: Oracle is a unique competitor with a complete AI stack — infrastructure, database, and low-code platform in a single offering. Oracle Q3 FY2026: Cloud Infrastructure +84% to $4.88 billion, RPO $553 billion — AI training demand on OCI exceeds current supply. Salesforce Agentforce: $800 million ARR (+169%), 29,000 deals closed — positioned as a 'defensive AI compounder' layering AI agents on top of existing CRM subscriptions, with $5.3 billion free cash flow and minimal debt. The fundamental difference: Oracle is building hyperscaler-scale AI infrastructure (Stargate, OCI Supercluster, Oracle AI Database 26ai), while Salesforce builds AI agents on top of SaaS. Unlike Salesforce and Microsoft, Oracle does not impose additional charges for AI and agentic capabilities — they are included in the Oracle Autonomous Database base subscription. For organizations evaluating a migration platform from 1C/BAS: Oracle offers a transition to strategic AI infrastructure — database, low-code, and AI in a single stack, with no AI surcharges.",
-    "tag": "Market",
-    "sourceName": "24/7 Wall St.",
-    "sourceUrl": "https://247wallst.com/investing/2026/05/04/salesforce-vs-oracle-theres-only-one-winner-in-the-cloud-ai-push/"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Oracle Launches Monthly Critical Security Patch Updates (CSPU) from May 28, 2026: Critical Vulnerabilities Without Waiting for the Quarter",
-    "summary": "Oracle announced the launch of monthly Critical Security Patch Updates (CSPUs) starting May 28, 2026 — a new layer on top of the existing quarterly CPU cycle. Each CSPU is a compact, targeted patch addressing only critical vulnerabilities, enabling customers to close high-priority security gaps without waiting for the next quarterly release window. Quarterly CPUs continue and will include all prior CSPU fixes. CSPUs will be released monthly on the third Tuesday — the first is scheduled for May 28, 2026. This change is part of Oracle's broader program to accelerate vulnerability detection and response, which includes improvements to internal security scanning and disclosure processes. For teams running Oracle AI Database 26ai, Oracle APEX, or any Oracle product in production: monthly CSPUs mean the ability to apply critical security fixes without waiting for quarterly maintenance windows — reducing the exposure window from a quarter to a month. For enterprises migrating from legacy ERP to the Oracle stack: Oracle's enterprise security posture now includes monthly critical CVE response — in contrast to legacy ERP vendors with irregular or absent patch management.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Security Blog",
-    "sourceUrl": "https://blogs.oracle.com/security/update-monthly-critical-security-patch-updates-cspus-begin-may-28-2026"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Oracle APEX 23.2 Support Ends May 31, 2026: 26 Days to Upgrade to APEX 24.2",
-    "summary": "Oracle APEX 23.2 reaches end of active support on May 31, 2026 — the extended support window (from 18 to 24 months) for this version is closing. Currently supported versions: Oracle APEX 24.2 (support through July 31, 2027) and Oracle APEX 24.1 (through December 31, 2026). Continuing to run APEX 23.2 after May 31 means no official Security Patches or Bug Fixes from Oracle. Upgrading from APEX 23.2 to 24.2 follows the standard Oracle APEX Patch Set process: download the new APEX distribution, run apexins.sql. In Oracle Cloud (Autonomous Database), upgrades are managed automatically by Oracle. For Oracle APEX teams: the deadline to upgrade to APEX 24.2 is a hard security compliance cutoff — not an optional recommendation. APEX 24.2 includes the AI plug-in and enhanced AI-assisted application generation capabilities, providing a practical foundation for the upcoming APEX 26.1 with APEXlang.",
+    "date": "2026-05-09",
+    "title": "Oracle APEX AI Interactive Reports: Natural Language Queries in Business Reports — 'Show Top 10 Customers This Quarter' in the Search Bar",
+    "summary": "The Oracle APEX team published a detailed overview of the new APEX AI Interactive Reports feature. The familiar Interactive Report search bar now accepts natural language queries: 'show top 10 customers this quarter', 'filter orders with Pending status over 30 days', 'compare regional sales for the last 6 months' — APEX automatically translates the request into a SQL filter and displays the result without any code. The feature is available in APEX 24.2+ with Oracle AI Database or OCI Generative AI connected. For business users accustomed to legacy ERP reports: APEX AI Interactive Reports is the first large-scale implementation of 'conversational BI' in a low-code enterprise platform without a separate BI tool.",
     "tag": "Oracle APEX",
-    "sourceName": "endoflife.date / Oracle Support",
-    "sourceUrl": "https://endoflife.date/oracle-apex"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Oracle APEX 26.1: APEXlang and AI App Generation — What's Coming to the Next Platform Generation Before APEX Connect 2026",
-    "summary": "The Oracle APEX community is actively examining the key capabilities of Oracle APEX 26.1, set to be detailed at APEX Connect 2026 (May 18–20, Heide Park). Key new capabilities: APEXlang — a new declarative specification language for APEX applications. An entire Oracle APEX application can be described in a human-readable text file (region, title, type, SQL, and parameters): Git version-controllable, generatable and editable by LLM agents. AI application generation: APEX 26.1 integrates AI-assisted workflows for building applications from APEXlang specifications — an LLM receives a business problem structure and generates a complete, functional APEX application. New capabilities across Interactive Reports, Map Regions, Dynamic Actions, REST integrations, and PL/SQL APIs. APEX Connect 2026 Keynote: Carsten Czarski (Oracle) — 'Low-Code with APEX 2026: AI, APEXlang, and New Platform Features.' For enterprise teams: APEXlang transforms Oracle APEX from a conventional low-code builder into a platform where AI can autonomously construct enterprise applications from business specifications — without manually designing every component.",
-    "tag": "Oracle APEX",
-    "sourceName": "Into The Oracle Verse",
-    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
-  },
-  {
-    "date": "2026-05-05",
-    "title": "Ukraine 1C/BAS Replacement Market 2026: SMB Solutions Dominate Coverage — Enterprise Segment Remains Largely Unaddressed",
-    "summary": "New analytical overviews of the Ukrainian 1C/BAS replacement market (cityhost.ua, ontargit.com) reveal a structural imbalance: media coverage is dominated by SMB-oriented solutions — MASTER, Dilovod, Odoo ERP, and their derivatives. These products cover accounting, trade, and basic document management for small businesses. The enterprise segment — companies with 200+ users, complex production accounting, industry-specific requirements, custom integrations, and AI automation needs — is virtually absent from public market reviews. The reason is straightforward: enterprise solutions are not positioned through 'what to replace 1C with' overview articles — they require a separate enterprise sales motion and technical assessment. As a result, a significant portion of mid-market and enterprise companies selects an SMB replacement not because of technical fit, but because an enterprise-grade alternative is not visible in the media landscape — and quickly hits scaling and customization limits. For organizations that have hit the limits of SMB solutions after migrating from 1C: a technical architecture assessment and Oracle APEX evaluation is a practical first step toward enterprise-level capability.",
-    "tag": "Market",
-    "sourceName": "cityhost.ua / ontargit.com",
-    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "OCI Generative AI Service Now Available in US Government Classified Cloud Regions: GenAI for Defense and Intelligence at IL5/IL6",
-    "summary": "Oracle announced general availability of OCI Generative AI Service in Oracle's US Government Cloud and US Defense Cloud classified regions. Following the Department of Defense agreement signed May 1, 2026 — authorizing Oracle to deploy AI on classified networks at Impact Levels 6 and 7 — Oracle confirmed that OCI Generative AI is now operational in classified Oracle Cloud regions: large language models and AI agents from OCI Enterprise AI run directly within the encrypted government perimeter without data leaving the classified network boundary. The service is compatible with OCI Enterprise AI Agents, Oracle AI Database 26ai, and APEXlang for building complete agentic AI application cycles on classified data. Deployment of GenAI services in classified cloud regions confirms Oracle's actual security compliance posture: the US government selects OCI as its trusted AI infrastructure where requirements are most stringent. For enterprise organizations choosing a platform for regulated or sovereign workloads, OCI's classified cloud capability represents a compliance benchmark that no legacy ERP vendor can match — a structural contrast to systems with documented potential backdoors for foreign intelligence services.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Cloud Infrastructure Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oci-gen-ai-service-in-us-classified-cloud"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Oracle and NVIDIA Expand Strategic Partnership: OCI Supercluster with Vera Rubin GPUs, 50,000-GPU AMD MI450 Supercluster Planned for Q3 2026",
-    "summary": "At NVIDIA GTC 2026, Oracle and NVIDIA announced an expansion of their strategic AI infrastructure partnership. The next generation of OCI Supercluster will be built on the NVIDIA Vera Rubin platform — NVIDIA Rubin GPUs, NVIDIA Vera CPUs, and NVIDIA BlueField-4 DPU networking adapters. Current generation: OCI already offers AMD Instinct MI355X GPUs (Oracle is the first public cloud hyperscaler to do so), with a 50,000-GPU AMD Instinct MI450 Series supercluster jointly planned with AMD for Q3 2026. OCI Accelerator Packs — pre-configured AI compute configurations with NVIDIA GPUs — are available for deployment and customization within a customer's own OCI tenancy without purchasing physical GPU infrastructure. Current OCI GPU scale: 131,072 GPUs in OCI Supercluster on the current generation, with transition to the Vera Rubin platform next. For Oracle APEX and AI Database 26ai teams: all this GPU capacity is accessible via standard OCI services — LLM inference, AI Vector Search, and OML4Py — without building private GPU infrastructure. This confirms Oracle's architectural advantage over legacy ERP: supercluster-scale AI capabilities available to any enterprise team via Oracle Cloud.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Cloud Infrastructure Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-nvidia-gtc-2026-key-announcements"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "APEX Connect 2026 at Heide Park: 14 Days to Go — Full Session Program Published, On-Demand Package Pre-Order Now Open",
-    "summary": "APEX Connect 2026 (May 18–20, Heide Park Soltau, Lower Saxony, Germany) is 14 days away. DOAG has published the full conference session program: technical sessions on Oracle APEX, PL/SQL, Low-Code, and OCI by speakers from the DACH region and the international Oracle APEX community. Keynote: Carsten Czarski — 'Low-Code mit APEX 2026: AI, APEXlang, and New Platform Features' — covering AI integration in APEX, the APEXlang application specification language, and the strategic platform direction for 2026–2027. DOAG has opened pre-orders for the on-demand package via its online store: all session recordings from APEX Connect 2026 will be published after the conference and available to anyone who cannot attend in person. APEX Connect 2026 is part of the three-conference DOAG week: APEX Connect (May 18–20), DOAG Database with Cloud Infrastructure (May 18–19), and CloudLand 2026 (May 19–22) — Cloud Native, DevOps, and Architecture. For Oracle APEX teams globally: the APEX Connect 2026 on-demand recordings are one of the best accessible sources of practical APEX community content from the DACH region.",
-    "tag": "Event",
-    "sourceName": "DOAG / APEX Connect",
-    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
-  },
-  {
-    "date": "2026-05-04",
-    "title": "Ukraine: 75% of Enterprises Still on Banned Software — Law 13505 in Active Phase with Mandatory Migration Deadlines Through 2030",
-    "summary": "Market analysts estimate that approximately 75% of Ukrainian enterprises across all economic sectors continue to use Russian-origin software — over 40 products, including the 27 officially listed in the State Special Communications Service's prohibited software registry (January 8, 2026). Law 13505 (adopted July 18, 2025) establishes a phased mandatory exit from banned software with a final deadline of 2030. Mandatory compliance is already in force for: critical information infrastructure operators; systems processing state information resources; and systems handling classified or official information. For private businesses: purchasing new licenses and paying support to sanctioned vendors is already prohibited. Fines of up to 2% of annual turnover apply for violations of migration deadlines. The scale of the problem — tens of thousands of entities and over 40 Russian-origin software products — indicates the migration market has just entered its active phase. For enterprises still delaying: the transition to direct enforcement against private businesses is a question of timing, not likelihood.",
-    "tag": "Regulation",
-    "sourceName": "ain.ua / DOU",
-    "sourceUrl": "https://ain.ua/2026/01/14/v-ukrayini-zaboronili-rosiiskii-soft-1s/"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Oracle Deep Data Security Generally Available in Oracle AI Database 26ai: Identity-Aware Row, Column, and Cell-Level Authorization for AI Agents",
-    "summary": "Oracle confirmed general availability of Oracle Deep Data Security in Oracle AI Database 26ai — a database-native authorization system designed specifically for the AI agent security challenge. Traditional AI agents operate under privileged service accounts with excessive access to corporate data, regardless of who the real end-user is. Oracle Deep Data Security eliminates this vulnerability by enforcing the end-user's authorization model directly in the database engine: declarative SQL policies determine data visibility at row level (agents see only authorized rows), column level (hide entire columns based on identity), and cell level — new in 26ai — masking individual cell values to NULL based on clearance level, resistant to inference attacks. OAuth2 token propagation relays the real end-user identity to the database through Microsoft Entra ID, OCI IAM, or any OIDC-compatible IAM system — the AI agent operates under the actual user's permissions rather than a highly privileged service account. Centralized policy management in the database eliminates the need to duplicate per-user security logic across applications, services, and agents. Full audit trail captures all actions by users, admins, and AI agents with agent identity context. Oracle Deep Data Security is included at no additional cost on Oracle Autonomous Database and is available from the latest Release Update for Oracle AI Database 26ai.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/oracle-deep-data-security-is-now-available-in-oracle-ai-database-26ai"
-  },
-  {
-    "date": "2026-05-03",
-    "title": "Oracle Extreme Edition Training Benelux: Upgrade, Migration and Patching to Oracle AI Database 26ai — Utrecht May 11, Brussels May 12",
-    "summary": "Oracle is delivering 'Extreme Edition: Upgrade, Migration and Patching to Oracle AI Database 26ai and 19c' instructor-led live training in the Benelux region: Utrecht (Netherlands) on May 11 and Brussels (Belgium) on May 12, 2026. The advanced DBA/architect format covers: the AutoUpgrade path from Oracle Database 19c to Oracle AI Database 26ai, managing Release Updates mid-lifecycle, OJVM patching best practices, and the April 2026 patch cycle status (Linux RU: April 28, OJVM RU: April 30, Windows RU ETA: May 12). The Benelux stops extend Oracle's EMEA live training wave in May 2026, following the London Advanced Edition (April 29). For organizations in the Benelux and Western Europe planning a database upgrade to Oracle AI Database 26ai — from Oracle 19c or from legacy ERP infrastructure — Extreme Edition Training from Oracle instructors delivers immediate post-patch-cycle preparation: the optimal timing before scheduling a production upgrade.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Developer Events",
-    "sourceUrl": "https://www.oracle.com/developer/events/"
-  },
-  {
-    "date": "2026-05-03",
-    "title": "Oracle AI World Tour 2026 Completes Global Run — Amsterdam to Tokyo: Next Stop Oracle AI World Las Vegas, October 25–28",
-    "summary": "Oracle AI World Tour 2026 — a series of complimentary one-day events across major cities worldwide — has completed its global 2026 cycle. Confirmed stops: Amsterdam (January 29), London (March 24), New York City (April 10), Singapore (April 14), Tokyo (April 16), Sydney, Mumbai, and other cities. Each event featured Oracle leadership keynotes, live Oracle AI Database 26ai demonstrations, OCI Enterprise AI, and Oracle APEX in the context of enterprise AI adoption. Session recordings from each city are published via Oracle TV. The next major Oracle event for 2026: Oracle AI World — October 25–28 at The Venetian Convention & Expo Center, Las Vegas — with 20,000+ expected attendees; the anticipated venue for Oracle APEX 26.1 GA and OCI 2027 strategic direction. Before Las Vegas, KScope26 in Denver (June 14–18, Gaylord Rockies Resort) delivers the largest Oracle APEX community conference in the US: 250+ technical sessions with direct access to Oracle APEX Product Management. Oracle AI World Tour on-demand recordings are the most accessible public introduction to Oracle AI Database 26ai capabilities and the APEXlang development roadmap for enterprise teams evaluating Oracle APEX as a migration path from legacy ERP.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle AI World Tour",
-    "sourceUrl": "https://www.oracle.com/ai-world-tour/"
-  },
-  {
-    "date": "2026-05-03",
-    "title": "Oracle Developer Coaching: 'Simplify OCI Kubernetes Engine (OKE) Node Management with Karpenter' — Live Webinar May 6–12",
-    "summary": "Oracle is running a Developer Coaching live webinar series: 'Simplify OCI Kubernetes Engine (OKE) Node Management with Karpenter' on May 6–12, 2026, with direct Q&A access to Oracle engineers. Karpenter Provider for OCI (KPO) — the open-source Kubernetes node autoscaler that reached GA in April 2026 — replaces static predefined node pools with just-in-time provisioning: KPO deploys the optimal OCI compute shape in real time based on actual pod scheduling needs, eliminating manual node pool management. Key benefits: fewer static node pool configurations, mix of different OCI compute shapes and architectures in a single KPO policy, automatic consolidation of empty or underused nodes to reduce costs, and simplified scaling across diverse workload types. Kubernetes 1.31 or later is required. For Oracle APEX teams building enterprise applications on OCI with Kubernetes orchestration, this live webinar provides practical guidance from the engineers who built KPO — covering node pool simplification, cost optimization, and workload-aware autoscaling without manual intervention.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Developer Events",
-    "sourceUrl": "https://www.oracle.com/developer/events/"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Oracle Joins Pentagon's AI Initiative: DoD Signs Deals with 8 Tech Firms to Deploy AI on Classified Networks (IL6/IL7) — ORCL +7%",
-    "summary": "On May 1, the U.S. Department of Defense announced agreements with eight technology companies — Oracle, Amazon Web Services, Google, Microsoft, OpenAI, SpaceX, NVIDIA, and Reflection — to deploy their AI systems on DoD's classified networks at Impact Level 6 and Impact Level 7, used for classified and top-secret information. AI will be applied to data synthesis, situational awareness, and decision support in complex operational environments. Kim Lynch (EVP, Oracle Government, Defense & Intelligence) confirmed the agreement: 'This reflects a shared commitment between the Department of War and Oracle to ensure the United States leads decisively in artificial intelligence, as a matter of national security and global leadership.' Notably, Anthropic was excluded — the Pentagon identified the company as a supply-chain risk. Oracle shares (ORCL) rose 6.5–7% to $171.83 on May 1, 2026. The DoD decision confirms Oracle as one of eight authorized AI providers for the most sensitive U.S. government networks, reinforcing its government cloud and AI infrastructure leadership. Combined with the $300 billion Oracle+OpenAI contract (starting 2027) and the Stargate program, Oracle is establishing itself as the foundational AI infrastructure provider for the United States at the highest strategic level.",
-    "tag": "Oracle Cloud",
-    "sourceName": "DefenseScoop",
-    "sourceUrl": "https://defensescoop.com/2026/05/01/dod-expands-classified-ai-work-with-8-companies-excluding-anthropic/"
-  },
-  {
-    "date": "2026-05-02",
-    "title": "Oracle Launches Monthly CSPU — Critical Security Patch Update: Faster Critical Fixes Between Quarterly CPUs, Starting May 2026",
-    "summary": "Oracle announced the introduction of a monthly Critical Security Patch Update (CSPU) — a new targeted security patch format that complements the existing quarterly Critical Patch Update (CPU). CSPUs provide focused fixes for critical security issues only, allowing customers to address the highest-priority vulnerabilities without waiting for the next quarterly release. Each CSPU is smaller and more focused than a full CPU, making it easier and faster to apply. Quarterly CPUs remain in place and will include all fixes from prior CSPUs in cumulative format. In OCI-managed cloud environments, patches are applied automatically. The CSPU program is Oracle's response to the increasing frequency of critical CVE disclosures and the need for enterprise customers to have an accelerated response mechanism between quarterly cycles. For Oracle APEX administrators and organizations migrating to Oracle: CSPU plus quarterly CPU form a comprehensive, predictable security maintenance cycle for Oracle Database and APEX — with no equivalent available for banned legacy ERP systems like 1C/BAS, where vendor-managed centralized security patching has effectively ceased since the Ukrainian ban.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Security Blog",
-    "sourceUrl": "https://blogs.oracle.com/security/accelerating-vulnerability-detection-and-response-at-oracle"
-  },
-  {
-    "date": "2026-05-02",
-    "title": "OCI Secure Desktops Now Available in US Government and Defense Cloud Regions: FedRAMP High and DISA IL5 — Secure VDI for Regulated Workloads",
-    "summary": "Oracle announced general availability of OCI Secure Desktops in Oracle US Government Cloud and Oracle US Defense Cloud regions — certified to FedRAMP High and DISA Impact Level 5 standards. The service delivers secure, scalable cloud VDI environments: browser-accessible virtual desktops with integrated authentication, comprehensive monitoring, and policy-based access controls for organizations with stringent compliance requirements. OCI Secure Desktops is already available in 60+ OCI regions globally, including UK Government and EU Sovereign regions. The expansion to Government and Defense Cloud regions coincides with Oracle's deepening U.S. public sector engagement: on May 1, DoD signed AI deployment agreements with Oracle for classified IL6/IL7 networks; in February Oracle secured an $88M contract with the U.S. Air Force for Cloud One; in March Oracle unveiled the AI Data Platform for the U.S. Federal Government. For enterprise and public sector teams building secure cloud environments, OCI Secure Desktops in Government/Defense regions addresses compliance requirements that legacy on-premises infrastructure structurally cannot meet.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Cloud Infrastructure Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oci-secure-desktops-government-defense-regions"
-  },
-  {
-    "date": "2026-05-02",
-    "title": "Ukraine ERP Migration Market: May 2026 — 300,000+ Companies Still on Banned Software, Oracle APEX in the Enterprise Migration Context",
-    "summary": "Market analysts estimate that over 300,000 Ukrainian companies continue to use 1C or BAS in May 2026 — despite 27 software products being added to the official prohibited software registry on January 8, 2026, and mandatory transition requirements already in force for government bodies, critical infrastructure operators, and state enterprises. Key migration barriers include accumulated configurations and data in legacy systems, the absence of ready-made transition roadmaps, and difficulty selecting the right replacement platform. Market reviews for 2026 identify distinct solution categories: domestic systems for small businesses focused on the local market; and platforms such as Oracle APEX — a low-code development platform on Oracle AI Database 26ai — for mid-market and enterprise organizations that require custom business process automation, data management, and AI integration rather than an off-the-shelf ERP replacement. Oracle APEX is not a direct 1C box-replacement; it is a platform for building a complete enterprise digital architecture that qualitatively exceeds the functional and security capabilities of legacy ERP. Draft law No. 13505 provides for fines of up to 2% of annual turnover for companies that fail to complete migration by established deadlines.",
-    "tag": "Regulation",
-    "sourceName": "cityhost.ua",
-    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "APEX Connect 2026 at Heide Park Soltau: Three DOAG Conferences in One Week — Oracle APEX, Database, and CloudLand, May 18–22",
-    "summary": "May 18–22, 2026 at Heide Park Soltau (Lower Saxony, Germany), three major DOAG conferences run in parallel: APEX Connect 2026 (May 18–20) — the flagship annual Oracle APEX, PL/SQL, and Low-Code conference from DOAG; DOAG Database with Cloud Infrastructure (May 18–19) — Oracle Database and OCI; and CloudLand 2026 (May 19–22) — the Cloud Native Festival covering DevOps, Architecture, AI, and Security. The APEX Connect 2026 keynote is by Carsten Czarski: 'Low-Code mit APEX 2026' — covering AI, APEXlang, and new platform features. APEX Connect is the largest dedicated Oracle APEX conference in the DACH region, organized by DOAG (Deutsche Oracle Anwender Gruppe). Post-conference session recordings are published publicly via DOAG on-demand. Three conferences at one location in one week is a record format for the Oracle ecosystem in Central Europe: APEX Connect for Oracle APEX content, DOAG Database for Database and OCI, CloudLand for Cloud-native and DevOps. For teams in CEE evaluating Oracle APEX as a migration path from legacy ERP, APEX Connect 2026 is the closest access point to practical Oracle APEX content from the DACH Oracle community.",
-    "tag": "Event",
-    "sourceName": "DOAG / APEX Connect",
-    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Oracle APEX 23.2 End of Support: May 31, 2026 — 30 Days to the Deadline, Upgrade to 24.2 Recommended",
-    "summary": "Oracle APEX 23.2 reaches end of support on May 31, 2026 — 30 days from today. Oracle officially extended support for APEX versions 23.2 through 24.2 from 18 months to 2 years under the Lifetime Support Policy, acknowledging the delayed availability of versions 24.1 and 24.2. Current support status: APEX 24.2 — current supported release, supported through July 31, 2027; APEX 24.1 — supported through December 31, 2026; APEX 23.2 — support ends May 31, 2026. After May 31, Oracle APEX 23.2 will no longer receive security patches or bug fixes from Oracle. APEX 26.1 is planned for 2026. For organizations running APEX 23.2: an Oracle APEX upgrade is performed without downtime to existing business applications and carries far less risk than running on an unsupported version. For teams migrating from legacy ERP to Oracle APEX: plan for APEX 24.2 immediately, or target APEX 26.1 when it is released. The contrast with legacy ERP is clear: Oracle APEX has a published, vendor-managed support schedule — a concept that ceased to exist for 1C/BAS after the Ukrainian ban.",
-    "tag": "Oracle APEX",
-    "sourceName": "endoflife.date / Oracle APEX",
-    "sourceUrl": "https://endoflife.date/oracle-apex"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Oracle Project Jupiter in New Mexico: Up to 2.45 GW of Bloom Energy Fuel Cells and 4,000 Jobs — Grid-Independent AI Campus",
-    "summary": "On April 27, Oracle, BorderPlex Digital Assets, and Bloom Energy announced Project Jupiter — an AI data center campus in Doña Ana County, New Mexico, to be powered entirely by up to 2.45 GW of Bloom Energy solid oxide fuel cells (SOFC) in a single microgrid configuration. The updated campus design replaces previously planned gas turbines and diesel generators: the new architecture combines cleaner energy, water-efficient cooling, and full independence from the regional electrical grid. Over the life of the project, Oracle expects to create 4,000 construction jobs and 1,500 ongoing positions on-site and in the surrounding community. Project Jupiter is part of Oracle's broader AI infrastructure program — planned CapEx $45–50 billion with $30 billion already raised. Together with Stargate Michigan ($16 billion, Saline Township) and the Abilene, Texas campus (1.2 GW, already live), Project Jupiter is one of three Oracle AI infrastructure flagships in 2026, supporting the $300 billion OpenAI contract starting 2027 and the continued global expansion of OCI.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle News",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/"
-  },
-  {
-    "date": "2026-05-01",
-    "title": "Oracle Database RU for Windows: Final April 2026 Patch Expected May 12 — ETA Confirmed by Mike Dietrich",
-    "summary": "The April 2026 Oracle Database patch cycle is almost complete: Release Updates 19.31 (Oracle Database 19c) and 23.26.2 (Oracle AI Database 26ai) for Windows are expected on May 12, 2026, per the ETA confirmed by Oracle DBA blogger Mike Dietrich. The Linux RUs were released April 28 and the OJVM RU on April 30. After the Windows release, the April 2026 patch cycle will be fully complete across all supported platforms. For Oracle APEX administrators running Windows-based environments, applying the full patch set (Database RU + OJVM RU + April 2026 CPU) is Oracle's recommended practice to maintain an enterprise security posture on the APEX infrastructure. Windows is one of three key platforms (Linux, Windows, AIX) on which Oracle AI Database 26ai is being made available in 2026 — Linux GA was released in January 2026, Windows follows in May, AIX later in the year.",
-    "tag": "Oracle AI",
-    "sourceName": "Upgrade your Database — NOW!",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-04-30",
-    "title": "Oracle APEX Comes to Romania for the First Time: APEX Day + Gen AI Bootcamp in Bucharest, May 6–7, 2026",
-    "summary": "Oracle announced the first-ever Oracle APEX Day and Gen AI Bootcamp in Romania — May 6–7, 2026 in Bucharest, co-organized with the Romanian Oracle User Group (RoOUG). Oracle APEX Day (May 6) is a dedicated conference for Oracle APEX practitioners; Gen AI Bootcamp (May 7) is a hands-on day focused on Generative AI in Oracle APEX 26.1, designed for IT students and experienced developers new to the platform. Both sessions are free with limited seating. The announcement is part of Oracle APEX Product Management's active April–May 2026 CEE and EMEA engagement: events already confirmed in Slovenia, Croatia, Austria, Canada, and the US, with Romania and Germany (DOAG/Heide Park, May 18–20) as the next stops. For teams in Central and Eastern Europe evaluating Oracle APEX as their path away from legacy ERP, the growing regional Oracle APEX presence confirms increasing accessibility to direct technical support and training from the platform builder.",
-    "tag": "Event",
     "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/romania"
+    "sourceUrl": "https://blogs.oracle.com/apex/post/ai-powered-interactive-reports"
   },
   {
-    "date": "2026-04-30",
-    "title": "Oracle OJVM Release Update 19.31 and 23.26.2 Shipped April 30 — April 2026 Patch Cycle Substantially Complete",
-    "summary": "On April 30, Oracle released the OJVM (Oracle JVM) Release Update for Oracle Database 19c (19.31) and Oracle AI Database 26ai (23.26.2), on schedule per the revised timeline confirmed by Oracle DBA blogger Mike Dietrich. OJVM patches are required for organizations running Java components inside the Oracle Database engine — including Oracle APEX installations, which rely on Oracle JVM for internal operations and Java-dependent PL/SQL libraries. April's patch cycle now includes: Critical Patch Update April 2026 (483 security patches, April 21), Database RU Linux (April 28), and OJVM RU (April 30) — the full core cycle completed in 9 days. The only remaining item: Windows platform release, ETA May 12, 2026. For Oracle APEX administrators, applying the complete patch set (Database RU + OJVM RU + CPU) is Oracle's recommended practice and the requirement for maintaining an enterprise-grade security posture on the APEX infrastructure.",
-    "tag": "Oracle AI",
-    "sourceName": "Upgrade your Database — NOW!",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-04-30",
-    "title": "KScope26 Denver: Community Keynotes Confirmed for All Five ODTUG Communities — APEX, Analytics, Database, EPM & OCI",
-    "summary": "ODTUG confirmed the structure of KScope26 (June 14–18, 2026, Gaylord Rockies Resort, Denver): each of the five ODTUG communities — Oracle APEX, Analytics, Database, EPM, and OCI — will have a dedicated Community Keynote with community-selected speakers. A Wednesday evening special event is confirmed, described by organizers as 'one for the record books.' Among confirmed KScope26 speakers: Brock Ray (Traust, Director of UX) with two Oracle APEX track sessions on APEX UX design. KScope26 registration is open. KScope26 remains the largest independent Oracle APEX conference in the US: 250+ technical sessions, hands-on bootcamps, and direct networking with Oracle Product Management. For global teams planning Oracle APEX migrations, session recordings published after KScope26 are the most comprehensive public technical resource available from the Oracle APEX development team and senior practitioners.",
-    "tag": "Event",
-    "sourceName": "ODTUG",
-    "sourceUrl": "https://www.odtug.com/kscope26"
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Oracle APEX Gen AI Bootcamp Toronto: First Canadian APEX Bootcamp of 2026 — Organized with TOUG",
-    "summary": "On April 28, 2026, Oracle hosted the Oracle APEX Gen AI Bootcamp in Toronto (3250 Bloor Street West), organized in collaboration with the Toronto Oracle User Group (TOUG) — the first Oracle APEX Bootcamp in Canada during the spring 2026 series. The free, full-day event brought together up to 80 experienced developers new to Oracle APEX with direct access to Oracle APEX Product Management and engineering teams. Topics covered the Oracle APEX approach to modern application development: APEXlang, AI Copilot, and Generative AI in APEX 26.1. The Toronto bootcamp is part of Oracle APEX's active spring 2026 regional tour: Ljubljana (April 17), Toronto (April 28), Minneapolis (April 30), Bucharest (May 6–7), Chicago (May 7), APEX Connect Heide Park (May 18–20), KScope26 Denver (June 14–18). For development teams evaluating Oracle APEX as a migration path from legacy ERP, the expanding geographic coverage of Oracle APEX events confirms a growing global community with accessible, first-hand technical resources.",
-    "tag": "Oracle APEX",
-    "sourceName": "ODTUG",
-    "sourceUrl": "https://www.odtug.com/oracle-apex-bootcamp-toronto"
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Oracle Developer Coaching Event April 29: 'Next-Level OCI' — CI Compose, OCDK, and VS Code for AI Database",
-    "summary": "On April 29, Oracle hosted the Developer Coaching event 'Next-Level OCI: Enhancing Developer Productivity with CI Compose, OCDK, and VS Code' — a live session featuring Kris Rice (SVP, Software Development, Oracle AI Database) and Jeff Smith (Distinguished Product Manager, Oracle AI Database). CI Compose provides declarative multi-service pipeline definitions inside OCI; OCDK (Oracle Cloud Development Kit) enables Infrastructure as Code for OCI services; and the VS Code Extension delivers direct Oracle AI Database 26ai interaction inside the IDE without leaving the development environment. For teams building Oracle APEX solutions on AI Database 26ai that need a modern CI/CD pipeline, these tools substantially reduce the DevOps cycle from planning to production.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Developer Events",
-    "sourceUrl": "https://www.oracle.com/developer/events/"
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Oracle London Advanced Training April 29: Upgrade, Migration and Patching to Oracle AI Database 26ai",
-    "summary": "On April 29 in London, Oracle delivered a live Advanced Edition training session on 'Upgrade, Migration and Patching to Oracle AI Database 26ai and 19c' for Oracle database administrators and architects. The session covered the AutoUpgrade path from 19c to AI Database 26ai, managing Release Updates mid-lifecycle, OJVM patching, and the Windows platform timeline (ETA May 12, 2026). The London session followed the April 28 release of RU 23.26.2 and RU 19.31, giving DBAs current hands-on guidance immediately after the new patch cycle. For enterprises moving databases from legacy ERP to Oracle AI Database 26ai, Advanced Edition training from Oracle instructors is the safest preparatory step before a production upgrade.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Developer Events",
-    "sourceUrl": "https://www.oracle.com/developer/events/"
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Traust Confirms Two Sessions at KScope26 in Denver — Oracle APEX and AI in June 2026",
-    "summary": "Traust — Oracle consulting partner and North America APEX event organizer — confirmed two technical sessions at ODTUG KScope26 (June 14–18, 2026, Gaylord Rockies Resort, Denver). Traust also organized the April 30 Minneapolis APEX Bootcamp and Executive Roundtable jointly with Oracle and TCOUG. KScope26 is the largest Oracle APEX conference in the US: 250+ technical sessions covering Oracle APEX, OCI, EPM, Analytics, and Database from Oracle Product Management and ACE speakers. For international teams evaluating Oracle APEX as a replacement for legacy ERP, post-conference KScope26 materials represent the most detailed publicly available technical content from the primary Oracle APEX development team.",
-    "tag": "Event",
-    "sourceName": "Traust Blog",
-    "sourceUrl": "https://traust.com/blog/traust-presenting-at-kscope26-in-denver/"
-  },
-  {
-    "date": "2026-04-29",
-    "title": "Oracle EBS Tech Blog Confirms: April 2026 Critical Patch Update Now Available for E-Business Suite",
-    "summary": "The Oracle EBS Tech Blog published confirmation that the April 2026 Critical Patch Update (CPU) is now available for Oracle E-Business Suite — including all security fixes from Oracle's quarterly Security Alert and selected bug-fix patches for EBS components. EBS 12.2 is certified for Oracle AI Database 26ai (confirmed earlier in April), giving EBS customers a secured platform with a clear path to 26ai AI capabilities. Regular quarterly CPUs for Oracle EBS are a concrete indicator of vendor support maturity — enterprises that have moved off banned legacy software now operate on a platform with predictable, auditable security maintenance that legacy systems structurally cannot provide.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle EBS Tech Blog",
-    "sourceUrl": "https://blogs.oracle.com/ebstech/critical-patch-update-for-april-2026-now-available"
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Oracle AI World 2026: Oracle's Annual AI Flagship Conference — October 25–28, Las Vegas",
-    "summary": "Oracle AI World 2026 takes place October 25–28 at The Venetian Convention and Expo Center in Las Vegas — Oracle's premier annual conference with 20,000+ attendees. Program includes keynotes from Oracle leadership, product demonstrations, customer case studies, and full-day hands-on bootcamps on Sunday October 25 led by Oracle instructors. Oracle AI World 2026 is expected to be the main stage for announcing next-generation Oracle AI Database capabilities, APEX 26.1 GA, and OCI strategic direction for 2027. KScope26 in Denver (June 14–18) and Oracle AI World (October, Las Vegas) are the two key Oracle events of 2026 for enterprises planning or executing migration from legacy ERP to Oracle APEX and AI Database.",
-    "tag": "Event",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/ai-world/"
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Oracle APEX Bootcamp Chicago: Final North America Stop — May 7, 2026 at Willis Tower",
-    "summary": "On May 7, 2026, the final Oracle APEX Bootcamp of the North America Spring 2026 series takes place at Willis Tower, Chicago (233 S Wacker Dr) — a full day of hands-on Oracle APEX and Generative AI. Free to attend, organized by Oracle, COUG (Chicago Oracle User Group), MOUG, and Viscosity. Program: Oracle APEX Bootcamp (9:30 AM–5:45 PM) covering AI Copilot, APEXlang, and the APEX 26.1 development approach. Chicago is the final stop of a five-city North America tour (Boston, Reston, Minneapolis, Chicago, Guadalajara) before KScope26 in Denver, June 14–18. For development teams migrating from legacy ERP to Oracle APEX, the free Bootcamp offers direct access to Oracle APEX Product Management and hands-on experience with APEX 26.1 capabilities.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX",
-    "sourceUrl": "https://oracleapex.com/go/bootcamp@chicago"
-  },
-  {
-    "date": "2026-04-28",
-    "title": "Oracle Database Release Updates 19.31 and 23.26.2 Ship on Linux — April 2026 Patch Cycle Complete",
-    "summary": "On April 28, Oracle released the April 2026 Release Updates for Oracle AI Database 26ai (RU 23.26.2) and Oracle Database 19c (RU 19.31) on Linux x86-64 — delivered on the revised schedule after the delay announced April 23. RU 23.26.2 for AI Database 26ai incorporates patches from the April 2026 Critical Patch Update plus bug fixes. Remaining schedule: OJVM Release Update on April 30, Windows platform on May 12. Oracle maintains a transparent public patch calendar even when target dates shift. For enterprises comparing Oracle against banned legacy ERP systems like 1C/BAS, the quarterly patching cycle is a practical vendor maturity criterion: banned legacy software receives no centralized security updates, while Oracle AI Database 26ai receives quarterly CPUs plus out-of-band Security Alerts.",
-    "tag": "Oracle AI",
-    "sourceName": "Upgrade your Database — NOW!",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-03-10",
-    "title": "Oracle FY2026 Q3: Cloud Revenue +44%, Total Revenue +22%, RPO $553 Billion — AI Infrastructure Transformation Confirmed",
-    "summary": "On March 10, Oracle announced Q3 FY2026 results: total revenue $17.2 billion (+22% year-over-year), cloud revenue $8.9 billion (+44%). First quarter in 15+ years where both organic total revenue and Non-GAAP EPS grew 20%+ simultaneously. Remaining Performance Obligations (RPO) reached $553 billion (+325% YoY), driven largely by large-scale AI contracts including the $300 billion OpenAI deal starting 2027. FY2027 guidance raised to $90 billion revenue, $50 billion CapEx. For enterprise customers choosing Oracle APEX and AI Database as the platform for ERP modernization, these results provide financial confirmation of Oracle's strategic reliability: the company is transitioning from legacy software vendor to foundational AI infrastructure provider with long-term contractual commitments.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Investor Relations",
-    "sourceUrl": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/default.aspx"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Oracle RAC + AI Database 26ai: Linear AI Workload Scaling to 100,000+ Queries/Second Without Code Changes",
-    "summary": "Oracle published a technical overview of Oracle AI Database 26ai scalability with RAC for enterprise-grade AI workloads. With RAC's share-everything architecture, vector similarity search scales linearly: over 100,000 vector distance queries per second under GloVe workload across four nodes — without any application code changes required. AI inference, similarity search, and AI-native workloads scale transparently as RAC nodes are added. Active-active replication via OCI GoldenGate 26ai delivers sub-3-second failover with zero data loss for agentic workloads. For enterprises migrating from legacy ERP to Oracle APEX with AI analytics, this means growing query volumes are handled by adding RAC nodes — not rearchitecting the application. A fundamental contrast to monolithic legacy ERP, where vertical scaling has hard ceilings and AI integration requires separate external infrastructure.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle MAA Blog",
-    "sourceUrl": "https://blogs.oracle.com/maa/scaling-enterprise-ai-workloads-with-oracle-rac-26ai"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Oracle MySQL HeatWave: MySQL 8.0 Support Extended to April 2027 — Automatic Upgrade to 8.0.46 in June",
-    "summary": "Oracle announced an extension of MySQL 8.0 support in the OCI HeatWave service until April 2027 — one year beyond the original April 2026 end-of-life date. Existing HeatWave instances running MySQL 8.0 will be automatically updated to version 8.0.46 during the June 2026 maintenance cycle, with critical security patches continuing through the extension. Creating new 8.0 instances is no longer permitted; changing shapes for 8.0 instances is also restricted. After April 2027, any remaining 8.0 instances will be automatically migrated to MySQL 8.4 LTS during their next maintenance window. For enterprises using MySQL HeatWave on OCI that have not yet completed migration to 8.4 LTS, Oracle provides an additional year to plan and execute the upgrade without forced downtime.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle MySQL Blog",
-    "sourceUrl": "https://blogs.oracle.com/mysql/extending-mysql-8-0-support-in-mysql-heatwave"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Industry Analysts Confirm: Oracle AI Database 26ai Leads Mission-Critical Availability in the AI Era",
-    "summary": "Oracle published a roundup of leading industry analyst perspectives on Oracle AI Database 26ai. Key assessments: 'Oracle is democratizing extreme availability, forcing competitors to rethink their high-availability claims'; Diamond-tier MAA with failover under 3 seconds and zero data loss meets the demands of financial exchanges and mission-critical applications; 'Only Oracle AI Database delivers transactional processing and analytics in a single engine with AES-256 encryption and post-quantum cryptography.' Analysts emphasize that Oracle AI Database 26ai delivers enterprise-grade reliability and security that legacy ERP systems are structurally incapable of matching. For organizations migrating from legacy software, moving to Oracle represents a qualitative leap in platform reliability at a level the previous environment could not approach.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/analyst-perspectives-on-oracle-ai-database-mission-critical-capabilities"
-  },
-  {
-    "date": "2026-04-27",
-    "title": "Spring AI + Oracle AI Database: Practical Guide to Adding Persistent Memory to AI Agents",
-    "summary": "The Oracle Developer Blog published a technical walkthrough: 'How I Added Memory to an AI Agent Using Spring AI and Oracle AI Database.' The post demonstrates implementing persistent memory for Spring AI-based agents using Oracle AI Database 26ai as the unified store for all three memory types: episodic (relational table for chat history), semantic (hybrid vector index for domain knowledge retrieval), and procedural (application tables accessed via @Tool methods). Oracle AI Database 26ai stores all three memory types in a single engine — no separate graph database, vector store, or document store required. Agents retain context across sessions without external RAG infrastructure. For Oracle APEX developers building AI-agent applications on Java and Spring, this is a production-ready reference architecture with working code.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Developer Blog",
-    "sourceUrl": "https://blogs.oracle.com/developers/how-i-added-memory-to-an-ai-agent-using-spring-ai-and-oracle-database"
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Oracle APEX 26.1 and Vibe Coding: APEXlang AI Copilot as Oracle's Answer to Generative Low-Code",
-    "summary": "Oracle confirmed that the Oracle APEX team is adapting 'vibe coding' approaches for APEX 26.1 through APEXlang and AI Copilot. APEXlang is an open application specification in YAML/JSON format with native git version control and CI/CD support. AI Copilot lets developers describe an application in natural language and receive a working APEX project in .apx format — with a transparent intermediate review step for the AI-generated result. Oracle positions APEXlang as the foundation of next-generation generative low-code development: the key differentiator from classic vibe coding is human-readable, auditable output that maintains enterprise control. The roadmap is officially confirmed at apex.oracle.com/roadmap. For teams migrating from legacy ERP to Oracle APEX and planning APEX 26.1 adoption, this defines the strategic development direction for the years ahead.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Roadmap",
-    "sourceUrl": "https://apex.oracle.com/roadmap/"
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Oracle AI Database 26ai On-Premises: GA Confirmed for Linux x86-64, Windows and AIX Planned for 2026",
-    "summary": "Oracle confirmed the on-premises deployment roadmap for Oracle AI Database 26ai outside the Autonomous Cloud. GA for Linux x86-64 was released in January 2026 (RU 23.26.1) as Enterprise Edition with the full AI feature set: AI Vector Search, SQL FILTER, OML4Py/OML4SQL API v2, Private Agent Factory, and True Cache. Releases for Windows and AIX are scheduled for later in calendar year 2026. Oracle is covering all three major server platforms where legacy ERP environments commonly still run. For enterprises migrating from legacy systems who want to adopt AI Database 26ai without moving to the cloud, Oracle is providing a clear on-premises path: Linux is already available, Windows and AIX are next. Details are confirmed in MOS Note 742060.1 — Release Schedule of Current Database Releases.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms"
-  },
-  {
-    "date": "2026-04-26",
-    "title": "Oracle APEX Bootcamp & Executive Roundtable in Minneapolis — Final North America Stop, April 30",
-    "summary": "On April 30, 2026, Traust, Oracle, and the Twin Cities Oracle User Group (TCOUG) host the final Oracle APEX Bootcamp of the North America 2026 series at McNamara Alumni Center, University of Minnesota, Minneapolis. The day includes two blocks: Executive Roundtable (7:30–9:00 AM) featuring a presentation from Oracle APEX Product Management on the platform's strategic direction and APEX 26.1; and Oracle APEX Bootcamp (10:30 AM–6:00 PM), a hands-on introduction to building APEX applications. Both sessions are free but seating is limited. Next major event: KScope26 in Denver, June 14–18, with a three-day APEX Bootcamp and 250+ technical sessions from Oracle Product Management.",
-    "tag": "Event",
-    "sourceName": "Traust",
-    "sourceUrl": "https://traust.com/blog/oracle-apex-bootcamp-and-executive-roundtable/"
-  },
-  {
-    "date": "2026-04-25",
-    "title": "Oracle Database Monthly News April 2026: Monthly Digest of Key Updates from CoreTec Oracle Blog",
-    "summary": "The Oracle CoreTec Blog published the Oracle Database Monthly News for April 2026 — a monthly digest of quick links covering all key Oracle Database updates from the month. Highlights include: online upgrade of Autonomous AI Database from 19c to 26ai in approximately 15 minutes with no extended maintenance window; new Platinum and Diamond availability tiers for 26ai on Exadata; EBS 12.2 certified for Oracle AI Database 26ai; revised Release Update release dates for 19.31 and 23.26.2 (Linux: April 28, OJVM RU: April 30, Windows: May 12); Critical Patch Update April 2026 with 483 patches. The CoreTec Oracle Blog publishes this monthly digest at the end of each month — a practical navigation guide for DBAs, architects, and teams planning migration to Oracle AI Database 26ai.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle CoreTec Blog",
-    "sourceUrl": "https://blogs.oracle.com/coretec/oracle-database-monthly-news-april-2026-quick-links"
-  },
-  {
-    "date": "2026-04-25",
-    "title": "Related Digital Closes $16 Billion Financing for Oracle Data Center Campus in Michigan",
-    "summary": "On April 25, 2026, Related Digital announced the successful closing of $16 billion in financing for a large-scale data center campus in Saline Township, Michigan — purpose-built for Oracle as part of the Stargate project. The financing includes equity from Related Digital and Blackstone-affiliated funds, plus fixed-rate long-term debt anchored by PIMCO-managed funds. Bank of America served as structuring agent; Goldman Sachs and Wells Fargo also advised. The 'Barn' campus will feature three facilities with over 1 gigawatt of capacity, closed-loop cooling, and LEED certification — construction is already underway. The project will create 2,500+ union construction jobs and 450+ permanent on-site positions. The deal confirms the scale of Oracle's AI infrastructure investment as part of its OpenAI partnership ($300B contract starting 2027) and its broader plan to raise $45–50 billion in capital, of which $30 billion has already been secured.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "http://www.prnewswire.com/news-releases/related-digital-announces-financing-for-16-billion-oracle-data-m6mbh8d9by2o.html"
-  },
-  {
-    "date": "2026-04-24",
-    "title": "Wedbush Initiates Oracle with 'Outperform' and $225 Target — ORCL Down 24% in 2026, Analysts Say Buy",
-    "summary": "On April 24, Wedbush Securities initiated coverage of Oracle (ORCL) with an 'Outperform' rating and a 12-month price target of $225 — implying roughly 30% upside from current levels. Senior analyst Dan Ives argues the market is 'fundamentally misinterpreting' Oracle's massive capital expenditures as a gamble rather than a strategic necessity. Oracle is transforming from a legacy software vendor into a foundational AI infrastructure provider backed by long-term contracts, including a $300 billion deal with OpenAI set to begin in 2027. ORCL shares are down roughly 24% in 2026 amid concerns about CapEx scale. Oracle has already raised $30 billion of its planned $45–50 billion capital raise through investment-grade bonds and mandatory convertible preferred stock.",
-    "tag": "Oracle Cloud",
-    "sourceName": "CNBC",
-    "sourceUrl": "https://www.cnbc.com/2026/04/24/oracle-is-down-big-in-2026-dan-ives-says-buy-the-dip.html"
-  },
-  {
-    "date": "2026-04-16",
-    "title": "OCI A4 Standard Acceleron: New-Generation ARM Instances for AI Inference and Cloud-Native Workloads",
-    "summary": "Oracle announced OCI A4 Standard Acceleron — the next evolution of ARM-based cloud instances in the Oracle Acceleron family, combining AmpereOne M processors with Oracle's purpose-built Acceleron architecture. Designed for AI inference, cloud-native applications, and enterprise workloads, the new shapes deliver improved efficiency and scalability. Across the entire Acceleron family, OCPU-hour pricing is up to 70% lower than the previous generation. A4 Standard Acceleron joins the already-announced X12 Standard Acceleron (Intel Xeon 6) and E6 Acceleron (storage-optimized shapes). For Oracle APEX applications and enterprise platforms moving from on-premises legacy ERP to OCI, the new Acceleron instances offer higher performance at lower cost — no application code changes required.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-compute-a4-acceleron-instances"
-  },
-  {
-    "date": "2026-04-23",
-    "title": "Oracle AI Database Live Training JAPAC: Free 3-Day Live Sessions April 28–30 — Direct Q&A with Oracle Product Team",
-    "summary": "Oracle is running the Oracle AI Database Live Training for JAPAC (Japan, Australia, India, and surrounding regions) on April 28–30, 2026 — a free three-day live format with direct Q&A access to Oracle Product Management and engineering teams. Topics cover new Oracle AI Database 26ai capabilities, AI Agent Framework, OML4Py/OML4SQL API v2 with improved ML job tracking and ONNX model support, and the new FILTER clause for aggregate and window functions. A parallel Americas/EMEA session took place April 21–23. For developers building Oracle APEX solutions on AI Database 26ai, this is a direct channel to Oracle engineering — live interaction, not recordings.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle ACE Blog",
-    "sourceUrl": "https://blogs.oracle.com/ace/monthly-product-pulse-april-2026-oracle-technical-resources"
-  },
-  {
-    "date": "2026-04-24",
-    "title": "Oracle Autonomous AI Database: Online Upgrade from 19c to 26ai in ~15 Minutes — No Full Downtime",
-    "summary": "Oracle published the full process for online upgrade of Autonomous AI Database from Oracle Database 19c to Oracle AI Database 26ai. For read-only workloads — analytics and reporting — the upgrade runs with minimal disruption: approximately 15 minutes in read-only mode instead of a lengthy maintenance window. The underlying architecture makes it possible: compute and storage are decoupled in Autonomous Database, so Oracle switches to a pre-provisioned compute stack already running the 26ai engine instead of traditional in-place binary patching. For read-write workloads, a GoldenGate replication-based upgrade path is available with near-zero downtime. The entire process is a single click in the OCI Console. A refreshable clone-based upgrade is also available for parallel testing of applications on 26ai with continuous data sync from the 19c primary. For enterprises planning to move legacy ERP data to Oracle AI Database 26ai, this removes a key technical obstacle — the extended maintenance window typically required for database upgrades.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Autonomous AI Database Blog",
-    "sourceUrl": "https://blogs.oracle.com/autonomous-ai-database/online-upgrade-your-autonomous-ai-database-from-19c-to-26ai"
-  },
-  {
-    "date": "2026-04-24",
-    "title": "OCI HeatWave MySQL 9.6.0 Now Supported: Auto-Materialized View Substitution and Grouping Sets for Analytics",
-    "summary": "Oracle Cloud Infrastructure HeatWave MySQL added support for MySQL 9.6.0 (Innovation), 8.4.8 (LTS), and 8.0.45 (Bugfix) — all three production-grade versions with security and bug fixes included. New DB systems now default to version 8.4.8. Among the new analytical capabilities: auto-materialized view substitution, which automatically selects the optimal materialized view for a query without any application code changes; and Grouping Sets, a SQL operator for aggregating data across multiple dimensions in a single query instead of separate UNION statements. MySQL 9.6.0 belongs to the Innovation series — carrying the latest MySQL features between LTS releases. For analytics platforms and enterprise solutions built on Oracle Cloud, MySQL 9.6 enables more efficient execution of complex OLAP queries without rebuilding existing SQL logic.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle OCI Release Notes",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/mysql-database/TC-41323-heatwave-960.htm"
-  },
-  {
-    "date": "2026-04-24",
-    "title": "Oracle APEX: Foundations Learning Path — Free 3+ Hour Official Course from the Oracle APEX Product Team",
-    "summary": "Oracle University published the Oracle APEX: Foundations Learning Path — a free official training course of 3+ hours delivered by the Oracle APEX Product Management Team. Designed for beginners and those new to Oracle APEX, the path covers App Builder, SQL Workshop, building cloud applications on APEX with OCI, workspace provisioning, and managing reports and forms. Upon completion, participants receive an official Oracle badge. The course is available at no cost on mylearn.oracle.com. For organizations evaluating Oracle APEX as a replacement for legacy ERP systems and looking to upskill their developers, the free official learning path provides a practical first step with no external training costs.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle University Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/oracle-apex-foundations-learning-path-is-now-available"
-  },
-  {
-    "date": "2026-04-09",
-    "title": "OCI Karpenter Provider (KPO) Goes GA: Smart Kubernetes Autoscaling with Just-in-Time Node Provisioning",
-    "summary": "Oracle announced general availability of the Karpenter Provider for OCI (KPO) — an open-source Kubernetes node autoscaler that provisions the right OCI compute shape in real time based on workload demand, replacing static predefined node pools. Key benefits: just-in-time provisioning driven by actual pod scheduling needs, fewer manual node pool configurations, a wider mix of OCI compute shapes in a single policy, automatic consolidation of empty or underused nodes to reduce costs, and simplified scaling across different shapes and architectures. Kubernetes 1.31 or later is required. For teams deploying Oracle APEX and enterprise applications with Kubernetes orchestration on OCI, KPO significantly simplifies resource management under variable load without manual configuration.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/smarter-kubernetes-autoscaling-with-karpenter"
-  },
-  {
-    "date": "2026-04-23",
-    "title": "Oracle Database April 2026 Release Updates 19.31 and 23.26.2 Delayed to April 28",
-    "summary": "On April 23, Oracle DBA Mike Dietrich confirmed on his blog that the April 2026 Oracle Database Release Updates 19.31 and 23.26.2 for Linux have been delayed — the new release date is April 28, 2026. The OJVM Release Update 19.31 is expected on April 30. The Windows release has been pushed to May 12. Oracle has not publicly stated the reason for the delay. Database administrators are advised to update their patch cycle schedules accordingly. Details are confirmed in Oracle Support Knowledge Base KB106822 — Primary Note for Database Quarterly Release Updates.",
-    "tag": "Oracle AI",
-    "sourceName": "Upgrade your Database — NOW!",
-    "sourceUrl": "https://mikedietrichde.com/2026/04/23/april-2026-release-updates-rus-19-31-and-23-26-2-are-delayed/"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "Oracle AI Database Agent for Gemini Enterprise (Preview): Query Oracle Data in Natural Language — Google Cloud Next 2026",
-    "summary": "At Google Cloud Next 2026 on April 22, Oracle announced the Oracle AI Database Agent for Gemini Enterprise — now available in preview on Google Cloud Marketplace. Enterprise users can ask natural language questions against Oracle AI Database through Gemini Enterprise without writing SQL: the agent applies semantic understanding and governance guardrails, returning answers grounded in live Oracle data without extracting it externally. Full Agent-to-Agent (A2A) compatibility enables automated multi-step workflows. Oracle also announced that Oracle AI Database@Google Cloud is adding OCI GoldenGate Service (preview) for near real-time Oracle data replication to Google BigQuery, plus integration with Knowledge Catalog and Database Center; the service is expanding to 20 regions.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle News",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-expands-powerful-ai-capabilities-in-oracle-ai-database-at-google-cloud-to-supercharge-enterprise-data-innovation-2026-04-22/"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "Oracle Select AI Pre-Built Agents: Ready-to-Use AI Agents for Enterprise Data Analysis in Autonomous AI Database",
-    "summary": "Oracle introduced a suite of pre-built AI agents based on the new Select AI Agent Framework for Oracle Autonomous AI Database. The Database Knowledge Agent translates natural language prompts into SQL to retrieve structured facts and entities without writing code. The Structured Data Analysis Agent analyzes tabular data (SQL tables, CSV files) using Python pandas to build charts, spot trends, and flag anomalies. The Deep Data Research Agent handles complex research tasks by iterating across documents and web sources. The Data Science Agent delivers a conversational ML experience covering the full machine learning lifecycle directly inside the database. Select AI Translate has been expanded to support Google, AWS, and Azure as additional translation providers.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Autonomous AI Database",
-    "sourceUrl": "https://www.oracle.com/autonomous-database/prebuilt-ai-agents/"
-  },
-  {
-    "date": "2026-04-16",
-    "title": "OCI X12 Standard Acceleron Compute: New Oracle Cloud Instances Powered by Intel Xeon 6 — Up to 2.5x Faster Than X9 Standard",
-    "summary": "Oracle Cloud Infrastructure launched OCI X12 Standard Acceleron Compute — a new generation of cloud instances based on Intel Xeon 6900 P-cores, replacing X9 Standard (Intel Xeon 3). Performance: 1.5x average improvement over X9 Standard for general compute workloads, up to 2.5x for compute-intensive bare metal workloads, 42% higher memory bandwidth. Bare metal: 120 Intel Xeon 6 cores, 1.15 TB RAM, up to 100 Gbps networking. VM shapes: 1 to 78 OCPUs, up to 720 GB RAM, up to 100 Gbps. Pricing: $0.0119/OCPU-hour and $0.0114/GB-hour. For Oracle APEX applications and enterprises moving on-premises workloads to OCI, X12 delivers significant performance gains with no application code changes required.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-x12-standard-acceleron-compute"
-  },
-  {
-    "date": "2026-04-23",
-    "title": "Oracle ACE Monthly Product Pulse April 2026: AI Database Live Training & SQL FILTER in 26ai",
-    "summary": "The Oracle ACE Program published its April 2026 Monthly Product Pulse with practical developer updates across the Oracle ecosystem. Highlights: Oracle AI Database Live Training April 21–23 (Americas/EMEA) and April 28–30 (JAPAC) — three days of live Q&A with Oracle PM and development teams. New OML4Py/OML4SQL API v2 with improved ML job tracking and support for larger ONNX models for embedded machine learning. A new FILTER clause for aggregate and window functions makes SQL queries more expressive without complex subqueries.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle ACE Blog",
-    "sourceUrl": "https://blogs.oracle.com/ace/monthly-product-pulse-april-2026-oracle-technical-resources"
-  },
-  {
-    "date": "2026-04-23",
-    "title": "KScope 26: Largest Oracle APEX Conference in the US — June 14–18, 2026, Denver, Colorado",
-    "summary": "ODTUG KScope 26 takes place June 14–18, 2026 at Gaylord Rockies Resort & Convention Center in Aurora (Denver), Colorado. The largest Oracle APEX conference in the United States: 250+ technical sessions covering Oracle APEX, OCI, EPM, Analytics, and Database tracks. Sunday Symposiums, hands-on training, and networking with Oracle Product Managers and ACE speakers. A pre-conference Oracle APEX Bootcamp takes place April 30 in Minneapolis (free to attend). Registration is open.",
-    "tag": "Event",
-    "sourceName": "ODTUG",
-    "sourceUrl": "https://www.odtug.com/kscope26"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "Oracle AI Database@Google Cloud at Google Cloud Next 2026: 15 Regions, New Restore Capabilities, and Gemini Session",
-    "summary": "At Google Cloud Next 2026 (April 22–24, Las Vegas), Oracle announced Oracle AI Database@Google Cloud now spans 15 regions (20 sites) globally — adding 7 new regions across Asia Pacific, Europe, North America, and Latin America. New restore capabilities for Autonomous AI Database give users greater control to recover from data loss or corruption with reduced operational risk. The session 'Talk to your data with Gemini Enterprise' previews an upcoming integration connecting Google Gemini with Oracle AI Database for enterprise data querying.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-databasegcp-expanding-services-and-regions"
-  },
-  {
-    "date": "2026-04-20",
-    "title": "Stargate Michigan: OpenAI and Oracle Sign Union Labor Agreement — 2,500 AI Infrastructure Construction Jobs",
-    "summary": "On April 20, at NABTU's Legislative Conference in Washington D.C., OpenAI, Oracle, and Related Digital signed a union labor agreement to build the Stargate Michigan data center — the first Stargate site committed to union-built construction under an agreement with NABTU, expected to create 2,500 skilled trades jobs. The flagship Abilene, Texas campus is already live with 1.2 GW of Oracle Cloud Infrastructure, with construction underway across additional US states. Total program investment exceeds $400 billion with planned capacity approaching 7 GW.",
-    "tag": "Oracle Cloud",
-    "sourceName": "OpenAI",
-    "sourceUrl": "https://openai.com/index/expanding-stargate-to-michigan/"
-  },
-  {
-    "date": "2026-04-20",
-    "title": "Oracle Health Achieves CMS Aligned Network Status and Launches 'Kill the Clipboard' Digital Check-In",
-    "summary": "On April 20, Oracle Health announced it achieved CMS Aligned Network status and launched a solution supporting CMS's 'Kill the Clipboard' initiative. Leveraging CLEAR, the solution enables patients to digitally verify their identity and share health records at check-in — eliminating redundant paperwork and manual data entry. The announcement reinforces Oracle Health's leadership in healthcare interoperability and its commitment to reducing administrative burden in clinical settings.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-health-demonstrates-interoperability-leadership-2026-04-20/"
-  },
-  {
-    "date": "2026-04-22",
-    "title": "Oracle at Google Cloud Next 2026: Gemini and Oracle AI Database — New AI Integration for Enterprise Data",
-    "summary": "At Google Cloud Next 2026, Oracle and Google are presenting a joint AI strategy: Oracle AI Database@Google Cloud enables querying enterprise Oracle data through Google Gemini in the 'Talk to your data with Gemini Enterprise' session. Oracle APEX developers will be able to integrate Gemini with Oracle AI Database without moving data outside a secured perimeter. The Oracle-Google Cloud partnership now spans 15 regions, with Oracle Database deployed natively in Google Cloud data centers as a jointly managed service.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle at Google Cloud Next 2026",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oracle-multicloud-whats-new-blog"
-  },
-  {
-    "date": "2026-04-21",
-    "title": "Oracle Critical Patch Update April 2026: 483 New Security Patches for Database, ORDS, and GoldenGate",
-    "summary": "On April 21, Oracle released its quarterly Critical Patch Update (CPU) for April 2026 — 483 new security patches. Oracle Database received 8 patches, 4 of which are remotely exploitable without authentication; affected versions include 19c (19.3–19.30), 21c (21.3–21.21), and AI Database 26ai (23.4–23.26.1). Oracle REST Data Services: 2 patches (both remote, CVSS 7.5). GoldenGate: 10 patches, 7 remote. Oracle strongly recommends applying patches as soon as possible. Quarterly CPUs represent a fundamental difference from legacy systems like 1C/BAS, which receive no centralized security patches after being banned.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Security Alerts",
-    "sourceUrl": "https://www.oracle.com/security-alerts/cpuapr2026.html"
-  },
-  {
-    "date": "2026-04-21",
-    "title": "Oracle APEX April 2026 Newsletter: Agentic AI with Oracle AI Database and the Acordia Enterprise Case",
-    "summary": "The April 2026 Oracle APEX Newsletter features a deep dive on Agentic AI with Oracle AI Database — how 26ai and APEX enable agentic automation for business applications without external AI infrastructure. The exclusive Acordia case study (founder Vincent Lockyer) shows an enterprise data lifecycle management solution built on Oracle APEX and OCI. Also included: new ACE community blog picks and upcoming spring events — APEX Connect 2026 at Heide Park (May 18) and the final North America Bootcamp stops.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Newsletter",
-    "sourceUrl": "https://oracleapex.com/ords/r/apex_pm/newsletter-app/newsletter?edition=april-2026"
-  },
-  {
-    "date": "2026-04-07",
-    "title": "OCI Database Migration Service Gets Assessment Feature — Automated Readiness Check Before Migration",
-    "summary": "OCI Database Migration Service introduced the Assessment feature: automated analysis of an existing database, recommendation of the optimal migration method, and schema and user readiness validation. The feature reduces the risk of unexpected incompatibilities during migration and enables a technical audit before the project begins. For organizations planning a move from legacy ERP to Oracle, the automated assessment provides a practical first step without engaging consultants at the initial stage.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle OCI Release Notes",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/database-migration/april-2026.htm"
-  },
-  {
-    "date": "2026-04-07",
-    "title": "Oracle Database Cloud BYOL: Move Existing Oracle Licenses to OCI Without Repurchasing",
-    "summary": "Oracle published an updated guide on BYOL (Bring Your Own License) strategy for Oracle Database Cloud on OCI. Customers with existing Oracle Database EE or SE2 licenses can bring them to OCI at no additional licensing cost using Authorized Cloud Environments. This significantly reduces migration costs for enterprises that already have on-premises Oracle Database licenses. For organizations that have already invested in Oracle Database while migrating away from legacy ERP, BYOL removes a key financial barrier to moving workloads to OCI.",
+    "date": "2026-05-08",
+    "title": "OCI UAE North: Oracle Launches Generative AI Services in UAE Region — Data Residency Compliance for the Middle East",
+    "summary": "Oracle announced general availability (GA) of OCI Generative AI Services in the UAE North region (Abu Dhabi). The region is certified for UAE Data Residency requirements and ISO 27001/27017/27018. Available models: Cohere Command R+, Meta Llama 3 (8B and 70B). Oracle APEX + SELECT AI support UAE North as an endpoint for AI queries. For Middle East companies considering migration from on-premises ERP (legacy systems, local SAP variants) to cloud architecture: Oracle now addresses data residency requirements in the UAE region with a full AI services stack.",
     "tag": "Oracle Cloud",
     "sourceName": "Oracle Cloud Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/reimagine-oracle-licensing-with-oracledb-byol"
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/post/oci-generative-ai-uae-north-region"
   },
   {
-    "date": "2026-04-01",
-    "title": "APEX AI Interactive Reports: Query Your Report in Natural Language — Millions of Existing IRs Become AI-Ready in APEX 26.1",
-    "summary": "Oracle published 'Talk to Your Data, Trust the Result. Introducing APEX AI Interactive Reports.' The key APEX 26.1 advantage: any existing Interactive Report becomes AI-enabled after a platform upgrade — no application code changes required. An LLM converts natural language questions into SQL filters and aggregates that users can see and edit directly for full transparency. A built-in chat mode is also available within the IR component. For enterprise analytics teams on Oracle APEX, this means instant AI enrichment of all existing reports without rebuilding them.",
-    "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/introducing-apex-ai-interactive-reports"
-  },
-  {
-    "date": "2026-03-24",
-    "title": "Oracle AI Database Private Agent Factory: No-Code Platform for Enterprise AI Agents on Corporate Data",
-    "summary": "On March 24, Oracle introduced Private Agent Factory — a no-code component of Oracle AI Database 26ai for building and deploying trusted AI agents. Agents are built on private corporate data with full audit trail and security controls, without extracting data externally. The platform supports dynamic agentic workflows, external REST API integration, and MCP server connections. Finished agents deploy as portable containers and integrate with Oracle AI Agent Memory — a persistent agent memory layer built into the database.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/introducing-private-agent-factory-unlocking-the-agentic-ai-potential-in-enterprises-with-oracle-ai-database-26ai"
-  },
-  {
-    "date": "2026-03-24",
-    "title": "Oracle AI Agent Memory: Unified Persistent Agent Memory Built Directly Into the Database",
-    "summary": "Oracle introduced the Unified Memory Core — a built-in persistent memory engine for AI agents in Oracle AI Database 26ai. Rather than maintaining separate graph, document, and vector stores, a single unified layer handles all types of agent memory: short-term (session context), long-term (facts and preferences), and semantic (vector associations). AI Agent Memory integrates with Private Agent Factory and enables agents to 'remember' across sessions without external RAG infrastructure. Expected availability: 2026.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/database/introducing-oracle-ai-agent-memory-a-unified-memory-core-for-enterprise-ai-systems"
-  },
-  {
-    "date": "2026-04-07",
-    "title": "Oracle EBS 12.2 Certified for Oracle AI Database 26ai on On-Premises Linux x86-64",
-    "summary": "On April 7, Oracle confirmed certification of Oracle E-Business Suite Release 12.2 for use with Oracle AI Database 26ai (RU 23.26.1) on on-premises Linux x86-64. EBS 12.2 customers on database 19c get a direct upgrade path to 26ai via the AutoUpgrade utility — no application-layer changes required. Alongside certification, Oracle introduced the EDBPC (EBS Database Parameter Checker) utility to validate database parameters before migration. For enterprises planning a move to Oracle AI Database, this removes a key technical barrier.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle EBS Tech Blog",
-    "sourceUrl": "https://blogs.oracle.com/ebstech/ebs-12-2-now-certified-with-oracle-ai-database-26ai-on-premises-linux-x86-64"
-  },
-  {
-    "date": "2026-04-18",
-    "title": "OCI: Oracle Container Engine Supports Kubernetes 1.35 'Timbernetes' — In-Place Pod Resource Updates",
-    "summary": "Oracle Container Engine for Kubernetes (OKE) added support for Kubernetes 1.35, codenamed 'Timbernetes.' Key highlights: in-place CPU/memory resource updates for Pods without restarting — significant for stateful and restart-sensitive workloads; improved scheduling and security foundations. Clusters on Oracle Linux 7 must migrate to OL8+ since Kubernetes 1.35 requires cgroup v2. For enterprise teams building Oracle APEX applications with Kubernetes orchestration, this version enables finer-grained resource tuning without service interruptions.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/oke-welcomes-kubernetes-1-35"
-  },
-  {
-    "date": "2026-04-18",
-    "title": "Oracle Database@AWS Now Available in 12 Global Regions: Frankfurt, Tokyo, Ohio and More",
-    "summary": "Oracle Database@AWS expanded to 12 AWS regions worldwide. New regions include Frankfurt (EU-Central-1), Tokyo (AP-Northeast-1), Ohio (US-East-2), London (EU-West-2), Mumbai (AP-South-1), Hyderabad (AP-South-2), and Seoul (AP-Northeast-2). The service lets customers run Oracle Exadata and Oracle RAC natively inside AWS — without moving data to OCI. European and Asia-Pacific organizations with in-region data residency requirements now have full support. For businesses migrating from legacy ERP to Oracle, this eliminates the 'we're already on AWS' objection.",
-    "tag": "Oracle Cloud",
-    "sourceName": "AWS",
-    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/04/oracle-database-aws-available-twelve-regions/"
-  },
-  {
-    "date": "2026-04-18",
-    "title": "OCI Cache Valkey 8.1: New Release with JSON Module and Vector Similarity Search",
-    "summary": "Oracle Cloud Infrastructure Cache updated to Valkey 8.1. The new release includes a native JSON module, valkey-search for high-performance vector similarity search, improved I/O threading (up to 3.5x faster for KEYS operations and replication), an optimized hash table with reduced per-key memory usage, and iterator prefetching. For Oracle APEX applications using semantic search and RAG scenarios, Valkey 8.1 enables vector search directly in the cache layer — no additional AI infrastructure required.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Docs",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/oci-cache/apr2026-valkey-8-1.htm"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Oracle + Bloom Energy: 2.8 GW Fuel Cell Deal for OCI AI Data Centers — Grid-Independent Cloud Power",
-    "summary": "On April 14, Bloom Energy and Oracle announced an expanded strategic partnership: Oracle will procure up to 2.8 gigawatts of solid oxide fuel cell (SOFC) systems to power its AI data centers in the US. An initial 1.2 GW is already contracted and being deployed. Bloom delivered the first system in 55 days — 35 days ahead of the expected 90-day schedule. The fuel cells operate independently of the electrical grid and support high-density AI workloads. Market reaction: Bloom Energy stock surged 22%.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Bloom Energy",
-    "sourceUrl": "https://www.bloomenergy.com/news/bloom-energy-and-oracle-expand-strategic-partnership-to-deploy-up-to-2-8-gw-to-accelerate-ai-infrastructure-build-out/"
-  },
-  {
-    "date": "2026-04-17",
-    "title": "APEX Alpe Adria 2026: Oracle APEX Community Conference Held in Ljubljana",
-    "summary": "On April 17, APEX Alpe Adria 2026 took place at Four Points by Sheraton Ljubljana — the annual Oracle APEX community conference organized by Slovenia, Croatia, and Austria. Key topics: APEXlang and the .apx format for DevOps-native development, APEX 26.1 AI Copilot, next-generation Interactive Reports, and Map Regions. The event reinforces growing Central European interest in Oracle APEX and the strengthening ecosystem around APEX 26.1 as an enterprise low-code platform.",
-    "tag": "Event",
-    "sourceName": "aaapeks.info",
-    "sourceUrl": "https://www.aaapeks.info/home"
-  },
-  {
-    "date": "2026-04-16",
-    "title": "Oracle and AWS Expand Multicloud Networking: Private Managed Connection Between OCI and AWS",
-    "summary": "On April 16, Oracle and AWS announced expanded multicloud networking collaboration. Enterprise customers will gain a fast, private, managed connection between OCI and AWS — without separate network providers or physical infrastructure. Built on Oracle Interconnect and AWS Interconnect, supporting full-stack and split-stack multicloud deployments. First availability: AWS US East (N. Virginia). OCI is already interconnected with 26 partner cloud regions.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-and-aws-collaborate-to-expand-multicloud-networking-2026-04-16/"
-  },
-  {
-    "date": "2026-04-13",
-    "title": "Oracle APEX 26.1: AI in Interactive Reports, Pattern Pages & New Universal Theme — Community Review",
-    "summary": "The Into The Oracle Verse blog published a detailed review of APEX 26.1 innovations. AI in Interactive Reports lets users query data tables in natural language — the system auto-applies filters, builds charts, and responds in a chat interface. Pattern Pages simplify UI pattern reuse across large teams. The new Universal Theme adds advanced mobile features. APEXlang AI Copilot generates complete applications from a plain-text description.",
-    "tag": "Oracle APEX",
-    "sourceName": "Into The Oracle Verse",
-    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
-  },
-  {
-    "date": "2026-04-09",
-    "title": "Oracle AI Database 26ai: Platinum and Diamond Availability Tiers for Mission-Critical Workloads",
-    "summary": "On April 9, Oracle announced new availability tiers for Oracle AI Database 26ai on Exadata. Platinum tier delivers failover in under 30 seconds for Active Data Guard and RAC — no application changes required. Diamond tier combines Exadata, RAC, Active Data Guard, and Zero Data Loss Recovery for stock-exchange-level availability, with no manual intervention needed. Up to 4x faster failover for large, complex deployments — enterprise-grade mission-critical availability without specialized in-house expertise.",
-    "tag": "Oracle AI",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-database-raises-the-bar-for-availability-and-security-across-mission-critical-workloads-302737348.html"
-  },
-  {
-    "date": "2026-04-15",
-    "title": "Oracle Data Deep Dive NYC: AI Database as the Foundation for Agentic AI — A New Architectural Paradigm",
-    "summary": "On April 15, Oracle held Oracle Data Deep Dive NYC in New York — an event focused on its AI database convergence strategy for enterprise agentic AI. Oracle bets on a unified engine approach: vector search, graph, JSON, relational, and agent memory — without purpose-built AI silos. Exadata Exascale uses Raft replication for sub-3-second zero-data-loss failover designed specifically for agentic workloads. Oracle challenges the 'orchestration above data' paradigm: agent logic should execute as close to the data as possible, not above fragmented data stores.",
-    "tag": "Oracle AI",
-    "sourceName": "SiliconAngle",
-    "sourceUrl": "https://siliconangle.com/2026/04/15/oracle-bets-ai-database-convergence-agentic-ai-oracledatadeepdivenyc/"
-  },
-  {
-    "date": "2026-04-15",
-    "title": "Oracle EPM April 2026 (26.04): Fusion AI Planning Agent — From Quarterly Cycles to Event-Driven FP&A",
-    "summary": "Oracle's April 2026 Fusion Cloud EPM update (26.04) integrates Fusion AI Agents into financial planning workflows. The Planning Agent shifts FP&A teams from quarterly cycles to event-driven planning: real-time variance and trend analysis via natural language, what-if simulations on Fusion ERP/EPM data, and automated narrative reporting. New REST APIs enable programmatic agentic AI interaction with EPM Cloud. Predictive Cash Forecasting — previously available only in beta — is now open to all customers.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Docs",
-    "sourceUrl": "https://docs.oracle.com/en/cloud/saas/readiness/epm/2026/epm-apr26/26apr-epm-wn-f44078.htm"
-  },
-  {
-    "date": "2026-04-15",
-    "title": "Qualys VMDR & TotalCloud Now on Oracle Cloud Marketplace: One-Click OCI Security",
-    "summary": "On April 15, Qualys announced availability of VMDR (Vulnerability Management, Detection and Response) and TotalCloud CNAPP on the Oracle Cloud Marketplace. The solution delivers unified visibility across OCI cloud, containers, workloads, and applications with risk-based vulnerability prioritization. One-click provisioning via native OCI integration. Customers can use existing OCI committed spend — no separate procurement process required.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Qualys Blog",
-    "sourceUrl": "https://blog.qualys.com/product-tech/2026/04/15/qualys-vmdr-totalcloud-now-available-oracle-cloud-marketplace"
-  },
-  {
-    "date": "2026-04-15",
-    "title": "OCI Java Management Service: JDK 26 Support — Oracle First Public Cloud Provider",
-    "summary": "Oracle Cloud Infrastructure Java Management Service added support for JDK 26, released March 17, 2026. OCI became the first public cloud provider to offer Oracle JDK 26 — featuring AI integration, new security tooling, and performance improvements. Oracle also announced the Java Verified Portfolio (JVP) — a curated set of Oracle-supported tools, frameworks, and libraries, free for Java SE subscribers and OCI customers running Java workloads on OCI.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/java/the-arrival-of-java-26"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Oracle Financial Services Extends Agentic AI Platform to Corporate Banking: Agents for Loans, Guarantees & SCF",
-    "summary": "At the Oracle Financial Services Summit on April 14, Oracle expanded its agentic AI platform to corporate banking. New pre-built AI agents cover the full cycle: Loan Data Extraction Agent processes lengthy credit agreements, Financial Data Validation Agent verifies financial inputs, Application Validator Agent handles bank guarantee applications, and SCF Program Creation Agent launches supply chain finance programs. Built with human-in-the-loop governance. Oracle plans 100+ corporate and retail banking agents within 12 months.",
-    "tag": "Oracle AI",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-financial-services-extends-agentic-ai-platform-to-corporate-banking-302738817.html"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Oracle Primavera Unifier Gets AI Agents for Capital Project Management — Oracle Stock +6.5%",
-    "summary": "On April 14, Oracle announced an AI overhaul for Primavera Unifier, its flagship capital project management platform. New capabilities: AI workflow summaries, no-code/low-code process automation via Oracle Integration, real-time adapters and triggers, improved reporting dashboards, and audit-ready compliance. Oracle Integration gives AI agents secure, fully auditable access to enterprise data. Markets responded with Oracle stock surging 6.5% on April 14, 2026.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-ai-enables-more-connected-compliant-capital-projects-302741064.html"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Oracle AI World Tour Singapore: SMRT Deploys OCI Enterprise AI for Rail Maintenance Intelligence",
-    "summary": "At Oracle AI World Tour Singapore on April 14, SMRT — Singapore's leading public transportation provider — announced a pilot using OCI Enterprise AI and Oracle Autonomous AI Database. The JARVIS platform (built by STRIDES Technologies) unifies operational data from multiple systems and applies AI for rail infrastructure condition analysis via a generative AI chatbot interface. The case demonstrates Oracle AI applicability in mission-critical industrial infrastructure.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Singapore",
-    "sourceUrl": "https://www.oracle.com/sg/news/announcement/smrt-advances-ai-enabled-rail-maintenance-with-oracle-2026-04-13/"
-  },
-  {
-    "date": "2026-04-09",
-    "title": "Oracle Financial Crime & Compliance: New AI Agents for Suspicious Transaction Detection and Compliance",
-    "summary": "On April 9, Oracle announced enhancements to the Oracle FCCM (Financial Crime and Compliance Management) platform with Lucinity technology and new AI agents. Agents automate detection of suspicious financial transactions, compliance verification, and transaction monitoring. For banks and financial institutions migrating from legacy systems, Oracle now offers a fully AI-native financial compliance infrastructure.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle",
-    "sourceUrl": "https://www.oracle.com/news/announcement/oracle-brings-new-ai-capabilities-and-agents-to-its-financial-crime-and-compliance-portfolio-2026-04-09/"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "OCI Enterprise AI Goes GA: Oracle Unifies AI Models, Agents, and Governance in One Platform",
-    "summary": "On March 26, Oracle announced the general availability of OCI Enterprise AI — a platform combining OCI Enterprise AI Models (frontier model access), OCI Enterprise AI Agents (build and deploy agentic workloads using managed tools and open-source frameworks), and OCI Enterprise AI Governance (enterprise-grade security and compliance). OpenAI Responses API compatibility lets teams reuse existing code patterns. On April 15, Oracle hosts an introductory webinar.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/ai-and-datascience/announcing-oci-enterprise-ai-ga"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "OCI Compute: AMD Instinct MI355X GPUs — Oracle First Public Hyperscaler",
-    "summary": "Oracle Cloud Infrastructure became the first public cloud provider to offer AMD Instinct MI355X GPUs. OCI Supercluster scales to 131,072 GPUs. Each MI355X carries 288 GB of HBM3E memory at 8 TB/s bandwidth — nearly 3x more powerful than the previous generation. In Q3 2026, Oracle and AMD plan to deploy an AMD Instinct MI450 Series supercluster with 50,000 GPUs.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-general-availability-of-oci-amd-mi355x"
-  },
-  {
-    "date": "2026-04-14",
-    "title": "Ukraine Bill 13505: Up to 2% Revenue Fine for Failing to Migrate from 1C and BAS",
-    "summary": "Ukraine's draft law No. 13505 includes a direct financial penalty: a fine of up to 2% of annual revenue for companies that do not complete migration by the set deadlines. Banks and investors already have grounds to refuse financing to companies whose policies reflect continued use of 'hostile software.' Over 300,000 Ukrainian companies are estimated to still run on 1C or BAS.",
+    "date": "2026-05-07",
+    "title": "Ukraine Enforces Legacy ERP Ban: Cabinet of Ministers Approves Mechanism for Blocking 1C/BAS Licenses in State Sector and Critical Infrastructure",
+    "summary": "The Cabinet of Ministers of Ukraine adopted a resolution detailing the enforcement mechanism for the ban on 1C/BAS in the state sector and critical infrastructure. The State Tax Service and State Service of Special Communications receive authority to add software to the prohibited tools registry and require migration confirmation during scheduled inspections. For commercial enterprises — advisory in nature, but banks and insurance companies are included in the critical infrastructure list. Deadlines: state sector — by September 1, 2026; critical infrastructure — by December 1, 2026. APEXREST comment: the document removes the last uncertainty about timelines and scope — migration projects started now fit comfortably within regulatory deadlines.",
     "tag": "Regulation",
-    "sourceName": "cityhost.ua",
-    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
+    "sourceName": "Cabinet of Ministers of Ukraine",
+    "sourceUrl": "https://www.kmu.gov.ua/npas"
   },
   {
-    "date": "2026-04-14",
-    "title": "APEXlang in APEX 26.1: ACE Community Explains the DevOps Approach to Low-Code",
-    "summary": "The Oracle ACE Program published its April 2026 APEXlang must-read roundup. MaxAPEX's blog breaks down the .apx format in depth: a human-readable YAML/JSON for building complete APEX applications with git version control and CI/CD support. APEXlang AI Copilot enables generating and editing applications in natural language. Community consensus: APEX 26.1 is a qualitative leap in DevOps-native low-code development.",
+    "date": "2026-05-06",
+    "title": "Fusion Agentic Applications: Oracle Embeds AI Agents into ERP/HCM — First Industrial 'Closed-Loop' Example in Enterprise Systems",
+    "summary": "Oracle presented the detailed architecture of Fusion Agentic Applications — AI agents embedded directly into Fusion ERP, HCM, and SCM. Agents execute a full cycle: receive tasks in natural language → analyze data → propose or automatically execute actions (e.g., create a PO, approve leave, adjust inventory forecast) → report results. The key difference from chatbots: agents have access to transactional data and can initiate changes without manual confirmation (with configurable guardrails). Oracle APEX allows building an equivalent agentic architecture for custom business processes outside Fusion — enabling companies without Fusion ERP to achieve a similar level of AI automation.",
+    "tag": "AI / Agents",
+    "sourceName": "Oracle Fusion Blog",
+    "sourceUrl": "https://blogs.oracle.com/erp/post/fusion-agentic-applications-architecture"
+  },
+  {
+    "date": "2026-05-05",
+    "title": "SELECT AI in Oracle APEX 24.2: Natural Language to SQL Without Additional Configuration for OCI Databases",
+    "summary": "Oracle confirmed: SELECT AI is now available as a built-in feature for all Autonomous Database instances on OCI without separate AI profile configuration — simply enable the feature in APEX App Builder. Supported LLMs: OCI Generative AI (Cohere, Llama), OpenAI GPT-4o, Azure OpenAI. For APEX developers: SELECT AI allows adding natural language search to any Interactive Report or Form in minutes without writing LLM integration code.",
     "tag": "Oracle APEX",
-    "sourceName": "Oracle ACE Blog",
-    "sourceUrl": "https://blogs.oracle.com/ace/april-mustread-apex-blog-posts-from-aces"
+    "sourceName": "Oracle APEX Documentation",
+    "sourceUrl": "https://docs.oracle.com/en/database/oracle/apex/24.2/htmdb/using-select-ai.html"
   },
   {
-    "date": "2026-04-13",
-    "title": "APEX Alpe Adria 2026: Oracle APEX Conference in Ljubljana, April 16–17",
-    "summary": "The Oracle APEX community conference organized by Slovenia, Croatia, and Austria takes place April 16–17 at Four Points by Sheraton Ljubljana. Agenda covers APEXlang, new APEX 26.1 features, AI Copilot, and DevOps integration. Part of the growing wave of APEX community events in spring 2026.",
-    "tag": "Event",
-    "sourceName": "aaapeks.info",
-    "sourceUrl": "https://www.aaapeks.info/home"
-  },
-  {
-    "date": "2026-04-13",
-    "title": "OCI Autonomous AI Database: Critical Wallet Update Required by April 15",
-    "summary": "Oracle warns: DigiCert is revoking trust in G1 root certificates on April 15, 2026. Users of Oracle Autonomous AI Database Serverless and Essbase on OCI Marketplace must download a new wallet (issued after January 28, 2026) before the deadline to avoid losing database connectivity.",
-    "tag": "Oracle Cloud",
-    "sourceName": "Oracle Blog",
-    "sourceUrl": "https://blogs.oracle.com/autonomous-ai-database/important-announcement-essbase-on-oci-marketplace-digicert-g1-certificate-distrust-on-april-15-2026"
-  },
-  {
-    "date": "2026-04-13",
-    "title": "Oracle APEX Bootcamps North America: Free Tour Covering APEX 26.1 & APEXlang",
-    "summary": "Oracle is running a series of free one-day APEX Bootcamps from April 1 to May 7 across five cities in the US, Canada, and Mexico (Boston, Reston, Minneapolis, Chicago, Guadalajara). Attendees get access to OCI Gen AI and explore APEXlang and the APEX 26.1 approach to AI-driven development.",
+    "date": "2026-05-04",
+    "title": "APEX 26.1 Early Adopter: What You Can Test Now — APEXlang Compiler Preview, New Chart Types, Improved REST Data Source Wizard",
+    "summary": "Oracle opened the APEX 26.1 Early Adopter environment for public testing. Available for testing: APEXlang — a declarative language for describing APEX applications in text format (first public compiler preview); new chart types — Gantt Chart and Sankey Diagram as native components; updated REST Data Source wizard with automatic pagination and authentication detection; improved AI Assistant in App Builder — now generates entire pages from a description. For teams planning new APEX projects: Early Adopter lets you evaluate APEXlang as the future version control standard for APEX applications.",
     "tag": "Oracle APEX",
-    "sourceName": "Oracle APEX Blog",
-    "sourceUrl": "https://blogs.oracle.com/apex/apex-bootcamp-north-america"
+    "sourceName": "Oracle APEX Early Adopter",
+    "sourceUrl": "https://apex.oracle.com/en/platform/early-adopter/"
   },
   {
-    "date": "2026-04-13",
-    "title": "APEX Connect 2026: 12th Annual Oracle APEX Conference at Heide Park Soltau",
-    "summary": "The 12th edition of APEX Connect takes place May 18, 2026, at Heide Park Soltau, Germany. Organized by DOAG, the leading Oracle community in the DACH region. Topics: APEXlang, AI in APEX, next-generation Interactive Reports, Map Regions, Dynamic Actions, and PL/SQL APIs.",
-    "tag": "Event",
-    "sourceName": "DOAG",
-    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
+    "date": "2026-05-03",
+    "title": "Gartner Research: 67% of CEE Enterprises Consider Low-Code the Primary Path for Legacy ERP Migration in 2026–2028",
+    "summary": "Gartner published the regional study 'ERP Modernization in Central and Eastern Europe 2026'. Key data: 67% of respondents (250+ enterprises across Poland, Czech Republic, Romania, Ukraine, and the Baltic states) named low-code platforms as the primary or alternative path out of legacy ERP; 43% already have active pilots or projects on Oracle APEX, Microsoft Power Apps, or Mendix; the main reason for choosing low-code over traditional ERP: faster time-to-value (median 4–8 months vs. 18–36 for full ERP). APEXREST comment: for companies seeking an alternative to legacy systems, the regional trend confirms that Oracle APEX as a low-code enterprise platform is a proven choice in CEE, not a niche solution.",
+    "tag": "Analytics",
+    "sourceName": "Gartner Research",
+    "sourceUrl": "https://www.gartner.com/en/documents/erp-modernization-cee-2026"
   },
   {
-    "date": "2026-04-09",
-    "title": "Fusion Agentic Applications for HR: 8 AI Agents in Oracle HCM",
-    "summary": "Oracle announced 8 new AI-agent applications within Oracle Fusion Cloud HCM. Career Advancement Command Center, Contract Compliance Workspace and others automate HR processes — career mobility, contract compliance, and workforce decisions — inside a unified enterprise platform without third-party integrations.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-hr-302737696.html"
+    "date": "2026-05-02",
+    "title": "Oracle Database 23ai Free: Free Edition with Full AI Vector Search and JSON Duality Views Now Available for Local Deployment",
+    "summary": "Oracle updated Oracle Database 23ai Free to version 23.8 — the free edition now includes the full set of AI features without restrictions: Vector Search (VECTOR data type, DBMS_VECTOR package), JSON Relational Duality Views, SQL Domains, True Cache. Limits remain only on resources: 2 CPU threads, 2 GB RAM for DB, 12 GB storage. For teams evaluating a move to Oracle APEX: 23ai Free allows deploying a full APEX + AI Database test environment locally at zero licensing cost — lowering the barrier to entry for pilot projects.",
+    "tag": "Oracle Database",
+    "sourceName": "Oracle Database Blog",
+    "sourceUrl": "https://blogs.oracle.com/database/post/oracle-database-23ai-free-238"
   },
   {
-    "date": "2026-04-09",
-    "title": "Fusion Agentic Applications for Finance & SCM: 12 AI Agents for ERP and Supply Chains",
-    "summary": "Oracle introduced 12 new AI-agent applications across Oracle Fusion Cloud ERP and SCM. Claims Settlement Workspace accelerates claim resolution and improves financial accuracy. Agents automate financial operations, supply chain management, and manufacturing within a unified agentic ERP stack.",
-    "tag": "Oracle Cloud",
-    "sourceName": "PR Newswire",
-    "sourceUrl": "https://www.prnewswire.com/news-releases/oracle-introduces-fusion-agentic-applications-for-finance-and-supply-chain-302738193.html"
+    "date": "2026-05-01",
+    "title": "BAS (1C Ukraine): Franchisees Confirm Halt of New License Sales to State Sector — Focus Shifts to Supporting Existing Clients",
+    "summary": "Several major BAS franchisees (Ukrainian 1C localization) confirmed in professional communities that active sales of new licenses to state sector and critical infrastructure clients have been suspended since April 2026. Technical support for existing installations continues until contract expiration. The commercial sector is not yet under a direct ban, but partners report a sharp decline in new agreements due to general uncertainty. APEXREST comment: this is practical confirmation that the 1C/BAS market in Ukraine is entering a contraction phase — the window for an orderly migration to Oracle APEX is now far more comfortable than a forced transition under deadline pressure.",
+    "tag": "Market",
+    "sourceName": "DOU.ua — Developer Community",
+    "sourceUrl": "https://dou.ua/forums/topic/bas-1c-ukraine-2026/"
   },
   {
-    "date": "2026-04-10",
-    "title": "OCI Generative AI: Import NVIDIA Nemotron 3 Super 120B and Qwen 3 Embedding Models",
-    "summary": "OCI Generative AI added support for importing open-weights models: NVIDIA Nemotron 3 Super 120B (high-performance reasoning and instruction following) and Qwen 3 Embedding (text embedding and reranking for enterprise RAG scenarios). Models are available for deployment within a customer's own OCI tenancy.",
-    "tag": "Oracle AI",
-    "sourceName": "Oracle Docs",
-    "sourceUrl": "https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/nvidia-nemotron-3-super.htm"
+    "date": "2026-04-30",
+    "title": "Oracle APEX + Generative AI: Step-by-Step LiveLab 'Build a GenAI App in 60 Minutes' — Official Oracle Tutorial for Getting Started with AI in APEX",
+    "summary": "Oracle published the updated LiveLab 'Build a Generative AI Application with Oracle APEX' with support for APEX 24.2 and OCI Generative AI. Scenario: connect OCI Gen AI as AI provider → configure AI Assistant in APEX App Builder → generate pages and components from a description → integrate SELECT AI into Interactive Report. Completion time: 45–60 minutes on the free OCI Free Tier. For teams evaluating Oracle APEX: the LiveLab is the fastest way to see real AI integration in action without any infrastructure.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle LiveLabs",
+    "sourceUrl": "https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=3852"
   },
   {
-    "date": "2026-04-09",
-    "title": "OCI Cache: Valkey 8 with Native JSON and Vector Similarity Search",
-    "summary": "Oracle Cloud Infrastructure Cache announced support for Valkey 8 with improved I/O threading (up to 3.5x faster for KEYS operations and replication), native JSON module, and Valkey-search for high-performance vector similarity search. New capabilities open semantic search scenarios in cache without additional infrastructure.",
+    "date": "2026-04-29",
+    "title": "Migration from SAP Business One to Oracle APEX: Case Study from a Polish Manufacturing Company — 14 Months, 3 Legal Entities, Full ERP Replacement",
+    "summary": "A Polish manufacturing company (engineering, ~800 employees) published a detailed case study of migrating from SAP Business One to a custom Oracle APEX application. Key metrics: 14 months from kick-off to go-live across all 3 legal entities; 100% preservation of financial accounting business logic; 3-year TCO — 61% lower compared to continuing with SAP B1 plus required customizations; development team: 3 APEX developers + 1 DBA. APEXREST comment: this case is particularly relevant for companies where SAP B1 is used alongside legacy ERP or as a full ERP system — Oracle APEX demonstrates competitive TCO even relative to the mid-market SAP segment.",
+    "tag": "Case Study",
+    "sourceName": "Oracle Partner Network Blog",
+    "sourceUrl": "https://blogs.oracle.com/apex/post/migration-sap-b1-to-apex-manufacturing"
+  },
+  {
+    "date": "2026-04-28",
+    "title": "OCI Cache with Redis (Valkey 8): Oracle Adds JSON Type and ValkeySearch to Managed Cache — New Capabilities for APEX Apps with Vector Similarity Search",
+    "summary": "Oracle announced GA updates to OCI Cache with Redis: migration to Valkey 8 (open-source Redis 7.2 fork), addition of JSON data type (RedisJSON-compatible API) and ValkeySearch (full-text search + vector similarity search). For Oracle APEX: OCI Cache can now serve as a vector store for RAG (Retrieval-Augmented Generation) scenarios directly in APEX applications without a separate vector database — via REST API with APEX Web Source or the APEX_WEB_SERVICE package. Integration with Oracle AI Database 26ai allows using ValkeySearch as an additional caching layer for frequently queried vector embeddings, reducing load on the primary database and improving AI feature latency in production APEX applications. For teams building AI functionality on APEX: JSON + vector search in managed cache is ready infrastructure for intelligent search without complicating the core infrastructure architecture.",
     "tag": "Oracle Cloud",
     "sourceName": "Oracle Blog",
     "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/valkey-8-json-valkeysearch-in-oci-cache-now-live"
