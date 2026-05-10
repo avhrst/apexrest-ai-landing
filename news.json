@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-10",
+    "title": "Oracle APEX 23.2: кінець підтримки 31 травня 2026 — 21 день залишається, перехід на APEX 24.2 є обов'язковим",
+    "summary": "Oracle офіційно підтвердила: підтримка Oracle APEX 23.2 завершується 31 травня 2026 — жодних додаткових продовжень не буде. Підтримка 23.2 вже продовжувалась раніше — з листопада 2025 до травня 2026 — щоб врахувати затримку релізів APEX 24.1 та 24.2. Після 31 травня Oracle не надаватиме патчів безпеки, bug-фіксів та офіційної підтримки для APEX 23.2. Поточний стан підтримки: APEX 24.2 — основний підтримуваний реліз (до 31 липня 2027), APEX 24.1 — підтримується до 31 грудня 2026, APEX 26.1 Early Adopter доступний вже зараз. Команди на OCI Autonomous Database отримують оновлення автоматично; on-premises інстанції потребують ручного апгрейду до дедлайну. APEX 24.2 включає AI Interactive Reports, SELECT AI без конфігурації та оновлений AI Assistant — апгрейд з 23.2 на 24.2 не потребує рефакторингу бізнес-логіки.",
+    "tag": "Oracle APEX",
+    "sourceName": "endoflife.date — Oracle APEX Support Policy",
+    "sourceUrl": "https://endoflife.date/oracle-apex"
+  },
+  {
+    "date": "2026-05-10",
+    "title": "OCI Enterprise AI: xAI Grok 4.3 та NVIDIA Nemotron 3 Nano Omni — мультимодальні AI-моделі доступні для Oracle APEX SELECT AI",
+    "summary": "Oracle опублікувала травневий дайджест 'What's New in AI' та оголосила про запуск OCI Enterprise AI — платформи для переходу від AI-експериментів до production-розгортань. Дві нові моделі тепер доступні на OCI: Grok 4.3 від xAI — reasoning-модель із сильними показниками в логіці, математиці, кодуванні та багатокроковому аналізі; NVIDIA Nemotron 3 Nano Omni — повністю відкрита мультимодальна модель, що обробляє відео, аудіо, зображення та текст в єдиній системі — перша модель такого класу на OCI. Обидві доступні через OCI Generative AI як AI-провайдер для Oracle APEX SELECT AI та APEX AI Assistant без змін в архітектурі APEX-застосунків. Для розробників APEX: Nemotron 3 Nano Omni відкриває аналіз документів із зображеннями та аудіо-транскрипцій напряму в APEX — без окремих ML-сервісів.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle AI & Data Science Blog — What's New in AI: May 2026",
+    "sourceUrl": "https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-may-2026"
+  },
+  {
+    "date": "2026-05-10",
+    "title": "Oracle AI Database@AWS: 12 AWS-регіонів у GA включно з Frankfurt, Tokyo, Mumbai, Seoul — мультихмарна стратегія Oracle виходить на глобальний рівень",
+    "summary": "Oracle та AWS підтвердили загальну доступність Oracle AI Database@AWS у 12 регіонах AWS: US East (N. Virginia, Ohio), US West (Oregon), Canada Central, Frankfurt, Dublin, London, Tokyo, Sydney, Mumbai, Hyderabad, Seoul. Сервіс дозволяє запускати Oracle Exadata та RAC-застосунки на AWS-інфраструктурі зі збереженням Oracle ліцензій та всієї бізнес-логіки. Паралельно Oracle та AWS анонсували пряму мультихмарну мережеву інтеграцію OCI ↔ AWS Interconnect — high-performance з'єднання без транзитного трафіку, з першим регіоном у AWS US East (N. Virginia). Заплановано 20+ нових регіонів до кінця 2026. Для підприємств із AWS-інфраструктурою: Database@AWS є мостом між наявним AWS-стеком та Oracle APEX і Oracle AI Database 26ai без повної міграції в OCI.",
+    "tag": "Oracle Cloud",
+    "sourceName": "AWS — Oracle Database@AWS available in twelve AWS Regions",
+    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/04/oracle-database-aws-available-twelve-regions/"
+  },
+  {
+    "date": "2026-05-10",
+    "title": "APEXlang напередодні APEX Connect 2026: технічний огляд нової декларативної мови — git-workflow та AI-генерація коду для Oracle APEX",
+    "summary": "Технічне ком'юніті Oracle APEX активно обговорює APEXlang напередодні APEX Connect 2026 (старт 18 травня у Heide Park Soltau). APEXlang — текстовий формат (YAML/JSON-подібний) для опису APEX-застосунку: людиночитаний git diff замість binary XML-експорту, AI-friendly формат де LLM-моделі можуть генерувати або модифікувати APEXlang-файли напряму, підтримка паралельного редагування через App Builder та текстовий редактор одночасно. APEXlang compiler preview доступний вже зараз в APEX 26.1 Early Adopter середовищі. Для команд з legacy APEX-проєктами: APEXlang є переходом до сучасних DevOps-практик без переписування існуючих застосунків — поступова міграція через git на рівні окремих компонентів. APEX Connect 2026 стане першим публічним форумом, де APEXlang представлять у деталях з офіційним roadmap.",
+    "tag": "Oracle APEX",
+    "sourceName": "Into The Oracle Verse — Oracle APEX 26.1: APEXlang, AI Innovations",
+    "sourceUrl": "https://intotheoracleverse.blogspot.com/2026/04/oracle-apex-261-apexlang-ai-innovations.html"
+  },
+  {
     "date": "2026-05-09",
     "title": "APEX Connect 2026 — 9 днів до старту: APEXlang, SELECT AI та офіційний roadmap Oracle APEX на Heide Park Soltau",
     "summary": "18–20 травня 2026 в Heide Park Soltau (Нижня Саксонія, Німеччина) відбудеться APEX Connect 2026 від DOAG — найбільша щорічна конференція спільноти Oracle APEX. Ключовий keynote: Carsten Czarski 'Low-code з APEX 2026 — KI, APEXlang, нові компоненти і стан платформи' — перший розгорнутий публічний preview APEXlang та Oracle APEX 26.1. Karen Cannell представить 'Seriously SELECT AI' — практичне застосування SELECT AI в Oracle AI Database 26ai. Simon Hunt (Oracle Product Management) надасть офіційний APEX Product Management Update з roadmap. Конференція поєднана з DOAG Datenbank + Cloud Infrastructure та CloudLand 2026 на одному майданчику (18–22 травня). Для команд, що приймають рішення про платформу у 2026 році: APEX Connect дає відповідь, де Oracle APEX буде у 2027.",
