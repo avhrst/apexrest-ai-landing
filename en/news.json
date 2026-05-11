@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-11",
+    "title": "Oracle Launches Monthly Critical Security Patch Updates (CSPU) Starting May 28, 2026 — Critical Vulnerabilities No Longer Wait for the Quarterly Cycle",
+    "summary": "Oracle announced a fundamental change to its security update cadence: starting May 28, 2026, monthly Critical Security Patch Updates (CSPUs) will ship alongside the existing quarterly CPU. The first CSPU releases May 28; the second June 16; the third August 18. Each CSPU is smaller in scope and focused exclusively on critical vulnerabilities, enabling teams to close them without waiting for the next quarterly release. The driver: Oracle has deployed AI into vulnerability detection and analysis — the volume of identified and resolved issues grew to a point where quarterly releases are no longer sufficient. On OCI, all CSPUs are applied automatically with zero downtime. For on-premises Oracle Database and Oracle APEX: teams must plan a monthly test-and-apply cycle — particularly critical for APEX instances handling financial and personal business data. APEXREST note: the CSPU cadence adds another concrete argument for OCI-hosted Oracle APEX — in the cloud, Oracle applies patches automatically without any IT department overhead.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle Security Blog — Monthly Critical Security Patch Updates Begin May 28, 2026",
+    "sourceUrl": "https://blogs.oracle.com/security/update-monthly-critical-security-patch-updates-cspus-begin-may-28-2026"
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Oracle APEX + MCP + AI Agent: Automated Oracle Forms Analysis Generates PL/SQL Package and APEX Specification — Migration Time Drops to 1–2 Days",
+    "summary": "Oracle published two complementary resources for AI-accelerated Oracle Forms modernization. 'MCP + AI: Helping You Modernize Your Oracle Forms Apps to Oracle APEX' covers using the Model Context Protocol (MCP) for Oracle Database: the AI agent gets direct access to the database schema, automatically analyzes form business logic, validates objects in the target schema, and moves logic to Oracle AI Database. 'Transforming Oracle Forms to Oracle APEX in the AI Era: AI Agent' introduces the oracle-forms-migration.agent.md workflow in VS Code: the agent analyzes the Oracle Forms XML file, validates database dependencies, optionally generates a supporting PL/SQL package, and produces a functional specification as a structured output for the APEX developer. Practical impact: form analysis and specification preparation that previously took weeks is now reduced to 1–2 days. For enterprises with Oracle Forms alongside legacy ERP: Oracle now provides a ready-made AI toolkit for both migration tracks within a single Oracle APEX project.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog — MCP + AI: Helping You Modernize Your Oracle Forms Apps to Oracle APEX",
+    "sourceUrl": "https://blogs.oracle.com/apex/mcp-ai-helping-you-modernize-your-oracle-forms-apps-to-oracle-apex"
+  },
+  {
+    "date": "2026-05-11",
+    "title": "AI-Enabled Cyber Threats Against Oracle Databases: LLM Agents Automate Exploit Development — Unpatched Oracle APEX Instances Face Elevated Risk in 2026",
+    "summary": "Oracle and independent researchers have documented a new wave of AI-generated cyber threats targeting Oracle Database and connected applications. AI tools — including LLM assistants and automated agent pipelines — have significantly lowered the barrier to developing and launching exploits against known Oracle vulnerabilities. A vulnerability that previously required manual discovery can now be identified by an AI agent in minutes. This is one of the key factors behind Oracle's shift to monthly CSPU (Critical Security Patch Update) releases starting May 28, 2026. For enterprises maintaining on-premises Oracle APEX or Oracle Database without an active patch management program: cyber incident risk in 2026 is materially higher than in 2024. APEXREST note: migration to OCI Autonomous Database automatically resolves this — Oracle applies all CSPUs without downtime or manual action, eliminating the risk of forgotten vulnerabilities in production environments.",
+    "tag": "Oracle APEX",
+    "sourceName": "Mike Dietrich — Patch your databases against AI-enabled cybersecurity threats",
+    "sourceUrl": "https://mikedietrichde.com/2026/05/04/patch-your-databases-against-ai-enabled-cybersecurity-threats/"
+  },
+  {
+    "date": "2026-05-11",
+    "title": "APEX Connect 2026 in 7 Days: DOAG Confirms On-Demand Video Access — APEXlang, SELECT AI, and the APEX Roadmap for Teams That Cannot Attend in Person",
+    "summary": "APEX Connect 2026 (May 18–20, Heide Park Soltau, Lower Saxony, Germany) opens in exactly 7 days. DOAG confirmed on-demand video access to all conference sessions — recordings and slides will be available after the event for teams unable to attend in person. On-demand content includes recordings and slides from all sessions, the APEXlang preview by Carsten Czarski, the official APEX Product Roadmap from Simon Hunt (Oracle Product Management), and the practical 'Seriously SELECT AI' session by Karen Cannell. APEX Connect 2026 runs concurrently with DOAG Datenbank + Cloud Infrastructure and CloudLand 2026 — three conferences at the same venue (May 18–22). This conference will be the first public forum where Oracle details APEXlang and the APEX 26.1 roadmap — a key reference point for teams making platform decisions for 2026–2027.",
+    "tag": "Event",
+    "sourceName": "DOAG APEX Connect 2026 on demand",
+    "sourceUrl": "https://my.doag.org/shop/prd.1820.apex-connect-2026-on-demand/"
+  },
+  {
     "date": "2026-05-10",
     "title": "Oracle APEX 23.2: End of Support on May 31, 2026 — 21 Days Left to Upgrade to APEX 24.2",
     "summary": "Oracle has confirmed: support for Oracle APEX 23.2 ends on May 31, 2026 — no further extensions are planned. The support period had already been extended once, from November 2025 to May 2026, to accommodate the delayed releases of APEX 24.1 and 24.2. After May 31, Oracle will not provide security patches, bug fixes, or official support for APEX 23.2. Current support landscape: APEX 24.2 — primary supported release (through July 31, 2027); APEX 24.1 — supported through December 31, 2026; APEX 26.1 Early Adopter is available now. Teams on OCI Autonomous Database receive updates automatically through the OCI update cycle; on-premises instances require a manual upgrade before the deadline. APEX 24.2 includes AI Interactive Reports, SELECT AI without additional configuration, and the improved AI Assistant in App Builder — upgrading from 23.2 to 24.2 does not require refactoring business logic.",

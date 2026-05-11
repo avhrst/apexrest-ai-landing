@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-11",
+    "title": "Oracle запускає щомісячні Critical Security Patch Updates (CSPU) з 28 травня 2026: критичні вразливості більше не чекають кварталу",
+    "summary": "Oracle оголосила кардинальну зміну у циклі безпекових оновлень: з 28 травня 2026 поряд із квартальними CPU (Critical Patch Update) щомісяця виходитимуть CSPU — менші та сфокусовані виключно на критичних вразливостях. Перший CSPU — 28 травня, другий — 16 червня, третій — 18 серпня. Причина прискорення: Oracle впровадила AI у виявлення та аналіз вразливостей — кількість ідентифікованих і закритих проблем зросла, і квартального циклу стало недостатньо для своєчасного реагування. Для OCI-хмари: всі CSPU застосовуються автоматично без вікна простою. Для on-premises Oracle Database та APEX: команди мають запланувати щомісячний цикл тестування та застосування CSPU — особливо критично для APEX-інстанцій, що обробляють фінансові та персональні дані. APEXREST коментар: CSPU-цикл підсилює аргумент на користь OCI-хостингу Oracle APEX — у хмарному середовищі Oracle патчі застосовуються автоматично без додаткових ресурсів IT-відділу.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle Security Blog — Monthly Critical Security Patch Updates Begin May 28, 2026",
+    "sourceUrl": "https://blogs.oracle.com/security/update-monthly-critical-security-patch-updates-cspus-begin-may-28-2026"
+  },
+  {
+    "date": "2026-05-11",
+    "title": "Oracle APEX + MCP + AI: новий AI-агент аналізує Oracle Forms XML, валідує схему БД і генерує PL/SQL-пакет та специфікацію для APEX-розробника",
+    "summary": "Oracle опублікувала два взаємодоповнюючих матеріали про AI-прискорену міграцію Oracle Forms на APEX. 'MCP + AI: Helping You Modernize Your Oracle Forms Apps to Oracle APEX' — використання Model Context Protocol (MCP) for Oracle Database для прямого доступу AI-агента до схеми БД: автоматичний аналіз бізнес-логіки форми, перевірка об'єктів у цільовій схемі, перенесення логіки до Oracle AI Database. 'Transforming Oracle Forms to Oracle APEX in the AI Era: AI Agent' — агент oracle-forms-migration.agent.md у VS Code: аналізує XML-файл Oracle Forms, валідує залежності в БД, генерує PL/SQL-пакет та видає функціональну специфікацію як вихідний артефакт для APEX-розробника. Практичний ефект: аналіз форми та підготовка специфікації, що раніше займала тижні, скорочується до 1–2 днів. Для компаній в Україні з Oracle Forms поруч з 1С: Oracle пропонує готовий AI-інструментарій для обох треків міграції в рамках одного APEX-проєкту.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog — MCP + AI: Helping You Modernize Your Oracle Forms Apps to Oracle APEX",
+    "sourceUrl": "https://blogs.oracle.com/apex/mcp-ai-helping-you-modernize-your-oracle-forms-apps-to-oracle-apex"
+  },
+  {
+    "date": "2026-05-11",
+    "title": "AI-кіберзагрози для Oracle Database: LLM-агенти автоматизують розробку експлойтів — неопатчені Oracle APEX-інстанції під підвищеним ризиком у 2026 році",
+    "summary": "Oracle та незалежні дослідники зафіксували нову хвилю AI-генерованих кіберзагроз, що цілеспрямовано атакують Oracle Database та пов'язані застосунки. AI-інструменти (LLM-асистенти та автоматизовані агенти) значно знизили поріг для розробки та запуску експлойтів проти відомих вразливостей — стара вразливість, що раніше потребувала ручного пошуку, тепер може бути знайдена AI-агентом за хвилини. Саме це стало однією з ключових причин переходу Oracle на щомісячний цикл CSPU (Critical Security Patch Update) з 28 травня 2026. Для підприємств, що зберігають on-premises Oracle APEX або Oracle Database без регулярного патч-менеджменту: ризик кіберінцидентів у 2026 році суттєво вищий, ніж у 2024-му. APEXREST коментар: міграція на OCI Autonomous Database автоматично закриває цю проблему — Oracle застосовує всі CSPU без вікна простою та без ручного втручання, що унеможливлює «забуті» вразливості у хмарному середовищі.",
+    "tag": "Oracle APEX",
+    "sourceName": "Mike Dietrich — Patch your databases against AI-enabled cybersecurity threats",
+    "sourceUrl": "https://mikedietrichde.com/2026/05/04/patch-your-databases-against-ai-enabled-cybersecurity-threats/"
+  },
+  {
+    "date": "2026-05-11",
+    "title": "APEX Connect 2026 за 7 днів: DOAG підтвердив on-demand відеодоступ до всіх сесій — APEXlang, SELECT AI і APEX roadmap для тих, хто не зможе приїхати до Soltau",
+    "summary": "До старту APEX Connect 2026 (18–20 травня, Heide Park Soltau, Нижня Саксонія, Німеччина) залишилося 7 днів. DOAG підтвердив on-demand відеодоступ до всіх сесій конференції: записи та слайди будуть доступні після завершення заходу. On-demand включатиме: відеозаписи всіх презентацій, APEXlang preview від Carsten Czarski, офіційний APEX Product Roadmap від Simon Hunt (Oracle Product Management) та практичне 'Seriously SELECT AI' від Karen Cannell. APEX Connect 2026 відбувається одночасно з DOAG Datenbank + Cloud Infrastructure та CloudLand 2026 — три конференції на одному майданчику (18–22 травня). Ця конференція стане першим форумом, де Oracle публічно деталізує APEXlang і дорожню карту APEX 26.1 — ключовий референс для команд, що приймають рішення про платформу у 2026–2027 роках.",
+    "tag": "Подія",
+    "sourceName": "DOAG APEX Connect 2026 on demand",
+    "sourceUrl": "https://my.doag.org/shop/prd.1820.apex-connect-2026-on-demand/"
+  },
+  {
     "date": "2026-05-10",
     "title": "Oracle APEX 23.2: кінець підтримки 31 травня 2026 — 21 день залишається, перехід на APEX 24.2 є обов'язковим",
     "summary": "Oracle офіційно підтвердила: підтримка Oracle APEX 23.2 завершується 31 травня 2026 — жодних додаткових продовжень не буде. Підтримка 23.2 вже продовжувалась раніше — з листопада 2025 до травня 2026 — щоб врахувати затримку релізів APEX 24.1 та 24.2. Після 31 травня Oracle не надаватиме патчів безпеки, bug-фіксів та офіційної підтримки для APEX 23.2. Поточний стан підтримки: APEX 24.2 — основний підтримуваний реліз (до 31 липня 2027), APEX 24.1 — підтримується до 31 грудня 2026, APEX 26.1 Early Adopter доступний вже зараз. Команди на OCI Autonomous Database отримують оновлення автоматично; on-premises інстанції потребують ручного апгрейду до дедлайну. APEX 24.2 включає AI Interactive Reports, SELECT AI без конфігурації та оновлений AI Assistant — апгрейд з 23.2 на 24.2 не потребує рефакторингу бізнес-логіки.",
