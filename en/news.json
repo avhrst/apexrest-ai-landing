@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-12",
+    "title": "OCI X12 Standard Acceleron with Intel Xeon 6: 2.5× Bare Metal Performance, 120 Cores, 1.15 TB RAM — Next-Generation OCI Infrastructure for AI Workloads",
+    "summary": "Oracle Cloud Infrastructure announced the launch of OCI X12 Standard Acceleron Compute instances based on Intel Xeon 6 processors. Key specifications: 2.5× higher bare metal performance and ~50% better VM performance compared to the previous-generation X9 Standard (3rd Gen Intel Xeon); bare metal configuration — 120 Intel Xeon 6 cores, 1.15 TB RAM, up to 100 Gbps networking; Oracle Acceleron SmartNIC provides line-rate traffic encryption, zero-downtime network patching, and NVMe-based storage acceleration at the NIC layer. X12 is rolling out across select OCI regions throughout 2026. For Oracle APEX applications on OCI: X12 Standard Acceleron directly accelerates APEX Listener, PL/SQL processing, and SELECT AI calls — particularly impactful for enterprise APEX systems with intensive business process and AI workloads. APEXREST note: the new OCI compute generation means APEX applications in the cloud receive a meaningful performance boost with no code or architecture changes — unlike on-premises legacy ERP, where server upgrades required capital investment and migration projects.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle Cloud Infrastructure Blog — Announcing OCI X12 Standard Acceleron Compute",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/announcing-oci-x12-standard-acceleron-compute"
+  },
+  {
+    "date": "2026-05-12",
+    "title": "Oracle AI Database Agent for Gemini Enterprise: Natural Language Access to Oracle Data in Google Workspace Without SQL — Multicloud AI Integration in Preview",
+    "summary": "At Google Cloud Next 2026, Oracle and Google Cloud announced the preview of Oracle AI Database Agent for Gemini Enterprise in Google Cloud Marketplace. Core capability: business users can query Oracle data in plain language directly through Gemini Enterprise without writing SQL or understanding the database schema — the agent interprets the request and returns an answer grounded in trusted Oracle business data. Example: 'Which products are at risk of stockouts next quarter, and what are the revenue implications?'. Additional capabilities: Agent-to-Agent (A2A) compatibility and Google ADK for automated multi-step workflows; Oracle DB integration with Google Cloud Database Center for centralized management; Oracle AI Database@Google Cloud expanded to 15 regions (20 sites); future integration with BigQuery/BigLake for cross-platform Iceberg data access. APEXREST note: for enterprises with a hybrid stack (Google Workspace + Oracle APEX or Oracle Database), this agent is the first enterprise-grade solution enabling Gemini Enterprise to reason directly over Oracle data without separate ETL integrations or additional BI licenses.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Cloud Blog — Bringing Business Data Insights to Every User with Gemini Enterprise and Oracle AI Database",
+    "sourceUrl": "https://blogs.oracle.com/cloud-infrastructure/google-cloud-next-2026"
+  },
+  {
+    "date": "2026-05-12",
+    "title": "Oracle AI Database 26ai: New Standards for Operational Continuity — Fast Start Reconfiguration, RAC Rolling Update, and Smart Connection Rebalancing",
+    "summary": "The Oracle DBA community has published a detailed analysis of Oracle AI Database 26ai's operational continuity capabilities. Key new features: Fast Start Reconfiguration — rapid cluster adaptation to infrastructure changes; RAC Two-Stage Rolling Update — staged upgrades without interrupting production workloads; Smart Connection Rebalancing — smooth redistribution of connections during topology changes without dropping client sessions; Pluggable Database Recovery Isolation — failure containment at the individual PDB level without impacting other tenants in a multitenant environment; Rolling Single-Server Maintenance — rolling updates even on a single server reduce operational risk. All features are available on OCI Autonomous Database and Exadata. APEXREST note: for enterprises planning migration from legacy ERP, Oracle AI Database 26ai delivers a level of operational continuity that legacy systems fundamentally cannot match — patching and updates without maintenance windows become the standard, not the exception.",
+    "tag": "Oracle AI",
+    "sourceName": "TechnoDBA Blog — Oracle AI Database 26ai: Redefining Operational Continuity",
+    "sourceUrl": "https://www.technodba.com/2026/05/oracle-ai-database-26ai-redefining.html"
+  },
+  {
+    "date": "2026-05-12",
+    "title": "Oracle Monthly Product Pulse May 2026: ZDM 26.1, GROUP BY ALL in SQL, New Autonomous DB Capabilities — May Digest for Oracle APEX Teams",
+    "summary": "Oracle ACE published the Monthly Product Pulse for May 2026 covering key Oracle stack technical updates. Oracle Zero Downtime Migration (ZDM) 26.1: new capabilities for migrating databases to Oracle Cloud, multicloud environments, and Exadata with minimal downtime — important for teams planning the transition from on-premises Oracle to OCI. SQL additions in Oracle AI Database 26ai: GROUP BY ALL — automatically groups by all non-aggregated columns in a query (significant simplification for analytical SQL queries); DATEDIFF — new standard date difference function. Autonomous Database Exadata VM Cluster: clusters provisioned after April 7, 2026 support both Oracle 19c and 26ai software simultaneously — a flexible migration path without forcing an immediate jump to 26ai. Expanded ADB observability: new Dynamic Performance Views with access to historical performance metrics and Exadata cell activity. APEXREST note: ZDM 26.1 and dual 19c/26ai support on the same Autonomous Exadata VM Cluster reduce risk and timeline for Oracle APEX projects migrating to the new platform.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle ACE Blog — Monthly Product Pulse: May 2026 — Oracle Technical Resources",
+    "sourceUrl": "https://blogs.oracle.com/ace/monthly-product-pulse-may-2026-oracle-technical-resources"
+  },
+  {
     "date": "2026-05-11",
     "title": "Oracle Launches Monthly Critical Security Patch Updates (CSPU) Starting May 28, 2026 — Critical Vulnerabilities No Longer Wait for the Quarterly Cycle",
     "summary": "Oracle announced a fundamental change to its security update cadence: starting May 28, 2026, monthly Critical Security Patch Updates (CSPUs) will ship alongside the existing quarterly CPU. The first CSPU releases May 28; the second June 16; the third August 18. Each CSPU is smaller in scope and focused exclusively on critical vulnerabilities, enabling teams to close them without waiting for the next quarterly release. The driver: Oracle has deployed AI into vulnerability detection and analysis — the volume of identified and resolved issues grew to a point where quarterly releases are no longer sufficient. On OCI, all CSPUs are applied automatically with zero downtime. For on-premises Oracle Database and Oracle APEX: teams must plan a monthly test-and-apply cycle — particularly critical for APEX instances handling financial and personal business data. APEXREST note: the CSPU cadence adds another concrete argument for OCI-hosted Oracle APEX — in the cloud, Oracle applies patches automatically without any IT department overhead.",
