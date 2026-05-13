@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-13",
+    "title": "APEXlang: глибокий технічний аналіз спільноти Oracle — specification-driven розробка та AI-генерація APEX-застосунків напередодні APEX Connect 2026",
+    "summary": "Напередодні APEX Connect 2026 (старт 18 травня у Heide Park Soltau) провідні Oracle-блогери опублікували детальні технічні розбори APEXlang. Traust, MaxAPEX та Into The Oracle Verse проаналізували ключові аспекти: APEXlang — текстовий формат (.apx файли) замість монолітного SQL-export, підтримує human-readable git diff, AI-генерацію та specification-driven розробку; Michael Hichwa (SVP Oracle Software Development) визначив концепцію: APEXlang — це capture of intent замість raw implementation code; compiler preview вже у APEX 26.1 Early Adopter з підтримкою паралельної роботи в App Builder та текстовому редакторі. Ключова цінність для enterprise-команд: APEXlang вирішує практичну проблему — code review, git-based workflow та AI-асистована розробка були важко реалізовні через binary XML-export; APEXlang дозволяє bulk changes через search/replace у текстовому файлі. APEX Connect 2026 стане першим публічним форумом де Oracle деталізує APEXlang roadmap з keynote Carsten Czarski. Oracle APEX 26.1 GA очікується у 2026 році.",
+    "tag": "Oracle APEX",
+    "sourceName": "Traust — APEXlang: How Oracle Is Rebuilding APEX for Gen AI",
+    "sourceUrl": "https://traust.com/blog/apexlang-how-oracle-is-rebuilding-apex-for-gen-ai/"
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Oracle OCI отримала допуск до класифікованих AI-мереж Міністерства оборони США (IL6/IL7) — Oracle Cloud Infrastructure серед 8 компаній для defense-grade AI: найвищий рівень security clearance",
+    "summary": "На початку травня 2026 Oracle Cloud Infrastructure ввійшла до переліку 8 провідних технологічних компаній, чиї AI-системи отримали допуск до роботи в класифікованих мережах Міністерства оборони США. Impact Level 6 (IL6) — secret networks; IL7 — найвищий рівень класифікації у США. В єдиному переліку з Oracle: Amazon Web Services, Google, Microsoft, NVIDIA, OpenAI, SpaceX, Reflection. Угода дозволяє розгортати OCI AI-можливості для аналізу розвідданих, обробки секретних даних та прийняття рішень у закритих defense-середовищах. Anthropic не увійшла до переліку через вимоги safety guardrails для AI у воєнних операціях — Oracle пройшла цей фільтр. APEXREST коментар: IL7 classified networks — найвищий підтверджений рівень безпеки хмарної платформи у світі. Для підприємств в Україні, що мігрують з 1С/BAS: Oracle OCI підтверджена на defense-grade рівні — це принципово інший порядок захисту даних порівняно з будь-яким санкційним ERP-вендором. Oracle satisfies DORA, NIS2, ISO 27001/17/18 та найсуворіші регуляторні вимоги.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle News — Agreement with the Department of War for AI on Classified Cloud Networks",
+    "sourceUrl": "https://www.oracle.com/news/announcement/the-department-of-war-announces-agreement-with-oracle-to-deploy-ai-capabilities-on-classified-cloud-networks-2026-05-01/"
+  },
+  {
+    "date": "2026-05-13",
+    "title": "SoftBank Oracle Alloy Japan: перша production-реалізація суверенної OCI-хмари запущена у квітні 2026 — 200+ OCI-сервісів у японських датацентрах без виходу даних за межі юрисдикції",
+    "summary": "SoftBank Corp. підтвердила production-запуск 'Cloud PF Type A' — першої великомасштабної суверенної хмари на Oracle Alloy — у квітні 2026 в eastern Japan датацентрі (western Japan — жовтень 2026). Oracle Alloy — повна OCI-платформа, що дозволяє партнерам Oracle ставати cloud service providers з 200+ OCI-сервісами у власних датацентрах. SoftBank поєднує власні генеративні AI-моделі з OCI та OCI Enterprise AI: inference, навчання та зберігання даних залишаються виключно в японській юрисдикції без виходу через публічні мережі. Це перша production reference-архітектура суверенного AI на Oracle Alloy: повний стек OCI Enterprise AI + дотримання японських вимог локалізації даних в єдиній системі. APEXREST коментар: SoftBank Oracle Alloy підтверджує, що весь стек OCI — Oracle APEX, Oracle AI Database 26ai, OCI Enterprise AI — може бути розгорнутий у суверенному режимі для будь-якої юрисдикції. Для регульованих галузей в Україні (банки, критична інфраструктура): Oracle надає production-підтверджену технологічну базу для суверенного хмарного AI.",
+    "tag": "Oracle Cloud",
+    "sourceName": "Oracle News — SoftBank Corp. Accelerates Japan's AI and Sovereign Cloud Future with Oracle Alloy",
+    "sourceUrl": "https://www.oracle.com/news/announcement/softbank-corp-accelerates-japans-ai-and-sovereign-cloud-future-with-oracle-alloy-2025-10-07/"
+  },
+  {
+    "date": "2026-05-13",
+    "title": "Oracle APEX @University Initiative: Oracle виходить на освітній ринок — безкоштовна програма AI-low-code розробки на Oracle APEX для університетів та коледжів",
+    "summary": "Oracle APEX Product Management спільно з Oracle Academy та Database Learning teams запустила APEX @University Initiative — безкоштовну програму інтеграції Oracle APEX та AI-assisted розробки у навчальні плани університетів. Програма включає: структурований навчальний контент від безпосередніх розробників Oracle APEX; підтримку викладачів у формуванні курсів та лабораторних занять; студентські проєкти на Oracle APEX, включно з реальними університетськими застосунками (студентські портали, системи управління навчальним процесом); прямий канал зворотнього зв'язку з командою Oracle APEX. University of Tennessee System — один із перших учасників ініціативи. APEXREST коментар: APEX @University означає, що наступне покоління розробників знайомиться з low-code enterprise та AI-assisted розробкою ще в університеті. Для підприємств, що планують довгострокові міграційні проєкти з 1С/BAS на Oracle APEX: кадровий ринок APEX-фахівців активно розширюватиметься — академічна підготовка підкріплює корпоративне впровадження.",
+    "tag": "Oracle APEX",
+    "sourceName": "Oracle APEX Blog — Introducing The Oracle APEX @University Initiative",
+    "sourceUrl": "https://blogs.oracle.com/apex/introducing-the-oracle-apex-university-initiative"
+  },
+  {
     "date": "2026-05-12",
     "title": "OCI X12 Standard Acceleron з Intel Xeon 6: 2.5× продуктивність bare metal, 120 ядер, 1.15 ТБ RAM — нова генерація OCI-обчислень для AI-навантажень Oracle APEX",
     "summary": "Oracle Cloud Infrastructure оголосив про запуск OCI X12 Standard Acceleron Compute на базі Intel Xeon 6. Ключові характеристики: 2.5× вища bare metal продуктивність та ~50% краща продуктивність VM порівняно з попереднім поколінням X9 Standard (3-й Gen Intel Xeon); bare metal конфігурація — 120 ядер Intel Xeon 6, 1.15 ТБ RAM, до 100 Gbps мережевого з'єднання; Oracle Acceleron SmartNIC забезпечує лінійне шифрування трафіку, zero-downtime network patching та NVMe-based storage acceleration на рівні NIC. X12 розгортається у вибраних OCI-регіонах протягом 2026 року. Для Oracle APEX-застосунків на OCI: X12 Standard Acceleron безпосередньо прискорює APEX Listener, PL/SQL-обробку та виклики SELECT AI — особливо помітно для enterprise APEX-систем з інтенсивними бізнес-процесами та AI-навантаженнями. APEXREST коментар: нова генерація OCI-обчислень означає, що APEX-застосунки у хмарі отримують суттєве підвищення продуктивності без жодних змін у коді чи архітектурі — порівняно з on-premises legacy ERP, де апгрейд сервера потребував капітальних витрат.",
