@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-05-10T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-05-13T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>Oracle OCI в класифікованих AI-мережах Міністерства оборони США (IL6/IL7) — defense-grade security підтверджено для Oracle Cloud Infrastructure: вищого рівня не існує</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> На початку травня 2026 Oracle Cloud Infrastructure увійшла до переліку 8 технологічних компаній, чиї AI-системи отримали допуск до роботи в класифікованих мережах Міністерства оборони США. Impact Level 6 (IL6) — secret networks; IL7 — найвищий рівень класифікації у США. В єдиному переліку з Oracle: Amazon Web Services, Google, Microsoft, NVIDIA, OpenAI, SpaceX, Reflection. Угода дозволяє розгортати OCI AI-можливості для аналізу розвідданих, обробки секретних даних та прийняття рішень у закритих defense-середовищах. Oracle зазначає тривалі відносини з оборонними та розвідувальними відомствами США як основу для допуску. Контекст: Anthropic не увійшла до переліку через принципові вимоги safety guardrails для використання AI у воєнних операціях — Oracle пройшла цей фільтр. Угода охоплює FIPS 140-2, DoD IL6/IL7, а також DORA, NIS2 та ISO 27001/17/18.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> IL7 classified networks — найвищий підтверджений рівень безпеки хмарної платформи у світі. Для підприємств в Україні, що обирають платформу для міграції з 1С/BAS: Oracle Cloud Infrastructure підтверджена на рівні, де державні таємниці США зберігаються у хмарі — це принципово інший порядок захисту порівняно з будь-яким санкційним ERP-вендором. Для регульованих галузей (банки, страхові, критична інфраструктура): вибір OCI-платформи для Oracle APEX є технічно та регуляторно безперечним. Oracle OCI поєднує найвищий security clearance з повним AI-стеком — вагома підстава для CISO та юридичних відділів при формуванні архітектурних рішень. Консультація щодо security architecture: info@apex.rest</div>
+            <a class="monitor-source" href="https://www.oracle.com/news/announcement/the-department-of-war-announces-agreement-with-oracle-to-deploy-ai-capabilities-on-classified-cloud-networks-2026-05-01/" target="_blank" rel="noopener noreferrer">Джерело: Oracle News (Agreement with the Department of War — AI on Classified Cloud Networks, травень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>APEXlang перед APEX Connect 2026: провідні Oracle-блогери публікують технічні розбори — specification-driven розробка як новий стандарт APEX-проєктів</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Напередодні APEX Connect 2026 (18 травня, Heide Park Soltau) Oracle APEX-спільнота активно аналізує APEXlang — нову мову специфікації APEX-застосунків. Traust опублікував детальний технічний розбір: APEXlang — текстовий формат (.apx файли) замість монолітного SQL-export; підтримує human-readable git diff, AI-генерацію та specification-driven розробку; Michael Hichwa (SVP Oracle Software Development) визначив концепцію: capture of intent замість raw implementation code; APEXlang compiler preview вже у APEX 26.1 Early Adopter; паралельна робота в App Builder і текстовому редакторі одночасно. MaxAPEX та Into The Oracle Verse підтверджують: APEXlang дозволяє bulk changes через search/replace у текстовому файлі — щось принципово неможливе у binary SQL-export. Carsten Czarski представить APEXlang як central feature у keynote на APEX Connect 2026 (18 травня). Oracle APEX 26.1 GA очікується у 2026 році.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> APEXlang вирішує реальну проблему enterprise APEX-команд: code review, git workflow та AI-асистована розробка раніше вимагали обхідних рішень через binary XML-export. Тепер DevOps-практики стають нативними для Oracle APEX. Для компаній, що мігрують з 1С/BAS: нові APEX-проєкти одразу будуються з DevOps-ready архітектурою — Git, CI/CD, code review — без додаткових інструментів. Для CTO та tech leads, що приймають рішення про платформу на 3–5 років: APEX 26.1 + APEXlang — це Oracle APEX із сучасним developer experience, підкріплений публічним roadmap. Технічна консультація щодо APEXlang: info@apex.rest</div>
+            <a class="monitor-source" href="https://traust.com/blog/apexlang-how-oracle-is-rebuilding-apex-for-gen-ai/" target="_blank" rel="noopener noreferrer">Джерело: Traust (APEXlang: How Oracle Is Rebuilding APEX for Gen AI, травень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle AI</div>
             <h3>OCI Enterprise AI: xAI Grok 4.3 та NVIDIA Nemotron 3 Nano Omni — мультимодальні AI-моделі тепер доступні для Oracle APEX SELECT AI та AI Assistant</h3>
@@ -912,7 +928,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 10.05.2026</p>
+      <p class="footer-updated">Оновлено: 13.05.2026</p>
     </div>
   </footer>
 
