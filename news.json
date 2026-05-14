@@ -1,5 +1,37 @@
 [
   {
+    "date": "2026-05-14",
+    "title": "APEX Connect 2026 — 4 дні до старту: фінальний розклад підтверджено, on-demand реєстрація відкрита — APEXlang, SELECT AI та офіційний APEX roadmap 18–20 травня",
+    "summary": "До початку APEX Connect 2026 (18–20 травня, Heide Park Soltau, Нижня Саксонія, Німеччина) залишилось 4 дні. DOAG підтвердив фінальний розклад та відкрив on-demand реєстрацію для команд, що не зможуть бути присутні особисто. Ключові сесії: Carsten Czarski — keynote про APEXlang та Oracle APEX 26.1 (перший розгорнутий публічний огляд нового декларативного формату); Simon Hunt (Oracle APEX Product Management) — офіційний APEX roadmap та пріоритети команди на 2026–2027; Karen Cannell — практичний workshop 'Seriously SELECT AI' з реальними бізнес-кейсами; спільні сесії з DOAG Datenbank + Cloud Infrastructure та CloudLand 2026 (три конференції, один майданчик, 18–22 травня). On-demand відео та слайди всіх сесій будуть доступні після конференції для команд, що не можуть бути присутніми особисто. Для CTO та архітекторів, що приймають рішення щодо платформи у 2026–2027 роках: APEX Connect 2026 — перший форум, де Oracle повністю розкриє APEXlang і підтвердить строки APEX 26.1 GA.",
+    "tag": "Подія",
+    "sourceName": "DOAG APEX Connect 2026",
+    "sourceUrl": "https://apex.doag.org/en/apex-connect-2026/"
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Oracle AI Database 26ai: спільнота публікує практичні гайди з on-premises розгортання на Linux x86-64 — Vector Search, SQL Firewall та True Cache тепер без OCI",
+    "summary": "Після GA Oracle AI Database 26ai для Linux x86-64 on-premises (27 січня 2026, RU 23.26.1), у травні 2026 Oracle-спільнота (Virtual-DBA, Mike Dietrich, ORACLE-BASE) активно публікує практичні гайди з розгортання та міграції. Ключові факти: Oracle AI Database 26ai доступна для завантаження на oracle.com — Enterprise Edition для Linux x86-64 (Windows, AIX та інші платформи заплановані на 2026 рік); пряме оновлення з Oracle 19c або застосування патча до 23ai без переустановлення БД та пересертифікації застосунків; що входить в on-premises версію: AI Vector Search (VECTOR тип даних, DBMS_VECTOR), вбудований SQL Firewall, True Cache, JSON Relational Duality, Post-Quantum шифрування ML-KEM, RAFT-розподілена реплікація, підтримка Apache Iceberg Lakehouse; Oracle AI Database 26ai — LTS-реліз, що замінює Oracle Database 23ai. Для Oracle APEX on-premises: оновлення Oracle Database до 26ai одразу відкриває SELECT AI, AI Vector Search та всі AI-функції APEX 24.2 без переходу в хмару. APEXREST коментар: для підприємств, що не готові до хмари — Oracle AI Database 26ai on-premises надає повний AI-стек без OCI-залежності, із прямим шляхом апгрейду від 19c.",
+    "tag": "Oracle AI",
+    "sourceName": "Oracle Database Blog — GA of Oracle AI Database 26ai for Linux x86-64 On-Premises",
+    "sourceUrl": "https://blogs.oracle.com/database/ga-of-oracle-ai-database-26ai-for-linux-x86-64-on-premises-platforms"
+  },
+  {
+    "date": "2026-05-14",
+    "title": "IBM та Oracle розширюють 40-річне партнерство: IBM watsonx Orchestrate на OCI у липні, Red Hat RHEL через Oracle Universal Credits та AI-агенти для enterprise Oracle APEX",
+    "summary": "IBM та Oracle оголосили розширення стратегічного партнерства у травні 2026, відзначаючи 40 років спільної роботи. Ключові нові напрями: IBM watsonx Orchestrate (AI-агентний портфель IBM) стане доступним на Oracle Cloud Infrastructure у липні 2026 — мультиагентна AI-автоматизація для Oracle-екосистеми без зміни хмарного провайдера; Red Hat Enterprise Linux (RHEL) тепер купується безпосередньо в OCI через Oracle Universal Credits — спрощена ліцензійна модель для enterprise-команд; IBM Consulting розширює managed services для Oracle-клієнтів: новий managed service для Maximo на OCI та підтримка міграції Maximo-навантажень до Oracle Fusion Cloud ERP; IBM Envizi (ESG-звітність та управління екологічними даними) як SaaS на OCI (перший регіон: Саудівська Аравія); IBM Turbonomic верифікований для оптимізації OCI-ресурсів. APEXREST коментар: IBM-Oracle інтеграція відкриває watsonx AI-агентів як додатковий рівень автоматизації для Oracle APEX-застосунків в єдиному OCI-середовищі — watsonx Orchestrate + SELECT AI + Oracle AI Database 26ai є потужною комбінацією для enterprise AI-автоматизації бізнес-процесів.",
+    "tag": "Oracle Cloud",
+    "sourceName": "IBM Newsroom — IBM and Oracle Expand Partnership to Help Organizations Modernize with AI and Cloud",
+    "sourceUrl": "https://newsroom.ibm.com/blog-ibm-and-oracle-expand-partnership-to-help-organizations-modernize-with-ai-and-cloud"
+  },
+  {
+    "date": "2026-05-14",
+    "title": "Ринок альтернатив 1С/BAS в Україні: системний огляд травень 2026 — Dilovod, Odoo, SAP B1 чи Oracle APEX? Орієнтири для різних типів бізнесу",
+    "summary": "Протягом квітня–травня 2026 ряд IT-видань та консалтингових компаній опублікував системні огляди ринку замін 1С/BAS для українського бізнесу. Загальна сегментація: малий бізнес та ФОП — Dilovod та MASTER як українські рішення з підтримкою ПДВ/ЄСВ; середній бізнес із міжнародними операціями — Odoo або SAP Business One; великі підприємства зі складними бізнес-процесами (виробництво, холдинги, агросектор) — Oracle APEX як платформа кастомного ERP або Oracle Fusion. Окремо відзначено проблему: частина компаній шукає обхідні шляхи — закупівля ліцензій за кордоном або використання неліцензійних версій 1С. Це несе подвійний ризик: регуляторний (відповідальність під час планових перевірок після жовтня 2026) та кібербезпековий (відсутність патчів та офіційної підтримки). APEXREST коментар: для компаній зі складними бізнес-процесами, які не вкладаються в стандартне коробкове рішення, Oracle APEX — це платформа власного ERP з повним AI-стеком Oracle 26ai: жодних ліцензійних обмежень на функціонал, повна кастомізація під галузеву специфіку, enterprise-рівень безпеки.",
+    "tag": "Ринок",
+    "sourceName": "Cityhost — Чим замінити 1С та BAS: повний огляд та порівняння альтернатив 2026",
+    "sourceUrl": "https://cityhost.ua/en/blog/chim-zaminiti-1s-ta-bas-povniy-oglyad-ta-porivnyannya-alternativ.html"
+  },
+  {
     "date": "2026-05-13",
     "title": "APEXlang: глибокий технічний аналіз спільноти Oracle — specification-driven розробка та AI-генерація APEX-застосунків напередодні APEX Connect 2026",
     "summary": "Напередодні APEX Connect 2026 (старт 18 травня у Heide Park Soltau) провідні Oracle-блогери опублікували детальні технічні розбори APEXlang. Traust, MaxAPEX та Into The Oracle Verse проаналізували ключові аспекти: APEXlang — текстовий формат (.apx файли) замість монолітного SQL-export, підтримує human-readable git diff, AI-генерацію та specification-driven розробку; Michael Hichwa (SVP Oracle Software Development) визначив концепцію: APEXlang — це capture of intent замість raw implementation code; compiler preview вже у APEX 26.1 Early Adopter з підтримкою паралельної роботи в App Builder та текстовому редакторі. Ключова цінність для enterprise-команд: APEXlang вирішує практичну проблему — code review, git-based workflow та AI-асистована розробка були важко реалізовні через binary XML-export; APEXlang дозволяє bulk changes через search/replace у текстовому файлі. APEX Connect 2026 стане першим публічним форумом де Oracle деталізує APEXlang roadmap з keynote Carsten Czarski. Oracle APEX 26.1 GA очікується у 2026 році.",
