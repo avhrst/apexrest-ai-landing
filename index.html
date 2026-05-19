@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-05-18T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-05-19T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,14 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>Oracle Deep Data Security GA в Oracle AI Database 26ai: identity-aware захист на рівні БД для AI-агентів — row/column-level контроль при prompt injection</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle оголосила GA Oracle Deep Data Security — нова підсистема безпеки в Oracle AI Database 26ai, що забезпечує identity-aware, context-aware контроль доступу на рівні бази даних для agentic AI-застосунків. Проблема: AI-агент, що діє від імені користувача, може при prompt injection або помилці отримати доступ до даних інших користувачів. Deep Data Security усуває це через декларативні SQL-політики в ядрі СУБД: identity та execution context пропагуються до БД у runtime; DDL-политики визначають що видно на рівні рядка, стовпця або клітинки для конкретного запиту незалежно від того, хто генерує SQL — застосунок, агент або людина; агент не може отримати несанкціоновані дані навіть якщо генерує некоректний SQL. Виконання policy відбувається в Oracle Database — не в middleware та не в застосунку; не потрібно дублювати логіку фільтрації в кожному застосунку чи агенті. Доступність: входить до поточного Release Update Oracle AI Database 26ai (on-premises та OCI).</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Oracle Deep Data Security — фундаментальна умова для переведення Oracle APEX AI Agents з pilot до production у regulated середовищах. Governance-first архітектура APEX 26.1 тепер підкріплена database-level enforcement: LLM генерує SQL → Oracle Database enforce policy → агент отримує лише авторизовані дані незалежно від запиту. Для компаній, що мігрують з 1С/BAS: database-level security enforcement відповідає вимогам до захисту персональних та фінансових даних без додаткового middleware. Для CTO та CISO: Deep Data Security усуває ключове enterprise-заперечення проти agentic AI — «AI-агент не можна довіряти з фінансовими даними». Тепер можна. Консультація щодо security architecture для APEX AI Agents: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/database/oracle-deep-data-security-is-now-available-in-oracle-ai-database-26ai" target="_blank" rel="noopener noreferrer">Джерело: Oracle Database Blog — Oracle Deep Data Security Is Now Available in Oracle AI Database 26ai (травень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Подія</div>
             <h3>APEX Connect 2026 стартував 18 травня: Carsten Czarski keynote "Low-code з APEX 2026", Connor McDonald "26ai 100% demo" та офіційний APEX roadmap від Simon Hunt — у прямому ефірі</h3>
@@ -1000,7 +1008,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 18.05.2026</p>
+      <p class="footer-updated">Оновлено: 19.05.2026</p>
     </div>
   </footer>
 
