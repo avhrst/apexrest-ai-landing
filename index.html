@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-05-20T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-05-21T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX AI Application Generator: AI-агенти генерують APEX-застосунки через APEXlang — SQLcl 26.1.2 зі skills sync та GitHub APEXlang Skills</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle запустила Oracle APEX AI Application Generator — платформу для генерації Oracle APEX-застосунків за допомогою AI-агентів (Claude, Codex та інших) через APEXlang специфікацію. SQLcl 26.1.2: нова команда `skills sync` завантажує офіційні APEXlang Skills з GitHub Oracle — AI-агент знає формат .apx, API та кращі практики APEX безпосередньо з офіційного джерела; `apex validate` перевіряє .apx файли у CI/CD pipeline. Практичний workflow: розробник описує вимогу природною мовою → AI-агент (Claude Desktop, GitHub Copilot, VS Code Copilot) генерує APEXlang .apx → SQLcl validate → import до APEX без GUI. Oracle описує концепцію: APEXlang є відкритою специфікаційною мовою для генерації захищених, масштабованих APEX-застосунків розробниками та AI-агентами. GitHub Oracle публікує офіційні APEXlang Skills у публічному репозиторії для прямої інтеграції в AI-агенти.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Oracle APEX AI Application Generator — перший production-ready інструмент де AI-агент генерує не довільний код, а специфікацію застосунку у стандартизованому Oracle-форматі з повним governance та code review у git. Для enterprise APEX-команд: APEXlang + AI generator скорочує час від вимоги до working prototype з тижнів до годин без втрати якості. Для компаній, що планують міграцію з 1С/BAS: accelerated delivery model — частину екранів та звітів генерує AI напряму, зберігаючи повний контроль. Технічна консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://www.oracle.com/apex/ai-application-generator/" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX AI Application Generator (травень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Регуляторика</div>
+            <h3>Менше 100 днів до дедлайну держсектору: 1 вересня 2026 — кінцевий термін відмови від 1С/BAS для органів державної влади</h3>
+            <div class="monitor-problem"><strong>Ситуація:</strong> Від 21 травня 2026 до 1 вересня 2026 — офіційного дедлайну для органів державної влади — залишається менше 100 днів. Поточний правовий статус: санкції РНБО проти 1С діють з 2022 року; ДСЗЗІ опублікував перелік із понад 27 забороненими продуктами (1С, BAS, UA-Budget та інші); законопроєкт №13505 (штраф до 2% від обороту) на фінальному розгляді Верховної Ради. Дедлайни: 1 вересня 2026 — органи державної влади; 1 грудня 2026 — підприємства критичної інфраструктури (банки, енергетика, транспорт). Практична ситуація: BAS-франчайзі підтвердили фактичне призупинення активних продажів нових ліцензій для держсектору з квітня 2026; комерційний сектор несе регуляторні ризики у взаємодії з держорганами-клієнтами або під час перевірок.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Вікно запланованої міграції звужується: підприємства, що починають міграційний проєкт зараз, мають достатньо часу до дедлайну 1 грудня 2026 для впровадження MVP-рішення на Oracle APEX. Oracle APEX з Oracle AI Database 26ai — enterprise-рівень без будь-якої залежності від санкційних вендорів. Мігрувати плановано зараз краще, ніж примусово після дедлайну. Консультація щодо планування міграції: info@apex.rest</div>
+            <a class="monitor-source" href="https://cip.gov.ua/ua/statics/perelik-zaboronenogo-do-vikoristannya-programnogo-zabezpechennya-ta-komunikaciinogo-merezhevogo-obladnannya" target="_blank" rel="noopener noreferrer">Джерело: ДСЗЗІ — Перелік забороненого до використання програмного забезпечення (травень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Подія</div>
             <h3>APEX Connect 2026 завершився: on-demand записи DOAG доступні — 66 сесій, APEXlang workshops, Connor McDonald '26ai 100% demo' та офіційний APEX roadmap від Simon Hunt</h3>
@@ -1024,7 +1040,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 20.05.2026</p>
+      <p class="footer-updated">Оновлено: 21.05.2026</p>
     </div>
   </footer>
 
