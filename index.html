@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-05-24T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-05-25T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,14 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>AI-агент для модернізації Oracle Forms до APEX 26.1: Oracle публікує structured APEXlang workflow у VS Code — від аналізу Forms XML до Traceability Matrix та .apx artifacts</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle опублікував «Transforming Oracle Forms to Oracle APEX in the AI Era: AI Agent» — structured agent workflow для автоматизації ключових кроків модернізації Oracle Forms на APEX 26.1. Агент (файл oracle-forms-migration.agent.md у VS Code, Claude, Codex або інший LLM) виконує: аналіз Forms XML → виявлення business logic та тригерів → валідація залежностей БД у цільовій схемі → ідентифікація повторно використовуваної логіки → генерація APEXlang .apx artifacts та traceability_matrix.md. Traceability Matrix — повна карта відповідності між Forms logic, business intent, database objects та APEX implementation targets. Агент є repeatable: живе в репозиторії поруч з project artifacts і виконується для кожного Forms-модуля окремо без повторного формулювання промптів. Паралельно Oracle опублікував «MCP + AI: Helping You Modernize Your Oracle Forms Apps to Oracle APEX» — AI-агент через MCP для аналізу Forms-застосунків напряму з IDE. Обидва інструменти покривають різні сценарії Forms-аналізу в рамках єдиної модернізаційної стратегії.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Oracle Forms AI Agent workflow — перший structured, repeatable підхід до автоматизованого аналізу Forms-репозиторіїв. Для APEX-команд з великими Forms-кодовими базами: агент скорочує фазу аналізу та підготовки migration artifacts. Для компаній, що мігрують з 1С/BAS та мають inherited Forms-шар: AI-аналіз Forms XML надає повну інвентаризацію legacy-логіки без ручного перегляду кожного Form. Oracle надає AI-інструментарій для обох напрямків модернізації одночасно: Forms → APEX через APEXlang agent, та Forms → APEX через MCP+AI. Консультація щодо стратегії міграції: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/transforming-f2a-agent" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX Blog — Transforming Oracle Forms to Oracle APEX in the AI Era: AI Agent (травень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle Cloud</div>
             <h3>Oracle+NVIDIA GTC 2026: OCI Supercluster наступного покоління з Vera Rubin — 17 ZetaFLOPS та Oracle як перший гіперскейл-cloud з Vera CPU для enterprise AI</h3>
@@ -1088,7 +1096,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 24.05.2026</p>
+      <p class="footer-updated">Оновлено: 25.05.2026</p>
     </div>
   </footer>
 
