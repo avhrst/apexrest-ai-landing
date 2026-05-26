@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-05-25T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-05-26T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>APEXlang в практиці: Oracle публікує step-by-step гайд Export → Edit → Validate → Import — повний CI/CD-сумісний DevOps-цикл для Oracle APEX 26.1 від Oracle Product Management</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle опублікував «APEXlang in Practice: Export, Edit, Validate, and Import Oracle APEX Applications» — перший офіційний step-by-step guide повного APEXlang workflow від Chaitanya Koratamaddi та Ashwin Rao (Oracle APEX Product Management). Workflow: Export через SQLcl `apex export --split` → структура .apx файлів (app.apx + pages/ + shared/) → Edit у VS Code SQL Developer extension або text editor → Validate через SQLcl `apex validate` → Import через `apex import --file`. Ключова технічна вимога: Static IDs обов'язкові для стабільних git diffs — без Static ID автоматичний ID змінюється при кожному export, що унеможливлює осмислений PR review. Паралельно опубліковано «Introducing APEXlang: The Future of Generative Application Development with Oracle APEX» — концептуальний огляд APEXlang як відкритої специфікаційної мови: Claude, Codex та інші LLM читають та генерують .apx файли напряму без посередників.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Офіційний APEXlang in Practice гайд від Oracle PM фіналізує production-ready DevOps-workflow для APEX 26.1 — export → edit → validate → import є повним CI/CD-сумісним циклом без обов'язкового App Builder GUI. Для enterprise APEX-команд, що будують ERP-замінники 1С/BAS: APEXlang-workflow вже зараз готовий до production CI/CD pipeline. Для DevOps та Tech Lead: Static IDs — перший практичний крок перед впровадженням APEXlang, що відкриває реальний PR review на рівні компонентів. Технічна консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/apexlang-in-practice-export-edit-validate-and-import-oracle-apex-applications" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX Blog — APEXlang in Practice: Export, Edit, Validate, and Import Oracle APEX Applications (травень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Регуляторика</div>
+            <h3>Три регуляторні рівні заборони 1С/BAS в Україні: РНБО-санкції, ДСЗІ-перелік та законопроєкт 13505 — правовий статус для приватного бізнесу станом на травень 2026</h3>
+            <div class="monitor-problem"><strong>Ситуація:</strong> Правовий статус заборони 1С/BAS формується трьома паралельними нормативними рівнями: 1) РНБО-санкції (діють з 2022 для 1С, з вересня 2024 для BAS) — прямо забороняють використання та нові закупівлі, беззаперечно поширюються на держсектор та критичну інфраструктуру; 2) Відкритий реєстр ДСЗІ (9 січня 2026) — 27+ заборонених продуктів, вся лінійка 1С та BAS, поширюється на фактичне використання, не лише закупівлі; 3) Законопроєкт №13505 — перехідний строк для приватного бізнесу до 2030 року, штраф до 2% від обороту, але ще не прийнятий. Ключовий практичний факт: РНБО-санкції та ДСЗІ-перелік є чинним законодавством без 13505 — самі по собі достатні для ризику під час перевірок вже зараз. 75% українських підприємств досі використовують 1С або BAS; BAS-франчайзі підтвердили призупинення нових продажів для держсектору з квітня 2026.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Трирівнева регуляторна система означає: ризик для приватного бізнесу існує вже сьогодні, незалежно від статусу 13505. Перехід зараз — це захист від ескалації та можливість планованої міграції до грудня 2026 замість аварійного переходу під тиском. Oracle APEX з AI Database 26ai: EU-compliant enterprise-стек без будь-якої залежності від санкційних вендорів. Консультація щодо міграційного проєкту: info@apex.rest</div>
+            <a class="monitor-source" href="https://7eminar.ua/news/16193-ci-naspravdi-zaboronena-bas" target="_blank" rel="noopener noreferrer">Джерело: 7eminar.ua — Чорний список бухгалтерських програм: чи дійсно BAS під забороною (травень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle APEX</div>
             <h3>AI-агент для модернізації Oracle Forms до APEX 26.1: Oracle публікує structured APEXlang workflow у VS Code — від аналізу Forms XML до Traceability Matrix та .apx artifacts</h3>
@@ -1096,7 +1112,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 25.05.2026</p>
+      <p class="footer-updated">Оновлено: 26.05.2026</p>
     </div>
   </footer>
 

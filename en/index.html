@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — Modern Alternative to Legacy ERP | APEXREST">
   <meta name="twitter:description" content="Professional analytics blog: Oracle APEX, AI Database 26ai, legacy ERP migration, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-05-25T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-05-26T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -390,6 +390,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>APEXlang in Practice: Oracle Publishes Step-by-Step Export → Edit → Validate → Import Guide — Complete CI/CD-Compatible DevOps Cycle for Oracle APEX 26.1</h3>
+            <div class="monitor-problem"><strong>What's new:</strong> Oracle published 'APEXlang in Practice: Export, Edit, Validate, and Import Oracle APEX Applications' — the first official step-by-step guide for the complete APEXlang developer workflow, by Chaitanya Koratamaddi and Ashwin Rao (Oracle APEX Product Management). The workflow: Export via SQLcl `apex export --split`, producing a .zip with .apx files (app.apx root + pages/ + shared/); Edit in VS Code SQL Developer extension or any text editor; Validate via SQLcl `apex validate` for syntax checking; Import via `apex import --file`. Key technical requirement: Static IDs are mandatory for stable git diffs — without Static IDs, auto-generated IDs change on every export, making meaningful PR reviews impossible. Companion post: 'Introducing APEXlang: The Future of Generative Application Development with Oracle APEX' — an overview of APEXlang as an open specification language that Claude, Codex, and other LLMs can read and generate directly without intermediaries.</div>
+            <div class="monitor-comment"><strong>APEXREST view:</strong> Oracle's official APEXlang in Practice guide finalizes the production-ready DevOps workflow for APEX 26.1 — export → edit → validate → import is a complete, CI/CD-compatible cycle without mandatory App Builder GUI involvement. For enterprise APEX teams building ERP replacements: the APEXlang workflow is ready for production pipelines today. For DevOps leads: adding Static IDs to existing components is the practical first step before rolling out APEXlang — it unlocks meaningful PR reviews at the component level. Consultation: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/apexlang-in-practice-export-edit-validate-and-import-oracle-apex-applications" target="_blank" rel="noopener noreferrer">Source: Oracle APEX Blog — APEXlang in Practice: Export, Edit, Validate, and Import Oracle APEX Applications (May 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Regulation</div>
+            <h3>Three Regulatory Layers of the 1C/BAS Ban in Ukraine: NSDC Sanctions, SSSCIP List, and Draft Law 13505 — Legal Status for Private Businesses as of May 2026</h3>
+            <div class="monitor-problem"><strong>Situation:</strong> The legal status of the 1C/BAS prohibition operates across three parallel regulatory layers: 1) NSDC sanctions (active since 2022 for 1C, since September 2024 for BAS) — directly prohibit use and new procurement; unconditionally apply to the state sector and critical infrastructure; 2) Open SSSCIP register (January 9, 2026) — 27+ prohibited products covering the full 1C and BAS product lines, applying to actual operational use, not only procurement; 3) Draft Law No. 13505 — transition period for private business until 2030, up to 2% turnover fine, not yet enacted. Critical practical point: NSDC sanctions and the SSSCIP list are already active law — individually sufficient to create compliance risk during routine inspections, without Draft Law 13505. Approximately 75% of Ukrainian companies continue using 1C or BAS; BAS franchisees confirmed the effective suspension of new license sales to the state sector from April 2026.</div>
+            <div class="monitor-comment"><strong>APEXREST view:</strong> The three-layer regulatory system means private businesses already face real compliance risk today — independent of Draft Law 13505 status. Migrating now means a planned, controlled transition before the December 1, 2026 critical infrastructure deadline, rather than a forced emergency migration under pressure. Oracle APEX with Oracle AI Database 26ai is an EU-compliant enterprise stack with zero dependency on sanctioned vendors. Migration consultation: info@apex.rest</div>
+            <a class="monitor-source" href="https://7eminar.ua/news/16193-ci-naspravdi-zaboronena-bas" target="_blank" rel="noopener noreferrer">Source: 7eminar.ua — Prohibited Software List: Is BAS Actually Banned? (May 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle APEX</div>
             <h3>AI Agent for Oracle Forms-to-APEX Modernization: Oracle Publishes Structured APEXlang Migration Workflow in VS Code — from Forms XML Analysis to Traceability Matrix and .apx Artifacts</h3>
@@ -1107,7 +1123,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Updated: 2026-05-25</p>
+      <p class="footer-updated">Updated: 2026-05-26</p>
     </div>
   </footer>
 
