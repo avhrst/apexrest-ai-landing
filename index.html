@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-05-28T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-05-29T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>Cloudflare@OCI: Oracle та Cloudflare запускають нативну edge-інтеграцію на OCI — CDN, WAF, DDoS-захист та Zero Trust Controls для Oracle APEX-застосунків</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle та Cloudflare оголосили стратегічне партнерство Cloudflare@OCI — нативну інтеграцію Cloudflare connectivity cloud безпосередньо на Oracle Cloud Infrastructure. Ключові можливості: CDN для прискорення глобальної edge-доставки контенту Oracle APEX-застосунків; WAF (Web Application Firewall) — захист від OWASP Top 10 та advanced web-атак без змін у архітектурі застосунку; DDoS-захист — автоматичне поглинання великомасштабних атак; Bot mitigation — захист від credential stuffing, scraping та automated abuse; Zero Trust controls — ізоляція мережевого доступу до APEX-застосунків з корпоративними даними. Технічна деталь: Cloudflare@OCI доступний безпосередньо через OCI Console без окремого Cloudflare-акаунту та без змін у DNS/routing конфігурації застосунку; єдиний unified billing через Oracle Universal Credits. Партнерство розширює попередній Cloudflare–Oracle Bandwidth Alliance (скасування egress charges між Cloudflare та OCI) — тепер з повноцінним edge security integration layer поверх OCI.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Cloudflare@OCI — практичний security stack апгрейд для Oracle APEX-застосунків на OCI без зміни архітектури: WAF, DDoS-захист та Zero Trust controls через OCI Console без окремого edge-провайдера. Для enterprise APEX-застосунків з публічним доступом або sensitive корпоративними даними: Cloudflare WAF закриває enterprise edge security layer з першого дня production Oracle APEX на OCI. Для підприємств, що мігрують з 1С/BAS: edge security є частиною production-ready APEX+OCI deployment без додаткових vendor relationships. Консультація щодо APEX security architecture: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/cloud-infrastructure/introducing-cloudflareoracle-on-oci" target="_blank" rel="noopener noreferrer">Джерело: Oracle Cloud Infrastructure Blog — Introducing Cloudflare@Oracle Cloud Infrastructure (травень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>OCI GoldenGate GA на Oracle AI Database@Google Cloud: provision managed реплікації з Google Cloud Console — real-time data pipelines для міграції та AI analytics без зміни cloud-провайдера</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle оголосила загальну доступність (GA) OCI GoldenGate як частини Oracle AI Database@Google Cloud — managed GoldenGate сервіс тепер provision-ується безпосередньо з Google Cloud Console з оплатою через Google Cloud commitment. Функціонально ідентичний OCI-нативному GoldenGate: всі data connectors, CDC, real-time реплікація; підтримка Google Cloud native: BigQuery, AlloyDB, Cloud SQL, Cloud Storage, Pub/Sub; third-party: Snowflake, Databricks, Confluent Kafka. Use cases: online міграції Oracle та non-Oracle БД до Oracle AI Database@Google Cloud з мінімальним downtime; стриминг Oracle transactional changes до Google BigQuery для AI-ready analytics; синхронізація між Oracle AI Database та Google Cloud native сервісами в реальному часі. Паралельно Oracle та Google Cloud розширили Gemini Enterprise + Oracle AI Database інтеграцію: Oracle AI Database Agent для Gemini Enterprise — бізнес-користувачі запитують Oracle-дані природною мовою через Gemini без SQL. Доступно у 8 Google Cloud регіонах (розширення до 15+: Milan, Iowa, Tokyo, Sydney, Mumbai).</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> GoldenGate GA на Google Cloud — практичний шлях для enterprise APEX-команд із Google Cloud footprint: реплікація Oracle-даних до Google Cloud native сервісів без зміни cloud-провайдера та без змін у APEX-застосунку. Для компаній, що мігрують з 1С/BAS та мають Google Cloud інфраструктуру: GoldenGate@Google Cloud забезпечує синхронізацію між legacy БД та Oracle AI Database@Google Cloud протягом міграційного проєкту без зупинки операцій. Для enterprise APEX-команд з analytics-вимогами: streaming Oracle transactional data до Google BigQuery в реальному часі усуває batch ETL. Консультація щодо data architecture та міграції: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/dataintegration/announcing-oci-goldengate-on-oracle-database-at-google-cloud" target="_blank" rel="noopener noreferrer">Джерело: Oracle Data Integration Blog — Announcing OCI GoldenGate on Oracle Database@Google Cloud (травень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle Cloud</div>
             <h3>Oracle Database@AWS у 12 AWS-регіонах: Frankfurt, Tokyo, Ohio — Oracle APEX нативно доступний у більшості глобальних AWS-точок присутності без зміни хмарного провайдера</h3>
@@ -1144,7 +1160,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 28.05.2026</p>
+      <p class="footer-updated">Оновлено: 29.05.2026</p>
     </div>
   </footer>
 
