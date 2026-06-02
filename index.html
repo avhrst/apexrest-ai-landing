@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-01T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-02T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>Oracle Q4 FY2026 Earnings: 10 червня 2026 після NYSE close — перші результати після GA APEX 26.1 та AI Database 26ai, OCI Infrastructure +84% в Q3 та RPO backlog $553 млрд</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle підтвердила 1 червня 2026 дату Q4 FY2026 earnings: середа, 10 червня 2026, після закриття NYSE, conference call о 17:00 ET. Q3 FY2026 контекст: загальний виторг $17.2B (+22% рік до року); OCI Cloud Infrastructure revenue $4.9B (+84% рік до року — рекордна швидкість для infrastructure segment); Remaining Performance Obligations $553B (+325% рік до року) — backlog ~8× річного виторгу, переважно AI-контракти; FY2027 revenue target підвищено до $90B. Q4 guidance: cloud +44-48%, total revenue +18-20%. Q4 FY2026 (квітень-травень 2026) — перший квартал з Oracle AI Database 26ai та Oracle APEX 26.1 у повному GA-статусі.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Звіт Oracle 10 червня є стратегічним маркером для enterprise CTO та архітекторів: підтвердження cloud +44-48% та RPO $553B (~8× річного виторгу) finalізує hyperscale trajectory Oracle без ознак уповільнення. $50B capital expenditures у FY2026 — Oracle розгортається у темпі AWS, Azure та Google Cloud за масштабом AI-інфраструктурних інвестицій. Для компаній, що обирають Oracle APEX + OCI як довгострокову ERP-платформу: Oracle демонструє фінансову базу для підтримки APEX + AI Database 26ai без ризику vendor instability. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://investor.oracle.com/investor-news/news-details/2026/Oracle-Sets-the-Date-for-its-Fourth-Quarter-Fiscal-Year-2026-Earnings-Announcement/default.aspx" target="_blank" rel="noopener noreferrer">Джерело: Oracle Investor Relations — Oracle Sets Q4 FY2026 Earnings Date (червень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>OCI Generative AI API Deprecation: дедлайн 26 червня 2026 — GenerateText та SummarizeText вимикаються, 24 дні для міграції Oracle APEX PL/SQL-інтеграцій на Chat API</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle встановила фінальний дедлайн: з 26 червня 2026 legacy GenerateText (POST /actions/generateText) та SummarizeText (POST /actions/summarizeText) inference APIs в OCI Generative AI повністю недоступні. Всі OCI GenAI pretrained foundational моделі в on-demand serving mode, що підтримували ці endpoints, відключаються. Дедлайн: 24 дні від сьогодні. Під ризиком: кастомні PL/SQL web service calls або APEX REST Data Sources, написані до APEX 26.1 GA або до оновлення APEX AI Configurations. Заміна: Chat API (POST /actions/chat) — підтримується всіма поточними та майбутніми OCI GenAI моделями без обмежень функціональності.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Дедлайн 26 червня — операційний ризик для APEX-команд з legacy OCI GenAI-інтеграціями: GenerateText/SummarizeText deprecation є breaking change для production APEX-застосунків. Рекомендовано: аудит OCI GenAI endpoint usage у всіх production APEX-застосунках зараз, до KScope26 (14-18 червня). Chat API є функціональною заміною без зміни архітектури. Технічна консультація та міграційний аудит: info@apex.rest</div>
+            <a class="monitor-source" href="https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/deprecate-api-05292025.htm" target="_blank" rel="noopener noreferrer">Джерело: OCI Release Notes — Deprecated APIs in OCI Generative AI (червень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle AI</div>
             <h3>OCI Managed MCP Service GA: Claude, Copilot та Cursor підключаються до Oracle AI Database 26ai через HTTPS — governed SQL Reports як MCP Tools без LLM-генерованого SQL та з повним OCI Audit trail</h3>
@@ -1200,7 +1216,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 01.06.2026</p>
+      <p class="footer-updated">Оновлено: 02.06.2026</p>
     </div>
   </footer>
 
