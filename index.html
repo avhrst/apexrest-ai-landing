@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-05T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-06T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX 26.1: Parallel Flow та Generate Text with AI у Workflow — паралельне виконання гілок і OCI GenAI-активності безпосередньо у процесі автоматизації без PL/SQL; new APIs для lifecycle management</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle APEX Blog опублікував технічний deep-dive про нові Workflow-можливості APEX 26.1. Parallel Flow: кілька гілок workflow виконуються одночасно — runtime паралельно обробляє гілки та переходить до наступної активності, коли всі завершені; для enterprise workflow, де незалежні процеси йшли послідовно, Parallel Flow скорочує elapsed time без переробки логіки. Generate Text with AI: нова workflow-активність, що безпосередньо викликає OCI Generative AI з workflow без PL/SQL — LLM-класифікація, генерація тексту або прийняття рішень як частина автоматизованого процесу. Runtime enhancements: workflow після APEX-upgrade автоматично відновлюється з тієї точки, де зупинився без ручного втручання; multi-tenancy: ізоляція по Tenant ID у Workflow Console та Task List. New APIs: контрольоване видалення workflow/task instances; export/import runtime instances між середовищами; оновлення activity due dates у запущених workflow. Публікація — частина post-GA enablement серії Oracle APEX Blog.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Parallel Flow та Generate Text with AI — практичні enterprise workflow capabilities для міграції бізнес-процесів з 1С/BAS до Oracle APEX. Parallel Flow замінює послідовну обробку незалежних процесів у legacy ERP; Generate Text with AI вбудовує AI-класифікацію та генерацію тексту безпосередньо у workflow без окремих PL/SQL-обгорток. Разом з Ad-hoc AI Agents in PL/SQL та OIC Agentic AI це формує повний AI-native automation stack в Oracle APEX 26.1 — без legacy middleware та без кастомних інтеграційних шарів. Для enterprise-команд, що проектують migration architecture з 1С/BAS: workflow automation є центральним шаром — саме сюди мігрує бізнес-логіка, погоджувальні процеси та automated data flows. Технічна консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/oracle-apex-26-1-parallel-flow-generate-text-with-ai-and-workflow-runtime-enhancements" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX Blog — Oracle APEX 26.1: Parallel Flow, Generate Text with AI, and Workflow Runtime Enhancements (червень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Регуляторика</div>
+            <h3>Законопроєкт №13505: штраф 2% річного обороту за використання 1С/BAS для бізнесу — Комітет ВРУ рекомендував прийняти у першому читанні; SSSCIP вже заборонив 1С/BAS для держорганів та КІІ</h3>
+            <div class="monitor-problem"><strong>Ситуація:</strong> DBS та IT Ukraine Association опублікували аналіз законопроєкту №13505 «Про заборону використання та розповсюдження ворожих програмних продуктів». Ключові положення: штраф 2% від річного обороту для підприємств, що використовують, обслуговують або розповсюджують заборонені ПЗ-продукти включно з 1С та BAS; поетапна заборона для приватного сектора з дедлайном до 2030 року; Комітет ВРУ з цифрової трансформації рекомендував прийняти у першому читанні (жовтень 2025). Паралельно: SSSCIP вже опублікував відкритий реєстр забороненого ПЗ (9 січня 2026, 27 продуктів включно з 1С/BAS) — заборона вже діє для держорганів, ЗСУ та критичної інфраструктури. Масштаб проблеми: приблизно 75% українських компаній досі використовують 1С або його похідні (BAS). Наступний крок: прийняття законопроєкту у першому читанні у ВРУ встановить офіційний compliance timeline для приватного сектора.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Законопроєкт №13505 трансформує ERP-вибір для 75% українського бізнесу: штраф 2% річного обороту — це не операційна витрата, а balance-sheet ризик. При виторгу 100 млн грн штраф складе 2 млн грн/рік без врахування витрат на audit та compliance. Ризик не є гіпотетичним — заборона для держорганів та КІІ вже діє; приватний сектор отримає compliance deadline після прийняття закону. Oracle APEX + Oracle AI Database 26ai є єдиною платформою, де бізнес отримує повністю кастомну ERP без функціональних licensing-обмежень та enterprise AI stack (AI Vector Search, SELECT AI, APEX AI Agents) — на EU-compliant платформі без будь-якої залежності від санкційних юрисдикцій або ворожих вендорів. Консультація щодо міграції: info@apex.rest</div>
+            <a class="monitor-source" href="https://digitalbs.com.ua/en/news-and-events/up-to-2-turnover-fine-ukraine-moves-to-ban-hostile-software/" target="_blank" rel="noopener noreferrer">Джерело: Digital Business Services — Штраф 2% обороту: Україна рухається до заборони «ворожого» ПЗ (2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle AI</div>
             <h3>Oracle Integration вступає в епоху AI (вебкаст 18 червня 2026): OIC-інтеграції стають AI Tools для APEX AI Agents — Agentic AI, Embedded AI та AI-powered RPA у єдиній enterprise integration платформі</h3>
@@ -1256,7 +1272,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 05.06.2026</p>
+      <p class="footer-updated">Оновлено: 06.06.2026</p>
     </div>
   </footer>
 
