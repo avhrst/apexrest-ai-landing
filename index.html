@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-06T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-07T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX 26.1: Нові API для Workflow Operations та Task Management — lifecycle control, Authorization Schemes для груп учасників та портативність runtime state між середовищами (7 червня 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle APEX Blog опублікував наступний пост у post-GA серії APEX 26.1: удосконалення управління workflow та завданнями. Нові публічні API для контрольованого видалення workflow та task instances — cleanup без прямого SQL-доступу до системних таблиць. Export/import runtime state: workflow instance переноситься між development, staging та production без втрати стану виконання. API для оновлення activity due dates у запущених workflow — зміна дедлайнів на runtime без переробки workflow definition. Authorization Schemes для task participants: замість хардкодованих individual users — призначення завдань групам через наявні Authorization Schemes. API виключення конкретних учасників із завдань на runtime та redirect Information Request на іншого користувача. Доповнює Parallel Flow та Generate Text with AI (попередній пост, 6 червня) — формуючи enterprise-grade workflow automation stack.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Разом з Parallel Flow, Generate Text with AI та Ad-hoc AI Agents в PL/SQL, ці workflow capabilities формують повний enterprise BPM-стек у Oracle APEX 26.1 — lifecycle management, AI-активності, паралельне виконання та портативність runtime state без окремого middleware. Для enterprise-команд, що мігрують approval workflows та BPM-логіку з 1С/BAS: APEX 26.1 Workflow є повноцінною заміною legacy BPM-модуля без переписування на окремий workflow engine. Технічна консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/oracle-apex-26-1-enhancements-to-workflow-operations-and-task-management" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX Blog — Oracle APEX 26.1: Enhancements to Workflow Operations and Task Management (червень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX Data Reporter: самостійна бізнес-аналітика без SQL та без App Builder — адміністратор визначає trusted datasets, бізнес-користувачі будують та публікують звіти самостійно (7 червня 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle APEX Blog опублікував огляд Data Reporter — нової можливості APEX 26.1. Архітектура: адміністратор визначає datasets (curated колекції таблиць/views) на рівні workspace; бізнес-користувачі мають доступ лише до цих datasets, а не до повної схеми. Self-service flow: вибір data source → конфігурація колонок → фільтри → layout — без SQL та Page Designer. APEX Assistant у Data Reporter генерує SQL з природно-мовного опису, включаючи JOIN по кількох таблицях. Готовий звіт публікується у Reporting Environment — окремому APEX-застосунку для бізнес-аналітики. Oracle публікує 3-частинну blog series: частина 1 — архітектура; частина 2 — setup; частина 3 — Managing, Updating, and Moving the Reporting Environment.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Data Reporter вирішує одну з ключових вимог ERP-міграції: у 1С/BAS бізнес-користувачі самостійно налаштовували стандартні звіти — Data Reporter надає еквівалентну та кращу self-service reporting capability у Oracle APEX без залежності від розробника для кожного нового звіту. Для enterprise-команд, що замінюють 1С/BAS: Data Reporter скорочує time-to-insight для бізнесу та навантаження на APEX development team у production. Консультація щодо APEX 26.1: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/oracle-apex-data-reporter" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX Blog — Oracle APEX Data Reporter: Putting Self-Service Reporting Back in the Hands of Business Users (червень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle APEX</div>
             <h3>Oracle APEX 26.1: Parallel Flow та Generate Text with AI у Workflow — паралельне виконання гілок і OCI GenAI-активності безпосередньо у процесі автоматизації без PL/SQL; new APIs для lifecycle management</h3>
@@ -1272,7 +1288,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 06.06.2026</p>
+      <p class="footer-updated">Оновлено: 07.06.2026</p>
     </div>
   </footer>
 

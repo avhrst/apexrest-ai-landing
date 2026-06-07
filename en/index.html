@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — Modern Alternative to Legacy ERP | APEXREST">
   <meta name="twitter:description" content="Professional analytics blog: Oracle APEX, AI Database 26ai, legacy ERP migration, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-06T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-07T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -390,6 +390,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX 26.1: Workflow Operations and Task Management Enhancements — Lifecycle APIs, Authorization Schemes for Group Task Assignment, and Runtime State Portability (June 7, 2026)</h3>
+            <div class="monitor-problem"><strong>What's new:</strong> The Oracle APEX Blog published the next post in its post-GA 26.1 series: enhanced workflow and task management capabilities. New public APIs for controlled deletion of workflow and task instances — cleanup without direct SQL access to system tables. Export/import runtime state: a workflow instance can be moved between development, staging, and production without losing execution state. API for updating activity due dates in running workflows — changing deadlines at runtime without modifying the workflow definition. Authorization Schemes for task participants: instead of hardcoded individual users, tasks can be assigned to groups through existing Authorization Schemes. API to exclude specific participants from tasks at runtime and redirect Information Requests to another user when the original assignee is unavailable. Complements Parallel Flow and Generate Text with AI (previous post, June 6) — completing the enterprise-grade workflow automation stack.</div>
+            <div class="monitor-comment"><strong>APEXREST view:</strong> Together with Parallel Flow, Generate Text with AI, and Ad-hoc AI Agents in PL/SQL, these workflow capabilities form a complete enterprise BPM stack in Oracle APEX 26.1 — lifecycle management, AI activities, parallel execution, and runtime state portability without separate middleware. For enterprise teams migrating approval workflows and BPM logic from legacy ERP (1C/BAS): APEX 26.1 Workflow is a complete replacement for the legacy BPM module without rewriting on a separate workflow engine. Technical consultation: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/oracle-apex-26-1-enhancements-to-workflow-operations-and-task-management" target="_blank" rel="noopener noreferrer">Source: Oracle APEX Blog — Oracle APEX 26.1: Enhancements to Workflow Operations and Task Management (June 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX Data Reporter: Self-Service Business Analytics Without SQL or App Builder — Administrators Define Trusted Datasets, Business Users Build and Publish Reports Independently (June 7, 2026)</h3>
+            <div class="monitor-problem"><strong>What's new:</strong> The Oracle APEX Blog published an overview of Data Reporter — a new APEX 26.1 capability. Architecture: the administrator defines datasets (curated collections of tables/views) at the workspace level; business users can only access those datasets, not the full schema. Self-service flow: select data source → configure columns → apply filters → choose layout — no SQL, no App Builder. APEX Assistant in Data Reporter generates SQL from a natural-language description, including JOINs across multiple tables. Completed reports are published to a Reporting Environment — a separate APEX application for business analytics. Oracle is publishing a 3-part blog series: Part 1 — architecture; Part 2 — setup; Part 3 — Managing, Updating, and Moving the Reporting Environment.</div>
+            <div class="monitor-comment"><strong>APEXREST view:</strong> Data Reporter addresses a core ERP migration requirement: in legacy 1C/BAS, business users could independently configure standard reports — Data Reporter delivers equivalent or better self-service reporting capability in Oracle APEX without developer involvement for each new report. For enterprise teams replacing legacy ERP: Data Reporter reduces time-to-insight for the business and development team load in production. Consultation on APEX 26.1: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/oracle-apex-data-reporter" target="_blank" rel="noopener noreferrer">Source: Oracle APEX Blog — Oracle APEX Data Reporter: Putting Self-Service Reporting Back in the Hands of Business Users (June 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle APEX</div>
             <h3>Oracle APEX 26.1: Parallel Flow and Generate Text with AI in Workflow — Concurrent Branch Execution and Native OCI GenAI Activities in Enterprise Automation Without Custom PL/SQL Code</h3>
@@ -1283,7 +1299,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Updated: 2026-06-06</p>
+      <p class="footer-updated">Updated: 2026-06-07</p>
     </div>
   </footer>
 
