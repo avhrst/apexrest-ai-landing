@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-17T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-18T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Подія</div>
+            <h3>KScope26 завершується 18 червня 2026 у Денвері: підсумки найбільшої North American Oracle конференції — перші enterprise production patterns для APEX 26.1 AI Agents, APEXlang CI/CD та NL2IR від Oracle PM team та SI-партнерів (ODTUG KScope26)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Сьогодні, 18 червня 2026, у Gaylord Rockies Resort &amp; Convention Center (Аврора, Колорадо) завершується KScope26 — 5-денна конференція Oracle Developer &amp; Technology User Group (ODTUG) з 250+ технічними сесіями у 6 треках (APEX, EPM, Analytics, OCI, NetSuite, Database). KScope26 є першою великою конференцією після GA Oracle APEX 26.1 (15 травня 2026): Oracle PM team та провідні SI-партнери (Traust, Insum, Pretius та інші) публічно представили enterprise production patterns для AI Agents (governance models, tool authorization, data access scoping), APEXlang CI/CD (declarative .apx format у git, diff/merge strategies, multi-developer workflows) та NL2IR у production enterprise-контексті. Матеріали та записи сесій публікуватимуться на odtug.com та у блогах спікерів протягом наступних тижнів.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> KScope26 outputs — найцінніший практичний матеріал для Oracle APEX enterprise-команд, що планують production deployments APEX 26.1 AI features. Для компаній у CEE-регіоні, що будують Oracle APEX-замінники 1С/BAS: enterprise patterns KScope26 дозволяють уникнути типових архітектурних помилок при впровадженні AI Agents та APEXlang у multi-team enterprise середовищі. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://www.odtug.com/kscope26" target="_blank" rel="noopener noreferrer">Джерело: ODTUG KScope26 — KScope26: Oracle Developer &amp; Technology User Group Conference, Denver, June 14–18, 2026 (odtug.com/kscope26)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX 26.1 Map Region: vector tile layer support для масштабованих просторових датасетів — Map Region завантажує лише поточний viewport замість повного dataset; масштабованість до десятків тисяч об'єктів (blogs.oracle.com, червень 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle опублікував огляд нових можливостей Map Region в Oracle APEX 26.1. Ключова нова функція: vector tile layer support для великих spatial datasets — Map Region завантажує лише дані для поточного viewport та рівня масштабу замість передачі повного dataset у браузер. Технічна реалізація: Map Region використовує mdsys.sdo_util.get_vectortile() для генерації PBF (Protocolbuffer Binary Format) vector tiles безпосередньо у Oracle AI Database 26ai; клієнт надсилає паралельні AJAX-запити лише для видимих тайлів. Результат: масштабованість до десятків тисяч просторових об'єктів без деградації продуктивності. Вимоги: Oracle AI Database 26ai (Oracle Spatial) або OCI Spatial and Graph.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Map Region vector tiles — стратегічна платформенна функція для enterprise APEX-застосунків з геопросторовими даними: логістика та маршрутизація, нерухомість та будівельні об'єкти, інфраструктурні мережі. Oracle APEX 26.1 реалізує enterprise GIS-функціонал на рівні платформи без стороннього ГІС-ПЗ та додаткових ліцензій. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/whats-new-in-map-region-in-oracle-apex-26-1" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX Blog — What's New in Map Region in Oracle APEX 26.1 (blogs.oracle.com, червень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle APEX</div>
             <h3>Oracle APEX 26.1 NL2IR: природна мова в Interactive Reports без генерації SQL — AI застосовує декларативні фільтри, сортування та pivot-аналітику у межах APEX security model (blogs.oracle.com, червень 2026)</h3>
@@ -1432,7 +1448,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 17.06.2026</p>
+      <p class="footer-updated">Оновлено: 18.06.2026</p>
     </div>
   </footer>
 
