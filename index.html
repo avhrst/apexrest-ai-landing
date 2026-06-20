@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-19T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-20T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>Що нового в Oracle AI червень 2026: Cohere Rerank 4, Nemotron 3 Ultra, Enterprise AI Agents GA, UAE Central region, OpenAI Responses API — і критичний дедлайн: GenerateText/SummarizeText APIs видаляються 26 червня 2026 (blogs.oracle.com/ai-and-datascience, червень 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle опублікував червневий огляд новинок OCI Generative AI: Cohere Rerank 4 — покращений reranking для RAG-pipeline APEX SELECT AI (вища точність релевантності); Nemotron 3 Ultra — нова NVIDIA model для OCI Enterprise AI imported model deployment; Enterprise AI Agents GA — production-ready agentic applications через modular та composable primitives в OCI Generative AI (ключова виробнича база для APEX 26.1 AI Agents); UAE Central (Abu Dhabi) — OCI Enterprise AI розширено до нового регіону; OpenAI Responses-compatible Unified API — уніфікований API для orchestration, reasoning, tool use та memory в agentic tasks. Критичний дедлайн: GenerateText та SummarizeText APIs повністю видаляються з 26 червня 2026 — кінець однорічного deprecation period. Обов'язкова міграція на Chat API. Вплив на APEX: перевірте конфігурацію AI Provider у APEX Workspace та будь-які прямі PL/SQL виклики OCI GenAI API до 26 червня.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Enterprise AI Agents GA + OpenAI-сумісний Unified API = виробнича agentic платформа для Oracle APEX 26.1 AI Agents на OCI. Cohere Rerank 4 підвищує точність SELECT AI RAG-pipeline. Критично: будь-яка APEX-інтеграція через GenerateText або SummarizeText перестає працювати після 26 червня 2026 — це виробничий ризик для команд, що не завершили міграцію. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-june-2026" target="_blank" rel="noopener noreferrer">Джерело: Oracle AI and Data Science Blog — What's New in Oracle AI? June 2026 Edition (blogs.oracle.com/ai-and-datascience, червень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX 26.1: два нові AI Agents reference матеріали — програмний PL/SQL шлях (APEX_AI package inline tool definitions) та повна CRM AI Agent reference implementation з multiple tool types та orchestration pattern (blogs.oracle.com/apex, травень–червень 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle опублікував два практичних технічних матеріали щодо AI Agents в Oracle APEX 26.1. 1) Build Ad-hoc AI Agents Entirely in PL/SQL (30 травня 2026): APEX 26.1 розширює APEX_AI package — AI Tools визначаються inline у PL/SQL коді та передаються безпосередньо до APEX_AI.CHAT або APEX_AI.GENERATE без Application Builder UI та без declarative metadata. Підходить для backend automation pipelines, scheduled jobs з AI reasoning та поступової AI-augmentation існуючих PL/SQL business layers. 2) Build a CRM AI Agent with Oracle APEX: повна референсна реалізація CRM-сценарію — AI Agent з Customer Lookup, Interaction History, Update Customer та Notification tools; orchestration pattern у multi-step reasoning chain; context-aware execution points у APEX page. Архітектурне розмежування: LLM reasoning → declarative tool definitions (Application Builder) → data access (Oracle AI Database 26ai).</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Два архітектурних шляхи AI Agents у APEX 26.1 закривають різні enterprise потреби: declarative (Application Builder) — для більшості production enterprise сценаріїв; programmatic PL/SQL (APEX_AI package) — для кастомних automation та data pipeline задач. CRM reference implementation — найпрактичніший відправний пункт для enterprise APEX-команд, що планують перший production deployment AI Agents. Для компаній, що будують замінники 1С/BAS: reference показує enterprise AI orchestration без custom фреймворків. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/build-ad-hoc-ai-agents-entirely-in-pl-sql" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX Blog — Build Ad-hoc AI Agents Entirely in PL/SQL та Build a CRM AI Agent with Oracle APEX (blogs.oracle.com/apex, травень–червень 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle Cloud</div>
             <h3>OpenAI на Oracle Cloud: OCI enterprise-клієнти можуть витрачати Oracle Universal Credits на GPT-4o та Codex — новий комерційний маршрут до OpenAI frontier models без окремих контрактів у межах єдиного oracle.com commit (Oracle Marketplace Blog, 10 червня 2026)</h3>
@@ -1464,7 +1480,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 19.06.2026</p>
+      <p class="footer-updated">Оновлено: 20.06.2026</p>
     </div>
   </footer>
 
