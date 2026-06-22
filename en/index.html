@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — Modern Alternative to Legacy ERP | APEXREST">
   <meta name="twitter:description" content="Professional analytics blog: Oracle APEX, AI Database 26ai, legacy ERP migration, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-21T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-22T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -390,6 +390,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX 26.1: Native Out-of-the-Box Support for Anthropic Claude, Google Gemini, Mistral AI, and Ollama — Declarative Configuration in APEX Workspace with Unified Normalized API Across All AI Providers (blogs.oracle.com/apex, June 2026)</h3>
+            <div class="monitor-problem"><strong>What's new:</strong> Oracle published a detailed overview of expanded AI provider choice in Oracle APEX 26.1 — native support for Anthropic Claude, Google Gemini, Mistral AI, and Ollama alongside existing OCI GenAI, OpenAI, and Cohere, without custom REST integrations or PL/SQL adapters. Implementation details: Anthropic Claude — messages-based API with x-api-key authentication, APEX normalizes message/role structure; Google Gemini — structured JSON API, APEX auto-injects API key; Mistral AI — OpenAI-compatible with its own endpoints; Ollama — local LLM at /api/chat and /api/embed for air-gapped on-premises deployments. Credential security: API keys stored in APEX secured credential repository, never exposed in application code or the browser. All new providers are purely additive: no breaking changes for existing APEX AI integrations. After configuration: AI Agents, NL2IR, APEXlang Blueprints, and APEX AI Assistant work through any supported provider.</div>
+            <div class="monitor-comment"><strong>APEXREST view:</strong> Multi-provider support in APEX 26.1 is a strategic flexibility option for enterprise teams — choosing between OCI-native (OCI GenAI), frontier (Claude, Gemini, OpenAI), or privacy-first (Ollama) AI without rewriting APEX applications. For organizations replacing legacy ERP with Oracle APEX: Ollama integration enables air-gapped on-premises AI for industries with elevated data privacy requirements (banking, government, healthcare). Consultation: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/expanding-ai-choice-with-out-of-the-box-support-for-major-ai-providers-in-oracle-apex-26-1" target="_blank" rel="noopener noreferrer">Source: Oracle APEX Blog — Expanding AI Choice with Out-of-the-Box Support for Major AI Providers in Oracle APEX 26.1 (blogs.oracle.com/apex, June 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>Oracle Fusion Cloud 26B: 22 New Agentic Applications for Finance, HR, SCM, and CX — Security Command Center for ERP, Design-to-Source Workspace, and 10 Supply Chain Agents; Oracle Scales Enterprise AI Across the Entire Fusion Apps Suite (blogs.oracle.com/fusioninsider, June 2026)</h3>
+            <div class="monitor-problem"><strong>What's new:</strong> Oracle Fusion Cloud 26B (rolling release May–August 2026) introduces 22 new Agentic Applications across the Fusion Apps Suite: Finance/ERP — Security Command Center for ERP (agentic monitoring and response to security events in Fusion ERP); SCM — 10 agentic apps, including Design-to-Source Workspace (agent coordinates the full cycle from business requirement to supplier), Sourcing Command Center, and Cost Accounting Close Workspace; HCM and CX. Architectural principle: an agent aggregates information and recommendations across all functional areas in a unified UI → reasons across domains → executes actions without switching between systems. Examples: AI agent reads supplier emails and automatically creates ASNs and receipts; detects inventory imbalances and supply disruptions; responds to order exceptions in-context. Fusion 26B is the first large-scale production rollout of Oracle Fusion Agentic Applications following the CloudWorld 2025 platform announcement.</div>
+            <div class="monitor-comment"><strong>APEXREST view:</strong> Oracle Fusion 26B Agentic Applications demonstrates Oracle's enterprise AI strategy at full scale — the entire Fusion Suite (Finance, HCM, SCM, CX) is gaining agentic capabilities within a single Oracle Cloud platform. For enterprise CTOs evaluating Oracle Cloud as a strategic platform: Oracle AI Database 26ai + Oracle APEX + Oracle Fusion form a unified enterprise AI stack — from core database to low-code ERP applications to enterprise SaaS — all on OCI. Consultation: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/fusioninsider/new-fusion-agentic-applications-details-and-demos" target="_blank" rel="noopener noreferrer">Source: Oracle Fusion Insider Blog — New Fusion Agentic Applications: Details and Demos (blogs.oracle.com/fusioninsider, June 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle Cloud</div>
             <h3>Oracle Q4 and FY2026: Record Revenue $67.4B (+17%), OCI Cloud Infrastructure $5.8B in Q4 (+93%), RPO $638B — AI Workloads Confirm OCI as a Production Enterprise AI Platform (oracle.com, June 10, 2026)</h3>
@@ -1499,7 +1515,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Updated: 2026-06-21</p>
+      <p class="footer-updated">Updated: 2026-06-22</p>
     </div>
   </footer>
 
