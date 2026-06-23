@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-22T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-23T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>Oracle OCI: нативні enterprise-grade Managed MCP Servers для будь-якої Oracle Database у хмарі — agentic доступ AI-агентів з OCI IAM-авторизацією, OAuth 2.0 та Vault-credentials без кастомних інтеграцій (blogs.oracle.com/database, червень 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle анонсував нативні Managed MCP Servers в OCI Database Tools Service — agentic доступ до будь-якої Oracle Database в OCI через стандартний Model Context Protocol (MCP): Autonomous AI Database (Serverless та Dedicated), Base Database Service, Exadata та інші через OCI Database Tools Connection. Безпека: аутентифікація через OCI Identity Domain з OAuth 2.0 + PKCE; управління credentials через OCI Vault; тонке розмежування доступу через IAM policies; підтримка федерації з enterprise identity providers (Microsoft Entra ID та ін.). Можливості: governed toolsets (валідовані SQL Reports), доступ через HTTPS без локальної інсталяції; AI-агенти та AI-асистенти підключаються до Oracle Database як до MCP-джерела інструментів. Для APEX 26.1 AI Agents: Managed MCP Server = виробнича база для agentic доступу до Oracle AI Database 26ai в контрольованому OCI-середовищі.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> OCI Managed MCP Server — enterprise компонент для Oracle APEX 26.1 AI Agents, що взаємодіють з Oracle AI Database 26ai: стандартний протокол MCP, OCI-native security, без кастомних інтеграцій. Для enterprise ERP-замінника на APEX: Managed MCP надає AI-агентам IAM-контрольований доступ до корпоративних даних Oracle Database без обходу security периметру. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/database/gain-agentic-access-to-any-oracle-database-in-the-cloud-with-native-enterprise-grade-managed-mcp-servers-in-oci" target="_blank" rel="noopener noreferrer">Джерело: Oracle Database Blog — Gain Agentic Access to Any Oracle Database in the Cloud with Native, Enterprise-grade Managed MCP Servers in OCI (blogs.oracle.com/database, червень 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Регуляторика</div>
+            <h3>BDO Україна: юридичний посібник для бізнесу в умовах заборони 1С та BAS — Draft Law No. 13505 вводить штрафи до 2% річного обороту; реєстр ДССЗІ від 8 січня 2026 охоплює 1С, BAS, Bitrix24 (bdo.ua, 2026)</h3>
+            <div class="monitor-problem"><strong>Ситуація:</strong> BDO Україна опублікував детальний юридичний посібник для бізнесу в умовах заборони 1С та BAS. Правова рамка: реєстр скомпрометованого ПЗ ДССЗІ від 8 січня 2026 охоплює 1С, BAS, Bitrix24 та десятки інших продуктів. РНБО-санкції забороняють продаж, підтримку та дистрибуцію всієї BAS-лінійки та класичного 1С. Законопроєкт No. 13505, вже зареєстрований у Верховній Раді, вводить штрафи до 2% річного обороту за використання санкційного ПЗ. Чотирикроковий план BDO: 1) Наказ про аудит інформаційних систем (захисний документ для перевіряючих та банків); 2) Переключення баз 1С/BAS у 'read only' + Наказ про архівування ПЗ; 3) Протокол вибору нового ПЗ; 4) Comfort Letter для банків та контрагентів. Прогноз: до кінця 2026 частка МСБ на санкційному ПЗ впаде нижче 20% — рушій: банківський тиск та вимоги закупівель.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Draft Law No. 13505 (штраф до 2% обороту) — конкретний фінансовий ризик для підприємств, що відкладають міграцію. Правова документація BDO (аудит, архівний статус, Comfort Letter) — мінімальна захисна рамка для перехідного періоду. Oracle APEX на Oracle Autonomous Database покриває функціональність 1С/BAS в хмарному середовищі, що відповідає стандартам ЄС та НАТО. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://www.bdo.ua/en-gb/insights-1/information-materials/2026/legal-guidance-for-businesses-amid-the-ban-on-sanctioned-software" target="_blank" rel="noopener noreferrer">Джерело: BDO Україна — Заборона 1С та BAS в Україні: бізнес-ризики та необхідні кроки (bdo.ua, 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle APEX</div>
             <h3>Oracle APEX 26.1: нативна підтримка Anthropic Claude, Google Gemini, Mistral AI та Ollama без кастомних інтеграцій — декларативна конфігурація в APEX Workspace з єдиним normalized API для всіх AI-провайдерів (blogs.oracle.com/apex, червень 2026)</h3>
@@ -1504,7 +1520,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 22.06.2026</p>
+      <p class="footer-updated">Оновлено: 23.06.2026</p>
     </div>
   </footer>
 
