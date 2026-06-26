@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-25T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-26T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,22 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>OCI Generative AI: GenerateText та SummarizeText API офіційно відключені 26 червня 2026 — дедлайн досягнутий; команди, що не завершили міграцію, отримують помилки; перехід на Chat API обов'язковий (docs.oracle.com, 26 червня 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> 26 червня 2026 — офіційний shutdown: GenerateText та SummarizeText APIs в OCI Generative AI Inference API більше недоступні. Дедлайн оголошено Oracle 29 травня 2025 (рівно рік тому). Команди, що не завершили міграцію на Chat API, отримують помилки при зверненні до /generateText та /summarizeText endpoints. Chat API є повноцінною заміною для всіх попередніх use cases — генерація тексту, summarization та instruction-following. Для Oracle APEX AI Agents та SELECT AI інтеграцій через APEX_AI package: необхідна перевірка конфігурації AI Provider credentials та endpoint налаштувань.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Відключення OCI deprecated APIs — сигнал для enterprise APEX-команд негайно перевірити конфігурацію OCI Generative AI у своїх APEX AI Agent integrations. Chat API підтримує всі попередні use cases з кращою консистентністю. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/deprecate-api-05292025.htm" target="_blank" rel="noopener noreferrer">Джерело: Oracle Cloud Infrastructure Release Notes — Deprecated APIs in OCI Generative AI (docs.oracle.com, 26 червня 2026)</a>
+          </article>
+
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>Oracle підтвердила скорочення 21 000 посад за 12 місяців — CNBC, 23 червня 2026: AI-реструктуризація, CAPEX +162% до $55.7 млрд, FTE з 162 000 до 141 000; від'ємний FCF -$23.7 млрд (cnbc.com)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> CNBC опублікував 23 червня 2026 аналіз щорічного звіту Oracle: за 12 місяців (до травня 2026) Oracle скоротила 21 000 посад — майже 13% FTE (з 162 000 до 141 000). Oracle у звіті прямо назвала AI причиною: «The adoption and deployment of AI technologies have resulted, and may continue to result, in reductions to our workforce.» Витрати на реструктуризацію: $1.8 млрд (проти $374 млн роком раніше). CAPEX зріс на 162% до $55.7 млрд — вільний грошовий потік від'ємний (-$23.7 млрд) через масштабні GPU-інвестиції в OCI. Контекст: скорочення зосереджені у продажах, маркетингу та підтримці — OCI інженерна команда та APEX Product Management не постраждали; Oracle APEX 26.1 та AI Database 26ai вийшли за планом.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Реструктуризація Oracle підтверджує стратегічну ставку на AI-автоматизацію: скорочення у sales/support = інвестиції в GPU/OCI. Для підприємств, що мігрують з 1С/BAS на Oracle APEX: APEX Product Management команда в повному складі, продуктова дорожня карта виконується за планом. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://www.cnbc.com/2026/06/23/oracle-ai-job-cuts-layoffs-21000.html" target="_blank" rel="noopener noreferrer">Джерело: CNBC — Oracle sheds 21,000 roles over the past year amid wave of AI layoffs (cnbc.com, 23 червня 2026)</a>
+          </article>
+
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle Cloud</div>
             <h3>Oracle Defence Tech Summit Brussels 2026 (25 червня): 10 нових партнерів у Oracle Defense Ecosystem — AI, кіберзахист, підводна робототехніка та захищений мобільний зв'язок на OCI; Summit підтверджує позицію OCI як NATO-grade sovereign cloud платформи для критичних місій (oracle.com/europe, 25 червня 2026)</h3>
@@ -1544,7 +1560,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 25.06.2026</p>
+      <p class="footer-updated">Оновлено: 26.06.2026</p>
     </div>
   </footer>
 
