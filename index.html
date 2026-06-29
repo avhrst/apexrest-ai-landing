@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-28T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-29T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,20 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Регуляторика</div>
+            <h3>Україна переходить на криптостандарт е-підпису «Купина» з 1 вересня 2026 — нові КЕП лише за Купина; ERP-системи та ПЗ потребують перевірки сумісності; підприємства, що мігрують з 1С/BAS, мають включити Купина у чеклист впровадження (minfin.com.ua, 28 червня 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Мінцифри встановило дедлайн повного переходу на криптографічний стандарт «Купина» — 1 вересня 2026. З цієї дати всі нові кваліфіковані електронні підписи (КЕП) генеруватимуться виключно за новим алгоритмом. Що не змінюється: старі КЕП залишаються дійсними до закінчення терміну сертифіката — вже підписані документи повністю зберігають юридичну силу; системи продовжуватимуть верифікувати старі підписи. Дії для бізнесу: перевірити підтримку Купина у поточному ПЗ; уточнити у постачальників ERP та бухгалтерських систем строки оновлень. Контекст: підприємства, що паралельно мігрують з 1С/BAS, мають включити перевірку Купина-сумісності нової ERP-платформи до технічного завдання — це особливо актуально для Oracle APEX-додатків з електронним документообігом.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Перехід на «Купина» — обов'язковий пункт при виборі ERP-замінника 1С/BAS: нова система має підтримувати Купина-сертифікати до 1 вересня 2026. Oracle APEX на Oracle Autonomous Database: сумісність з оновленими стандартами е-підпису забезпечується через оновлення OCI та Oracle Database — без залежності від вендора ERP-додатку. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://minfin.com.ua/ua/2026/06/28/176687894/" target="_blank" rel="noopener noreferrer">Джерело: Мінфін — В Україні перенесли перехід на новий стандарт е-підпису: що зміниться для бізнесу (minfin.com.ua, 28 червня 2026)</a>
+          </article>
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>OCI Generative AI червень 2026: Cohere Rerank 4 on-demand, Cohere Embed 4 multimodal (текст+зображення), xAI Voice (TTS), NVIDIA Nemotron 3 Ultra на B200 — нові компоненти AI-стеку для Oracle APEX 26.1 AI Agents та AI Vector Search у enterprise ERP-замінниках (blogs.oracle.com/ai-and-datascience, червень 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle оголосив червневу хвилю оновлень OCI Enterprise AI: Cohere Rerank 4 у загальному on-demand доступі — покращений enterprise retrieval з більшим контекстним вікном та self-learning підтримкою. Cohere Embed 4 multimodal: embeddings для тексту, зображень або змішаних text-image inputs — ключовий компонент для мультимодальних RAG pipeline в enterprise APEX додатках. xAI Voice: новий TTS (text-to-speech) сервіс у OCI Enterprise AI. NVIDIA Nemotron 3 Ultra на dedicated B200 clusters через managed OCI endpoint — frontier open-weight LLM для agentic workloads. Розширення до UAE Central (Абу-Дабі): новий регіон для data residency та latency-оптимізації. Нові імпорти: Alibaba Qwen, Google Gemma, OpenAI gpt-oss-20b/120b на B200 у UAE. Ребрендинг платформи: OCI Enterprise AI тепер офіційно охоплює Generative AI Models, Enterprise AI Agents та Governance.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Cohere Rerank 4 та Embed 4 multimodal безпосередньо підсилюють AI Vector Search (Unified Hybrid Vector Search) Oracle AI Database 26ai — ключового компонента для NL2IR та AI Agents у APEX 26.1. Для enterprise ERP-замінника 1С/BAS на Oracle APEX: кращий retrieval = точніші відповіді AI Agents на бізнес-запити, зокрема з мультимодального контенту (скани, фото, PDF-документи). Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-june-2026" target="_blank" rel="noopener noreferrer">Джерело: Oracle AI and Data Science Blog — What's New in Oracle AI? June 2026 Edition (blogs.oracle.com/ai-and-datascience, червень 2026)</a>
+          </article>
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle AI</div>
             <h3>OpenAI GPT-4o, o3 та Codex стали доступні через Oracle Universal Credits в OCI Marketplace — enterprise Oracle APEX команди отримують повний вибір frontier AI без нових procurement процесів та мультивендорного billing (червень 2026)</h3>
@@ -1582,7 +1596,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 28.06.2026</p>
+      <p class="footer-updated">Оновлено: 29.06.2026</p>
     </div>
   </footer>
 
