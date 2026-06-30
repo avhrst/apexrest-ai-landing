@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-06-29T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-06-30T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,20 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Регуляторика</div>
+            <h3>Україна: 68% підприємств досі не замінили 1С/BAS через 6 місяців після офіційної заборони — реальна міграція на незалежні продукти лише 3%; дефіцит ERP-впроваджувачів стає ключовим ризиком для тих, хто відкладає рішення (oneservice-consulting.com, 2026)</h3>
+            <div class="monitor-problem"><strong>Ситуація:</strong> Ринковий аналіз середини 2026 фіксує: через 6 місяців після офіційного включення 1С та BAS до переліку забороненого ПО (Держспецзв'язку, лютий 2026) 68% українських компаній ще не здійснили повну зміну облікової системи. Реальна міграція на повністю незалежні (не BAS-клони) продукти — лише близько 3% ринку. Основні перешкоди: дефіцит кваліфікованих ERP-впроваджувачів (попит значно перевищує пропозицію); тривалість повноцінного ERP-проєкту для середнього бізнесу — 6-12 місяців; частина компаній перебуває в середині оцінювання альтернатив. Технічні перешкоди: складна власна бізнес-логіка (виробничий облік, нестандартні конфігурації) — аргумент проти типових SaaS-рішень. Альтернативи за сегментами: SaaS-рішення (Dilovod, BookKeeper) для малого бізнесу — 1-3 місяці; IT-Enterprise для великих промислових підприємств; Oracle APEX для enterprise з нестандартними конфігураціями та великими обсягами даних; Odoo, SAP Business One для mid-market. Ринковий прогноз: H2 2026 — пік попиту на ERP-переходи; компанії, що відкладали рішення, зіткнуться з браком впроваджувачів та зростанням цін на послуги.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> 68% незмігрованих компаній = значний та зростаючий попит у H2 2026. Для підприємств з нестандартними конфігураціями 1С/BAS (виробничий облік, WMS, нестандартний документообіг): Oracle APEX дозволяє відтворити специфічну бізнес-логіку без компромісів, властивих типовим ERP. Дефіцит впроваджувачів підкреслює критичність вибору досвідченого Oracle APEX партнера вже зараз. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://www.oneservice-consulting.com/blog/other-solutions-1/rynok-erp-v-ukrayini-na-porozi-2026-roku-78" target="_blank" rel="noopener noreferrer">Джерело: One Service Consulting — Ринок ERP в Україні на порозі 2026 року (oneservice-consulting.com, 2026)</a>
+          </article>
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>Oracle Critical Security Patch Update червень 2026: 243 CVE у 245 оновленнях безпеки — 10 критичних вразливостей; охоплює Fusion Middleware, E-Business Suite, MySQL; OCI Autonomous Database отримує managed patches без простою для APEX-застосунків (blogs.oracle.com/security, червень 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle випустив червневий Critical Security Patch Update у рамках переходу на щомісячний цикл оновлень безпеки (замість квартального з 2025). Масштаб: 243 унікальні CVE у 245 патчах — 10 критичних вразливостей, 122 патчи (49.8%) класифіковані як критичні. Охоплення: Oracle Communications, E-Business Suite, Fusion Middleware, JD Edwards, MySQL, PeopleSoft, Siebel CRM, Supply Chain та Virtualization. Oracle APEX: у червневому патчі відсутні прямі APEX-специфічні CVE — включені third-party component patches, що можуть стосуватися APEX-середовищ на WebLogic, Oracle Database або Fusion Middleware. Для enterprise APEX команд: перевірити OCI managed database patch status (Autonomous Database отримує managed patches автоматично); для on-premises Oracle APEX — перевірити оновлення Oracle Database та WebLogic через My Oracle Support. Контекст: Oracle перейшов на щомісячний цикл патчування — enterprise APEX Operations мають інтегрувати щомісячний patch review до операційних процесів.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Щомісячний Critical Security Patch від Oracle вимагає системного підходу до patch management у enterprise APEX середовищах. Перевага OCI Autonomous Database: managed security patches застосовуються без вікна простою для кінцевих APEX-застосунків — практичний аргумент на користь cloud deployment при міграції з 1С/BAS. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/security/june-2026-critical-security-patch-update-released" target="_blank" rel="noopener noreferrer">Джерело: Oracle Security Blog — June 2026 Critical Security Patch Update Released (blogs.oracle.com/security, червень 2026)</a>
+          </article>
           <article class="monitor-card featured">
             <div class="monitor-tag">Регуляторика</div>
             <h3>Україна переходить на криптостандарт е-підпису «Купина» з 1 вересня 2026 — нові КЕП лише за Купина; ERP-системи та ПЗ потребують перевірки сумісності; підприємства, що мігрують з 1С/BAS, мають включити Купина у чеклист впровадження (minfin.com.ua, 28 червня 2026)</h3>
@@ -1596,7 +1610,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 29.06.2026</p>
+      <p class="footer-updated">Оновлено: 30.06.2026</p>
     </div>
   </footer>
 
