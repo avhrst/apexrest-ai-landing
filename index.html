@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-07-02T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-07-03T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,20 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>Oracle Fusion Cloud EPM 26.07 (3 липня 2026 — тест, 17 липня — prod): GenAI функції Oracle Planning потребують версії 26.04+; середовища нижче 26.04 втрачають Generative AI до кінця липня — критичний дедлайн для enterprise Oracle Fusion EPM клієнтів; нові алгоритми Advanced Predictions та multi-value RTP параметри в EPM Automate (docs.oracle.com, 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle Fusion Cloud EPM July 2026 Update (26.07) запустився сьогодні у тестових середовищах (3 липня 2026) — виробничі середовища оновляться 17 липня. Критична зміна для GenAI: починаючи з 26.07, Oracle Generative AI функції в Oracle Planning доступні виключно для тенантів на версії 26.04 (квітень 2026) або новіших. Тенанти, що не оновилися до 26.04 до кінця липня, втрачають доступ до всіх GenAI функцій — AI-асистовані workflow, NL-планування, AI-аналітика. Нові можливості 26.07: підтримка multi-value RTP параметрів у EPM Automate command simulateConcurrentUsage та EPM REST API для автоматизованого тестування паралельних операцій; нові алгоритми регресії в Advanced Predictions з порівняльною таблицею можливостей. Охоплення Oracle Fusion Cloud EPM: Planning, Budgeting and Forecasting, Financial Consolidation and Close, Account Reconciliation — ключові корпоративні модулі для enterprise фінансового обліку та корпоративного планування.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> GenAI-дедлайн у Oracle EPM 26.07 — конкретний операційний ризик для enterprise Oracle Fusion клієнтів, що відтягують оновлення: Enterprise Planning без GenAI у 2026 — втрачена конкурентна перевага у фінансовому плануванні та звітності. Для підприємств, що розглядають Oracle Fusion Cloud (включаючи EPM) як замінника 1С у фінансовому обліку: своєчасні cloud-оновлення є стандартом SaaS-моделі. Oracle APEX + Fusion EPM через REST Catalog забезпечує кастомний звітний шар незалежно від версії EPM тенанта. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://docs.oracle.com/en/cloud/saas/readiness/epm-all.html" target="_blank" rel="noopener noreferrer">Джерело: Oracle Cloud Applications Readiness — Enterprise Performance Management July 2026 What's New (docs.oracle.com, 2026)</a>
+          </article>
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>Oracle AI Database@AWS в Іспанії (Spain Central, Мадрид, 22 червня 2026): Exadata Database Service, Autonomous AI Database та Autonomous AI Lakehouse на OCI-інфраструктурі в AWS з іспанською data residency — ATM Barcelona та Helvetia Caser серед перших клієнтів; мережа Oracle Database@AWS перевищила 20 глобальних локацій (oracle.com, червень 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> 22 червня 2026 Oracle оголосив запуск Oracle AI Database@AWS у Spain Central (Мадрид) — перший OCI-in-AWS регіон в Іспанії. Доступні сервіси: Oracle Exadata Database Service (включаючи Exadata на Exascale Infrastructure), Oracle Autonomous AI Database та Oracle Autonomous AI Lakehouse — на виділеній OCI-інфраструктурі всередині AWS-датацентрів з іспанськими вимогами data residency. Data residency: розгортання відповідає іспанським та EU data sovereignty вимогам (GDPR). Перші enterprise клієнти: Metropolitan Transport Authority (ATM) Barcelona та Helvetia Caser вже мігрували критичні workloads у Spain Central. Масштаб мережі: загальна кількість Oracle Database@AWS локацій перевищила 20 — після Швейцарії (травень 2026), Іспанії (червень 2026) та численних розширень у Европі, Азії, Латинській Америці. Oracle APEX: Autonomous AI Database у Spain Central підтримує Oracle APEX без cross-cloud latency між APEX application tier та Oracle Database — повноцінна виробнича опція для APEX deployments з EU data residency.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Розширення Oracle AI Database@AWS до Іспанії підтверджує cloud-agnostic стратегію Oracle: enterprise клієнти розгортають Oracle APEX + Autonomous AI Database на AWS-інфраструктурі з локальними data residency вимогами без необхідності мігрувати application tier до OCI. Для підприємств з European operations або EU data residency вимогами: Oracle APEX на Autonomous AI Database@AWS Europe є виробничою опцією з підтвердженою GDPR-сумісністю. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://www.oracle.com/news/announcement/oracle-ai-database-at-aws-now-available-in-spain-2026-06-22/" target="_blank" rel="noopener noreferrer">Джерело: Oracle — Oracle AI Database@AWS Now Available in Spain (oracle.com/news, 22 червня 2026)</a>
+          </article>
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle AI</div>
             <h3>Oracle Fusion Cloud 26B: 22 Fusion Agentic Applications для Finance, HR, SCM та CX — Ledger Agent, Payables Agent, Design-to-Source Workspace, Career Advancement Command Center; Oracle APEX як платформа кастомізацій та розширень 26B-застосунків (oracle.com, липень 2026)</h3>
@@ -1638,7 +1652,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 02.07.2026</p>
+      <p class="footer-updated">Оновлено: 03.07.2026</p>
     </div>
   </footer>
 
