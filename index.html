@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-07-04T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-07-05T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,20 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Регуляторика</div>
+            <h3>BDO Україна: юридичне керівництво для бізнесу в умовах заборони 1С/BAS — покроковий plan-of-action: наказ про аудит ІТ-систем, переведення у read-only, Comfort Letter для банків; кадровий ризик CFO та бухгалтерів; штрафи до 2% обороту з 2030 (bdo.ua, 2026)</h3>
+            <div class="monitor-problem"><strong>Ситуація:</strong> BDO Україна, частина міжнародної BDO-мережі (Top-5 professional services globally), опублікував юридичне керівництво для бізнесу щодо заборони 1С та BAS. Ключові висновки: 1С/BAS у офіційному переліку ПЗ-загроз (Держспецзв'язку); законопроект №13505 — штрафи до 2% річного обороту з 2030; реальний кадровий ризик вже зараз — кваліфіковані CFO та головні бухгалтери відмовляються від посад у компаніях, що ігнорують санкційне законодавство; банки запитують підтвердження міграційної активності при compliance-перевірках. Покрокова дія BDO: (1) Наказ про аудит ІТ-систем (ключовий документ для ДПС та банку); (2) переведення 1С/BAS у read-only з офіційним наказом (юридично відокремлює заборонене використання від зберігання архіву); (3) Comfort Letter для банків та контрагентів (підтверджує активний процес міграції). BAS через польський «BAS ERP»: BDO не рекомендує покладатися на польську юрисдикцію як довгостроковий захист.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Керівництво BDO підтверджує — ризик від 1С/BAS у 2026 вже не лише регуляторний: це кадровий (CFO/бухгалтери відмовляються), банківський (compliance) та стратегічний ризик (деградуюча підтримка) одночасно. Для підприємств зі складними 1С-конфігураціями: Oracle APEX + Oracle AI Database забезпечує найвищий рівень збереження специфічної бізнес-логіки при переході — без компромісів типових ERP. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://www.bdo.ua/en-gb/insights-1/information-materials/2026/legal-guidance-for-businesses-amid-the-ban-on-sanctioned-software" target="_blank" rel="noopener noreferrer">Джерело: BDO Україна — Юридичні поради для бізнесу в умовах заборони санкційного ПЗ (bdo.ua, 2026)</a>
+          </article>
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle APEX</div>
+            <h3>Oracle APEX 26.1: технічний огляд нових REST Data Sources — OData CRUD без ручного налаштування, OAuth2 Password Flow, динамічні шаблони тіла запиту та SQL/PL/SQL-параметри роблять APEX-інтеграції enterprise-зрілими (blogs.oracle.com/apex, 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle APEX Blog опублікував детальний технічний огляд «What's New in REST Data Sources in Oracle APEX 26.1». Ключові оновлення: OData CRUD Operations — OData REST Sources тепер автоматично виявляють підтримувані DML-операції з OData-метаданих та генерують POST, PATCH, DELETE без ручного опису endpoint. OAuth2 Password Flow: APEX 26.1 підтримує OAuth2 Password як нативний Web Credential тип — для API, що вимагають username + password + Client ID + Client Secret (Oracle BugDB, Oracle HR Secure View APIs та ін.). Dynamic Request Body Templates: умовна логіка безпосередньо у payload-визначенні — різні тіла запиту залежно від контексту без зовнішніх PL/SQL обгорток. Dynamic Parameter Values: значення параметрів через Item, SQL Query, Expression або Function Body — повністю dynamic REST Source без hardcode.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> REST Data Sources 26.1 усувають ключові технічні обмеження при enterprise-інтеграціях Oracle APEX: OData CRUD — автоматичне відображення операцій; OAuth2 Password — підтримка захищених enterprise API; Dynamic Body/Parameters — адаптивні запити без custom PL/SQL. Для проєктів міграції з 1С/BAS, де критична інтеграція з зовнішніми системами (банки, логістика, WMS), ці можливості суттєво скорочують час розробки інтеграційного шару. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/apex/whats-new-in-rest-data-sources-in-oracle-apex-26-1" target="_blank" rel="noopener noreferrer">Джерело: Oracle APEX Blog — What's New in REST Data Sources in Oracle APEX 26.1 (blogs.oracle.com/apex, 2026)</a>
+          </article>
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle APEX</div>
             <h3>Oracle APEX 26.1 загальна доступність (14 травня 2026): APEXlang — відкрита декларативна мова специфікації APEX-застосунків для source control та AI-assisted генерації; APEX AI Agents виконують дії у застосунку; Data Reporter для бізнес-аналітики без коду; Universal Theme Iris; понад 90 community-запитів реалізовано (blogs.oracle.com/apex, 2026)</h3>
@@ -1666,7 +1680,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 04.07.2026</p>
+      <p class="footer-updated">Оновлено: 05.07.2026</p>
     </div>
   </footer>
 
