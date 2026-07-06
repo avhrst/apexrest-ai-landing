@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-07-05T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-07-06T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,20 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Регуляторика</div>
+            <h3>IT Ukraine Association: «Безпечне ПЗ — стійкість бізнесу» (травень 2026) — понад 70% українських компаній досі на ПЗ ворожої держави; CERT-UA — 5 927 кіберінцидентів у 2025 з ПЗ російського походження як типовою точкою входу; бізнес переосмислює ІТ через призму ризику та операційної стійкості (itukraine.org.ua, 2026)</h3>
+            <div class="monitor-problem"><strong>Ситуація:</strong> IT Ukraine Association спільно з Українським католицьким університетом опублікували дослідження «Безпечне ПЗ — стійкість бізнесу» (28 травня 2026). Ключові дані: понад 70% опитаних українських компаній досі використовують ПЗ, розроблене в Росії або Білорусі; CERT-UA зафіксував 5 927 кіберінцидентів у 2025 — ПЗ російського походження часто виступало точкою початкового проникнення. Найпоширеніші системи до 2022: 1С, Bitrix24, BAS Corporation — більшість роками без реальних оновлень; компанії стикаються з відсутністю апдейтів, частими помилками, труднощами інтеграції, обмеженою масштабованістю. Зміна мотивів: у 2026 бізнес оцінює ІТ-інфраструктуру вже не через зручність і вартість, а через ризик, операційну стійкість, захист даних та інвестиційну привабливість. Охоплення: аграрний сектор, фінанси, ритейл, енергетика, IT.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Дослідження IT Ukraine підтверджує реальний масштаб ринку міграції у 2026: понад 70% компаній — це не повільні виняткові випадки, а структурна реальність ринку. CERT-UA 5 927 кіберінцидентів з ПЗ ворожої держави як точкою входу — конкретна кіберзагроза, що підтверджує регуляторну логіку заборони 1С/BAS. Для підприємств з нестандартними 1С-конфігураціями (виробничий облік, WMS, кастомний документообіг): Oracle APEX + Oracle AI Database — оптимальний шлях зміни платформи зі збереженням специфічної бізнес-логіки. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://itukraine.org.ua/en/safe-software-business-resilience-research-findings/" target="_blank" rel="noopener noreferrer">Джерело: IT Ukraine Association — Безпечне ПЗ — стійкість бізнесу: результати дослідження (itukraine.org.ua, 28 травня 2026)</a>
+          </article>
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>Oracle Deep Data Security GA в Oracle AI Database 26ai: декларативна авторизація рядків, стовпців та комірок для AI-агентів на рівні бази даних; прозора передача ідентичності кінцевого користувача; підтримка Microsoft Entra ID та OCI IAM; несанкціоновані дані не досягають AI-шару навіть при компрометації application layer (blogs.oracle.com/database, 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle оголосив загальну доступність Oracle Deep Data Security в Oracle AI Database 26ai. Суть: авторизація реалізується безпосередньо в базі даних — несанкціоновані рядки та стовпці ніколи не досягають AI-шару навіть якщо application layer скомпрометовано. Технічна реалізація: декларативні SQL-политики для row-level, column-level та cell-level контролю доступу, що застосовуються до всіх workloads (AI-агенти, аналітичні інструменти, enterprise-застосунки). Прозора передача ідентичності: ідентичності кінцевого користувача та агента, їх ролі та атрибути передаються до бази даних у runtime — база даних застосовує policy та генерує деталізовані audit-записи. Зовнішні IAM: Microsoft Entra ID та OCI IAM. APEX AI Agents: у Oracle APEX 26.1 AI Agents діють від імені кінцевого користувача; Deep Data Security гарантує, що агент не може отримати доступ до даних, на які кінцевий користувач не має прав, навіть при складних multi-step agentic workflows.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Oracle Deep Data Security закриває ключову enterprise-вимогу безпеки AI Agents: права доступу до даних забезпечуються на рівні Oracle AI Database незалежно від складності agentic workflow або компрометації application layer. Для підприємств з чутливими фінансовими та HR-даними у Oracle APEX + Oracle AI Database — Deep Data Security є виробничою передумовою для enterprise AI-агентів. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/database/oracle-deep-data-security-is-now-available-in-oracle-ai-database-26ai" target="_blank" rel="noopener noreferrer">Джерело: Oracle Database Blog — Oracle Deep Data Security Is Now Available in Oracle AI Database 26ai (blogs.oracle.com/database, 2026)</a>
+          </article>
           <article class="monitor-card featured">
             <div class="monitor-tag">Регуляторика</div>
             <h3>BDO Україна: юридичне керівництво для бізнесу в умовах заборони 1С/BAS — покроковий plan-of-action: наказ про аудит ІТ-систем, переведення у read-only, Comfort Letter для банків; кадровий ризик CFO та бухгалтерів; штрафи до 2% обороту з 2030 (bdo.ua, 2026)</h3>
@@ -1680,7 +1694,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 05.07.2026</p>
+      <p class="footer-updated">Оновлено: 06.07.2026</p>
     </div>
   </footer>
 
