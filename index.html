@@ -22,7 +22,7 @@
   <meta name="twitter:title" content="Oracle APEX + AI Database — альтернатива legacy ERP | APEXREST">
   <meta name="twitter:description" content="Професійний блог-аналітика: Oracle APEX, AI Database 26ai, міграція з 1С, Fusion Agentic Applications.">
 
-  <meta property="article:modified_time" content="2026-07-11T00:00:00+02:00">
+  <meta property="article:modified_time" content="2026-07-12T00:00:00+02:00">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,20 @@
         </div>
 
         <div class="monitor-grid">
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle AI</div>
+            <h3>Oracle AI Agent Memory 26.6 «Memory With Receipts»: гібридний пошук та distinct memory types для enterprise AI-агентів Oracle APEX 26.1 — фінансові факти, переваги клієнта та правила безпеки як окремі типи пам'яті; CRUD, retention controls та audit-слід кожного рішення (blogs.oracle.com/database, 12 липня 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle випустив Oracle AI Agent Memory 26.6 «Memory With Receipts» — оновлення in-database шару пам'яті для enterprise AI-агентів у Oracle AI Database 26ai. Ключові зміни: гібридний пошук (semantic + exact metadata matching) дозволяє агенту розуміти, що «закриття FY26», «FIN_CLOSE_2026_v7» та «п'ятий робочий день» позначають одну business entity; distinct memory types — переваги клієнта, фінансові факти та правила безпеки зберігаються як окремі record types (виключає контекстний cross-contamination); custom extraction; CRUD + retention controls + cascading deletion; replayable traces — audit-слід для відтворення логіки кожного агентного кроку. Пам'ять зберігається в Oracle AI Database під enterprise security та scoped access. Для Oracle APEX 26.1 AI Agents у фінансовому ERP: чітке розмежування між фінансовим фактом, правилом авторизації та перевагами клієнта з auditability кожного рішення.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> Oracle AI Agent Memory 26.6 — production-ready enterprise пам'ять для Oracle APEX AI Agents з auditability кожного memory fact: реальна передумова для AI-автоматизації бухгалтерських та фінансових процесів, де рішення мають бути відтворювані та перевірені. Для підприємств, що будують AI-агентів для автоматизації фінансового документообігу на Oracle APEX + Oracle AI Database: Memory 26.6 усуває потребу у зовнішньому memory store. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://blogs.oracle.com/database/oracle-ai-agent-memory-26-6" target="_blank" rel="noopener noreferrer">Джерело: Oracle Database Blog — Introducing Oracle AI Agent Memory 26.6: Memory With Receipts (blogs.oracle.com/database, липень 2026)</a>
+          </article>
+          <article class="monitor-card featured">
+            <div class="monitor-tag">Oracle Cloud</div>
+            <h3>OCI Enterprise AI: private endpoints для imported AI-моделей без публічного інтернету + pinning версій guardrails для stable production + image moderation в ApplyGuardrails API — enterprise AI governance stack для Oracle APEX AI Agents (docs.oracle.com, 12 липня 2026)</h3>
+            <div class="monitor-problem"><strong>Що нового:</strong> Oracle оголосив загальну доступність private endpoints для imported models у OCI Enterprise AI. Три нові enterprise AI governance можливості: (1) Private Endpoints — доступ до кастомних та imported AI-моделей через VCN private connectivity без публічного інтернету; (2) Guardrail Version Pinning — фіксація версії guardrails у production для стабільного content moderation, prompt injection detection та PII detection; (3) Image Moderation через ApplyGuardrails API — detection небезпечного контенту у standalone images та multimodal requests. OCI Enterprise AI Agents перейшли у GA — managed AI agent infrastructure. Для Oracle APEX ERP з imported AI-моделями: private endpoints усувають ризик витоку enterprise-даних через публічний інтернет при AI-обробці фінансових або HR-документів.</div>
+            <div class="monitor-comment"><strong>Позиція APEXREST:</strong> OCI Enterprise AI private endpoints + guardrail version pinning + image moderation формують enterprise AI governance stack для Oracle APEX AI Agents: network isolation, stable production behavior та multimodal content control без власної AI-infrastructure. Для підприємств, що впроваджують Oracle APEX AI Agents для обробки чутливих документів (рахунки, HR-договори): private endpoints є production-level enterprise security вимогою. Консультація: info@apex.rest</div>
+            <a class="monitor-source" href="https://docs.oracle.com/en-us/iaas/releasenotes/services/generative-ai/index.htm" target="_blank" rel="noopener noreferrer">Джерело: OCI Release Notes — Private Endpoints for Imported Models; OCI Enterprise AI Agents GA (docs.oracle.com, липень 2026)</a>
+          </article>
           <article class="monitor-card featured">
             <div class="monitor-tag">Oracle Cloud</div>
             <h3>Amazon RDS for Oracle тепер підтримує Oracle AI Database 26ai: AWS-підприємства отримали managed Oracle AI Database з Select AI, Amazon Bedrock (Claude, Nova, Llama), Oracle AI Vector Search та RAG без окремого vector store — у всіх комерційних регіонах AWS (aws.amazon.com, липень 2026)</h3>
@@ -1757,7 +1771,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <p>&copy; 2026 APEXREST</p>
-      <p class="footer-updated">Оновлено: 11.07.2026</p>
+      <p class="footer-updated">Оновлено: 12.07.2026</p>
     </div>
   </footer>
 
