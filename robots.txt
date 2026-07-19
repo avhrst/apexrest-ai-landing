@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /.claude/
 
 Sitemap: https://apex.rest/sitemap.xml
