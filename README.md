@@ -1,6 +1,6 @@
 # APEXREST
 
-Public landing page for APEXREST—AI developer-agent teams built around deterministic Oracle APEX delivery.
+Public landing page for APEXREST—a company that helps Oracle APEX customers build AI teams with Project Manager, APEX Developers, QA, and Support Agent roles, backed by compiler-checked and human-gated delivery.
 
 The site is plain HTML, CSS, and JavaScript. It is designed to publish directly through GitHub Pages with no build step.
 

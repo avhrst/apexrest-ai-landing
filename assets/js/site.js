@@ -79,7 +79,7 @@
     const finalGate = gates.at(-1);
     if (finalGate) finalGate.classList.add("is-hold");
     if (missionStatus) {
-      missionStatus.textContent = `${scenarios[scenarioKey].id} passed the automated checks and is waiting at the human approval gate.`;
+      missionStatus.textContent = `${scenarios[scenarioKey].id} passed QA and compiler-backed checks and is waiting at the human approval gate.`;
     }
   };
 
@@ -97,7 +97,7 @@
         if (index === gates.length - 1) {
           gate.classList.add("is-hold");
           if (missionStatus) {
-            missionStatus.textContent = `${scenarios[scenarioKey].id} passed the automated checks and is waiting at the human approval gate.`;
+            missionStatus.textContent = `${scenarios[scenarioKey].id} passed QA and compiler-backed checks and is waiting at the human approval gate.`;
           }
         } else {
           gate.classList.add("is-complete");
