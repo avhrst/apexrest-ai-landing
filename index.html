@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>APEXREST — From Jira ticket to production with an AI delivery team</title>
-  <meta name="description" content="Describe an Oracle APEX change in Jira. An AI delivery team builds it, validates it, tests it on staging, and prepares a human-approved production release.">
+  <meta name="description" content="AI delivery teams for Oracle APEX, with human-controlled release. Meet APEXREST for Codex beta: create, change, import and verify APEX applications.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#f2efe7">
   <link rel="canonical" href="https://apex.rest/">
@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://apex.rest/">
   <meta property="og:site_name" content="APEXREST">
   <meta property="og:title" content="From Jira ticket to production—with an AI delivery team">
-  <meta property="og:description" content="Deterministic vibe coding for enterprise applications. AI-operated delivery with human-controlled release.">
+  <meta property="og:description" content="AI-operated delivery with human-controlled release. Introducing APEXREST for Codex beta: Oracle APEX from source to verified import.">
   <meta property="og:image" content="https://apex.rest/assets/og.png">
   <meta property="og:image:width" content="1536">
   <meta property="og:image:height" content="1024">
@@ -21,7 +21,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="From Jira ticket to production—with an AI delivery team">
-  <meta name="twitter:description" content="AI-operated Oracle APEX delivery with validation, staging, QA, and human-controlled release.">
+  <meta name="twitter:description" content="AI-operated delivery with human-controlled release. Introducing APEXREST for Codex beta: Oracle APEX from source to verified import.">
   <meta name="twitter:image" content="https://apex.rest/assets/og.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,9 +38,27 @@
     "email": "info@apex.rest",
     "description": "APEXREST operates AI delivery teams that turn Jira requests into validated Oracle APEX changes, tested on staging and released through explicit human approval gates.",
     "sameAs": [
+      "https://github.com/apexrest-dev/apexrest-codex",
       "https://github.com/avhrst/pi-apex",
       "https://github.com/avhrst/pi-slack-team"
     ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "APEXREST for Codex",
+    "applicationCategory": "DeveloperApplication",
+    "softwareVersion": "0.1.0-beta.1",
+    "url": "https://github.com/apexrest-dev/apexrest-codex",
+    "license": "https://github.com/apexrest-dev/apexrest-codex/blob/main/LICENSE",
+    "description": "Beta Codex plugin connecting native skills and MCP tools to Oracle SQLcl for APEXlang generation, existing-app changes, authorized imports and runtime verification.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "APEXREST",
+      "url": "https://apex.rest/"
+    }
   }
   </script>
 </head>
@@ -76,6 +94,13 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-registration registration-mark" aria-hidden="true">+</div>
+      <div class="shell announcement-banner">
+        <a href="#codex">
+          <span class="announcement-badge">NEW / BETA</span>
+          <span><strong>APEXREST for Codex</strong> — Oracle APEX, from source to verified import.</span>
+          <span class="announcement-banner-link">Explore the plugin <span aria-hidden="true">↓</span></span>
+        </a>
+      </div>
       <div class="shell hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span>APEXREST</span> / DETERMINISTIC VIBE CODING</p>
@@ -155,6 +180,74 @@
           <i aria-hidden="true">→</i>
           <span>HUMAN APPROVAL → PRODUCTION</span>
         </div>
+      </div>
+    </section>
+
+    <section class="announcement section-block" id="codex" aria-labelledby="codex-title">
+      <div class="shell">
+        <div class="announcement-heading">
+          <p class="section-index">NEW / NATIVE CODEX PLUGIN</p>
+          <span class="announcement-version">BETA · 0.1.0-beta.1</span>
+        </div>
+
+        <div class="announcement-grid">
+          <div class="announcement-copy">
+            <h2 id="codex-title">APEXREST<br><em>for Codex.</em></h2>
+            <p class="announcement-lede">Build and change Oracle APEX applications, from source to a verified import.</p>
+            <p>Native Codex skills and MCP tools connect to Oracle SQLcl. Work in readable APEXlang, bring an existing application into version control, and check the imported result in the Codex in-app browser.</p>
+
+            <ol class="announcement-capabilities">
+              <li><span aria-hidden="true">01</span><div><h3>Create or adopt</h3><p>Start with a blank app or customer CRM template. Export an existing app into a new directory while preserving Oracle IDs and application metadata.</p></div></li>
+              <li><span aria-hidden="true">02</span><div><h3>Edit and build</h3><p>Change pages and shared components. Build dashboards with real source queries, native APEX regions and working filters.</p></div></li>
+              <li><span aria-hidden="true">03</span><div><h3>Plan, import and verify</h3><p>Bind the plan to source, toolchain and target. Back up an existing app, import within the authorized scope, then run relevant configured tests and browser checks.</p></div></li>
+            </ol>
+
+            <div class="announcement-actions">
+              <a class="button button-primary" href="https://github.com/apexrest-dev/apexrest-codex" target="_blank" rel="noopener noreferrer">Explore on GitHub <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/apexrest-dev/apexrest-codex/blob/main/docs/index.md" target="_blank" rel="noopener noreferrer">Read the documentation <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <aside class="announcement-install" aria-labelledby="codex-install-title">
+            <div class="announcement-install-head">
+              <span class="micro-label">GET STARTED</span>
+              <span class="micro-label">APACHE-2.0</span>
+            </div>
+            <div class="announcement-install-body">
+              <h3 id="codex-install-title">Bring APEX into Codex.</h3>
+              <p>With Node 24 LTS and a Codex CLI that supports native plugins, run:</p>
+              <pre class="announcement-commands"><code>codex plugin marketplace add apexrest-dev/apexrest-codex
+codex plugin add apexrest-apex@apexrest</code></pre>
+              <p class="announcement-install-note">The runtime is bundled; no local build is needed. Start a new Codex task after installation.</p>
+
+              <p class="micro-label">YOUR FIRST REQUEST</p>
+              <blockquote class="announcement-prompt">Use APEXREST to check my setup. Report the compiler, connection and target checks that still need attention.</blockquote>
+
+              <h4>For connected Oracle work</h4>
+              <ul class="announcement-requirements">
+                <li>Java 21 and reviewed SQLcl 26.1.2</li>
+                <li>An existing supported Oracle APEX target</li>
+                <li>A named SQLcl connection saved locally</li>
+              </ul>
+              <p class="announcement-install-note">Installation does not create a database or deploy an application. Keep passwords out of prompts.</p>
+              <a class="text-link" href="https://github.com/apexrest-dev/apexrest-codex/blob/main/docs/getting-started.md" target="_blank" rel="noopener noreferrer">Follow the setup guide <span aria-hidden="true">↗</span></a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="announcement-boundaries">
+          <div>
+            <h3>Explicit scope. Human authority.</h3>
+            <p>A request to create, update or import an identified development/test app authorizes that scoped import. Production requires separate, externally signed approval on a protected runner.</p>
+            <a class="text-link" href="https://github.com/apexrest-dev/apexrest-codex/blob/main/docs/deployment-safety.md" target="_blank" rel="noopener noreferrer">Deployment safeguards <span aria-hidden="true">↗</span></a>
+          </div>
+          <div>
+            <h3>Beta, with published evidence.</h3>
+            <p>Native installation was exercised on Codex 0.154.0 / macOS arm64, with real test-app imports on APEX 26.1.1. Broader integration, recovery and platform checks remain open before a stable release.</p>
+            <a class="text-link" href="https://github.com/apexrest-dev/apexrest-codex/blob/main/docs/implementation-status.md" target="_blank" rel="noopener noreferrer">Review verification status <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="announcement-disclaimer">Independent APEXREST tooling. APEXREST for Codex is not an official Oracle or OpenAI product.</p>
       </div>
     </section>
 
@@ -534,6 +627,7 @@
       </a>
       <p>From Jira ticket to production.<br>AI-operated. Human-controlled.</p>
       <div class="footer-links">
+        <a href="https://github.com/apexrest-dev/apexrest-codex" target="_blank" rel="noopener noreferrer">APEXREST for Codex ↗</a>
         <a href="https://github.com/avhrst/pi-apex" target="_blank" rel="noopener noreferrer">pi-apex ↗</a>
         <a href="https://github.com/avhrst/pi-slack-team" target="_blank" rel="noopener noreferrer">pi-slack-team ↗</a>
         <a href="mailto:info@apex.rest">info@apex.rest ↗</a>

@@ -782,6 +782,245 @@ ul {
   line-height: 1.7;
 }
 
+.announcement-banner {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.announcement-banner > a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  border: 1px solid var(--ink);
+  border-left: 5px solid var(--signal);
+  padding: 1rem 1.25rem;
+  background: var(--paper-bright);
+  font-size: 0.9rem;
+}
+
+.announcement-banner > a:hover {
+  background: var(--paper-deep);
+}
+
+.announcement-badge,
+.announcement-version,
+.announcement-banner-link {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.announcement-badge {
+  padding: 0.35rem 0.6rem;
+  background: var(--signal);
+  color: var(--white);
+}
+
+.announcement-banner-link {
+  margin-left: auto;
+  color: var(--signal-deep);
+  text-transform: uppercase;
+}
+
+.announcement {
+  border-bottom: 1px solid var(--ink);
+  background: var(--paper-deep);
+}
+
+.announcement-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 1.25rem;
+}
+
+.announcement-heading .section-index {
+  margin-bottom: 0;
+}
+
+.announcement-version {
+  border: 1px solid var(--signal-deep);
+  padding: 0.4rem 0.7rem;
+  color: var(--signal-deep);
+}
+
+.announcement-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.announcement-copy h2 {
+  margin-bottom: 2rem;
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 7.5vw, 7.5rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.announcement-copy h2 em {
+  color: var(--signal);
+  font-style: normal;
+}
+
+.announcement-lede {
+  max-width: 32ch;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.announcement-capabilities {
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.announcement-capabilities li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 1rem;
+  border-top: 1px solid var(--line);
+  padding-block: 1.25rem;
+}
+
+.announcement-capabilities li > span {
+  padding-top: 0.15rem;
+  color: var(--signal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.announcement-capabilities h3,
+.announcement-boundaries h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.announcement-capabilities p {
+  margin-bottom: 0;
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+}
+
+.announcement-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.announcement-install {
+  min-width: 0;
+  border: 1px solid var(--ink);
+  background: var(--paper-bright);
+  box-shadow: 7px 7px 0 var(--ink);
+}
+
+.announcement-install-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--ink);
+  color: var(--paper-bright);
+}
+
+.announcement-install-body {
+  padding: clamp(1.25rem, 2.5vw, 2.5rem);
+}
+
+.announcement-install h3 {
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.announcement-install-body > p {
+  font-size: 0.9rem;
+}
+
+.announcement-commands {
+  margin: 1.5rem 0 1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--signal);
+  padding: 1rem;
+  background: var(--paper);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.announcement-commands code {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.8;
+}
+
+.announcement-install-body .announcement-install-note {
+  margin-bottom: 1.75rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.announcement-install-body .micro-label {
+  margin-bottom: 0.75rem;
+  color: var(--signal-deep);
+  font-size: 0.7rem;
+}
+
+.announcement-prompt {
+  margin: 0 0 1.75rem;
+  border-left: 3px solid var(--line);
+  padding-left: 1rem;
+  font-size: 0.94rem;
+}
+
+.announcement-install h4 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.announcement-requirements {
+  padding-left: 1.25rem;
+  font-size: 0.85rem;
+}
+
+.announcement-requirements li + li {
+  margin-top: 0.5rem;
+}
+
+.announcement-boundaries {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-top: 3rem;
+  border-top: 1px solid var(--ink);
+  padding-top: 2rem;
+}
+
+.announcement-boundaries p {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.announcement-disclaimer {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .argument {
   background: var(--paper-bright);
 }
@@ -1891,6 +2130,14 @@ ul {
 }
 
 @media (max-width: 980px) {
+  .announcement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .announcement-install {
+    width: min(100%, 43rem);
+  }
+
   .site-nav {
     gap: 1rem;
   }
@@ -1990,6 +2237,19 @@ ul {
 }
 
 @media (max-width: 760px) {
+  .announcement-banner > a {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .announcement-banner-link {
+    margin-left: 0;
+  }
+
+  .announcement-boundaries {
+    grid-template-columns: 1fr;
+  }
+
   :root {
     --section-space: 6rem;
   }
