@@ -7,13 +7,13 @@
   const messages = isUkrainian ? {
     openNavigation: "Відкрити навігацію",
     closeNavigation: "Закрити навігацію",
-    selected: (id) => `${id} обрано. Виконуємо контрольні етапи.`,
-    awaitingApproval: (id) => `${id} пройшло QA та перевірки компілятором і очікує на схвалення людиною.`
+    selected: (id) => `Демонстраційний приклад ${id} обрано. Показуємо контрольні етапи.`,
+    awaitingApproval: (id) => `У демонстраційному прикладі ${id} перевірки завершено. Наступний етап - схвалення людиною. Реальні дії не виконуються.`
   } : {
     openNavigation: "Open navigation",
     closeNavigation: "Close navigation",
-    selected: (id) => `${id} selected. Running delivery gates.`,
-    awaitingApproval: (id) => `${id} passed QA and compiler-backed checks and is waiting at the human approval gate.`
+    selected: (id) => `Example ${id} selected. Illustrating delivery gates.`,
+    awaitingApproval: (id) => `In example ${id}, checks are complete and human approval is required. No live actions are performed.`
   };
 
   const setMenuState = (open) => {

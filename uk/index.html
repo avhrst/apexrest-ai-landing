@@ -6,7 +6,7 @@
   <title>APEXREST — Від задачі в Jira до продакшену з командою ШІ</title>
   <meta name="description" content="Команди ШІ для розробки Oracle APEX із релізом під контролем людини. APEXREST for Codex бета: створення, зміни, імпорт і перевірка застосунків APEX.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#f2efe7">
+  <meta name="theme-color" content="#F6F5F0">
   <link rel="canonical" href="https://apex.rest/uk/">
   <link rel="alternate" hreflang="en" href="https://apex.rest/">
   <link rel="alternate" hreflang="uk" href="https://apex.rest/uk/">
@@ -17,22 +17,23 @@
   <meta property="og:site_name" content="APEXREST">
   <meta property="og:locale" content="uk_UA">
   <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:title" content="Від задачі в Jira до продакшену — з командою ШІ">
+  <meta property="og:title" content="Створює ШІ. Випускаєте ви. — APEXREST">
   <meta property="og:description" content="Розробка за допомогою ШІ, реліз під контролем людини. APEXREST for Codex бета: Oracle APEX від вихідного коду до перевіреного імпорту.">
   <meta property="og:image" content="https://apex.rest/assets/og-uk.png">
-  <meta property="og:image:width" content="1536">
-  <meta property="og:image:height" content="1024">
-  <meta property="og:image:alt" content="APEXREST: від задачі в Jira через розробку й тестування ШІ до продакшену зі схваленням людини">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="APEXREST: створює ШІ, випускаєте ви. План, розробка, перевірка та схвалення людиною.">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Від задачі в Jira до продакшену — з командою ШІ">
+  <meta name="twitter:title" content="Створює ШІ. Випускаєте ви. — APEXREST">
   <meta name="twitter:description" content="Розробка за допомогою ШІ, реліз під контролем людини. APEXREST for Codex бета: Oracle APEX від вихідного коду до перевіреного імпорту.">
   <meta name="twitter:image" content="https://apex.rest/assets/og-uk.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
   <link rel="stylesheet" href="../assets/css/site.css">
+
+  <noscript><style>@media(max-width:760px){.header-inner{flex-wrap:wrap;padding-block:16px}.site-nav,html:lang(uk) .site-nav{display:flex;position:static;order:3;flex-basis:100%;flex-wrap:wrap;padding:0;border:0;max-height:none}.menu-toggle{display:none}.scenario-tabs{display:none}}</style></noscript>
 
   <script type="application/ld+json">
   {
@@ -41,6 +42,7 @@
     "name": "APEXREST",
     "url": "https://apex.rest/",
     "email": "info@apex.rest",
+    "logo": "https://apex.rest/assets/brand/apexrest-logo.svg",
     "description": "APEXREST організовує команди ШІ, які перетворюють запити в Jira на перевірені зміни Oracle APEX, тестують їх у тестовому середовищі та випускають після явного схвалення людиною.",
     "sameAs": [
       "https://github.com/apexrest-dev/apexrest-codex",
@@ -73,8 +75,7 @@
   <header class="site-header" id="site-header">
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="APEXREST — головна">
-        <span class="brand-mark" aria-hidden="true"><i>A</i><i>R</i></span>
-        <span class="brand-name">APEX<span>REST</span></span>
+        <img class="brand-logo" src="../assets/brand/apexrest-logo.svg" alt="APEXREST" width="216" height="50">
       </a>
 
       <nav class="site-nav" id="site-nav" aria-label="Основна навігація">
@@ -85,10 +86,6 @@
         <a href="#contact" class="nav-cta">Створіть свою команду <span aria-hidden="true">↗</span></a>
       </nav>
 
-      <div class="header-status" aria-label="Конфігурація команди">
-        <span class="status-dot" aria-hidden="true"></span>
-        JIRA → ПРОДАКШЕН
-      </div>
 
       <nav class="language-switch" aria-label="Мова">
         <a href="/" lang="en" hreflang="en" aria-label="English">EN</a>
@@ -103,7 +100,6 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-registration registration-mark" aria-hidden="true">+</div>
       <div class="shell announcement-banner">
         <a href="#codex">
           <span class="announcement-badge">НОВИНКА / БЕТА</span>
@@ -113,12 +109,12 @@
       </div>
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span>APEXREST</span> / ДЕТЕРМІНОВАНИЙ ВАЙБКОДИНГ</p>
-          <h1>Від задачі в Jira до продакшену.<br><em>Виконує ШІ. Схвалюють люди.</em></h1>
-          <p class="hero-lede">Опишіть потрібну зміну звичайною мовою та додайте знімки екрана. Команда ШІ аналізує запит, оновлює ваш застосунок Oracle APEX, перевіряє й тестує його, розгортає в тестовому середовищі та готує контрольований реліз у продакшен. Кожен крок документується. Ключові рішення ухвалюють люди.</p>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> КОМАНДИ ШІ ДЛЯ ORACLE APEX</p>
+          <h1>Створює ШІ.<br><em>Випускаєте ви.</em></h1>
+          <p class="hero-lede">Від задачі в Jira до застосунку Oracle APEX. Ваша команда ШІ планує, розробляє й тестує. Ви контролюєте ключові рішення та схвалюєте реліз.</p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="mailto:info@apex.rest?subject=%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%8F%20%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8%20Oracle%20APEX&amp;body=%D0%9F%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%B9%20%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%81%D1%83%D0%BD%D0%BE%D0%BA%20APEX%3A%0A%D0%A2%D0%B8%D0%BF%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%82%20%D1%83%20Jira%3A%0A%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B5%20%D1%81%D0%B5%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D1%89%D0%B5%3A%0A%D0%9F%D0%B5%D1%80%D1%88%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%20%D0%B4%D0%BB%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%97%3A%0A">Автоматизувати розробку <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="mailto:info@apex.rest?subject=%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%8F%20%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8%20Oracle%20APEX&amp;body=%D0%9F%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%B9%20%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%81%D1%83%D0%BD%D0%BE%D0%BA%20APEX%3A%0A%D0%A2%D0%B8%D0%BF%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%82%20%D1%83%20Jira%3A%0A%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B5%20%D1%81%D0%B5%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D1%89%D0%B5%3A%0A%D0%9F%D0%B5%D1%80%D1%88%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%20%D0%B4%D0%BB%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%97%3A%0A">Створити команду ШІ <span aria-hidden="true">↗</span></a>
             <a class="button button-secondary" href="#trace">Переглянути процес <span aria-hidden="true">↓</span></a>
           </div>
 
@@ -129,17 +125,20 @@
           </div>
         </div>
 
+        <div class="hero-studio">
+          <div class="studio-heading"><span class="micro-label">ТОЧНІСТЬ У КОЖНІЙ ДЕТАЛІ</span><span class="studio-cross" aria-hidden="true">+</span></div>
+          <div class="studio-identity"><img src="../assets/brand/apexrest-symbol.svg" alt="" width="108" height="108"><p>ШІ створює. Людина вирішує.<span>APEXREST / DELIVERY SYSTEM</span></p></div>
         <aside class="work-order" aria-label="Демонстраційне завдання розробки APEXREST">
           <div class="work-order-head">
             <div>
-              <span class="micro-label">ЗАВДАННЯ КОМАНДИ</span>
+              <span class="micro-label">ПРИКЛАД / ЗАВДАННЯ КОМАНДИ</span>
               <strong id="mission-id">AR–042</strong>
             </div>
             <span class="docket-state"><i aria-hidden="true"></i> НА ПЕРЕВІРЦІ</span>
           </div>
 
           <div class="mission-prompt">
-            <span class="micro-label">ЗАПИТ КЛІЄНТА / SLACK</span>
+            <span class="micro-label">ЗАПИТ КЛІЄНТА / JIRA</span>
             <p id="mission-prompt">Створіть процес реєстрації постачальників із лімітами погодження та повним журналом аудиту.</p>
           </div>
 
@@ -150,22 +149,22 @@
           </div>
 
           <div class="gate-rail" id="gate-rail" aria-label="Стан контрольних етапів">
-            <div class="gate" data-gate="0">
+            <div class="gate is-complete" data-gate="0">
               <span class="gate-number">01</span>
               <span><b>ДОПУСК</b><small>Доступ перевірено</small></span>
               <i class="gate-stamp" aria-hidden="true">ГОТОВО</i>
             </div>
-            <div class="gate" data-gate="1">
+            <div class="gate is-complete" data-gate="1">
               <span class="gate-number">02</span>
               <span><b>ВИМОГИ</b><small>Межі контексту визначено</small></span>
               <i class="gate-stamp" aria-hidden="true">ГОТОВО</i>
             </div>
-            <div class="gate" data-gate="2">
+            <div class="gate is-complete" data-gate="2">
               <span class="gate-number">03</span>
               <span><b>КОМПІЛЯЦІЯ</b><small>APEXlang перевірено</small></span>
               <i class="gate-stamp" aria-hidden="true">ГОТОВО</i>
             </div>
-            <div class="gate" data-gate="3">
+            <div class="gate is-hold" data-gate="3">
               <span class="gate-number">04</span>
               <span><b>СХВАЛЕННЯ</b><small>Рішення за людиною</small></span>
               <i class="gate-stamp" aria-hidden="true">ОЧІКУЄ</i>
@@ -178,6 +177,8 @@
           </div>
           <p class="sr-only" id="mission-status" aria-live="polite"></p>
         </aside>
+          <p class="studio-note">Ілюстрація процесу, не реальний запуск.</p>
+        </div>
       </div>
 
       <div class="verification-strip" aria-label="Ролі команди ШІ APEXREST">
@@ -423,7 +424,7 @@ codex plugin add apexrest-apex@apexrest</code></pre>
       </div>
     </section>
 
-    <section class="trace section-block section-red" id="trace">
+    <section class="trace section-block section-accent" id="trace">
       <div class="shell">
         <div class="section-intro section-intro-split trace-intro">
           <div>
@@ -632,8 +633,7 @@ codex plugin add apexrest-apex@apexrest</code></pre>
   <footer class="site-footer">
     <div class="shell footer-top">
       <a class="brand footer-brand" href="#top" aria-label="APEXREST — головна">
-        <span class="brand-mark" aria-hidden="true"><i>A</i><i>R</i></span>
-        <span class="brand-name">APEX<span>REST</span></span>
+        <img class="brand-logo" src="../assets/brand/apexrest-logo-light.svg" alt="APEXREST" width="216" height="50">
       </a>
       <p>Від задачі в Jira до продакшену.<br>Виконує ШІ. Контролюють люди.</p>
       <div class="footer-links">

@@ -17,7 +17,11 @@ Keep the site static and framework-free unless the user explicitly requests an a
 - `index.html` — page content, metadata, and structured data
 - `assets/css/site.css` — visual system and responsive layout
 - `assets/js/site.js` — mobile navigation and the illustrative mission-gate interaction
-- `assets/og.png` — social preview image
+- `assets/brand/` — supplied APEXREST logo exports and favicon
+- `assets/fonts/` — self-hosted Manrope and IBM Plex Mono with OFL licences
+- `assets/og.png` and `assets/og-uk.png` — social preview images
+- `uk/index.html` — complete Ukrainian page with a visible language switch
+- `brand/` — editable HTML/PDF brandbook, source archive and authoring tools (repository-only)
 - `404.html` — branded GitHub Pages fallback
 - `.github/workflows/pages.yml` — GitHub Pages deployment workflow
 - `CNAME` — custom domain
@@ -45,7 +49,9 @@ Then open `http://localhost:8000`.
 
 ## Change expectations
 
-- Preserve the production-docket visual language: warm paper, near-black typography, signal red, verified green, condensed display type, monospace labels, rules, stamps, and numbered gates.
+- Follow `brand/BRANDBOOK.md`: warm paper, near-black Manrope typography, IBM Plex Mono labels, fine rules and numbered gates. Use the supplied APEXREST pencil-and-ruler logo with its original blue, yellow and coral colours; dark red is the accessible action/focus colour and green marks verified states.
+- Preserve supplied artwork geometry and the immutable originals in `brand/source/`. Do not recreate the wordmark as text or introduce archived Oracle-related marks as endorsements.
+- Keep the English and existing Ukrainian pages visually and semantically aligned, including metadata and accessible labels.
 - Avoid generic AI imagery, neon, glassmorphism, particles, fake terminals, unsupported logos, testimonials, or invented metrics.
 - Maintain keyboard access, visible focus, reduced-motion behavior, semantic landmarks, descriptive labels, and mobile layouts.
 - Update page metadata, structured data, sitemap dates, and the social preview when a content change makes them stale.
