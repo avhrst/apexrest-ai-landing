@@ -1,0 +1,5 @@
+Tool: built-in image_gen (text-localization edit)
+Source: assets/og.png
+Output: assets/og-uk.png
+
+Use case: text-localization. Asset type: APEXREST Ukrainian Open Graph social preview, 1536x1024 landscape. Input image is the edit target. Localize its English copy into Ukrainian while preserving the existing logo, APEXREST wordmark, warm paper texture, black condensed bold typography, signal red numbered gates, fine rules, registration marks, overall composition and aspect ratio. Exact replacement text: replace FROM JIRA TICKET TO PRODUCTION with 'ВІД ЗАДАЧІ В JIRA ДО ПРОДАКШЕНУ', naturally set over several large lines in the same left area. Replace DELIVERED BY AI. APPROVED BY HUMANS. with 'ВИКОНУЄ ШІ. СХВАЛЮЮТЬ ЛЮДИ.' Right column retain 01 JIRA; 02 becomes 'ШІ МЕНЕДЖЕР'; 03 becomes 'ШІ РОЗРОБНИК'; 04 becomes 'ТЕСТУВАННЯ'; 05 becomes 'СХВАЛЕННЯ ЛЮДИНИ'; 06 becomes 'ПРОДАКШЕН'. Make all Ukrainian text correct and readable, shrink or wrap long gate labels to fit inside the frame. Change only text and necessary typography to fit, no new imagery, no new symbols or claims, no watermark.

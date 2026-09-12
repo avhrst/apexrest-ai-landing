@@ -29,11 +29,12 @@ jobs:
 
       - name: Stage public site
         run: |
-          mkdir -p _site/assets/css _site/assets/js
+          mkdir -p _site/assets/css _site/assets/js _site/uk
           cp index.html 404.html CNAME robots.txt sitemap.xml _site/
+          cp uk/index.html _site/uk/
           cp assets/css/site.css _site/assets/css/
           cp assets/js/site.js _site/assets/js/
-          cp assets/og.png _site/assets/
+          cp assets/og.png assets/og-uk.png _site/assets/
           touch _site/.nojekyll
 
       - name: Upload site

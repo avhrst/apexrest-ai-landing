@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APEXREST — Від задачі в Jira до продакшену з командою ШІ</title>
+  <meta name="description" content="Команди ШІ для розробки Oracle APEX із релізом під контролем людини. APEXREST for Codex бета: створення, зміни, імпорт і перевірка застосунків APEX.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f2efe7">
+  <link rel="canonical" href="https://apex.rest/uk/">
+  <link rel="alternate" hreflang="en" href="https://apex.rest/">
+  <link rel="alternate" hreflang="uk" href="https://apex.rest/uk/">
+  <link rel="alternate" hreflang="x-default" href="https://apex.rest/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apex.rest/uk/">
+  <meta property="og:site_name" content="APEXREST">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Від задачі в Jira до продакшену — з командою ШІ">
+  <meta property="og:description" content="Розробка за допомогою ШІ, реліз під контролем людини. APEXREST for Codex бета: Oracle APEX від вихідного коду до перевіреного імпорту.">
+  <meta property="og:image" content="https://apex.rest/assets/og-uk.png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="APEXREST: від задачі в Jira через розробку й тестування ШІ до продакшену зі схваленням людини">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Від задачі в Jira до продакшену — з командою ШІ">
+  <meta name="twitter:description" content="Розробка за допомогою ШІ, реліз під контролем людини. APEXREST for Codex бета: Oracle APEX від вихідного коду до перевіреного імпорту.">
+  <meta name="twitter:image" content="https://apex.rest/assets/og-uk.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "APEXREST",
+    "url": "https://apex.rest/",
+    "email": "info@apex.rest",
+    "description": "APEXREST організовує команди ШІ, які перетворюють запити в Jira на перевірені зміни Oracle APEX, тестують їх у тестовому середовищі та випускають після явного схвалення людиною.",
+    "sameAs": [
+      "https://github.com/apexrest-dev/apexrest-codex",
+      "https://github.com/avhrst/pi-apex",
+      "https://github.com/avhrst/pi-slack-team"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "APEXREST for Codex",
+    "applicationCategory": "DeveloperApplication",
+    "softwareVersion": "0.1.0-beta.1",
+    "url": "https://github.com/apexrest-dev/apexrest-codex",
+    "license": "https://github.com/apexrest-dev/apexrest-codex/blob/main/LICENSE",
+    "description": "Бета-плагін Codex, що поєднує нативні навички та інструменти MCP з Oracle SQLcl для генерації APEXlang, змін наявних застосунків, дозволеного імпорту й перевірки під час виконання.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "APEXREST",
+      "url": "https://apex.rest/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного вмісту</a>
+
+  <header class="site-header" id="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="APEXREST — головна">
+        <span class="brand-mark" aria-hidden="true"><i>A</i><i>R</i></span>
+        <span class="brand-name">APEX<span>REST</span></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основна навігація">
+        <a href="#trace">Як це працює</a>
+        <a href="#team">Команда ШІ</a>
+        <a href="#system">Контрольні етапи</a>
+        <a href="#proof">Відкритий код</a>
+        <a href="#contact" class="nav-cta">Створіть свою команду <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <div class="header-status" aria-label="Конфігурація команди">
+        <span class="status-dot" aria-hidden="true"></span>
+        JIRA → ПРОДАКШЕН
+      </div>
+
+      <nav class="language-switch" aria-label="Мова">
+        <a href="/" lang="en" hreflang="en" aria-label="English">EN</a>
+        <a href="/uk/" lang="uk" hreflang="uk" aria-label="Українська" aria-current="page">UA</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Відкрити навігацію">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-registration registration-mark" aria-hidden="true">+</div>
+      <div class="shell announcement-banner">
+        <a href="#codex">
+          <span class="announcement-badge">НОВИНКА / БЕТА</span>
+          <span><strong>APEXREST for Codex</strong> — Oracle APEX: від вихідного коду до перевіреного імпорту.</span>
+          <span class="announcement-banner-link">Дізнатися про плагін <span aria-hidden="true">↓</span></span>
+        </a>
+      </div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>APEXREST</span> / ДЕТЕРМІНОВАНИЙ ВАЙБКОДИНГ</p>
+          <h1>Від задачі в Jira до продакшену.<br><em>Виконує ШІ. Схвалюють люди.</em></h1>
+          <p class="hero-lede">Опишіть потрібну зміну звичайною мовою та додайте знімки екрана. Команда ШІ аналізує запит, оновлює ваш застосунок Oracle APEX, перевіряє й тестує його, розгортає в тестовому середовищі та готує контрольований реліз у продакшен. Кожен крок документується. Ключові рішення ухвалюють люди.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:info@apex.rest?subject=%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%8F%20%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8%20Oracle%20APEX&amp;body=%D0%9F%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%B9%20%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%81%D1%83%D0%BD%D0%BE%D0%BA%20APEX%3A%0A%D0%A2%D0%B8%D0%BF%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%82%20%D1%83%20Jira%3A%0A%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B5%20%D1%81%D0%B5%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D1%89%D0%B5%3A%0A%D0%9F%D0%B5%D1%80%D1%88%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%20%D0%B4%D0%BB%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%97%3A%0A">Автоматизувати розробку <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#trace">Переглянути процес <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <div class="hero-proof" aria-label="Принципи розробки та випуску">
+            <div><span>01</span><strong>Запити в Jira звичайною мовою</strong></div>
+            <div><span>02</span><strong>Розробка й тестування за допомогою ШІ</strong></div>
+            <div><span>03</span><strong>Реліз під контролем людини</strong></div>
+          </div>
+        </div>
+
+        <aside class="work-order" aria-label="Демонстраційне завдання розробки APEXREST">
+          <div class="work-order-head">
+            <div>
+              <span class="micro-label">ЗАВДАННЯ КОМАНДИ</span>
+              <strong id="mission-id">AR–042</strong>
+            </div>
+            <span class="docket-state"><i aria-hidden="true"></i> НА ПЕРЕВІРЦІ</span>
+          </div>
+
+          <div class="mission-prompt">
+            <span class="micro-label">ЗАПИТ КЛІЄНТА / SLACK</span>
+            <p id="mission-prompt">Створіть процес реєстрації постачальників із лімітами погодження та повним журналом аудиту.</p>
+          </div>
+
+          <div class="scenario-tabs" role="group" aria-label="Оберіть приклад завдання">
+            <button class="scenario-button is-selected" type="button" data-scenario="vendor" aria-pressed="true">Постачальники</button>
+            <button class="scenario-button" type="button" data-scenario="service" aria-pressed="false">Сервіс</button>
+            <button class="scenario-button" type="button" data-scenario="field" aria-pressed="false">Виїзні роботи</button>
+          </div>
+
+          <div class="gate-rail" id="gate-rail" aria-label="Стан контрольних етапів">
+            <div class="gate" data-gate="0">
+              <span class="gate-number">01</span>
+              <span><b>ДОПУСК</b><small>Доступ перевірено</small></span>
+              <i class="gate-stamp" aria-hidden="true">ГОТОВО</i>
+            </div>
+            <div class="gate" data-gate="1">
+              <span class="gate-number">02</span>
+              <span><b>ВИМОГИ</b><small>Межі контексту визначено</small></span>
+              <i class="gate-stamp" aria-hidden="true">ГОТОВО</i>
+            </div>
+            <div class="gate" data-gate="2">
+              <span class="gate-number">03</span>
+              <span><b>КОМПІЛЯЦІЯ</b><small>APEXlang перевірено</small></span>
+              <i class="gate-stamp" aria-hidden="true">ГОТОВО</i>
+            </div>
+            <div class="gate" data-gate="3">
+              <span class="gate-number">04</span>
+              <span><b>СХВАЛЕННЯ</b><small>Рішення за людиною</small></span>
+              <i class="gate-stamp" aria-hidden="true">ОЧІКУЄ</i>
+            </div>
+          </div>
+
+          <div class="build-readout">
+            <div><span class="micro-label">АРТЕФАКТ</span><b id="artifact-name">vendor-onboarding.apx</b></div>
+            <div><span class="micro-label">ЦІЛЬ</span><b>ORACLE APEX</b></div>
+          </div>
+          <p class="sr-only" id="mission-status" aria-live="polite"></p>
+        </aside>
+      </div>
+
+      <div class="verification-strip" aria-label="Ролі команди ШІ APEXREST">
+        <div class="shell verification-strip-inner">
+          <span>ЗАПИТ У JIRA</span>
+          <i aria-hidden="true">→</i>
+          <strong>КОМАНДА ШІ</strong>
+          <i aria-hidden="true">→</i>
+          <span>ТЕСТОВЕ СЕРЕДОВИЩЕ + QA</span>
+          <i aria-hidden="true">→</i>
+          <span>СХВАЛЕННЯ ЛЮДИНИ → ПРОДАКШЕН</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="announcement section-block" id="codex" aria-labelledby="codex-title">
+      <div class="shell">
+        <div class="announcement-heading">
+          <p class="section-index">НОВИНКА / НАТИВНИЙ ПЛАГІН CODEX</p>
+          <span class="announcement-version">БЕТА · 0.1.0-beta.1</span>
+        </div>
+
+        <div class="announcement-grid">
+          <div class="announcement-copy">
+            <h2 id="codex-title">APEXREST<br><em>for Codex.</em></h2>
+            <p class="announcement-lede">Створюйте та змінюйте застосунки Oracle APEX: від вихідного коду до перевіреного імпорту.</p>
+            <p>Нативні навички Codex та інструменти MCP підключаються до Oracle SQLcl. Працюйте зі зрозумілим кодом APEXlang, додавайте наявний застосунок до системи контролю версій і перевіряйте результат імпорту у вбудованому браузері Codex.</p>
+
+            <ol class="announcement-capabilities">
+              <li><span aria-hidden="true">01</span><div><h3>Створення або підключення</h3><p>Почніть із порожнього застосунку або шаблону CRM для роботи з клієнтами. Експортуйте наявний застосунок у нову директорію зі збереженням ідентифікаторів Oracle та метаданих застосунку.</p></div></li>
+              <li><span aria-hidden="true">02</span><div><h3>Редагування та розробка</h3><p>Змінюйте сторінки та спільні компоненти. Створюйте інформаційні панелі із запитами до реальних джерел даних, нативними регіонами APEX і робочими фільтрами.</p></div></li>
+              <li><span aria-hidden="true">03</span><div><h3>Планування, імпорт і перевірка</h3><p>Прив’яжіть план до вихідного коду, набору інструментів і цільового середовища. Створіть резервну копію наявного застосунку, виконайте імпорт у дозволених межах, а потім запустіть відповідні налаштовані тести та перевірки в браузері.</p></div></li>
+            </ol>
+
+            <div class="announcement-actions">
+              <a class="button button-primary" href="https://github.com/apexrest-dev/apexrest-codex" target="_blank" rel="noopener noreferrer">Переглянути на GitHub <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/apexrest-dev/apexrest-codex/blob/main/docs/index.md" target="_blank" rel="noopener noreferrer">Читати документацію <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <aside class="announcement-install" aria-labelledby="codex-install-title">
+            <div class="announcement-install-head">
+              <span class="micro-label">ПОЧАТОК РОБОТИ</span>
+              <span class="micro-label">APACHE-2.0</span>
+            </div>
+            <div class="announcement-install-body">
+              <h3 id="codex-install-title">Працюйте з APEX у Codex.</h3>
+              <p>Якщо встановлено Node 24 LTS та Codex CLI з підтримкою нативних плагінів, виконайте:</p>
+              <pre class="announcement-commands"><code>codex plugin marketplace add apexrest-dev/apexrest-codex
+codex plugin add apexrest-apex@apexrest</code></pre>
+              <p class="announcement-install-note">Середовище виконання входить до комплекту; локальна збірка не потрібна. Після встановлення почніть нову задачу в Codex.</p>
+
+              <p class="micro-label">ВАШ ПЕРШИЙ ЗАПИТ</p>
+              <blockquote class="announcement-prompt">Використай APEXREST, щоб перевірити моє налаштування. Повідом, які перевірки компілятора, підключення та цільового середовища ще потребують уваги.</blockquote>
+
+              <h4>Для роботи з підключенням до Oracle</h4>
+              <ul class="announcement-requirements">
+                <li>Java 21 і перевірена версія SQLcl 26.1.2</li>
+                <li>Наявне цільове середовище Oracle APEX підтримуваної версії</li>
+                <li>Іменоване підключення SQLcl, збережене локально</li>
+              </ul>
+              <p class="announcement-install-note">Встановлення не створює базу даних і не розгортає застосунок. Не додавайте паролі до запитів.</p>
+              <a class="text-link" href="https://github.com/apexrest-dev/apexrest-codex/blob/main/docs/getting-started.md" target="_blank" rel="noopener noreferrer">Відкрити інструкцію з налаштування <span aria-hidden="true">↗</span></a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="announcement-boundaries">
+          <div>
+            <h3>Чіткі межі. Рішення за людиною.</h3>
+            <p>Запит на створення, оновлення або імпорт конкретного застосунку для розробки чи тестування надає дозвіл на імпорт у цих межах. Для продакшену потрібне окреме погодження із зовнішнім підписом на захищеному виконавці розгортання.</p>
+            <a class="text-link" href="https://github.com/apexrest-dev/apexrest-codex/blob/main/docs/deployment-safety.md" target="_blank" rel="noopener noreferrer">Запобіжники розгортання <span aria-hidden="true">↗</span></a>
+          </div>
+          <div>
+            <h3>Бета з опублікованими результатами перевірок.</h3>
+            <p>Нативне встановлення перевірено на Codex 0.154.0 / macOS arm64, а реальні імпорти тестових застосунків — на APEX 26.1.1. До стабільного релізу ще потрібно завершити ширші перевірки інтеграції, відновлення та підтримки платформ.</p>
+            <a class="text-link" href="https://github.com/apexrest-dev/apexrest-codex/blob/main/docs/implementation-status.md" target="_blank" rel="noopener noreferrer">Переглянути стан перевірок <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="announcement-disclaimer">Незалежні інструменти APEXREST. APEXREST for Codex не є офіційним продуктом Oracle або OpenAI.</p>
+      </div>
+    </section>
+
+    <section class="argument section-block" id="argument">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="section-index">01 / НАВІЩО КОМАНДА</p>
+          <h2>Вайбкодинг із процесом розробки для бізнесу.</h2>
+        </div>
+
+        <div class="argument-grid">
+          <div class="statement-block">
+            <p>Задача в Jira, описана звичайною мовою, перетворюється на роботу з визначеними межами, перевірену зміну APEX, розгортання в тестовому середовищі, докази тестування та контрольований реліз у продакшен.</p>
+            <p class="statement-accent">Агенти виконують роботу. Люди ухвалюють рішення.</p>
+          </div>
+
+          <div class="comparison-sheet" aria-label="Порівняння окремого агента розробки та команди ШІ APEXREST">
+            <div class="comparison-head">
+              <span>КРИТЕРІЙ</span>
+              <span>ОКРЕМИЙ АГЕНТ</span>
+              <span>КОМАНДА ШІ APEXREST</span>
+            </div>
+            <div class="comparison-row">
+              <b>Відповідальність</b>
+              <span>Користувач координує запити</span>
+              <strong>Менеджер проєкту відповідає за завдання</strong>
+            </div>
+            <div class="comparison-row">
+              <b>Розробка</b>
+              <span>Результат загального призначення</span>
+              <strong>Розробники APEX використовують перевірений контекст</strong>
+            </div>
+            <div class="comparison-row">
+              <b>Якість</b>
+              <span>Самоперевірка</span>
+              <strong>QA та результати перевірок компілятором</strong>
+            </div>
+            <div class="comparison-row">
+              <b>Підтримка</b>
+              <span>Завершується на генерації</span>
+              <strong>Агент підтримки завершує цикл</strong>
+            </div>
+            <div class="comparison-row">
+              <b>Реліз</b>
+              <span>Межі залежать від запиту</span>
+              <strong>Явне рішення людини</strong>
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="big-quote">
+          <span>“</span>
+          Мета — не просто швидше генерувати код. Це повний, простежуваний шлях від бізнес-запиту до перевіреного релізу, де ключові рішення залишаються за <em>людиною</em>.
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="apex-foundation section-block section-dark" id="why-apex">
+      <div class="shell">
+        <div class="section-intro section-intro-wide">
+          <p class="section-index">02 / ЧОМУ ORACLE APEX</p>
+          <h2>Повноцінна платформа для вашої команди ШІ.</h2>
+          <p>Oracle APEX не перетворює ймовірнісні моделі на детерміновані машини. Він робить дещо корисніше: дає всій команді єдину документовану модель застосунку та зріле середовище виконання з базовими механізмами вебзастосунків, які інакше довелося б створювати заново в кожному проєкті.</p>
+        </div>
+
+        <div class="foundation-list">
+          <article class="foundation-row">
+            <span class="foundation-code">UI / 01</span>
+            <h3>Готовий інтерфейс</h3>
+            <p>Адаптивні форми, звіти, діаграми, навігація, теми оформлення та компоненти з підтримкою доступності входять до єдиної моделі застосунку.</p>
+            <span class="row-mark" aria-hidden="true">+</span>
+          </article>
+          <article class="foundation-row">
+            <span class="foundation-code">CTL / 02</span>
+            <h3>Вбудований контроль</h3>
+            <p>Платформа забезпечує автентифікацію, авторизацію, серверні сесії, екранування виводу, контрольні суми та керування доступом до застосунку.</p>
+            <span class="row-mark" aria-hidden="true">+</span>
+          </article>
+          <article class="foundation-row">
+            <span class="foundation-code">DAT / 03</span>
+            <h3>Робота з даними</h3>
+            <p>SQL, PL/SQL, транзакції, автоматичний DML, оптимістичне блокування, файли та звітність працюють поруч з Oracle Database.</p>
+            <span class="row-mark" aria-hidden="true">+</span>
+          </article>
+          <article class="foundation-row">
+            <span class="foundation-code">FLOW / 04</span>
+            <h3>Готові процеси</h3>
+            <p>Робочі процеси, завдання для людей, погодження, джерела даних REST, сповіщення, фонові операції та інтеграції є повноцінними компонентами платформи.</p>
+            <span class="row-mark" aria-hidden="true">+</span>
+          </article>
+          <article class="foundation-row">
+            <span class="foundation-code">OPS / 05</span>
+            <h3>Вбудована експлуатація</h3>
+            <p>Журнали активності й аудиту дій розробників, діагностика, моніторинг, експорт, імпорт і перенесення між середовищами вбудовані в платформу.</p>
+            <span class="row-mark" aria-hidden="true">+</span>
+          </article>
+        </div>
+
+        <div class="foundation-bottom">
+          <p><strong>Ваша команда ШІ створює застосунок.</strong> APEX надає основу, придатну для промислової експлуатації.</p>
+          <a class="text-link light-link" href="https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/introduction.html" target="_blank" rel="noopener noreferrer">Читати огляд платформи від Oracle <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="system section-block" id="system">
+      <div class="shell">
+        <div class="section-intro section-intro-split">
+          <div>
+            <p class="section-index">03 / СИСТЕМА</p>
+            <h2>Спеціалізовані агенти.<br>Єдиний керований процес розробки.</h2>
+          </div>
+          <p>APEXREST об’єднує Jira, ШІ-менеджера проєкту, ШІ-розробника, ШІ-тестувальника й автоматизацію релізів у єдиний процес розробки APEX із чіткими межами. Для кожної ролі визначено дозволи, спільні результати перевірок та межі дій.</p>
+        </div>
+
+        <div class="stack-sheet" aria-label="Трирівнева архітектура APEXREST">
+          <article class="stack-layer layer-creative">
+            <div class="layer-title">
+              <span>01</span>
+              <div><b>ТВОРЧИЙ РІВЕНЬ</b><small>Задум і співпраця</small></div>
+            </div>
+            <div class="layer-nodes">
+              <div class="stack-node"><span>ЛЮДИНА</span><b>Задача в Jira</b><small>Звичайна мова + знімки екрана</small></div>
+              <i class="node-arrow" aria-hidden="true">→</i>
+              <div class="stack-node"><span>PINET</span><b>Брокер</b><small>Допуск + маршрутизація</small></div>
+              <i class="node-arrow" aria-hidden="true">→</i>
+              <div class="stack-node node-emphasis"><span>КОМАНДА</span><b>Спеціалізовані агенти</b><small>Менеджер · Розробник APEX · QA · Реліз</small></div>
+            </div>
+          </article>
+
+          <article class="stack-layer layer-contract">
+            <div class="layer-title">
+              <span>02</span>
+              <div><b>РІВЕНЬ КОНТРАКТУ</b><small>Детерміновані контрольні етапи</small></div>
+            </div>
+            <div class="layer-nodes layer-nodes-many">
+              <div class="stack-node"><span>СПЕЦИФІКАЦІЯ</span><b>APEXlang</b><small>Зрозумілі файли .apx</small></div>
+              <i class="node-arrow" aria-hidden="true">→</i>
+              <div class="stack-node"><span>ЛОКАЛЬНО</span><b>Перевірка</b><small>Синтаксис + словник</small></div>
+              <i class="node-arrow" aria-hidden="true">→</i>
+              <div class="stack-node"><span>ДОСТОВІРНІСТЬ</span><b>Аудит компілятором</b><small>Допустимі компоненти</small></div>
+              <i class="node-arrow" aria-hidden="true">→</i>
+              <div class="stack-node node-gate"><span>НА СЕРВЕРІ</span><b>Перевірка</b><small>Цільове середовище Oracle</small></div>
+              <i class="node-arrow" aria-hidden="true">→</i>
+              <div class="stack-node node-human"><span>ЛЮДИНА</span><b>Схвалення імпорту</b><small>Визначене цільове середовище</small></div>
+            </div>
+          </article>
+
+          <article class="stack-layer layer-runtime">
+            <div class="layer-title">
+              <span>03</span>
+              <div><b>РІВЕНЬ ВИКОНАННЯ</b><small>Основа для промислової експлуатації</small></div>
+            </div>
+            <div class="runtime-line">
+              <span>ORACLE APEX</span>
+              <b>UI</b><b>БЕЗПЕКА</b><b>ДАНІ</b><b>ПРОЦЕСИ</b><b>REST</b><b>МОНІТОРИНГ</b>
+              <span>ORACLE DATABASE</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="system-note"><span>Важливо:</span> «Детермінований вайбкодинг» описує процес розробки й випуску, а не поведінку LLM. Результат роботи ШІ все одно потребує рев’ю, тестування та якісної інженерії. APEXlang описує визначення застосунку APEX; об’єкти схеми та міграції даних потребують окремого плану впровадження з контролем версій.</p>
+      </div>
+    </section>
+
+    <section class="trace section-block section-red" id="trace">
+      <div class="shell">
+        <div class="section-intro section-intro-split trace-intro">
+          <div>
+            <p class="section-index">04 / ЦИКЛ РОЗРОБКИ ТА РЕЛІЗУ</p>
+            <h2>Від Jira до продакшену.<br>Кожна передача під контролем.</h2>
+          </div>
+          <div class="slack-brief">
+            <span class="micro-label">JIRA / APEX-142</span>
+            <p><b>БІЗНЕС-ЗАПИТ</b> Додайте реєстрацію постачальників із лімітами погодження. Знімки екрана та критерії приймання додано.</p>
+          </div>
+        </div>
+
+        <ol class="trace-list">
+          <li>
+            <span class="trace-number">01</span>
+            <div><span class="trace-verb">ПРИЙМАННЯ ЗАПИТУ</span><h3>Визначити завдання.</h3></div>
+            <p>Людина описує зміну в Jira звичайною мовою, додає знімки екрана, очікувану поведінку та критерії приймання.</p>
+            <i aria-hidden="true">ГОТОВО</i>
+          </li>
+          <li>
+            <span class="trace-number">02</span>
+            <div><span class="trace-verb">ПЛАНУВАННЯ</span><h3>Підготувати до розробки.</h3></div>
+            <p>ШІ-менеджер проєкту аналізує задачу, уточнює доступний контекст, формує план, розподіляє роботу між спеціалістами та підтримує актуальність Jira.</p>
+            <i aria-hidden="true">ГОТОВО</i>
+          </li>
+          <li>
+            <span class="trace-number">03</span>
+            <div><span class="trace-verb">РОЗРОБКА</span><h3>Створити визначення застосунку.</h3></div>
+            <p>ШІ-розробник експортує наявний застосунок, використовує перевірений контекст схеми та API, створює зміни APEXlang у визначених межах, перевіряє їх і розгортає в тестовому середовищі.</p>
+            <i aria-hidden="true">ГОТОВО</i>
+          </li>
+          <li>
+            <span class="trace-number">04</span>
+            <div><span class="trace-verb">ПЕРЕВІРКА</span><h3>Знайти проблеми до продакшену.</h3></div>
+            <p>ШІ-тестувальник відкриває застосунок у тестовому середовищі через браузер, перевіряє відповідні API, критерії приймання та дозволи, а результати перевірок або помилки записує в Jira.</p>
+            <i aria-hidden="true">ГОТОВО</i>
+          </li>
+          <li>
+            <span class="trace-number">05</span>
+            <div><span class="trace-verb">СХВАЛЕННЯ</span><h3>Залишити рішення за людиною.</h3></div>
+            <p>Людина, відповідальна за ручне тестування, переглядає задачу, результат у тестовому середовищі та докази, зібрані агентами. Лише уповноважена особа може схвалити реліз у продакшен.</p>
+            <i class="hold-stamp" aria-hidden="true">ОЧІКУЄ</i>
+          </li>
+          <li>
+            <span class="trace-number">06</span>
+            <div><span class="trace-verb">РЕЛІЗ</span><h3>Розгорнути схвалену зміну.</h3></div>
+            <p>Після схвалення агент релізу розгортає саме перевірений артефакт у визначеному середовищі продакшену, перевіряє результат і фіксує підсумок.</p>
+            <i aria-hidden="true">ВИПУСК</i>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="team section-block section-dark" id="team">
+      <div class="shell">
+        <div class="section-intro section-intro-split">
+          <div>
+            <p class="section-index">05 / ВАША КОМАНДА ШІ</p>
+            <h2>Чотири ролі.<br>Єдиний цикл від Jira до продакшену.</h2>
+          </div>
+          <p>Вам не потрібно координувати окремі вікна чатів. Агенти мають спільний контекст задачі, результати перевірок, визначені обов’язки та контрольовану передачу роботи від запиту до релізу.</p>
+        </div>
+
+        <div class="roster">
+          <article>
+            <span class="roster-id">PM / 01</span>
+            <div class="roster-avatar" aria-hidden="true">PM</div>
+            <h3>Менеджер проєкту</h3>
+            <p>Перетворює бізнес-запити на завдання з пріоритетами, критерії приймання, залежності та чіткі точки ухвалення рішень. Підтримує зрозумілі межі робіт, відповідальність і статус.</p>
+          </article>
+          <article>
+            <span class="roster-id">DEV / 02</span>
+            <div class="roster-avatar" aria-hidden="true">AX</div>
+            <h3>Розробник APEX</h3>
+            <p>Експортує наявний застосунок, використовує перевірений контекст схеми та API, створює зрозумілі зміни APEXlang, перевіряє їх і розгортає в тестовому середовищі.</p>
+          </article>
+          <article>
+            <span class="roster-id">QA / 03</span>
+            <div class="roster-avatar" aria-hidden="true">QA</div>
+            <h3>Агент тестування</h3>
+            <p>Тестує застосунок у тестовому середовищі через браузер та API, перевіряє очікувану поведінку й дозволи та зберігає в Jira відтворювані результати перевірок.</p>
+          </article>
+          <article>
+            <span class="roster-id">REL / 04</span>
+            <div class="roster-avatar" aria-hidden="true">RL</div>
+            <h3>Агент релізу</h3>
+            <p>Діє лише після схвалення людиною, розгортає перевірений артефакт у визначеному середовищі продакшену, перевіряє доступність і фіксує результат релізу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof section-block" id="proof">
+      <div class="shell">
+        <div class="section-intro section-intro-split">
+          <div>
+            <p class="section-index">06 / ВІДКРИТИЙ КОД ЯК ДОКАЗ</p>
+            <h2>Перевірте, як усе влаштовано.</h2>
+          </div>
+          <p>Репозиторії показують механізми роботи команди: керовану оркестрацію кількох агентів і контрольний етап впровадження APEX із визначеними межами.</p>
+        </div>
+
+        <div class="repo-grid">
+          <article class="repo-card repo-control">
+            <div class="repo-card-top">
+              <span class="repo-label">ЦЕНТР КЕРУВАННЯ</span>
+              <span class="repo-status">MIT / ВІДКРИТИЙ КОД</span>
+            </div>
+            <h3>pi-slack-team</h3>
+            <p class="repo-summary">Брокер між Slack та агентами й мережа виконавців, що узгоджує доступ, відповідальність за обговорення, маршрутизацію, прогрес, вхідні повідомлення та заплановану роботу.</p>
+            <ul>
+              <li>Доступ через Slack заборонений за замовчуванням</li>
+              <li>Постійне закріплення відповідального за обговорення</li>
+              <li>Мережа брокера та підпорядкованих виконавців</li>
+              <li>Повідомлення про прогрес лише за наявності змін</li>
+              <li>Відновлення завислих призначень і пробудження агентів</li>
+            </ul>
+            <a class="repo-link" href="https://github.com/avhrst/pi-slack-team" target="_blank" rel="noopener noreferrer">Переглянути центр керування <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="repo-card repo-gate">
+            <div class="repo-card-top">
+              <span class="repo-label">КОНТРОЛЬ ВПРОВАДЖЕННЯ APEX</span>
+              <span class="repo-status">UPL-1.0 / ВІДКРИТИЙ КОД</span>
+            </div>
+            <h3>pi-apex</h3>
+            <p class="repo-summary">Публічна навичка APEXlang від Oracle із зафіксованою версією та підтвердженим походженням, доповнена розширенням Pi з обмеженими діями для безпечного дослідження, перевірки та явно схваленого імпорту.</p>
+            <ul>
+              <li>Перевірка робочого простору</li>
+              <li>Локальна перевірка APEXlang</li>
+              <li>Запити допустимих властивостей</li>
+              <li>Аудит за даними компілятора</li>
+              <li>Перевірка на сервері перед імпортом</li>
+            </ul>
+            <a class="repo-link" href="https://github.com/avhrst/pi-apex" target="_blank" rel="noopener noreferrer">Переглянути контроль імпорту <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <div class="implementation-spec" aria-label="Технічні умови реалізації">
+          <div class="implementation-spec-head">
+            <span>УМОВИ РЕАЛІЗАЦІЇ</span>
+            <strong>ЩО ПОТРІБНО ВАШІЙ КОМАНДІ ШІ</strong>
+          </div>
+          <div class="implementation-spec-grid">
+            <div><span>01 / КОМАНДА</span><b>Менеджер проєкту відповідає за завдання, а розробники APEX, тестувальники та підтримка отримують конкретну роботу з контрольованою передачею між ролями.</b></div>
+            <div><span>02 / КЕРУВАННЯ</span><b>Єдиний брокер Slack керує вхідними запитами, доступом, маршрутизацією, контекстом обговорень, прогресом і мережею спеціалізованих виконавців.</b></div>
+            <div><span>03 / НАВИЧКА</span><b>Розробники APEX завантажують pi-apex, що містить зафіксовану версію навички APEXlang від Oracle та дії з визначеними межами.</b></div>
+            <div><span>04 / КОНТЕКСТ</span><b>Відповідний робочий простір APEX і перевірені дані про схему, застосунок, модель та API визначають, на що команда може спиратися.</b></div>
+            <div><span>05 / РЕЛІЗ</span><b>Спочатку локальні перевірки, потім перевірка на сервері Oracle, а далі — окремо дозволений імпорт і рішення про реліз.</b></div>
+          </div>
+        </div>
+
+        <div class="trust-line">
+          <span class="trust-stamp">ІМПОРТ PI-APEX ЛИШЕ З ПІДТВЕРДЖЕННЯМ</span>
+          <p><strong>Агенти можуть пропонувати.</strong> Через pi-apex вони не можуть запитати імпорт як окрему дію. Без інтерфейсу підтвердження цей процес обмежується перевірками.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="use-cases section-block section-paper" id="work">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="section-index">07 / РОБОТА КОМАНДИ</p>
+          <h2>Почніть з однієї реальної задачі в Jira.</h2>
+          <p class="section-lede">Ми проводимо одну типову зміну через повний процес роботи агентів, визначаємо дозволи та етапи схвалення людиною й перевіряємо весь шлях у вашому тестовому середовищі.</p>
+        </div>
+
+        <div class="use-case-grid">
+          <article><span>01 / PM</span><h3>Планування беклогу</h3><p>Перетворюйте запити на завдання з пріоритетами, критерії приймання, залежності та рішення.</p></article>
+          <article><span>02 / DEV</span><h3>Розробка APEX</h3><p>Створюйте сторінки, процеси, бізнес-правила, інтеграції та зміни застосунку зрозумілою мовою APEXlang.</p></article>
+          <article><span>03 / QA</span><h3>QA та регресійне тестування</h3><p>Перевіряйте очікувану поведінку, дозволи, граничні випадки, регресії та результати перевірок компілятором.</p></article>
+          <article><span>04 / КОМАНДА</span><h3>Модернізація</h3><p>Переносьте ненадійні процеси з електронних таблиць, пошти або застарілих систем у керований застосунок Oracle APEX.</p></article>
+          <article><span>05 / ЛЮДИНА</span><h3>Ручна перевірка якості</h3><p>Переглядайте конкретний результат у тестовому середовищі та докази агентів перед наданням дозволу на будь-яку дію в продакшені.</p></article>
+          <article><span>06 / REL</span><h3>Контрольований реліз</h3><p>Розгортайте лише схвалений артефакт у визначеному середовищі, перевіряйте доступність і фіксуйте результат.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="research section-block" id="research">
+      <div class="shell research-grid">
+        <div>
+          <p class="section-index">08 / ДОКУМЕНТАЛЬНА ОСНОВА</p>
+          <h2>В основі — документована поведінка.</h2>
+        </div>
+        <div class="source-list">
+          <a href="https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/introduction.html" target="_blank" rel="noopener noreferrer"><span>ORACLE</span> APEX як повноцінна платформа для роботи з агентами <i aria-hidden="true">↗</i></a>
+          <a href="https://docs.oracle.com/en/database/oracle/apex/26.1/htmrn/new-features.html" target="_blank" rel="noopener noreferrer"><span>ORACLE</span> APEX 26.1 і специфікація APEXlang <i aria-hidden="true">↗</i></a>
+          <a href="https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/using-apexlang-coding-agents.html" target="_blank" rel="noopener noreferrer"><span>ORACLE</span> Використання APEXlang з ШІ-агентами розробки <i aria-hidden="true">↗</i></a>
+          <a href="https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/commands-overview-apexlang.html" target="_blank" rel="noopener noreferrer"><span>SQLcl</span> Генерація, експорт, перевірка та імпорт <i aria-hidden="true">↗</i></a>
+          <a href="https://apex.oracle.com/en/platform/features/" target="_blank" rel="noopener noreferrer"><span>ORACLE</span> Безпека, інтерфейс, дані, моніторинг і процеси <i aria-hidden="true">↗</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contact">
+      <div class="shell final-cta-inner">
+        <p class="section-index">АВТОМАТИЗУЙТЕ ПЕРШИЙ ЦИКЛ РОЗРОБКИ</p>
+        <h2>Одна задача в Jira. Перевірений шлях до продакшену.</h2>
+        <p>Ми визначимо ролі ШІ-менеджера проєкту, розробника, тестувальника та агента релізу, їхні дозволи й етапи схвалення людиною, а потім виконаємо перший перевірений процес у вашому тестовому середовищі Oracle APEX.</p>
+        <a class="button button-dark" href="mailto:info@apex.rest?subject=%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%8F%20%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B8%20Oracle%20APEX&amp;body=%D0%9F%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%B9%20%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%81%D1%83%D0%BD%D0%BE%D0%BA%20APEX%3A%0A%D0%A2%D0%B8%D0%BF%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%82%20%D1%83%20Jira%3A%0A%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B5%20%D1%81%D0%B5%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D1%89%D0%B5%3A%0A%D0%9F%D0%B5%D1%80%D1%88%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%20%D0%B4%D0%BB%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%97%3A%0A">Автоматизувати першу задачу <span aria-hidden="true">↗</span></a>
+        <span class="contact-email">info@apex.rest</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <a class="brand footer-brand" href="#top" aria-label="APEXREST — головна">
+        <span class="brand-mark" aria-hidden="true"><i>A</i><i>R</i></span>
+        <span class="brand-name">APEX<span>REST</span></span>
+      </a>
+      <p>Від задачі в Jira до продакшену.<br>Виконує ШІ. Контролюють люди.</p>
+      <div class="footer-links">
+        <a href="https://github.com/apexrest-dev/apexrest-codex" target="_blank" rel="noopener noreferrer">APEXREST for Codex ↗</a>
+        <a href="https://github.com/avhrst/pi-apex" target="_blank" rel="noopener noreferrer">pi-apex ↗</a>
+        <a href="https://github.com/avhrst/pi-slack-team" target="_blank" rel="noopener noreferrer">pi-slack-team ↗</a>
+        <a href="mailto:info@apex.rest">info@apex.rest ↗</a>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <p>APEXREST є незалежною компанією та не має офіційного схвалення Oracle. pi-apex є незалежною інтеграцією, а не продуктом Oracle. Oracle та Oracle APEX є торговельними марками Oracle та/або її афілійованих компаній.</p>
+      <p>© <span id="current-year">2026</span> APEXREST</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

@@ -12,6 +12,15 @@ python3 -m http.server 8000
 
 Open <http://localhost:8000>.
 
+## Languages
+
+- English: `/` (`index.html`)
+- Ukrainian: `/uk/` (`uk/index.html`)
+
+Both pages are complete static documents with a visible EN / UA switch. There is no automatic language redirect. HTML language and `hreflang` use the standard Ukrainian code `uk`; UA is the switch's display label.
+
+Keep the two pages aligned when content changes, including metadata, accessible labels and contact email drafts. They share `assets/css/site.css` and `assets/js/site.js`; interactive copy follows the document language. The Ukrainian page uses a Cyrillic display font and its own social preview, `assets/og-uk.png`. The Pages workflow stages both language routes and social images.
+
 ## Publish
 
 1. In the repository's **Settings → Pages**, select **GitHub Actions** as the source.

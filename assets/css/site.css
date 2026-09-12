@@ -18,6 +18,11 @@
   --section-space: clamp(6rem, 11vw, 10rem);
 }
 
+/* Cyrillic display type keeps the condensed docket style on the Ukrainian page. */
+html:lang(uk) {
+  --font-display: "Roboto Condensed", "Arial Narrow", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -139,7 +144,7 @@ ul {
 
 .header-inner {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto auto;
   align-items: center;
   min-height: 5rem;
   gap: 2rem;
@@ -250,6 +255,37 @@ ul {
   border-radius: 50%;
   background: var(--pass);
   box-shadow: 0 0 0 3px rgba(21, 148, 103, 0.15);
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--ink);
+  background: var(--paper-bright);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.language-switch a {
+  display: grid;
+  place-items: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+}
+
+.language-switch a + a {
+  border-left: 1px solid var(--ink);
+}
+
+.language-switch a[aria-current="page"] {
+  background: var(--ink);
+  color: var(--paper-bright);
+}
+
+.language-switch a:hover {
+  background: var(--signal);
+  color: var(--white);
 }
 
 .menu-toggle {
@@ -2089,6 +2125,14 @@ ul {
 }
 
 @media (max-width: 1180px) {
+  .header-inner {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .header-status {
+    display: none;
+  }
+
   .hero-grid {
     grid-template-columns: minmax(0, 1fr) minmax(26rem, 0.9fr);
     gap: 3.5rem;
@@ -2261,6 +2305,12 @@ ul {
   .header-inner {
     grid-template-columns: auto 1fr auto;
     min-height: 4.5rem;
+    gap: 0.75rem;
+  }
+
+  .language-switch {
+    grid-column: 2;
+    justify-self: end;
   }
 
   .header-status {
@@ -2412,6 +2462,14 @@ ul {
 
   .comparison-row strong::before {
     content: "APEXREST AI TEAM";
+  }
+
+  html:lang(uk) .comparison-row span::before {
+    content: "ОКРЕМИЙ АГЕНТ";
+  }
+
+  html:lang(uk) .comparison-row strong::before {
+    content: "КОМАНДА ШІ APEXREST";
   }
 
   .big-quote {
@@ -2598,6 +2656,10 @@ ul {
 }
 
 @media (max-width: 500px) {
+  .header-inner {
+    gap: 0.375rem;
+  }
+
   .brand-name {
     font-size: 1.35rem;
   }
@@ -2711,6 +2773,75 @@ ul {
 
   .source-list span {
     grid-column: 1 / -1;
+  }
+}
+
+/* Ukrainian words and ascenders need more room than the English display copy. */
+html:lang(uk) .hero h1 {
+  max-width: 12ch;
+  font-size: clamp(3.5rem, 6.6vw, 6.6rem);
+  letter-spacing: -0.045em;
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+html:lang(uk) .section-intro h2,
+html:lang(uk) .research h2,
+html:lang(uk) .final-cta h2 {
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+html:lang(uk) .final-cta h2 {
+  max-width: 17ch;
+}
+
+html:lang(uk) .stack-node b {
+  white-space: normal;
+}
+
+html:lang(uk) .stack-node,
+html:lang(uk) .comparison-row,
+html:lang(uk) .repo-card-top,
+html:lang(uk) .big-quote {
+  overflow-wrap: anywhere;
+}
+
+html:lang(uk) .use-case-grid article {
+  min-width: 0;
+}
+
+html:lang(uk) .use-case-grid h3 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+html:lang(uk) .trust-stamp {
+  width: fit-content;
+  max-width: 100%;
+}
+
+@media (max-width: 980px) {
+  html:lang(uk) .hero h1 {
+    max-width: 15ch;
+    font-size: clamp(3rem, 10vw, 6rem);
+  }
+}
+
+@media (max-width: 500px) {
+  html:lang(uk) .big-quote {
+    font-size: clamp(1.8rem, 8.5vw, 2.5rem);
+    line-height: 1.05;
+  }
+
+  html:lang(uk) .section-intro h2,
+  html:lang(uk) .research h2 {
+    font-size: clamp(2.4rem, 10.5vw, 3.3rem);
+  }
+
+  html:lang(uk) .final-cta h2 {
+    font-size: clamp(3rem, 12vw, 4rem);
   }
 }
 

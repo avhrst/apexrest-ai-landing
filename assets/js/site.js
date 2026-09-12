@@ -3,11 +3,23 @@
   const menuToggle = document.getElementById("menu-toggle");
   const navigation = document.getElementById("site-nav");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const isUkrainian = document.documentElement.lang === "uk";
+  const messages = isUkrainian ? {
+    openNavigation: "Відкрити навігацію",
+    closeNavigation: "Закрити навігацію",
+    selected: (id) => `${id} обрано. Виконуємо контрольні етапи.`,
+    awaitingApproval: (id) => `${id} пройшло QA та перевірки компілятором і очікує на схвалення людиною.`
+  } : {
+    openNavigation: "Open navigation",
+    closeNavigation: "Close navigation",
+    selected: (id) => `${id} selected. Running delivery gates.`,
+    awaitingApproval: (id) => `${id} passed QA and compiler-backed checks and is waiting at the human approval gate.`
+  };
 
   const setMenuState = (open) => {
     if (!menuToggle || !navigation) return;
     menuToggle.setAttribute("aria-expanded", String(open));
-    menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    menuToggle.setAttribute("aria-label", open ? messages.closeNavigation : messages.openNavigation);
     navigation.classList.toggle("is-open", open);
     document.body.classList.toggle("nav-open", open);
   };
@@ -47,17 +59,23 @@
   const scenarios = {
     vendor: {
       id: "AR–042",
-      prompt: "Build vendor onboarding with approval limits and a complete audit trail.",
+      prompt: isUkrainian
+        ? "Створіть процес реєстрації постачальників із лімітами погодження та повним журналом аудиту."
+        : "Build vendor onboarding with approval limits and a complete audit trail.",
       artifact: "vendor-onboarding.apx"
     },
     service: {
       id: "AR–117",
-      prompt: "Create an SLA service console with escalation rules and workload visibility.",
+      prompt: isUkrainian
+        ? "Створіть сервісну консоль SLA з правилами ескалації та відображенням навантаження."
+        : "Create an SLA service console with escalation rules and workload visibility.",
       artifact: "service-operations.apx"
     },
     field: {
       id: "AR–208",
-      prompt: "Create a mobile inspection workflow with evidence capture and supervisor review.",
+      prompt: isUkrainian
+        ? "Створіть мобільний процес інспекцій зі збором доказів і перевіркою керівником."
+        : "Create a mobile inspection workflow with evidence capture and supervisor review.",
       artifact: "field-inspections.apx"
     }
   };
@@ -79,7 +97,7 @@
     const finalGate = gates.at(-1);
     if (finalGate) finalGate.classList.add("is-hold");
     if (missionStatus) {
-      missionStatus.textContent = `${scenarios[scenarioKey].id} passed QA and compiler-backed checks and is waiting at the human approval gate.`;
+      missionStatus.textContent = messages.awaitingApproval(scenarios[scenarioKey].id);
     }
   };
 
@@ -97,7 +115,7 @@
         if (index === gates.length - 1) {
           gate.classList.add("is-hold");
           if (missionStatus) {
-            missionStatus.textContent = `${scenarios[scenarioKey].id} passed QA and compiler-backed checks and is waiting at the human approval gate.`;
+            missionStatus.textContent = messages.awaitingApproval(scenarios[scenarioKey].id);
           }
         } else {
           gate.classList.add("is-complete");
@@ -119,7 +137,7 @@
     if (missionId) missionId.textContent = scenario.id;
     if (missionPrompt) missionPrompt.textContent = scenario.prompt;
     if (artifactName) artifactName.textContent = scenario.artifact;
-    if (missionStatus) missionStatus.textContent = `${scenario.id} selected. Running delivery gates.`;
+    if (missionStatus) missionStatus.textContent = messages.selected(scenario.id);
     runGateSequence(scenarioKey);
   };
 
