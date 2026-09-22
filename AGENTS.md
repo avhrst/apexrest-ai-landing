@@ -6,7 +6,7 @@ These instructions apply to the entire repository.
 
 ## Project purpose
 
-This repository contains the public landing page for APEXREST, a company that builds AI developer-agent teams that deliver applications to Oracle APEX. The core story is deterministic delivery: probabilistic agents work through structured APEXlang, compiler-backed validation, and explicit human release gates before an application reaches the Oracle APEX runtime.
+This repository contains the public product site for APEXREST for Codex, the open-source plugin for creating and changing Oracle APEX applications. Single work uses the current Codex session; agent teams require explicit opt-in. The product combines readable APEXlang, compiler-backed validation, scoped imports and runtime verification. Preserve explicit human authority for development targets and production release.
 
 Do not restore the former 1C/BAS news blog, monitoring feeds, bilingual redirect, or daily generated-news workflow.
 
@@ -44,7 +44,9 @@ Then open `http://localhost:8000`.
 - Do not claim autonomous deployment, zero defects, guaranteed security, customer results, or unsupported performance metrics.
 - Keep import and release described as explicit human decisions.
 - Preserve the disclaimer that APEXREST is independent of Oracle and `pi-apex` is an independent integration, not an Oracle product.
-- Use primary sources: Oracle documentation and the `avhrst/pi-apex` and `avhrst/pi-slack-team` repositories.
+- Use current `apexrest-dev/apexrest-codex` documentation and Oracle documentation as primary sources. Check npm publication before making installation claims; record evidence in `docs/content-sources.md`.
+- Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or team end-to-end support.
+- Product questions link to `https://www.linkedin.com/in/avhrst/`; keep the removed general email contact out of the site.
 - Keep the site in English unless the user asks for another language.
 
 ## Change expectations

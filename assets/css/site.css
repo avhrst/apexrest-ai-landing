@@ -170,6 +170,12 @@ h1 em { color: var(--muted); }
 .announcement-boundaries p { font-size: 12px; color: var(--muted); }
 .announcement-boundaries .text-link { font-size: 11px; }
 .announcement-disclaimer { color: var(--muted); font-size: 10px; margin: 30px 0 0; }
+.install-alternative { margin-top: 26px; border-top: 1px solid #54564e; padding-top: 16px; }
+.install-alternative summary { cursor: pointer; font-size: 12px; padding-block: 8px; }
+.product-advantages { margin: 0; }
+.product-advantages li:first-child { margin-top: 0; }
+.product-workflow li { grid-template-columns: 65px 1fr 1.1fr; }
+.footer-related { color: #b3b6ad; margin-top: 14px; font-family: var(--font-mono); font-size: 9px; }
 .argument-grid { display: grid; grid-template-columns: .7fr 1.3fr; gap: 10%; }
 .statement-block { font-size: 17px; }
 .statement-block > p { color: var(--muted); }
@@ -432,6 +438,8 @@ html:lang(uk) .docket-state { font-size: 8px; }
   .trace-number { font-size: 19px; padding-top: 3px; }
   .trace-list h3 { font-size: 22px; }
   .trace-list p { grid-column: 2 / 4; }
+  .product-workflow li { grid-template-columns: 35px 1fr; }
+  .product-workflow p { grid-column: 2; }
   .trace-list i { grid-column: 3; grid-row: 1; font-size: 8px; margin-top: 7px; }
   .roster { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .roster article { padding: 22px 18px; }

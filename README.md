@@ -1,6 +1,6 @@
 # APEXREST
 
-Static English and Ukrainian landing pages for AI delivery teams working with Oracle APEX. AI agents plan, build and verify; people control the critical import and release decisions.
+Static English and Ukrainian landing pages for **APEXREST for Codex**, the open-source plugin for creating, changing and verifying Oracle APEX applications. The primary path is the user's current Codex session; reviewed agent teams are an explicit opt-in. People control the import scope and production release decisions.
 
 The September 2026 redesign uses the supplied APEXREST pencil-and-ruler identity, warm paper, near-black type and the logo's blue, yellow and coral accents. Plain HTML, CSS and JavaScript; no package manager, framework or runtime font service.
 
@@ -14,7 +14,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 - Ukrainian: <http://127.0.0.1:8000/uk/>
 - Brandbook: <http://127.0.0.1:8000/brand/brandbook.html>
 
-Both language pages are complete static documents with an EN / UA switch and no automatic redirect. Their metadata, headings, contact email drafts and interactive messages remain aligned. HTML uses the standard `uk` language code; UA is the visible label. The sample mission is an illustration and executes no real imports or releases.
+Both language pages are complete static documents with an EN / UA switch and no automatic redirect. Their metadata, headings, product links and interactive messages remain aligned. HTML uses the standard `uk` language code; UA is the visible label. The sample mission is an illustration and executes no real imports or releases.
 
 ## Brandbook and assets
 
@@ -32,7 +32,7 @@ Regenerate logo exports with `python3 brand/tools/export_logos.py`. PDF and soci
 
 ## Verification
 
-The completed redesign checks are recorded in [brand/VERIFICATION.md](brand/VERIFICATION.md).
+The original visual redesign checks are recorded in [brand/VERIFICATION.md](brand/VERIFICATION.md). The September 22 product content refresh, current sources and checks are recorded in [CONTENT-VERIFICATION.md](CONTENT-VERIFICATION.md).
 
 After changes, check JavaScript syntax, XML, CSS braces, whitespace, local asset paths and unique fragment targets. Serve both languages and the 404 page, verify narrow/mobile layouts, keyboard navigation, sample mission switching, reduced motion and the no-JavaScript fallback.
 
@@ -49,3 +49,5 @@ The two pages share `assets/css/site.css`, `assets/js/site.js` and local fonts. 
 The GitHub Actions Pages workflow stages the public files after a push to `main`. It includes both language routes, the 404 page, local SVG logos, fonts/licences and social previews. It excludes the source archive and brandbook. GitHub Pages must use **GitHub Actions** as its source, with `apex.rest` configured as the domain. Pushing, changing Pages settings and changing DNS require an explicit user request.
 
 The implementation story is grounded in [APEXREST for Codex](https://github.com/apexrest-dev/apexrest-codex), [pi-apex](https://github.com/avhrst/pi-apex), [pi-slack-team](https://github.com/avhrst/pi-slack-team), and [Oracle APEX documentation](https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/introduction.html).
+
+Product questions link to [Oleksii Vykhrystiuk on LinkedIn](https://www.linkedin.com/in/avhrst/). See the additional [source record](docs/content-sources.md).

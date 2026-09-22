@@ -8,12 +8,12 @@
     openNavigation: "Відкрити навігацію",
     closeNavigation: "Закрити навігацію",
     selected: (id) => `Демонстраційний приклад ${id} обрано. Показуємо контрольні етапи.`,
-    awaitingApproval: (id) => `У демонстраційному прикладі ${id} перевірки завершено. Наступний етап - схвалення людиною. Реальні дії не виконуються.`
+    awaitingApproval: (id) => `У демонстраційному прикладі ${id} перевірки завершено. Імпорт можливий лише в межах вашого дозволу. Реальні дії не виконуються.`
   } : {
     openNavigation: "Open navigation",
     closeNavigation: "Close navigation",
     selected: (id) => `Example ${id} selected. Illustrating delivery gates.`,
-    awaitingApproval: (id) => `In example ${id}, checks are complete and human approval is required. No live actions are performed.`
+    awaitingApproval: (id) => `In example ${id}, checks are complete. Import stays within your authorization. No live actions are performed.`
   };
 
   const setMenuState = (open) => {
@@ -57,26 +57,26 @@
   window.addEventListener("scroll", updateHeader, { passive: true });
 
   const scenarios = {
-    vendor: {
-      id: "AR–042",
+    change: {
+      id: "APX–01",
       prompt: isUkrainian
-        ? "Створіть процес реєстрації постачальників із лімітами погодження та повним журналом аудиту."
-        : "Build vendor onboarding with approval limits and a complete audit trail.",
-      artifact: "vendor-onboarding.apx"
+        ? "Додайте звіт про статуси замовлень із фільтром за датою до мого тестового застосунку."
+        : "Add an order status report with a date filter to my existing test application.",
+      artifact: "order-status.apx"
     },
-    service: {
-      id: "AR–117",
+    create: {
+      id: "APX–02",
       prompt: isUkrainian
-        ? "Створіть сервісну консоль SLA з правилами ескалації та відображенням навантаження."
-        : "Create an SLA service console with escalation rules and workload visibility.",
-      artifact: "service-operations.apx"
+        ? "Створіть клієнтську CRM із пошуком, формою редагування та дашбордом у моєму dev-середовищі."
+        : "Create a customer CRM with search, an edit form and a dashboard in my development environment.",
+      artifact: "customer-crm.apx"
     },
-    field: {
-      id: "AR–208",
+    repair: {
+      id: "APX–03",
       prompt: isUkrainian
-        ? "Створіть мобільний процес інспекцій зі збором доказів і перевіркою керівником."
-        : "Create a mobile inspection workflow with evidence capture and supervisor review.",
-      artifact: "field-inspections.apx"
+        ? "Виправте фільтр дашборду: він має оновлювати потрібні регіони. Перевірте взаємодію в тестовому застосунку."
+        : "Fix the dashboard filter so it refreshes the affected regions. Verify the interaction in the test app.",
+      artifact: "dashboard-filters.apx"
     }
   };
 
@@ -101,7 +101,7 @@
     }
   };
 
-  const runGateSequence = (scenarioKey = "vendor") => {
+  const runGateSequence = (scenarioKey = "change") => {
     clearGateTimers();
     gates.forEach((gate) => gate.classList.remove("is-complete", "is-hold"));
 
@@ -150,11 +150,11 @@
     const observer = new IntersectionObserver((entries) => {
       if (!entries[0].isIntersecting) return;
       observer.disconnect();
-      runGateSequence("vendor");
+      runGateSequence("change");
     }, { threshold: 0.3 });
     observer.observe(workOrder);
   } else if (workOrder) {
-    runGateSequence("vendor");
+    runGateSequence("change");
   }
 
   const year = document.getElementById("current-year");
