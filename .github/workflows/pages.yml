@@ -24,6 +24,11 @@ jobs:
       - name: Check out site
         uses: actions/checkout@v6
 
+      - name: Check site
+        run: |
+          node --check assets/js/site.js
+          python3 scripts/check-site.py
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

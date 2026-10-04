@@ -6,7 +6,7 @@ These instructions apply to the entire repository.
 
 ## Project purpose
 
-This repository contains the public product site for APEXREST for Codex, the open-source plugin for creating and changing Oracle APEX applications. Single work uses the current Codex session; agent teams require explicit opt-in. The product combines readable APEXlang, compiler-backed validation, scoped imports and runtime verification. Preserve explicit human authority for development targets and production release.
+This repository contains the public product site for APEXREST for Codex, the open-source plugin for creating and changing Oracle APEX applications. It works in the user's current Codex session. Upstream 1.0.0 removed plugin-owned agent teams, model routing and work modes; do not advertise them. The product combines readable APEXlang, compiler-backed validation, scoped imports and runtime verification. Preserve explicit human authority for development targets and production release.
 
 Do not restore the former 1C/BAS news blog, monitoring feeds, bilingual redirect, or daily generated-news workflow.
 
@@ -23,7 +23,9 @@ Keep the site static and framework-free unless the user explicitly requests an a
 - `uk/index.html` — complete Ukrainian page with a visible language switch
 - `brand/` — editable HTML/PDF brandbook, source archive and authoring tools (repository-only)
 - `404.html` — branded GitHub Pages fallback
-- `.github/workflows/pages.yml` — GitHub Pages deployment workflow
+- `.github/workflows/pages.yml` — GitHub Pages deployment workflow; runs the site checks before staging
+- `.github/workflows/site-links.yml` — weekly external-link and npm-version check
+- `scripts/check-site.py` — standard-library site checks (repository-only)
 - `CNAME` — custom domain
 - `robots.txt` and `sitemap.xml` — crawler configuration
 
@@ -45,7 +47,7 @@ Then open `http://localhost:8000`.
 - Keep import and release described as explicit human decisions.
 - Preserve the disclaimer that APEXREST is independent of Oracle and `pi-apex` is an independent integration, not an Oracle product.
 - Use current `apexrest-dev/apexrest-codex` documentation and Oracle documentation as primary sources. Check npm publication before making installation claims; record evidence in `docs/content-sources.md`.
-- Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or team end-to-end support.
+- Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or end-to-end Cloud support.
 - Product questions link to `https://www.linkedin.com/in/avhrst/`; keep the removed general email contact out of the site.
 - Keep the site in English unless the user asks for another language.
 
@@ -64,6 +66,7 @@ Then open `http://localhost:8000`.
 After relevant changes:
 
 - Run `node --check assets/js/site.js` for JavaScript changes.
+- Run `python3 scripts/check-site.py` after every change; add `--external` before content changes to catch moved upstream docs and a newer npm `latest`.
 - Run `xmllint --noout sitemap.xml` when the sitemap changes.
 - Check CSS brace balance and run `git diff --check`.
 - Verify that local `href` and `src` targets exist and that fragment links resolve to unique IDs.

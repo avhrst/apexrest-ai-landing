@@ -1,5 +1,27 @@
 # APEXREST for Codex content refresh
 
+## 2026-10-04 refresh
+
+A full project review found the site behind upstream: npm `latest` had moved from 0.4.0-beta.1 to **1.2.0**, and upstream 1.0.0 had removed agent teams, so section 04 linked to two deleted guides (`work-modes`, `agent-workflow`, both languages). Sources were re-read at upstream commit `13a5c617f7fa74d4cdf1ac09925b4322f4a77500`; see [docs/content-sources.md](docs/content-sources.md).
+
+Content (EN and UK kept aligned):
+
+- Section 04 now describes the current Codex conversation (`$apexrest-work`, `$apexrest-menu`) and the development panel, linking `chat-workflow` and `panel`.
+- Release banner, install tag, boundaries paragraph, changelog label and `softwareVersion` describe 1.2.0; 1.3.0-beta.1 is mentioned only as an experimental preview. The install command is unpinned `npm install -g apexrest`, with the pin shown in the note.
+- Capability 01 describes the offline component (109 families) and pattern (58 patterns) catalogs.
+- Social cards re-rendered from `brand/social/*.html` with “OPEN SOURCE / ВІДКРИТИЙ КОД” in place of “BETA”. Sitemap `lastmod` set to 2026-10-04.
+
+Code and accessibility:
+
+- Minimum rendered text size raised from 7–9px to 10px. 115 dead selectors from removed sections deleted from `site.css`.
+- The hero demo keeps the visitor's chosen example: the IntersectionObserver no longer replays “change” after a selection.
+- Language links have accessible names that contain their visible label (`EN — English`, `UA — Українська`). The 404 page adds Ukrainian text and a `/uk/` link.
+- `scripts/check-site.py` added; Pages runs it before deploying and `site-links.yml` runs `--external` weekly. Removed the obsolete Jira-era `assets/og-uk.prompt.txt`.
+
+Checks: `node --check`, `xmllint`, `git diff --check`, `scripts/check-site.py` and `--external` passed. Run against the previous commit, the external check reports the four 404 links and the version mismatch. Browser checks at 320, 375, 390, 768, 1024, 1280 and 1440 px in both languages found no horizontal overflow, no text below 10px and no console errors; demo scenario switching, the observer race, mobile menu and 404 were exercised.
+
+## 2026-09-22 refresh (historical)
+
 Verified on 2026-09-22. Initial QA covered the local implementation. A subsequent explicit user request authorized committing and pushing this result to main; Pages settings and DNS remain unchanged.
 
 ## Scope

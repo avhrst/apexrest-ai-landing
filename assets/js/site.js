@@ -87,6 +87,8 @@
   const missionStatus = document.getElementById("mission-status");
   const gates = Array.from(document.querySelectorAll(".gate"));
   const gateTimers = [];
+  let currentScenario = "change";
+  let gateObserver = null;
 
   const clearGateTimers = () => {
     while (gateTimers.length) window.clearTimeout(gateTimers.pop());
@@ -127,6 +129,9 @@
   const selectScenario = (scenarioKey) => {
     const scenario = scenarios[scenarioKey];
     if (!scenario) return;
+    currentScenario = scenarioKey;
+    gateObserver?.disconnect();
+    gateObserver = null;
 
     scenarioButtons.forEach((button) => {
       const selected = button.dataset.scenario === scenarioKey;
@@ -147,14 +152,15 @@
 
   const workOrder = document.querySelector(".work-order");
   if (workOrder && "IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((entries) => {
+    gateObserver = new IntersectionObserver((entries) => {
       if (!entries[0].isIntersecting) return;
-      observer.disconnect();
-      runGateSequence("change");
+      gateObserver.disconnect();
+      gateObserver = null;
+      runGateSequence(currentScenario);
     }, { threshold: 0.3 });
-    observer.observe(workOrder);
+    gateObserver.observe(workOrder);
   } else if (workOrder) {
-    runGateSequence("change");
+    runGateSequence(currentScenario);
   }
 
   const year = document.getElementById("current-year");

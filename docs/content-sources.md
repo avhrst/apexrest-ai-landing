@@ -1,79 +1,74 @@
 # Website content sources
 
-Verified on **2026-09-22**. This document records the source basis for the landing-page content update. It is a repository-only audit note, not a release announcement or proof that the landing page has been published. Updating these local files does not deploy the website.
+Verified on **2026-10-04**. This document records the source basis for the landing-page content. It is a repository-only audit note, not a release announcement or proof that the landing page has been published. Updating these local files does not deploy the website.
 
 ## Verified source snapshot
 
 - Canonical product repository: [apexrest-dev/apexrest-codex](https://github.com/apexrest-dev/apexrest-codex).
-- GitHub's [main commit API](https://api.github.com/repos/apexrest-dev/apexrest-codex/commits/main) returned **`c590dd64cd1240e3972519a84302ca3d85b5c926`**, committed **2026-09-22T07:33:34Z**: “Document public apexrest npm installation and publication”. [Pinned commit](https://github.com/apexrest-dev/apexrest-codex/commit/c590dd64cd1240e3972519a84302ca3d85b5c926).
-- The local product checkout was clean at that exact SHA. The ten pinned raw documents listed below were fetched from GitHub and compared byte-for-byte with the local files; all matched.
-- [npm registry metadata](https://registry.npmjs.org/apexrest) reported both `latest` and `beta` as **`0.4.0-beta.1`**, with publication time **2026-09-22T07:28:12.643Z**. The version's declared Node engine is **`>=24 <27`** and its executable is `apexrest` → `dist/runtime/apexrest.mjs`. [Version endpoint](https://registry.npmjs.org/apexrest/0.4.0-beta.1), [public package page](https://www.npmjs.com/package/apexrest).
-- At verification, GitHub's [latest-release endpoint](https://api.github.com/repos/apexrest-dev/apexrest-codex/releases/latest) returned HTTP 404 and [tags endpoint](https://api.github.com/repos/apexrest-dev/apexrest-codex/tags?per_page=5) returned `[]`. npm availability does not establish a GitHub release, signed stable release, or successful connected verification of every capability.
+- GitHub's [main commit API](https://api.github.com/repos/apexrest-dev/apexrest-codex/commits/main) returned **`13a5c617f7fa74d4cdf1ac09925b4322f4a77500`**, committed **2026-09-30T08:48:56Z**: “docs: verify npm 1.3.0 beta publication”. [Pinned commit](https://github.com/apexrest-dev/apexrest-codex/commit/13a5c617f7fa74d4cdf1ac09925b4322f4a77500).
+- [npm registry metadata](https://registry.npmjs.org/apexrest) reported `latest` = **`1.2.0`** (published **2026-09-24T15:16:40.929Z**) and `beta` = **`1.3.0-beta.1`**. Declared Node engine **`>=24 <27`**, license Apache-2.0. [Public package page](https://www.npmjs.com/package/apexrest).
+- The site presents **1.2.0** as the current release and mentions 1.3.0-beta.1 only as an experimental preview. `scripts/check-site.py --external` compares the page's `softwareVersion` with npm `latest`.
+- Upstream `docs/getting-started.md` and `docs/index.md` still name 1.1.0 at this revision; the README and the live registry are authoritative for the current version.
 - The LinkedIn destination was supplied explicitly by the user. Treat it as the requested contact link; do not infer additional ownership, endorsement or customer claims from it.
+
+## Change since the 2026-09-22 record
+
+[Upstream 1.0.0](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/CHANGELOG.md#L15) removed plugin-owned model sessions, task registration, role routing, team tools/skill and panel controls. `docs/work-modes.md` and `docs/agent-workflow.md` no longer exist. The site no longer describes agent teams, work modes or model routing.
 
 ## Installation text
 
-Use this exact, version-pinned global-install example:
+Use the unpinned command documented by the README, which installs npm `latest`:
 
 ```sh
-npm install -g apexrest@0.4.0-beta.1
+npm install -g apexrest
 apexrest --version
 apexrest
 ```
 
-The last command opens the terminal menu. **Install tools** handles missing client dependencies; **Install plugin** separately registers APEXREST in Codex. Restart Codex and start a new task after registration. npm installation alone is not plugin registration, Oracle provisioning, connection configuration or application deployment. The documentation also supports unpinned `npm install -g apexrest` and project-local `npm install apexrest` followed by `npx apexrest`.
+The last command opens the terminal menu. **Install tools** handles missing client dependencies; **Install plugin** separately registers APEXREST in Codex. Restart Codex and start a new task after registration. npm installation alone is not plugin registration, Oracle provisioning, connection configuration or application deployment. Pin with `apexrest@1.2.0`. Sources: [README 59–81](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/README.md#L59-L81).
 
-An alternative native registration path, for an existing suitable Node/Codex installation, is:
+The alternative native registration path is unchanged:
 
 ```sh
 codex plugin marketplace add apexrest-dev/apexrest-codex
 codex plugin add apexrest-apex@apexrest
 ```
 
-These commands register the plugin; direct registration alone does not add an `apexrest` launcher to shell PATH. No local TypeScript build is required for the checked-in bundle. Sources: [README installation, lines 76–139](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/README.md#L76-L139), [Ukrainian equivalent, lines 76–139](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/README.uk.md#L76-L139).
+Direct registration alone does not add an `apexrest` launcher to shell PATH.
 
 ## Claims and boundaries
 
 | Topic | Supported website statement | Important boundary | Pinned source |
 | --- | --- | --- | --- |
-| Core purpose | Build and change Oracle APEX applications with Codex, from source changes to a controlled import and verification workflow. | A workflow capability is not a guarantee that every generated app passes or is production-ready. APEXREST is independent of Oracle and OpenAI. | [README 9–23](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/README.md#L9-L23) |
-| New and existing applications | Generate Oracle APEXlang, start from a blank or CRM template, or adopt an existing application while preserving Oracle IDs and metadata. | Preserve unrelated pages, shared components and authentication; compiler component coverage is not universal. | [README 149–175](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/README.md#L149-L175), [deployment safety 11–13](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/deployment-safety.md#L11-L13) |
-| Work in the current chat | Single-agent mode uses the user's current Codex session. | No separate worker, automatic panel, independent peer QA, plugin token accounting or plugin-enforced run timeout in this mode. | [Work modes 5–20](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/work-modes.md#L5-L20) |
-| Optional reviewed teams | Explicitly enabled teams have a manager, one to three developers, independent QA, code review and final review. | Teams require explicit Settings opt-in. Merely requesting `team` at launch cannot enable them. Required checks must pass; unavailable checks are not success. | [Work modes 5–20](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/work-modes.md#L5-L20) |
-| Database access | Choose a direct Oracle listener or ORDS HTTP(S), including APEXlang import/export. | Needs an existing authorized database account, correct schema URL and REST-Enabled SQL for ORDS. Keep credentials out of prompts and repositories. | [README 27](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/README.md#L27), [getting started 176–200](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/getting-started.md#L176-L200) |
-| Controlled delivery | Plans bind source, toolchain and target; existing apps get verified SQL backups; authorization, identity and drift checks precede writes. | An explicit identified development/test task can authorize its scoped import. Production has a separate signed approval on a protected runner. Lost responses can remain `outcome_unknown`; no automatic retry is implied. | [Deployment safety 5–25](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/deployment-safety.md#L5-L25) |
-| Browser verification | Check the configured APEX application in Codex's in-app browser or an external browser. | Opening a URL is not verification. Authentication, usable controls and observed affected interactions are required; automated suites have separate configuration. | [Work modes 22–31](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/work-modes.md#L22-L31) |
-| Less repeated context | Current-session execution, scoped metadata batches and focused reference retrieval reduce repeated tool/model exchanges. | Local payload measurements do not demonstrate billed-token savings, customer performance, or new Oracle/native-task coverage. Use no unsupported percentages. | [Release notes 5–18](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/release-notes.md#L5-L18), [changelog 5–12](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/CHANGELOG.md#L5-L12) |
-| Cloud option | A documented setup runs the bundled CLI inside a Cloud container and accesses an authorized database through ORDS HTTPS. | The Cloud example does not establish native plugin/MCP discovery, desktop panel support, reviewed teams, browser verification or an end-to-end Cloud run. It remains pinned to a separate `0.2.0-beta.1+codex.20260919143707` build. | [Cloud guide 5–29](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/codex-cloud.md#L5-L29), [Cloud guide 112–131](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/codex-cloud.md#L112-L131) |
-| Beta status | Public npm package `0.4.0-beta.1` is available. | Stable qualification remains open. Historical connected evidence retains its tested version and scope; a version bump is not a new connected test. | [README 19](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/README.md#L19), [README 185–194](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/README.md#L185-L194), [npm registry](https://registry.npmjs.org/apexrest) |
+| Core purpose | Build and change Oracle APEX applications with Codex, from source changes to a controlled import and verification workflow. | Not a guarantee that every generated app passes or is production-ready. Independent of Oracle and OpenAI. | [README 9–13](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/README.md#L9-L13) |
+| Current conversation | Describe the change in the open Codex chat or use `$apexrest-work`; implementation uses that conversation's context, model and permissions. `$apexrest-menu` shows all functions. | No plugin startup call, model sessions, model selection or agent teams. | [Chat workflow 5](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/docs/chat-workflow.md#L5), [README 116](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/README.md#L116) |
+| Development panel | `$apexrest-panel` shows project/connection settings, Oracle/APEX jobs and diagnostics; Direct listener or ORDS; Codex or external verification browser. | The panel cannot grant trust or deployment authorization, or apply a plan. Opening a browser is not verification. | [Panel 25–39](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/docs/panel.md#L25-L39) |
+| Catalogs | Offline catalogs: 109 component families and 58 reusable UX patterns with compiler-checked APEXlang recipes. | Compiler readiness does not imply SQL, import or browser verification; 1 component and 15 pattern recipes remain unresolved. | [README 29–31](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/README.md#L29-L31) |
+| Database access | Direct Oracle listener or ORDS HTTP(S), including APEXlang import/export. | Needs an existing authorized account; keep credentials out of prompts. | [README 25](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/README.md#L25) |
+| Controlled delivery | Plans bind source, toolchain and target; existing apps get verified SQL backups; an explicit dev/test request authorizes its scoped import. | Production needs an externally signed approval on a protected runner. Unknown outcomes require reconciliation. | [README 142](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/README.md#L142), [Deployment safety 37](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/docs/deployment-safety.md#L37) |
+| Cloud option | A documented setup runs the bundled CLI in a Cloud container over ORDS HTTPS. | Does not establish native Cloud plugin/MCP discovery, panel support or an end-to-end Cloud run. | [README 57](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/README.md#L57), [Cloud guide 5](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/docs/codex-cloud.md#L5) |
+| Release status | 1.2.0 is npm `latest`; 1.3.0-beta.1 previews experimental Composer and working copies. | No signed GitHub artifacts, Git tag or full platform/Oracle qualification. Connected imports, recovery and broader platforms remain open. | [README 19](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/README.md#L19), [Implementation status 55](https://github.com/apexrest-dev/apexrest-codex/blob/13a5c617f7fa74d4cdf1ac09925b4322f4a77500/docs/implementation-status.md#L55) |
 
-## Requirements and verification scope
+Prerequisites are unchanged from the previous record: Codex with native plugin support, Node 24 LTS (24–26), Java 21 and reviewed SQLcl 26.1.2, an existing Oracle APEX 26.1+ target, and a saved SQLcl connection or plugin-local ORDS credentials.
 
-[Getting started, lines 13–24](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/getting-started.md#L13-L24) and [Ukrainian equivalent](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/docs/getting-started.uk.md#L13-L24) specify:
+## Raw-source record
 
-- Codex with native plugin support. Codex CLI `0.154.0` on macOS arm64 is recorded exercised evidence, not a universal minimum-version or cross-platform guarantee.
-- Node 24 LTS recommended; package-supported Node range is 24–26.
-- Java 21 and reviewed SQLcl `26.1.2` for Oracle generation, validation, export and import. ORDS requires a JDK with `jdk.compiler`.
-- An existing Oracle APEX `26.1+` target and authorized direct SQLcl or ORDS connection for connected work.
-- Chromium and the relevant dependencies for browser/API suites. utPLSQL is needed only when a selected SQL suite requires it; service tables are not a blanket prerequisite for an application-only import.
-
-The recorded native installation, Oracle compilation, unchanged ORDS round trip and local runtime checks have distinct scopes. Do not describe every feature, every platform, changed imports or recovery paths as end-to-end verified. See [README evidence table, 185–194](https://github.com/apexrest-dev/apexrest-codex/blob/c590dd64cd1240e3972519a84302ca3d85b5c926/README.md#L185-L194).
-
-The September 21 release notes describe what a commit/push does not publish; older sections describe then-unpublished candidates. They are historical statements. For the current npm publication state, use the September 22 README and the live registry result above. The Cloud bootstrap's older version pin is also separate from the current npm release.
-
-## Raw-source parity record
-
-All files below matched the pinned public raw source and the clean local product checkout byte-for-byte. SHA-256 hashes identify exactly the reviewed document bytes.
+SHA-256 of the raw documents read at the pinned revision.
 
 | File | SHA-256 |
 | --- | --- |
-| `README.md` | `9774db28ab57641ab8c95812df122767b4ee20dbc80a2a74485eed503606242b` |
-| `README.uk.md` | `c546c607876f0acd415b339249c9f4e2ffd0089ed8d230b37d2096c47c7e7a7a` |
-| `docs/getting-started.md` | `6bc3ef0f992ab383d3ec570758f25e5d9f49cb55652cbd6abd60672560676f62` |
-| `docs/getting-started.uk.md` | `1981584b4cdbb0f169305ea2be05db30ff2aafbabd33589c875911bd4a7e220c` |
-| `docs/work-modes.md` | `e71dd3b7775e905ef5e525bdc5e7f356d50661207ad668fa7ab8f3f4a4b3a8b1` |
-| `docs/work-modes.uk.md` | `ecd965f64121acc7b77441c7a3da5b43d2a49e7bae18cd98f9bb3d42238dc0fb` |
-| `docs/codex-cloud.md` | `9e9a1786c09b09c49ac47b27d0f6f9e7ca21d83f7ae9ed0b97656bb941f78209` |
-| `docs/release-notes.md` | `bd7449e9a832c7ba833d16841af897d5d4828a813637ecb6cb4a90191fed9c22` |
-| `CHANGELOG.md` | `ad2b07a43a342cdf5878bf811fe48c1917c1ef009a1cdef6d3db7cc4c0245d28` |
-| `docs/deployment-safety.md` | `492833d55f4bf468533809702f08f87c8274f7688d572cb410e60bc78bedbb56` |
+| `README.md` | `3ebf67076704e27c1501e9a82ad9a08dbf39cac34cde96d1d2654c1d5e694fa4` |
+| `README.uk.md` | `4aed4011b5c9612142b294af57b81e7691e7a723e0b2cbfcbc3e0943d62a42ee` |
+| `CHANGELOG.md` | `75bc682fb6ba0b693b027c8c210169541d3941e90aada99afda1994aa3c69cb9` |
+| `docs/getting-started.md` | `a842082dd09be491fd793f4594dec994952a41eb23ee15d68cc7bc4f8d4fd624` |
+| `docs/getting-started.uk.md` | `ccc524a0c26293c414b56aa76b7b2a2cf4a436e626d14a5134aefb28ae7c3b20` |
+| `docs/chat-workflow.md` | `1872dffe81582953a65c58c9b12cfe84060c50591310949d48f0b2e783777ca0` |
+| `docs/chat-workflow.uk.md` | `6371281ff4ff708f1f008e065c65acff66d22c43b623c27e440f91744efc0ef8` |
+| `docs/panel.md` | `4b1a9906b1d208c8fb64b50a3f542bb2506f4dafc70546affaf787355dd6966d` |
+| `docs/panel.uk.md` | `a1d1830e8be2d495ab66dda62ffd57fc3324b8a81e945b11d1b34c34be0072ca` |
+| `docs/deployment-safety.md` | `da5c8ad7c7c3d4aa26e29f8151e4f6db7a18da47e669a843b319f0a209f02063` |
+| `docs/codex-cloud.md` | `389546c66bb931ecdd7f81843403ba29a25c3c6088ca130a81f8d657773a9210` |
+| `docs/release-notes.md` | `990c34411ff24755f85cf6dca5aabe66737758377983fdd19913c7e001bd1ca5` |
+| `docs/implementation-status.md` | `af6c5c065cf4339af12ced2b770ee1dcc33e518a72a03651d15f6ad756aff7fe` |
+| `docs/pattern-catalog.md` | `1b91c415b5fbc60e182bc22c016d207e4af57951635ea34bbd7b4f7f43f4551e` |
+| `docs/component-catalog.md` | `08b35fdfaba505c7a1f91721623c6c0300c75501c706cfb41643d5d5427fcac0` |

@@ -1,6 +1,6 @@
 # APEXREST
 
-Static English and Ukrainian landing pages for **APEXREST for Codex**, the open-source plugin for creating, changing and verifying Oracle APEX applications. The primary path is the user's current Codex session; reviewed agent teams are an explicit opt-in. People control the import scope and production release decisions.
+Static English and Ukrainian landing pages for **APEXREST for Codex**, the open-source plugin for creating, changing and verifying Oracle APEX applications. It works in the user's current Codex session, with an optional development panel. People control the import scope and production release decisions.
 
 The September 2026 redesign uses the supplied APEXREST pencil-and-ruler identity, warm paper, near-black type and the logo's blue, yellow and coral accents. Plain HTML, CSS and JavaScript; no package manager, framework or runtime font service.
 
@@ -32,15 +32,17 @@ Regenerate logo exports with `python3 brand/tools/export_logos.py`. PDF and soci
 
 ## Verification
 
-The original visual redesign checks are recorded in [brand/VERIFICATION.md](brand/VERIFICATION.md). The September 22 product content refresh, current sources and checks are recorded in [CONTENT-VERIFICATION.md](CONTENT-VERIFICATION.md).
+The original visual redesign checks are recorded in [brand/VERIFICATION.md](brand/VERIFICATION.md). Product content refreshes, current sources and checks are recorded in [CONTENT-VERIFICATION.md](CONTENT-VERIFICATION.md).
 
 After changes, check JavaScript syntax, XML, CSS braces, whitespace, local asset paths and unique fragment targets. Serve both languages and the 404 page, verify narrow/mobile layouts, keyboard navigation, sample mission switching, reduced motion and the no-JavaScript fallback.
 
 ```sh
 node --check assets/js/site.js
-xmllint --noout sitemap.xml
+python3 scripts/check-site.py
 git diff --check
 ```
+
+`scripts/check-site.py` covers local paths, fragment targets, EN/UK ID parity, JSON-LD, CSS braces and the sitemap. Add `--external` to check product links and compare the page version with npm `latest`. The Pages workflow runs the local checks before every deploy; `.github/workflows/site-links.yml` runs the external check weekly.
 
 The two pages share `assets/css/site.css`, `assets/js/site.js` and local fonts. Public images must also be included in `.github/workflows/pages.yml`. Keep the brandbook, authoring tools and source archive outside the staged Pages surface.
 
