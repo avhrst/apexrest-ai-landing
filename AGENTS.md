@@ -47,7 +47,7 @@ Then open `http://localhost:8000`.
 - Keep import and release described as explicit human decisions.
 - Preserve the disclaimer that APEXREST is independent of Oracle and `pi-apex` is an independent integration, not an Oracle product.
 - Use current `apexrest-dev/apexrest` documentation and Oracle documentation as primary sources. Check npm publication before making installation claims; record evidence in `docs/content-sources.md`.
-- Claude Code support is in the source repository but not in the published npm packages (1.2.0 / 1.3.0-beta.1 carry the earlier Codex-only surface); describe Claude Code installation through the plugin marketplace only, and keep the end-to-end session and published-marketplace caveats until upstream closes them. Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or end-to-end Cloud support.
+- The site presents 1.3.0 (redesign: 11 tools, 5 skills, Claude Code support) as the current release because upstream README, CHANGELOG and release notes declare it npm `latest`. On 2026-10-06 the npm registry still reported `latest` 1.2.0, so `check-site.py --external` fails until publication lands; rerun it before further version claims. Describe Claude Code installation through the plugin marketplace only, and keep the caveat that live Codex/Claude Code sessions and connected Oracle checks are not yet recorded. Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or end-to-end Cloud support.
 - Product questions link to `https://www.linkedin.com/in/avhrst/`; keep the removed general email contact out of the site.
 - Keep the site in English unless the user asks for another language.
 

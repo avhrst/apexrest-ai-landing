@@ -208,6 +208,7 @@ h1 em { color: var(--muted); }
 .use-case-grid span { font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
 .use-case-grid h3 { margin-top: 22px; font-size: 24px; }
 .use-case-grid p { color: var(--muted); font-size: 13px; margin: 0; }
+.use-case-grid code { font-family: var(--font-mono); font-size: .9em; }
 .research-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 12%; }
 .research h2 { font-size: 38px; }
 .source-list { border-top: 1px solid var(--line); }
