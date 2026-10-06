@@ -6,7 +6,7 @@ These instructions apply to the entire repository.
 
 ## Project purpose
 
-This repository contains the public product site for APEXREST for Codex, the open-source plugin for creating and changing Oracle APEX applications. It works in the user's current Codex session. Upstream 1.0.0 removed plugin-owned agent teams, model routing and work modes; do not advertise them. The product combines readable APEXlang, compiler-backed validation, scoped imports and runtime verification. Preserve explicit human authority for development targets and production release.
+This repository contains the public product site for APEXREST, the open-source plugin for creating and changing Oracle APEX applications in Codex and Claude Code. It works in the user's current session. Upstream 1.0.0 removed plugin-owned agent teams, model routing and work modes; do not advertise them. The product combines readable APEXlang, compiler-backed validation, scoped imports and runtime verification. Preserve explicit human authority for development targets and production release.
 
 Do not restore the former 1C/BAS news blog, monitoring feeds, bilingual redirect, or daily generated-news workflow.
 
@@ -46,8 +46,8 @@ Then open `http://localhost:8000`.
 - Do not claim autonomous deployment, zero defects, guaranteed security, customer results, or unsupported performance metrics.
 - Keep import and release described as explicit human decisions.
 - Preserve the disclaimer that APEXREST is independent of Oracle and `pi-apex` is an independent integration, not an Oracle product.
-- Use current `apexrest-dev/apexrest-codex` documentation and Oracle documentation as primary sources. Check npm publication before making installation claims; record evidence in `docs/content-sources.md`.
-- Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or end-to-end Cloud support.
+- Use current `apexrest-dev/apexrest` documentation and Oracle documentation as primary sources. Check npm publication before making installation claims; record evidence in `docs/content-sources.md`.
+- Claude Code support is in the source repository but not in the published npm packages (1.2.0 / 1.3.0-beta.1 carry the earlier Codex-only surface); describe Claude Code installation through the plugin marketplace only, and keep the end-to-end session and published-marketplace caveats until upstream closes them. Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or end-to-end Cloud support.
 - Product questions link to `https://www.linkedin.com/in/avhrst/`; keep the removed general email contact out of the site.
 - Keep the site in English unless the user asks for another language.
 

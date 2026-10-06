@@ -1,6 +1,6 @@
 # APEXREST
 
-Static English and Ukrainian landing pages for **APEXREST for Codex**, the open-source plugin for creating, changing and verifying Oracle APEX applications. It works in the user's current Codex session, with an optional development panel. People control the import scope and production release decisions.
+Static English and Ukrainian landing pages for **APEXREST**, the open-source plugin for creating, changing and verifying Oracle APEX applications. It works in the user's current Codex or Claude Code session. People control the import scope and production release decisions.
 
 The September 2026 redesign uses the supplied APEXREST pencil-and-ruler identity, warm paper, near-black type and the logo's blue, yellow and coral accents. Plain HTML, CSS and JavaScript; no package manager, framework or runtime font service.
 
@@ -50,6 +50,6 @@ The two pages share `assets/css/site.css`, `assets/js/site.js` and local fonts. 
 
 The GitHub Actions Pages workflow stages the public files after a push to `main`. It includes both language routes, the 404 page, local SVG logos, fonts/licences and social previews. It excludes the source archive and brandbook. GitHub Pages must use **GitHub Actions** as its source, with `apex.rest` configured as the domain. Pushing, changing Pages settings and changing DNS require an explicit user request.
 
-The implementation story is grounded in [APEXREST for Codex](https://github.com/apexrest-dev/apexrest-codex), [pi-apex](https://github.com/avhrst/pi-apex), [pi-slack-team](https://github.com/avhrst/pi-slack-team), and [Oracle APEX documentation](https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/introduction.html).
+The implementation story is grounded in [APEXREST](https://github.com/apexrest-dev/apexrest), [pi-apex](https://github.com/avhrst/pi-apex), [pi-slack-team](https://github.com/avhrst/pi-slack-team), and [Oracle APEX documentation](https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/introduction.html).
 
 Product questions link to [Oleksii Vykhrystiuk on LinkedIn](https://www.linkedin.com/in/avhrst/). See the additional [source record](docs/content-sources.md).
