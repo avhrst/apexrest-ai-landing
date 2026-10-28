@@ -211,6 +211,10 @@ h1 em { color: var(--muted); }
 .use-case-grid code { font-family: var(--font-mono); font-size: .9em; }
 .research-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 12%; }
 .research h2 { font-size: 38px; }
+.journal-card { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); }
+.journal-card .micro-label { color: var(--muted); margin-bottom: 14px; }
+.journal-card h3 { font-size: 26px; margin-bottom: 14px; }
+.journal-card p:not(.micro-label) { max-width: 430px; color: var(--muted); font-size: 14px; }
 .source-list { border-top: 1px solid var(--line); }
 .source-list a { display: grid; grid-template-columns: 65px 1fr 16px; gap: 20px; padding: 19px 0; border-bottom: 1px solid var(--line); font-size: 12px; align-items: center; }
 .source-list a span { font-family: var(--font-mono); font-size: 10px; color: var(--muted); }

@@ -1,5 +1,15 @@
 # Website content sources
 
+## Blog link and description (2026-10-28)
+
+- The user supplied [blog.apex.rest](https://blog.apex.rest/) as the blog destination. Sites metadata identifies it as **APEXREST Journal — ORCL APEX**, with the description “A home for Oracle APEX and PL/SQL enthusiasts.”
+- The existing blog's local source (`dist/index.html` in its Sites checkout) describes Oracle APEX and PL/SQL community news, hands-on resources, tools, events and worldwide job listings. The landing page summarizes those categories in English and Ukrainian, with links in navigation, documentation and the footer. Organization structured data also points to the blog.
+- An unauthenticated HTTPS request returned **401 / Sign in required** on 2026-10-28. The blog currently requires ChatGPT sign-in. This change does not alter its access policy or claim public access.
+- Before this edit, `python3 scripts/check-site.py --external` found two existing issues: `docs/panel.md` returned **404**, and the [npm registry](https://registry.npmjs.org/apexrest) reported `latest` **2.1.0** while the landing page still presents **1.3.0**. They remain outside this blog-link change. The new blog link also returns 401 to the unauthenticated external checker; it is not treated as a passing public-link check.
+- Product metadata and social preview artwork remain unchanged because this edit adds a related reading destination without changing the product description. Both landing-page sitemap dates are updated to 2026-10-28.
+
+## Earlier product verification
+
 Verified on **2026-10-04**. This document records the source basis for the landing-page content. It is a repository-only audit note, not a release announcement or proof that the landing page has been published. Updating these local files does not deploy the website.
 
 ## Verified source snapshot
