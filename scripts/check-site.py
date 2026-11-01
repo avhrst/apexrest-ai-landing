@@ -2,7 +2,7 @@
 """Static checks for the public site. Standard library only.
 
     python3 scripts/check-site.py             # local structure checks
-    python3 scripts/check-site.py --external  # also external links and npm version
+    python3 scripts/check-site.py --external  # also external links, plugin source and npm versions
 
 Exits non-zero and lists every failure.
 """
@@ -93,12 +93,22 @@ def check_external():
             failures.append(f"external link {error.code}: {url}")
         except urllib.error.URLError as error:
             failures.append(f"external link unreachable ({error.reason}): {url}")
+    # The plugin installs from the repository, so softwareVersion follows its
+    # package.json; the npm package can lag and is named separately on the page.
+    try:
+        with fetch("https://raw.githubusercontent.com/apexrest-dev/apexrest/main/package.json") as response:
+            source = json.load(response)["version"]
+        published = software_version(LANGUAGE_PAIR[0])
+        if source != published:
+            failures.append(f"plugin source is {source}, but the site shows {published}")
+    except (urllib.error.URLError, KeyError, ValueError) as error:
+        failures.append(f"plugin source version check failed: {error}")
     try:
         with fetch("https://registry.npmjs.org/apexrest") as response:
             latest = json.load(response)["dist-tags"]["latest"]
-        published = software_version(LANGUAGE_PAIR[0])
-        if latest != published:
-            failures.append(f"npm latest is {latest}, but the site shows {published}")
+        for page in LANGUAGE_PAIR:
+            if f"apexrest@{latest}" not in read(page):
+                failures.append(f"{page}: does not name npm latest apexrest@{latest}")
     except (urllib.error.URLError, KeyError, ValueError) as error:
         failures.append(f"npm registry check failed: {error}")
 

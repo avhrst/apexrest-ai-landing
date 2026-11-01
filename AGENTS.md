@@ -24,7 +24,7 @@ Keep the site static and framework-free unless the user explicitly requests an a
 - `brand/` — editable HTML/PDF brandbook, source archive and authoring tools (repository-only)
 - `404.html` — branded GitHub Pages fallback
 - `.github/workflows/pages.yml` — GitHub Pages deployment workflow; runs the site checks before staging
-- `.github/workflows/site-links.yml` — weekly external-link and npm-version check
+- `.github/workflows/site-links.yml` — weekly external-link, plugin-source and npm-version check
 - `scripts/check-site.py` — standard-library site checks (repository-only)
 - `CNAME` — custom domain
 - `robots.txt` and `sitemap.xml` — crawler configuration
@@ -47,7 +47,7 @@ Then open `http://localhost:8000`.
 - Keep import and release described as explicit human decisions.
 - Preserve the disclaimer that APEXREST is independent of Oracle and `pi-apex` is an independent integration, not an Oracle product.
 - Use current `apexrest-dev/apexrest` documentation and Oracle documentation as primary sources. Check npm publication before making installation claims; record evidence in `docs/content-sources.md`.
-- The site presents 1.3.0 (redesign: 11 tools, 5 skills, Claude Code support) as the current release because upstream README, CHANGELOG and release notes declare it npm `latest`. On 2026-10-06 the npm registry still reported `latest` 1.2.0, so `check-site.py --external` fails until publication lands; rerun it before further version claims. Describe Claude Code installation through the plugin marketplace only, and keep the caveat that live Codex/Claude Code sessions and connected Oracle checks are not yet recorded. Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or end-to-end Cloud support.
+- The site presents plugin source 2.5.0 (11 tools, 6 skills, database-free local preview, APEX 26.2 partial imports, larger component library, optional OpenAI Decisions selection) because the marketplace installs from the repository and upstream README, CHANGELOG and release notes describe that source. npm `latest` lags (2.1.0 on 2026-11-01); name it as `apexrest@<version>` in the npm note. `check-site.py --external` compares `softwareVersion` with upstream `package.json` and checks that both pages name npm `latest`. Describe the local preview as a design aid, never as compiler, import or Oracle evidence. Describe Claude Code installation through the plugin marketplace only, and keep the caveat that native Codex/Claude Code runs and connected Oracle checks are partial. APEXREST deploys only to DEV/QA/TEST; production stays outside the plugin. Distinguish the local native plugin from the separate Cloud CLI + ORDS setup. Do not imply unverified native Cloud integration or end-to-end Cloud support. Do not quote the single-page Decisions pilot timings as general performance.
 - Product questions link to `https://www.linkedin.com/in/avhrst/`; keep the removed general email contact out of the site.
 - Keep the site in English unless the user asks for another language.
 
