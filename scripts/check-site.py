@@ -15,7 +15,8 @@ import urllib.request
 import xml.dom.minidom
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PAGES = ["index.html", "uk/index.html", "404.html", "brand/social/en.html", "brand/social/uk.html"]
+ARTICLE_PAIR = ("blog/replacing-1c-with-oracle-apex/index.html", "uk/blog/zamina-1c-na-oracle-apex/index.html")
+PAGES = ["index.html", "uk/index.html", "404.html", "brand/social/en.html", "brand/social/uk.html", *ARTICLE_PAIR]
 LANGUAGE_PAIR = ("index.html", "uk/index.html")
 # These hosts reject automated requests; their links are checked by hand.
 BOT_BLOCKED = ("linkedin.com", "npmjs.com")
@@ -63,9 +64,13 @@ def check_local():
     english, ukrainian = LANGUAGE_PAIR
     if ids[english] != ids[ukrainian]:
         failures.append(f"EN/UK id mismatch: {sorted(ids[english] ^ ids[ukrainian])}")
+    if ids[ARTICLE_PAIR[0]] != ids[ARTICLE_PAIR[1]]:
+        failures.append(f"article EN/UK id mismatch: {sorted(ids[ARTICLE_PAIR[0]] ^ ids[ARTICLE_PAIR[1]])}")
+    if read(ARTICLE_PAIR[0]).count("<img") != read(ARTICLE_PAIR[1]).count("<img"):
+        failures.append("article EN/UK image count mismatch")
     if software_version(english) != software_version(ukrainian):
         failures.append("EN/UK softwareVersion mismatch")
-    for stylesheet in ("assets/css/site.css", "brand/brandbook.css"):
+    for stylesheet in ("assets/css/site.css", "assets/css/article.css", "brand/brandbook.css"):
         css = read(stylesheet)
         if css.count("{") != css.count("}"):
             failures.append(f"{stylesheet}: unbalanced braces")
@@ -82,7 +87,7 @@ def fetch(url, method="GET"):
 
 def check_external():
     links = set()
-    for page in LANGUAGE_PAIR + ("404.html",):
+    for page in LANGUAGE_PAIR + ARTICLE_PAIR + ("404.html",):
         links |= set(re.findall(r'href="(https://[^"]+)"', read(page)))
     for url in sorted(links):
         if any(host in url for host in BOT_BLOCKED):

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Заміна 1С на Oracle APEX: експеримент на кілька годин — APEXREST</title>
+  <meta name="description" content="Щоб перевірити плагін APEXREST, я взяв Oracle APEX, Claude Code і Linear та спробував зібрати конфігурацію торгівлі за зразком 1С 8.3. 120 сторінок, 107 таблиць, 1 879 автотестів — скріншоти, цифри і чесний перелік обмежень.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#F6F5F0">
+  <link rel="canonical" href="https://apex.rest/uk/blog/zamina-1c-na-oracle-apex/">
+  <link rel="alternate" hreflang="en" href="https://apex.rest/blog/replacing-1c-with-oracle-apex/">
+  <link rel="alternate" hreflang="uk" href="https://apex.rest/uk/blog/zamina-1c-na-oracle-apex/">
+  <link rel="alternate" hreflang="x-default" href="https://apex.rest/blog/replacing-1c-with-oracle-apex/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://apex.rest/uk/blog/zamina-1c-na-oracle-apex/">
+  <meta property="og:site_name" content="APEXREST">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Заміна 1С на Oracle APEX: експеримент на кілька годин">
+  <meta property="og:description" content="Oracle APEX + Claude Code + плагін APEXREST + Linear: конфігурація торгівлі за зразком 1С 8.3. Скріншоти, цифри й обмеження.">
+  <meta property="og:image" content="https://apex.rest/assets/blog/trade-1c/home.jpg">
+  <meta property="og:image:alt" content="Початкова сторінка застосунку Trade на Oracle APEX з інтерфейсом у стилі 1С">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Заміна 1С на Oracle APEX: експеримент на кілька годин">
+  <meta name="twitter:description" content="Oracle APEX + Claude Code + плагін APEXREST + Linear: конфігурація торгівлі за зразком 1С 8.3.">
+  <meta name="twitter:image" content="https://apex.rest/assets/blog/trade-1c/home.jpg">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/article.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Заміна 1С на Oracle APEX: експеримент на кілька годин","inLanguage":"uk","datePublished":"2026-11-10","author":{"@type":"Person","name":"Oleksii Vykhrystiuk","url":"https://www.linkedin.com/in/avhrst/"},"publisher":{"@type":"Organization","name":"APEXREST","url":"https://apex.rest/"},"image":"https://apex.rest/assets/blog/trade-1c/home.jpg","mainEntityOfPage":"https://apex.rest/uk/blog/zamina-1c-na-oracle-apex/"}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного вмісту</a>
+  <header class="site-header" id="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/uk/" aria-label="APEXREST — головна"><img class="brand-logo" src="/assets/brand/apexrest-logo.svg" alt="APEXREST" width="216" height="50"></a>
+      <nav class="site-nav" id="site-nav" aria-label="Основна навігація">
+        <a href="/uk/#work">Можливості</a><a href="/uk/#new">Що нового</a><a href="/uk/#trace">Як це працює</a><a href="/uk/#proof">Документація</a>
+        <a href="https://blog.apex.rest/" target="_blank" rel="noopener noreferrer">Блог <span aria-hidden="true">↗</span></a>
+        <a href="/uk/#install" class="nav-cta">Встановити плагін <span aria-hidden="true">↗</span></a>
+      </nav>
+      <nav class="language-switch" aria-label="Мова">
+        <a href="/blog/replacing-1c-with-oracle-apex/" lang="en" hreflang="en" aria-label="EN — English">EN</a>
+        <a href="/uk/blog/zamina-1c-na-oracle-apex/" lang="uk" hreflang="uk" aria-label="UA — Українська" aria-current="page">UA</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Відкрити навігацію"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="article-hero">
+      <div class="shell">
+        <p class="eyebrow">Експеримент · Oracle APEX + APEXREST</p>
+        <h1>Заміна 1С на Oracle APEX: <em>експеримент на кілька годин</em></h1>
+        <p class="article-lede">Щоб перевірити, як плагін APEXREST працює на великій задачі, я взяв Oracle APEX, Claude Code, Linear як менеджер завдань і типову конфігурацію торгівлі на 1С 8.3 за зразок. І попросив агента зібрати її аналог. Ось що вийшло — зі скріншотами, цифрами і чесним переліком того, чого тут ще немає.</p>
+        <p class="article-meta">Олексій Вихристюк · 10 листопада 2026 · 8 хв читання</p>
+        <figure class="article-cover"><img src="/assets/blog/trade-1c/home.jpg" alt="Початкова сторінка застосунку Trade: розділи ліворуч, документи, звіти й поточні справи" width="1600" height="900"></figure>
+      </div>
+    </section>
+
+    <article class="article">
+      <div class="shell">
+        <div class="article-body">
+
+          <h2>Навіщо це все</h2>
+          <p>APEXREST — це плагін для Claude Code і Codex, який дає агентові працювати з Oracle APEX як із кодом: писати застосунок у форматі APEXlang, перевіряти його справжнім компілятором Oracle і імпортувати в середовище розробки. На маленьких прикладах він працює добре. Мені ж хотілося перевірити його на чомусь, що схоже на справжню облікову систему.</p>
+          <p>В Україні така система у багатьох компаній одна — 1С (BAS). Питання «на що її замінити» звучить щодня, а відповідь зазвичай впирається у вартість і строки перенесення логіки. Тож задача для тесту знайшлася сама: <strong>чи може агент із плагіном за розумний час зібрати на Oracle APEX каркас конфігурації торгівлі</strong> — з довідниками, документами, проведенням, регістрами і звітами?</p>
+
+          <h2>Що я взяв</h2>
+          <ul>
+            <li><strong>Oracle APEX 26.2</strong> на Oracle AI Database 26ai Free — локально, в Docker.</li>
+            <li><strong>Claude Code</strong> з плагіном <strong>APEXREST</strong> — агент, який пише код.</li>
+            <li><strong>Linear</strong> — менеджер завдань: каталог функцій і статуси.</li>
+            <li><strong>Типову конфігурацію «Управління торгівлею» на 1С 8.3</strong> — як зразок функцій, термінів і звичного інтерфейсу «Таксі».</li>
+          </ul>
+          <p>Моя участь — кілька годин: сформулювати, що потрібно, відповісти на запитання агента, подивитися результат і сказати «далі». Сторінки, таблиці, пакети й тести писав агент.</p>
+
+          <h2>Що вийшло</h2>
+          <p>Застосунок називається Trade. Він навмисно виглядає знайомо: панель розділів ліворуч, відкриті форми у вкладках, жовті кнопки команд, списки документів із піктограмами проведення.</p>
+
+
+          <h3>Довідники</h3>
+          <p>Номенклатура — ієрархічний довідник: дерево груп ліворуч, список праворуч. У картці товару — артикул, одиниця виміру, ставка ПДВ, код УКТ ЗЕД, вага й габарити, характеристики та серії з терміном придатності. Контрагенти — з ЄДРПОУ, IBAN (з перевіркою контрольної суми) і договорами.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/products.jpg" alt="Довідник «Номенклатура» з деревом груп" loading="lazy" width="1600" height="900"><figcaption>Номенклатура: дерево груп і список</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/products-item.jpg" alt="Картка товару в модальному вікні" loading="lazy" width="1600" height="900"><figcaption>Картка товару</figcaption></figure>
+          </div>
+
+          <h3>Продажі й закупівлі</h3>
+          <p>Замовлення клієнта резервує товар. На його підставі створюється реалізація: ціна підставляється з виду цін, знижки рахуються автоматично, а система не дасть продати більше, ніж є на складі. З боку закупівель — замовлення постачальнику, прибуткова накладна, оплата. Документи проводяться і рухають регістри; скасування проведення повертає все назад. Є введення на підставі, копіювання, друковані форми.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/customer-order.jpg" alt="Документ «Замовлення клієнта»" loading="lazy" width="1600" height="900"><figcaption>Замовлення клієнта</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/goods-sale.jpg" alt="Документ «Реалізація товарів» з табличною частиною" loading="lazy" width="1600" height="900"><figcaption>Реалізація товарів</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/goods-receipt.jpg" alt="Документ «Прибуткова накладна»" loading="lazy" width="1600" height="900"><figcaption>Прибуткова накладна</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/section-1.jpg" alt="Розділ «Продажі»: документи, звіти, швидке створення" loading="lazy" width="1600" height="900"><figcaption>Розділ «Продажі»</figcaption></figure>
+          </div>
+
+          <h3>Склад</h3>
+          <p>Залишки, обороти і рухи по кожному товару, переміщення, списання, інвентаризація з оприбуткуванням надлишків, резерви й вільні залишки, собівартість за середньою ковзною. Для складів з ордерною схемою — прибуткові й видаткові ордери та комірки.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/stock-balance.jpg" alt="Звіт «Товари на складах»" loading="lazy" width="1600" height="900"><figcaption>Товари на складах</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/inventory-count.jpg" alt="Документ «Інвентаризація товарів»" loading="lazy" width="1600" height="900"><figcaption>Інвентаризація</figcaption></figure>
+          </div>
+
+          <h3>Фінанси, ПДВ і роздріб</h3>
+          <p>Каси й банківські рахунки, ПКО і ВКО, банківські виписки, взаєморозрахунки, акт звірки. ПДВ у документах і податкові накладні за правилом першої події. Курси валют завантажуються з сайту НБУ. Для роздробу — робоче місце касира зі сканером і чеки.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/cash-balance.jpg" alt="Регістр «Грошові кошти»" loading="lazy" width="1600" height="900"><figcaption>Залишки й обороти коштів</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/tax-invoice.jpg" alt="Документ «Податкова накладна»" loading="lazy" width="1600" height="900"><figcaption>Податкова накладна</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/currency-rates.jpg" alt="Курси валют, завантажені з НБУ" loading="lazy" width="1600" height="900"><figcaption>Курси валют НБУ</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/retail-receipt.jpg" alt="Документ «Чек ККМ»" loading="lazy" width="1600" height="900"><figcaption>Чек ККМ</figcaption></figure>
+          </div>
+
+          <h3>Звіти</h3>
+          <p>ABC-аналіз продажів із діаграмою Парето, дебіторка за термінами, оборотність запасів, неліквіди з рекомендацією уцінки, картка товару, валовий прибуток.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/abc-analysis.jpg" alt="Звіт «ABC-аналіз продажів»" loading="lazy" width="1600" height="900"><figcaption>ABC-аналіз продажів</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/receivables-aging.jpg" alt="Звіт «Дебіторська заборгованість за термінами»" loading="lazy" width="1600" height="900"><figcaption>Дебіторка за термінами</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/inventory-turnover.jpg" alt="Звіт «Оборотність запасів»" loading="lazy" width="1600" height="900"><figcaption>Оборотність запасів</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/slow-moving-stock.jpg" alt="Звіт «Неліквіди й залежалі товари»" loading="lazy" width="1600" height="900"><figcaption>Неліквіди й залежалі товари</figcaption></figure>
+          </div>
+
+          <h3>Інтеграції та сервіс</h3>
+          <p>Обмін замовленнями з торговими мережами через EDI (ORDERS, ORDRSP, DESADV, INVOIC, RECADV), імпорт довідників із CSV і XLSX, журнал реєстрації дій користувачів, ролі доступу.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/edi-exchange.jpg" alt="Сторінка EDI-обміну з торговими мережами" loading="lazy" width="1600" height="900"><figcaption>EDI з торговими мережами</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/event-log.jpg" alt="Журнал реєстрації" loading="lazy" width="1600" height="900"><figcaption>Журнал реєстрації</figcaption></figure>
+          </div>
+
+          <h2>У цифрах</h2>
+          <div class="article-stats">
+            <div><b>120</b><span>сторінок APEX</span></div>
+            <div><b>107</b><span>таблиць і 70 подань</span></div>
+            <div><b>37</b><span>пакетів PL/SQL, ≈17,6 тис. рядків</span></div>
+            <div><b>1 879</b><span>перевірок у 30 тестових сценаріях</span></div>
+          </div>
+          <p>Ще 64 паспорти об'єктів (опис вимог) і близько 270 задач у Linear, з яких закрито приблизно 70.</p>
+
+          <h2>Як це зроблено</h2>
+
+          <h3>1. Спершу паспорт, потім код</h3>
+          <p>Для кожного довідника, документа й регістру агент спершу пише паспорт: структура, поведінка форми, бізнес-логіка, аналог у 1С. Це звичайний Markdown у репозиторії — його можна прочитати й поправити до того, як з'явиться хоч один рядок коду.</p>
+<pre><code># Паспорт документа «Реалізація товарів»
+- Аналог у 1С:УТ: Документ.РеализацияТоваровУслуг
+
+## БЛОК C. БІЗНЕС-ЛОГІКА
+- Порожня ціна рядка заповнюється на сервері за видом цін на дату документа
+- Проведення: RegStockBalance −quantity; RegCounterpartySettlement +totalAmount
+- Від'ємний залишок товару заборонений</code></pre>
+
+          <h3>2. Завдання — в Linear</h3>
+          <p>Каталог функцій типової конфігурації розкладено на задачі з етапами: оперативний облік, гроші, розширення, інтеграції. Агент бере задачу, виконує і закриває. Я бачу прогрес так само, як бачив би роботу команди.</p>
+
+          <h3>3. Застосунок APEX — це текст</h3>
+          <p>APEXlang описує сторінки, регіони, кнопки і процеси звичайними файлами. Агент не клацає в конструкторі — він редагує код, а зміни видно в git.</p>
+<pre><code>page 110 (
+    name: Реалізація товарів
+    alias: GOODS-SALES
+    security { authorizationScheme: @role-sales }
+
+    region list (
+        type: interactiveReport
+        source { type: sqlQuery ... }
+    )
+)</code></pre>
+
+          <h3>4. Що тут робить APEXREST</h3>
+          <ol class="article-steps">
+            <li><strong>Довідник і рецепти.</strong> Визначення Oracle і перевірені компілятором приклади компонентів доступні агентові офлайн — йому не треба вигадувати синтаксис.</li>
+            <li><strong>Локальний перегляд.</strong> Сторінки рендеряться просто на ноутбуці зі справжньою темою APEX. Це інструмент для швидкої перевірки вигляду, а не заміна перевірки в Oracle.</li>
+            <li><strong>Компілятор Oracle.</strong> APEXlang перевіряється справжнім компілятором до імпорту — помилки ловляться раніше.</li>
+            <li><strong>Імпорт лише в DEV/TEST.</strong> З точним планом, резервною копією і перевіркою результату. У продуктивне середовище плагін не розгортає — це завжди рішення людини.</li>
+          </ol>
+          <figure class="wide"><img src="/assets/blog/trade-1c/preview-products.jpg" alt="Локальний перегляд APEXREST: довідник «Номенклатура» з панеллю розробника внизу" loading="lazy" width="1600" height="900"><figcaption>Локальний перегляд APEXREST: та сама сторінка на ноутбуці, з панеллю розробника</figcaption></figure>
+
+          <h3>5. Логіка на сервері й автотести</h3>
+          <p>Проведення документів, регістри, собівартість, ПДВ — у пакетах PL/SQL. Кожну ревізію закриває тестовий сценарій; якщо хоч одна перевірка падає, задача не закрита.</p>
+<pre><code>OK   Всього накладної 2,500×12,34 + 10,00: 40.85 (очікується 40.85)
+OK   Кредиторська заборгованість: 40.85 (очікується 40.85)
+OK   Рухів після скасування проведення: 0 (очікується 0)
+OK   Ставки ПДВ 20 / 7 / 0 / звільнено / без ПДВ: 5 (очікується 5)</code></pre>
+
+          <h2>Чесно про обмеження</h2>
+          <div class="article-note"><strong>Це експеримент</strong>Trade — не готовий продукт і не повна заміна 1С. Це каркас, який показує, що і як швидко можна зібрати.</div>
+          <ul>
+            <li>Закрито близько 70 задач із приблизно 270: CRM, доставка, планування, бюджетування, більшість інтеграцій — ще в беклозі.</li>
+            <li>ПРРО працює в режимі імітації, EDI — через файловий обмін і заглушку провайдера; до ДПС і зовнішніх сервісів нічого не передається.</li>
+            <li>Документи й взаєморозрахунки ведуться в гривні; бухгалтерського обліку й зарплати немає.</li>
+            <li>Застосунок працював лише на демонстраційних даних у локальному середовищі розробки. Навантаження, безпеку й перенесення реальних даних не перевіряли.</li>
+            <li>Код, який написав агент, перед будь-яким реальним використанням потребує перевірки людиною — як і код будь-якого розробника.</li>
+          </ul>
+
+          <h2>Висновок</h2>
+          <p>Замінити 1С одним вечором не вийде — і я цього не стверджую. Але головна стаття витрат у таких проєктах — перенесення сотень форм, документів і правил — з агентом і правильними інструментами стає помітно дешевшою і швидшою. Oracle APEX дає готові списки, форми, права і звіти; APEXlang робить застосунок кодом; APEXREST дає агентові довідник, компілятор і безпечний імпорт. Людині лишається найважливіше: вирішити, що саме потрібно бізнесу, і перевірити результат.</p>
+
+          <div class="article-cta">
+            <h2>Спробуйте APEXREST на своєму проєкті</h2>
+            <p>Плагін має відкритий код (Apache-2.0) і працює з Claude Code та Codex.</p>
+<pre><code>claude plugin marketplace add apexrest-dev/apexrest
+claude plugin install apexrest@apexrest</code></pre>
+            <p><a href="https://github.com/apexrest-dev/apexrest" target="_blank" rel="noopener noreferrer">APEXREST на GitHub ↗</a> · <a href="https://apexrest-dev.github.io/apexrest/docs/" target="_blank" rel="noopener noreferrer">Документація ↗</a> · <a href="https://www.linkedin.com/in/avhrst/" target="_blank" rel="noopener noreferrer">Запитання — у LinkedIn ↗</a></p>
+          </div>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <a class="brand footer-brand" href="/uk/" aria-label="APEXREST — головна"><img class="brand-logo" src="/assets/brand/apexrest-logo-light.svg" alt="APEXREST" width="216" height="50"></a>
+      <p>Oracle APEX у вашому процесі Codex і Claude Code.<br>ШІ створює. Ви вирішуєте про реліз.</p>
+      <div class="footer-links"><a href="https://github.com/apexrest-dev/apexrest" target="_blank" rel="noopener noreferrer">APEXREST на GitHub ↗</a><a href="https://apexrest-dev.github.io/apexrest/docs/" target="_blank" rel="noopener noreferrer">Документація ↗</a><a href="https://www.linkedin.com/in/avhrst/" target="_blank" rel="noopener noreferrer">Oleksii Vykhrystiuk / LinkedIn ↗</a><a href="https://blog.apex.rest/" target="_blank" rel="noopener noreferrer">APEXREST Journal / Блог ↗</a></div>
+    </div>
+    <div class="shell footer-bottom">
+      <p>APEXREST — незалежний інструмент, а не офіційний продукт Oracle, OpenAI чи Anthropic. Trade — демонстраційний застосунок; він не пов'язаний з компанією «1С» і не є продуктом 1С чи BAS. Oracle та Oracle APEX є торговельними марками Oracle та/або її афілійованих компаній; 1С — торговельна марка її власника.</p>
+      <p>© <span id="current-year">2026</span> APEXREST</p>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

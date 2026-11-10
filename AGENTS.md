@@ -21,6 +21,7 @@ Keep the site static and framework-free unless the user explicitly requests an a
 - `assets/fonts/` — self-hosted Manrope and IBM Plex Mono with OFL licences
 - `assets/og.png` and `assets/og-uk.png` — social preview images
 - `uk/index.html` — complete Ukrainian page with a visible language switch
+- `blog/replacing-1c-with-oracle-apex/` and `uk/blog/zamina-1c-na-oracle-apex/` — the single EN/UK case-study article (styles in `assets/css/article.css`, screenshots in `assets/blog/trade-1c/`); it is one case study, not a restored 1C/BAS news blog
 - `brand/` — editable HTML/PDF brandbook, source archive and authoring tools (repository-only)
 - `404.html` — branded GitHub Pages fallback
 - `.github/workflows/pages.yml` — GitHub Pages deployment workflow; runs the site checks before staging

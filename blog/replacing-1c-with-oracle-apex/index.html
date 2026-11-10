@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Replacing 1C with Oracle APEX: a few-hour experiment — APEXREST</title>
+  <meta name="description" content="To test the APEXREST plugin, I took Oracle APEX, Claude Code and Linear and tried to build a trade configuration modelled on 1C 8.3. 120 pages, 107 tables, 1,879 automated checks — screenshots, numbers and an honest list of limitations.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#F6F5F0">
+  <link rel="canonical" href="https://apex.rest/blog/replacing-1c-with-oracle-apex/">
+  <link rel="alternate" hreflang="en" href="https://apex.rest/blog/replacing-1c-with-oracle-apex/">
+  <link rel="alternate" hreflang="uk" href="https://apex.rest/uk/blog/zamina-1c-na-oracle-apex/">
+  <link rel="alternate" hreflang="x-default" href="https://apex.rest/blog/replacing-1c-with-oracle-apex/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://apex.rest/blog/replacing-1c-with-oracle-apex/">
+  <meta property="og:site_name" content="APEXREST">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta property="og:title" content="Replacing 1C with Oracle APEX: a few-hour experiment">
+  <meta property="og:description" content="Oracle APEX + Claude Code + the APEXREST plugin + Linear: a trade configuration modelled on 1C 8.3. Screenshots, numbers and limitations.">
+  <meta property="og:image" content="https://apex.rest/assets/blog/trade-1c/home.jpg">
+  <meta property="og:image:alt" content="Home page of the Trade application on Oracle APEX with a 1C-style interface">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Replacing 1C with Oracle APEX: a few-hour experiment">
+  <meta name="twitter:description" content="Oracle APEX + Claude Code + the APEXREST plugin + Linear: a trade configuration modelled on 1C 8.3.">
+  <meta name="twitter:image" content="https://apex.rest/assets/blog/trade-1c/home.jpg">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/article.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Replacing 1C with Oracle APEX: a few-hour experiment","inLanguage":"en","datePublished":"2026-11-10","author":{"@type":"Person","name":"Oleksii Vykhrystiuk","url":"https://www.linkedin.com/in/avhrst/"},"publisher":{"@type":"Organization","name":"APEXREST","url":"https://apex.rest/"},"image":"https://apex.rest/assets/blog/trade-1c/home.jpg","mainEntityOfPage":"https://apex.rest/blog/replacing-1c-with-oracle-apex/"}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="APEXREST home"><img class="brand-logo" src="/assets/brand/apexrest-logo.svg" alt="APEXREST" width="216" height="50"></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="/#work">Capabilities</a><a href="/#new">What’s new</a><a href="/#trace">How it works</a><a href="/#proof">Documentation</a>
+        <a href="https://blog.apex.rest/" target="_blank" rel="noopener noreferrer">Blog <span aria-hidden="true">↗</span></a>
+        <a href="/#install" class="nav-cta">Install the plugin <span aria-hidden="true">↗</span></a>
+      </nav>
+      <nav class="language-switch" aria-label="Language">
+        <a href="/blog/replacing-1c-with-oracle-apex/" lang="en" hreflang="en" aria-label="EN — English" aria-current="page">EN</a>
+        <a href="/uk/blog/zamina-1c-na-oracle-apex/" lang="uk" hreflang="uk" aria-label="UA — Українська">UA</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="article-hero">
+      <div class="shell">
+        <p class="eyebrow">Experiment · Oracle APEX + APEXREST</p>
+        <h1>Replacing 1C with Oracle APEX: <em>a few-hour experiment</em></h1>
+        <p class="article-lede">To see how the APEXREST plugin copes with a large task, I took Oracle APEX, Claude Code, Linear as the task manager, and the standard 1C 8.3 trade configuration as the reference. Then I asked the agent to build an equivalent. Here is the result — with screenshots, numbers and an honest list of what is not there yet.</p>
+        <p class="article-meta">Oleksii Vykhrystiuk · 10 November 2026 · 8 min read</p>
+        <figure class="article-cover"><img src="/assets/blog/trade-1c/home.jpg" alt="Home page of the Trade application: sections on the left, documents, reports and current tasks" width="1600" height="900"></figure>
+      </div>
+    </section>
+
+    <article class="article">
+      <div class="shell">
+        <div class="article-body">
+
+          <h2>Why do this at all</h2>
+          <p>APEXREST is a plugin for Claude Code and Codex that lets an agent work with Oracle APEX as code: write the application in APEXlang, check it with Oracle’s real compiler and import it into a development environment. It works well on small examples. I wanted to test it on something that looks like a real accounting system.</p>
+          <p>In Ukraine, for many companies that system is 1C (BAS). “What do we replace it with?” comes up every day, and the answer usually runs into the cost and time of moving the business logic. So the test task picked itself: <strong>can an agent with the plugin build, in reasonable time, the skeleton of a trade configuration on Oracle APEX</strong> — with catalogs, documents, posting, registers and reports?</p>
+
+          <h2>What I used</h2>
+          <ul>
+            <li><strong>Oracle APEX 26.2</strong> on Oracle AI Database 26ai Free — locally, in Docker.</li>
+            <li><strong>Claude Code</strong> with the <strong>APEXREST</strong> plugin — the agent that writes the code.</li>
+            <li><strong>Linear</strong> — the task manager: function catalog and statuses.</li>
+            <li><strong>The standard 1C 8.3 “Trade Management” configuration</strong> — as the reference for functions, terminology and the familiar “Taxi” interface.</li>
+          </ul>
+          <p>My part was a few hours: describe what is needed, answer the agent’s questions, look at the result and say “next”. The agent wrote the pages, tables, packages and tests.</p>
+
+          <h2>What came out</h2>
+          <p>The application is called Trade. It deliberately looks familiar: a section panel on the left, open forms in tabs, yellow command buttons, document lists with posting icons. The interface is in Ukrainian, as it would be for its users.</p>
+
+          <h3>Catalogs</h3>
+          <p>Products are a hierarchical catalog: a group tree on the left, a list on the right. The product card holds the SKU, unit of measure, VAT rate, customs classification code, weight and dimensions, characteristics, and batches with expiry dates. Counterparties come with their company registration code, IBAN (with checksum validation) and contracts.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/products.jpg" alt="Products catalog with a group tree" loading="lazy" width="1600" height="900"><figcaption>Products: group tree and list</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/products-item.jpg" alt="Product card in a modal dialog" loading="lazy" width="1600" height="900"><figcaption>Product card</figcaption></figure>
+          </div>
+
+          <h3>Sales and purchasing</h3>
+          <p>A customer order reserves stock. A sale is created from it: the price comes from the price type, discounts are calculated automatically, and the system will not let you sell more than is in the warehouse. On the purchasing side there are supplier orders, goods receipts and payments. Documents are posted and move registers; unposting reverts everything. There is create-from, copying and printed forms.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/customer-order.jpg" alt="Customer order document" loading="lazy" width="1600" height="900"><figcaption>Customer order</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/goods-sale.jpg" alt="Goods sale document with line items" loading="lazy" width="1600" height="900"><figcaption>Goods sale</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/goods-receipt.jpg" alt="Goods receipt document" loading="lazy" width="1600" height="900"><figcaption>Goods receipt</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/section-1.jpg" alt="Sales section: documents, reports and quick create" loading="lazy" width="1600" height="900"><figcaption>Sales section</figcaption></figure>
+          </div>
+
+          <h3>Warehouse</h3>
+          <p>Balances, turnover and movements for every product, transfers, write-offs, stock counts with surplus posting, reservations and free stock, cost by moving average. For warehouses with an order-based scheme there are receipt and issue orders and storage bins.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/stock-balance.jpg" alt="Stock in warehouses report" loading="lazy" width="1600" height="900"><figcaption>Stock in warehouses</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/inventory-count.jpg" alt="Inventory count document" loading="lazy" width="1600" height="900"><figcaption>Inventory count</figcaption></figure>
+          </div>
+
+          <h3>Finance, VAT and retail</h3>
+          <p>Cash desks and bank accounts, cash receipt and disbursement orders, bank statements, settlements, reconciliation statements. VAT in documents and tax invoices under the first-event rule. Exchange rates are loaded from the National Bank of Ukraine. For retail there is a cashier workplace with a scanner, and receipts.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/cash-balance.jpg" alt="Cash register: balances and turnover" loading="lazy" width="1600" height="900"><figcaption>Cash balances and turnover</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/tax-invoice.jpg" alt="Tax invoice document" loading="lazy" width="1600" height="900"><figcaption>Tax invoice</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/currency-rates.jpg" alt="Exchange rates loaded from the National Bank of Ukraine" loading="lazy" width="1600" height="900"><figcaption>NBU exchange rates</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/retail-receipt.jpg" alt="Retail receipt document" loading="lazy" width="1600" height="900"><figcaption>Retail receipt</figcaption></figure>
+          </div>
+
+          <h3>Reports</h3>
+          <p>ABC sales analysis with a Pareto chart, receivables aging, inventory turnover, slow-moving stock with markdown recommendations, product card, gross profit.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/abc-analysis.jpg" alt="ABC sales analysis report" loading="lazy" width="1600" height="900"><figcaption>ABC sales analysis</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/receivables-aging.jpg" alt="Receivables aging report" loading="lazy" width="1600" height="900"><figcaption>Receivables aging</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/inventory-turnover.jpg" alt="Inventory turnover report" loading="lazy" width="1600" height="900"><figcaption>Inventory turnover</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/slow-moving-stock.jpg" alt="Slow-moving and obsolete stock report" loading="lazy" width="1600" height="900"><figcaption>Slow-moving and obsolete stock</figcaption></figure>
+          </div>
+
+          <h3>Integrations and service</h3>
+          <p>Order exchange with retail chains over EDI (ORDERS, ORDRSP, DESADV, INVOIC, RECADV), catalog import from CSV and XLSX, a user activity event log, access roles.</p>
+          <div class="article-grid">
+            <figure><img src="/assets/blog/trade-1c/edi-exchange.jpg" alt="EDI exchange page for retail chains" loading="lazy" width="1600" height="900"><figcaption>EDI with retail chains</figcaption></figure>
+            <figure><img src="/assets/blog/trade-1c/event-log.jpg" alt="Event log" loading="lazy" width="1600" height="900"><figcaption>Event log</figcaption></figure>
+          </div>
+
+          <h2>By the numbers</h2>
+          <div class="article-stats">
+            <div><b>120</b><span>APEX pages</span></div>
+            <div><b>107</b><span>tables and 70 views</span></div>
+            <div><b>37</b><span>PL/SQL packages, ≈17.6k lines</span></div>
+            <div><b>1,879</b><span>checks in 30 test scenarios</span></div>
+          </div>
+          <p>Plus 64 object passports (requirement descriptions) and about 270 tasks in Linear, of which roughly 70 are closed.</p>
+
+          <h2>How it was built</h2>
+
+          <h3>1. Passport first, code second</h3>
+          <p>For every catalog, document and register the agent first writes a passport: structure, form behaviour, business logic and the 1C counterpart. It is plain Markdown in the repository — you can read and correct it before a single line of code exists.</p>
+<pre><code># Passport: “Goods sale” document
+- 1C:Trade Management counterpart: Document.РеализацияТоваровУслуг
+
+## BLOCK C. BUSINESS LOGIC
+- An empty line price is filled on the server from the price type at the document date
+- Posting: RegStockBalance −quantity; RegCounterpartySettlement +totalAmount
+- Negative stock balance is not allowed</code></pre>
+
+          <h3>2. Tasks live in Linear</h3>
+          <p>The function catalog of the standard configuration is broken into tasks by stage: operational accounting, money, extensions, integrations. The agent picks a task, does it and closes it. I see progress the same way I would see a team’s work.</p>
+
+          <h3>3. An APEX application is text</h3>
+          <p>APEXlang describes pages, regions, buttons and processes as ordinary files. The agent does not click around the builder — it edits code, and the changes are visible in git.</p>
+<pre><code>page 110 (
+    name: Реалізація товарів
+    alias: GOODS-SALES
+    security { authorizationScheme: @role-sales }
+
+    region list (
+        type: interactiveReport
+        source { type: sqlQuery ... }
+    )
+)</code></pre>
+
+          <h3>4. What APEXREST does here</h3>
+          <ol class="article-steps">
+            <li><strong>Reference and recipes.</strong> Oracle definitions and compiler-checked component examples are available to the agent offline — it does not have to invent syntax.</li>
+            <li><strong>Local preview.</strong> Pages render right on the laptop with the real APEX theme. It is a tool for quickly checking the look, not a substitute for verification in Oracle.</li>
+            <li><strong>Oracle compiler.</strong> APEXlang is checked by the real compiler before import, so errors are caught earlier.</li>
+            <li><strong>Import into DEV/TEST only.</strong> With an exact plan, a backup and a check of the result. The plugin does not deploy to production — that is always a human decision.</li>
+          </ol>
+          <figure class="wide"><img src="/assets/blog/trade-1c/preview-products.jpg" alt="APEXREST local preview: the Products catalog with the developer panel at the bottom" loading="lazy" width="1600" height="900"><figcaption>APEXREST local preview: the same page on a laptop, with the developer panel</figcaption></figure>
+
+          <h3>5. Server-side logic and automated tests</h3>
+          <p>Document posting, registers, cost and VAT live in PL/SQL packages. Every revision is closed by a test scenario; if even one check fails, the task is not closed.</p>
+<pre><code>OK   Invoice total 2,500×12.34 + 10.00: 40.85 (expected 40.85)
+OK   Accounts payable: 40.85 (expected 40.85)
+OK   Movements after unposting: 0 (expected 0)
+OK   VAT rates 20 / 7 / 0 / exempt / no VAT: 5 (expected 5)</code></pre>
+
+          <h2>Honest limitations</h2>
+          <div class="article-note"><strong>This is an experiment</strong>Trade is not a finished product and not a full replacement for 1C. It is a skeleton that shows what can be built, and how fast.</div>
+          <ul>
+            <li>About 70 of roughly 270 tasks are closed: CRM, delivery, planning, budgeting and most integrations are still in the backlog.</li>
+            <li>The fiscal cash register (PRRO) runs in simulation mode, EDI uses file exchange and a stub provider; nothing is sent to the tax authority or external services.</li>
+            <li>Documents and settlements are kept in hryvnia; there is no general ledger and no payroll.</li>
+            <li>The application has only run on demo data in a local development environment. Load, security and real data migration have not been tested.</li>
+            <li>Code written by the agent needs human review before any real use — just like code from any developer.</li>
+          </ul>
+
+          <h2>Conclusion</h2>
+          <p>You cannot replace 1C in one evening — and I am not claiming that. But the main cost driver in such projects — moving hundreds of forms, documents and rules — becomes noticeably cheaper and faster with an agent and the right tools. Oracle APEX provides ready-made lists, forms, permissions and reports; APEXlang turns the application into code; APEXREST gives the agent a reference, a compiler and safe import. The human keeps the most important part: deciding what the business actually needs, and checking the result.</p>
+
+          <div class="article-cta">
+            <h2>Try APEXREST on your own project</h2>
+            <p>The plugin is open source (Apache-2.0) and works with Claude Code and Codex.</p>
+<pre><code>claude plugin marketplace add apexrest-dev/apexrest
+claude plugin install apexrest@apexrest</code></pre>
+            <p><a href="https://github.com/apexrest-dev/apexrest" target="_blank" rel="noopener noreferrer">APEXREST on GitHub ↗</a> · <a href="https://apexrest-dev.github.io/apexrest/docs/" target="_blank" rel="noopener noreferrer">Documentation ↗</a> · <a href="https://www.linkedin.com/in/avhrst/" target="_blank" rel="noopener noreferrer">Questions on LinkedIn ↗</a></p>
+          </div>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <a class="brand footer-brand" href="/" aria-label="APEXREST home"><img class="brand-logo" src="/assets/brand/apexrest-logo-light.svg" alt="APEXREST" width="216" height="50"></a>
+      <p>Oracle APEX, in your Codex and Claude Code workflow.<br>AI builds. You decide the release.</p>
+      <div class="footer-links"><a href="https://github.com/apexrest-dev/apexrest" target="_blank" rel="noopener noreferrer">APEXREST on GitHub ↗</a><a href="https://apexrest-dev.github.io/apexrest/docs/" target="_blank" rel="noopener noreferrer">Read the docs ↗</a><a href="https://www.linkedin.com/in/avhrst/" target="_blank" rel="noopener noreferrer">Oleksii Vykhrystiuk / LinkedIn ↗</a><a href="https://blog.apex.rest/" target="_blank" rel="noopener noreferrer">APEXREST Journal / Blog ↗</a></div>
+    </div>
+    <div class="shell footer-bottom">
+      <p>APEXREST is independent tooling, not an official Oracle, OpenAI or Anthropic product. Trade is a demo application; it is not affiliated with the 1C company and is not a 1C or BAS product. Oracle and Oracle APEX are trademarks of Oracle and/or its affiliates; 1C is a trademark of its owner.</p>
+      <p>© <span id="current-year">2026</span> APEXREST</p>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

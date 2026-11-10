@@ -102,3 +102,12 @@ SHA-256 of the raw documents read at the pinned revision.
 | `docs/implementation-status.md` | `af6c5c065cf4339af12ced2b770ee1dcc33e518a72a03651d15f6ad756aff7fe` |
 | `docs/pattern-catalog.md` | `1b91c415b5fbc60e182bc22c016d207e4af57951635ea34bbd7b4f7f43f4551e` |
 | `docs/component-catalog.md` | `08b35fdfaba505c7a1f91721623c6c0300c75501c706cfb41643d5d5427fcac0` |
+
+## Case study: replacing 1C with Oracle APEX (2026-11-10)
+
+Source: the author's `apexrest-test` project — `demo/article/article.uk.md` and `demo/site/` (screenshots from the local APEX 26.2 stack, application 100 “Trade”). The English page is a translation of the Ukrainian original.
+
+- Counts (120 pages, 107 tables, 70 views, 37 packages, ≈17.6k PL/SQL lines) were read from the database on 2026-11-10.
+- 1,879 checks come from project notes; the full test run was not repeated on publication day. Linear figures (≈270 tasks, ≈70 closed) are estimates.
+- “A few hours” of the author's involvement is the author's statement; git history spans 8–9 November 2026.
+- The YouTube embeds from the draft were left out until the videos are published.
